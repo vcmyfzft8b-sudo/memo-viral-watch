@@ -1,0 +1,73 @@
+{
+  "accounts": [],
+  "local_accounts": [],
+  "watch_days": 7,
+  "thresholds": {
+    "early": [
+      [
+        6,
+        5000
+      ],
+      [
+        24,
+        20000
+      ],
+      [
+        48,
+        50000
+      ]
+    ],
+    "creator_multiple": 10,
+    "creator_multiple_min_views": 5000,
+    "creator_multiple_max_age_hours": 72,
+    "viral_views": 100000,
+    "min_engagement": 0.015,
+    "good_views": 20000
+  },
+  "ranking": {
+    "prior_hit_rate": 0.03,
+    "prior_20k_rate": 0.12,
+    "prior_weight": 45,
+    "weight_20k": 0.25,
+    "rerank_weekday": 0,
+    "own_prior_weight": 8,
+    "local_weight": 1
+  },
+  "models": {
+    "classify": "sonnet",
+    "build": "opus"
+  },
+  "links": {
+    "memo": "https://memoai.eu"
+  },
+  "notion": {
+    "radar_page": ""
+  },
+  "discovery_every_days": 3,
+  "markets": {
+    "sh": {
+      "lang": "sh",
+      "list_page": "",
+      "holder_page": "",
+      "archive_page": "",
+      "visual_hook_lab": "",
+      "discord_env": "DISCORD_WEBHOOK_URL",
+      "discord_server": "",
+      "enabled": true,
+      "discord_announce": false,
+      "creator_channels": false
+    }
+  },
+  "discord": {
+    "creator_category_prefix": "Creators"
+  },
+  "lineup": {
+    "remove_below": 1.0,
+    "min_formats": 8,
+    "protect_days": 14,
+    "half_life_days": 21
+  },
+  "megasheet": {
+    "campaigns": {}
+  }
+}

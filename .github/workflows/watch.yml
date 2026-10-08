@@ -1,0 +1,164 @@
+name: Memo AI viral watch
+
+on:
+  schedule:
+    - cron: '41 */6 * * *'   # every 6 hours
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'normal = alerts + build pages · only-detect = alerts only · dry-run = no alerts, no writes'
+        type: choice
+        options: [normal, only-detect, dry-run, test-notify, test-claude, setup-notion, accounts-sync, bootstrap, check-hot, test-discord, relist, weekly, own-sync, megasheet-check, lineup, lineup-apply, localize, localize-recheck, reword, reword-dry, audit, audit-failed, group-audit, group-audit-force, group-fix, approval-drafts, apply-approved, gate-rehearsal, align, standardize, accounts-add]
+        default: normal
+      test_viral:
+        description: 'Optional: TikTok video URL -> send the full VIRAL Slack message for it (no Notion changes)'
+        required: false
+        default: ''
+      example:
+        description: 'Optional: FORMAT_ID:market:tiktok_url -> put this example video on that page (script follows it)'
+        required: false
+        default: ''
+      bootstrap_count:
+        description: 'bootstrap: how many viral videos to turn into starter formats in this run'
+        required: false
+        default: '5'
+      notion_root_page:
+        description: 'setup-notion: link of the Notion page to build under (empty = the one page shared with the integration)'
+        required: false
+        default: ''
+      discord_message_id:
+        description: 'Optional: id of a hot announcement -> rewrite it with the current text (no new ping)'
+        required: false
+        default: ''
+      test_video:
+        description: 'Optional: TikTok video URL -> build a TEST format page into the private radar page (nothing public)'
+        required: false
+        default: ''
+
+concurrency:
+  group: memo-viral-watch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out state branch
+        uses: actions/checkout@v4
+        with:
+          ref: state
+          path: state-branch
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install
+        run: |
+          npm install -g @anthropic-ai/claude-code > /dev/null
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tor > /dev/null
+          pip install -q -r requirements.txt
+
+      # GitHub's servers are in the US; some TikTok videos are Europe-only. Those requests go through Tor
+      # with European exit nodes (only used as a fallback, see watcher/tiktok.py).
+      - name: Start European route (Tor)
+        continue-on-error: true
+        run: |
+          sudo systemctl stop tor tor@default 2>/dev/null || true
+          printf 'SocksPort 9150\nExitNodes {de},{at},{ch},{nl},{be},{fr},{pl},{cz},{dk},{se},{hr},{si},{hu},{ro},{bg},{gr},{it}\nStrictNodes 1\nLog notice file /tmp/tor.log\n' > /tmp/torrc
+          tor -f /tmp/torrc --RunAsDaemon 1 --DataDirectory /tmp/tordata
+          for i in $(seq 1 60); do grep -q "Bootstrapped 100%" /tmp/tor.log 2>/dev/null && break; sleep 2; done
+          grep -q "Bootstrapped 100%" /tmp/tor.log && echo "Tor ready" || echo "Tor not ready - Europe-only videos will use embed view counts"
+
+      - name: Run watcher
+        env:
+          STATE_DIR: state-branch/state
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          SONIOX_API_KEY: ${{ secrets.SONIOX_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_USER_ID: ${{ secrets.SLACK_USER_ID }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          LIGHTREEL_API_KEY: ${{ secrets.LIGHTREEL_API_KEY }}
+          MEGASHEET_LOGIN: ${{ secrets.MEGASHEET_LOGIN }}
+          MEGASHEET_KEY: ${{ secrets.MEGASHEET_KEY }}
+          TIKTOK_PROXY: socks5h://127.0.0.1:9150
+          MODE: ${{ github.event.inputs.mode || 'normal' }}
+          TEST_VIDEO: ${{ github.event.inputs.test_video }}
+          TEST_VIRAL: ${{ github.event.inputs.test_viral }}
+          DISCORD_MESSAGE_ID: ${{ github.event.inputs.discord_message_id }}
+          EXAMPLE: ${{ github.event.inputs.example }}
+          BOOTSTRAP_COUNT: ${{ github.event.inputs.bootstrap_count || '5' }}
+          NOTION_ROOT_PAGE: ${{ github.event.inputs.notion_root_page }}
+        run: |
+          if [ -n "$EXAMPLE" ]; then python -m watcher.main --set-example "$EXAMPLE"; exit 0; fi
+          if [ -n "$DISCORD_MESSAGE_ID" ]; then python -m watcher.main --edit-discord "$DISCORD_MESSAGE_ID"; exit 0; fi
+          if [ -n "$TEST_VIRAL" ]; then python -m watcher.main --test-viral "$TEST_VIRAL"; exit 0; fi
+          if [ -n "$TEST_VIDEO" ]; then
+            HANDLE=$(echo "$TEST_VIDEO" | sed -E 's#.*/@([^/]+)/video/([0-9]+).*#\1#')
+            VID=$(echo "$TEST_VIDEO" | sed -E 's#.*/@([^/]+)/video/([0-9]+).*#\2#')
+            python scripts/test_build.py "$HANDLE" "$VID"
+            exit 0
+          fi
+          case "$MODE" in
+            dry-run)     python -m watcher.main --dry-run ;;
+            test-notify) python -m watcher.main --test-notify ;;
+            test-claude) python -m watcher.main --test-claude ;;
+            setup-notion) python -m watcher.main --setup-notion ;;
+            bootstrap)   python -m watcher.main --bootstrap "$BOOTSTRAP_COUNT" ;;
+            check-hot)   python -m watcher.main --check-hot ;;
+            test-discord) python -m watcher.main --test-discord ;;
+            relist)      python -m watcher.main --relist ;;
+            weekly)      python -m watcher.main --weekly ;;
+            own-sync)    python -m watcher.main --own-sync ;;
+            megasheet-check) python -m watcher.main --megasheet-check ;;
+            lineup)      python -m watcher.main --lineup ;;
+            lineup-apply) python -m watcher.main --lineup-apply ;;
+            localize)    python -m watcher.main --localize ;;
+            localize-recheck) python -m watcher.main --localize-recheck ;;
+            reword)      python -m watcher.main --reword ;;
+            reword-dry)  python -m watcher.main --reword-dry ;;
+            audit)       python -m watcher.main --audit ;;
+            audit-failed) python -m watcher.main --audit-failed ;;
+            group-audit) python -m watcher.main --group-audit ;;
+            group-audit-force) python -m watcher.main --group-audit --force ;;
+            group-fix)   python -m watcher.main --group-fix ;;
+            approval-drafts) python -m watcher.main --approval-drafts ;;
+            apply-approved) python -m watcher.main --apply-approved ;;
+            gate-rehearsal) python -m watcher.main --gate-rehearsal ;;
+            align)       python -m watcher.main --align ;;
+            standardize) python -m watcher.main --standardize ;;
+            accounts-add) python -m watcher.main --accounts-add registry/accounts_add.json ;;
+            accounts-sync) python -m watcher.main --accounts-sync registry/accounts_sync.json ;;
+            only-detect) python -m watcher.main --only-detect ;;
+            *)           python -m watcher.main ;;
+          esac
+
+      - name: Save state
+        id: save_state
+        if: always()
+        working-directory: state-branch
+        run: bash ../scripts/save_state.sh
+
+      - name: Preserve state when push fails
+        if: always() && steps.save_state.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: watcher-state-recovery-${{ github.run_id }}-${{ github.run_attempt }}
+          path: state-branch/state/
+          if-no-files-found: warn
+          retention-days: 14

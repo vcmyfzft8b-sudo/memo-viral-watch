@@ -1,0 +1,5 @@
+{
+ "note": "Our own Memo AI creators (fallback when Megasheet has no Memo AI campaign yet): accounts {handle: {market, source}}, videos {id: {...}}.",
+ "accounts": {},
+ "videos": {}
+}

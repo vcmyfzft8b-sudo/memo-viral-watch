@@ -1,0 +1,5 @@
+{
+ "version": 1,
+ "note": "Reviewed format definitions (hook, premise, beats, filming, product moment). Formats without one get a generated definition in state/format_references.json; a reviewed one here always wins.",
+ "formats": {}
+}
