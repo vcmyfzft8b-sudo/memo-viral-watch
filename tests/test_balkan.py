@@ -65,3 +65,13 @@ def test_slack_goes_to_the_users_direct_messages_when_a_bot_token_is_set():
     url = post.call_args[0][0]
     assert url == 'https://slack.com/api/chat.postMessage'
     assert post.call_args[1]['json']['channel'] == 'U123'
+
+
+def test_alerts_go_to_the_discord_channel_in_discord_format():
+    with mock.patch.dict('os.environ', {'DISCORD_ALERTS_WEBHOOK_URL': 'https://discord.com/api/webhooks/1/x'}, clear=True), \
+            mock.patch.object(notify.requests, 'post') as post:
+        post.return_value.status_code = 204
+        notify.push('🟢 VIRAL', '@a – *367k views*\n▶ <https://www.tiktok.com/@a/video/1|Open video>')
+    body = post.call_args[1]['json']
+    assert body['content'] == '**🟢 VIRAL**\n@a – **367k views**\n▶ [Open video](<https://www.tiktok.com/@a/video/1>)'
+    assert body['allowed_mentions'] == {'parse': []}

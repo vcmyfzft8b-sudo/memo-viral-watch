@@ -10,8 +10,8 @@ Every 6 hours (GitHub Actions) it:
 1. **Pulls every new video** of all active Astra AI creator accounts (`state/accounts.json` on the `state` branch)
    and keeps each video on a 7-day watchlist.
 2. **Re-checks every watchlist video** (views, likes, shares, saves) and stores a snapshot.
-3. **Alerts** you in Slack as a **personal message** (not a channel), optional phone push via ntfy, + a log line on
-   the private Notion page *Viral-Radar (interno)*:
+3. **Alerts** you in a **Discord channel just for this watcher** (Slack personal messages also work if set up),
+   optional phone push via ntfy, + a log line on the private Notion page *Viral-Radar (interno)*:
    - 🟡 **taking off** – 5k views within 6 h, 20k within 24 h, 50k within 48 h, or 10× the creator's usual views
    - 🟢 **viral** – 100k+ views within 7 days (20 of 269 recent Balkan Astra AI videos got there, 8 Oct 2026)
    - "weak" is added when shares + saves are below 1.5 % of views
@@ -36,11 +36,12 @@ Until then they are found via Lightreel (#memoai) and `registry/own_seed.json`.
 | Soniox, Lightreel, ntfy (same keys as JobStep) | `./scripts/set_secrets.sh` |
 | Claude (your subscription, never the API) | `claude setup-token`, then `./scripts/save_claude_token.sh` |
 | Notion (the NEW workspace) | integration "Memo Radar" + one page connected to it, copy its secret, `./scripts/save_notion_token.sh` |
-| Slack (personal messages) | Slack app "Memo Radar", copy its bot token (`xoxb-…`), `./scripts/save_slack.sh` (asks for your member ID) |
+| Discord alerts | channel → Edit → Integrations → Webhooks → "Memo Radar" → Copy Webhook URL, `./scripts/save_discord_alerts.sh` |
+| Slack (optional, personal messages) | Slack app "Memo Radar", copy its bot token (`xoxb-…`), `./scripts/save_slack.sh` |
 | Notion pages | Actions → Run workflow → `setup-notion` (builds list, all formats, archive, hook lab, radar) |
 | Creators | `accounts-sync` (checks the Lightreel candidates in `registry/accounts_sync.json`) |
 | First formats | `bootstrap` (turns the strongest viral videos of the last 30 days into pages; run again to continue) |
-| Check | `test-notify` (Slack), `test-claude`, `dry-run` |
+| Check | `test-notify` (Discord), `test-claude`, `dry-run` |
 
 ## Run manually
 
@@ -58,7 +59,7 @@ Offline tests (no Notion, Claude or other live calls): `python -m pytest -q test
 - `watcher/classify.py` – existing format or new one (Claude)
 - `watcher/builder.py` – page spec + checks · `watcher/notion.py` – page layout, list · `watcher/setup.py` – Notion setup
 - `watcher/audit.py`, `watcher/crosscheck.py`, `watcher/gate.py` – quality checks before anything reaches creators
-- `watcher/notify.py` – Slack (personal), ntfy, radar log
+- `watcher/notify.py` – Discord alerts channel, Slack (optional), ntfy, radar log
 - `registry/` – formats, reviewed references, approved scripts (empty at the start), example pages in our layout
 
 The code keeps the multi-market shape of the JobStep watcher: another market can be added in `config.json` and

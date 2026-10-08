@@ -1334,7 +1334,7 @@ def main():
         notify.push('✅ Memo Radar connected', f'The watcher runs every 6 hours and writes to you here as soon as an {SOURCE} '
                     'video from the Balkans takes off or goes viral.',
                     click='https://github.com/vcmyfzft8b-sudo/memo-viral-watch/actions')
-        print('test notification sent' + ('' if notify.slack_configured() else ' (no Slack secret set!)'))
+        print('test notification sent' + ('' if notify.slack_configured() else ' (no Discord or Slack secret set!)'))
         return
     if a.setup_notion:
         from . import setup
