@@ -17,7 +17,7 @@ OURS_RE = re.compile(r'\bmemo\s*-?\s*a\.?\s*i\b', re.I)  # "Memo AI", "MemoAI", 
 OURS_SITE = 'memoai.eu'  # what creators say / show as the website
 OURS_TAGS = '#memoai, #memo_ai'
 CUE = 'memo'                        # script cue: the moment the app is on screen
-CUE_LABEL = 'Memo AI · memoai.eu'   # label of that cue link on the pages
+CUE_LABEL = 'Memo AI · memoai.eu/creator'  # label of the cue link (opens the app's filming version)
 CATEGORY = 'AI study app'           # what both apps are, in a few words
 TOPIC = 'school, studying and exams'  # what the videos are about ("same topic alone is not the same format")
 

@@ -224,3 +224,38 @@ def hook_lab(cfg):
                                                                                     + [notion.mention(lab)]}})
     state.save('notion.json', pages)
     print(f'hook-lab: {done} blocks translated; not translated: {left or "none"}; lab = {url}')
+
+
+def relink(cfg, fmts, page_of):
+    """Every format page (live, held or archived): app links and their labels point to the current app link
+    (config links.memo). Only links change - no text, no layout."""
+    from .brand import CUE_LABEL, OURS_SITE
+    target = cfg['links']['memo']
+    changed = 0
+    for f in fmts:
+        for key in cfg['markets']:
+            pid = page_of(f, key)
+            for b in _walk(pid) if pid else []:
+                rich = (b.get(b['type']) or {}).get('rich_text')
+                if not rich:
+                    continue
+                new, touched = [], False
+                for x in rich:
+                    link = ((x.get('text') or {}).get('link') or {}).get('url', '')
+                    if x.get('type') == 'text' and OURS_SITE in link and link != target:
+                        label = x['plain_text']
+                        if label.startswith('Memo AI ·'):
+                            label = CUE_LABEL
+                        x = {'type': 'text', 'text': {'content': label, 'link': {'url': target}},
+                             'annotations': x.get('annotations', {})}
+                        touched = True
+                    elif x.get('type') == 'text':
+                        x = {'type': 'text', 'text': {'content': x['plain_text'], 'link': (x.get('text') or {}).get('link')},
+                             'annotations': x.get('annotations', {})}
+                    elif x.get('type') == 'mention':
+                        x = {'type': 'mention', 'mention': x['mention'], 'annotations': x.get('annotations', {})}
+                    new.append(x)
+                if touched:
+                    notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': new}})
+                    changed += 1
+    print(f'relink: {changed} blocks now link to {target}')
