@@ -25,7 +25,11 @@ for ch in t[i:]:
         continue
     else:
         break
-print(''.join(out))
+token = ''.join(out)
+# the terminal UI moves the cursor instead of printing new lines, so the next words ("Store this token
+# securely") can run straight into the token: it always ends right before them, with "AA"
+token = re.split(r'Store|Use|You', token)[0]
+print(token if token.endswith('AA') else '')
 PY
 )"
 if [[ "$TOKEN" != sk-ant-oat01-* || ${#TOKEN} -lt 100 ]]; then
