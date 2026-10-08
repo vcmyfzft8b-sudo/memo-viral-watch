@@ -20,6 +20,13 @@
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
+ "creatortipsbymonika": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791491762,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
  "foxara.vas.uci": {
   "checked_ugc": true,
   "lang": "sh",
@@ -48,6 +55,13 @@
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
+ "learn.with.darija": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791491762,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
  "learnwith___lea": {
   "checked_ugc": true,
   "lang": "sh",
@@ -59,6 +73,13 @@
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "learnwithanja": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791491762,
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
@@ -133,7 +154,6 @@
   "status": "active"
  },
  "smartishaangelisaa": {
-  "blocked": true,
   "blocked_reason": "not_ugc: Serbian General viral/engagement content; no mention of Astra AI or any promoted app.",
   "checked_ugc": true,
   "lang": "sh",
@@ -190,6 +210,13 @@
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
+ "studywithandja": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791491762,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
  "studywithandjela": {
   "checked_ugc": true,
   "lang": "sh",
@@ -201,6 +228,20 @@
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "studywithkarmen": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791491762,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "studywithreveka": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791491762,
   "source": "lightreel-2026-10-08",
   "status": "active"
  },

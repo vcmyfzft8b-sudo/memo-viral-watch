@@ -55,5 +55,29 @@
   "order": [],
   "ts": 1791491709,
   "type": "rerank"
+ },
+ {
+  "added": [
+   "creatortipsbymonika",
+   "learn.with.darija",
+   "learnwithanja",
+   "studywithandja",
+   "studywithkarmen",
+   "studywithreveka"
+  ],
+  "blocked": [],
+  "ts": 1791492155,
+  "type": "accounts_sync",
+  "unclear": [
+   "karla_studytok",
+   "kera.vas.uci",
+   "learnwithmina",
+   "learnwithniksi",
+   "learnwithsaraa",
+   "learnwithtika",
+   "study.with.mili",
+   "study.with.nataliaa",
+   "studywithanamarija"
+  ]
  }
 ]
