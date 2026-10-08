@@ -134,7 +134,7 @@ Return JSON {{"source_mentions_in_original": <number>, "voiceover": {str(voiceov
         extra = f'\n\nA reviewer rejected the current/previous version: {why}. Fix exactly that.' if why else ''
         spec = llm.chat_json(cfg['models']['build'], 'You are a senior UGC script writer. Reply with JSON only.',
                              prompt + extra, timeout=1200)
-        why = _validate(spec, n_orig, base)
+        why = _validate(spec, n_orig, base, lang)
         if not why:
             break
     else:
@@ -183,7 +183,7 @@ def max_words(n_orig):
     return int(n_orig * 1.1) if n_orig >= 60 else max(int(n_orig * 1.1), n_orig + 8)
 
 
-def _validate(spec, n_orig, source=None):
+def _validate(spec, n_orig, source=None, lang=None):
     script = spec.get('script') or []
     if not script:
         return 'empty script'
@@ -200,9 +200,10 @@ def _validate(spec, n_orig, source=None):
     if not any(s.get('cue') == CUE for s in script):
         return f'no sentence shows the app (cue "{CUE}")'
     from .markets import avoid_found
-    avoid = avoid_found(next(iter(TEXT)), text)
+    lang = lang or next(iter(TEXT))
+    avoid = avoid_found(lang, text)
     if avoid:
-        return f"ekavian words - write ijekavian: {', '.join(avoid[:6])}"
+        return f"{TEXT[lang]['avoid_reason']}: {', '.join(avoid[:6])}"
     return ''
 
 

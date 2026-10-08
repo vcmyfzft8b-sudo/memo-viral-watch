@@ -56,6 +56,18 @@
       "enabled": true,
       "discord_announce": false,
       "creator_channels": false
+    },
+    "sl": {
+      "lang": "sl",
+      "list_page": "",
+      "holder_page": "",
+      "archive_page": "",
+      "visual_hook_lab": "",
+      "discord_env": "DISCORD_WEBHOOK_URL_SL",
+      "discord_server": "",
+      "enabled": true,
+      "discord_announce": false,
+      "creator_channels": false
     }
   },
   "discord": {

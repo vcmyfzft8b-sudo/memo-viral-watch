@@ -194,7 +194,7 @@ Return JSON {{"example_same_format": true, "script_follows_example": true, "scri
     if avoid and not v['approved_matches']:
         passed = False
         v['script_ok'] = False
-        v['script_issues'].append(f"ekavian words - the pages are ijekavian: {', '.join(avoid[:6])}")
+        v['script_issues'].append(f"{TEXT[lang]['avoid_reason']}: {', '.join(avoid[:6])}")
     if passed and fingerprint(page_id) != observed_fingerprint:
         passed = False
         v['unverified'] = True

@@ -112,3 +112,12 @@ def test_tracked_creator_is_only_dropped_when_a_second_look_agrees(tmp_path):
         out = state.load('accounts.json', {})
     assert out['kept']['status'] == 'active' and not out['kept'].get('blocked')
     assert out['dropped']['blocked'] and out['dropped']['status'] == 'inactive'
+
+
+def test_slovenian_pages_have_every_text_and_reject_serbo_croatian_leftovers():
+    assert set(markets.TEXT['sl']) == set(markets.TEXT['sh'])
+    ok = 'Jutri pišem test iz biologije in nisem še ničesar odprla, ampak Memo AI mi je vse lepo razložil.'
+    assert builder.validate(spec(ok), {'text': ''}, lang='sl') == []
+    assert any('Croatian/Serbian' in p for p in builder.validate(spec(ok + ' Što ćeš?'), {'text': ''}, lang='sl'))
+    assert any('characters' in p for p in builder.validate(spec(ok + ' Đak.'), {'text': ''}, lang='sl'))
+    assert markets.lang_matches('sl', 'Slovenian') and not markets.lang_matches('sl', 'Croatian')

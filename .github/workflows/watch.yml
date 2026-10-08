@@ -8,7 +8,7 @@ on:
       mode:
         description: 'normal = alerts + build pages · only-detect = alerts only · dry-run = no alerts, no writes'
         type: choice
-        options: [normal, only-detect, dry-run, test-notify, test-claude, setup-notion, hook-lab, relayout, relink, accounts-sync, bootstrap, check-hot, test-discord, relist, weekly, own-sync, megasheet-check, lineup, lineup-apply, localize, localize-recheck, reword, reword-dry, audit, audit-failed, group-audit, group-audit-force, group-fix, approval-drafts, apply-approved, gate-rehearsal, align, standardize, accounts-add]
+        options: [normal, only-detect, dry-run, test-notify, test-claude, setup-notion, hook-lab, fill-markets, relayout, relink, accounts-sync, bootstrap, check-hot, test-discord, relist, weekly, own-sync, megasheet-check, lineup, lineup-apply, localize, localize-recheck, reword, reword-dry, audit, audit-failed, group-audit, group-audit-force, group-fix, approval-drafts, apply-approved, gate-rehearsal, align, standardize, accounts-add]
         default: normal
       test_viral:
         description: 'Optional: TikTok video URL -> send the full VIRAL Slack message for it (no Notion changes)'
@@ -22,6 +22,10 @@ on:
         description: 'bootstrap: how many viral videos to turn into starter formats in this run'
         required: false
         default: '5'
+      target:
+        description: 'hook-lab: market:notion_page_id of the Visual Hook Lab copy to translate (empty = the first market)'
+        required: false
+        default: ''
       notion_root_page:
         description: 'setup-notion: link of the Notion page to build under (empty = the one page shared with the integration)'
         required: false
@@ -107,6 +111,7 @@ jobs:
           EXAMPLE: ${{ github.event.inputs.example }}
           BOOTSTRAP_COUNT: ${{ github.event.inputs.bootstrap_count || '5' }}
           NOTION_ROOT_PAGE: ${{ github.event.inputs.notion_root_page }}
+          TARGET: ${{ github.event.inputs.target }}
         run: |
           if [ -n "$EXAMPLE" ]; then python -m watcher.main --set-example "$EXAMPLE"; exit 0; fi
           if [ -n "$DISCORD_MESSAGE_ID" ]; then python -m watcher.main --edit-discord "$DISCORD_MESSAGE_ID"; exit 0; fi
@@ -122,7 +127,8 @@ jobs:
             test-notify) python -m watcher.main --test-notify ;;
             test-claude) python -m watcher.main --test-claude ;;
             setup-notion) python -m watcher.main --setup-notion ;;
-            hook-lab)    python -m watcher.main --hook-lab ;;
+            hook-lab)    python -m watcher.main --hook-lab "${TARGET:--}" ;;
+            fill-markets) python -m watcher.main --fill-markets ;;
             relayout)    python -m watcher.main --relayout ;;
             relink)      python -m watcher.main --relink ;;
             bootstrap)   python -m watcher.main --bootstrap "$BOOTSTRAP_COUNT" ;;

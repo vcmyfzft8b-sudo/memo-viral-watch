@@ -79,29 +79,50 @@ def relayout_list(cfg):
 
 
 def notion_pages(cfg):
-    have = state.load('notion.json', {})
-    if have.get('radar_page'):
-        print('setup-notion: already set up:', have)
-        return have
-    root = _root()
+    """Creates what is missing (run again after adding a market): the radar, and per market a guide page
+    ("🇸🇮 Memo AI – navodila za ustvarjalce", like Parakeet's per-country Creator-Anleitung) holding its list, all format
+    pages, archive and Visual Hook Lab. Pages made before the guide pages existed are moved into their guide."""
+    pages = state.load('notion.json', {})
+    root = pages.get('root') or _root()
+    pages['root'] = root
     viral = hot.views_text(cfg['thresholds']['viral_views'])
-    out = {'root': root, 'markets': {}}
-    out['radar_page'] = _page(root, 'Viral-Radar (interno)', '📡', [
-        notion.para([notion.rt(f'Log of the watcher and staging area: new {OURS} format pages wait here until they pass '
-                               'every check. Not for creators.')])])
+    if not pages.get('radar_page'):
+        pages['radar_page'] = _page(root, 'Viral-Radar (interno)', '📡', [
+            notion.para([notion.rt(f'Log of the watcher and staging area: new {OURS} format pages wait here until they '
+                                   'pass every check. Not for creators.')])])
+    first_lab = None
     for key, m in cfg['markets'].items():
         T = TEXT[m['lang']]
-        lab = _page(root, 'Visual Hook Lab', '🎬', [
-            notion.block('heading_2', [notion.rt('Ideje za prve 3 sekunde')]),
-            *[notion.block('bulleted_list_item', [notion.rt(x)]) for x in HOOK_IDEAS]])
-        holder = _page(root, T['holder'], '🗂️')
-        archive = _page(root, T['archive'], '📦')
-        list_page = _page(root, T['list_title'], '👉', list_blocks(T, lab, holder, viral))
-        out['markets'][key] = {'list_page': list_page, 'holder_page': holder, 'archive_page': archive,
-                               'visual_hook_lab': f"https://app.notion.com/p/{lab.replace('-', '')}"}
-    state.save('notion.json', out)
-    print('setup-notion: created', out)
-    return out
+        mp = pages.setdefault('markets', {}).setdefault(key, {})
+        if not mp.get('guide'):
+            mp['guide'] = _page(root, f"{T['flag']} {T['guide']}", '📘')
+            for k in ('list_page', 'holder_page', 'archive_page'):  # older layout: these sat directly under the root
+                if mp.get(k):
+                    notion.move_page(mp[k], mp['guide'])
+            lab_id = (mp.get('visual_hook_lab') or '').rstrip('/').split('/')[-1].split('-')[-1]
+            if lab_id and lab_id.replace('-', '') not in {(x.get('visual_hook_lab') or '').split('/')[-1]
+                                                         for k2, x in pages['markets'].items() if k2 != key}:
+                notion.move_page(lab_id, mp['guide'])
+        guide = mp['guide']
+        if not mp.get('visual_hook_lab'):
+            other = next((x['visual_hook_lab'] for x in pages['markets'].values() if x.get('visual_hook_lab')), None)
+            if other:  # until this market's own (translated) lab exists - see hook_lab
+                mp['visual_hook_lab'] = other
+            else:
+                lab = _page(guide, 'Visual Hook Lab', '🎬', [
+                    notion.block('heading_2', [notion.rt('Ideje za prve 3 sekunde')]),
+                    *[notion.block('bulleted_list_item', [notion.rt(x)]) for x in HOOK_IDEAS]])
+                mp['visual_hook_lab'] = f"https://app.notion.com/p/{lab.replace('-', '')}"
+        if not mp.get('holder_page'):
+            mp['holder_page'] = _page(guide, T['holder'], '🗂️')
+        if not mp.get('archive_page'):
+            mp['archive_page'] = _page(guide, T['archive'], '📦')
+        if not mp.get('list_page'):
+            lab = mp['visual_hook_lab'].rstrip('/').split('/')[-1].split('-')[-1]
+            mp['list_page'] = _page(guide, T['list_title'], '👉', list_blocks(T, lab, mp['holder_page'], viral))
+        state.save('notion.json', pages)
+    print('setup-notion:', pages)
+    return pages
 
 
 # The Parakeet AI Visual Hook Lab (copied into this workspace with its videos) in Serbo-Croatian: the same page,
@@ -177,6 +198,77 @@ HOOK_LAB_SH = {
 }
 
 
+HOOK_LAB_SL = {
+    'Warum du Visual Hooks nutzen solltest ⁉️': 'Zakaj naj uporabljaš vizualne hooke ⁉️',
+    'Visual Hooks = mehr Aufmerksamkeit = mehr Views = mehr Geld.':
+        '**Vizualni hooki = več pozornosti = več ogledov = več denarja.**',
+    'Rede also nicht einfach nur in die Kamera – gib den Leuten einen Grund weiterzuschauen. 🔥':
+        'Zato ne govori samo v kamero – daj ljudem razlog, da gledajo naprej. 🔥',
+    'Das Visual-Hook-Rezept 🧪': 'Recept za vizualni hook 🧪',
+    'Du willst einen Visual Hook, der die Leute wirklich am Schauen hält? Nutze diese Formel:':
+        'Želiš vizualni hook, ob katerem ljudje res gledajo naprej? Uporabi to formulo:',
+    '⚡ Sofort loslegen': '**⚡ Začni takoj**',
+    'Die Action sollte schon ab dem ersten Frame laufen.': 'Dogajanje naj teče že od prve sličice.',
+    '🔄 In Bewegung bleiben': '**🔄 Ostani v gibanju**',
+    'Wähle etwas, das du natürlich weitermachen kannst, während du die Story erzählst.':
+        'Izberi nekaj, kar lahko naravno nadaljuješ, medtem ko pripoveduješ zgodbo.',
+    '📈 Fortschritt zeigen': '**📈 Pokaži napredek**',
+    'Anfang → Prozess → fertiges Ergebnis. Gib den Zuschauern etwas, das sie zu Ende sehen wollen 👀':
+        'Začetek → postopek → končni rezultat. Daj ljudem nekaj, kar želijo videti do konca 👀',
+    '🎯 Halte es mühelos': '**🎯 Naj bo videti lahkotno**',
+    'Du solltest weiterhin in die Kamera schauen, natürlich sprechen und die Story selbstbewusst erzählen können.':
+        'Še vedno moraš lahko gledati v kamero, naravno govoriti in samozavestno povedati zgodbo.',
+    'Die perfekte Mischung:': 'Popolna kombinacija:',
+    'Sofortige Action + durchgehende Bewegung + sichtbarer Fortschritt + natürliche Präsentation = 🔥':
+        'Takojšnje dogajanje + stalno gibanje + viden napredek + naraven nastop = 🔥',
+    'Hook-Experimente 🎲': 'Eksperimenti s hooki 🎲',
+    'Mit Visual Hooks solltest du immer weiter experimentieren – nicht einmal einstellen und vergessen. Verlass dich nicht jedes Mal auf denselben Hook.':
+        'Z vizualnimi hooki **ves čas preizkušaj kaj novega – ne nastavi enkrat in pozabi**. Ne zanašaj se vsakič na '
+        'isti hook.',
+    'Probiere verschiedene Aktionen aus. Wechsle die Objekte. Ändere das Setup. Mach es schräger, simpler, befriedigender oder überraschender.':
+        'Preizkusi različna dejanja. Menjaj predmete. Spremeni postavitev. Naj bo bolj čudno, preprostejše, prijetnejše '
+        'za gledanje ali bolj presenetljivo.',
+    'Je mehr du testest, desto schneller verstehst du, was bei deiner Audience funktioniert.':
+        'Več ko testiraš, hitreje ugotoviš, kaj deluje pri tvojem občinstvu.',
+    'Formate, die du priorisieren solltest 🔝': 'Formati, ki imajo prednost 🔝',
+    'Befriedigende Transformationen — Schälen, mischen, bauen, zerdrücken, auspressen oder etwas mit klarem Vorher-Nachher verändern.':
+        '**Transformacije, ki jih je prijetno gledati** — lupljenje, mešanje, sestavljanje, mečkanje, ožemanje ali '
+        'spreminjanje nečesa z jasnim prej-potem.',
+    'Haptische Texturen — Nutze Slime, Knete, Squishies, Essen oder alles Griffige, das sich gut anfühlt und befriedigend anzusehen ist.':
+        '**Teksture, ki se jih želiš dotakniti** — slime, plastelin, squishy igrače, hrana ali karkoli, kar je prijetno '
+        'na otip in lepo za gledanje.',
+    'Unerwartete Aktionen — Mach etwas leicht Schräges, Überraschendes oder „Falsches“, das die Zuschauer stoppen und hinschauen lässt.':
+        '**Nepričakovana dejanja** — naredi nekaj rahlo čudnega, presenetljivega ali »napačnega«, zaradi česar se ljudje '
+        'ustavijo in pogledajo.',
+    'Bauen, sortieren & anordnen — Staple, ordne, verbinde, trenne oder erstelle Muster mit kleinen Objekten.':
+        '**Sestavljanje, razvrščanje in urejanje** — zlagaj, razvrščaj, povezuj, ločuj ali delaj vzorce iz majhnih '
+        'predmetov.',
+    'Beispiele:': 'Primeri:',
+    'Mit dem Tacker spielen 🎒': 'Igranje s spenjačem 🎒',
+    'Mit Slime spielen 🍦': 'Igranje s slimom 🍦',
+    'Ein Getränk aufschäumen oder durchgehend umrühren 🍹': 'Penjenje pijače ali nenehno mešanje 🍹',
+    'Langsam ein Stück Obst schälen 🍌': 'Počasno lupljenje sadja 🍌',
+    'Ein Lebensmittel mit der Schere zerschneiden 🥒': 'Rezanje hrane s škarjami 🥒',
+    'Einen Snack in immer kleinere Stücke brechen 🍫': 'Lomljenje prigrizka na vedno manjše koščke 🍫',
+    'Falschgeld zerschneiden 💶': 'Rezanje lažnega denarja 💶',
+    'Wasser zwischen Behältern hin- und hergießen 🪣': 'Prelivanje vode iz posode v posodo 🪣',
+    'Eine Orange mit der Hand auspressen 🍊': 'Ožemanje pomaranče z roko 🍊',
+    'Zahnpasta auf die falsche Seite der Zahnbürste geben 🦷': 'Zobna pasta na napačno stran zobne ščetke 🦷',
+    'Könntest du das nächste Beispiel liefern? 🤯': 'Si lahko ti naslednji primer? 🤯',
+    'Probier eins aus, mach es zu deinem eigenen und teste, wie es performt. Wenn es gut läuft, kannst du dir einen Platz auf dieser Anleitungsseite als Beispiel für andere Creator sichern. 🔥':
+        'Preizkusi enega, prilagodi ga sebi in testiraj, kako se obnese. Če se dobro obnese, **si lahko prislužiš mesto '
+        'na tej strani kot primer za druge ustvarjalce. 🔥**',
+    'Zerdrücke Cornflakes mit der Hand auf dem Tisch 🥣': 'Z roko zdrobi koruzne kosmiče na mizi 🥣',
+    'Gieße Soße direkt auf den Tisch und tunke Chips hinein 🌶️': 'Polij omako naravnost na mizo in vanjo pomakaj čips 🌶️',
+    'Papier immer wieder zerknüllen und glattstreichen 📄': 'Papir vedno znova zmečkaj in zgladi 📄',
+    'Büroklammern zu einer langen Kette verbinden 📎': 'Sponke za papir spenjaj v dolgo verigo 📎',
+    'Ein Stück Obst von außen abbürsten 🍎🪥': 'S ščetko od zunaj očisti kos sadja 🍎🪥',
+    'Einen Keks als Geschenk einpacken 🍪🎁': 'Zavij piškot kot darilo 🍪🎁',
+    'Süßigkeiten mit einer Pinzette aufheben und sortieren 🍬🔬': 'S pinceto pobiraj in razvrščaj sladkarije 🍬🔬',
+    'Sticker oder Pflaster auf Obst kleben 🍓🩹': 'Lepi nalepke ali obliže na sadje 🍓🩹',
+}
+
+
 def _key(text):
     return ''.join((text or '').replace('**', '').split())
 
@@ -188,42 +280,58 @@ def _walk(block_id):
             yield from _walk(b['id'])
 
 
-def hook_lab(cfg):
-    """The copied Parakeet Visual Hook Lab (👀, under the main page): text into Serbo-Croatian, then it becomes the
-    lab every page links to (state/notion.json + the 🚨 rule on the list). Videos and layout stay as they are."""
+TABLES = {'sh': HOOK_LAB_SH, 'sl': HOOK_LAB_SL}
+
+
+def hook_lab(cfg, market=None, page=None):
+    """A copy of the Parakeet Visual Hook Lab (videos included) -> this market's language, moved into the market's
+    guide page, then it becomes the lab every page of that market links to (state/notion.json + the 🚨 rule).
+    The copy may be the German original or another market's translation; only the words change."""
     pages = state.load('notion.json', {})
-    root = pages.get('root')
-    lab = os.environ.get('HOOK_LAB_PAGE') or next(
-        (b['id'] for b in notion.children(root) if b['type'] == 'child_page' and 'Visual Hook Lab' in b['child_page']['title']
+    market = market or next(iter(cfg['markets']))
+    mp = pages['markets'][market]
+    lang = cfg['markets'][market]['lang']
+    lab = page or next(
+        (b['id'] for b in notion.children(pages['root']) if b['type'] == 'child_page' and 'Visual Hook Lab' in b['child_page']['title']
          and (notion.api('GET', f"/pages/{b['id']}").get('icon') or {}).get('emoji') == '👀'), None)
     if not lab:
-        raise SystemExit('hook-lab: no 👀 Visual Hook Lab under the main page')
-    table = {_key(k): v for k, v in HOOK_LAB_SH.items()}
+        raise SystemExit('hook-lab: no 👀 Visual Hook Lab copy found')
+    target = TABLES[lang]
+    table = {}
+    for de, value in target.items():  # match the German text and every other language's version of it
+        table[_key(de)] = value
+        for other in TABLES.values():
+            if de in other:
+                table[_key(other[de])] = value
     done, left = 0, []
     for b in _walk(lab):
-        data = b.get(b['type']) or {}
-        rich = data.get('rich_text')
+        rich = (b.get(b['type']) or {}).get('rich_text')
         if not rich:
             continue
         text = ''.join(x.get('plain_text', '') for x in rich)
         new = table.get(_key(text))
         if new is None:
-            if any(c.isalpha() for c in text) and _key(text) not in {_key(v) for v in HOOK_LAB_SH.values()}:
+            if any(c.isalpha() for c in text):
                 left.append(text[:80])
             continue
-        notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': notion.md(new)}})
+        if _key(new) != _key(text):
+            notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': notion.md(new)}})
         done += 1
+    notion.api('PATCH', f'/pages/{lab}', {'icon': {'type': 'emoji', 'emoji': '👀'},
+                                          'properties': {'title': {'title': [notion.rt('Visual Hook Lab')]}}})
+    if mp.get('guide'):
+        parent = (notion.api('GET', f'/pages/{lab}').get('parent') or {}).get('page_id', '')
+        if parent.replace('-', '') != mp['guide'].replace('-', ''):
+            notion.move_page(lab, mp['guide'])
     url = f"https://app.notion.com/p/{lab.replace('-', '')}"
-    for key in cfg['markets']:
-        pages.setdefault('markets', {}).setdefault(key, {})['visual_hook_lab'] = url
-        rule_page = pages['markets'][key].get('list_page')
-        for b in notion.children(rule_page) if rule_page else []:
-            if b['type'] == 'callout' and ((b['callout'].get('icon') or {}).get('emoji') == '🚨'):
-                T = TEXT[cfg['markets'][key]['lang']]
-                notion.api('PATCH', f"/blocks/{b['id']}", {'callout': {'rich_text': notion.md(T['visual_rule'])
-                                                                                    + [notion.mention(lab)]}})
+    mp['visual_hook_lab'] = url
+    T = TEXT[lang]
+    for b in notion.children(mp['list_page']) if mp.get('list_page') else []:
+        if b['type'] == 'callout' and ((b['callout'].get('icon') or {}).get('emoji') == '🚨'):
+            notion.api('PATCH', f"/blocks/{b['id']}", {'callout': {'rich_text': notion.md(T['visual_rule'])
+                                                                               + [notion.mention(lab), notion.rt('.')]}})
     state.save('notion.json', pages)
-    print(f'hook-lab: {done} blocks translated; not translated: {left or "none"}; lab = {url}')
+    print(f'hook-lab {market}: {done} blocks in {T["lang_name"]}; not matched: {left or "none"}; lab = {url}')
 
 
 def relink(cfg, fmts, page_of):

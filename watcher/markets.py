@@ -54,7 +54,7 @@ TEXT = {
                       'Nakon toga nastavi s listom.'],
         'visual_rule': '**Vizuelni hook je obavezan u svakom videu!** Ideje imaš u ',
         'hot_suffix': '  ({n} videa s više od {views} pregleda u zadnjih 7 dana)',
-        'holder': 'Svi formati', 'archive': 'Arhiva formata',
+        'holder': 'Svi formati', 'archive': 'Arhiva formata', 'guide': 'Memo AI – upute za kreatore',
         'discord': '@everyone 🔥 **Ovaj format upravo postaje viralan!**\n\n**{title}**\n\n{n} videa s više od {views} '
                    'pregleda u zadnjih 7 dana. 👉 Snimi ga **sada, kao sljedeći**.\n\nNaći ćeš ga na vrhu svoje liste '
                    'formata – pod upravo ovim naslovom.',
@@ -64,9 +64,60 @@ TEXT = {
         # Characters that must not be left in the finished text (Polish/Czech/German/Spanish/Slovenian leftovers).
         'foreign': 'łąęńśźřůěťďňäöüßñ',
         # Unambiguous ekavian (Serbian-standard) forms: the pages are ijekavian.
+        'avoid_reason': 'ekavian words (the pages are ijekavian)',
         'avoid_words': 'lepo lep lepa lepe vreme deca dece dete reč reči mesto mesta pesma videti razumeti hteo '
                        'htela devojka devojke mleko uvek gde ovde onde negde nigde sneg cena cene ponedeljak nedelja '
                        'nedelju belo beli bela primer primeri primera ocena ocene uspeh uspeha',
+    },
+    'sl': {
+        'flag': '🇸🇮', 'name': 'Slovenija', 'lang_name': 'Slovenian',
+        'style': ('casual spoken standard Slovenian like a real Slovenian TikTok creator (not a dialect), ti-form, natural, '
+                  'not formal, not a literal translation - and never Croatian/Serbian words or forms (the source videos are '
+                  'Serbo-Croatian: "što", "koji", "već", "gdje" must become "kaj", "ki", "že", "kje"); the speaker\'s own '
+                  'past-tense verbs in the FEMININE form (naučila sem, slikala sem) - most creators are women and a man '
+                  'simply switches the ending'),
+        'address': 'ti (informal singular; "vi" only if the original speaks to a group - then consistently)',
+        'codes': ('sl',),
+        'names': ('slovenian', 'slovene'),
+        'video_heading': 'Video za navdih', 'source': 'Original na TikToku',
+        'inspo_note': [
+            '**Pomembno:** Posnemi svoj video po scenariju spodaj. Video za navdih ti pokaže le tempo, vzdušje, svetlobo '
+            'in kote kamere – kako izgleda zaslon in kako pokažeš aplikacijo.',
+            f'V videu je uporabljena aplikacija {SOURCE}. Naredi vse enako, le z aplikacijo {OURS}: pokaži vse, kar se vidi '
+            f'v videu za navdih – odpri {OURS} v trenutkih, ko se odpre {SOURCE}, in ga pokaži na enak način. {SOURCE} se v '
+            'tvojem videu ne sme nikjer videti ali slišati.'],
+        'inspo_note_same': '**Pomembno:** Video za navdih je v slovenščini in prikazuje točno ta format – vzemi ga za zgled '
+                           'za tempo, vzdušje, svetlobo, kote kamere in način, kako pokažeš aplikacijo. Povej pa naš '
+                           'scenarij spodaj, ne besedila iz videa.',
+        'title_h': 'NASLOV', 'script_h': '💬SCENARIJ', 'hook_h': '🎬 VIZUALNI HOOK', 'res_h': 'GRADIVO',
+        'sub_voice': 'Samodejni podnapisi', 'sub_silent': 'Glasba iz knjižnice platforme, brez glasu',
+        'silent_label': 'Besedilo na zaslonu – ne govori:',
+        'asset_cue': '(📎 {name} – glej gradivo) ', 'asset_todo': 'še pripraviti',
+        'app_line': f'Takoj ko se pojavi {OURS}, posnemi sebe, kako uporabljaš aplikacijo na telefonu – na vsakem mestu '
+                    's povezavo v scenariju. Čakanje na nalaganje izreži.',
+        'return_line': 'Za zadnji stavek se vrni v kamero.',
+        'scores_line': 'X in Y v scenariju: preberi številko, ki ti jo pokaže aplikacija.',
+        'required_line': '🚨👇 Vizualni hook je obvezen v vsakem videu!',
+        'draft_prefix': 'OSNUTEK – ',
+        'list_title': 'Kakšne videe snemaš (OBVEZNO)', 'list_h1': 'Kako snemaš svoje videe',
+        'list_heading': 'SNEMAJ ZDAJ: ti formati',
+        'list_fire': ['Snemaj formate po vrsti, od zgoraj navzdol, in pojdi čez cel seznam. Drži se scenarija, vizualnega '
+                      'hooka in gradiva na vsaki strani.',
+                      '**Samo če kateri video preseže {views} ogledov**, ta format snemaj vedno znova – dokler je viralen. '
+                      'Potem nadaljuj s seznamom.'],
+        'visual_rule': '**Vizualni hook je obvezen v vsakem videu!** Ideje najdeš v ',
+        'hot_suffix': '  ({n} videov z več kot {views} ogledi v zadnjih 7 dneh)',
+        'holder': 'Vsi formati', 'archive': 'Arhiv formatov', 'guide': 'Memo AI – navodila za ustvarjalce',
+        'discord': '@everyone 🔥 **Ta format ravno postaja viralen!**\n\n**{title}**\n\n{n} videov z več kot {views} '
+                   'ogledi v zadnjih 7 dneh. 👉 Posnemi ga **zdaj, kot naslednjega**.\n\nNajdeš ga na vrhu svojega '
+                   'seznama formatov – pod točno tem naslovom.',
+        'hot_header': 'Ravno postaja viralno – posnemi najprej to',
+        'stopwords': 'je in v da se na za ne so to od s z ki kaj kot ali sem si mi ti jaz ta tudi samo še bi biti ima ni '
+                     'vse tako ko moj moja tvoj tvoja ker pa že zelo lahko kako',
+        'foreign': 'ćđłąęńśźřůěťďňäöüßñ',
+        'avoid_reason': 'Croatian/Serbian words (the page is Slovenian)',
+        'avoid_words': 'što šta koji koja koje već ovo ovaj ova jer gdje gde nešto ništa uvijek uvek sutra trebaš '
+                       'možeš puno',
     },
 }
 # Slovenian looks a lot like Serbo-Croatian in captions; it is only used to tell the two apart (Slovenia is not one of
@@ -108,7 +159,7 @@ def lang_matches(lang, language):
 
 
 def avoid_found(lang, text):
-    """Words of the other standard (ekavian forms on ijekavian pages)."""
+    """Words that do not belong on this market's pages (ekavian forms on ijekavian pages, Serbo-Croatian on Slovenian)."""
     bad = set(TEXT[lang].get('avoid_words', '').split())
     return sorted({w for w in re.findall(r'\w+', (text or '').lower()) if w in bad})
 

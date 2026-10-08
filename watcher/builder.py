@@ -54,7 +54,8 @@ RULES = """RULES
 
 
 COUNTRY = {'sh': 'the whole region (Croatia, Bosnia and Herzegovina, Serbia, Montenegro) - prefer things every '
-                 'student there knows; never Slovenian ones'}
+                 'student there knows; never Slovenian ones',
+           'sl': 'Slovenia (Slovenian schools, the Slovenian matura, grades 1-5, Slovenian cities, shops and discounts)'}
 
 SCHEMA = """Return JSON:
 {"page_title": "...", "icon": "<one emoji>", "title_hook": "...", "voiceover": true,
@@ -123,7 +124,7 @@ def hook_lines(spec, lang=PRIMARY):
     if has_x or has_y:
         line = T['scores_line']
         if not (has_x and has_y):  # only one score in the script -> only name that one
-            line = re.sub(r'X\s+(und|et|e|y|i)\s+Y', 'X' if has_x else 'Y', line)
+            line = re.sub(r'X\s+(und|et|e|y|i|in)\s+Y', 'X' if has_x else 'Y', line)
         lines.append(line)
     return lines
 
@@ -159,7 +160,7 @@ def validate(spec, transcript, lang=PRIMARY):
         problems.append('Cyrillic letters in the text (Latin script only)')
     avoid = avoid_found(lang, blob)
     if avoid:
-        problems.append(f"ekavian words (pages are ijekavian): {', '.join(avoid[:6])}")
+        problems.append(f"{T['avoid_reason']}: {', '.join(avoid[:6])}")
     orig_words = len(transcript.get('text', '').split())
     new_words = sum(len(s.get('text', '').split()) for s in spec.get('script', []))
     if spec.get('voiceover', True) and orig_words >= 20:

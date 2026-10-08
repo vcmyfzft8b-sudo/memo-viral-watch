@@ -956,7 +956,7 @@ def standardize(only=None):
             try:
                 blocks = notion.children(pid)
                 has_video = any(b['type'] == 'video' for b in blocks)
-                has_res = any(b['type'].startswith('heading') and re.search(r'🔧|MATERIJALI', _plain_text(b), re.I) for b in blocks)
+                has_res = any(b['type'].startswith('heading') and re.search(r'🔧|MATERIJALI|GRADIVO', _plain_text(b), re.I) for b in blocks)
                 if not (has_video and has_res):
                     ex = (f.get('inspo') or {}).get(m, {})
                     url = ex.get('url') if ex.get('strict') else origs.get(f['id']) or f.get('source_video')
@@ -1114,7 +1114,8 @@ def main():
     ap.add_argument('--force', action='store_true', help='with --group-audit/--group-fix: ignore cached group results')
     ap.add_argument('--relist', action='store_true', help='only re-draw the format lists (order + going-viral section)')
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
-    ap.add_argument('--hook-lab', action='store_true', help='the copied Parakeet Visual Hook Lab -> Serbo-Croatian, linked everywhere')
+    ap.add_argument('--hook-lab', default='', nargs='?', const='-', help='[market:page_id] a copy of the Parakeet Visual Hook Lab -> that market\'s language, linked from its pages')
+    ap.add_argument('--fill-markets', action='store_true', help='every market gets its missing pages (live and waiting formats), then re-sort')
     ap.add_argument('--relayout', action='store_true', help='rebuild the list page in the current layout, then re-sort it')
     ap.add_argument('--relink', action='store_true', help='point every app link on the format pages to config links.memo')
     ap.add_argument('--bootstrap', type=int, default=0, help='N: build formats from the strongest viral videos of the last 30 days (max N)')
@@ -1362,7 +1363,21 @@ def main():
         return
     if a.hook_lab:
         from . import setup
-        setup.hook_lab(load_config())
+        market, _, page = (a.hook_lab if ':' in a.hook_lab else ':').partition(':')
+        setup.hook_lab(load_config(), market or None, page or None)
+        return
+    if a.fill_markets:
+        cfg = load_config()
+        mkts = M.load(cfg)
+        for mk in mkts:
+            fill_market(mk['key'])
+        fmts, history, meta = load_formats(), state.load('history.json', {}), state.load('meta.json', {})
+        accounts = state.load('accounts.json', {})
+        CTX.update({'meta': meta, 'accounts': accounts})
+        gate.retry_pending(fmts, mkts, cfg, history, accounts, meta, page_of, set_page, make_page, rebuild_page, rerank)
+        state.save('formats.json', fmts)
+        state.save('meta.json', meta)
+        rerank(mkts, fmts, history, cfg, force=True)
         return
     if a.relink:
         from . import setup

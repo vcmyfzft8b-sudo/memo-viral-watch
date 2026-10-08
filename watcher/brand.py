@@ -28,8 +28,8 @@ or from the gallery) of notes, textbook pages, worksheets or the board into: not
 transcript, flashcards, a quiz with explanations, a graded practice test (percentage + feedback per answer), a mind
 map, a podcast, read-aloud, a voice tutor that explains the material out loud topic by topic (you can interrupt it),
 and an AI chat about the note. From a photo of a worksheet/exercises it writes notes that explain the method step by
-step with worked examples. Making a note takes a few minutes (cut the waiting). The app speaks Croatian, Bosnian and
-Serbian. Free start: one free note, then a 3-day free trial.
+step with worked examples. Making a note takes a few minutes (cut the waiting). The app speaks Slovenian, Croatian,
+Bosnian and Serbian. Free start: one free note, then a 3-day free trial.
 It does NOT have: an instant answer to a single photographed task ("snap and solve"), checking/grading the user's own
 homework, photos in the chat, PDF export, pasting text, an Android app from the store. If the original shows an Astra
 AI feature Memo AI does not have, replace that sentence with an equivalent step that exists (e.g. snap and solve ->
