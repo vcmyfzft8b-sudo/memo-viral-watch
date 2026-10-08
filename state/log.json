@@ -27,5 +27,28 @@
   "ts": 1791490875,
   "type": "accounts_sync",
   "unclear": []
+ },
+ {
+  "added": [
+   "helenci_study",
+   "karla_studytok",
+   "kera.vas.uci",
+   "learnwith___lea",
+   "learnwithmateja",
+   "learnwithmina",
+   "learnwithniksi",
+   "learnwithsaraa",
+   "learnwithsaralara",
+   "learnwithtika",
+   "study.with.mili",
+   "study.with.nataliaa",
+   "studywithanamarija"
+  ],
+  "blocked": [
+   "smartishaangelisaa"
+  ],
+  "ts": 1791491542,
+  "type": "accounts_sync",
+  "unclear": []
  }
 ]

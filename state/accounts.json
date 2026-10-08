@@ -27,6 +27,34 @@
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
+ "helenci_study": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "karla_studytok": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "kera.vas.uci": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "learnwith___lea": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
  "learnwithandj": {
   "checked_ugc": true,
   "lang": "sh",
@@ -41,10 +69,45 @@
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
+ "learnwithmateja": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "learnwithmina": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "learnwithniksi": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
  "learnwithpaola": {
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "learnwithsaraa": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "learnwithsaralara": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
@@ -62,10 +125,33 @@
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
+ "learnwithtika": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
  "smartishaangelisaa": {
+  "blocked": true,
+  "blocked_reason": "not_ugc: Serbian General viral/engagement content; no mention of Astra AI or any promoted app.",
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
+  "source": "lightreel-2026-10-08",
+  "status": "inactive"
+ },
+ "study.with.mili": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "study.with.nataliaa": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
@@ -94,6 +180,13 @@
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
+  "source": "lightreel-2026-10-08",
+  "status": "active"
+ },
+ "studywithanamarija": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1791490995,
   "source": "lightreel-2026-10-08",
   "status": "active"
  },

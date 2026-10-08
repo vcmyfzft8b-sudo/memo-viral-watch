@@ -1,4 +1,64 @@
 {
+ "7680648946309401889": {
+  "backfill": true,
+  "created": 1788290437,
+  "format": null,
+  "handle": "helenci_study",
+  "hook": "High school phases you must avoid",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 335500,
+  "views_7d": 335500
+ },
+ "7681029072339750177": {
+  "backfill": true,
+  "created": 1788378942,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "Which subjects lower your average?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 30300,
+  "views_7d": 30300
+ },
+ "7681415987215863072": {
+  "backfill": true,
+  "created": 1788469028,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "Juice in ice cream",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 121000,
+  "views_7d": 121000
+ },
+ "7681766098693393696": {
+  "backfill": true,
+  "created": 1788550545,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "When does your school start?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 11400,
+  "views_7d": 11400
+ },
+ "7682364496035204385": {
+  "backfill": true,
+  "created": 1788689870,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "Tips for 7th grade",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 44000,
+  "views_7d": 44000
+ },
  "7682410227588795681": {
   "backfill": true,
   "created": 1788700518,
@@ -35,6 +95,18 @@
   "views": 1992,
   "views_7d": 1992
  },
+ "7683177092946644257": {
+  "backfill": true,
+  "created": 1788879067,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "School phases you MUST skip",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 13400,
+  "views_7d": 13400
+ },
  "7683482142227172630": {
   "backfill": true,
   "created": 1788950092,
@@ -70,6 +142,18 @@
   "mature": true,
   "views": 9715,
   "views_7d": 9715
+ },
+ "7683950978386742560": {
+  "backfill": true,
+  "created": 1789059252,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "3 best apps",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 173500,
+  "views_7d": 173500
  },
  "7684002344635206930": {
   "backfill": true,
@@ -131,6 +215,18 @@
   "views": 18100,
   "views_7d": 18100
  },
+ "7685513394341956881": {
+  "backfill": true,
+  "created": 1789423030,
+  "format": null,
+  "handle": "kera.vas.uci",
+  "hook": "Tag your elementary school BFF",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 42600,
+  "views_7d": 42600
+ },
  "7685738430512352534": {
   "backfill": true,
   "created": 1789475425,
@@ -166,6 +262,18 @@
   "mature": true,
   "views": 37000,
   "views_7d": 37000
+ },
+ "7685855726341786912": {
+  "backfill": true,
+  "created": 1789502735,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "5 unwritten laws at school",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 30400,
+  "views_7d": 30400
  },
  "7685889144836328724": {
   "backfill": true,
@@ -227,6 +335,18 @@
   "views": 1061,
   "views_7d": 1061
  },
+ "7686960503251389729": {
+  "backfill": true,
+  "created": 1789759961,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "I'm going on a date",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 22800,
+  "views_7d": 22800
+ },
  "7686988856062774548": {
   "backfill": true,
   "created": 1789766563,
@@ -239,6 +359,18 @@
   "views": 2103,
   "views_7d": 2103
  },
+ "7687344292171369761": {
+  "backfill": true,
+  "created": 1789849319,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "Are you going to any of these colleges?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 1816,
+  "views_7d": 1816
+ },
  "7687358418922900756": {
   "backfill": true,
   "created": 1789852608,
@@ -250,6 +382,18 @@
   "mature": true,
   "views": 133700,
   "views_7d": 133700
+ },
+ "7687369886888168721": {
+  "backfill": true,
+  "created": 1789855278,
+  "format": null,
+  "handle": "kera.vas.uci",
+  "hook": "Tag a friend whose birthday is today",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 48200,
+  "views_7d": 48200
  },
  "7687617383103515936": {
   "backfill": true,
@@ -298,6 +442,18 @@
   "mature": true,
   "views": 1735,
   "views_7d": 1735
+ },
+ "7688109239885171969": {
+  "backfill": true,
+  "created": 1790027422,
+  "format": null,
+  "handle": "kera.vas.uci",
+  "hook": "Do you prefer first or second shift?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 44300,
+  "views_7d": 44300
  },
  "7688369144219159840": {
   "backfill": true,
@@ -395,6 +551,18 @@
   "views": 818,
   "views_7d": 818
  },
+ "7689559558414421281": {
+  "backfill": true,
+  "created": 1790365101,
+  "format": null,
+  "handle": "helenci_study",
+  "hook": "Ranked list of high schools: comment if yours is missing",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 28300,
+  "views_7d": 28300
+ },
  "7689588458137947412": {
   "backfill": true,
   "created": 1790371830,
@@ -430,6 +598,18 @@
   "mature": true,
   "views": 12900,
   "views_7d": 12900
+ },
+ "7689962198042545440": {
+  "backfill": true,
+  "created": 1790458848,
+  "format": null,
+  "handle": "helenci_study",
+  "hook": "Study hack that's great for biology, try it",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 43200,
+  "views_7d": 43200
  },
  "7689966258061626632": {
   "backfill": true,
@@ -467,6 +647,18 @@
   "views": 311,
   "views_7d": 311
  },
+ "7690266924109860148": {
+  "backfill": true,
+  "created": 1790529797,
+  "format": null,
+  "handle": "learnwithmina",
+  "hook": "3 things I wish I knew before high school",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 9094,
+  "views_7d": 9094
+ },
  "7690326955073293576": {
   "backfill": true,
   "created": 1790543774,
@@ -491,6 +683,42 @@
   "views": 866,
   "views_7d": 866
  },
+ "7690654361739087124": {
+  "backfill": true,
+  "created": 1790620005,
+  "format": null,
+  "handle": "learnwithmina",
+  "hook": "Top 3 cheat-sheet methods: hands, smart watch, phone",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 13500,
+  "views_7d": 13500
+ },
+ "7690657018620792096": {
+  "backfill": true,
+  "created": 1790620623,
+  "format": null,
+  "handle": "helenci_study",
+  "hook": "My ranking of energy drinks: do you agree?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 5727,
+  "views_7d": 5727
+ },
+ "7690665942229028116": {
+  "backfill": true,
+  "created": 1790622701,
+  "format": null,
+  "handle": "learnwithsaraa",
+  "hook": "5 types of students every class has (part 2)",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 39900,
+  "views_7d": 39900
+ },
  "7690679796300270880": {
   "backfill": true,
   "created": 1790625927,
@@ -502,6 +730,18 @@
   "mature": true,
   "views": 1057,
   "views_7d": 1057
+ },
+ "7690693334498561311": {
+  "backfill": true,
+  "created": 1790629079,
+  "format": null,
+  "handle": "learnwithniksi",
+  "hook": "What's your favorite energy drink?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 5478,
+  "views_7d": 5478
  },
  "7690694826181872897": {
   "backfill": true,
@@ -527,6 +767,18 @@
   "views": 7959,
   "views_7d": 7959
  },
+ "7690704294751866133": {
+  "backfill": true,
+  "created": 1790631631,
+  "format": null,
+  "handle": "learnwithmateja",
+  "hook": "Top 5 energy drinks ranked",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 32900,
+  "views_7d": 32900
+ },
  "7690707982862028038": {
   "backfill": true,
   "created": 1790632489,
@@ -538,6 +790,18 @@
   "mature": true,
   "views": 5049,
   "views_7d": 5049
+ },
+ "7690712730742885638": {
+  "backfill": true,
+  "created": 1790633595,
+  "format": null,
+  "handle": "kera.vas.uci",
+  "hook": "Which type of student do you hate the most?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 68300,
+  "views_7d": 68300
  },
  "7690908305681616148": {
   "backfill": true,
@@ -599,6 +863,42 @@
   "views": 1981,
   "views_7d": 1981
  },
+ "7690952218689735968": {
+  "backfill": true,
+  "created": 1790689355,
+  "format": null,
+  "handle": "studywithanamarija",
+  "hook": "The BEST app for studying anatomy",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 1449,
+  "views_7d": 1449
+ },
+ "7690970613116144902": {
+  "backfill": true,
+  "created": 1790693638,
+  "format": null,
+  "handle": "study.with.mili",
+  "hook": "Do you think I'm right? School opinion",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 26200,
+  "views_7d": 26200
+ },
+ "7691018504438418721": {
+  "backfill": true,
+  "created": 1790704788,
+  "format": null,
+  "handle": "helenci_study",
+  "hook": "Deleting in 2h: study hack professors don't want you to see",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 10900,
+  "views_7d": 10900
+ },
  "7691029680085880096": {
   "backfill": true,
   "created": 1790707390,
@@ -610,6 +910,18 @@
   "mature": true,
   "views": 5126,
   "views_7d": 5126
+ },
+ "7691034997150453013": {
+  "backfill": true,
+  "created": 1790708628,
+  "format": null,
+  "handle": "learnwithsaraa",
+  "hook": "Do you love this? Relatable school bait",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 895,
+  "views_7d": 895
  },
  "7691043857005284629": {
   "backfill": true,
@@ -635,6 +947,18 @@
   "views": 541,
   "views_7d": 541
  },
+ "7691057022703373599": {
+  "backfill": true,
+  "created": 1790713756,
+  "format": null,
+  "handle": "learnwithniksi",
+  "hook": "Worst school subject in your opinion?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 1609,
+  "views_7d": 1609
+ },
  "7691057975074557204": {
   "backfill": true,
   "created": 1790713978,
@@ -646,6 +970,18 @@
   "mature": true,
   "views": 1909,
   "views_7d": 1909
+ },
+ "7691061782068219156": {
+  "backfill": true,
+  "created": 1790714865,
+  "format": null,
+  "handle": "learnwithmateja",
+  "hook": "Top 5 cheat-sheet methods for copying",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 9992,
+  "views_7d": 9992
  },
  "7691062135501245704": {
   "backfill": true,
@@ -659,6 +995,18 @@
   "views": 7100,
   "views_7d": 7100
  },
+ "7691065291446570260": {
+  "backfill": true,
+  "created": 1790715682,
+  "format": null,
+  "handle": "learnwithmina",
+  "hook": "Do you agree? Opinion bait about school",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 5863,
+  "views_7d": 5863
+ },
  "7691071802373623058": {
   "backfill": true,
   "created": 1790717198,
@@ -670,6 +1018,18 @@
   "mature": true,
   "views": 107900,
   "views_7d": 107900
+ },
+ "7691081019658669318": {
+  "backfill": true,
+  "created": 1790719344,
+  "format": null,
+  "handle": "kera.vas.uci",
+  "hook": "Are you better than 99% of people?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 105800,
+  "views_7d": 105800
  },
  "7691215563267362080": {
   "backfill": true,
@@ -707,6 +1067,18 @@
   "views": 1654,
   "views_7d": 1654
  },
+ "7691300344445275410": {
+  "backfill": true,
+  "created": 1790770409,
+  "format": null,
+  "handle": "learnwithtika",
+  "hook": "Tell me I'm not the only one, plus this will help",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 2010,
+  "views_7d": 2010
+ },
  "7691305657877728530": {
   "backfill": true,
   "created": 1790771646,
@@ -730,6 +1102,18 @@
   "mature": true,
   "views": 44300,
   "views_7d": 44300
+ },
+ "7691331943400557856": {
+  "backfill": true,
+  "created": 1790777766,
+  "format": null,
+  "handle": "studywithanamarija",
+  "hook": "POV: you remember the exact slide during the exam but didn't subscribe to Brain Premium",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 2130,
+  "views_7d": 2130
  },
  "7691346836547833140": {
   "backfill": true,
@@ -767,6 +1151,18 @@
   "views": 531,
   "views_7d": 531
  },
+ "7691354865292856628": {
+  "backfill": true,
+  "created": 1790783103,
+  "format": null,
+  "handle": "study.with.mili",
+  "hook": "Why did nobody tell me this earlier?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 3694,
+  "views_7d": 3694
+ },
  "7691372586650963233": {
   "backfill": true,
   "created": 1790787229,
@@ -790,6 +1186,30 @@
   "mature": true,
   "views": 560,
   "views_7d": 560
+ },
+ "7691389249228131604": {
+  "backfill": true,
+  "created": 1790791109,
+  "format": null,
+  "handle": "learnwithsaraa",
+  "hook": "What's your top 1?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 6358,
+  "views_7d": 6358
+ },
+ "7691400005650763028": {
+  "backfill": true,
+  "created": 1790793613,
+  "format": null,
+  "handle": "learnwithmina",
+  "hook": "Question to viewers: what are your answers? (no text)",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 87500,
+  "views_7d": 87500
  },
  "7691406394712411425": {
   "backfill": true,
@@ -815,6 +1235,18 @@
   "views": 1089,
   "views_7d": 1089
  },
+ "7691407189491125536": {
+  "backfill": true,
+  "created": 1790795286,
+  "format": null,
+  "handle": "helenci_study",
+  "hook": "POV: you remember that one slide on the test, but you upgraded your brain with Astra AI",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 8676,
+  "views_7d": 8676
+ },
  "7691408154319457568": {
   "backfill": true,
   "created": 1790795511,
@@ -826,6 +1258,18 @@
   "mature": true,
   "views": 980,
   "views_7d": 980
+ },
+ "7691408346372443424": {
+  "backfill": true,
+  "created": 1790795555,
+  "format": null,
+  "handle": "learnwithsaralara",
+  "hook": "The solution to all school problems",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 1390,
+  "views_7d": 1390
  },
  "7691412458900147488": {
   "backfill": true,
@@ -839,6 +1283,30 @@
   "views": 908,
   "views_7d": 908
  },
+ "7691413263032061205": {
+  "backfill": true,
+  "created": 1790796700,
+  "format": null,
+  "handle": "learnwithmateja",
+  "hook": "3 things teachers will never tell you",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 79600,
+  "views_7d": 79600
+ },
+ "7691421389651234079": {
+  "backfill": true,
+  "created": 1790798592,
+  "format": null,
+  "handle": "learnwithniksi",
+  "hook": "Would you study this way or from the book?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 747,
+  "views_7d": 747
+ },
  "7691430154328870164": {
   "backfill": true,
   "created": 1790800633,
@@ -850,6 +1318,18 @@
   "mature": true,
   "views": 1789,
   "views_7d": 1789
+ },
+ "7691434098211966214": {
+  "backfill": true,
+  "created": 1790801551,
+  "format": null,
+  "handle": "kera.vas.uci",
+  "hook": "Have you tried these games?",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 7625,
+  "views_7d": 7625
  },
  "7691436424989609224": {
   "backfill": true,
@@ -923,6 +1403,30 @@
   "views": 6053,
   "views_7d": 6053
  },
+ "7691707480010738976": {
+  "backfill": true,
+  "created": 1790865203,
+  "format": null,
+  "handle": "studywithanamarija",
+  "hook": "Storytime: a secret about a professor",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 5838,
+  "views_7d": 5838
+ },
+ "7691739867885161761": {
+  "backfill": true,
+  "created": 1790872744,
+  "format": null,
+  "handle": "learnwithsaralara",
+  "hook": "Find out the exam questions BEFORE the exam",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 887,
+  "views_7d": 887
+ },
  "7691741927590399264": {
   "backfill": true,
   "created": 1790873223,
@@ -958,6 +1462,18 @@
   "mature": true,
   "views": 1074,
   "views_7d": 1074
+ },
+ "7691761893312351489": {
+  "backfill": true,
+  "created": 1790877872,
+  "format": null,
+  "handle": "study.with.mili",
+  "hook": "3 things you should not do in school",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 25200,
+  "views_7d": 25200
  },
  "7691776401896131861": {
   "backfill": true,
@@ -995,6 +1511,30 @@
   "views": 6650,
   "views_7d": 6650
  },
+ "7691783259625245953": {
+  "backfill": true,
+  "created": 1790882847,
+  "format": null,
+  "handle": "learnwithmateja",
+  "hook": "Top 3 worst subjects by school",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 4887,
+  "views_7d": 4887
+ },
+ "7691784601869618452": {
+  "backfill": true,
+  "created": 1790883159,
+  "format": null,
+  "handle": "learnwithsaraa",
+  "hook": "3 worst subjects ranked by school type",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 35100,
+  "views_7d": 35100
+ },
  "7691789787618921749": {
   "backfill": true,
   "created": 1790884367,
@@ -1006,5 +1546,17 @@
   "mature": true,
   "views": 272,
   "views_7d": 272
+ },
+ "7691791093427457311": {
+  "backfill": true,
+  "created": 1790884671,
+  "format": null,
+  "handle": "learnwithniksi",
+  "hook": "Brain timing 10/10 (relatable moment)",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 615,
+  "views_7d": 615
  }
 }
