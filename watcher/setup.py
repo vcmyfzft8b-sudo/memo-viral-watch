@@ -327,9 +327,10 @@ def _copy_children(src, dst, work):
         if b['type'] == 'column_list':  # a column list must be created together with its columns and their content
             cols = []
             for col in notion.children(b['id']):
-                cols.append({'object': 'block', 'type': 'column', 'column': {**({'width_ratio': col['column']['width_ratio']}
-                             if (col.get('column') or {}).get('width_ratio') else {})},
-                             'children': [_clone(c, work) for c in notion.children(col['id'])]})
+                column = {'children': [_clone(c, work) for c in notion.children(col['id'])]}
+                if (col.get('column') or {}).get('width_ratio'):
+                    column['width_ratio'] = col['column']['width_ratio']
+                cols.append({'object': 'block', 'type': 'column', 'column': column})
             new['column_list'] = {'children': cols}
             notion.api('PATCH', f'/blocks/{dst}/children', {'children': [new]})
             continue
