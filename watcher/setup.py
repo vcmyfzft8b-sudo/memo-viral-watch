@@ -314,7 +314,7 @@ def _clone(b, work):
             from . import media
             path = media.for_notion(path, work)
         return {'object': 'block', 'type': t, t: {'type': 'file_upload', 'file_upload': {'id': notion.upload_video(path)}}}
-    body = {k: (_rich(v) if k in ('rich_text', 'caption') else v) for k, v in data.items() if k in KEEP}
+    body = {k: (_rich(v) if k in ('rich_text', 'caption') else v) for k, v in data.items() if k in KEEP and v is not None}
     return {'object': 'block', 'type': t, t: body}
 
 
@@ -338,14 +338,22 @@ def _copy_children(src, dst, work):
             _copy_children(b['id'], made['id'], work)
 
 
-def copy_page(src, parent, title, icon):
+def copy_page(src, parent, title, icon, into=None):
+    """Copies the page src (blocks + uploaded videos) to a new page under parent - or into the page `into` (an earlier
+    copy that stopped halfway: its blocks are replaced, the page itself is kept)."""
     import shutil
     import tempfile
     work = tempfile.mkdtemp(prefix='copy-')
     try:
-        page = notion.create_page(parent, title, icon, [])
-        _copy_children(src, page['id'], work)
-        return page['id']
+        if into:
+            for b in notion.children(into):
+                if b['type'] not in ('child_page', 'child_database'):
+                    notion.api('DELETE', f"/blocks/{b['id']}")
+            page_id = into
+        else:
+            page_id = notion.create_page(parent, title, icon, [])['id']
+        _copy_children(src, page_id, work)
+        return page_id
     finally:
         shutil.rmtree(work, ignore_errors=True)
 
@@ -365,7 +373,10 @@ def hook_lab(cfg, market=None, page=None):
     if (not lab or (not page and mp.get('visual_hook_lab') in others)) and others - {None, ''}:
         # no copy of its own yet: copy another market's lab (videos included) into this market's guide page
         source = sorted(others - {None, ''})[0].rstrip('/').split('/')[-1].split('-')[-1]
-        lab = copy_page(source, mp.get('guide') or pages['root'], 'Visual Hook Lab', '👀')
+        parent = mp.get('guide') or pages['root']
+        earlier = next((b['id'] for b in notion.children(parent) if b['type'] == 'child_page'
+                        and b['child_page']['title'] == 'Visual Hook Lab'), None)  # a copy that stopped halfway
+        lab = copy_page(source, parent, 'Visual Hook Lab', '👀', into=earlier)
         print('hook-lab: copied', source, '->', lab)
     if not lab:
         raise SystemExit('hook-lab: no 👀 Visual Hook Lab copy found')
