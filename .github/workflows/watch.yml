@@ -72,8 +72,14 @@ jobs:
         timeout-minutes: 12
         run: |
           npm install -g @anthropic-ai/claude-code > /dev/null
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tor > /dev/null
           pip install -q -r requirements.txt
+          # apt mirrors sometimes hang: short limits, up to 3 tries (a stuck try never blocks the run)
+          for i in 1 2 3; do
+            sudo timeout 150 apt-get update -qq -o Acquire::Retries=2 -o Acquire::http::Timeout=20 &&
+              sudo timeout 240 apt-get install -y -qq ffmpeg tor > /dev/null && break
+            echo "apt try $i failed - retrying"; sleep 10
+          done
+          command -v ffmpeg > /dev/null
 
       # GitHub's servers are in the US; some TikTok videos are Europe-only. Those requests go through Tor
       # with European exit nodes (only used as a fallback, see watcher/tiktok.py).
