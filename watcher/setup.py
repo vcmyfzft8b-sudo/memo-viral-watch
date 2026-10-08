@@ -47,6 +47,37 @@ def _page(parent, title, icon, blocks=()):
     return notion.create_page(parent, title, icon, list(blocks))['id']
 
 
+def list_blocks(T, lab, holder, viral):
+    """The format list, laid out 1:1 like the Parakeet AI (Resume Maker) list: H1 · H2 · red 🔥 instructions · empty
+    line · (▶️ formats, written by notion.set_order) · empty line · red 🚨 Visual Hook rule · empty line · 📁 toggle
+    with all format pages."""
+    fire = [notion.rt(T['list_fire'][0]), notion.rt('\n')] + notion.md(T['list_fire'][1].format(views=viral))
+    rule = notion.md(T['visual_rule']) + [notion.mention(lab), notion.rt('.')]
+    return [notion.block('heading_1', [notion.rt(T['list_h1'])]),
+            notion.block('heading_2', [notion.rt(T['list_heading'])]),
+            notion.block('callout', fire, icon={'type': 'emoji', 'emoji': '🔥'}, color='red_background'),
+            notion.block('paragraph', []),
+            notion.block('callout', rule, icon={'type': 'emoji', 'emoji': '🚨'}, color='red_background'),
+            notion.block('paragraph', []),
+            notion.block('toggle', [notion.rt('📁 ' + T['holder'])],
+                         children=[{'object': 'block', 'type': 'link_to_page',
+                                    'link_to_page': {'type': 'page_id', 'page_id': holder}}])]
+
+
+def relayout_list(cfg):
+    """Rebuild an existing list page in the current layout (title, headings, boxes, 📁 toggle); the ▶️ formats are
+    written again by the re-sort afterwards."""
+    pages = state.load('notion.json', {})
+    viral = hot.views_text(cfg['thresholds']['viral_views'])
+    for key, m in cfg['markets'].items():
+        T, mp = TEXT[m['lang']], pages['markets'][key]
+        lab = mp['visual_hook_lab'].rstrip('/').split('/')[-1].split('-')[-1]
+        notion.replace_content(mp['list_page'], list_blocks(T, lab, mp['holder_page'], viral))
+        notion.api('PATCH', f"/pages/{mp['list_page']}", {'icon': {'type': 'emoji', 'emoji': '👉'},
+                                                          'properties': {'title': {'title': [notion.rt(T['list_title'])]}}})
+        print('list page rebuilt:', key, mp['list_page'])
+
+
 def notion_pages(cfg):
     have = state.load('notion.json', {})
     if have.get('radar_page'):
@@ -65,13 +96,7 @@ def notion_pages(cfg):
             *[notion.block('bulleted_list_item', [notion.rt(x)]) for x in HOOK_IDEAS]])
         holder = _page(root, T['holder'], '🗂️')
         archive = _page(root, T['archive'], '📦')
-        fire = [notion.rt(T['list_fire'][0]), notion.rt('\n')] + notion.md(T['list_fire'][1].format(views=viral))
-        rule = notion.md(T['visual_rule']) + [notion.mention(lab)]
-        list_page = _page(root, T['list_heading'], '🔥', [
-            notion.block('heading_1', [notion.rt(T['list_heading'])]),
-            notion.block('callout', fire, icon={'type': 'emoji', 'emoji': '🔥'}, color='orange_background'),
-            notion.block('paragraph', []),
-            notion.block('callout', rule, icon={'type': 'emoji', 'emoji': '🚨'}, color='red_background')])
+        list_page = _page(root, T['list_title'], '👉', list_blocks(T, lab, holder, viral))
         out['markets'][key] = {'list_page': list_page, 'holder_page': holder, 'archive_page': archive,
                                'visual_hook_lab': f"https://app.notion.com/p/{lab.replace('-', '')}"}
     state.save('notion.json', out)

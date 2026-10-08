@@ -46,6 +46,7 @@ TEXT = {
         'scores_line': 'X i Y u scenariju: pročitaj broj koji ti aplikacija pokaže.',
         'required_line': '🚨👇 Vizuelni hook je obavezan u svakom videu!',
         'draft_prefix': 'NACRT – ',
+        'list_title': 'Koje videe snimaš (OBAVEZNO)', 'list_h1': 'Kako snimaš svoje videe',
         'list_heading': 'SNIMAJ SADA: ovi formati',
         'list_fire': ['Snimaj formate redom, od vrha prema dnu, i prođi cijelu listu. Drži se scenarija, vizuelnog hooka '
                       'i materijala na svakoj stranici.',

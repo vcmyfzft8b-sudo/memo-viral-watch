@@ -321,9 +321,13 @@ def set_order(list_page, page_ids, hot_count=0, lang=PRIMARY):
     new += [block('callout', [mention(pid)], icon={'type': 'emoji', 'emoji': '▶️'}, color='gray_background')
             for pid in page_ids[hot_count:]]
     _insert(list_page, new, L['fire_anchor'])
-    # keep at most one empty line after the 🚨 rule
+    # one empty line between the last format and the 🚨 rule; at most one empty line after the rule
     blocks = children(list_page)
     rule = next((k for k, b in enumerate(blocks) if b['type'] == 'callout' and _icon(b) == '🚨'), None)
+    if rule is not None and page_ids and rule > 0 and not _is_empty(blocks[rule - 1]):
+        api('PATCH', f'/blocks/{list_page}/children', {'children': [block('paragraph', [])], 'after': blocks[rule - 1]['id']})
+        blocks = children(list_page)
+        rule += 1
     if rule is not None:
         empties = [b['id'] for b in blocks[rule + 1:] if _is_empty(b)]
         for bid in empties[1:]:

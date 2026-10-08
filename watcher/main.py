@@ -1098,6 +1098,7 @@ def main():
     ap.add_argument('--relist', action='store_true', help='only re-draw the format lists (order + going-viral section)')
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
     ap.add_argument('--hook-lab', action='store_true', help='the copied Parakeet Visual Hook Lab -> Serbo-Croatian, linked everywhere')
+    ap.add_argument('--relayout', action='store_true', help='rebuild the list page in the current layout, then re-sort it')
     ap.add_argument('--bootstrap', type=int, default=0, help='N: build formats from the strongest viral videos of the last 30 days (max N)')
     ap.add_argument('--check-hot', action='store_true', help='strict Claude check of ALL viral videos from the last 7 days')
     ap.add_argument('--init-market', default='', help='market key: connect a new market to the shared format list')
@@ -1344,6 +1345,12 @@ def main():
     if a.hook_lab:
         from . import setup
         setup.hook_lab(load_config())
+        return
+    if a.relayout:
+        from . import setup
+        cfg = load_config()
+        setup.relayout_list(cfg)
+        rerank(M.load(cfg), load_formats(), state.load('history.json', {}), cfg, force=True)
         return
     if a.bootstrap:
         bootstrap(a.bootstrap)
