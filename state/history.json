@@ -817,6 +817,7 @@
  },
  "7688930483304090898": {
   "backfill": true,
+  "bootstrap_tries": 1,
   "created": 1790218633,
   "format": null,
   "handle": "studywithvalentina",
@@ -1453,11 +1454,12 @@
  },
  "7691071853334498580": {
   "backfill": true,
+  "bootstrap_tries": 1,
   "created": 1790717210,
-  "format": null,
+  "format": "A20261008211912",
   "handle": "studywithreveka",
   "hook": "POV: you remember that one test slide but your brain has no premium, so you upgrade with Astra AI",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 175400,
@@ -2064,8 +2066,9 @@
   "views_7d": 13500
  },
  "7692158324032163124": {
+  "bootstrap_tries": 1,
   "created": 1790970220,
-  "format": null,
+  "format": "A20261008205804",
   "handle": "kera.vas.uci",
   "hook": "",
   "judged": true,
@@ -2074,8 +2077,9 @@
   "views": 368600
  },
  "7692478766852967686": {
+  "bootstrap_tries": 1,
   "created": 1791044847,
-  "format": null,
+  "format": "A20261008210957",
   "handle": "study.with.mili",
   "hook": "",
   "judged": true,
@@ -2084,8 +2088,9 @@
   "views": 282600
  },
  "7692563801731845382": {
+  "bootstrap_tries": 1,
   "created": 1791064649,
-  "format": null,
+  "format": "A20261008205804",
   "handle": "kera.vas.uci",
   "hook": "",
   "judged": true,
@@ -2094,6 +2099,7 @@
   "views": 283500
  },
  "7692577375296507154": {
+  "bootstrap_tries": 1,
   "created": 1791067752,
   "format": null,
   "handle": "studywithvalentina",

@@ -1,6 +1,121 @@
 {
  "audit": {
-  "A20261008204718:sh": "failed"
+  "A20261008204718:sh": "failed",
+  "A20261008205804:sh": "fixed",
+  "A20261008210957:sh": "fixed",
+  "A20261008211912:sh": "failed"
+ },
+ "audit_fingerprints": {
+  "A20261008205804:sh": "e1710fe6af3e53183c3440a4461012ac7db71505e071fd007b0655069384e4e5",
+  "A20261008210957:sh": "e8f783f3e3d946092c4cc0e6de2a142fe4a25a2e97e462b06f264fd7dc9b1d8f"
+ },
+ "group_audit": {
+  "A20261008205804": {
+   "approval": {
+    "sh": "not_locked"
+   },
+   "checked_at": 1791493500,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7692158324032163124",
+     "video_identity": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6"
+    }
+   },
+   "key": "3f353acb7598815f4b28d85f259c746c6e8a9d38e341d18ab5d928af8b8bb2cd",
+   "passed": true,
+   "reasons": [],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "independent_wording": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "pass",
+   "summary": "SH passes on all five checks: it follows all 11 beats in order, brings in Memo AI as the 6th and last condition, uses only real features, is written independently, and its directions match the script. Two minor points: the CTA asks 'which rule knocked you out' instead of 'how far you got', and 'već na telefonu' should not suggest an app from a store.",
+   "title_fixes": {},
+   "version": "group-2026-10-08.2"
+  },
+  "A20261008210957": {
+   "approval": {
+    "sh": "not_locked"
+   },
+   "checked_at": 1791494165,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7692478766852967686",
+     "video_identity": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d"
+    }
+   },
+   "key": "8cecf80e1399b12508bc289bd1b452405829f42b8688824e0d60400e76ad1433",
+   "passed": true,
+   "reasons": [],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "independent_wording": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "pass",
+   "summary": "SH passes every check: it follows the 5→1 countdown with the disclaimer, the bridge and a 3-sentence Memo AI demo between places 3 and 2; the brand is spoken only once, the script is independently worded, the claims are real features, and the directions cover the full demo sequence.",
+   "title_fixes": {},
+   "version": "group-2026-10-08.2"
+  }
  },
  "handle_lang": {
   "astra_ai_hr": "sh",
@@ -43,5 +158,9 @@
   "ucenje.sa.lili": "sh",
   "ucisamilicom": "sh",
   "ucisaprofom": "sh"
+ },
+ "video_hashes": {
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/337a99d9-13da-42a6-894a-f679e2935f94/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d7a785da-5e23-40f6-9646-04afe72c6f2d/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6"
  }
 }

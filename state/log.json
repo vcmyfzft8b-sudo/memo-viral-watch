@@ -157,5 +157,101 @@
   "type": "alert",
   "video": "7692577375296507154",
   "views": 193400
+ },
+ {
+  "order": [
+   "A20261008205804"
+  ],
+  "ts": 1791493524,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008205804",
+  "page_de": "3f365e84-a3c2-81ed-a906-d5caef049749",
+  "pages": {},
+  "position": 1,
+  "problems": [],
+  "ts": 1791493524,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261008205804",
+  "format": "A20261008205804",
+  "level": "viral",
+  "position": 1,
+  "problems": [],
+  "ts": 1791493525,
+  "type": "alert",
+  "video": "7692158324032163124",
+  "views": 368700
+ },
+ {
+  "format": "A20261008205804",
+  "level": "viral",
+  "ts": 1791493773,
+  "type": "alert",
+  "video": "7692563801731845382",
+  "views": 283600
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957"
+  ],
+  "ts": 1791494192,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008210957",
+  "page_de": "3f365e84-a3c2-8158-a10f-d25c82347e03",
+  "pages": {},
+  "position": 2,
+  "problems": [],
+  "ts": 1791494192,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261008210957",
+  "format": "A20261008210957",
+  "level": "viral",
+  "position": 2,
+  "problems": [],
+  "ts": 1791494193,
+  "type": "alert",
+  "video": "7692478766852967686",
+  "views": 282900
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (29 words (original 29)) / title fixed: POV: Na testu baš pitanje s onog slajda, a mozak "
+  ],
+  "tries": 1,
+  "ts": 1791494592,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008211912",
+  "page_de": "3f365e84-a3c2-819d-9066-dc90353d437e",
+  "pages": {},
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (29 words (original 29)) / title fixed: POV: Na testu baš pitanje s onog slajda, a mozak "
+  ],
+  "ts": 1791494592,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261008211912",
+  "format": "A20261008211912",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (29 words (original 29)) / title fixed: POV: Na testu baš pitanje s onog slajda, a mozak "
+  ],
+  "ts": 1791494594,
+  "type": "alert",
+  "video": "7691071853334498580",
+  "views": 175500
  }
 ]

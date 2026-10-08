@@ -1,4 +1,80 @@
 {
+ "3f365e84-a3c2-8102-8c11-e2d4caf37f76": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Zabrinuto gledaš u test i pišeš, pa pogled u stranu i ruka u kosu, uz trending zvuk) POV: Na testu ti padne pitanje baš s onog jednog slajda, a tvoj mozak i dalje radi na besplatnoj verziji 😭 ",
+   "text": {
+    "content": "(Zabrinuto gledaš u test i pišeš, pa pogled u stranu i ruka u kosu, uz trending zvuk) POV: Na testu ti padne pitanje baš s onog jednog slajda, a tvoj mozak i dalje radi na besplatnoj verziji 😭 ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-812a-8408-d921b89c91f0": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Ako ti se prezime završava na „ić“, ispadaš iz igre. Kladim se da skoro niko neće izgurati ovo do samog kraja. ",
+   "text": {
+    "content": "Ako ti se prezime završava na „ić“, ispadaš iz igre. Kladim se da skoro niko neće izgurati ovo do samog kraja. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-8131-b592-edb00cc3bbeb": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Za zadnju rečenicu vrati se u kameru.",
+   "text": {
+    "content": "Za zadnju rečenicu vrati se u kameru.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-813b-bde3-df5114d9401f": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Bez glasa, uz trending zvuk: sjedi za stolom s testom, piši olovkom i zabrinuto gledaj u kameru pa u stranu, a POV tekst je na ekranu.",
+   "text": {
+    "content": "Bez glasa, uz trending zvuk: sjedi za stolom s testom, piši olovkom i zabrinuto gledaj u kameru pa u stranu, a POV tekst je na ekranu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f365e84-a3c2-8166-bfa8-c7343e58a7ee": [
   {
    "annotations": {
@@ -13,6 +89,63 @@
    "plain_text": "Drži svoju studentsku ili učeničku karticu (indeks) uz lice, pomjeraj je dok govoriš direktno u kameru, a naslov je na ekranu.",
    "text": {
     "content": "Drži svoju studentsku ili učeničku karticu (indeks) uz lice, pomjeraj je dok govoriš direktno u kameru, a naslov je na ekranu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-8176-9e0f-c6e15e267ace": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Za svako mjesto stavi novi naslov na ekran, npr. „5. turizam i hotelijerstvo 🏨“, „4. menadžment 📈“, „3. poslovne studije 🤓“, „2. mediji i komunikacije 📱“, „1. sport 🏃“.",
+   "text": {
+    "content": "Za svako mjesto stavi novi naslov na ekran, npr. „5. turizam i hotelijerstvo 🏨“, „4. menadžment 📈“, „3. poslovne studije 🤓“, „2. mediji i komunikacije 📱“, „1. sport 🏃“.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-817b-a0fe-ff7541d483b4": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Sjedi blizu kamere, energično se nagni naprijed i odmah pričaj u kameru, dok se na ekranu pojavljuje prazna numerisana lista od 1 do 6 i naslov.",
+   "text": {
+    "content": "Sjedi blizu kamere, energično se nagni naprijed i odmah pričaj u kameru, dok se na ekranu pojavljuje prazna numerisana lista od 1 do 6 i naslov.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-818a-9615-c70320aaa349": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Za zadnju rečenicu vrati se u kameru.",
+   "text": {
+    "content": "Za zadnju rečenicu vrati se u kameru.",
     "link": null
    },
    "type": "text"
@@ -37,6 +170,226 @@
    "type": "text"
   }
  ],
+ "3f365e84-a3c2-81a3-91ab-d552a69200e7": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+   "text": {
+    "content": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81aa-af56-c24900f23c24": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/",
+   "plain_text": "Memo AI · memoai.eu",
+   "text": {
+    "content": "Memo AI · memoai.eu",
+    "link": {
+     "url": "https://memoai.eu/"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") I posljednje pravilo: ako učiš uz Memo AI, ispadaš, jer bolju aplikaciju za učenje stvarno nisam našla. (",
+   "text": {
+    "content": ") I posljednje pravilo: ako učiš uz Memo AI, ispadaš, jer bolju aplikaciju za učenje stvarno nisam našla. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/",
+   "plain_text": "Memo AI · memoai.eu",
+   "text": {
+    "content": "Memo AI · memoai.eu",
+    "link": {
+     "url": "https://memoai.eu/"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Ubaciš slike svojih bilješki ili fajlove s predavanja, sačekaš par minuta i dobiješ lijepo sređene bilješke. (",
+   "text": {
+    "content": ") Ubaciš slike svojih bilješki ili fajlove s predavanja, sačekaš par minuta i dobiješ lijepo sređene bilješke. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/",
+   "plain_text": "Memo AI · memoai.eu",
+   "text": {
+    "content": "Memo AI · memoai.eu",
+    "link": {
+     "url": "https://memoai.eu/"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Iz toga ti Memo AI napravi šta god ti treba: kartice, kvizove, podcast, mentalnu mapu, pa čak i probni test. (",
+   "text": {
+    "content": ") Iz toga ti Memo AI napravi šta god ti treba: kartice, kvizove, podcast, mentalnu mapu, pa čak i probni test. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/",
+   "plain_text": "Memo AI · memoai.eu",
+   "text": {
+    "content": "Memo AI · memoai.eu",
+    "link": {
+     "url": "https://memoai.eu/"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Ja najviše volim kartice – vidim pitanje, a kad zapnem, samo kucnem na karticu i odgovor je tu. ",
+   "text": {
+    "content": ") Ja najviše volim kartice – vidim pitanje, a kad zapnem, samo kucnem na karticu i odgovor je tu. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81aa-bb04-c537bccd4631": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Napiši mi u komentar na kojem te pitanju izbacilo. ",
+   "text": {
+    "content": "Napiši mi u komentar na kojem te pitanju izbacilo. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81c6-ba5c-ede794e436c5": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Govori direktno u kameru dok cik-cak makazama sječeš list papira, a naslov „TOP 5 najlakših fakulteta 🎓🤩“ je na ekranu.",
+   "text": {
+    "content": "Govori direktno u kameru dok cik-cak makazama sječeš list papira, a naslov „TOP 5 najlakših fakulteta 🎓🤩“ je na ekranu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f365e84-a3c2-81c7-a8cc-f6bbdd1a3c4e": [
   {
    "annotations": {
@@ -56,6 +409,156 @@
    "type": "text"
   }
  ],
+ "3f365e84-a3c2-81ca-b251-e16d3a4fed3c": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+   "text": {
+    "content": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81cc-b8d5-e84aaef23285": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+   "text": {
+    "content": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81ce-b6df-e49ee6ddf950": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Dok nabrajaš fakultete, sve vrijeme sijeci papir makazama ispred kamere – to je vizuelni hook koji drži pažnju.",
+   "text": {
+    "content": "Dok nabrajaš fakultete, sve vrijeme sijeci papir makazama ispred kamere – to je vizuelni hook koji drži pažnju.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81d8-8139-d45099ab9376": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/",
+   "plain_text": "Memo AI · memoai.eu",
+   "text": {
+    "content": "Memo AI · memoai.eu",
+    "link": {
+     "url": "https://memoai.eu/"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Pa lagano prebaciš mozak na premium uz ovu aplikaciju 🧠 ",
+   "text": {
+    "content": ") Pa lagano prebaciš mozak na premium uz ovu aplikaciju 🧠 ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81dd-98db-c2b625676da2": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Kod teksta „Pa highkey nadogradiš mozak uz Memo AI“ snimi ekran laptopa iz ruke: u Memo AI-ju otvori mapu uma ili kartice iz tog istog predavanja, a na kraju polako pokaži početnu stranicu Memo AI-ja.",
+   "text": {
+    "content": "Kod teksta „Pa highkey nadogradiš mozak uz Memo AI“ snimi ekran laptopa iz ruke: u Memo AI-ju otvori mapu uma ili kartice iz tog istog predavanja, a na kraju polako pokaži početnu stranicu Memo AI-ja.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81e1-9392-e856ed37b3cd": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Pokaži prstom na dugme za praćenje) Ne pratiš me još? Ispadaš, ali imaš drugu šansu – klikni follow sad i opet si u igri. Ako ti je zima ljepša od ljeta, ni za tebe nema mjesta. Dalje, baci pogled na bateriju – ako je ispod 20 posto, ispadaš. Sad otvori dijeljenje na Viberu ili WhatsAppu, pa ako ti je prvi kontakt na listi mama ili tata, kraj je za tebe. ",
+   "text": {
+    "content": "(Pokaži prstom na dugme za praćenje) Ne pratiš me još? Ispadaš, ali imaš drugu šansu – klikni follow sad i opet si u igri. Ako ti je zima ljepša od ljeta, ni za tebe nema mjesta. Dalje, baci pogled na bateriju – ako je ispod 20 posto, ispadaš. Sad otvori dijeljenje na Viberu ili WhatsAppu, pa ako ti je prvi kontakt na listi mama ili tata, kraj je za tebe. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f365e84-a3c2-81ec-b508-c10af7489396": [
   {
    "annotations": {
@@ -70,6 +573,25 @@
    "plain_text": "Za zadnju rečenicu vrati se u kameru.",
    "text": {
     "content": "Za zadnju rečenicu vrati se u kameru.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81ff-a11b-d165aecc4d8a": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Kod teksta „POV: Sjetiš se baš tog jednog slajda…“ ubaci na oko pola sekunde zamućen slajd iz svog predavanja ili udžbenika, kao sjećanje koje se ne vidi jasno, a onda se vrati na sebe i uhvati se za glavu.",
+   "text": {
+    "content": "Kod teksta „POV: Sjetiš se baš tog jednog slajda…“ ubaci na oko pola sekunde zamućen slajd iz svog predavanja ili udžbenika, kao sjećanje koje se ne vidi jasno, a onda se vrati na sebe i uhvati se za glavu.",
     "link": null
    },
    "type": "text"
@@ -329,6 +851,564 @@
     "plain_text": "Ako hoćeš drugi dio, ostavi lajk i zaprati me. ",
     "text": {
      "content": "Ako hoćeš drugi dio, ostavi lajk i zaprati me. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "page:3f365e84-a3c2-8158-a10f-d25c82347e03": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Evo ti top 5 najlakših fakulteta. Spremaš se za upis? Izaberi jedan od ovih i sačuvaćeš dosta živaca. ",
+    "text": {
+     "content": "Evo ti top 5 najlakših fakulteta. Spremaš se za upis? Izaberi jedan od ovih i sačuvaćeš dosta živaca. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Peto mjesto ide Fakultetu za turizam i hotelijerstvo. Nije pretežak, jer je većina gradiva o turizmu, menadžmentu i praktičnim stvarima. ",
+    "text": {
+     "content": "Peto mjesto ide Fakultetu za turizam i hotelijerstvo. Nije pretežak, jer je većina gradiva o turizmu, menadžmentu i praktičnim stvarima. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Četvrto mjesto zauzima Fakultet za menadžment. Teške matematike i prirodnih predmeta ima mnogo manje nego na većini drugih fakulteta. ",
+    "text": {
+     "content": "Četvrto mjesto zauzima Fakultet za menadžment. Teške matematike i prirodnih predmeta ima mnogo manje nego na većini drugih fakulteta. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na trećem mjestu je Fakultet za poslovne studije. Gradivo je većinom jasno i vezano za stvarne situacije, pa manje bubaš napamet, a dosta toga skontaš logikom. ",
+    "text": {
+     "content": "Na trećem mjestu je Fakultet za poslovne studije. Gradivo je većinom jasno i vezano za stvarne situacije, pa manje bubaš napamet, a dosta toga skontaš logikom. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Prije nego što otkrijem prvo i drugo mjesto, moram reći da nijedan fakultet nije baš lak, ovo je samo mojih 5 najlakših, a sad ću ti pokazati kako da ti bude još lakše. (",
+    "text": {
+     "content": "Prije nego što otkrijem prvo i drugo mjesto, moram reći da nijedan fakultet nije baš lak, ovo je samo mojih 5 najlakših, a sad ću ti pokazati kako da ti bude još lakše. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Imam za tebe jednu aplikaciju, zove se Memo AI: samo ubaciš PDF ili uslikaš skriptu iz predmeta koji ti treba. (",
+    "text": {
+     "content": ") Imam za tebe jednu aplikaciju, zove se Memo AI: samo ubaciš PDF ili uslikaš skriptu iz predmeta koji ti treba. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Evo, recimo ovako nešto: za par minuta dobiješ bilješke, kartice i kviz, pa možeš učiti, vježbati i ponavljati. (",
+    "text": {
+     "content": ") Evo, recimo ovako nešto: za par minuta dobiješ bilješke, kartice i kviz, pa možeš učiti, vježbati i ponavljati. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") A tu je i probni test, koji ti pokaže koliko stvarno znaš. ",
+    "text": {
+     "content": ") A tu je i probni test, koji ti pokaže koliko stvarno znaš. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Drugo mjesto: Fakultet za medije i komunikacije. Gradivo se većinom vrti oko komunikacije, medija i kreativnih predmeta, pa nema toliko, ne učenja, nego bubanja. ",
+    "text": {
+     "content": "Drugo mjesto: Fakultet za medije i komunikacije. Gradivo se većinom vrti oko komunikacije, medija i kreativnih predmeta, pa nema toliko, ne učenja, nego bubanja. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "A prvo mjesto, pa šta bi drugo, sportski fakultet. Prvi je zato što imaš puno praktične nastave, a ne samo učenje iz knjige, i nema baš toliko teoretskih predmeta. Predmeta ima, ali mnogo manje nego na ostalim fakultetima. ",
+    "text": {
+     "content": "A prvo mjesto, pa šta bi drugo, sportski fakultet. Prvi je zato što imaš puno praktične nastave, a ne samo učenje iz knjige, i nema baš toliko teoretskih predmeta. Predmeta ima, ali mnogo manje nego na ostalim fakultetima. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "page:3f365e84-a3c2-819d-9066-dc90353d437e": [
+  [
+   {
+    "annotations": {
+     "bold": true,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Tekst na ekranu – ne izgovaraj:",
+    "text": {
+     "content": "Tekst na ekranu – ne izgovaraj:",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Zabrinuto gledaš u test i pišeš, onda pogled u stranu i ruka u kosu, uz trending zvuk) ",
+    "text": {
+     "content": "(Zabrinuto gledaš u test i pišeš, onda pogled u stranu i ruka u kosu, uz trending zvuk) ",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": true,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "POV: Sjetiš se baš tog jednog slajda na testu, a mozak ti nema premium paket 😭 ",
+    "text": {
+     "content": "POV: Sjetiš se baš tog jednog slajda na testu, a mozak ti nema premium paket 😭 ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(",
+    "text": {
+     "content": "(",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") ",
+    "text": {
+     "content": ") ",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": true,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pa highkey nadogradiš mozak uz Memo AI 🧠 ",
+    "text": {
+     "content": "Pa highkey nadogradiš mozak uz Memo AI 🧠 ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "page:3f365e84-a3c2-81ed-a906-d5caef049749": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Ispadaš ako ti se prezime završava na „ić“. Do kraja ove igre neće stići 99% vas. ",
+    "text": {
+     "content": "Ispadaš ako ti se prezime završava na „ić“. Do kraja ove igre neće stići 99% vas. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Pokaži prstom prema dugmetu za praćenje) Ne pratiš me? Ispadaš – ali vraćaš se u igru ako me odmah sad zapratiš. Draža ti je zima nego ljeto? I ti ispadaš. Sljedeće: imaš manje od 20% baterije na telefonu? Ispadaš. Sad otvori share na Viberu ili WhatsAppu – ako ti je prva ponuđena osoba mama ili tata, ispadaš. ",
+    "text": {
+     "content": "(Pokaži prstom prema dugmetu za praćenje) Ne pratiš me? Ispadaš – ali vraćaš se u igru ako me odmah sad zapratiš. Draža ti je zima nego ljeto? I ti ispadaš. Sljedeće: imaš manje od 20% baterije na telefonu? Ispadaš. Sad otvori share na Viberu ili WhatsAppu – ako ti je prva ponuđena osoba mama ili tata, ispadaš. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Podigni telefon i pokaži ga u kameru) I zadnje: ispadaš ako učiš uz Memo AI, jer mi je to realno najbolja aplikacija za učenje. (",
+    "text": {
+     "content": "(Podigni telefon i pokaži ga u kameru) I zadnje: ispadaš ako učiš uz Memo AI, jer mi je to realno najbolja aplikacija za učenje. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Bukvalno samo ubaciš svoje bilješke i slike u aplikaciju i za par minuta dobiješ sređene bilješke. (",
+    "text": {
+     "content": ") Bukvalno samo ubaciš svoje bilješke i slike u aplikaciju i za par minuta dobiješ sređene bilješke. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Onda ti Memo AI ponudi gomilu načina za učenje: kartice, kvizove, podcaste, mentalne mape i probne testove. (",
+    "text": {
+     "content": ") Onda ti Memo AI ponudi gomilu načina za učenje: kartice, kvizove, podcaste, mentalne mape i probne testove. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Meni su najdraže kartice: dobijem pitanje, a kad ne znam odgovor, samo kliknem na karticu i vidim rješenje. ",
+    "text": {
+     "content": ") Meni su najdraže kartice: dobijem pitanje, a kad ne znam odgovor, samo kliknem na karticu i vidim rješenje. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "A vi mi u komentare napišite do kojeg ste broja stigli. ",
+    "text": {
+     "content": "A vi mi u komentare napišite do kojeg ste broja stigli. ",
      "link": null
     },
     "type": "text"

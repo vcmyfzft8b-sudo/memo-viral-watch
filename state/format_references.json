@@ -1,0 +1,124 @@
+{
+ "A20261008205804": {
+  "accepted_sources": [
+   "7692158324032163124"
+  ],
+  "allowed_localisation": [
+   "Language and dialect (Croatian, Bosnian or Serbian, e.g. 'ispadaš' vs local variants, ijekavica/ekavica)",
+   "The surname condition can use a locally common ending (-ić, -ović, -ac, etc.) as long as it eliminates a large share of viewers",
+   "Exact wording and order of the filler conditions in beats 4–6, swapped for equivalent local, relatable, harmless conditions; the count stays at 5 conditions before the product",
+   "Messaging app named in the share condition (Viber, WhatsApp, Instagram)",
+   "Battery percentage threshold",
+   "Creator, setting, outfit, on-screen font and list styling",
+   "Which 3–5 real Memo AI study modes are listed in beat 9, as long as flashcards stay the favourite in beat 10",
+   "Whether the screen recording is on a phone or a laptop browser"
+  ],
+  "beats": [
+   "1. Hook condition: 'If your surname ends in -ić, you're out.' (on-screen list item 1)",
+   "2. Stakes line: '99% of you won't finish this game.'",
+   "3. Follow condition: 'If you don't follow me, you're out, but you can get back in if you follow me right now.' (item 2)",
+   "4. Preference condition: 'If you prefer winter to summer, you're out too.' (item 3)",
+   "5. Phone condition: 'Moving on: if your phone is under 20% battery, you're out.' (item 4)",
+   "6. Share condition: 'Tap the share button to Viber/WhatsApp, and if the first person that pops up is your mum or dad, you're out.' (item 5)",
+   "7. Product condition (last item): 'And finally, if you use Memo AI to study, you're out, because it's honestly the best study app.' (item 6, final)",
+   "8. Demo sentence 1 (replaces 'upload notes + choose exam date and target grade'): 'Literally, you just upload your notes, PDF or slides, or scan your notebook pages with the camera, and in a few minutes Memo AI makes notes from them.'",
+   "9. Demo sentence 2 (replaces Astra's study modes): 'Then it gives you different ways to study, like flashcards, quizzes, a mind map, podcasts and practice tests with a percentage score.'",
+   "10. Demo sentence 3 (favourite feature): 'My favourite is the flashcards: I get a question, and if I don't know the answer I just flip the card and see the solution.'",
+   "11. CTA: 'Write in the comments how far you made it.'"
+  ],
+  "canonical_source": "7692158324032163124",
+  "filming": "About 35–50 s, vertical 9:16, one continuous take or quick jump cuts. Beats 1–7 are a selfie-style talking head in a casual setting. A numbered list (1., 2., 3. …) is overlaid in a top corner and adds one short line per condition as it is spoken; the last item names Memo AI. Beats 8–10 are a phone screen recording of memoai.eu in the browser, with the creator's voice continuing over it: open Memo AI → upload a PDF/file or use Scan to photograph notebook pages → hard cut past the waiting time → the finished note appears → tap through flashcards, quiz, mind map, podcast and practice test (with its percentage score) → stay on flashcards and flip one card to show the answer. Beat 11 returns to the talking head, or stays on the app screen with a 'comment how far you got' text overlay.",
+  "generated": 1791493465,
+  "hook": "Talking head, straight to camera, first line is an elimination condition with no intro: 'Ako ti prezime završava na \"ić\", ispadaš.' The next line raises the stakes: '99% vas neće uspjeti da završi ovu igru.' An on-screen numbered list starts at 1.",
+  "not_allowed": [
+   "Changing the structure: no talking-head elimination game, no growing numbered list, or Memo AI not being the last condition",
+   "Introducing Memo AI before the final condition or adding extra product mentions in the game section",
+   "Dropping the 'comment how far you got' CTA or replacing it with a sales/discount CTA",
+   "Dropping the follow-to-re-enter beat",
+   "Saying you can choose an exam date or target grade, or that the app builds a study plan",
+   "Claiming true/false mode, snap-and-solve instant answers to a single photographed task, or checking/grading the user's own homework",
+   "Claiming photos can be sent in the chat, PDF export, pasting text, or an Android/iOS app from the store (it is a web app at memoai.eu)",
+   "Saying notes are instant: say 'a few minutes' and cut the wait",
+   "Showing or naming Astra AI or any competitor",
+   "Using conditions that are mean, discriminatory, or about health, religion, ethnicity or politics",
+   "Inventing pricing beyond 'one free note, then a 3-day free trial'"
+  ],
+  "premise": "The creator runs a playful 'you're out if…' elimination game. Viewers check each condition against themselves, and a numbered list on screen grows with every line. The last 'you're out' condition is using Memo AI, explained as 'because it's honestly the best study app'. This turns the game into a short screen-recorded demo, and the video ends by asking viewers to comment how far they got.",
+  "product": {
+   "cta": "Comment how far (up to which number) you made it in the game. A secondary in-game follow prompt comes at beat 3.",
+   "features_used": [
+    "upload a PDF, Word or PowerPoint file",
+    "Scan camera / up to 10 photos of notes or textbook pages",
+    "notes generated in a few minutes",
+    "flashcards",
+    "quiz with explanations",
+    "mind map",
+    "podcast",
+    "graded practice test with percentage and feedback per answer"
+   ],
+   "introduced_at_beat": 7,
+   "spoken_brand": "Beat 7, spoken as the final elimination condition ('if you use Memo AI…'). memoai.eu may appear in the screen recording or caption but does not need to be spoken."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692158324032163124": "https://www.tiktok.com/@kera.vas.uci/video/7692158324032163124"
+  },
+  "title_en": "Elimination game: how far can you last? 🎮"
+ },
+ "A20261008210957": {
+  "accepted_sources": [
+   "7692478766852967686"
+  ],
+  "allowed_localisation": [
+   "Language variant and script of the voiceover (Serbian ekavica, Croatian, Bosnian ijekavica) and local slang such as 'bubanje'/'štrebanje'",
+   "Which faculty types fill places 5–1, adapted to faculty types that actually exist in that country (they must stay generic categories, with the same ordering logic: the most practical/least theoretical at place 1)",
+   "The wording of each one-line reason, as long as there is one short reason per place",
+   "The subject or book shown in the demo, and whether the demo uses Scan or PDF upload",
+   "The paper-cutting prop (any repetitive hands-busy hook, e.g. cutting, folding) as long as it is a talking head doing a manual activity",
+   "Creator gender, setting and outfit"
+  ],
+  "beats": [
+   "Hook (talking head, cutting paper with scissors): 'These are the top 5 easiest faculties. If you plan to enrol, pick one of these so you won't lose your nerves.'",
+   "Place 5: a hospitality/tourism-type faculty, with one reason it is relatively easy (the material is mostly tourism, management and practical things).",
+   "Place 4: a management-type faculty, with one reason (not as many demanding maths and natural-science subjects).",
+   "Place 3: a business-studies-type faculty, with one reason (the material is understandable, tied to real situations and can be followed with logic, so there is less rote memorising).",
+   "Teaser and disclaimer: before revealing places 2 and 1, the creator says every faculty is hard, these are just the 5 easiest, and 'now I'll show you how to make it even easier.'",
+   "App demo (exactly 3 sentences, phone filmed over an open book): (1) 'I'll recommend you an app, Memo AI. You just scan the pages from your book with the Scan option or upload the lecture PDF.' (2) 'In a few minutes you get notes, flashcards and a quiz, so you can learn and practise.' (3) 'There's also a practice test that grades you in percent and gives feedback on every answer.'",
+   "Place 2: a media/communications-type faculty, with one reason (the material is about communication, media and creative subjects, so there is less cramming), including the natural self-correction 'not learning, I mean cramming'.",
+   "Place 1: 'what else could it be', a sport/physical-education-type faculty, with one reason (lots of practical classes, not just book learning, and fewer subjects than other faculties). The video ends on this reveal."
+  ],
+  "canonical_source": "7692478766852967686",
+  "filming": "Length 75–95 s, vertical 9:16, one continuous informal take with natural speech and small self-corrections. Shot A: medium close-up talking head, creator cutting paper with scissors the whole time as the visual hook (beats 1–5 and 7–8). Shot B (beat 6 only): over-the-shoulder/top-down of a phone held over an open textbook. Demo sequence: open memoai.eu in the phone browser → tap Scan and photograph 1–3 textbook pages (or pick a PDF) → jump cut past the few-minute wait → show the finished note → swipe through flashcards → open the quiz → open the practice test and show the percentage score with per-answer feedback. Then cut back to Shot A for places 2 and 1. No on-screen text is required. Optional minimal captions of the place numbers.",
+  "generated": 1791494128,
+  "hook": "Opening line, said straight to camera while cutting paper with scissors: \"Ovo su top 5 najlakših fakulteta. Ako planiraš da upišeš fakultet, upiši jedan od ovih, zato što nećeš gubiti mnogo živaca.\"",
+  "not_allowed": [
+   "Changing the countdown structure: it must be 5 places, revealed 5→1, with the app demo placed between place 3 and place 2",
+   "Dropping the 'every faculty is hard' disclaimer or the 'now I'll show you how to make it easier' bridge",
+   "Making it a pure ad, adding a spoken CTA or link push, or mentioning the brand more than once",
+   "Naming or ranking specific real institutions (universities/private colleges) as 'easy', or mocking students of any faculty",
+   "Claiming Memo AI guarantees passing exams or better grades, or that it makes any faculty 'easy'",
+   "Showing or mentioning Astra AI features Memo AI lacks: a 'Priprema za test' subject/material search library, choosing familiarity or mood, snap-and-solve instant answers, homework checking/grading, photos in the chat, PDF export, pasting text",
+   "Saying it is an Android/App Store app (it is a web app at memoai.eu), or implying notes are instant (they take a few minutes and the wait is cut)",
+   "Claiming it is completely free (only one free note, then a 3-day free trial)"
+  ],
+  "premise": "A student creator counts down the 5 easiest faculties from place 5 to place 1. Each one gets a short reason, such as less maths, practical subjects, less memorising or material you can follow with logic. After place 3 the creator holds back the top two to build suspense. They add a disclaimer that every faculty is hard and then show on a phone how Memo AI makes studying easier. After the demo they reveal places 2 and 1.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "Scan camera (photos of textbook pages, up to 10)",
+    "PDF upload",
+    "Notes generated from the material",
+    "Flashcards",
+    "Quiz with explanations",
+    "Graded practice test (percentage + feedback per answer)"
+   ],
+   "introduced_at_beat": 6,
+   "spoken_brand": "Said once at the start of beat 6 ('u pitanju je Memo AI'). The URL memoai.eu is not spoken and may appear only on the phone screen during the demo."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692478766852967686": "https://www.tiktok.com/@study.with.mili/video/7692478766852967686"
+  },
+  "title_en": "Top 5 easiest faculties (countdown listicle with a mid-list app demo)"
+ }
+}
