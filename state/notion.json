@@ -2,8 +2,16 @@
  "markets": {
   "sh": {
    "archive_page": "3f365e84-a3c2-81ee-8a96-c0c8b56fcec7",
+   "guide": "3f365e84-a3c2-8150-8770-e95bf7e85832",
    "holder_page": "3f365e84-a3c2-81c7-ab25-efd1a230551d",
    "list_page": "3f365e84-a3c2-81ed-b2e8-c6d54855dd27",
+   "visual_hook_lab": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+  },
+  "sl": {
+   "archive_page": "3f365e84-a3c2-81cd-a688-d85eda4e33fb",
+   "guide": "3f365e84-a3c2-812d-8079-ce0379e7be8e",
+   "holder_page": "3f365e84-a3c2-81d6-a8e0-c688aa005d39",
+   "list_page": "3f365e84-a3c2-812c-8842-d71c33926adb",
    "visual_hook_lab": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
   }
  },
