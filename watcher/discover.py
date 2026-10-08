@@ -53,6 +53,39 @@ def spoken_mention(handle, vids=None, n=2, max_days=30):
     return ''
 
 
+def shown_on_screen(handle, vids=None, max_days=30):
+    """Some creators only SHOW the app (its screens, logo or website) without saying or writing its name. Claude looks
+    at frames of the most-viewed recent video; returns a short description of what it saw, or ''."""
+    import shutil
+    import tempfile
+    from . import llm, media
+    vids = vids if vids is not None else tiktok.latest_videos(handle)
+    recent = [v for v in vids if (time.time() - (int(v['id']) >> 32)) / 86400 <= max_days]
+    if not recent:
+        return ''
+    v = max(recent, key=lambda v: v['views'])
+    work = tempfile.mkdtemp(prefix='screen-')
+    try:
+        f = media.download(f"https://www.tiktok.com/@{handle}/video/{v['id']}", work)
+        frames = media.frames(f, work, max_frames=24)
+        content = [{'type': 'text', 'text': f"""These are frames of a TikTok video by @{handle} (contact sheets, timestamps in red).
+Is the {SOURCE} app shown on screen - its interface, its name/logo (a yellow knot-like symbol), or its website
+(astra-ai.co / app.astra-ai.co)? Only answer true if you can really see it.
+Return JSON {{"shown": true, "evidence": "<what exactly you see, short, English>"}}"""}]
+        for t0, t1, path in media.contact_sheets(frames, work):
+            content.append(llm.image_part(path))
+        r = llm.chat_json('sonnet', 'You check TikTok videos for a marketing team. Reply with JSON only.', content, timeout=900)
+    except Exception as e:
+        print('screen check failed', handle, str(e)[:120])
+        return ''
+    finally:
+        shutil.rmtree(work, ignore_errors=True)
+    if r.get('shown') is True:
+        SPOKEN[handle] = f"ON SCREEN in its most-viewed recent video: {r.get('evidence', '')}"
+        return SPOKEN[handle]
+    return ''
+
+
 def check_account(handle, max_days=30, listen=True):
     """'active', 'inactive' or 'invalid' for one TikTok account. Active = posted in the last 30 days AND the app is
     named in a caption, on-screen text or subtitles - or, failing that, in the speech of its most-viewed recent videos."""
@@ -70,6 +103,8 @@ def check_account(handle, max_days=30, listen=True):
                 break
     if recent and not found and listen and os.environ.get('SONIOX_API_KEY'):
         found = bool(spoken_mention(handle, vids, max_days=max_days))
+    if recent and not found and listen and os.environ.get('CLAUDE_CODE_OAUTH_TOKEN'):
+        found = bool(shown_on_screen(handle, vids, max_days=max_days))
     return 'active' if (recent and found) else 'inactive'
 
 
@@ -103,7 +138,8 @@ def account_text(handle, details=4):
                 line += f" | ON SCREEN: {d['sticker'][:160]} | SPEECH: {d['subtitles'][:300]}"
         lines.append(line)
     if SPOKEN.get(handle):
-        lines.append(f"- SPEECH of one of its most-viewed recent videos (transcribed): {SPOKEN[handle][:900]}")
+        lines.append(f"- {SPOKEN[handle][:900]}" if SPOKEN[handle].startswith('ON SCREEN')
+                     else f"- SPEECH of one of its most-viewed recent videos (transcribed): {SPOKEN[handle][:900]}")
     return '\n'.join(lines)
 
 

@@ -854,6 +854,10 @@ def accounts_sync(path):
     with open(path) as f:
         data = json.load(f)
     now = time.time()
+    for h in data.get('recheck', []):  # blocked by an earlier verdict the user doubts: judged again as a candidate
+        if accounts.get(h, {}).get('blocked'):
+            accounts[h].pop('blocked', None)
+            accounts[h]['status'] = 'inactive'
     tracked = [h for h, a in accounts.items() if a['status'] in ('active', 'manual')]
     cands = [h for h in dict.fromkeys(data.get('candidates', [])) if h not in tracked and not accounts.get(h, {}).get('blocked')]
     cands = [h for h in cands if discover.check_account(h) == 'active']  # posted in 30 days + Astra AI in its videos
@@ -861,6 +865,16 @@ def accounts_sync(path):
     retry = [h for h in tracked + cands if verdicts.get(h, {}).get('verdict') in (None, 'unclear')]
     if retry:  # second look for the undecided ones: all 8 videos with on-screen text and speech
         verdicts.update(discover.confirm_ugc(retry, model=cfg['models']['build'], batch=4, details=8))
+    doubt = [h for h in tracked if verdicts.get(h, {}).get('verdict') in ('other_app', 'not_ugc')
+             or (verdicts.get(h, {}).get('verdict') == 'source_ugc' and not discover.regional(h, verdicts[h]))]
+    if doubt:  # a tracked creator is only dropped when a second, closer look (strong model, 8 videos) agrees
+        second = discover.confirm_ugc(doubt, model=cfg['models']['build'], batch=4, details=8)
+        for h in doubt:
+            v2 = second.get(h) or {'verdict': 'unclear', 'reason': 'second look gave no answer'}
+            if v2.get('verdict') == 'source_ugc' and not discover.regional(h, v2):
+                v2 = {**v2, 'verdict': 'outside_region'}
+            verdicts[h] = v2 if v2.get('verdict') in ('other_app', 'not_ugc', 'outside_region') else \
+                {**v2, 'verdict': 'source_ugc' if v2.get('verdict') == 'source_ugc' else 'unclear'}
     added, blocked, unclear = [], [], []
     outside = []
     for h in cands:
@@ -873,7 +887,8 @@ def accounts_sync(path):
             outside.append((h, v.get('language') or '?'))
     for h in tracked:
         v = verdicts.get(h, {})
-        if v.get('verdict') in ('other_app', 'not_ugc') or (v.get('verdict') == 'source_ugc' and not discover.regional(h, v)):
+        if v.get('verdict') in ('other_app', 'not_ugc', 'outside_region') or (
+                v.get('verdict') == 'source_ugc' and not discover.regional(h, v)):
             accounts[h].update({'status': 'inactive', 'blocked': True,
                                 'blocked_reason': f"{v['verdict']}: {v.get('other_app') or v.get('language') or ''} {v.get('reason') or ''}".strip()})
             blocked.append((h, v))

@@ -93,3 +93,22 @@ def test_creator_who_only_says_the_app_name_is_found_by_listening():
             mock.patch('watcher.media.download', return_value='v.mp4'), mock.patch('watcher.media.audio', return_value='a.flac'), \
             mock.patch('watcher.soniox.transcribe', return_value={'text': 'Danas učimo biologiju.'}):
         assert discover.check_account('someone') == 'inactive'
+
+
+def test_tracked_creator_is_only_dropped_when_a_second_look_agrees(tmp_path):
+    import json as _json
+    from watcher import localize, main, state
+    accounts = {'kept': {'status': 'active'}, 'dropped': {'status': 'active'}}
+    path = tmp_path / 'sync.json'
+    path.write_text(_json.dumps({'candidates': []}))
+    first = {'kept': {'verdict': 'not_ugc', 'language': 'Serbian'}, 'dropped': {'verdict': 'not_ugc', 'language': 'Serbian'}}
+    second = {'kept': {'verdict': 'source_ugc', 'language': 'Serbian'}, 'dropped': {'verdict': 'other_app', 'other_app': 'X'}}
+    with mock.patch.object(state, 'DIR', str(tmp_path)), \
+            mock.patch.object(discover, 'confirm_ugc', side_effect=[first, second]), \
+            mock.patch.object(main, 'backfill', return_value=(0, 0)), mock.patch.object(localize, 'run', return_value=[]), \
+            mock.patch.object(main, 'notify'), mock.patch.object(main, 'load_formats', return_value=[]):
+        state.save('accounts.json', accounts)
+        main.accounts_sync(str(path))
+        out = state.load('accounts.json', {})
+    assert out['kept']['status'] == 'active' and not out['kept'].get('blocked')
+    assert out['dropped']['blocked'] and out['dropped']['status'] == 'inactive'
