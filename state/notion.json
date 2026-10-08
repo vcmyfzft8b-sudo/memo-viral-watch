@@ -1,0 +1,12 @@
+{
+ "markets": {
+  "sh": {
+   "archive_page": "3f365e84-a3c2-81ee-8a96-c0c8b56fcec7",
+   "holder_page": "3f365e84-a3c2-81c7-ab25-efd1a230551d",
+   "list_page": "3f365e84-a3c2-81ed-b2e8-c6d54855dd27",
+   "visual_hook_lab": "https://app.notion.com/p/3f365e84a3c281d28160d7121f20c000"
+  }
+ },
+ "radar_page": "3f365e84-a3c2-8183-a21a-d8e0262b843a",
+ "root": "3f365e84-a3c2-8050-bbc5-f4495d5310da"
+}
