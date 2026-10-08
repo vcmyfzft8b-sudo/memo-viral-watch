@@ -1,0 +1,338 @@
+{
+ "3f365e84-a3c2-8166-bfa8-c7343e58a7ee": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Drži svoju studentsku ili učeničku karticu (indeks) uz lice, pomjeraj je dok govoriš direktno u kameru, a naslov je na ekranu.",
+   "text": {
+    "content": "Drži svoju studentsku ili učeničku karticu (indeks) uz lice, pomjeraj je dok govoriš direktno u kameru, a naslov je na ekranu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-818e-86a1-c8f28563e239": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+   "text": {
+    "content": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81c7-a8cc-f6bbdd1a3c4e": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Kod rečenica „Prvo, prijevoz“, „Drugo: Microsoft Office“, „Treće, zabava“ i „Četvrto: Memo AI“ stavi na ekran tekst 1/4–4/4 s emojijem, a karticu drži u ruci i mahni njom kroz cijeli video.",
+   "text": {
+    "content": "Kod rečenica „Prvo, prijevoz“, „Drugo: Microsoft Office“, „Treće, zabava“ i „Četvrto: Memo AI“ stavi na ekran tekst 1/4–4/4 s emojijem, a karticu drži u ruci i mahni njom kroz cijeli video.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81ec-b508-c10af7489396": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Za zadnju rečenicu vrati se u kameru.",
+   "text": {
+    "content": "Za zadnju rečenicu vrati se u kameru.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "page:3f365e84-a3c2-814b-a78d-ef26edc77a19": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Popusti za učenike i studente o kojima 99% ljudi nema pojma. Prije nego što odeš dalje, sačuvaj ovaj video, jer će ti zatrebati. ",
+    "text": {
+     "content": "Popusti za učenike i studente o kojima 99% ljudi nema pojma. Prije nego što odeš dalje, sačuvaj ovaj video, jer će ti zatrebati. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Tekst na ekranu: „1/4 Prijevoz 🚆✈️“) Prvo, prijevoz: sa studentskom karticom imaš popust na karte za međugradske linije, a neke avio-kompanije imaju i studentske cijene za letove. ",
+    "text": {
+     "content": "(Tekst na ekranu: „1/4 Prijevoz 🚆✈️“) Prvo, prijevoz: sa studentskom karticom imaš popust na karte za međugradske linije, a neke avio-kompanije imaju i studentske cijene za letove. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Tekst na ekranu: „2/4 Microsoft Office 📝 FREE“) Drugo: Microsoft Office možeš imati potpuno besplatno. Znači Word, Excel, PowerPoint – samo se prijaviš sa školskim ili fakultetskim mailom i sve ti je besplatno. ",
+    "text": {
+     "content": "(Tekst na ekranu: „2/4 Microsoft Office 📝 FREE“) Drugo: Microsoft Office možeš imati potpuno besplatno. Znači Word, Excel, PowerPoint – samo se prijaviš sa školskim ili fakultetskim mailom i sve ti je besplatno. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Tekst na ekranu: „3/4 Kino i teatar 🍿“) Treće, zabava: u Cineplexxu su ti karte za kino jeftinije, a u mnogim teatrima predstave često plaćaš i do pola cijene. ",
+    "text": {
+     "content": "(Tekst na ekranu: „3/4 Kino i teatar 🍿“) Treće, zabava: u Cineplexxu su ti karte za kino jeftinije, a u mnogim teatrima predstave često plaćaš i do pola cijene. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Tekst na ekranu: „4/4 Memo AI“) Četvrto: Memo AI možeš probati besplatno. (",
+    "text": {
+     "content": "(Tekst na ekranu: „4/4 Memo AI“) Četvrto: Memo AI možeš probati besplatno. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Ako ne znaš šta je Memo AI i kako radi, evo, sad ću ti pokazati. (",
+    "text": {
+     "content": ") Ako ne znaš šta je Memo AI i kako radi, evo, sad ću ti pokazati. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Memo AI je alat koji ti pomaže u učenju: ubaciš ono iz čega učiš – PDF, prezentaciju, snimak predavanja ili slike. (",
+    "text": {
+     "content": ") Memo AI je alat koji ti pomaže u učenju: ubaciš ono iz čega učiš – PDF, prezentaciju, snimak predavanja ili slike. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Kad ubaciš, recimo, slike iz udžbenika ili sveske, Memo AI ti za par minuta napravi bilješke, kartice i kviz. (",
+    "text": {
+     "content": ") Kad ubaciš, recimo, slike iz udžbenika ili sveske, Memo AI ti za par minuta napravi bilješke, kartice i kviz. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/",
+    "plain_text": "Memo AI · memoai.eu",
+    "text": {
+     "content": "Memo AI · memoai.eu",
+     "link": {
+      "url": "https://memoai.eu/"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") I onda biraš kako ti najviše odgovara: kartice, kviz, tutor koji ti sve objasni naglas ili probni test. ",
+    "text": {
+     "content": ") I onda biraš kako ti najviše odgovara: kartice, kviz, tutor koji ti sve objasni naglas ili probni test. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Ako hoćeš drugi dio, ostavi lajk i zaprati me. ",
+    "text": {
+     "content": "Ako hoćeš drugi dio, ostavi lajk i zaprati me. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ]
+}

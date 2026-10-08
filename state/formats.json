@@ -1,1 +1,24 @@
-[]
+[
+ {
+  "created": 1791492438,
+  "description": "Talking-head listicle of little-known student discounts (transport, free Microsoft Office, cinema/theatre) with numbered on-screen stickers, where the last item is the study app shown as a screen recording before a like-and-follow outro.",
+  "id": "A20261008204718",
+  "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
+  "pages": {},
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (85 words (original 84)) / script reworded again: The original says the brand out loud in"
+   ],
+   "since": 1791492822,
+   "tries": 1
+  },
+  "reworded": {
+   "sh": true
+  },
+  "script": "Popusti za učenike i studente o kojima 99% ljudi nema pojma. Prije nego što odeš dalje, sačuvaj ovaj video, jer će ti zatrebati. Prvo, prijevoz: sa studentskom karticom imaš popust na karte za međugradske linije, a neke avio-kompanije imaju i studentske cijene za letove. Drugo: Microsoft Office možeš imati potpuno besplatno. Znači Word, Excel, PowerPoint – samo se prijaviš sa školskim ili fakultetskim mailom i sve ti je besplatno. Treće, zabava: u Cineplexxu su ti karte za kino jeftinije, a u mnogim teatrima predstave često plaćaš i do pola cijene. Četvrto: Memo AI možeš probati besplatno. Ako ne znaš šta je Memo AI i kako radi, evo, sad ću ti pokazati. Memo AI je alat koji ti pomaže u učenju: ubaciš ono iz čega učiš – PDF, prezentaciju, snimak predavanja ili slike. Kad ubaciš, recimo, slike iz udžbenika ili sveske, Memo AI ti za par minuta napravi bilješke, kartice i kviz. I onda biraš ",
+  "source_video": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
+  "status": "pending",
+  "title": "Studentski popusti koje svi propuštaju 🎟️"
+ }
+]

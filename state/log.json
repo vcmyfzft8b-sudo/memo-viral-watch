@@ -84,5 +84,78 @@
   "order": [],
   "ts": 1791492225,
   "type": "rerank"
+ },
+ {
+  "format": null,
+  "level": "viral",
+  "ts": 1791492350,
+  "type": "alert",
+  "video": "7692158324032163124",
+  "views": 368600
+ },
+ {
+  "format": null,
+  "level": "viral",
+  "ts": 1791492385,
+  "type": "alert",
+  "video": "7688930483304090898",
+  "views": 294900
+ },
+ {
+  "format": null,
+  "level": "viral",
+  "ts": 1791492400,
+  "type": "alert",
+  "video": "7692563801731845382",
+  "views": 283500
+ },
+ {
+  "format": null,
+  "level": "viral",
+  "ts": 1791492420,
+  "type": "alert",
+  "video": "7692478766852967686",
+  "views": 282600
+ },
+ {
+  "format": "A20261008204718",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (85 words (original 84)) / script reworded again: The original says the brand out loud in"
+  ],
+  "tries": 1,
+  "ts": 1791492822,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008204718",
+  "page_de": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
+  "pages": {},
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (85 words (original 84)) / script reworded again: The original says the brand out loud in"
+  ],
+  "ts": 1791492822,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261008204718",
+  "format": "A20261008204718",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (85 words (original 84)) / script reworded again: The original says the brand out loud in"
+  ],
+  "ts": 1791492823,
+  "type": "alert",
+  "video": "7691776401896131861",
+  "views": 202100
+ },
+ {
+  "format": null,
+  "level": "viral",
+  "ts": 1791492855,
+  "type": "alert",
+  "video": "7692577375296507154",
+  "views": 193400
  }
 ]

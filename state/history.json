@@ -821,7 +821,7 @@
   "format": null,
   "handle": "studywithvalentina",
   "hook": "This saved my studying, literally",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 294900,
@@ -1970,10 +1970,10 @@
  "7691776401896131861": {
   "backfill": true,
   "created": 1790881250,
-  "format": null,
+  "format": "A20261008204718",
   "handle": "study_with_hexi",
   "hook": "Student discounts you surely didn't know about (transport, Office, cinema, Astra AI)",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 202000,
@@ -2062,5 +2062,45 @@
   "mature": true,
   "views": 13500,
   "views_7d": 13500
+ },
+ "7692158324032163124": {
+  "created": 1790970220,
+  "format": null,
+  "handle": "kera.vas.uci",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 368600
+ },
+ "7692478766852967686": {
+  "created": 1791044847,
+  "format": null,
+  "handle": "study.with.mili",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 282600
+ },
+ "7692563801731845382": {
+  "created": 1791064649,
+  "format": null,
+  "handle": "kera.vas.uci",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 283500
+ },
+ "7692577375296507154": {
+  "created": 1791067752,
+  "format": null,
+  "handle": "studywithvalentina",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 193400
  }
 }
