@@ -65,6 +65,7 @@ jobs:
           node-version: '22'
 
       - name: Install
+        timeout-minutes: 12
         run: |
           npm install -g @anthropic-ai/claude-code > /dev/null
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tor > /dev/null
@@ -74,6 +75,7 @@ jobs:
       # with European exit nodes (only used as a fallback, see watcher/tiktok.py).
       - name: Start European route (Tor)
         continue-on-error: true
+        timeout-minutes: 4
         run: |
           sudo systemctl stop tor tor@default 2>/dev/null || true
           printf 'SocksPort 9150\nExitNodes {de},{at},{ch},{nl},{be},{fr},{pl},{cz},{dk},{se},{hr},{si},{hu},{ro},{bg},{gr},{it}\nStrictNodes 1\nLog notice file /tmp/tor.log\n' > /tmp/torrc
