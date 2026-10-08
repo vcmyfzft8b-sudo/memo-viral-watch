@@ -37,6 +37,80 @@
    "type": "text"
   }
  ],
+ "3f365e84-a3c2-8108-aede-ffea749ae9fd": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") In še četrta stvar, tale aplikacija tukaj, ki jo lahko na začetku preizkusiš čisto zastonj. ",
+   "text": {
+    "content": ") In še četrta stvar, tale aplikacija tukaj, ki jo lahko na začetku preizkusiš čisto zastonj. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-810e-9e74-e2c0008a681a": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Na posnetku zaslona naloži PDF ali s funkcijo Scan fotografiraj strani zvezka.",
+   "text": {
+    "content": "Na posnetku zaslona naloži PDF ali s funkcijo Scan fotografiraj strani zvezka.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f365e84-a3c2-8115-b8a0-d8cb348ad263": [
   {
    "annotations": {
@@ -146,6 +220,25 @@
    "plain_text": "(dramatična pavza, dvigne škarje) In na prvem mestu, kaj pa drugega kot šport. Veliko časa preživiš v telovadnici ali na igrišču, ne samo za knjigo, pa še predmetov je manj kot drugje. Teorija seveda je, ampak je je precej manj kot na ostalih faksih. ",
    "text": {
     "content": "(dramatična pavza, dvigne škarje) In na prvem mestu, kaj pa drugega kot šport. Veliko časa preživiš v telovadnici ali na igrišču, ne samo za knjigo, pa še predmetov je manj kot drugje. Teorija seveda je, ampak je je precej manj kot na ostalih faksih. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-812f-a9fa-f7adbb5be989": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Ko se prikaže končan zapisek, se klikni skozi kartice, kviz z razlagami in miselni vzorec, nato ostani na karticah.",
+   "text": {
+    "content": "Ko se prikaže končan zapisek, se klikni skozi kartice, kviz z razlagami in miselni vzorec, nato ostani na karticah.",
     "link": null
    },
    "type": "text"
@@ -488,6 +581,25 @@
    "plain_text": "Ves video naj bo na ekranu oštevilčen seznam od 1 do 6, ki se ob vsakem krogu dopolni z barvno ključno besedo: 1. -IČ, 2. NE SLEDIŠ, 3. ZIMA, 4. 20 %, 5. MAMI/OČI, 6. MEMO AI.",
    "text": {
     "content": "Ves video naj bo na ekranu oštevilčen seznam od 1 do 6, ki se ob vsakem krogu dopolni z barvno ključno besedo: 1. -IČ, 2. NE SLEDIŠ, 3. ZIMA, 4. 20 %, 5. MAMI/OČI, 6. MEMO AI.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-818c-9c58-dc922ed1eb2c": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Napis »1/4 Prevoz 🚆 ✈️« na ekranu) Prvič, potovanja: s statusom te vlak, avtobus in celo letalska karta stanejo manj. (Napis »2/4 Microsoft Office 📝 ZASTONJ« na ekranu) Drugič, cel Office paket dobiš brezplačno, torej Word, Excel in PowerPoint. Edino, kar rabiš, je tvoj šolski ali študentski e-naslov, s katerim se prijaviš. (Napis »3/4 Kino in gledališče 🍿« na ekranu) Tretjič, v kinu plačaš manj za karto, v gledališču pa marsikje celo polovico manj. ",
+   "text": {
+    "content": "(Napis »1/4 Prevoz 🚆 ✈️« na ekranu) Prvič, potovanja: s statusom te vlak, avtobus in celo letalska karta stanejo manj. (Napis »2/4 Microsoft Office 📝 ZASTONJ« na ekranu) Drugič, cel Office paket dobiš brezplačno, torej Word, Excel in PowerPoint. Edino, kar rabiš, je tvoj šolski ali študentski e-naslov, s katerim se prijaviš. (Napis »3/4 Kino in gledališče 🍿« na ekranu) Tretjič, v kinu plačaš manj za karto, v gledališču pa marsikje celo polovico manj. ",
     "link": null
    },
    "type": "text"
@@ -1564,6 +1676,25 @@
    "plain_text": "Kod teksta „Pa highkey nadogradiš mozak uz Memo AI“ snimi ekran laptopa iz ruke: u Memo AI-ju otvori mapu uma ili kartice iz tog istog predavanja, a na kraju polako pokaži početnu stranicu Memo AI-ja.",
    "text": {
     "content": "Kod teksta „Pa highkey nadogradiš mozak uz Memo AI“ snimi ekran laptopa iz ruke: u Memo AI-ju otvori mapu uma ili kartice iz tog istog predavanja, a na kraju polako pokaži početnu stranicu Memo AI-ja.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f365e84-a3c2-81e0-813c-e011c0f93aa4": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Napis »Popusti za dijake in študente, za katere 99 % ne ve ‼️« na ekranu) Dijaki in študenti, tole so popusti, za katere skoraj nihče ne ve. Shrani si video zdaj, ker ga boš kasneje še kako rabila. ",
+   "text": {
+    "content": "(Napis »Popusti za dijake in študente, za katere 99 % ne ve ‼️« na ekranu) Dijaki in študenti, tole so popusti, za katere skoraj nihče ne ve. Shrani si video zdaj, ker ga boš kasneje še kako rabila. ",
     "link": null
    },
    "type": "text"

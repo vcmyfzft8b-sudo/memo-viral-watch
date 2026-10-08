@@ -10,11 +10,11 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (86 words (original 84)) / script reworded again: The example names the brand aloud once, in item 4 ('besplatni trial na A",
-    "🇸🇮 script rewritten sentence by sentence (103 words (original 97)) / script reworded again: Too close to the example: the hook ('Popusti ... o katerih skoraj nihče"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The original says the brand (Astra AI) out loud in item 4, but the script only says 'ova aplikacija'. The ",
+    "🇸🇮 script rewritten sentence by sentence (90 words (original 84)) / script reworded again: The original says the brand out loud in the fourth item ('besplatni trai"
    ],
    "since": 1791492822,
-   "tries": 2
+   "tries": 3
   },
   "reworded": {
    "sh": true,
@@ -31,10 +31,10 @@
   "id": "A20261008205804",
   "listed_at": 1791493524,
   "page_id": "3f365e84-a3c2-81ed-a906-d5caef049749",
-  "pages": {},
-  "pending_pages": {
+  "pages": {
    "sl": "3f365e84-a3c2-81b2-8c98-d419a8b912b6"
   },
+  "pending_pages": {},
   "reworded": {
    "sh": true,
    "sl": true
@@ -74,11 +74,11 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The example's second on-screen line names the brand ('nadogradiš mozak uz Astra AI'). Our shown text 'Sreć",
-    "🇸🇮 script rewritten sentence by sentence (25 words (original 29)) / script reworded again: Not reworded enough: line 2 'Zato sem si možgane highkey nadgradila' tra"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The example's second on-screen line names the brand ('...nadogradiš mozak uz Astra AI'). The script's matc",
+    "🇸🇮 filming directions corrected / script reworded again: The original's second on-screen line names the brand ('nadogradiš mozak uz Astra AI'), but our second line"
    ],
    "since": 1791494592,
-   "tries": 2
+   "tries": 3
   },
   "reworded": {
    "sh": true,
