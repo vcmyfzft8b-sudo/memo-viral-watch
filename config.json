@@ -21,7 +21,7 @@
     "creator_multiple_min_views": 5000,
     "creator_multiple_max_age_hours": 72,
     "viral_views": 100000,
-    "min_engagement": 0.015,
+    "min_engagement": 0.0075,
     "good_views": 20000
   },
   "ranking": {

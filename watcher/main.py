@@ -1020,8 +1020,9 @@ def bootstrap(limit, days=30):
             if item['id'] in seen or now - created > days * 86400 or item['views'] < cfg['thresholds']['viral_views']:
                 continue
             seen.add(item['id'])
-            if history.get(item['id'], {}).get('judged'):
-                continue
+            h_ = history.get(item['id'], {})
+            if h_.get('judged') and (h_.get('format') or h_.get('bootstrap_tries', 0) >= 2):
+                continue  # judged into a format already, or tried twice without one
             cands.append((item['views'], h, item['id']))
     cands.sort(reverse=True)
     print(f'bootstrap: {len(cands)} viral videos not judged yet in the last {days} days; doing {min(limit, len(cands))}')
@@ -1042,6 +1043,7 @@ def bootstrap(limit, days=30):
             traceback.print_exc()
             r = {'video': vid, 'error': str(e)[:200]}
         history[vid]['judged'] = True
+        history[vid]['bootstrap_tries'] = history[vid].get('bootstrap_tries', 0) + 1
         state.save('history.json', history)
         state.save('formats.json', fmts)
         state.save('meta.json', meta)
