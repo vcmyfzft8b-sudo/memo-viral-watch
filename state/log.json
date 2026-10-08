@@ -253,5 +253,57 @@
   "type": "alert",
   "video": "7691071853334498580",
   "views": 175500
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957"
+  ],
+  "ts": 1791494928,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957"
+  ],
+  "ts": 1791495688,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957"
+  ],
+  "ts": 1791495689,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008204718",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (86 words (original 84)) / script reworded again: The example names the brand aloud once, in item 4 ('besplatni trial na A",
+   "🇸🇮 script rewritten sentence by sentence (103 words (original 97)) / script reworded again: Too close to the example: the hook ('Popusti ... o katerih skoraj nihče"
+  ],
+  "tries": 2,
+  "ts": 1791496339,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The example's second on-screen line names the brand ('nadogradiš mozak uz Astra AI'). Our shown text 'Sreć",
+   "🇸🇮 script rewritten sentence by sentence (25 words (original 29)) / script reworded again: Not reworded enough: line 2 'Zato sem si možgane highkey nadgradila' tra"
+  ],
+  "tries": 2,
+  "ts": 1791496833,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957"
+  ],
+  "ts": 1791496839,
+  "type": "rerank"
  }
 ]

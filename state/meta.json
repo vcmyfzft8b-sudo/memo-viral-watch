@@ -1,9 +1,11 @@
 {
  "audit": {
   "A20261008204718:sh": "failed",
+  "A20261008204718:sl": "failed",
   "A20261008205804:sh": "fixed",
   "A20261008210957:sh": "fixed",
-  "A20261008211912:sh": "failed"
+  "A20261008211912:sh": "failed",
+  "A20261008211912:sl": "failed"
  },
  "audit_fingerprints": {
   "A20261008205804:sh": "e1710fe6af3e53183c3440a4461012ac7db71505e071fd007b0655069384e4e5",
