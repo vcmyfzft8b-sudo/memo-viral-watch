@@ -65,16 +65,26 @@ def frames(video, out_dir, max_frames=48):
     return result
 
 
-def for_notion(video, out_dir, max_mb=19):
-    """Notion single-part uploads are limited to 20 MB: re-encode if needed."""
-    if os.path.getsize(video) <= max_mb * 1024 * 1024:
+MAX_UPLOAD_MB = float(os.environ.get('NOTION_MAX_UPLOAD_MB') or 4.8)  # free Notion plan: 5 MiB per file
+
+
+def for_notion(video, out_dir, max_mb=None):
+    """Notion's upload limit depends on the plan (free: 5 MiB): re-encode until the video fits, a bit smaller and
+    a bit lower in bitrate each round (720p first, then 540p)."""
+    max_mb = max_mb or MAX_UPLOAD_MB
+    limit = max_mb * 1024 * 1024
+    if os.path.getsize(video) <= limit:
         return video
     dur = max(duration(video), 1)
-    kbps = int(max_mb * 8 * 1024 * 0.9 / dur) - 96
-    out = os.path.join(out_dir, 'video-notion.mp4')
-    _run(['ffmpeg', '-v', 'error', '-y', '-i', video, '-c:v', 'libx264', '-b:v', f'{max(kbps, 300)}k',
-          '-vf', "scale='min(720,iw)':-2", '-c:a', 'aac', '-b:a', '96k', out])
-    return out
+    out = os.path.join(out_dir, os.path.splitext(os.path.basename(video))[0] + '-notion.mp4')
+    for attempt, (width, audio, share) in enumerate([(720, 96, 0.9), (540, 64, 0.8), (540, 48, 0.65), (480, 32, 0.5)]):
+        kbps = max(int(max_mb * 8 * 1024 * share / dur) - audio, 80)
+        _run(['ffmpeg', '-v', 'error', '-y', '-i', video, '-c:v', 'libx264', '-preset', 'veryfast', '-b:v', f'{kbps}k',
+              '-maxrate', f'{int(kbps * 1.2)}k', '-bufsize', f'{kbps * 2}k',
+              '-vf', f"scale='min({width},iw)':-2", '-c:a', 'aac', '-b:a', f'{audio}k', out])
+        if os.path.getsize(out) <= limit:
+            return out
+    raise RuntimeError(f'video does not fit into {max_mb} MB even after compressing')
 
 
 def cleanup(out_dir):

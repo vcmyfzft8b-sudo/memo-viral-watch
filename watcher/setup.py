@@ -310,6 +310,9 @@ def _clone(b, work):
             with open(path, 'wb') as f:
                 for chunk in r.iter_content(1 << 16):
                     f.write(chunk)
+        if t == 'video':
+            from . import media
+            path = media.for_notion(path, work)
         return {'object': 'block', 'type': t, t: {'type': 'file_upload', 'file_upload': {'id': notion.upload_video(path)}}}
     body = {k: (_rich(v) if k in ('rich_text', 'caption') else v) for k, v in data.items() if k in KEEP}
     return {'object': 'block', 'type': t, t: body}
