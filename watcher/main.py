@@ -1097,6 +1097,7 @@ def main():
     ap.add_argument('--force', action='store_true', help='with --group-audit/--group-fix: ignore cached group results')
     ap.add_argument('--relist', action='store_true', help='only re-draw the format lists (order + going-viral section)')
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
+    ap.add_argument('--hook-lab', action='store_true', help='the copied Parakeet Visual Hook Lab -> Serbo-Croatian, linked everywhere')
     ap.add_argument('--bootstrap', type=int, default=0, help='N: build formats from the strongest viral videos of the last 30 days (max N)')
     ap.add_argument('--check-hot', action='store_true', help='strict Claude check of ALL viral videos from the last 7 days')
     ap.add_argument('--init-market', default='', help='market key: connect a new market to the shared format list')
@@ -1339,6 +1340,10 @@ def main():
     if a.setup_notion:
         from . import setup
         setup.notion_pages(load_config())
+        return
+    if a.hook_lab:
+        from . import setup
+        setup.hook_lab(load_config())
         return
     if a.bootstrap:
         bootstrap(a.bootstrap)
