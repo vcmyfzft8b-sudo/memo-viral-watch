@@ -75,3 +75,21 @@ def test_alerts_go_to_the_discord_channel_in_discord_format():
     body = post.call_args[1]['json']
     assert body['content'] == '**🟢 VIRAL**\n@a – **367k views**\n▶ [Open video](<https://www.tiktok.com/@a/video/1>)'
     assert body['allowed_mentions'] == {'parse': []}
+
+
+def test_creator_who_only_says_the_app_name_is_found_by_listening():
+    import time as _t
+    vid = str(int(_t.time()) << 32)
+    with mock.patch.object(discover.tiktok, 'latest_videos', return_value=[{'id': vid, 'views': 367000, 'desc': 'Jeste li bolji od 99%?'}]), \
+            mock.patch.object(discover.tiktok, 'video_detail', return_value={'desc': '', 'sticker': '', 'subtitles': ''}), \
+            mock.patch.dict('os.environ', {'SONIOX_API_KEY': 'k'}), \
+            mock.patch('watcher.media.download', return_value='v.mp4'), mock.patch('watcher.media.audio', return_value='a.flac'), \
+            mock.patch('watcher.soniox.transcribe', return_value={'text': 'Ako koristiš Astra AI aplikaciju, ispadaš.'}):
+        assert discover.check_account('kera.vas.uci') == 'active'
+        assert 'Astra AI' in discover.account_text('kera.vas.uci', details=0)
+    with mock.patch.object(discover.tiktok, 'latest_videos', return_value=[{'id': vid, 'views': 5, 'desc': 'učimo'}]), \
+            mock.patch.object(discover.tiktok, 'video_detail', return_value={'desc': '', 'sticker': '', 'subtitles': ''}), \
+            mock.patch.dict('os.environ', {'SONIOX_API_KEY': 'k'}), \
+            mock.patch('watcher.media.download', return_value='v.mp4'), mock.patch('watcher.media.audio', return_value='a.flac'), \
+            mock.patch('watcher.soniox.transcribe', return_value={'text': 'Danas učimo biologiju.'}):
+        assert discover.check_account('someone') == 'inactive'

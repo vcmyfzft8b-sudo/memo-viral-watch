@@ -26,8 +26,36 @@ lifestyle creators too. Be exhaustive. Already known (you may skip them): {{know
 Answer with one line per account exactly like: ACCOUNT | @handle | market"""
 
 
-def check_account(handle, max_days=30):
-    """'active', 'inactive' or 'invalid' for one TikTok account."""
+SPOKEN = {}  # handle -> speech of its most-viewed recent videos that names the app (filled by spoken_mention)
+
+
+def spoken_mention(handle, vids=None, n=2, max_days=30):
+    """Many Astra AI creators only SAY the app's name (or show it on screen) - no caption, no on-screen text, no TikTok
+    subtitles. Their most-viewed recent videos are transcribed (Soniox); returns the speech that names the app, or ''."""
+    import shutil
+    import tempfile
+    from . import media, soniox
+    vids = vids if vids is not None else tiktok.latest_videos(handle)
+    recent = [v for v in vids if (time.time() - (int(v['id']) >> 32)) / 86400 <= max_days]
+    for v in sorted(recent, key=lambda v: -v['views'])[:n]:
+        work = tempfile.mkdtemp(prefix='speech-')
+        try:
+            url = f"https://www.tiktok.com/@{handle}/video/{v['id']}"
+            text = soniox.transcribe(media.audio(media.download(url, work), work)).get('text', '')
+        except Exception as e:
+            print('speech check failed', handle, v['id'], str(e)[:120])
+            text = ''
+        finally:
+            shutil.rmtree(work, ignore_errors=True)
+        if says_source(text):
+            SPOKEN[handle] = text[:1200]
+            return text
+    return ''
+
+
+def check_account(handle, max_days=30, listen=True):
+    """'active', 'inactive' or 'invalid' for one TikTok account. Active = posted in the last 30 days AND the app is
+    named in a caption, on-screen text or subtitles - or, failing that, in the speech of its most-viewed recent videos."""
     vids = tiktok.latest_videos(handle)
     if not vids:
         return 'invalid'
@@ -40,6 +68,8 @@ def check_account(handle, max_days=30):
             if d and says_source(' '.join([d['desc'], d['sticker'], d['subtitles']])):
                 found = True
                 break
+    if recent and not found and listen and os.environ.get('SONIOX_API_KEY'):
+        found = bool(spoken_mention(handle, vids, max_days=max_days))
     return 'active' if (recent and found) else 'inactive'
 
 
@@ -72,6 +102,8 @@ def account_text(handle, details=4):
             if d:
                 line += f" | ON SCREEN: {d['sticker'][:160]} | SPEECH: {d['subtitles'][:300]}"
         lines.append(line)
+    if SPOKEN.get(handle):
+        lines.append(f"- SPEECH of one of its most-viewed recent videos (transcribed): {SPOKEN[handle][:900]}")
     return '\n'.join(lines)
 
 
