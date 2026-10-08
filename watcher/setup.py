@@ -281,6 +281,70 @@ def _walk(block_id):
 
 
 TABLES = {'sh': HOOK_LAB_SH, 'sl': HOOK_LAB_SL}
+KEEP = ('rich_text', 'color', 'icon', 'is_toggleable', 'caption', 'language', 'checked')
+
+
+def _rich(rich):
+    out = []
+    for x in rich or []:
+        if x.get('type') == 'mention':
+            out.append({'type': 'mention', 'mention': x['mention'], 'annotations': x.get('annotations', {})})
+        else:
+            out.append({'type': 'text', 'text': {'content': x.get('plain_text', ''), 'link': (x.get('text') or {}).get('link')},
+                        'annotations': x.get('annotations', {})})
+    return out
+
+
+def _clone(b, work):
+    """A block ready to be created again (Notion-hosted videos/images are downloaded and uploaded again)."""
+    import requests
+    t = b['type']
+    data = b.get(t) or {}
+    if t in ('video', 'image', 'file'):
+        src = (data.get('file') or {}).get('url') or (data.get('external') or {}).get('url')
+        if data.get('type') == 'external':
+            return {'object': 'block', 'type': t, t: {'type': 'external', 'external': data['external']}}
+        path = os.path.join(work, f"{b['id']}.mp4" if t == 'video' else b['id'])
+        with requests.get(src, stream=True, timeout=300) as r:
+            r.raise_for_status()
+            with open(path, 'wb') as f:
+                for chunk in r.iter_content(1 << 16):
+                    f.write(chunk)
+        return {'object': 'block', 'type': t, t: {'type': 'file_upload', 'file_upload': {'id': notion.upload_video(path)}}}
+    body = {k: (_rich(v) if k in ('rich_text', 'caption') else v) for k, v in data.items() if k in KEEP}
+    return {'object': 'block', 'type': t, t: body}
+
+
+def _copy_children(src, dst, work):
+    """Copies every block below src to dst, level by level (the API takes at most two levels per request)."""
+    for b in notion.children(src):
+        if b['type'] in ('child_page', 'child_database', 'unsupported'):
+            continue
+        new = _clone(b, work)
+        if b['type'] == 'column_list':  # a column list must be created together with its columns and their content
+            cols = []
+            for col in notion.children(b['id']):
+                cols.append({'object': 'block', 'type': 'column', 'column': {**({'width_ratio': col['column']['width_ratio']}
+                             if (col.get('column') or {}).get('width_ratio') else {})},
+                             'children': [_clone(c, work) for c in notion.children(col['id'])]})
+            new['column_list'] = {'children': cols}
+            notion.api('PATCH', f'/blocks/{dst}/children', {'children': [new]})
+            continue
+        made = notion.api('PATCH', f'/blocks/{dst}/children', {'children': [new]})['results'][0]
+        if b.get('has_children'):
+            _copy_children(b['id'], made['id'], work)
+
+
+def copy_page(src, parent, title, icon):
+    import shutil
+    import tempfile
+    work = tempfile.mkdtemp(prefix='copy-')
+    try:
+        page = notion.create_page(parent, title, icon, [])
+        _copy_children(src, page['id'], work)
+        return page['id']
+    finally:
+        shutil.rmtree(work, ignore_errors=True)
 
 
 def hook_lab(cfg, market=None, page=None):
@@ -294,6 +358,12 @@ def hook_lab(cfg, market=None, page=None):
     lab = page or next(
         (b['id'] for b in notion.children(pages['root']) if b['type'] == 'child_page' and 'Visual Hook Lab' in b['child_page']['title']
          and (notion.api('GET', f"/pages/{b['id']}").get('icon') or {}).get('emoji') == '👀'), None)
+    others = {x.get('visual_hook_lab') for k, x in pages['markets'].items() if k != market}
+    if (not lab or (not page and mp.get('visual_hook_lab') in others)) and others - {None, ''}:
+        # no copy of its own yet: copy another market's lab (videos included) into this market's guide page
+        source = sorted(others - {None, ''})[0].rstrip('/').split('/')[-1].split('-')[-1]
+        lab = copy_page(source, mp.get('guide') or pages['root'], 'Visual Hook Lab', '👀')
+        print('hook-lab: copied', source, '->', lab)
     if not lab:
         raise SystemExit('hook-lab: no 👀 Visual Hook Lab copy found')
     target = TABLES[lang]
