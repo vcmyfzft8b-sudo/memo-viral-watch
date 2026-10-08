@@ -1,5 +1,5 @@
 {
- "note": "Astra AI creator candidates found by Lightreel on 8 Oct 2026 (Serbia, Croatia, Bosnia and Herzegovina; Montenegro none so far), incl. Astra's own @astra_ai_rs / @astra_ai_hr. The accounts-sync run checks every one on TikTok and with Claude (Astra AI UGC? Serbo-Croatian?) before it is tracked.",
+ "note": "Astra AI creator candidates found by Lightreel on 8 Oct 2026 (Serbia, Croatia, Bosnia and Herzegovina; Montenegro 1), incl. Astra's own @astra_ai_rs / @astra_ai_hr. The accounts-sync run checks every one on TikTok and with Claude (Astra AI UGC? Serbo-Croatian?) before it is tracked.",
  "source": "lightreel-2026-10-08",
  "candidates": [
   "astra_ai_hr",
@@ -12,6 +12,7 @@
   "karla_studytok",
   "kera.vas.uci",
   "lana.studytok",
+  "learn.with.darija",
   "learnwith.me2",
   "learnwith___lea",
   "learnwithanastasija",
@@ -21,6 +22,7 @@
   "learnwithisidora",
   "learnwithmateja",
   "learnwithmina",
+  "learnwithnela",
   "learnwithniksi",
   "learnwithpaola",
   "learnwithsaraa",
@@ -38,6 +40,7 @@
   "studyingwithema",
   "studytipsbyem",
   "studytipsbytara",
+  "studywith_petradaria",
   "studywithanamarija",
   "studywithandja",
   "studywithandjela",
@@ -53,7 +56,8 @@
   "ucenje.sa.lili",
   "ucisamilicom",
   "ucisaprofom",
-  "uciuzmuhameda"
+  "uciuzmuhameda",
+  "zoxteuci"
  ],
  "paused": {}
 }
