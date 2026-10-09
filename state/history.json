@@ -2157,6 +2157,17 @@
   "views": 10700,
   "views_7d": 10700
  },
+ "7692061360221457686": {
+  "created": 1790947608,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": false,
+  "views": 1000000,
+  "views_7d": 1000000
+ },
  "7692062694412799284": {
   "created": 1790947924,
   "format": null,
@@ -3069,6 +3080,17 @@
   "mature": false,
   "views": 28600,
   "views_7d": 28600
+ },
+ "7693171738707807491": {
+  "created": 1791206136,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": true,
+  "local": false,
+  "mature": false,
+  "views": 290800,
+  "views_7d": 290800
  },
  "7693196087628221718": {
   "created": 1791211806,

@@ -175,6 +175,13 @@
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
+ "lern.mit.domi": {
+  "added_format": true,
+  "lang": "",
+  "since": 1791535870,
+  "source": "added-by-hand",
+  "status": "manual"
+ },
  "smartishaangelisaa": {
   "blocked_reason": "not_ugc: Serbian General viral/engagement content; no mention of Astra AI or any promoted app.",
   "checked": 1791531358,
