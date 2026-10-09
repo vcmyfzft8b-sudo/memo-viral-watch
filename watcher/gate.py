@@ -33,6 +33,10 @@ def check(fmt, mkts, cfg, history, accounts, meta, page_of, set_page, make_page,
     """Builds missing pages and audits (and fixes) every market page. Returns (passed, reasons)."""
     staging = cfg['notion']['radar_page']
     reasons = []
+    try:  # the reference (built from the source video) protects that video as the example before any page is checked
+        crosscheck.ensure_reference(fmt, page_of, cfg)
+    except Exception as e:
+        print('reference not ready:', str(e)[:150])
     for mk in mkts:
         if not page_of(fmt, mk['key']):
             why = _build_missing(fmt, mk, cfg, make_page, set_page, staging)

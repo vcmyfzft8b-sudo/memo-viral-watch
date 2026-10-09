@@ -254,7 +254,7 @@ def fix_page(fmt, mk, cfg, history, accounts, meta, page_of, rounds=5, rebuild=N
             if not v.get('example_same_format') or not v.get('views_ok'):
                 return 'failed', notes + ['approved example needs review; script and example preserved']
         if not v.get('views_ok'):
-            orig = originals().get(fmt['id'])
+            orig = originals().get(fmt['id']) or fmt.get('source_video')
             notes.append(f"example has only {v['views']} views - original {SOURCE} video put back")
             if url:
                 rejected.add(url)
@@ -291,7 +291,7 @@ def fix_page(fmt, mk, cfg, history, accounts, meta, page_of, rounds=5, rebuild=N
                 rejected.add(url)
             rep = localize.run([fmt], [mk], history, accounts, meta, cfg, page_of, exclude=rejected)  # strict search
             if not (rep and rep[0][2] in ('replaced', 'kept') and (fmt.get('inspo') or {}).get(m, {}).get('strict')):
-                orig = originals().get(fmt['id'])
+                orig = originals().get(fmt['id']) or fmt.get('source_video')
                 if orig and orig not in rejected:
                     _put_example(fmt, m, pid, lang, orig, same_lang=False)
                     notes.append(f'put back the original {SOURCE} video')
