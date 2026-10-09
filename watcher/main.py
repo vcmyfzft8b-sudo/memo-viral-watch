@@ -1178,6 +1178,7 @@ def main():
     ap.add_argument('--relist', action='store_true', help='only re-draw the format lists (order + going-viral section)')
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
     ap.add_argument('--hook-lab', default='', nargs='?', const='-', help='[market:page_id] a copy of the Parakeet Visual Hook Lab -> that market\'s language, linked from its pages')
+    ap.add_argument('--verify', action='store_true', help='read-only check of every list and page in Notion against the state')
     ap.add_argument('--reset-pending', action='store_true', help='formats waiting at the gate get their 4 tries back (after a fix)')
     ap.add_argument('--fill-markets', action='store_true', help='every market gets its missing pages (live and waiting formats), then re-sort')
     ap.add_argument('--relayout', action='store_true', help='rebuild the list page in the current layout, then re-sort it')
@@ -1433,6 +1434,10 @@ def main():
         from . import setup
         market, _, page = (a.hook_lab if ':' in a.hook_lab else ':').partition(':')
         setup.hook_lab(load_config(), market or None, page or None)
+        return
+    if a.verify:
+        from . import verify
+        verify.run(load_config(), load_formats(), page_of)
         return
     if a.reset_pending:
         fmts = load_formats()
