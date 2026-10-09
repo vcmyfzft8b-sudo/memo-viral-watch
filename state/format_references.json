@@ -1,4 +1,63 @@
 {
+ "A20261008204718": {
+  "accepted_sources": [
+   "7691776401896131861"
+  ],
+  "allowed_localisation": [
+   "Language and script of speech and stickers (Slovenian, Croatian, Bosnian, Serbian), plus the country named in the hook",
+   "The specific transport operator, cinema chain and theatres in items 1 and 3, and their percentages, as long as each one is a real, currently valid student discount verified for that country",
+   "The order of items 1–3",
+   "The local name for the school or university email and the student status needed for Office",
+   "Which Memo AI input is shown (lecture recording, PDF/Word/PPT, link or scanned photos) and which 2–3 outputs are shown, chosen from the features_used list",
+   "Creator, setting, emojis and sticker styling",
+   "Exact length within 15–30 s"
+  ],
+  "beats": [
+   "Hook (0–3 s): talking head plus the sticker 'Student discounts you definitely didn't know about ‼️'. Spoken: '99% of students in [country] don't know about these discounts.'",
+   "Save prompt (3–5 s): 'Before you watch, save this video, you'll need it.' No other CTA here.",
+   "Item 1/4, Transport 🚆✈️ (numbered sticker '1/4 Prevoz/Prevoz' plus the discount figure): one or two sentences naming a real local student discount on trains, buses or flights, with the real percentage. Talking head.",
+   "Item 2/4, Microsoft Office 📝 (sticker '2/4 Microsoft Office (FREE)' / 'FREE'): Office (PowerPoint, Excel, Word) is free for students. All you have to do is sign in with your school or university email. Talking head.",
+   "Item 3/4, Cinema and theatre 🍿 (sticker '3/4 Kino i kazalište/gledališče' plus figures): a real student discount on cinema tickets at a named local chain, and that many theatres give students a much bigger discount ('up to X%'). Talking head.",
+   "Item 4/4, Memo AI (sticker '4/4 Memo AI'): 'And fourth, you can start Memo AI for free.' Cut to a screen recording on a phone or laptop. Show uploading a lecture recording or PDF (or scanning notes with the Scan camera), then the finished notes, flashcards and quiz, with the wait cut. One sentence of voice-over on what it does, keeping the original's single short sentence for this item.",
+   "Outro (last 1–2 s): the creator back on camera or over the screen recording asks viewers to like and follow for more student tips."
+  ],
+  "canonical_source": "7691776401896131861",
+  "filming": "15–30 s vertical 9:16 selfie talking head, single location, fast jump cuts between items. Every item gets a numbered sticker 'n/4' with an emoji and the discount figure or FREE. Items 1–3 are talking head only, with an optional quick cutaway such as a ticket or the Office login screen. Item 4 is the only screen recording, 4–8 s long, in this order: open memoai.eu in a browser → upload a PDF or lecture recording (or Scan photos of notes) → jump cut past the few minutes of processing → scroll the generated notes → flip 2–3 flashcards → answer one quiz question and show the explanation. The app UI is in the local language. Last shot is the like-and-follow outro.",
+  "generated": 1791506261,
+  "hook": "The creator talks to camera with a bold sticker on screen: 'Student discounts you definitely didn't know about ‼️'. They open by saying '99% of students in [country] don't know about these discounts', then add a save prompt: 'Save this video before you watch, you'll need it.'",
+  "not_allowed": [
+   "Changing the item count away from 4, or moving Memo AI anywhere other than the last item",
+   "Making it a pure app review, tutorial or skit, or dropping the talking-head listicle with numbered stickers",
+   "Introducing or naming Memo AI before item 4/4",
+   "Inventing discounts or percentages that aren't verified for the country, or copying Serbian examples (Air Serbia, specific figures) into another country unless they apply there",
+   "Calling Memo AI 'free forever', 'unlimited free' or a 'student discount/percentage off'. Only say one free note plus a 3-day free trial",
+   "Saying it is an Android or iOS store app. It is a web app at memoai.eu",
+   "Claiming snap and solve (instant answer to a single photographed task), homework checking or grading, photos in the chat, PDF export or pasting text",
+   "Showing notes as instant. The processing wait must be cut, not presented as zero",
+   "Showing any feature, language or platform not in the features_used list"
+  ],
+  "premise": "A student creator tells other students about four little-known perks they're missing: transport, free Microsoft Office, cinema/theatre, and a study app. The first three are real local student discounts that make the list useful and save-worthy. Item 4 is Memo AI, presented as one more student perk you can start for free, and shown as a screen recording.",
+  "product": {
+   "cta": "Spoken: save the video at the start, then like and follow at the end. For Memo AI the only offer is the free start: one free note, then a 3-day free trial.",
+   "features_used": [
+    "Upload a recorded lecture, PDF, Word or PowerPoint file",
+    "Scan up to 10 photos of notes, textbook pages or the board with the in-app Scan camera",
+    "Notes generated from the material",
+    "Flashcards",
+    "Quiz with explanations",
+    "Works in the browser on any phone or laptop (memoai.eu)",
+    "App in Slovenian, Croatian, Bosnian and Serbian",
+    "Free start: one free note, then a 3-day free trial"
+   ],
+   "introduced_at_beat": 6,
+   "spoken_brand": "Item 4/4 only: 'Memo AI' is said aloud and shown on the 4/4 sticker. The URL memoai.eu may appear on screen in the browser bar or as a caption. The brand is not mentioned earlier."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7691776401896131861": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861"
+  },
+  "title_en": "Student discounts everyone misses 🎟️"
+ },
  "A20261008205804": {
   "accepted_sources": [
    "7692158324032163124"
@@ -177,5 +236,132 @@
    "7688930483304090898": "https://www.tiktok.com/@studywithvalentina/video/7688930483304090898"
   },
   "title_en": "Zodiac signs when they get a 1 (failing grade)"
+ },
+ "A20261008231529": {
+  "accepted_sources": [
+   "7692577375296507154"
+  ],
+  "allowed_localisation": [
+   "Language and slang (Slovenian for Slovenia; Croatian, Bosnian or Serbian on other Balkan pages)",
+   "Creator identity, setting, outfit, and school level (srednja šola / fakulteta / matura)",
+   "Subject in the personal examples and in the demo material (e.g. biology notes, math worksheet)",
+   "Wording of the relationship/friend-fight anecdote, as long as it stays a relatable personal confession",
+   "Exact phrasing of reasons and on-screen captions/title text, translated",
+   "Specific time-saving wording, kept vague and believable ('much faster', 'in a fraction of the time')",
+   "Choosing upload of PDF/slides instead of Scan in the demo",
+   "Minor reordering of sentences within a beat"
+  ],
+  "beats": [
+   "1. Hook, direct to camera: 'Don't use ChatGPT. I know you all use it, I did too, but listen to this carefully.'",
+   "2. Reason 1, accuracy: people use ChatGPT because it seems to 'know everything', but nobody asks how accurate that information really is.",
+   "3. Reason 2, it doesn't actually help you learn: personal example from school or university of photographing the material, sending it to ChatGPT and just asking for answers or a quick study plan. Creator calls this a big mistake.",
+   "4. Pivot, product introduced: 'There's a much better solution for you: Memo AI. I'll put it here.' Memo AI logo/screenshot overlay appears. Creator says to open memoai.eu on your phone or laptop right now.",
+   "5. Product explanation over a screen-recording overlay: 'You literally photograph your material (up to 10 photos with the Scan camera) or upload your PDF or slides, and it makes notes from it, a quiz with explanations and flashcards, so you actually learn it, and much faster.' The same number of sentences as the original.",
+   "6. Reason 3, over-reliance on AI: relying too much on AI weakens learning, curiosity, critical thinking, logic and creativity. This is framed as the creator's opinion or a general concern, with no specific studies or universities named.",
+   "7. Reason 4, privacy, 'maybe the most important one': you don't really know how your chats are stored or shared. Relatable personal confession: pasting a fight with a boyfriend/girlfriend or friend into ChatGPT to ask who's right. 'That's really bad.'",
+   "8. Wrap-up: 'I gave you an alternative and real reasons. If you keep using ChatGPT, at least don't tell it too much, and always remember it can be wrong.'",
+   "9. Outro CTA: 'That's it for this video. Write in the comments how you like Memo AI and whether it saved you like it saved me.'"
+  ],
+  "canonical_source": "7692577375296507154",
+  "filming": "About 60–90 s in one continuous talking-head selfie take: phone at eye level, creator seated in a bedroom or desk setting, natural light, casual look, fast jump cuts between sentences. Burned-in captions of the speech, optionally with a 'Prestani učiti s ChatGPT-jem 🚫' title card at the top. Overlays during beats 4–5 only: (a) Memo AI logo/app screenshot as a sticker next to the creator's head; (b) a short screen recording on a phone at memoai.eu: tap Scan → photograph 2–3 textbook or notebook pages → cut the waiting → finished note with formatted notes → swipe to flashcards → a quiz question with its explanation. Optional brief overlay of a numbered reason label ('1. Točnost', '2. Ne naučiš se', '3. Odvisnost', '4. Zasebnost') at each reason. No B-roll other than the app overlays.",
+  "generated": 1791507782,
+  "hook": "Creator looks straight into the camera and gives a blunt warning: 'Don't use ChatGPT. I know you probably all use it, and so did I, but you have to hear this. Listen carefully.'",
+  "not_allowed": [
+   "Changing the structure: the rant must stay a talking-head warning with 4 reasons (accuracy, no real learning, over-reliance, privacy) and the product inserted after reason 2. Making it a tutorial, a side-by-side comparison test, a skit or a voiceover-only video makes it another format.",
+   "Saying 'go to the App Store/Google Play and install it': Memo AI is a web app at memoai.eu with no store Android app",
+   "Presenting cheating on tests as a use case, or asking an app to tell you which answer to circle",
+   "Showing or claiming 'snap and solve' instant answers to a single photographed task, homework checking/grading, photos in the chat, PDF export, or pasting text",
+   "Specific invented statistics or citing named studies/universities (e.g. 'Stanford research proved…')",
+   "Exact guaranteed results such as 'learn in 2 days what took 3 weeks' or promised grades",
+   "Claiming Memo AI is more private, never stores data, or never makes mistakes",
+   "Factual accusations about how OpenAI stores or sells data; privacy must be framed only as 'you don't know where your information goes, so don't overshare'",
+   "Claiming instant results: note creation takes a few minutes, so cut the wait instead of saying it's instant",
+   "Naming or showing Astra AI or any other competitor app besides ChatGPT"
+  ],
+  "premise": "A student creator warns peers against using ChatGPT for studying. They list four numbered reasons: accuracy, no real learning, over-reliance and privacy. After the second reason they cut in with 'there's a much better solution for you', which is Memo AI. It is shown with a logo and a screen-recording overlay, and then the rant goes on. The tone is an honest warning from a friend who used ChatGPT too, not an ad.",
+  "product": {
+   "cta": "Mid-video: open memoai.eu on your phone or laptop now. You can start free with your first note, then get a 3-day free trial. Outro: comment how you like Memo AI and whether it saved you.",
+   "features_used": [
+    "Scan camera: photograph up to 10 pages of notes or textbook",
+    "Upload PDF/Word/PowerPoint",
+    "AI notes from the material (formulas shown properly)",
+    "Flashcards",
+    "Quiz with explanations",
+    "Works in Slovenian (also Croatian, Bosnian, Serbian)",
+    "Web app on any phone or laptop",
+    "Free first note + 3-day free trial"
+   ],
+   "introduced_at_beat": 4,
+   "spoken_brand": "Beat 4 ('Memo AI', plus 'odpri memoai.eu' on phone or laptop), beat 5 (describing what it does) and beat 9 (comment question naming Memo AI). The URL memoai.eu is also shown on screen in the overlay."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692577375296507154": "https://www.tiktok.com/@studywithvalentina/video/7692577375296507154"
+  },
+  "title_en": "Stop studying with ChatGPT 🚫: talking-head warning rant with a Memo AI pitch in the middle"
+ },
+ "A20261009001913": {
+  "accepted_sources": [
+   "7693684473686150406"
+  ],
+  "allowed_localisation": [
+   "Language and slang: Slovenian for Slovenia (Croatian, Bosnian or Serbian for the other pages), including mild regional humour",
+   "The e-diary name and screenshot styling. For Slovenia use the local system's look (e.g. eAsistent-style), with all names anonymised",
+   "The wording of each remark. Remarks must be anonymised or invented in the same categories: phone/gaming, cheating, AI-faked excuse, dangerous prank, bad grade and parents",
+   "Local references in the jokes: games, school terms like 'roditeljski sestanek' (parent-teacher meeting) or 'cvek', and local grading scales",
+   "The part number, the creator's look and the setting",
+   "Which 4–6 Memo AI formats are listed in the demo, as long as they are all from features_used and the practice test stays the favourite",
+   "The UI language shown in the demo, matching the country (Slovenian, Croatian, Bosnian or Serbian)"
+  ],
+  "beats": [
+   "1. Hook: say 'Reacting to the funniest e-diary remarks, part N'. Show a PART N overlay. Say the first remark was sent in by a viewer.",
+   "2. Remark 1, shown as a screenshot overlay and read aloud. It is about phone or gaming misbehaviour in class. The creator gives a mock defence of the student with a gaming reference (for example 'let him be, he's losing trophies').",
+   "3. Remark 2, overlay and read aloud. It is a cheating attempt, such as handing in a pre-solved test. Short roast of the student's 'scheming'.",
+   "4. Remark 3 is the AI remark, overlay and read aloud: a student submitted a doctor's note or excuse that turned out to be AI-generated. The creator jokes 'honestly, not bad', then adds straight away 'don't try this'.",
+   "5. Segue, with the same number of sentences as the original: 'If you're going to use AI anyway, use it the right way, like Memo AI, an app for studying.' This is where the brand is first said.",
+   "6. Demo, part 1: 'You literally upload your notes (a PDF or photos of your notebook) and it gives you different ways to study.' List the formats: flashcards, a podcast, quizzes, practice tests, and a voice tutor that explains the material out loud. The voice tutor replaces Astra's 'oral tests'.",
+   "7. Demo, part 2: the creator's favourite. 'My favourite is the practice test: I get questions from my material, answer them, and at the end I get a percentage score and feedback on every answer.'",
+   "8. Return: 'And we move on to the next remark.' Remark 4, overlay and read aloud. It is something dangerous or chaotic, such as a firecracker thrown out of the classroom window. Self-deprecating joke: 'they'd have kicked me out 3 times by now, and I only talk in class'.",
+   "9. Remark 5, the closer, overlay and read aloud. It is about a bad grade and parents (for example 'the student got an F and asked if it could be kept spoiler-free for his parents'). Relatable riff: before e-diaries you could hide it until the parent-teacher meeting, and now trouble is waiting at the door.",
+   "10. CTA: 'Send me your funniest e-diary remarks in the comments.'"
+  ],
+  "canonical_source": "7693684473686150406",
+  "filming": "Length 60–75 s. Vertical 9:16, one creator talking to camera (selfie or desk setup), fast jump cuts, casual tone, no music or only a low bed. Each remark appears as an e-diary-style screenshot overlay in the top half while the creator reads it, with burned-in captions. The demo runs about 15–20 s at roughly the 40–50% mark. Show screen recordings of memoai.eu on a phone in this order: upload a PDF, or Scan up to 10 photos of notebook pages → cut the few-minute processing wait → finished note → quickly flash the flashcards, quiz, podcast and voice tutor → open the practice test, answer 2–3 questions → the result screen with the percentage and feedback per answer. The creator's face stays in picture-in-picture or alternates with the demo footage. Then go straight back to talking head plus remark overlays.",
+  "generated": 1791508517,
+  "hook": "Creator to camera, with a 'PART N' text overlay: 'I'm reacting to the funniest e-diary remarks, part N. This time we start aggressive, with a remark one of you sent me.' The first remark screenshot appears right away.",
+  "not_allowed": [
+   "Removing the AI-misuse remark → segue → demo → back-to-remarks structure, or putting the product at the start or the end",
+   "Turning it into a straight product ad, a tutorial, or a sketch with actors instead of talking-head reactions to remark screenshots",
+   "Endorsing AI for cheating or for faking documents. The 'don't try this' line must stay",
+   "Showing real student, teacher or school names, or identifiable real e-diary data",
+   "Claiming snap-and-solve or instant answers to a single photographed task",
+   "Claiming Memo AI checks or grades the user's own homework",
+   "Claiming oral exams or spoken answer grading (use the voice tutor that explains the material instead)",
+   "Showing photos sent in the chat, PDF export, or pasting text",
+   "Saying it's on the Google Play Store / Android app store. It is a web app at memoai.eu",
+   "Claiming notes appear instantly. The processing time of a few minutes is cut in the edit, not denied",
+   "Claiming unlimited free use. Only one free note, then a 3-day free trial, if pricing is mentioned at all",
+   "Mentioning Astra AI or any of its features that Memo AI does not have"
+  ],
+  "premise": "An ongoing numbered talking-head series. The creator reads absurd teacher remarks from the school e-diary, which viewers send in, and jokes about each one. One remark is about a student misusing AI (for example a faked doctor's note made with AI). That remark leads into the segue 'if you're going to use AI, use it properly', then a short Memo AI demo. After the demo the creator says 'let's move on' and reads more remarks. The video ends by asking viewers to send their own remarks.",
+  "product": {
+   "cta": "Engagement CTA only: 'Send me your funniest e-diary remarks in the comments.' There is no spoken product CTA.",
+   "features_used": [
+    "Upload a PDF / Word / PowerPoint file or up to 10 photos of notes (in-app Scan camera or gallery)",
+    "Notes generated from the material",
+    "Flashcards",
+    "Quiz with explanations",
+    "Podcast",
+    "Voice tutor that explains the material out loud topic by topic",
+    "Graded practice test (percentage + feedback per answer)"
+   ],
+   "introduced_at_beat": 5,
+   "spoken_brand": "Beat 5 segue ('use AI properly, like Memo AI'). memoai.eu may appear as an on-screen caption during the demo. It is not repeated at the end."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7693684473686150406": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406"
+  },
+  "title_en": "Funniest e-diary teacher remarks 😂 (reaction series, Part N)"
  }
 }

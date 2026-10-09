@@ -10,6 +10,12 @@
     "strict": true,
     "url": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
     "views": 202400
+   },
+   "sl": {
+    "audit": true,
+    "strict": true,
+    "url": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
+    "views": 202400
    }
   },
   "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
@@ -19,11 +25,11 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 example not this format (The example is a '3 apps you need in 2026' study-app listicle, not the student-d) / title fixed: 4 studentska popusta koje skoro svi pr",
-    "🇸🇮 example not this format (The example is a '3 apps you need in 2026' talking-head list (Notion, Astra AI, ) / example not this format (The format is a listicle o"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example names the app out loud in the fourth item ('besplatni trailer na ASTRI AI'), but our spoken line only says ' / title fixed: 4",
+    "🇸🇮 example not this format (The format is a listicle of little-known student discounts (transport, free Micr) / put back the original Astra AI video / script rewri"
    ],
    "since": 1791492822,
-   "tries": 4
+   "tries": 1
   },
   "revived": {
    "at": 1791502910,
@@ -31,7 +37,8 @@
    "views": 173600
   },
   "reworded": {
-   "sh": true
+   "sh": true,
+   "sl": true
   },
   "script": "Popusti za učenike i studente o kojima 99% ljudi nema pojma. Prije nego što odeš dalje, sačuvaj ovaj video, jer će ti zatrebati. Prvo, prijevoz: sa studentskom karticom imaš popust na karte za međugradske linije, a neke avio-kompanije imaju i studentske cijene za letove. Drugo: Microsoft Office možeš imati potpuno besplatno. Znači Word, Excel, PowerPoint – samo se prijaviš sa školskim ili fakultetskim mailom i sve ti je besplatno. Treće, zabava: u Cineplexxu su ti karte za kino jeftinije, a u mnogim teatrima predstave često plaćaš i do pola cijene. Četvrto: Memo AI možeš probati besplatno. Ako ne znaš šta je Memo AI i kako radi, evo, sad ću ti pokazati. Memo AI je alat koji ti pomaže u učenju: ubaciš ono iz čega učiš – PDF, prezentaciju, snimak predavanja ili slike. Kad ubaciš, recimo, slike iz udžbenika ili sveske, Memo AI ti za par minuta napravi bilješke, kartice i kviz. I onda biraš ",
   "source_video": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
@@ -87,11 +94,11 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The example's second on-screen line names the brand ('...nadogradiš mozak uz Astra AI'). The script's matc",
-    "🇸🇮 filming directions corrected / script reworded again: The original's second on-screen line names the brand ('nadogradiš mozak uz Astra AI'), but our second line"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example's second on-screen line names the brand ('nadogradiš mozak uz Astra AI'), but our second line never says Mem / filming direct",
+    "🇸🇮 script rewritten sentence by sentence (29 words (original 29)) / script reworded again: Not reworded: both lines translate the example's two on-screen lines dir"
    ],
    "since": 1791494592,
-   "tries": 3
+   "tries": 1
   },
   "reworded": {
    "sh": true,
@@ -127,10 +134,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: directions_match sl: The directions place the 2–3 s Scan → notes → flashcards/test demo at the two [CUE] marks. Those marks sit on the intro line 'Kako vem? Ker se učim z Memo AI' and the closing line 'Tako da mi verjemite…', not on the spoken scan, notes and flashcard lines, so the visuals don't li"
+    "cross-country check fail: directions_match sh: The reference allows one optional 2–3 second app insert. The SH directions instead ask for three separate 2–3 second screen clips (scan, notes, flashcards) plus an optional fourth with the practice-test percentage, so the demo runs about 6–12 seconds. Cut it to a single 2–3 seco"
    ],
    "since": 1791501302,
-   "tries": 2
+   "tries": 1
   },
   "revived": {
    "at": 1791503632,
@@ -150,17 +157,10 @@
   "created": 1791501329,
   "description": "Talking-head warning rant listing reasons not to use ChatGPT for studying (accuracy, no real learning, over-reliance, privacy), with the study app pitched mid-video as the better alternative via logo and screen-recording overlays.",
   "id": "A20261008231529",
+  "listed_at": 1791508474,
   "page_id": "3f365e84-a3c2-8120-b838-fd3c99181a38",
   "pages": {
    "sl": "3f365e84-a3c2-81fa-af2c-f4bcacc9beac"
-  },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "🇸🇮 script rewritten sentence by sentence (404 words (original 467)) / script reworded again: Too many sentences are close translations of the example and keep its "
-   ],
-   "since": 1791502794,
-   "tries": 1
   },
   "reworded": {
    "sh": true,
@@ -168,7 +168,7 @@
   },
   "script": "Stani, nemoj više koristiti ChatGPT. Vjerovatno ga koristiš kao i svi, i ja sam ga koristila, ali ovo stvarno moraš čuti. Zato me sad dobro poslušaj. Većina ljudi bira baš ChatGPT zato što misli da on ima „sve“ informacije. Ali ko se uopšte zapita koliko su te informacije zapravo tačne? Drugi razlog da ga ne koristiš je to što ti u učenju zapravo neće pomoći. Puno nas, evo i ja koja sam na fakultetu, koristilo ga je za učenje tako što uslikamo gradivo, pošaljemo mu ga i čekamo da nam kaže šta da zaokružimo na testu kad prepisujemo, ili kako da nešto brže naučimo i da nam složi plan učenja, a to je ogromna greška. Za tebe postoji mnogo bolje rješenje, a to je aplikacija Memo AI. Evo, ovdje negdje ću ti staviti sliku aplikacije. Obavezno odmah sad otvori memoai.eu i probaj Memo AI. Ljudi, ozbiljno, samo uslikaš svoje gradivo, a ona ti od toga napravi bilješke, kvizove i kartice s pitanjima",
   "source_video": "https://www.tiktok.com/@studywithvalentina/video/7692577375296507154",
-  "status": "pending",
+  "status": "active",
   "title": "Prestani učiti s ChatGPT-jem 🚫"
  },
  {
@@ -182,7 +182,7 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇸🇮 script rewritten sentence by sentence (351 words (original 342)) / script reworded again: Most of the creator's reactions are near-direct translations of the ex"
+    "cross-country check fail: format_consistency sh: Some beat riffs from the reference are missing. Beat 2 has no mock defence of the student (it roasts the student instead). Beat 4 drops the 'honestly, not bad' admiration before 'don't do this' and uses a six-fingers joke instead. Beat 9 swaps the 'before e-diaries you could h"
    ],
    "since": 1791506039,
    "tries": 1

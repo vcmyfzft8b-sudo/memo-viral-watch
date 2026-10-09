@@ -526,5 +526,83 @@
   "type": "alert",
   "video": "7693684473686150406",
   "views": 139600
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957"
+  ],
+  "ts": 1791506232,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957"
+  ],
+  "ts": 1791506233,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008204718",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example names the app out loud in the fourth item ('besplatni trailer na ASTRI AI'), but our spoken line only says ' / title fixed: 4",
+   "🇸🇮 example not this format (The format is a listicle of little-known student discounts (transport, free Micr) / put back the original Astra AI video / script rewri"
+  ],
+  "tries": 1,
+  "ts": 1791506800,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example's second on-screen line names the brand ('nadogradiš mozak uz Astra AI'), but our second line never says Mem / filming direct",
+   "🇸🇮 script rewritten sentence by sentence (29 words (original 29)) / script reworded again: Not reworded: both lines translate the example's two on-screen lines dir"
+  ],
+  "tries": 1,
+  "ts": 1791507306,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008224450",
+  "reasons": [
+   "cross-country check fail: directions_match sh: The reference allows one optional 2–3 second app insert. The SH directions instead ask for three separate 2–3 second screen clips (scan, notes, flashcards) plus an optional fourth with the practice-test percentage, so the demo runs about 6–12 seconds. Cut it to a single 2–3 seco"
+  ],
+  "tries": 1,
+  "ts": 1791507742,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529"
+  ],
+  "ts": 1791508474,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008231529",
+  "position": 3,
+  "ts": 1791508474,
+  "type": "format_published"
+ },
+ {
+  "format": "A20261009001913",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: Some beat riffs from the reference are missing. Beat 2 has no mock defence of the student (it roasts the student instead). Beat 4 drops the 'honestly, not bad' admiration before 'don't do this' and uses a six-fingers joke instead. Beat 9 swaps the 'before e-diaries you could h"
+  ],
+  "tries": 1,
+  "ts": 1791508848,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529"
+  ],
+  "ts": 1791508852,
+  "type": "rerank"
  }
 ]
