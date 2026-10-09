@@ -8,7 +8,8 @@ import re
 SOURCE = 'Astra AI'
 SOURCE_DESC = 'Astra AI (the AI tutor / homework helper app from Slovenia: snap a photo of a task and get the solution)'
 # Spoken and written forms, including speech-to-text mishearings ("Astra", "astraai", "astra.ai", "Astra A.I.").
-SOURCE_RE = re.compile(r'\bastra(?:\s*-?\s*\.?\s*a\.?\s*i\b|ai\b|\b)', re.I)
+# Serbo-Croatian and Slovenian decline the name: "na Astri AI", "uz Astru", "s Astrom", "z Astro", "od Astre".
+SOURCE_RE = re.compile(r'\bastr(?:a|e|i|u|o|om|oj)(?:\s*-?\s*\.?\s*a\.?\s*i\b|ai\b|\b)', re.I)
 SOURCE_TAGS = '#astraai, #astra_ai, #astra'
 
 # Our app: every script says this name where the original says the source app.

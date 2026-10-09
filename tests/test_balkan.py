@@ -7,6 +7,8 @@ from watcher import brand, builder, discover, markets, notify
 def test_brand_counts_spoken_forms_and_mishearings():
     assert brand.count_source('Astra AI je super, astraai, astra.ai, Astra A.I.') == 4
     assert brand.count_source('pilastra i alabastra') == 0
+    assert brand.count_source('besplatni trial na ASTRI AI, uz Astru, s Astrom, z Astro, od Astre') == 5
+    assert brand.count_source('astronomija, astrologija, Astrid') == 0
     assert brand.count_ours('Probaj Memo AI na memoai.eu') == 2
     assert brand.count_ours('memo za sutra') == 0
 
