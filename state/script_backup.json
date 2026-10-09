@@ -3559,6 +3559,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-8101-aa57-f15251938cea": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Za zadnju rečenicu vrati se u kameru.",
+   "text": {
+    "content": "Za zadnju rečenicu vrati se u kameru.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8102-9fc2-d8568951da98": [
   {
    "annotations": {
@@ -3711,6 +3730,188 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-8111-b572-cb7402d2204d": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Pred snemanjem pokrov laptopa prelepi s papirjem ali lepilnim trakom, s flomastrom nanj nariši polja s črtkanimi črtami in vanje napiši cene – tako je pripravljeno za »Prostor na zadnji strani svojega laptopa prodajam za oglase«.",
+   "text": {
+    "content": "Pred snemanjem pokrov laptopa prelepi s papirjem ali lepilnim trakom, s flomastrom nanj nariši polja s črtkanimi črtami in vanje napiši cene – tako je pripravljeno za »Prostor na zadnji strani svojega laptopa prodajam za oglase«.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8112-a453-eae1885fc613": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Vanjo vržeš svoje gradivo, na primer PDF ali posneto predavanje, in v par minutah imaš pregledne zapiske. (",
+   "text": {
+    "content": ") Vanjo vržeš svoje gradivo, na primer PDF ali posneto predavanje, in v par minutah imaš pregledne zapiske. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Za ponavljanje so tam kartice, s katerimi si hitro zapomniš pojme. (",
+   "text": {
+    "content": ") Za ponavljanje so tam kartice, s katerimi si hitro zapomniš pojme. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Potem je tu kviz, ki ti pri vsakem vprašanju razloži pravilni odgovor, da snov res utrdiš. (",
+   "text": {
+    "content": ") Potem je tu kviz, ki ti pri vsakem vprašanju razloži pravilni odgovor, da snov res utrdiš. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Iz vsega skupaj ti naredi še podkast, ki ga poslušaš, ko greš na sprehod ali se pelješ z busom. ",
+   "text": {
+    "content": ") Iz vsega skupaj ti naredi še podkast, ki ga poslušaš, ko greš na sprehod ali se pelješ z busom. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8113-94ad-dc4fc2521c42": [
   {
    "annotations": {
@@ -3782,6 +3983,25 @@
    "plain_text": "Govor naj bo ves čas podnaslovljen na ekranu.",
    "text": {
     "content": "Govor naj bo ves čas podnaslovljen na ekranu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8115-8bcb-cb50cc754c92": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Zadnju stranu laptopa sam pretvorila u reklamni prostor – i već sam našla prvog kupca! (Pokaži prstom sve cijene, pa jedno polje) Svaki kvadratić ima drugačiju cijenu, a baš je ovaj ovdje otišao prvi. (Skidaš traku s kupljenog polja) Sad samo da skinem ovu traku, ajde, odlijepi se lijepo. Eto, nije savršeno, ali proći će. ",
+   "text": {
+    "content": "Zadnju stranu laptopa sam pretvorila u reklamni prostor – i već sam našla prvog kupca! (Pokaži prstom sve cijene, pa jedno polje) Svaki kvadratić ima drugačiju cijenu, a baš je ovaj ovdje otišao prvi. (Skidaš traku s kupljenog polja) Sad samo da skinem ovu traku, ajde, odlijepi se lijepo. Eto, nije savršeno, ali proći će. ",
     "link": null
    },
    "type": "text"
@@ -4121,6 +4341,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-8121-9574-fe6a1e5a0696": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Pri stavku »Kdo ga je kupil? Memo AI« s škarjami izrežeš natisnjen logotip Memo AI, pri zadnjem stavku pa ga prilepiš na prazno polje na laptopu, tako da se v kadru dobro vidi.",
+   "text": {
+    "content": "Pri stavku »Kdo ga je kupil? Memo AI« s škarjami izrežeš natisnjen logotip Memo AI, pri zadnjem stavku pa ga prilepiš na prazno polje na laptopu, tako da se v kadru dobro vidi.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8121-a09f-c421dd29e97d": [
   {
    "annotations": {
@@ -4135,6 +4374,25 @@
    "plain_text": "(📎 Screenshotovi bilješki iz e-dnevnika – vidi materijale) Onda imamo ovo: „Učenik je poslao sliku doktorskog opravdanja, a kasnije se pokazalo da ga je napravio AI.“ Moram priznati, izgleda prilično uvjerljivo. Neki profesor bi to možda i progutao, ali vi to ne radite, molim vas. ",
    "text": {
     "content": "(📎 Screenshotovi bilješki iz e-dnevnika – vidi materijale) Onda imamo ovo: „Učenik je poslao sliku doktorskog opravdanja, a kasnije se pokazalo da ga je napravio AI.“ Moram priznati, izgleda prilično uvjerljivo. Neki profesor bi to možda i progutao, ali vi to ne radite, molim vas. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8124-8441-dd910a5d3bca": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+   "text": {
+    "content": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
     "link": null
    },
    "type": "text"
@@ -4173,6 +4431,25 @@
    "plain_text": "(📎 Screenshotovi bilješki iz e-dnevnika – vidi materijale) Zadnja za danas: „Učenik je dobio jedinicu i zamolio da roditelji ne dobiju spoiler.“ Iskreno, razumijem ga, neka bar roditeljski bude iznenađenje. Prije e-dnevnika ste mogli šutjeti sve do roditeljskog sastanka. (imitira ljutu mamu) Onda se mama vrati kući sva crvena i pita vas zašto se ona mora sramotiti pred svima. Ali barem ste imali par dana mira. Sad čim otvorite vrata, kaiš vas već čeka. ",
    "text": {
     "content": "(📎 Screenshotovi bilješki iz e-dnevnika – vidi materijale) Zadnja za danas: „Učenik je dobio jedinicu i zamolio da roditelji ne dobiju spoiler.“ Iskreno, razumijem ga, neka bar roditeljski bude iznenađenje. Prije e-dnevnika ste mogli šutjeti sve do roditeljskog sastanka. (imitira ljutu mamu) Onda se mama vrati kući sva crvena i pita vas zašto se ona mora sramotiti pred svima. Ali barem ste imali par dana mira. Sad čim otvorite vrata, kaiš vas već čeka. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-812a-b2fa-e72e4d1f051f": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(📎 Natisnjen logotip Memo AI, ki ga s škarjami izrežeš – glej gradivo) Kupec pa je aplikacija, o kateri ti povem čisto takoj. Nastala je zato, da dijakom in študentom olajša učenje. ",
+   "text": {
+    "content": "(📎 Natisnjen logotip Memo AI, ki ga s škarjami izrežeš – glej gradivo) Kupec pa je aplikacija, o kateri ti povem čisto takoj. Nastala je zato, da dijakom in študentom olajša učenje. ",
     "link": null
    },
    "type": "text"
@@ -4420,6 +4697,25 @@
    "plain_text": "Med posameznimi znamenji naredi oster rez, profesorice pa nikoli ne pokaži – glej rahlo mimo kamere v višino katedra in reagiraj na njene neslišne besede.",
    "text": {
     "content": "Med posameznimi znamenji naredi oster rez, profesorice pa nikoli ne pokaži – glej rahlo mimo kamere v višino katedra in reagiraj na njene neslišne besede.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8146-abad-f686fa41f45a": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Že od prve sekunde pred kamero držiš pokrov laptopa, prelepljen s papirjem, ki je razdeljen na polja s cenami (npr. 999 €, 600 €, 200 €), in medtem ko je napis »Prvi kupec 🤑« na ekranu, govoriš naravnost v kamero.",
+   "text": {
+    "content": "Že od prve sekunde pred kamero držiš pokrov laptopa, prelepljen s papirjem, ki je razdeljen na polja s cenami (npr. 999 €, 600 €, 200 €), in medtem ko je napis »Prvi kupec 🤑« na ekranu, govoriš naravnost v kamero.",
     "link": null
    },
    "type": "text"
@@ -5480,6 +5776,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-8176-9d12-c9bca6f6fbb8": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Drži poklopac laptopa okrenut prema kameri, podijeljen trakom ili isprekidanim linijama na polja s cijenama u tvojoj valuti, i odmah pričaj u kameru dok je naslov na ekranu.",
+   "text": {
+    "content": "Drži poklopac laptopa okrenut prema kameri, podijeljen trakom ili isprekidanim linijama na polja s cijenama u tvojoj valuti, i odmah pričaj u kameru dok je naslov na ekranu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-817a-9d0f-c64ae90f06a5": [
   {
    "annotations": {
@@ -5530,6 +5845,25 @@
    "plain_text": ") Tole je stran, ki mi jo je takrat odprla na računalniku. (📎 Memo AI · memoai.eu/creator – glej gradivo) Najprej klikneš za nov zapisek in izbereš, kako želiš dodati snov, na primer s fotkami. (📎 Memo AI · memoai.eu/creator – glej gradivo) Potem poslikaš strani iz učbenika ali zvezek sošolke, ki pri uri vse zapiše, do deset slik. (📎 Memo AI · memoai.eu/creator – glej gradivo) Ko jih naložiš, počakaš nekaj minut, pa ti AI iz njih naredi zapiske, ki so narejeni čisto zate. ",
    "text": {
     "content": ") Tole je stran, ki mi jo je takrat odprla na računalniku. (📎 Memo AI · memoai.eu/creator – glej gradivo) Najprej klikneš za nov zapisek in izbereš, kako želiš dodati snov, na primer s fotkami. (📎 Memo AI · memoai.eu/creator – glej gradivo) Potem poslikaš strani iz učbenika ali zvezek sošolke, ki pri uri vse zapiše, do deset slik. (📎 Memo AI · memoai.eu/creator – glej gradivo) Ko jih naložiš, počakaš nekaj minut, pa ti AI iz njih naredi zapiske, ki so narejeni čisto zate. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-817b-88dd-e032094d3fb6": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Logo Memo AI isprintaj i, dok govoriš „Memo AI je aplikacija za učenje …“, izreži ga makazama ispred kamere; na rečenici „Zato slobodno pogledaj …“ zalijepi ga na polje koje si skinula.",
+   "text": {
+    "content": "Logo Memo AI isprintaj i, dok govoriš „Memo AI je aplikacija za učenje …“, izreži ga makazama ispred kamere; na rečenici „Zato slobodno pogledaj …“ zalijepi ga na polje koje si skinula.",
     "link": null
    },
    "type": "text"
@@ -5712,6 +6046,25 @@
    "plain_text": "(Spet v kamero) Všečkaj in zaprati, ker imam še kup trikov. ",
    "text": {
     "content": "(Spet v kamero) Všečkaj in zaprati, ker imam še kup trikov. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-817e-ae1c-c5567d3e5f9d": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Skini traku s kupljenog polja ispred kamere.",
+   "text": {
+    "content": "Skini traku s kupljenog polja ispred kamere.",
     "link": null
    },
    "type": "text"
@@ -6642,6 +6995,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81bf-b8de-d52080ef3aa4": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Takoj ko se pojavi Memo AI, posnemi sebe, kako uporabljaš aplikacijo na telefonu – na vsakem mestu s povezavo v scenariju. Čakanje na nalaganje izreži.",
+   "text": {
+    "content": "Takoj ko se pojavi Memo AI, posnemi sebe, kako uporabljaš aplikacijo na telefonu – na vsakem mestu s povezavo v scenariju. Čakanje na nalaganje izreži.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81c0-b924-da5c9c05dca3": [
   {
    "annotations": {
@@ -6735,6 +7107,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81c5-99f2-ec6d8610e0ba": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Zalijepi izrezani logo na kupljeno polje) Ajde, napiši mi u komentar koja će firma po tebi zauzeti sljedeće polje! ",
+   "text": {
+    "content": "(Zalijepi izrezani logo na kupljeno polje) Ajde, napiši mi u komentar koja će firma po tebi zauzeti sljedeće polje! ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81c8-9279-e7a21b627370": [
   {
    "annotations": {
@@ -6787,6 +7178,152 @@
    "plain_text": "(Na kameri drži otvoren laptop s Memo AI na ekranu; tekst na ekranu prve 2-3 s: 'najbolja aplikacija za učenje biologije🧬🧫') Da mi je ovo palo u ruke ranije, biologiju bih učila svaki dan. (I dalje na kameri, razigrano se ispravi, odmahne rukom i nasmije se) Okej, svaki dan baš i ne, ali bar duplo brže. ",
    "text": {
     "content": "(Na kameri drži otvoren laptop s Memo AI na ekranu; tekst na ekranu prve 2-3 s: 'najbolja aplikacija za učenje biologije🧬🧫') Da mi je ovo palo u ruke ranije, biologiju bih učila svaki dan. (I dalje na kameri, razigrano se ispravi, odmahne rukom i nasmije se) Okej, svaki dan baš i ne, ali bar duplo brže. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81ce-92de-f4aae95be377": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Ubaciš skriptu, PDF ili uslikaš stranice iz knjige, i za par minuta imaš pregledne bilješke. (",
+   "text": {
+    "content": ") Ubaciš skriptu, PDF ili uslikaš stranice iz knjige, i za par minuta imaš pregledne bilješke. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Za ponavljanje dobiješ kartice, kviz koji ti objasni svaki odgovor i probni test. (",
+   "text": {
+    "content": ") Za ponavljanje dobiješ kartice, kviz koji ti objasni svaki odgovor i probni test. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") A ako ti se ne da čitati, napravi ti i podcast, pa učiš dok šetaš ili sjediš u autobusu. ",
+   "text": {
+    "content": ") A ako ti se ne da čitati, napravi ti i podcast, pa učiš dok šetaš ili sjediš u autobusu. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81ce-bf02-cd0652fa0786": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Logotip prilepiš na prazno polje na laptopu in govoriš v kamero) Zato kar skoči pogledat, pa mi v komentarjih zaupaj, kdo bo po tvoje zasedel naslednje polje. ",
+   "text": {
+    "content": "(Logotip prilepiš na prazno polje na laptopu in govoriš v kamero) Zato kar skoči pogledat, pa mi v komentarjih zaupaj, kdo bo po tvoje zasedel naslednje polje. ",
     "link": null
    },
    "type": "text"
@@ -7050,6 +7587,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81d8-9ce2-f5d2067e0f69": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(📎 Memo AI logo za print – vidi materijale) Kupila ga je jedna aplikacija za učenje, odmah ti pričam o njoj. Napravljena je za učenike i studente kojima treba lakši način da savladaju gradivo. ",
+   "text": {
+    "content": "(📎 Memo AI logo za print – vidi materijale) Kupila ga je jedna aplikacija za učenje, odmah ti pričam o njoj. Napravljena je za učenike i studente kojima treba lakši način da savladaju gradivo. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81d8-b96d-c9443b4eee6e": [
   {
    "annotations": {
@@ -7083,6 +7639,44 @@
    "plain_text": "Za dio o tetki nagni se bliže kameri i govori zavjerenički, kao da odaješ tajnu.",
    "text": {
     "content": "Za dio o tetki nagni se bliže kameri i govori zavjerenički, kao da odaješ tajnu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81db-8a8f-fb30b928dbf4": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Pokrov laptopa, prelepljen s papirjem s polji in cenami, držiš proti kameri) Zadnjo stran laptopa sem spremenila v oglasni pano – in glej, prvo polje je že prodano. Cene so čisto različne, tole polje tukaj pa ima že lastnika. (Z laptopa odlepiš papir s kupljenega polja) Daj, da ga odstranim, samo da se zdaj ne strga. Okej, ni popolno, ampak bo šlo. ",
+   "text": {
+    "content": "(Pokrov laptopa, prelepljen s papirjem s polji in cenami, držiš proti kameri) Zadnjo stran laptopa sem spremenila v oglasni pano – in glej, prvo polje je že prodano. Cene so čisto različne, tole polje tukaj pa ima že lastnika. (Z laptopa odlepiš papir s kupljenega polja) Daj, da ga odstranim, samo da se zdaj ne strga. Okej, ni popolno, ampak bo šlo. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81dc-9cbd-e5e3f8770779": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Pokaži prstom sve cijene na poklopcu, pa jedno polje.",
+   "text": {
+    "content": "Pokaži prstom sve cijene na poklopcu, pa jedno polje.",
     "link": null
    },
    "type": "text"
@@ -7140,6 +7734,25 @@
    "plain_text": "Na četvrtoj stavci snimka ekrana traje 4–8 s: otvori memoai.eu, otpremi PDF ili skeniraj bilješke, preskoči obradu, prelistaj bilješke, okreni 2–3 kartice i odgovori na jedno pitanje iz kviza.",
    "text": {
     "content": "Na četvrtoj stavci snimka ekrana traje 4–8 s: otvori memoai.eu, otpremi PDF ili skeniraj bilješke, preskoči obradu, prelistaj bilješke, okreni 2–3 kartice i odgovori na jedno pitanje iz kviza.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81e1-b8c2-e4ff53572974": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Za zadnji stavek se vrni v kamero.",
+   "text": {
+    "content": "Za zadnji stavek se vrni v kamero.",
     "link": null
    },
    "type": "text"
@@ -11271,6 +11884,228 @@
    }
   ]
  ],
+ "page:3f465e84-a3c2-8184-a143-ce2c0c024d61": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Prodajem mjesto na zadnjoj strani svog laptopa za reklame – i već imam prvog kupca! (Pokaži prstom sve cijene, pa jedno polje) Svako polje ima svoju cijenu, a neko je kupio baš ovo ovdje. (Skidaš traku ili naljepnicu s kupljenog polja) Ajmo probati ovo skinuti – nadam se da će se stvarno odlijepiti. Dobro, recimo da je ovo dovoljno čisto. ",
+    "text": {
+     "content": "Prodajem mjesto na zadnjoj strani svog laptopa za reklame – i već imam prvog kupca! (Pokaži prstom sve cijene, pa jedno polje) Svako polje ima svoju cijenu, a neko je kupio baš ovo ovdje. (Skidaš traku ili naljepnicu s kupljenog polja) Ajmo probati ovo skinuti – nadam se da će se stvarno odlijepiti. Dobro, recimo da je ovo dovoljno čisto. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "A kupac ovog polja je Memo AI – sve ću ti sad ispričati. (📎 Memo AI logo za print – vidi materijale) Memo AI je aplikacija za učenje koja učenicima i studentima pomaže da lakše savladaju gradivo. ",
+    "text": {
+     "content": "A kupac ovog polja je Memo AI – sve ću ti sad ispričati. (📎 Memo AI logo za print – vidi materijale) Memo AI je aplikacija za učenje koja učenicima i studentima pomaže da lakše savladaju gradivo. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(",
+    "text": {
+     "content": "(",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Samo ubaciš svoje bilješke, PDF ili slike iz udžbenika i za par minuta dobiješ sređene bilješke. (",
+    "text": {
+     "content": ") Samo ubaciš svoje bilješke, PDF ili slike iz udžbenika i za par minuta dobiješ sređene bilješke. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Tu su kartice za učenje napamet, (",
+    "text": {
+     "content": ") Tu su kartice za učenje napamet, (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") kviz s objašnjenjima i probni test da ti gradivo stvarno sjedne, (",
+    "text": {
+     "content": ") kviz s objašnjenjima i probni test da ti gradivo stvarno sjedne, (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") a napravi ti čak i podcast koji možeš slušati u šetnji ili u autobusu. ",
+    "text": {
+     "content": ") a napravi ti čak i podcast koji možeš slušati u šetnji ili u autobusu. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Zalijepi izrezani Memo AI logo na kupljeno polje) Zato slobodno pogledaj i napiši u komentar čije će, po tebi, biti sljedeće polje. ",
+    "text": {
+     "content": "(Zalijepi izrezani Memo AI logo na kupljeno polje) Zato slobodno pogledaj i napiši u komentar čije će, po tebi, biti sljedeće polje. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
  "page:3f465e84-a3c2-81a1-b4dc-e985ce68e3f4": [
   [
    {
@@ -11876,6 +12711,264 @@
     "plain_text": ") Iskreno, če se učiš na ta način, ti bo test šel veliko lažje kot do zdaj. Sledi mi za še več takih skrivnosti! ",
     "text": {
      "content": ") Iskreno, če se učiš na ta način, ti bo test šel veliko lažje kot do zdaj. Sledi mi za še več takih skrivnosti! ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "page:3f465e84-a3c2-81c4-926f-c0e942258237": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Pokrov laptopa, prelepljen s papirjem, ki je razdeljen na polja s cenami, držiš proti kameri) Prostor na zadnji strani svojega laptopa prodajam za oglase – in prvega kupca že imam. Tu vidiš kup različnih cen, kupljeno pa je bilo točno tole polje. (Z laptopa odlepiš papir s kupljenega polja) Zdaj ga bom poskusila odlepiti – upam, da res gre dol. No, mislim, da je to čisto dovolj dobro. ",
+    "text": {
+     "content": "(Pokrov laptopa, prelepljen s papirjem, ki je razdeljen na polja s cenami, držiš proti kameri) Prostor na zadnji strani svojega laptopa prodajam za oglase – in prvega kupca že imam. Tu vidiš kup različnih cen, kupljeno pa je bilo točno tole polje. (Z laptopa odlepiš papir s kupljenega polja) Zdaj ga bom poskusila odlepiti – upam, da res gre dol. No, mislim, da je to čisto dovolj dobro. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(📎 Natisnjen logotip Memo AI, ki ga s škarjami izrežeš – glej gradivo) Kdo ga je kupil? Memo AI, več ti povem takoj. Memo AI je aplikacija, ki dijakom in študentom pomaga pri učenju. ",
+    "text": {
+     "content": "(📎 Natisnjen logotip Memo AI, ki ga s škarjami izrežeš – glej gradivo) Kdo ga je kupil? Memo AI, več ti povem takoj. Memo AI je aplikacija, ki dijakom in študentom pomaga pri učenju. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(",
+    "text": {
+     "content": "(",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Samo naložiš vse svoje gradivo, recimo PDF ali posnetek predavanja, (",
+    "text": {
+     "content": ") Samo naložiš vse svoje gradivo, recimo PDF ali posnetek predavanja, (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") in v nekaj minutah dobiš urejene zapiske. (",
+    "text": {
+     "content": ") in v nekaj minutah dobiš urejene zapiske. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Tam te čakajo kartice za ponavljanje, (",
+    "text": {
+     "content": ") Tam te čakajo kartice za ponavljanje, (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") kviz z razlagami, s katerim utrdiš celo snov, (",
+    "text": {
+     "content": ") kviz z razlagami, s katerim utrdiš celo snov, (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") in celo podkast o vsem gradivu, ki ga lahko poslušaš na sprehodu ali na avtobusu. ",
+    "text": {
+     "content": ") in celo podkast o vsem gradivu, ki ga lahko poslušaš na sprehodu ali na avtobusu. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(Logotip Memo AI prilepiš na prazno polje na laptopu in govoriš v kamero) Kar poglej tja in v komentarje napiši, kdo bo po tvoje kupil naslednje mesto. ",
+    "text": {
+     "content": "(Logotip Memo AI prilepiš na prazno polje na laptopu in govoriš v kamero) Kar poglej tja in v komentarje napiši, kdo bo po tvoje kupil naslednje mesto. ",
      "link": null
     },
     "type": "text"
