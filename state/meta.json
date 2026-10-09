@@ -1,37 +1,124 @@
 {
  "audit": {
-  "A20261008204718:sh": "failed",
-  "A20261008204718:sl": "failed",
+  "A20261008204718:sh": "fixed",
+  "A20261008204718:sl": "fixed",
   "A20261008205804:sh": "fixed",
   "A20261008210957:sh": "fixed",
   "A20261008211912:sh": "failed",
   "A20261008211912:sl": "failed",
-  "A20261008224450:sh": "ok",
+  "A20261008224450:sh": "fixed",
   "A20261008224450:sl": "fixed",
   "A20261008231529:sh": "fixed",
   "A20261008231529:sl": "fixed",
   "A20261009001913:sh": "fixed",
   "A20261009001913:sl": "fixed",
-  "A20261009014121:sh": "fixed",
-  "A20261009014121:sl": "fixed",
+  "A20261009014121:sh": "ok",
+  "A20261009014121:sl": "ok",
   "A20261009015525:sh": "fixed",
-  "A20261009015525:sl": "fixed"
+  "A20261009015525:sl": "ok"
  },
  "audit_fingerprints": {
+  "A20261008204718:sh": "cee760e015831ec2cc74bda869d4f09fc7a471035ce3452cd069fbf218557690",
+  "A20261008204718:sl": "1db0cac12423c0651aec4d0a35b4a560a2a39750b666e4896acd803e595c14e3",
   "A20261008205804:sh": "e1710fe6af3e53183c3440a4461012ac7db71505e071fd007b0655069384e4e5",
   "A20261008210957:sh": "e8f783f3e3d946092c4cc0e6de2a142fe4a25a2e97e462b06f264fd7dc9b1d8f",
-  "A20261008224450:sh": "fee893629f41089a59f60ce0b9bd40dbc23aa3598e88be920795d554d86528dd",
-  "A20261008224450:sl": "7055749072701cd443fc5ea67eccf74d672dae9b8471567f8fe9e893ed0f5aef",
+  "A20261008224450:sh": "cb3695e705fe5842108dbbdef719a5647927a6e104c61e371695ded7a37b8689",
+  "A20261008224450:sl": "f1ff688365ded1f1c215eab9a66f110d5979c442597d6d5ab8264e19f8148a01",
   "A20261008231529:sh": "52ff9f608332b0359a55cf0c850e4a4cb6ac62f3b7b2e306291e3918212a47a4",
   "A20261008231529:sl": "c3520168a7204baccfb35d7777c1ff35cd57aa2d821626c91da7aaae2072955a",
-  "A20261009001913:sh": "22faf2cfcaa41a57cfff5945566b3fb314f029fab78b76b80f83df1a5ba8d2ea",
-  "A20261009001913:sl": "a54c72421f9ab2500084f130a5d4468f56a18a8d14b82a6ba5c61e7c9f2da7e9",
+  "A20261009001913:sh": "f0f5972b614aa0e2720293daee58d1f3e3d4fdf191e73735ef1d55be88c29080",
+  "A20261009001913:sl": "6b92df19ded3dd55de5e659b535489c32e6e7a5d4bb20e57f4ca2925f40da4bf",
   "A20261009014121:sh": "076992b45eb563b56bdf278fe3a28efc136c911c267a87b536b5a5e14ac327b6",
-  "A20261009014121:sl": "8126737054a553d722bb848e7239223f0c79adf032ed2dc43cf736f400dab7e8",
-  "A20261009015525:sh": "74942bb96efa65f725e4630c751c4f7f1acd9620373d4bae0aaed76ba4367bbf",
-  "A20261009015525:sl": "6a552d5f9af0782ab1e1f80a483120cb132e5bfd9a632022064f48dfe34695fb"
+  "A20261009014121:sl": "a98f1d0d3b12358207c63d825f4fe8e24810551ad90b391902723c7239dc69b2",
+  "A20261009015525:sh": "af4c4adaee919e8efac2ea767c04d8e1116edb795c3772f0ca62ad97fa9e957f",
+  "A20261009015525:sl": "45ed50dc7e41013dcc0b678f8aa30f85f86bd5b92bd45df173f740aa8d09b05f"
  },
+ "discovered_at": 1791527938,
  "group_audit": {
+  "A20261008204718": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791528621,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7691776401896131861",
+     "video_identity": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e"
+    },
+    "sl": {
+     "source_id": "7691776401896131861",
+     "video_identity": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e"
+    }
+   },
+   "key": "a7e6f700cb72f64c758a026290a2718998ca71bcb11825f7ff8a0c1320ecdbf6",
+   "passed": false,
+   "reasons": [
+    "format_consistency sl: Stickers '1/4 Prevoz 🚆' and '3/4 Kino in gledališče 🍿' have no discount figure, and the reference requires one on every numbered sticker. Item 1 gives no real percentage. Item 3 names no local cinema chain (just 'v kinu'). The Memo AI item has two sentences instead of the original's one short sentence.",
+    "features_claims sh: The title '4 studentska popusta…' counts Memo AI as a fourth student discount, which the reference does not allow. Title fixed by removing the number.",
+    "directions_match sl: For item 4 the directions say to film yourself using the app on a phone ('posnemi sebe'), but they also call it a screen recording ('posnetek zaslona'). The reference asks for a screen recording. The script also has a stray duplicate cue '(📎 Memo AI · memoai.eu/creator – glej gradivo)' in the middle of the item."
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "For item 4 the directions say to film yourself using the app on a phone ('posnemi sebe'), but they also call it a screen recording ('posnetek zaslona'). The reference asks for a screen recording. The script also has a stray duplicate cue '(📎 Memo AI · memoai.eu/creator – glej gradivo)' in the middle of the item.",
+      "pass": false
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "The title '4 studentska popusta…' counts Memo AI as a fourth student discount, which the reference does not allow. Title fixed by removing the number.",
+      "pass": false
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "Stickers '1/4 Prevoz 🚆' and '3/4 Kino in gledališče 🍿' have no discount figure, and the reference requires one on every numbered sticker. Item 1 gives no real percentage. Item 3 names no local cinema chain (just 'v kinu'). The Memo AI item has two sentences instead of the original's one short sentence.",
+      "pass": false
+     }
+    },
+    "independent_wording": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "SH follows the format closely and only needs a title fix so Memo AI isn't counted as a discount; SL fails on stickers without figures, no named cinema chain, a two-sentence Memo AI item and contradictory screen-recording directions.",
+   "title_fixes": {
+    "sh": "Studentski popusti koje skoro svi propuštaju 🎟️"
+   },
+   "version": "group-2026-10-08.2"
+  },
   "A20261008205804": {
    "approval": {
     "sh": "not_locked"
@@ -143,7 +230,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791507676,
+   "checked_at": 1791529429,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -156,16 +243,14 @@
      "video_identity": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a"
     }
    },
-   "key": "c71a9bfaeffe46f7254ccdbecc3a368f5bd357196dcbd33ff96436b084a36bfd",
-   "passed": false,
-   "reasons": [
-    "directions_match sh: The reference allows one optional 2–3 second app insert. The SH directions instead ask for three separate 2–3 second screen clips (scan, notes, flashcards) plus an optional fourth with the practice-test percentage, so the demo runs about 6–12 seconds. Cut it to a single 2–3 second insert showing scan → generated note → flashcards or percentage, with the waiting cut out."
-   ],
+   "key": "088b334852c2d260a31774ddf9f4f77e212f1ec5e10c41d5115f7a019785ae48",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
-      "issue": "The reference allows one optional 2–3 second app insert. The SH directions instead ask for three separate 2–3 second screen clips (scan, notes, flashcards) plus an optional fourth with the practice-test percentage, so the demo runs about 6–12 seconds. Cut it to a single 2–3 second insert showing scan → generated note → flashcards or percentage, with the waiting cut out.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -213,8 +298,8 @@
      }
     }
    },
-   "status": "fail",
-   "summary": "Both countries follow the reference beats, hook, product placement and claims and have no-outro endings. Only the SH filming directions fail: they make the optional 2–3 second app demo much longer than the reference allows.",
+   "status": "pass",
+   "summary": "Both the SH and SL pages pass every dimension: each keeps the hook, the 4-sign order (Virgo with the Memo AI brag in the middle, Scorpio, Leo, Libra ending on the hair joke) and spoken brand placement; the Astra AI sentences and real-sounding threats are replaced with real Memo AI features and absurd bargaining, and the directions match the script. Minor, non-failing: the SL brag runs about 8 sentences instead of about 5, and its closing line says it prepares down to the last detail with Memo AI instead of the reference's 'with Memo AI that just isn't possible'.",
    "title_fixes": {},
    "version": "group-2026-10-08.2"
   },
@@ -301,7 +386,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791510006,
+   "checked_at": 1791530243,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -314,18 +399,17 @@
      "video_identity": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0"
     }
    },
-   "key": "f7a9141530d532be5125e21738315c19838d033fa34241c16f8726f64214b0eb",
+   "key": "00f86134eba99361b4ece7d8c9430d389592dfda092c4a8858d223f89a97a15e",
    "passed": false,
    "reasons": [
-    "format_consistency sh: The script follows all 10 beats in order: hook, 3 remarks, AI-note segue, demo, 2 remarks, then the comments CTA. But the on-screen title says PART 4 while the spoken hook and the overlay say part 5. Use the fixed title.",
-    "format_consistency sl: The beats, the eAsistent localisation, 'cvek' and 'govorilne ure' all follow the reference. But the on-screen title says PART 4 while the spoken hook and the overlay say part 5. Use the fixed title.",
-    "independent_wording sl: Most sentences are close Slovenian translations of the example. This covers the hook, the remark texts (phone yelling, pre-solved test pulled out, AI doctor's note, firecracker out of the classroom window endangering classmates, F 'brez spoilerjev'), the segue, the 'kup načinov učenja' demo line and the 'trikrat vrgli ven, samo klepetam' joke. Only the brand was swapped. The remarks and riffs need to be invented and worded independently."
+    "independent_wording sl: Most remarks and reactions are close translations of the example's sentences. Examples: the pre-solved test, the AI-generated note 'po preverjanju izkazalo', 'Roko na srce, to pa sploh ni slaba fora... pri kakšnem profesorju bi še šlo skozi... tega ne poskušajte', the firecracker 'skozi okno učilnice vrgel petardo in s tem ogrozil', 'Kako ste vi sploh še vpisani na te šole? Jaz bi... že trikrat letela' and the Clash Royale trophies line. Remarks should be newly invented or anonymised, and the reactions rewritten.",
+    "directions_match sh: The directions never ask for burned-in captions, which the reference filming requires. The rest of the demo sequence and the cue quotes match the script."
    ],
    "results": {
     "directions_match": {
      "sh": {
-      "issue": "",
-      "pass": true
+      "issue": "The directions never ask for burned-in captions, which the reference filming requires. The rest of the demo sequence and the cue quotes match the script.",
+      "pass": false
      },
      "sl": {
       "issue": "",
@@ -344,12 +428,12 @@
     },
     "format_consistency": {
      "sh": {
-      "issue": "The script follows all 10 beats in order: hook, 3 remarks, AI-note segue, demo, 2 remarks, then the comments CTA. But the on-screen title says PART 4 while the spoken hook and the overlay say part 5. Use the fixed title.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
-      "issue": "The beats, the eAsistent localisation, 'cvek' and 'govorilne ure' all follow the reference. But the on-screen title says PART 4 while the spoken hook and the overlay say part 5. Use the fixed title.",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "independent_wording": {
@@ -358,7 +442,7 @@
       "pass": true
      },
      "sl": {
-      "issue": "Most sentences are close Slovenian translations of the example. This covers the hook, the remark texts (phone yelling, pre-solved test pulled out, AI doctor's note, firecracker out of the classroom window endangering classmates, F 'brez spoilerjev'), the segue, the 'kup načinov učenja' demo line and the 'trikrat vrgli ven, samo klepetam' joke. Only the brand was swapped. The remarks and riffs need to be invented and worded independently.",
+      "issue": "Most remarks and reactions are close translations of the example's sentences. Examples: the pre-solved test, the AI-generated note 'po preverjanju izkazalo', 'Roko na srce, to pa sploh ni slaba fora... pri kakšnem profesorju bi še šlo skozi... tega ne poskušajte', the firecracker 'skozi okno učilnice vrgel petardo in s tem ogrozil', 'Kako ste vi sploh še vpisani na te šole? Jaz bi... že trikrat letela' and the Clash Royale trophies line. Remarks should be newly invented or anonymised, and the reactions rewritten.",
       "pass": false
      }
     },
@@ -374,11 +458,8 @@
     }
    },
    "status": "fail",
-   "summary": "Both countries follow the format structure and make only real Memo AI claims, but both titles say PART 4 against the script's part 5, and the Slovenian script is mostly a translation of the example and needs to be reworded independently.",
-   "title_fixes": {
-    "sh": "NAJSMJEŠNIJE BILJEŠKE IZ E-DNEVNIKA 😂 PART 5",
-    "sl": "NAJBOLJ SMEŠNE OPOMBE IZ eASISTENTA – PART 5 😂"
-   },
+   "summary": "Both pages follow the format and claim only real Memo AI features. SL fails independent wording because it largely translates the example's remarks and reactions, and SH's directions leave out the required burned-in captions.",
+   "title_fixes": {},
    "version": "group-2026-10-08.2"
   },
   "A20261009014121": {
@@ -386,7 +467,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791510838,
+   "checked_at": 1791530390,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -399,10 +480,10 @@
      "video_identity": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab"
     }
    },
-   "key": "de5a7e4e8faf00eabefffbef6cac6f6e6eef0733f245103c3a64a366ccb26d03",
+   "key": "319831ed04542529eb36d05c256654978392c162270435e19d798ee23fce634a",
    "passed": false,
    "reasons": [
-    "features_claims sl: Beat 5 says the teacher aunt recommends the tool for studying ('katero AI orodje priporoča za učenje'). That is a teacher endorsement, which the format does not allow. The reference only says she showed the tool she uses. Rewrite it as 'pokazala mi je, katero AI orodje uporablja' and add the 'I think a lot of teachers use this' idea."
+    "directions_match sl: Six of the seven app cues in the script use a non-standard marker, '(📎 Memo AI · memoai.eu/creator – glej gradivo)', and the directions point to that marker. Only the first one is a real [CUE: ...] marker. Make all of them [CUE: Memo AI · memoai.eu/creator] and point the directions at that. Also, the directions list the 'new note → photos → upload' step last, after the features. Put it first so it matches the demo order."
    ],
    "results": {
     "directions_match": {
@@ -411,8 +492,8 @@
       "pass": true
      },
      "sl": {
-      "issue": "",
-      "pass": true
+      "issue": "Six of the seven app cues in the script use a non-standard marker, '(📎 Memo AI · memoai.eu/creator – glej gradivo)', and the directions point to that marker. Only the first one is a real [CUE: ...] marker. Make all of them [CUE: Memo AI · memoai.eu/creator] and point the directions at that. Also, the directions list the 'new note → photos → upload' step last, after the features. Put it first so it matches the demo order.",
+      "pass": false
      }
     },
     "features_claims": {
@@ -421,8 +502,8 @@
       "pass": true
      },
      "sl": {
-      "issue": "Beat 5 says the teacher aunt recommends the tool for studying ('katero AI orodje priporoča za učenje'). That is a teacher endorsement, which the format does not allow. The reference only says she showed the tool she uses. Rewrite it as 'pokazala mi je, katero AI orodje uporablja' and add the 'I think a lot of teachers use this' idea.",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "format_consistency": {
@@ -457,7 +538,7 @@
     }
    },
    "status": "fail",
-   "summary": "Both countries follow the 14-beat format, replace the Astra steps with real Memo AI steps and avoid guaranteed grades; the only fail is SL beat 5, which turns the teacher aunt into someone who recommends the app.",
+   "summary": "Both scripts follow all 14 beats in order, show the app from beat 6 without speaking the brand, are worded independently, and keep the 'no guarantees' result line. Neither has invented features, and neither title needs fixing. The one fail is SL's filming directions: six of the seven app cues use a non-standard marker instead of [CUE: ...], and the demo steps are listed out of order.",
    "title_fixes": {},
    "version": "group-2026-10-08.2"
   },
@@ -466,7 +547,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791511639,
+   "checked_at": 1791530777,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -479,11 +560,9 @@
      "video_identity": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32"
     }
    },
-   "key": "1893a2bfc276ca4424a353089f0dd4f583a1d7f55a81f59ad3222733dbfcc662",
-   "passed": false,
-   "reasons": [
-    "directions_match sl: The opening asks for a serious, slightly skeptical expression, which clashes with the warm 'wish I'd found it sooner' line 1 and the playful self-correction in line 2. The directions also don't say to keep the hook title on screen for the first 2–3 s; they only say 'naslov pa je na ekranu'."
-   ],
+   "key": "1b1e183411fcf5cee5d12807680fb858d1b1ccf5d960576d858dda8c1870a753",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
@@ -491,8 +570,8 @@
       "pass": true
      },
      "sl": {
-      "issue": "The opening asks for a serious, slightly skeptical expression, which clashes with the warm 'wish I'd found it sooner' line 1 and the playful self-correction in line 2. The directions also don't say to keep the hook title on screen for the first 2–3 s; they only say 'naslov pa je na ekranu'.",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "features_claims": {
@@ -536,8 +615,8 @@
      }
     }
    },
-   "status": "fail",
-   "summary": "Both pages keep the 8-sentence laptop-hold → screen demo → point-at-app structure and replace the 3D and simulation claims with real Memo AI features, and every other check passes. The only issue is in SL's filming directions: the skeptical-expression cue clashes with the enthusiastic opening, and the 2–3 s hook-title timing is missing.",
+   "status": "pass",
+   "summary": "Both the SH and SL pages pass every check. Each keeps the 8 spoken sentences in the reference order, with the laptop held to camera at the start, the screen demo of the cell in the middle (PDF upload, notes, mind map, AI chat, voice tutor, quick flashes of study tools) and pointing at the app at the end. Neither says the brand aloud, both replace the 3D and simulation claims with real Memo AI features, and the wording is written independently of the example.",
    "title_fixes": {},
    "version": "group-2026-10-08.2"
   }
@@ -592,6 +671,13 @@
   "ucisamilicom": "sh",
   "ucisaprofom": "sh"
  },
+ "hot": {},
+ "last_run": 1791527938,
+ "top3": [
+  "A20261008205804",
+  "A20261008210957",
+  "A20261008231529"
+ ],
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/0704a1dc-0341-4f0f-9eb3-42bfb53281b6/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
@@ -600,6 +686,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/2c7d9ce4-ec78-4471-9516-94292f3e1227/video-notion.mp4": "sha256:9c02af67e47bd9ac17022fe8d832f4478e998428889e6141ed3779cabab38af7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/31a27f31-6d7a-492b-9a2f-5e21683e902a/video.mp4": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/337a99d9-13da-42a6-894a-f679e2935f94/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/3f20f724-3d93-4627-b805-840c82c8c27f/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/42b6d9eb-a157-4f0a-bc5d-dcc0c2214e20/video.mp4": "sha256:e513b4868ed887f7d0fd7d95c00b0d8f505555382b0a29f910e4500bab96995b",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/481b3103-ec71-4664-a107-837fa596a460/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/4b623f87-a173-46be-9765-b8700a7903d3/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
@@ -607,6 +694,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/631fce93-8196-45d8-a854-da27fbc82d72/video-notion.mp4": "sha256:fa7d6f7f9a8ade294db9b305f23b9c45690bd9122a41071e1a75a268daafdb99",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/635ba303-0ce3-42a9-b988-0cc452861169/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6b3809ad-cf04-4426-8f8d-da0a3d675711/video-notion.mp4": "sha256:728cf7db67b5988163b4b35079212302d7be123337b97b582d506266b1fa9fea",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6f1028c2-5e96-411c-853d-a6021f5a9fc3/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9f1396bc-73e4-473d-9aec-ac88d25d3cba/video-notion.mp4": "sha256:d3f2a1475e9c417b9ea3df8e1dba8f19445423cd8a088b1a6f9494a872a49aa7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/b724117d-0c36-4e93-972f-055d7c412d9d/video-notion.mp4": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d7a785da-5e23-40f6-9646-04afe72c6f2d/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",

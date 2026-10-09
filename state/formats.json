@@ -25,11 +25,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example names the app out loud in the fourth item ('besplatni trailer na ASTRI AI'), but our spoken line only says ' / title fixed: 4",
-    "🇸🇮 example not this format (The format is a listicle of little-known student discounts (transport, free Micr) / put back the original Astra AI video / script rewri"
+    "cross-country check fail: format_consistency sl: Stickers '1/4 Prevoz 🚆' and '3/4 Kino in gledališče 🍿' have no discount figure, and the reference requires one on every numbered sticker. Item 1 gives no real percentage. Item 3 names no local cinema chain (just 'v kinu'). The Memo AI item has two sentences instead of the orig"
    ],
    "since": 1791492822,
-   "tries": 1
+   "tries": 2
   },
   "revived": {
    "at": 1791502910,
@@ -94,11 +93,11 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example's second on-screen line names the brand ('nadogradiš mozak uz Astra AI'), but our second line never says Mem / filming direct",
-    "🇸🇮 script rewritten sentence by sentence (29 words (original 29)) / script reworded again: Not reworded: both lines translate the example's two on-screen lines dir"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The original's second on-screen line names the brand ('...uz Astra AI'), but our second line ('Srećom, dan",
+    "🇸🇮 script reworded again: The original's second on-screen line names the brand ('uz Astra AI'), but our second line only says 's tole aplikacijo'. / script rewritt"
    ],
    "since": 1791494592,
-   "tries": 1
+   "tries": 2
   },
   "reworded": {
    "sh": true,
@@ -127,17 +126,10 @@
     "views": 295100
    }
   },
+  "listed_at": 1791529481,
   "page_id": "3f365e84-a3c2-81b5-88b5-e2225ef1bc0b",
   "pages": {
    "sl": "3f365e84-a3c2-810e-8152-eeed9afe21db"
-  },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "cross-country check fail: directions_match sh: The reference allows one optional 2–3 second app insert. The SH directions instead ask for three separate 2–3 second screen clips (scan, notes, flashcards) plus an optional fourth with the practice-test percentage, so the demo runs about 6–12 seconds. Cut it to a single 2–3 seco"
-   ],
-   "since": 1791501302,
-   "tries": 1
   },
   "revived": {
    "at": 1791503632,
@@ -150,7 +142,7 @@
   },
   "script": "Evo kako se horoskopski znakovi ponašaju kad dobiju jedinicu u školi. Aha, da, dobila sam jedinicu. A, dobro. Molim? Ma da, iskreno, baš me briga. Mhm. Molim? Vi ste meni dali jedinicu, profesorice? Čekajte, samo sekundu... polako... Ne, vi meni niste dali jedinicu. Kako to mislite da ne razumijete? Pa niste mi je dali, jer ja to nisam unaprijed izračunala... a to bi se trebalo desiti tek za, koliko, dva mjeseca. Mhm. Ne, ne, profesorice, vjerujte mi, ja sam vaš školski sistem proučila do kraja, znam koliko je pokvaren i gdje su mu sve rupe, baš znam sve što se ovdje dešava. Vi ste nešto pomiješali, jedinicu nisam dobila ja. Mhm. Kako to zašto, profesorice? Pa zato što to nije bilo u mojoj računici. Zato što ja koristim aplikaciju Memo AI, eto. Vi ne znate koja je to aplikacija? Ma dajte, pa cijeli razred zna za tu aplikaciju. Znači, ta aplikacija ti bukvalno napravi podcast da ga slušaš",
   "source_video": "https://www.tiktok.com/@studywithvalentina/video/7688930483304090898",
-  "status": "pending",
+  "status": "active",
   "title": "Horoskopski znakovi kad dobiju 1 ♈"
  },
  {
@@ -196,10 +188,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: format_consistency sh: The script follows all 10 beats in order: hook, 3 remarks, AI-note segue, demo, 2 remarks, then the comments CTA. But the on-screen title says PART 4 while the spoken hook and the overlay say part 5. Use the fixed title.; format_consistency sl: The beats, the eAsistent localis"
+    "cross-country check fail: independent_wording sl: Most remarks and reactions are close translations of the example's sentences. Examples: the pre-solved test, the AI-generated note 'po preverjanju izkazalo', 'Roko na srce, to pa sploh ni slaba fora... pri kakšnem profesorju bi še šlo skozi... tega ne poskušajte', the firecra"
    ],
    "since": 1791506039,
-   "tries": 2
+   "tries": 3
   },
   "revived": {
    "at": 1791509180,
@@ -226,10 +218,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: features_claims sl: Beat 5 says the teacher aunt recommends the tool for studying ('katero AI orodje priporoča za učenje'). That is a teacher endorsement, which the format does not allow. The reference only says she showed the tool she uses. Rewrite it as 'pokazala mi je, katero AI orodje uporablja'"
+    "cross-country check fail: directions_match sl: Six of the seven app cues in the script use a non-standard marker, '(📎 Memo AI · memoai.eu/creator – glej gradivo)', and the directions point to that marker. Only the first one is a real [CUE: ...] marker. Make all of them [CUE: Memo AI · memoai.eu/creator] and point the directi"
    ],
    "since": 1791510878,
-   "tries": 1
+   "tries": 2
   },
   "reworded": {
    "sh": true,
@@ -244,17 +236,10 @@
   "created": 1791510925,
   "description": "Talking-to-camera study app recommendation where the creator holds up a laptop showing the app, then films the laptop screen while exploring one school subject (biology/cells) and ends back on camera pointing at the app.",
   "id": "A20261009015525",
+  "listed_at": 1791530818,
   "page_id": "3f465e84-a3c2-810b-b433-d079ee2a9dd1",
   "pages": {
    "sl": "3f465e84-a3c2-8170-9ec3-ee47d9934a43"
-  },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "cross-country check fail: directions_match sl: The opening asks for a serious, slightly skeptical expression, which clashes with the warm 'wish I'd found it sooner' line 1 and the playful self-correction in line 2. The directions also don't say to keep the hook title on screen for the first 2–3 s; they only say 'naslov pa je"
-   ],
-   "since": 1791511677,
-   "tries": 1
   },
   "reworded": {
    "sh": true,
@@ -262,7 +247,7 @@
   },
   "script": "Da sam ovo otkrila ranije, biologiju bih učila svaki dan, ozbiljno. Dobro, možda ne baš svaki dan, ali bar duplo brže. Samo uslikaš lekciju o ćeliji koju trenutno učiš. Onda otvoriš bilješke i mapu uma, pitaš chat za bilo koji dio ćelije i odmah ti ga objasni. A tutor ti sve ispriča naglas, dio po dio – iskreno, ćelija mi nikad nije bila ovako jasna, a u udžbeniku sigurno nije. Ovo je samo biologija, ali isto možeš za bilo koji predmet, samo ubaciš svoje gradivo. Ljudi, ja sam oduševljena. To je ova aplikacija ovdje, ona ista s kojom, znaš već, stalno učim.",
   "source_video": "https://www.tiktok.com/@learnwithandj/video/7692189117098003733",
-  "status": "pending",
+  "status": "active",
   "title": "Biologija duplo brže? 🧬"
  }
 ]

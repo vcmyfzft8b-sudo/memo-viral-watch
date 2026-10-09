@@ -733,5 +733,137 @@
   "type": "alert",
   "video": "7692189117098003733",
   "views": 101900
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791528167,
+  "type": "alert",
+  "video": "7693980090752879924",
+  "views": 79300
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791528170,
+  "type": "alert",
+  "video": "7694248365436964097",
+  "views": 74400
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791528174,
+  "type": "alert",
+  "video": "7694393004118854930",
+  "views": 43800
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791528177,
+  "type": "alert",
+  "video": "7694419034376375572",
+  "views": 27800
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791528181,
+  "type": "alert",
+  "video": "7694415560993508609",
+  "views": 20700
+ },
+ {
+  "format": "A20261008204718",
+  "reasons": [
+   "cross-country check fail: format_consistency sl: Stickers '1/4 Prevoz 🚆' and '3/4 Kino in gledališče 🍿' have no discount figure, and the reference requires one on every numbered sticker. Item 1 gives no real percentage. Item 3 names no local cinema chain (just 'v kinu'). The Memo AI item has two sentences instead of the orig"
+  ],
+  "tries": 2,
+  "ts": 1791528647,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The original's second on-screen line names the brand ('...uz Astra AI'), but our second line ('Srećom, dan",
+   "🇸🇮 script reworded again: The original's second on-screen line names the brand ('uz Astra AI'), but our second line only says 's tole aplikacijo'. / script rewritt"
+  ],
+  "tries": 2,
+  "ts": 1791529077,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261008224450"
+  ],
+  "ts": 1791529481,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008224450",
+  "position": 4,
+  "ts": 1791529481,
+  "type": "format_published"
+ },
+ {
+  "format": "A20261009001913",
+  "reasons": [
+   "cross-country check fail: independent_wording sl: Most remarks and reactions are close translations of the example's sentences. Examples: the pre-solved test, the AI-generated note 'po preverjanju izkazalo', 'Roko na srce, to pa sploh ni slaba fora... pri kakšnem profesorju bi še šlo skozi... tega ne poskušajte', the firecra"
+  ],
+  "tries": 3,
+  "ts": 1791530284,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261009014121",
+  "reasons": [
+   "cross-country check fail: directions_match sl: Six of the seven app cues in the script use a non-standard marker, '(📎 Memo AI · memoai.eu/creator – glej gradivo)', and the directions point to that marker. Only the first one is a real [CUE: ...] marker. Make all of them [CUE: Memo AI · memoai.eu/creator] and point the directi"
+  ],
+  "tries": 2,
+  "ts": 1791530427,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261009015525",
+   "A20261008224450"
+  ],
+  "ts": 1791530818,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261009015525",
+  "position": 4,
+  "ts": 1791530818,
+  "type": "format_published"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261009015525",
+   "A20261008224450"
+  ],
+  "ts": 1791530819,
+  "type": "rerank"
+ },
+ {
+  "added": [],
+  "paused": [],
+  "revived": [
+   "smartishaangelisaa"
+  ],
+  "ts": 1791531469,
+  "type": "discovery"
+ },
+ {
+  "added": [],
+  "paused": [],
+  "revived": [],
+  "ts": 1791531683,
+  "type": "own_discovery"
  }
 ]
