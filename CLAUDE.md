@@ -34,7 +34,20 @@ Claude, every 3 days) and turns their viral formats into Memo AI creator pages i
 hook-lab, setup-notion, test-notify, test-claude, …). One run at a time: a newer pending dispatch cancels an older
 pending one – wait until the queue is empty. Offline tests: `python3 -m pytest -q tests`.
 
-## Status (9 Oct 2026)
-39 active Astra AI creators; 9 formats with both pages (5 live, 4 in the quality check – decided within 1–2 runs).
+## Formats added by hand
+`add_format` input (Run workflow): TikTok links of any app; first = example. Judged/built/published like a viral video,
+every given video counts for the ranking, its creators are followed from then on (status manual, never paused or
+blocked). The app's name goes into config.json `other_apps` (regex) so it is replaced/counted like Astra AI
+(Studyflash is there). A failed add alerts and turns the run red. TikTok subtitles: the original ASR track is used,
+never TikTok's machine translation.
+
+## Check everything
+`mode=verify` (read-only): every list (order, numbering, layout), live page (video, sections, links), held page
+(staging) and both hook labs against the state; also lists leftover staging pages (never deletes).
+
+## Status (10 Oct 2026)
+41 followed creators (40 Astra AI + @lern.mit.domi for the Studyflash format). 7 live formats in both lists
+(BCS + SLO), verify clean; 3 archived after 4 failed checks (come back if they go viral again).
 Open: Discord server logo (user uploads Downloads/astra-ai-logo.png); keep or drop @creatortipsbymonika (Astra's
-recruiter account) – user to decide.
+recruiter account); 2 leftover pages in the private staging area from a failed Studyflash attempt (trash only with
+the user's OK). The Claude subscription is shared with the JobStep watcher – heavy days can hit its limit.
