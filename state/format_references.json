@@ -363,5 +363,144 @@
    "7693684473686150406": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406"
   },
   "title_en": "Funniest e-diary teacher remarks 😂 (reaction series, Part N)"
+ },
+ "A20261009014121": {
+  "accepted_sources": [
+   "7691071802373623058"
+  ],
+  "allowed_localisation": [
+   "Language and dialect of the speech and on-screen text (Slovenian, Croatian, Bosnian, Serbian), with natural local slang",
+   "The insider relative (aunt/uncle/mom who is a teacher; 'profesorka' vs 'učiteljica', depending on the country)",
+   "The example subject shown (geography, biology, history, maths, etc.) and the example source material (textbook page, classmate's notes, a worksheet, the board)",
+   "Local grading words in the result line (e.g. 'petica'), as long as it is not stated as a guarantee",
+   "The colour/type of slime or another equally satisfying ASMR hook visual",
+   "Phone screen recording instead of a laptop for some demo shots",
+   "Exact wording, as long as the 14-beat structure and sentence count are kept",
+   "Free-start mention optional (one free note, then a 3-day free trial), at most one short line, without replacing the follow CTA"
+  ],
+  "beats": [
+   "1. HOOK (slime cutting + on-screen text): 'These are the things your teachers hide from you.'",
+   "2. FAKE URGENCY: 'I'm deleting this video in 2 hours, so if you're seeing it, you got really lucky.'",
+   "3. INSIDER SOURCE: 'My aunt is a teacher and SHE told me this secret.'",
+   "4. THE SECRET: 'Teachers barely do anything by hand anymore, these days pretty much everyone uses AI.'",
+   "5. AUNT'S TOOL: 'My aunt showed me which AI tool she uses, and honestly, I think a lot of teachers use this.'",
+   "6. CUT TO LAPTOP SCREEN: 'This is the site my aunt showed me.' (memoai.eu visible in the browser bar)",
+   "7. STEP 1: 'All you have to do is click to make a new note and pick how you want to add the material, for example photos.'",
+   "8. STEP 2 (Scan/gallery): 'Take photos of the textbook pages or of the notes a classmate wrote in class, up to 10 of them.' (could also be a PDF, a Word/PowerPoint file or a recorded lecture)",
+   "9. STEP 3 (upload, wait cut): 'Upload them and in a few minutes the AI turns them into notes made just for you.' (the processing wait is cut out)",
+   "10. NOTES -> FLASHCARDS -> TEST: 'You can start with the notes, then move on to the flashcards, then the practice test.'",
+   "11. TEST + VOICE TUTOR: 'The practice test gives you a percentage and feedback on every answer, and the voice tutor explains everything out loud, topic by topic.'",
+   "12. MORE FEATURES: 'The quiz with explanations is also a great option, and so are the mind map, the podcast and the chat where you can ask about the material.'",
+   "13. RESULT (no guarantees): 'Honestly, if you study this way, you'll go into the test way more prepared.'",
+   "14. CTA: 'Follow me for more secrets!'"
+  ],
+  "canonical_source": "7691071802373623058",
+  "filming": "20–40 s, vertical 9:16, one take in a student's voice, informal and conspiratorial. Shot 1 (0–5 s): satisfying slime-cutting close-up with the bold on-screen text overlay; the voiceover starts immediately. Shot 2 (5–15 s): stay on the slime or a talking head for the urgency, aunt and secret lines. Shots 3+ (15 s–end): handheld close-up of a laptop screen (a phone screen recording is fine as a cutaway) running memoai.eu. Demo order: create a new note → choose photos/Scan (or upload a PDF) → upload notes or textbook photos → cut the processing wait → open the generated notes (formulas rendered properly) → swipe through the flashcards → do a practice test and show the percentage and per-answer feedback → quick flashes of the quiz with explanations, mind map, podcast/voice tutor and chat. The finger or cursor points at each button as it is named. No brand voiceover; the site is identified on screen only.",
+  "generated": 1791510261,
+  "hook": "Close-up of hands cutting satisfying slime, with the on-screen text 'Stvari koje profesori kriju od Vas 😱‼️' (localised). The first spoken line is 'These are the things your teachers hide from you.' Straight after it comes the fake urgency line: 'I'm deleting this video in 2 hours, so if you're seeing it, you got really lucky.'",
+  "not_allowed": [
+   "Dropping the slime/satisfying hook, the 'teachers hide this' framing, the fake 'deleting in 2 hours' line or the insider-teacher-relative source; any of these makes it a different format",
+   "Swapping the laptop-screen walkthrough for a pure talking head, a slideshow or a brand-style ad; speaking the brand name as a sponsor read",
+   "Showing or claiming features Memo AI lacks: picking a test date or target grade, an auto-generated study plan/schedule, 'snap and solve' instant answers to a single task, checking/grading the user's own homework, photos in the chat, PDF export, pasting text, a separate true/false mode, an Android app from the Play Store",
+   "Any original Astra AI step kept as-is (e.g. 'New test → choose subject → test date → desired grade'); each one must be replaced with a real Memo AI step while keeping the sentence count",
+   "Guaranteeing grades or results ('you'll get a 5 for sure', 'guaranteed pass')",
+   "Claiming teachers write tests with Memo AI, that Memo AI has teachers' tests or exam questions, or that it is endorsed by any school or teacher",
+   "Encouraging cheating, or presenting the app as a way to get test answers",
+   "Claiming notes appear instantly; the wait must be cut, not described as zero",
+   "Showing Astra AI branding, UI or URL anywhere"
+  ],
+  "premise": "A student creator lets viewers in on an insider 'secret'. Their aunt, a teacher, told them that teachers now use AI for everything and showed them the site she uses. The creator then walks through that site, Memo AI, on a laptop screen. They show how you turn your own class notes into a full study set and frame it as the 'hidden' way to be ready for a test.",
+  "product": {
+   "cta": "Follow me for more secrets! (follow the creator; no direct sales CTA)",
+   "features_used": [
+    "web app on laptop (memoai.eu)",
+    "creating a new note",
+    "upload up to 10 photos of notes/textbook pages (Scan camera or gallery)",
+    "PDF / Word / PowerPoint upload (optional alternative)",
+    "AI-generated notes with formulas shown properly",
+    "flashcards",
+    "graded practice test (percentage + feedback per answer)",
+    "quiz with explanations",
+    "voice tutor that explains topic by topic",
+    "mind map",
+    "podcast",
+    "AI chat about the note"
+   ],
+   "introduced_at_beat": 6,
+   "spoken_brand": "not spoken; Memo AI / memoai.eu is shown only on the laptop screen (browser URL bar and app UI) from beat 6 onward"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7691071802373623058": "https://www.tiktok.com/@studywithvalentina/video/7691071802373623058"
+  },
+  "title_en": "Secrets Teachers Hide From You 😱"
+ },
+ "A20261009015525": {
+  "accepted_sources": [
+   "7692189117098003733"
+  ],
+  "allowed_localisation": [
+   "Spoken language and on-screen text: Slovenian for Slovenia; Croatian, Bosnian or Serbian for the other Balkan pages; the app UI is in the same language",
+   "Local slang and filler words (e.g. 'kao', 'ljudi' / 'ful', 'res', 'ej')",
+   "Exact wording of each line, as long as the meaning and the 8-sentence order stay",
+   "The specific biology textbook or chapter used (it must stay biology and the cell)",
+   "Upload method in beat 3: PDF or textbook photos",
+   "Which cell part is asked about in beat 4",
+   "The creator's look, room and laptop model; creator gender (adjust grammatical gender in the lines)",
+   "Caption text, hashtags, and whether memoai.eu is in the caption",
+   "Which 2–3 study tools flash in beat 6"
+  ],
+  "beats": [
+   "1. Talking to camera, holding up the open laptop with Memo AI on screen. Line 1 (wish I'd had it earlier): 'If I'd had this earlier, I'd have studied biology every day.'",
+   "2. Still on camera, with a playful self-correction. Line 2: 'Okay, maybe not every day, but at least twice as fast.'",
+   "3. Cut to the laptop screen. Line 3 (replaces 'you can choose which cell you study'): she picks her material by uploading the biology chapter on the cell as a PDF, or the textbook pages she photographed (up to 10 photos), and the cell note appears. Waiting time is cut.",
+   "4. Screen. Line 4 (replaces 'click any part of the cell and get all the info'): she opens the mind map of the cell, which shows every part (nucleus, mitochondria, membrane…). She asks the AI chat about one part and gets the full explanation.",
+   "5. Screen. Line 5 is the amazement moment (replaces the 3D close-up). She starts the voice tutor, which explains the cell out loud topic by topic, and she interrupts it with a question: 'guys, it was never explained like this in the textbook.'",
+   "6. Screen. Line 6 (replaces 'simulations for any subject'): 'I only showed you a bit of biology, but guys, it works for any subject: a lecture, a PDF, photos of notes.' Quick flashes of flashcards / quiz / practice test with a percentage.",
+   "7. Back on camera. Line 7: 'I'm obsessed.'",
+   "8. On camera, pointing at the laptop with Memo AI visible. Line 8: 'The app is this one, the same one you know I always use for studying.'"
+  ],
+  "canonical_source": "7692189117098003733",
+  "filming": "Length 25–40 s with 8 spoken sentences, no more and no fewer. Handheld phone, vertical 9:16, natural room or desk light, casual home look with no studio setup. Shot A: talking head holding up an open laptop with Memo AI clearly visible (beats 1–2). Shot B: phone filming the laptop screen over the shoulder or straight on, with the creator's finger or cursor visible while she talks over it (beats 3–6). Demo sequence: upload the cell chapter PDF or textbook photos → cell note (jump cut over the few-minute wait) → mind map → tap a part / ask the AI chat about it → voice tutor speaks, creator interrupts with a question → quick flashes of flashcards, quiz and a graded practice test (percentage). Shot C: back to talking head, pointing at the laptop (beats 7–8). Fast jump cuts, the hook text stays on screen for the first 2–3 s, and burned-in captions are optional.",
+  "generated": 1791511040,
+  "hook": "On-screen text over the first frame: 'the best app for studying biology🧬🧫' (localised, e.g. SL 'najboljša aplikacija za učenje biologije🧬🧫', HR/BS/SR 'najbolja aplikacija za učenje biologije🧬🧫'). The creator talks to camera, holding up an open laptop with Memo AI on screen, and says the opening line: 'If I'd had this earlier, I'd have studied biology every day. Well, okay, but at least twice as fast.'",
+  "not_allowed": [
+   "Changing the subject from biology/the cell, or showing several subjects in depth (that is a different format)",
+   "Dropping the laptop-held-to-camera opening, the screen-recording middle, or the pointing-at-the-app ending",
+   "Turning it into a voiceover-only screen recording, a skit, a POV or a green-screen format",
+   "Saying the brand name aloud or adding a spoken hard-sell CTA, price or discount (the original never says the name)",
+   "Adding or removing sentences (keep 8)",
+   "Claiming interactive 3D cell models, simulations, clickable diagrams or zooming into a cell (Memo AI does not have these)",
+   "Claiming snap-and-solve instant answers to a single photographed task",
+   "Claiming Memo AI checks or grades the user's own homework (only its own practice test is graded)",
+   "Showing photos sent in the AI chat, PDF export, or pasting text",
+   "Showing or mentioning an Android app from the Play Store (it is a web app at memoai.eu, used in the browser)",
+   "Claiming notes are instant (they take a few minutes, so cut the wait instead)",
+   "Guaranteeing grades or literally 'twice as fast' as a factual claim (keep it as a casual personal exaggeration)",
+   "Calling it free without qualification (only 'one free note, then a 3-day free trial')",
+   "Mentioning Astra AI or showing its interface"
+  ],
+  "premise": "A student recommends a study app as if it were a personal discovery. She holds the laptop up to the camera, then films the laptop screen while she goes through one school subject (biology, the cell) inside Memo AI. She reacts with real amazement at how much clearer it is than the textbook, says it works for every subject, and ends back on camera pointing at the app, calling it 'the same app you know I always use for studying'. It is one subject, one enthusiastic walkthrough and a casual endorsement, not a tutorial or an ad read.",
+  "product": {
+   "cta": "none spoken. The implicit CTA is pointing at the app on the laptop in beat 8. 'memoai.eu' may appear in the caption or bio.",
+   "features_used": [
+    "upload a PDF (biology chapter) or up to 10 photos of textbook pages (Scan camera or gallery)",
+    "notes generated from the material",
+    "mind map",
+    "AI chat about the note",
+    "voice tutor that explains topic by topic out loud and can be interrupted",
+    "flashcards",
+    "quiz with explanations",
+    "graded practice test (percentage + feedback per answer)",
+    "works for any subject from a recorded/uploaded lecture, PDF, Word/PowerPoint, web link or photos"
+   ],
+   "introduced_at_beat": 1,
+   "spoken_brand": "not spoken. The app is only referred to as 'this app / the same app I always use', and the brand is identified visually by the Memo AI interface on the laptop screen (the memoai.eu URL bar can be visible in beats 1 and 8)."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692189117098003733": "https://www.tiktok.com/@learnwithandj/video/7692189117098003733"
+  },
+  "title_en": "Biology twice as fast? 🧬 – 'the best app for studying biology' laptop demo"
  }
 }

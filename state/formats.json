@@ -175,6 +175,20 @@
   "created": 1791505153,
   "description": "Talking-head reaction series where the creator reads and jokes about funny e-diary teacher remarks shown as screenshot overlays, with a mid-video segue ('if you want to use AI, use it properly') into a quick app demo before returning to more remarks.",
   "id": "A20261009001913",
+  "inspo": {
+   "sh": {
+    "audit": true,
+    "strict": true,
+    "url": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406",
+    "views": 139800
+   },
+   "sl": {
+    "audit": true,
+    "strict": true,
+    "url": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406",
+    "views": 139800
+   }
+  },
   "page_id": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
   "pages": {
    "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
@@ -182,10 +196,15 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: format_consistency sh: Some beat riffs from the reference are missing. Beat 2 has no mock defence of the student (it roasts the student instead). Beat 4 drops the 'honestly, not bad' admiration before 'don't do this' and uses a six-fingers joke instead. Beat 9 swaps the 'before e-diaries you could h"
+    "cross-country check fail: format_consistency sh: The script follows all 10 beats in order: hook, 3 remarks, AI-note segue, demo, 2 remarks, then the comments CTA. But the on-screen title says PART 4 while the spoken hook and the overlay say part 5. Use the fixed title.; format_consistency sl: The beats, the eAsistent localis"
    ],
    "since": 1791506039,
-   "tries": 1
+   "tries": 2
+  },
+  "revived": {
+   "at": 1791509180,
+   "because": "https://www.tiktok.com/@kera.vas.uci/video/7691827966711581953",
+   "views": 131100
   },
   "reworded": {
    "sh": true,
@@ -195,5 +214,55 @@
   "source_video": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406",
   "status": "pending",
   "title": "Najsmješnije bilješke iz e-dnevnika 😂"
+ },
+ {
+  "created": 1791510081,
+  "description": "Talking-head 'secrets teachers hide from you' video with satisfying slime-cutting hook and a fake 'deleting in 2 hours' urgency line, then a close-up laptop screen walkthrough of the study app's features.",
+  "id": "A20261009014121",
+  "page_id": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe",
+  "pages": {
+   "sl": "3f465e84-a3c2-81c1-b18f-e757875dad14"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: features_claims sl: Beat 5 says the teacher aunt recommends the tool for studying ('katero AI orodje priporoča za učenje'). That is a teacher endorsement, which the format does not allow. The reference only says she showed the tool she uses. Rewrite it as 'pokazala mi je, katero AI orodje uporablja'"
+   ],
+   "since": 1791510878,
+   "tries": 1
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Ovo su stvari koje ti profesori nikad neće reći. Za dva sata brišem ovaj video, pa ako ga gledaš baš sada, stvarno imaš sreće. Ovu tajnu mi je odala moja tetka, a ona radi kao profesorka. Danas skoro nijedan profesor ne sastavlja testove sam, bukvalno svi redom koriste AI. Tetka mi je pokazala koji AI alat koristi kad sprema test, i iskreno, mislim da ga koristi većina profesora. A ovo je taj sajt koji mi je ona pokazala. Sve što trebaš je da klikneš na Scan i uslikaš stranice iz udžbenika, recimo iz geografije, ili bilješke koje je neko iz razreda pisao na času, a ako imaš PDF ili Word dokument, i njega samo ubaciš. Za par minuta ti od onoga što ubaciš napravi sređene bilješke, baš po tvom gradivu. Kreneš od bilješki, onda pređeš na kartice, a na kraju riješiš probni test koji ti pokaže postotak. Ako ti je lakše slušati, tu je i tutor koji ti gradivo naglas objasni temu po temu. Odlični",
+  "source_video": "https://www.tiktok.com/@studywithvalentina/video/7691071802373623058",
+  "status": "pending",
+  "title": "Tajne koje profesori kriju 😱"
+ },
+ {
+  "created": 1791510925,
+  "description": "Talking-to-camera study app recommendation where the creator holds up a laptop showing the app, then films the laptop screen while exploring one school subject (biology/cells) and ends back on camera pointing at the app.",
+  "id": "A20261009015525",
+  "page_id": "3f465e84-a3c2-810b-b433-d079ee2a9dd1",
+  "pages": {
+   "sl": "3f465e84-a3c2-8170-9ec3-ee47d9934a43"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: directions_match sl: The opening asks for a serious, slightly skeptical expression, which clashes with the warm 'wish I'd found it sooner' line 1 and the playful self-correction in line 2. The directions also don't say to keep the hook title on screen for the first 2–3 s; they only say 'naslov pa je"
+   ],
+   "since": 1791511677,
+   "tries": 1
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Da sam ovo otkrila ranije, biologiju bih učila svaki dan, ozbiljno. Dobro, možda ne baš svaki dan, ali bar duplo brže. Samo uslikaš lekciju o ćeliji koju trenutno učiš. Onda otvoriš bilješke i mapu uma, pitaš chat za bilo koji dio ćelije i odmah ti ga objasni. A tutor ti sve ispriča naglas, dio po dio – iskreno, ćelija mi nikad nije bila ovako jasna, a u udžbeniku sigurno nije. Ovo je samo biologija, ali isto možeš za bilo koji predmet, samo ubaciš svoje gradivo. Ljudi, ja sam oduševljena. To je ova aplikacija ovdje, ona ista s kojom, znaš već, stalno učim.",
+  "source_video": "https://www.tiktok.com/@learnwithandj/video/7692189117098003733",
+  "status": "pending",
+  "title": "Biologija duplo brže? 🧬"
  }
 ]

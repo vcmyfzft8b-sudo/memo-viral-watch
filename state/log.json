@@ -604,5 +604,134 @@
   ],
   "ts": 1791508852,
   "type": "rerank"
+ },
+ {
+  "format": null,
+  "level": "viral",
+  "ts": 1791509017,
+  "type": "alert",
+  "video": "7693614549269810450",
+  "views": 131300
+ },
+ {
+  "format": "A20261009001913",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The script follows all 10 beats in order: hook, 3 remarks, AI-note segue, demo, 2 remarks, then the comments CTA. But the on-screen title says PART 4 while the spoken hook and the overlay say part 5. Use the fixed title.; format_consistency sl: The beats, the eAsistent localis"
+  ],
+  "tries": 2,
+  "ts": 1791510051,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261009001913",
+  "position": null,
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The script follows all 10 beats in order: hook, 3 remarks, AI-note segue, demo, 2 remarks, then the comments CTA. But the on-screen title says PART 4 while the spoken hook and the overlay say part 5. Use the fixed title.; format_consistency sl: The beats, the eAsistent localis"
+  ],
+  "ts": 1791510051,
+  "type": "format_held",
+  "video": "7691827966711581953"
+ },
+ {
+  "format": "A20261009001913",
+  "level": "viral",
+  "ts": 1791510053,
+  "type": "alert",
+  "video": "7691827966711581953",
+  "views": 131100
+ },
+ {
+  "format": "A20261008205804",
+  "level": "viral",
+  "ts": 1791510065,
+  "type": "alert",
+  "video": "7694048926395059486",
+  "views": 112000
+ },
+ {
+  "format": "A20261009014121",
+  "reasons": [
+   "cross-country check fail: features_claims sl: Beat 5 says the teacher aunt recommends the tool for studying ('katero AI orodje priporoča za učenje'). That is a teacher endorsement, which the format does not allow. The reference only says she showed the tool she uses. Rewrite it as 'pokazala mi je, katero AI orodje uporablja'"
+  ],
+  "tries": 1,
+  "ts": 1791510878,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261009014121",
+  "page_de": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe",
+  "pages": {
+   "sl": "3f465e84-a3c2-81c1-b18f-e757875dad14"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: features_claims sl: Beat 5 says the teacher aunt recommends the tool for studying ('katero AI orodje priporoča za učenje'). That is a teacher endorsement, which the format does not allow. The reference only says she showed the tool she uses. Rewrite it as 'pokazala mi je, katero AI orodje uporablja'"
+  ],
+  "ts": 1791510878,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261009014121",
+  "format": "A20261009014121",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: features_claims sl: Beat 5 says the teacher aunt recommends the tool for studying ('katero AI orodje priporoča za učenje'). That is a teacher endorsement, which the format does not allow. The reference only says she showed the tool she uses. Rewrite it as 'pokazala mi je, katero AI orodje uporablja'"
+  ],
+  "ts": 1791510879,
+  "type": "alert",
+  "video": "7691071802373623058",
+  "views": 108100
+ },
+ {
+  "format": "A20261008205804",
+  "level": "viral",
+  "ts": 1791510892,
+  "type": "alert",
+  "video": "7691081019658669318",
+  "views": 105800
+ },
+ {
+  "format": null,
+  "level": "viral",
+  "ts": 1791510912,
+  "type": "alert",
+  "video": "7688802612111510805",
+  "views": 104500
+ },
+ {
+  "format": "A20261009015525",
+  "reasons": [
+   "cross-country check fail: directions_match sl: The opening asks for a serious, slightly skeptical expression, which clashes with the warm 'wish I'd found it sooner' line 1 and the playful self-correction in line 2. The directions also don't say to keep the hook title on screen for the first 2–3 s; they only say 'naslov pa je"
+  ],
+  "tries": 1,
+  "ts": 1791511677,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261009015525",
+  "page_de": "3f465e84-a3c2-810b-b433-d079ee2a9dd1",
+  "pages": {
+   "sl": "3f465e84-a3c2-8170-9ec3-ee47d9934a43"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: directions_match sl: The opening asks for a serious, slightly skeptical expression, which clashes with the warm 'wish I'd found it sooner' line 1 and the playful self-correction in line 2. The directions also don't say to keep the hook title on screen for the first 2–3 s; they only say 'naslov pa je"
+  ],
+  "ts": 1791511677,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261009015525",
+  "format": "A20261009015525",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: directions_match sl: The opening asks for a serious, slightly skeptical expression, which clashes with the warm 'wish I'd found it sooner' line 1 and the playful self-correction in line 2. The directions also don't say to keep the hook title on screen for the first 2–3 s; they only say 'naslov pa je"
+  ],
+  "ts": 1791511678,
+  "type": "alert",
+  "video": "7692189117098003733",
+  "views": 101900
  }
 ]

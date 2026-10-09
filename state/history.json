@@ -794,11 +794,12 @@
  },
  "7688802612111510805": {
   "backfill": true,
+  "bootstrap_tries": 1,
   "created": 1790188861,
   "format": null,
   "handle": "learn.with.darija",
   "hook": "Balkan study tips video with no text or speech",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 104400,
@@ -1443,11 +1444,12 @@
  },
  "7691071802373623058": {
   "backfill": true,
+  "bootstrap_tries": 1,
   "created": 1790717198,
-  "format": null,
+  "format": "A20261009014121",
   "handle": "studywithvalentina",
   "hook": "Things professors hide from you",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 107900,
@@ -1468,11 +1470,12 @@
  },
  "7691081019658669318": {
   "backfill": true,
+  "bootstrap_tries": 1,
   "created": 1790719344,
-  "format": null,
+  "format": "A20261008205804",
   "handle": "kera.vas.uci",
   "hook": "Are you better than 99% of people?",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 105800,
@@ -2066,6 +2069,17 @@
   "views": 13500,
   "views_7d": 13500
  },
+ "7691827966711581953": {
+  "bootstrap_tries": 1,
+  "created": 1790893320,
+  "format": "A20261009001913",
+  "handle": "kera.vas.uci",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": true,
+  "views": 131100
+ },
  "7691843374638304519": {
   "bootstrap_tries": 1,
   "created": 1790896859,
@@ -2087,6 +2101,17 @@
   "local": true,
   "mature": false,
   "views": 368600
+ },
+ "7692189117098003733": {
+  "bootstrap_tries": 1,
+  "created": 1790977351,
+  "format": "A20261009015525",
+  "handle": "learnwithandj",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 101900
  },
  "7692478766852967686": {
   "bootstrap_tries": 1,
@@ -2132,6 +2157,17 @@
   "mature": false,
   "views": 143100
  },
+ "7693614549269810450": {
+  "bootstrap_tries": 1,
+  "created": 1791309237,
+  "format": null,
+  "handle": "studywithandja",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 131300
+ },
  "7693684473686150406": {
   "bootstrap_tries": 1,
   "created": 1791325555,
@@ -2142,5 +2178,16 @@
   "local": true,
   "mature": false,
   "views": 139600
+ },
+ "7694048926395059486": {
+  "bootstrap_tries": 1,
+  "created": 1791410375,
+  "format": "A20261008205804",
+  "handle": "learnwithniksi",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 112000
  }
 }
