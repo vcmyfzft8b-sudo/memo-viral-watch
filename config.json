@@ -81,5 +81,8 @@
   },
   "megasheet": {
     "campaigns": {}
+  },
+  "other_apps": {
+    "Studyflash": "study\\s*-?\\s*flash"
   }
 }

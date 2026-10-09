@@ -153,7 +153,7 @@ def video_detail(handle, video_id):
 
 def mentions_source(handle, sample=3):
     """True if any of the creator's latest videos mention the watched app (used to accept discovered accounts)."""
-    from .brand import says_source
+    from .brand import says_watched as says_source
     for vid in latest_video_ids(handle)[:sample]:
         d = video_detail(handle, vid)
         if d and says_source(' '.join([d['desc'], d['sticker'], d['subtitles']])):

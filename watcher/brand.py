@@ -2,6 +2,8 @@
 
 Every prompt, check and message takes the names from here, so nothing about the apps is spread over the code.
 """
+import json
+import os
 import re
 
 # The app whose creators we watch (their viral videos are the source of our formats).
@@ -9,7 +11,12 @@ SOURCE = 'Astra AI'
 SOURCE_DESC = 'Astra AI (the AI tutor / homework helper app from Slovenia: snap a photo of a task and get the solution)'
 # Spoken and written forms, including speech-to-text mishearings ("Astra", "astraai", "astra.ai", "Astra A.I.").
 # Serbo-Croatian and Slovenian decline the name: "na Astri AI", "uz Astru", "s Astrom", "z Astro", "od Astre".
-SOURCE_RE = re.compile(r'\bastr(?:a|e|i|u|o|om|oj)(?:\s*-?\s*\.?\s*a\.?\s*i\b|ai\b|\b)', re.I)
+WATCHED_RE = re.compile(r'\bastr(?:a|e|i|u|o|om|oj)(?:\s*-?\s*\.?\s*a\.?\s*i\b|ai\b|\b)', re.I)
+# Formats can also be added by hand from videos of other apps (config.json "other_apps", e.g. Studyflash): in a page
+# those names are replaced and counted exactly like Astra AI. Finding creators still looks for Astra AI only.
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config.json')) as _f:
+    OTHER_APPS = json.load(_f).get('other_apps', {})
+SOURCE_RE = re.compile('|'.join([WATCHED_RE.pattern] + list(OTHER_APPS.values())), re.I)
 SOURCE_TAGS = '#astraai, #astra_ai, #astra'
 
 # Our app: every script says this name where the original says the source app.
@@ -34,11 +41,18 @@ Bosnian and Serbian. Free start: one free note, then a 3-day free trial.
 It does NOT have: an instant answer to a single photographed task ("snap and solve"), checking/grading the user's own
 homework, photos in the chat, PDF export, pasting text, an Android app from the store. If the original shows an Astra
 AI feature Memo AI does not have, replace that sentence with an equivalent step that exists (e.g. snap and solve ->
-scan the worksheet, Memo AI explains how to solve it step by step), keeping the sentence count."""
+scan the worksheet, Memo AI explains how to solve it step by step), keeping the sentence count.""" + (
+    f" Some originals promote another app instead of Astra AI ({', '.join(OTHER_APPS)}): treat that app exactly like "
+    "Astra AI - Memo AI replaces it at the same spots and as often, and it must never appear." if OTHER_APPS else '')
 
 
 def says_source(text):
     return bool(SOURCE_RE.search(text or ''))
+
+
+def says_watched(text):
+    """Is the watched app (Astra AI) named? - for finding and keeping creators."""
+    return bool(WATCHED_RE.search(text or ''))
 
 
 def count_source(text):

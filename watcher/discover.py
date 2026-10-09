@@ -14,7 +14,7 @@ import time
 import requests
 
 from . import tiktok
-from .brand import SOURCE, SOURCE_DESC, SOURCE_TAGS, says_source
+from .brand import SOURCE, SOURCE_DESC, SOURCE_TAGS, says_watched as says_source
 from .markets import TEXT
 
 PRIMARY_LANG = next(iter(TEXT))  # the market language (Serbo-Croatian)
