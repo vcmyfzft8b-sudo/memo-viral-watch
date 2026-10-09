@@ -865,7 +865,8 @@ def accounts_sync(path):
     retry = [h for h in tracked + cands if verdicts.get(h, {}).get('verdict') in (None, 'unclear')]
     if retry:  # second look for the undecided ones: all 8 videos with on-screen text and speech
         verdicts.update(discover.confirm_ugc(retry, model=cfg['models']['build'], batch=4, details=8))
-    doubt = [h for h in tracked if verdicts.get(h, {}).get('verdict') in ('other_app', 'not_ugc')
+    tracked_check = [h for h in tracked if not accounts[h].get('added_format')]  # creators of formats added by hand stay
+    doubt = [h for h in tracked_check if verdicts.get(h, {}).get('verdict') in ('other_app', 'not_ugc')
              or (verdicts.get(h, {}).get('verdict') == 'source_ugc' and not discover.regional(h, verdicts[h]))]
     if doubt:  # a tracked creator is only dropped when a second, closer look (strong model, 8 videos) agrees
         second = discover.confirm_ugc(doubt, model=cfg['models']['build'], batch=4, details=8)
@@ -887,6 +888,8 @@ def accounts_sync(path):
             outside.append((h, v.get('language') or '?'))
     for h in tracked:
         v = verdicts.get(h, {})
+        if accounts[h].get('added_format'):
+            continue
         if v.get('verdict') in ('other_app', 'not_ugc', 'outside_region') or (
                 v.get('verdict') == 'source_ugc' and not discover.regional(h, v)):
             accounts[h].update({'status': 'inactive', 'blocked': True,
@@ -1086,6 +1089,12 @@ def add_format(urls):
         vids.append(d)
     if not vids:
         raise SystemExit('add-format: no video available')
+    for h in dict.fromkeys(v['handle'] for v in vids):  # its creators are followed from now on: their new videos keep
+        a = accounts.get(h) or {}                          # moving the format on the list (never paused or blocked)
+        accounts[h] = {**a, 'status': 'manual', 'source': a.get('source') or 'added-by-hand', 'since': a.get('since', int(now)),
+                       'lang': a.get('lang') or discover.language(h), 'added_format': True}
+        accounts[h].pop('blocked', None)
+    state.save('accounts.json', accounts)
     local = {v['handle'] for v in vids if discover.language(v['handle']) == next(iter(M.TEXT))}
     for v in vids:
         to_history(history, v, local, now)
