@@ -407,7 +407,7 @@ def market_links(fmt, mkts):
     return ' · '.join(f"<{page_url(page_of(fmt, mk['key']))}|{mk['T']['flag']}>" for mk in mkts if page_of(fmt, mk['key']))
 
 
-def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, label=None):
+def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, label=None, force=False):
     """Every viral video (creators from ALL markets): download + Soniox transcript, Claude (Opus) judges it against
     ALL our formats (list + archive) and translates the script to English. Then for every market:
     in the list -> nothing to build (missing language pages are added); in the archive -> brought back everywhere;
@@ -416,7 +416,7 @@ def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, labe
     age_h = (now - v['created']) / 3600
     eng = detect.engagement(v)
     eng_unknown = v.get('detail_missing') and not v.get('shares') and not v.get('saves')
-    weak = (not eng_unknown) and eng < cfg['thresholds']['min_engagement']
+    weak = (not eng_unknown) and eng < cfg['thresholds']['min_engagement'] and not force  # force: added by hand
     stats = (f"@{v['handle']} – *{fmt_views(v['views'])} views* after {age_h:.0f} h · shares+saves {eng:.1%}"
              f"{' (weak)' if weak else ''}{' (unknown)' if eng_unknown else ''}")
     title = ('🧪 TEST – ' if test else '') + (label or f'🟢 VIRAL: {SOURCE} video')
@@ -1052,6 +1052,60 @@ def bootstrap(limit, days=30):
     print(f'bootstrap done: {len(done)} videos, {len(built)} new formats, {len(cands) - len(done)} left')
 
 
+def resolve_url(url):
+    """Short share links (vm.tiktok.com/...) -> the full video link."""
+    import requests
+    if '/video/' in url:
+        return url
+    try:
+        return requests.head(url, allow_redirects=True, timeout=30, headers={'User-Agent': tiktok.UA}).url
+    except requests.RequestException:
+        return url
+
+
+def add_format(urls):
+    """A format added by hand from TikTok videos of ANY app (e.g. a study app we do not watch, like Studyflash). The first video
+    goes through exactly what a viral video goes through: judged against all our formats (list + archive) - known ->
+    missing pages added / brought back from the archive; new -> built in every market's language and published
+    through the quality gate. The engagement bar is skipped (the user picked the video). Every given video goes into
+    the ranking data as this format, so the list places it by its real numbers like any other format."""
+    cfg, fmts = load_config(), load_formats()
+    mkts = M.load(cfg)
+    history, meta = state.load('history.json', {}), state.load('meta.json', {})
+    accounts = state.load('accounts.json', {})
+    CTX.update({'meta': meta, 'accounts': accounts})
+    now = time.time()
+    vids = []
+    for url in urls:
+        m = re.search(r'@([^/?]+)/video/(\d+)', resolve_url(url.strip()))
+        d = tiktok.video_detail(*m.groups()) if m else None
+        if not d:
+            print('video unavailable:', url)
+            continue
+        d.update({'notified': [], 'first_seen': int(now)})
+        vids.append(d)
+    if not vids:
+        raise SystemExit('add-format: no video available')
+    local = {v['handle'] for v in vids if discover.language(v['handle']) == next(iter(M.TEXT))}
+    for v in vids:
+        to_history(history, v, local, now)
+    first = vids[0]
+    result = handle_viral(first, mkts, fmts, history, cfg, now, only_detect=False, force=True,
+                          label=f"➕ Format added by hand (@{first['handle']})")
+    fid = first.get('format')
+    for v in vids[1:]:
+        set_format(v, history, fid, judged=True)
+    state.save('history.json', history)
+    state.save('formats.json', fmts)
+    state.save('meta.json', meta)
+    pos = None
+    if fid and next((f for f in fmts if f['id'] == fid), {}).get('status') == 'active':
+        ids = rerank(mkts, fmts, history, cfg)
+        pos = ids.index(fid) + 1 if fid in ids else None
+    print('add-format:', json.dumps({**result, 'format': fid, 'position': pos,
+                                     'videos': [(v['handle'], v['id'], v['views']) for v in vids]}, ensure_ascii=False))
+
+
 def group_report(fmts, mkts, cfg, meta, fix=False, force=False):
     """Group check of all formats (all market pages against the reference); with fix=True failing groups are repaired (never approved scripts) and
     checked again. Sends one Slack report with the result types kept separate."""
@@ -1123,6 +1177,7 @@ def main():
     ap.add_argument('--check-hot', action='store_true', help='strict Claude check of ALL viral videos from the last 7 days')
     ap.add_argument('--init-market', default='', help='market key: connect a new market to the shared format list')
     ap.add_argument('--fill-market', default='', help='market key: build missing pages of active formats')
+    ap.add_argument('--add-format', default='', help='TikTok link(s), comma-separated: add this format by hand (any app), first link = example')
     ap.add_argument('--test-viral', default='', help='TikTok URL: send the full viral Slack message for it (no Notion changes)')
     a = ap.parse_args()
     if a.test_discord:
@@ -1331,6 +1386,9 @@ def main():
         return
     if a.relist:
         rerank(M.load(load_config()), load_formats(), state.load('history.json', {}), load_config(), force=True)
+        return
+    if a.add_format:
+        add_format([u for u in a.add_format.split(',') if u.strip()])
         return
     if a.test_viral:
         import re as _re
