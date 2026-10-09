@@ -120,5 +120,62 @@
    "7692478766852967686": "https://www.tiktok.com/@study.with.mili/video/7692478766852967686"
   },
   "title_en": "Top 5 easiest faculties (countdown listicle with a mid-list app demo)"
+ },
+ "A20261008224450": {
+  "accepted_sources": [
+   "7688930483304090898"
+  ],
+  "allowed_localisation": [
+   "Spoken language and accent (Slovenian, Croatian, Bosnian, Serbian) and local slang/terms of address for the teacher (profesorica, učiteljica, razredničarka)",
+   "Which zodiac signs are used and in what order, as long as there are at least 4 signs and the calculating Memo AI sign is first or second",
+   "The comic details inside each sign (relatives listed, hair product brands, the bargaining numbers)",
+   "The subject or class named, and the green-screen classroom image",
+   "Which 3–5 real Memo AI features Sign 1 lists, picked from the allowed list",
+   "Creator gender, age (secondary-school or university student) and outfit",
+   "Optional on-screen sign labels and emoji style"
+  ],
+  "beats": [
+   "Hook: the creator stands in front of a green-screen classroom and says the 'this is how the zodiac signs react when they get a 1' line to camera.",
+   "Sign 1, the calculating know-it-all (e.g. Virgo/Capricorn): calmly answers the off-screen teacher ('Sorry? I got a 1?'), then denies it: 'No, you didn't give me a 1, because that's not in my calculation.' The teacher asks why, and the sign says they use Memo AI and acts shocked that the teacher hasn't heard of it.",
+   "Sign 1 brag (product mention, about 5 sentences, said fast and smug): 'I just take a photo of what I wrote in my notebook in your class, up to ten photos. In a few minutes Memo AI turns it into notes that explain everything step by step. It makes me flashcards and a quiz with explanations, and even a podcast I listen to on the bus. Then I do a practice test and it gives me a percentage and feedback on every answer. So trust me, check again, because with Memo AI that just isn't possible.' Ends with a smug 'Thank you.'",
+   "Sign 2, the explosive/vengeful one (e.g. Scorpio/Aries): laughs in disbelief at the 1, hands an imaginary object off-screen ('Hold this, hold this for me'), then intimidates the teacher with over-the-top comic bargaining ('Let's just change that 1 to a 5... fine, a 4, but 5'). It must stay clearly absurd and must not threaten anyone for real.",
+   "Sign 3, the family star who panics (e.g. Leo): 'What do I tell mum and dad?!' They spiral about being the smartest in the whole family ('grandma, grandpa, auntie all say I only get 5s'), call it the first 1 of their life and step away to 'call dad'.",
+   "Sign 4, the indecisive and distracted one (e.g. Libra): mishears the teacher as commenting on their split ends, gets stuck choosing between a drugstore hair oil and an expensive French one, and asks the teacher to decide. The video ends abruptly on this joke with no outro."
+  ],
+  "canonical_source": "7688930483304090898",
+  "filming": "Length is 2:00–2:45, one continuous take or quick jump cuts between signs. The creator is vertical 9:16, waist-up, filmed on the front camera, in front of a green-screen still of a school classroom. The teacher is never seen: the creator looks slightly off-camera at desk height and reacts to silent lines ('Molim?' / 'Sorry?'). Each sign change is a hard cut, with an optional small zodiac emoji or sign name as a text label. No costume changes are needed, but a different posture, voice and energy per sign is required. The demo is verbal only, inside beat 3. An optional 2–3 second picture-in-picture or green-screen swap may show the Memo AI web app on a phone: the Scan camera photographing notebook pages, then the generated note, then flashcards or the practice-test percentage screen. The app shown must be memoai.eu in a phone browser, not an app-store app. Captions are in the local language.",
+  "generated": 1791500833,
+  "hook": "Opening line spoken straight to camera over the green-screen classroom: \"Tako se horoskopska znamenja odzovejo, ko dobijo enko v šoli.\" (\"This is how the zodiac signs react when they get a 1 at school.\") The localised equivalent goes on every country page. In all target countries a 1 is the failing grade.",
+  "not_allowed": [
+   "Turning it into a straight tutorial, talking-head review or app walkthrough. The product must stay inside one character's rant in the middle of the video.",
+   "Ending on the product or adding a spoken CTA/outro. The video must end on the last sign's joke.",
+   "Showing the teacher on screen, using a second actor, or dropping the 'getting a 1' premise",
+   "Real-sounding threats, doxxing or naming real people's addresses or criminal records. Sign 2's intimidation must stay absurd bargaining.",
+   "Mentioning Astra AI or any competitor",
+   "Claiming Memo AI solves a single photographed task instantly (snap and solve), checks or grades the user's own homework, accepts photos in the chat, exports to PDF, accepts pasted text, or is an Android/iOS store app",
+   "Claiming guaranteed grades, that the app makes a 1 impossible as a literal promise (it may only be the character's comic arrogance), or that a month of material is learned in one day",
+   "Saying notes are instant. Say they take a few minutes.",
+   "Showing any screen that is not the real Memo AI web app"
+  ],
+  "premise": "One creator plays several zodiac-sign students in a row. Each one hears from an off-screen teacher that they got a 1 and reacts in a way that exaggerates their sign's stereotype. One sign, the calculating and over-prepared one, refuses to believe the grade because they study with Memo AI. While arguing with the teacher, they list what the app does as part of the bit. The product mention sits in the middle of the video and is never the ending.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "Up to 10 photos of notebook notes via the in-app Scan camera or gallery",
+    "Notes that explain the material step by step (generated in a few minutes)",
+    "Flashcards",
+    "Quiz with explanations",
+    "Podcast",
+    "Graded practice test with percentage and feedback per answer",
+    "Works in Slovenian/Croatian/Bosnian/Serbian"
+   ],
+   "introduced_at_beat": 2,
+   "spoken_brand": "Spoken by Sign 1 in beats 2–3 ('Memo AI'), at least twice: when introducing it and in the closing 'with Memo AI that just isn't possible'. The URL memoai.eu may appear in the on-screen caption or bio but is not spoken."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7688930483304090898": "https://www.tiktok.com/@studywithvalentina/video/7688930483304090898"
+  },
+  "title_en": "Zodiac signs when they get a 1 (failing grade)"
  }
 }

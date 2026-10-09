@@ -357,5 +357,174 @@
   ],
   "ts": 1791499332,
   "type": "rerank"
+ },
+ {
+  "format": "A20261008224450",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: Sign 2 (Škorpija) isn't absurd. The script has car plates, the parking spot, gym times and a secret Instagram profile, followed by 'ako odlučim nekome zagorčati život… vjerujte da ću to i izvesti'. That reads as real stalking and a threat, which the reference forbids. It also "
+  ],
+  "tries": 1,
+  "ts": 1791501302,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008224450",
+  "page_de": "3f365e84-a3c2-81b5-88b5-e2225ef1bc0b",
+  "pages": {
+   "sl": "3f365e84-a3c2-810e-8152-eeed9afe21db"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sh: Sign 2 (Škorpija) isn't absurd. The script has car plates, the parking spot, gym times and a secret Instagram profile, followed by 'ako odlučim nekome zagorčati život… vjerujte da ću to i izvesti'. That reads as real stalking and a threat, which the reference forbids. It also "
+  ],
+  "ts": 1791501302,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261008224450",
+  "format": "A20261008224450",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sh: Sign 2 (Škorpija) isn't absurd. The script has car plates, the parking spot, gym times and a secret Instagram profile, followed by 'ako odlučim nekome zagorčati život… vjerujte da ću to i izvesti'. That reads as real stalking and a threat, which the reference forbids. It also "
+  ],
+  "ts": 1791501304,
+  "type": "alert",
+  "video": "7688930483304090898",
+  "views": 295000
+ },
+ {
+  "format": "A20261008231529",
+  "reasons": [
+   "🇸🇮 script rewritten sentence by sentence (404 words (original 467)) / script reworded again: Too many sentences are close translations of the example and keep its "
+  ],
+  "tries": 1,
+  "ts": 1791502794,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008231529",
+  "page_de": "3f365e84-a3c2-8120-b838-fd3c99181a38",
+  "pages": {
+   "sl": "3f365e84-a3c2-81fa-af2c-f4bcacc9beac"
+  },
+  "position": null,
+  "problems": [
+   "🇸🇮 script rewritten sentence by sentence (404 words (original 467)) / script reworded again: Too many sentences are close translations of the example and keep its "
+  ],
+  "ts": 1791502794,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261008231529",
+  "format": "A20261008231529",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "🇸🇮 script rewritten sentence by sentence (404 words (original 467)) / script reworded again: Too many sentences are close translations of the example and keep its "
+  ],
+  "ts": 1791502796,
+  "type": "alert",
+  "video": "7692577375296507154",
+  "views": 193900
+ },
+ {
+  "format": "A20261008204718",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 example not this format (The example is a '3 apps you need in 2026' study-app listicle, not the student-d) / title fixed: 4 studentska popusta koje skoro svi pr",
+   "🇸🇮 example not this format (The example is a '3 apps you need in 2026' talking-head list (Notion, Astra AI, ) / example not this format (The format is a listicle o"
+  ],
+  "tries": 4,
+  "ts": 1791503386,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008204718",
+  "position": null,
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 example not this format (The example is a '3 apps you need in 2026' study-app listicle, not the student-d) / title fixed: 4 studentska popusta koje skoro svi pr",
+   "🇸🇮 example not this format (The example is a '3 apps you need in 2026' talking-head list (Notion, Astra AI, ) / example not this format (The format is a listicle o"
+  ],
+  "ts": 1791503386,
+  "type": "format_held",
+  "video": "7683950978386742560"
+ },
+ {
+  "format": "A20261008204718",
+  "level": "viral",
+  "ts": 1791503387,
+  "type": "alert",
+  "video": "7683950978386742560",
+  "views": 173600
+ },
+ {
+  "format": "A20261008224450",
+  "reasons": [
+   "cross-country check fail: directions_match sl: The directions place the 2–3 s Scan → notes → flashcards/test demo at the two [CUE] marks. Those marks sit on the intro line 'Kako vem? Ker se učim z Memo AI' and the closing line 'Tako da mi verjemite…', not on the spoken scan, notes and flashcard lines, so the visuals don't li"
+  ],
+  "tries": 2,
+  "ts": 1791505097,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008224450",
+  "position": null,
+  "reasons": [
+   "cross-country check fail: directions_match sl: The directions place the 2–3 s Scan → notes → flashcards/test demo at the two [CUE] marks. Those marks sit on the intro line 'Kako vem? Ker se učim z Memo AI' and the closing line 'Tako da mi verjemite…', not on the spoken scan, notes and flashcard lines, so the visuals don't li"
+  ],
+  "ts": 1791505097,
+  "type": "format_held",
+  "video": "7691843374638304519"
+ },
+ {
+  "format": "A20261008224450",
+  "level": "viral",
+  "ts": 1791505098,
+  "type": "alert",
+  "video": "7691843374638304519",
+  "views": 166100
+ },
+ {
+  "format": "A20261008210957",
+  "level": "viral",
+  "ts": 1791505124,
+  "type": "alert",
+  "video": "7692795948145118465",
+  "views": 143100
+ },
+ {
+  "format": "A20261009001913",
+  "reasons": [
+   "🇸🇮 script rewritten sentence by sentence (351 words (original 342)) / script reworded again: Most of the creator's reactions are near-direct translations of the ex"
+  ],
+  "tries": 1,
+  "ts": 1791506039,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261009001913",
+  "page_de": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
+  "pages": {
+   "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
+  },
+  "position": null,
+  "problems": [
+   "🇸🇮 script rewritten sentence by sentence (351 words (original 342)) / script reworded again: Most of the creator's reactions are near-direct translations of the ex"
+  ],
+  "ts": 1791506039,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261009001913",
+  "format": "A20261009001913",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "🇸🇮 script rewritten sentence by sentence (351 words (original 342)) / script reworded again: Most of the creator's reactions are near-direct translations of the ex"
+  ],
+  "ts": 1791506041,
+  "type": "alert",
+  "video": "7693684473686150406",
+  "views": 139600
  }
 ]

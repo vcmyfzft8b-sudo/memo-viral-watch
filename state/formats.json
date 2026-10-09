@@ -3,6 +3,15 @@
   "created": 1791492438,
   "description": "Talking-head listicle of little-known student discounts (transport, free Microsoft Office, cinema/theatre) with numbered on-screen stickers, where the last item is the study app shown as a screen recording before a like-and-follow outro.",
   "id": "A20261008204718",
+  "inspo": {
+   "sh": {
+    "at": 1791502939,
+    "prev": "https://www.tiktok.com/@karla_studytok/video/7683950978386742560",
+    "strict": true,
+    "url": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
+    "views": 202400
+   }
+  },
   "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
   "pages": {
    "sl": "3f365e84-a3c2-81fb-b984-fbf04f3851f5"
@@ -10,15 +19,19 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The original says the brand (Astra AI) out loud in item 4, but the script only says 'ova aplikacija'. The ",
-    "🇸🇮 script rewritten sentence by sentence (90 words (original 84)) / script reworded again: The original says the brand out loud in the fourth item ('besplatni trai"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 example not this format (The example is a '3 apps you need in 2026' study-app listicle, not the student-d) / title fixed: 4 studentska popusta koje skoro svi pr",
+    "🇸🇮 example not this format (The example is a '3 apps you need in 2026' talking-head list (Notion, Astra AI, ) / example not this format (The format is a listicle o"
    ],
    "since": 1791492822,
-   "tries": 3
+   "tries": 4
+  },
+  "revived": {
+   "at": 1791502910,
+   "because": "https://www.tiktok.com/@karla_studytok/video/7683950978386742560",
+   "views": 173600
   },
   "reworded": {
-   "sh": true,
-   "sl": true
+   "sh": true
   },
   "script": "Popusti za učenike i studente o kojima 99% ljudi nema pojma. Prije nego što odeš dalje, sačuvaj ovaj video, jer će ti zatrebati. Prvo, prijevoz: sa studentskom karticom imaš popust na karte za međugradske linije, a neke avio-kompanije imaju i studentske cijene za letove. Drugo: Microsoft Office možeš imati potpuno besplatno. Znači Word, Excel, PowerPoint – samo se prijaviš sa školskim ili fakultetskim mailom i sve ti je besplatno. Treće, zabava: u Cineplexxu su ti karte za kino jeftinije, a u mnogim teatrima predstave često plaćaš i do pola cijene. Četvrto: Memo AI možeš probati besplatno. Ako ne znaš šta je Memo AI i kako radi, evo, sad ću ti pokazati. Memo AI je alat koji ti pomaže u učenju: ubaciš ono iz čega učiš – PDF, prezentaciju, snimak predavanja ili slike. Kad ubaciš, recimo, slike iz udžbenika ili sveske, Memo AI ti za par minuta napravi bilješke, kartice i kviz. I onda biraš ",
   "source_video": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
@@ -88,5 +101,99 @@
   "source_video": "https://www.tiktok.com/@studywithreveka/video/7691071853334498580",
   "status": "pending",
   "title": "Mozak premium uz Memo AI 🧠"
+ },
+ {
+  "created": 1791499490,
+  "description": "Comedy skit where one creator acts out how different zodiac signs react to getting a failing grade from an off-screen teacher, with one sign bragging about the study app as a mid-video product mention over a green-screen classroom.",
+  "id": "A20261008224450",
+  "inspo": {
+   "sh": {
+    "audit": true,
+    "strict": true,
+    "url": "https://www.tiktok.com/@studywithvalentina/video/7688930483304090898",
+    "views": 295100
+   },
+   "sl": {
+    "audit": true,
+    "strict": true,
+    "url": "https://www.tiktok.com/@studywithvalentina/video/7688930483304090898",
+    "views": 295100
+   }
+  },
+  "page_id": "3f365e84-a3c2-81b5-88b5-e2225ef1bc0b",
+  "pages": {
+   "sl": "3f365e84-a3c2-810e-8152-eeed9afe21db"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: directions_match sl: The directions place the 2–3 s Scan → notes → flashcards/test demo at the two [CUE] marks. Those marks sit on the intro line 'Kako vem? Ker se učim z Memo AI' and the closing line 'Tako da mi verjemite…', not on the spoken scan, notes and flashcard lines, so the visuals don't li"
+   ],
+   "since": 1791501302,
+   "tries": 2
+  },
+  "revived": {
+   "at": 1791503632,
+   "because": "https://www.tiktok.com/@studywithvalentina/video/7691843374638304519",
+   "views": 166100
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Evo kako se horoskopski znakovi ponašaju kad dobiju jedinicu u školi. Aha, da, dobila sam jedinicu. A, dobro. Molim? Ma da, iskreno, baš me briga. Mhm. Molim? Vi ste meni dali jedinicu, profesorice? Čekajte, samo sekundu... polako... Ne, vi meni niste dali jedinicu. Kako to mislite da ne razumijete? Pa niste mi je dali, jer ja to nisam unaprijed izračunala... a to bi se trebalo desiti tek za, koliko, dva mjeseca. Mhm. Ne, ne, profesorice, vjerujte mi, ja sam vaš školski sistem proučila do kraja, znam koliko je pokvaren i gdje su mu sve rupe, baš znam sve što se ovdje dešava. Vi ste nešto pomiješali, jedinicu nisam dobila ja. Mhm. Kako to zašto, profesorice? Pa zato što to nije bilo u mojoj računici. Zato što ja koristim aplikaciju Memo AI, eto. Vi ne znate koja je to aplikacija? Ma dajte, pa cijeli razred zna za tu aplikaciju. Znači, ta aplikacija ti bukvalno napravi podcast da ga slušaš",
+  "source_video": "https://www.tiktok.com/@studywithvalentina/video/7688930483304090898",
+  "status": "pending",
+  "title": "Horoskopski znakovi kad dobiju 1 ♈"
+ },
+ {
+  "created": 1791501329,
+  "description": "Talking-head warning rant listing reasons not to use ChatGPT for studying (accuracy, no real learning, over-reliance, privacy), with the study app pitched mid-video as the better alternative via logo and screen-recording overlays.",
+  "id": "A20261008231529",
+  "page_id": "3f365e84-a3c2-8120-b838-fd3c99181a38",
+  "pages": {
+   "sl": "3f365e84-a3c2-81fa-af2c-f4bcacc9beac"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "🇸🇮 script rewritten sentence by sentence (404 words (original 467)) / script reworded again: Too many sentences are close translations of the example and keep its "
+   ],
+   "since": 1791502794,
+   "tries": 1
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Stani, nemoj više koristiti ChatGPT. Vjerovatno ga koristiš kao i svi, i ja sam ga koristila, ali ovo stvarno moraš čuti. Zato me sad dobro poslušaj. Većina ljudi bira baš ChatGPT zato što misli da on ima „sve“ informacije. Ali ko se uopšte zapita koliko su te informacije zapravo tačne? Drugi razlog da ga ne koristiš je to što ti u učenju zapravo neće pomoći. Puno nas, evo i ja koja sam na fakultetu, koristilo ga je za učenje tako što uslikamo gradivo, pošaljemo mu ga i čekamo da nam kaže šta da zaokružimo na testu kad prepisujemo, ili kako da nešto brže naučimo i da nam složi plan učenja, a to je ogromna greška. Za tebe postoji mnogo bolje rješenje, a to je aplikacija Memo AI. Evo, ovdje negdje ću ti staviti sliku aplikacije. Obavezno odmah sad otvori memoai.eu i probaj Memo AI. Ljudi, ozbiljno, samo uslikaš svoje gradivo, a ona ti od toga napravi bilješke, kvizove i kartice s pitanjima",
+  "source_video": "https://www.tiktok.com/@studywithvalentina/video/7692577375296507154",
+  "status": "pending",
+  "title": "Prestani učiti s ChatGPT-jem 🚫"
+ },
+ {
+  "created": 1791505153,
+  "description": "Talking-head reaction series where the creator reads and jokes about funny e-diary teacher remarks shown as screenshot overlays, with a mid-video segue ('if you want to use AI, use it properly') into a quick app demo before returning to more remarks.",
+  "id": "A20261009001913",
+  "page_id": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
+  "pages": {
+   "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "🇸🇮 script rewritten sentence by sentence (351 words (original 342)) / script reworded again: Most of the creator's reactions are near-direct translations of the ex"
+   ],
+   "since": 1791506039,
+   "tries": 1
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Idemo s reakcijom na najsmješnije bilješke iz e-dnevnika, part 5. Ovaj put krećemo žestoko, s bilješkom koju mi je poslao neko od vas. Piše: „Učenik je, kad su mu rekli da ostavi mobitel za vrijeme sata, počeo vikati: Pusti me, stara, igram Clash Royale.“ Ma pusti ga, ženo draga, možda mu je protivnik bacio Mega Knighta. Hoćeš da izgubi trofeje zbog tebe? A čuj ovog brata: „Učenik je na kontrolnom izvadio test koji je riješio unaprijed i htio ga predati kao svoj.“ Kako se toga sjetio? Tri dana ga nema, a on već smišlja neku prevaru. Sljedeća glasi: „Učenik je donio sliku doktorskog opravdanja. Provjerom se ispostavilo da je opravdanje napravila vještačka inteligencija.“ Iskreno, nije mu ni loše ispalo. Kod nekog profesora bi možda i prošlo, ali nemojte to probati. Ako baš hoćete koristiti AI, koristite ga za nešto pametno. Recimo za učenje, s aplikacijom Memo AI. Ubaciš svoje bilješke u ",
+  "source_video": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406",
+  "status": "pending",
+  "title": "Najsmješnije bilješke iz e-dnevnika 😂"
  }
 ]

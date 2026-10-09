@@ -253,11 +253,12 @@
  },
  "7683950978386742560": {
   "backfill": true,
+  "bootstrap_tries": 1,
   "created": 1789059252,
-  "format": null,
+  "format": "A20261008204718",
   "handle": "karla_studytok",
   "hook": "3 best apps",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 173500,
@@ -817,9 +818,9 @@
  },
  "7688930483304090898": {
   "backfill": true,
-  "bootstrap_tries": 1,
+  "bootstrap_tries": 2,
   "created": 1790218633,
-  "format": null,
+  "format": "A20261008224450",
   "handle": "studywithvalentina",
   "hook": "This saved my studying, literally",
   "judged": true,
@@ -2065,6 +2066,17 @@
   "views": 13500,
   "views_7d": 13500
  },
+ "7691843374638304519": {
+  "bootstrap_tries": 1,
+  "created": 1790896859,
+  "format": "A20261008224450",
+  "handle": "studywithvalentina",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 166100
+ },
  "7692158324032163124": {
   "bootstrap_tries": 1,
   "created": 1790970220,
@@ -2099,14 +2111,36 @@
   "views": 283500
  },
  "7692577375296507154": {
-  "bootstrap_tries": 1,
+  "bootstrap_tries": 2,
   "created": 1791067752,
-  "format": null,
+  "format": "A20261008231529",
   "handle": "studywithvalentina",
   "hook": "",
   "judged": true,
   "local": true,
   "mature": false,
   "views": 193400
+ },
+ "7692795948145118465": {
+  "bootstrap_tries": 1,
+  "created": 1791118653,
+  "format": "A20261008210957",
+  "handle": "study.with.mili",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 143100
+ },
+ "7693684473686150406": {
+  "bootstrap_tries": 1,
+  "created": 1791325555,
+  "format": "A20261009001913",
+  "handle": "kera.vas.uci",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 139600
  }
 }
