@@ -97,6 +97,11 @@ def run(cfg, fmts, page_of):
         lab = mp['visual_hook_lab'].rstrip('/').split('/')[-1].split('-')[-1]
         videos = sum(1 for b in _walk(lab) if b['type'] == 'video')
         (ok if videos >= 10 else problems).append(f'{flag} Visual Hook Lab: {videos} videos')
+    known = {(page_of(f, k) or '').replace('-', '') for f in fmts for k in cfg['markets']}
+    known |= {(p or '').replace('-', '') for f in fmts for p in (f.get('pending_pages') or {}).values()}
+    leftovers = [b for b in notion.children(radar) if b['type'] == 'child_page' and b['id'].replace('-', '') not in known]
+    for b in leftovers:  # e.g. a build that stopped halfway: private, invisible to creators - reported, never deleted
+        problems.append(f"leftover page in the private staging area (no format uses it): {b['child_page']['title'][:60]} {b['id']}")
     print('\n'.join(['VERIFY OK:'] + ['  ' + x for x in ok] + ['VERIFY PROBLEMS:'] + ['  ' + x for x in problems or ['none']]))
     return problems
 
