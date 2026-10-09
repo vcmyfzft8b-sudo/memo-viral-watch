@@ -2209,14 +2209,14 @@
  },
  "7692061360221457686": {
   "created": 1790947608,
-  "format": null,
+  "format": "A20261009210824",
   "handle": "lern.mit.domi",
   "hook": "",
-  "judged": false,
+  "judged": true,
   "local": false,
-  "mature": false,
-  "views": 1000000,
-  "views_7d": 1000000
+  "mature": true,
+  "views": 1100000,
+  "views_7d": 1100000
  },
  "7692062694412799284": {
   "created": 1790947924,
@@ -3177,14 +3177,14 @@
  },
  "7693171738707807491": {
   "created": 1791206136,
-  "format": null,
+  "format": "A20261009210824",
   "handle": "lern.mit.domi",
   "hook": "",
   "judged": true,
   "local": false,
   "mature": false,
-  "views": 290800,
-  "views_7d": 290800
+  "views": 298100,
+  "views_7d": 298100
  },
  "7693196087628221718": {
   "created": 1791211806,

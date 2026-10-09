@@ -244,5 +244,30 @@
   "source_video": "https://www.tiktok.com/@learnwithandj/video/7692189117098003733",
   "status": "active",
   "title": "Biologija duplo brže? 🧬"
+ },
+ {
+  "created": 1791580104,
+  "description": "Talking-head video where the creator 'sells' ad spots drawn as priced fields on the back of their laptop, reveals the study app as the first buyer by cutting out and sticking on its logo, then demos its features on the laptop screen.",
+  "id": "A20261009210824",
+  "page_id": "3f465e84-a3c2-815f-9cd7-d9b447463dd2",
+  "pages": {
+   "sl": "3f465e84-a3c2-8189-b47d-f03858456d14"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (150 words (original 140)) / script reworded again: Too many lines translate the example almost directly. Over a third of "
+   ],
+   "since": 1791580932,
+   "tries": 1
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Mjesto na poleđini laptopa prodajem za reklame, a prvi kupac se već javio. Cijena ovdje ima svakakvih, a kupac je izabrao upravo ovo polje. Sad ću to pokušati obrisati, nadam se da će se stvarno skinuti. Okej, mislim da je ovo sasvim dovoljno. A ko je kupio ovo polje? Memo AI, odmah vam sve pričam. Memo AI je aplikacija za učenje koja učenicima i studentima pomaže da lakše savladaju gradivo. Ubaciš svoje materijale, PDF ili slike iz udžbenika, i za par minuta imaš sređene bilješke. Imaš kartice za učenje napamet, kviz s objašnjenjima da ti gradivo stvarno sjedne, pa čak i podcast o cijelom gradivu, koji možeš slušati u šetnji ili u autobusu. Zato slobodno svratite tamo i napišite u komentar: šta mislite, ko će kupiti sljedeće polje?",
+  "source_video": "https://www.tiktok.com/@lern.mit.domi/video/7692061360221457686",
+  "status": "pending",
+  "title": "Prodajem mjesto na laptopu za reklamu 🤑"
  }
 ]

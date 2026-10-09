@@ -952,5 +952,40 @@
   ],
   "ts": 1791555294,
   "type": "rerank"
+ },
+ {
+  "format": "A20261009210824",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (150 words (original 140)) / script reworded again: Too many lines translate the example almost directly. Over a third of "
+  ],
+  "tries": 1,
+  "ts": 1791580932,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261009210824",
+  "page_de": "3f465e84-a3c2-815f-9cd7-d9b447463dd2",
+  "pages": {
+   "sl": "3f465e84-a3c2-8189-b47d-f03858456d14"
+  },
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (150 words (original 140)) / script reworded again: Too many lines translate the example almost directly. Over a third of "
+  ],
+  "ts": 1791580932,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261009210824",
+  "format": "A20261009210824",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (150 words (original 140)) / script reworded again: Too many lines translate the example almost directly. Over a third of "
+  ],
+  "ts": 1791580932,
+  "type": "alert",
+  "video": "7692061360221457686",
+  "views": 1100000
  }
 ]

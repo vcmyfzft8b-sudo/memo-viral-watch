@@ -552,5 +552,77 @@
    "7692189117098003733": "https://www.tiktok.com/@learnwithandj/video/7692189117098003733"
   },
   "title_en": "Biology twice as fast? 🧬 – 'the best app for studying biology' laptop demo"
+ },
+ "A20261009210824": {
+  "accepted_sources": [
+   "7692061360221457686"
+  ],
+  "allowed_localisation": [
+   "Spoken language and on-screen text (Slovenian, Croatian, Bosnian, Serbian)",
+   "Prices written in the fields, and the currency (€, KM, RSD), plus how many fields there are and how they are laid out",
+   "Laptop brand and model (it does not have to be a MacBook)",
+   "Cutting vs. peeling the field, and the exact comic remarks during removal",
+   "Which input is shown in the demo (document upload, lecture recording or photo scan), as long as it is a real Memo AI input",
+   "The study subject or document shown in the demo, chosen to fit the local school or university",
+   "Where the creator imagines listening to the podcast (bus, tram, walk, gym)",
+   "Small changes to the brand-intro wording, as long as no false claims are added",
+   "Whether memoai.eu is said aloud or only shown on screen",
+   "Creator, setting and on-screen caption styling"
+  ],
+  "beats": [
+   "Hook (talking head, laptop lid facing the camera): 'I'm selling ad space on the back of my laptop, and I already have my first buyer.'",
+   "Show the board: the creator points across the hand-drawn fields on the lid, each with a different price written in it ('Here you can see a few different prices...').",
+   "Point to one field: 'and this exact field has been bought.'",
+   "Comic removal: the creator cuts or peels away the paper over that field and comments on it as they go ('let's try to make this disappear... I hope this actually comes off... I'd say that's good enough').",
+   "Logo reveal: they stick the cut-out Memo AI logo into the empty field. 'This field was bought by Memo AI. I'll tell you more about it in a moment.'",
+   "Brand intro, said as fact without invented company history: 'Memo AI is an app that helps pupils and students learn, and it works in the browser on any phone or laptop (memoai.eu).'",
+   "Demo, input: the laptop is opened and the screen shows a PDF, Word or PowerPoint file being uploaded (or a recorded lecture or photos of notes). 'You just upload your documents, or record the lecture...'",
+   "Demo, language: 'choose your language, of course Slovenian (or Croatian/Bosnian/Serbian), and it makes clear notes for you, with formulas shown properly.' (Replaces the original's 'choose your grade + study plan' line, because Memo AI has neither.)",
+   "Demo, flashcards: 'there you'll find flashcards for memorising...'",
+   "Demo, quiz/test: '...a quiz with explanations, and a practice test with a percentage score to lock in the whole topic.'",
+   "Demo, podcast: 'And you can even turn everything into a podcast and listen while you're walking or on the bus.'",
+   "CTA (back to talking head, laptop lid with the logo in view): 'So feel free to check it out, and comment below: who do you think will buy the next spot?'"
+  ],
+  "canonical_source": "7692061360221457686",
+  "filming": "Length: 35–50 s, vertical 9:16, one creator talking to camera in a casual setting (desk, room, campus), filmed on a phone. Shots: (1) medium shot of the creator holding the closed laptop with the lid facing the camera. The lid is covered in paper or a sticker sheet with hand-drawn fields and prices (e.g. 5 €, 10 €, 20 €, 50 €), and the 'sold' field is clearly marked. (2) Close-up of the lid while the creator cuts or peels out the field. Keep the imperfect, slightly clumsy removal in, because it is part of the charm. (3) Close-up of the Memo AI logo cut-out being stuck into the field. (4) The laptop opened, screen recorded or filmed over the shoulder for the demo. Demo order: upload a file / record a lecture / scan photos → notes being generated (cut the few-minute wait) → finished notes with formulas → flashcards → quiz with explanations → practice test with percentage and feedback → podcast playing. (5) Back to the talking head with the logo-covered lid visible for the CTA. Jump cuts between beats. Optional on-screen text: 'Prodajem mjesto za reklamu 🤑' plus the price labels.",
+  "generated": 1791580214,
+  "hook": "The creator, talking to camera, holds up the back of their laptop and says: \"I'm selling ad space on the back of my laptop, and I already have my first buyer.\"",
+  "not_allowed": [
+   "Dropping the laptop-lid ad-space device (priced fields, a 'sold' field, the logo being cut out and stuck on). Without it, this is a different format.",
+   "Revealing the brand before the 'sold field' and logo moment, or presenting it openly as a standard sponsored ad",
+   "Replacing the laptop-screen demo with a phone-only screen recording and no laptop",
+   "Ending without the 'who will buy the next spot?' comment prompt",
+   "Invented company facts (founding year, 'well-known', user numbers, awards) unless they are verified",
+   "Claiming you can choose your grade or level, or that Memo AI creates a study plan or schedule",
+   "Claiming 'snap and solve' (an instant answer to one photographed task). Only say that it explains the method step by step from a scanned worksheet.",
+   "Claiming it checks or grades the user's own homework",
+   "Mentioning photos in the chat, PDF export, pasting text, or an Android app in the store",
+   "Saying the notes are ready instantly. Making a note takes a few minutes, so cut the wait instead.",
+   "Promising grades or exam results, or saying it is completely free (the accurate offer is one free note, then a 3-day free trial)",
+   "Showing or mentioning Astra AI or Studyflash branding"
+  ],
+  "premise": "A talking-head skit. The creator treats the lid of their laptop as an ad board: hand-drawn fields, each with a price, like ad slots. They reveal that the first field was bought by Memo AI. They cut out the paper over that field (or peel it off), stick on a Memo AI logo, then open the laptop and quickly demo what the app does, ending with \"who will buy the next spot?\"",
+  "product": {
+   "cta": "Feel free to check out Memo AI (memoai.eu) and comment below who you think will buy the next spot on the laptop.",
+   "features_used": [
+    "Upload a PDF, Word or PowerPoint file",
+    "Record or upload a lecture",
+    "Scan up to 10 photos of notes/textbook pages (in-app Scan camera or gallery)",
+    "Notes with properly shown formulas",
+    "Flashcards",
+    "Quiz with explanations",
+    "Graded practice test (percentage + feedback per answer)",
+    "Podcast (listen on the go)",
+    "Works in Slovenian, Croatian, Bosnian and Serbian",
+    "Web app on any phone or laptop (memoai.eu)"
+   ],
+   "introduced_at_beat": 5,
+   "spoken_brand": "Beat 5 (logo reveal: 'this field was bought by Memo AI') and beat 6 (brand intro: memoai.eu may be said or shown on screen)"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692061360221457686": "https://www.tiktok.com/@lern.mit.domi/video/7692061360221457686"
+  },
+  "title_en": "Selling ad space on my laptop 🤑"
  }
 }
