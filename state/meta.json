@@ -34,8 +34,8 @@
   "A20261009014121:sl": "71749208b666a92485a60a049b08879ea7e58535b3a12ec04cbb34af62498523",
   "A20261009015525:sh": "af4c4adaee919e8efac2ea767c04d8e1116edb795c3772f0ca62ad97fa9e957f",
   "A20261009015525:sl": "45ed50dc7e41013dcc0b678f8aa30f85f86bd5b92bd45df173f740aa8d09b05f",
-  "A20261009210824:sh": "6d0088f7c395c0fb98f55974e8e312ab6691bf0e2ac1d9ae823d44797ae3da3b",
-  "A20261009210824:sl": "45060c856db8efd0256049d664b79c6a001419bd7d0ef59c68f3552b9342e915"
+  "A20261009210824:sh": "304a991a47bc04bb8185ef3c7b0bff85ed8381c82892067c1eb92ff514922446",
+  "A20261009210824:sl": "d77f0a78a38377b7ba63910374ae14a7198156b1d348493db7b6117be6a58f78"
  },
  "discovered_at": 1791527938,
  "group_audit": {
@@ -625,7 +625,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791584789,
+   "checked_at": 1791586866,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -638,17 +638,14 @@
      "video_identity": "sha256:274dccbdf202d089a540c2cdfc273ea99a643c1f792b99d8b1ac3a01d2598a4f"
     }
    },
-   "key": "bfa4742d6925d7b18201ab433ba6d75ae61e153a92d480b6fa716f92798167a4",
-   "passed": false,
-   "reasons": [
-    "format_consistency sh: The brand intro leaves out the reference beat 6 point that Memo AI works in the browser on any phone or laptop. The demo also drops 'formulas shown properly' from the notes beat, and the language line does not name Croatian/Bosnian/Serbian. Everything else (hook, board, sold field, removal, logo, demo, CTA) follows the reference.",
-    "directions_match sh: Two directions contradict each other. One says 'Čim se pojavi Memo AI, otvori laptop' (open the laptop as soon as Memo AI appears), but Memo AI is first spoken at the logo line, where the creator must hold the logo and stick it on the closed lid. The demo order also skips notes with formulas, which the reference filming sequence requires."
-   ],
+   "key": "3d937beb59d513f6c55e1be10991e788315296c273b210d72b2db9098c3efeaf",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
-      "issue": "Two directions contradict each other. One says 'Čim se pojavi Memo AI, otvori laptop' (open the laptop as soon as Memo AI appears), but Memo AI is first spoken at the logo line, where the creator must hold the logo and stick it on the closed lid. The demo order also skips notes with formulas, which the reference filming sequence requires.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -667,8 +664,8 @@
     },
     "format_consistency": {
      "sh": {
-      "issue": "The brand intro leaves out the reference beat 6 point that Memo AI works in the browser on any phone or laptop. The demo also drops 'formulas shown properly' from the notes beat, and the language line does not name Croatian/Bosnian/Serbian. Everything else (hook, board, sold field, removal, logo, demo, CTA) follows the reference.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -696,8 +693,8 @@
      }
     }
    },
-   "status": "fail",
-   "summary": "SL follows the reference closely and passes every dimension; SH has the right skit and order but drops the browser/any-device intro and the formulas, and one direction about opening the laptop clashes with the logo-sticking step.",
+   "status": "pass",
+   "summary": "Both SH and SL follow the laptop ad-space format in the reference order and wording. Hook, priced fields, comic removal, logo reveal at beat 5, factual brand intro, laptop demo and the 'next buyer' CTA are all present. Claims are accurate, directions are consistent and neither title needs a fix. Minor SH note: the script cue only has the creator holding the printed logo at the reveal line. The directions add sticking it on right after that line, slightly later than the reference's reveal moment.",
    "title_fixes": {},
    "version": "group-2026-10-08.2"
   }
@@ -753,11 +750,11 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1791553417,
+ "last_run": 1791586357,
  "top3": [
   "A20261008205804",
   "A20261008210957",
-  "A20261008231529"
+  "A20261009210824"
  ],
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
