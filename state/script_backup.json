@@ -3692,6 +3692,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-810b-8f04-c64de95f6c8d": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Nakon uvoda pokaži prstom na dugme za čuvanje dok govoriš 'Prije svega sačuvaj ovaj video, trebat će ti.'",
+   "text": {
+    "content": "Nakon uvoda pokaži prstom na dugme za čuvanje dok govoriš 'Prije svega sačuvaj ovaj video, trebat će ti.'",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-810b-91c3-cd2f9c066792": [
   {
    "annotations": {
@@ -3730,6 +3749,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-810f-bfd9-c6552598b86d": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(V kamero, napis: Študentski popusti, za katere zagotovo nisi vedela ‼️) 99 % študentov v Sloveniji sploh nima pojma o teh popustih. Shrani si ta video, ker ti bo še prav prišel. ",
+   "text": {
+    "content": "(V kamero, napis: Študentski popusti, za katere zagotovo nisi vedela ‼️) 99 % študentov v Sloveniji sploh nima pojma o teh popustih. Shrani si ta video, ker ti bo še prav prišel. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8111-b572-cb7402d2204d": [
   {
    "annotations": {
@@ -3744,6 +3782,25 @@
    "plain_text": "Pred snemanjem pokrov laptopa prelepi s papirjem ali lepilnim trakom, s flomastrom nanj nariši polja s črtkanimi črtami in vanje napiši cene – tako je pripravljeno za »Prostor na zadnji strani svojega laptopa prodajam za oglase«.",
    "text": {
     "content": "Pred snemanjem pokrov laptopa prelepi s papirjem ali lepilnim trakom, s flomastrom nanj nariši polja s črtkanimi črtami in vanje napiši cene – tako je pripravljeno za »Prostor na zadnji strani svojega laptopa prodajam za oglase«.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8111-ba3d-f208de8a293e": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Jump cut, sticker '1/4 Prevoz 🚆✈️ -10%') Prvi, sa Air Serbiom kao student letiš deset posto jeftinije. ",
+   "text": {
+    "content": "(Jump cut, sticker '1/4 Prevoz 🚆✈️ -10%') Prvi, sa Air Serbiom kao student letiš deset posto jeftinije. ",
     "link": null
    },
    "type": "text"
@@ -4493,6 +4550,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-812d-b15e-eeae60d05ac4": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Jump cut, sticker '2/4 Microsoft Office 📝 FREE') Drugi, cijeli Microsoft Office, znači Word, Excel i PowerPoint, imaš džabe. Samo se uloguješ mailom koji ti je dala škola ili fakultet. ",
+   "text": {
+    "content": "(Jump cut, sticker '2/4 Microsoft Office 📝 FREE') Drugi, cijeli Microsoft Office, znači Word, Excel i PowerPoint, imaš džabe. Samo se uloguješ mailom koji ti je dala škola ili fakultet. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-812f-a597-f1f4c1f66780": [
   {
    "annotations": {
@@ -4526,6 +4602,25 @@
    "plain_text": "Ko prebereš opombo (npr. »Učenec je med testom potegnil ven že rešen test …«), naj se ustrezna slika opombe iz paketa pojavi kot nalepka pod tvojim obrazom in ostane, dokler je ne prebereš do konca.",
    "text": {
     "content": "Ko prebereš opombo (npr. »Učenec je med testom potegnil ven že rešen test …«), naj se ustrezna slika opombe iz paketa pojavi kot nalepka pod tvojim obrazom in ostane, dokler je ne prebereš do konca.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8137-88b8-c0b20f4877aa": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Celoten video opremi z vžganimi podnapisi.",
+   "text": {
+    "content": "Celoten video opremi z vžganimi podnapisi.",
     "link": null
    },
    "type": "text"
@@ -4702,6 +4797,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-8145-86c6-d938e9bbfb3c": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Pri »Roko na srce, to pa sploh ni slaba fora.« se nasmehni in z odobravanjem prikimaj.",
+   "text": {
+    "content": "Pri »Roko na srce, to pa sploh ni slaba fora.« se nasmehni in z odobravanjem prikimaj.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8146-abad-f686fa41f45a": [
   {
    "annotations": {
@@ -4716,6 +4830,25 @@
    "plain_text": "Že od prve sekunde pred kamero držiš pokrov laptopa, prelepljen s papirjem, ki je razdeljen na polja s cenami (npr. 999 €, 600 €, 200 €), in medtem ko je napis »Prvi kupec 🤑« na ekranu, govoriš naravnost v kamero.",
    "text": {
     "content": "Že od prve sekunde pred kamero držiš pokrov laptopa, prelepljen s papirjem, ki je razdeljen na polja s cenami (npr. 999 €, 600 €, 200 €), in medtem ko je napis »Prvi kupec 🤑« na ekranu, govoriš naravnost v kamero.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8148-9d7c-fe3654bb76fa": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je po opozorilu, naj pospravi telefon, na ves razred zakričal, naj ga učiteljica pusti, ker igra Clash Royale.« Dajte no, mogoče mu je manjkal samo še en stolp do zmage. Zaradi vas bo zdaj padel v nižjo areno, a res nimate nič srca? ",
+   "text": {
+    "content": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je po opozorilu, naj pospravi telefon, na ves razred zakričal, naj ga učiteljica pusti, ker igra Clash Royale.« Dajte no, mogoče mu je manjkal samo še en stolp do zmage. Zaradi vas bo zdaj padel v nižjo areno, a res nimate nič srca? ",
     "link": null
    },
    "type": "text"
@@ -4909,6 +5042,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-8155-8ff6-f67023d3b578": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je prinesel zdravniško opravičilo, ki ga je, kot se je izkazalo pri preverjanju, sestavila umetna inteligenca.« (Nasmeh, prikima z odobravanjem) Ne bom lagala, za samo idejo mu dam kar visoko oceno. Ampak čisto resno, tega ne delajte, ker se slej ko prej izve. ",
+   "text": {
+    "content": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je prinesel zdravniško opravičilo, ki ga je, kot se je izkazalo pri preverjanju, sestavila umetna inteligenca.« (Nasmeh, prikima z odobravanjem) Ne bom lagala, za samo idejo mu dam kar visoko oceno. Ampak čisto resno, tega ne delajte, ker se slej ko prej izve. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8156-a5ff-fa42473670d2": [
   {
    "annotations": {
@@ -5052,6 +5204,63 @@
    "plain_text": "(📎 Screenshotovi bilješki iz e-dnevnika – vidi materijale) Idemo dalje: „Učenik je na velikom odmoru bacio petardu niz školsko stepenište.” (nevjerica u kameru) Stvarno ne kapiram kako vas još drže u tim školama. Mene bi izbacili već triput, a ja samo pričam na času. ",
    "text": {
     "content": "(📎 Screenshotovi bilješki iz e-dnevnika – vidi materijale) Idemo dalje: „Učenik je na velikom odmoru bacio petardu niz školsko stepenište.” (nevjerica u kameru) Stvarno ne kapiram kako vas još drže u tim školama. Mene bi izbacili već triput, a ja samo pričam na času. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-815a-9982-f81e565f3dd8": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Aplikacija Memo AI naj bo na posnetku zaslona v slovenščini.",
+   "text": {
+    "content": "Aplikacija Memo AI naj bo na posnetku zaslona v slovenščini.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-815a-ac3f-d3ba79075f94": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Spet v kamero) Všečkaj in sledi za še več študentskih trikov. ",
+   "text": {
+    "content": "(Spet v kamero) Všečkaj in sledi za še več študentskih trikov. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-815b-9e54-f6541fea70dd": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Napis 2/4 Microsoft Office 📝 FREE) Dva: Word, Excel in PowerPoint so zate zastonj, samo prijaviš se s šolskim ali faksovskim mailom. ",
+   "text": {
+    "content": "(Napis 2/4 Microsoft Office 📝 FREE) Dva: Word, Excel in PowerPoint so zate zastonj, samo prijaviš se s šolskim ali faksovskim mailom. ",
     "link": null
    },
    "type": "text"
@@ -5664,6 +5873,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-8171-8e32-eaaaae1f6acc": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu buljiš v list in iščeš tisto eno prosojnico s predavanja, ampak naročnine na možgane Premium pač nimaš 😭 ",
+   "text": {
+    "content": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu buljiš v list in iščeš tisto eno prosojnico s predavanja, ampak naročnine na možgane Premium pač nimaš 😭 ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8171-930d-d365c15924e7": [
   {
    "annotations": {
@@ -6070,6 +6298,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-817e-af62-e61ec2a81f73": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Za zadnji stavek se vrni v kamero, pokaži na komentarje in se nasmehni.",
+   "text": {
+    "content": "Za zadnji stavek se vrni v kamero, pokaži na komentarje in se nasmehni.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8184-8158-c3ed98a9dcd1": [
   {
    "annotations": {
@@ -6084,6 +6331,25 @@
    "plain_text": "Snimak ekrana na telefonu: tapni Scan, slikaj 2–3 stranice iz skripte ili sveske, izreži čekanje, pokaži gotove bilješke, prevuci na kartice i otvori jedno pitanje iz kviza s objašnjenjem.",
    "text": {
     "content": "Snimak ekrana na telefonu: tapni Scan, slikaj 2–3 stranice iz skripte ili sveske, izreži čekanje, pokaži gotove bilješke, prevuci na kartice i otvori jedno pitanje iz kviza s objašnjenjem.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8185-b9c1-e5721843d94f": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Prije mape uma ili kartica u Memo AI-ju kratko pokaži gotovu bilješku napravljenu iz slajdova tog predavanja (formule neka se vide ispravno ako ih ima).",
+   "text": {
+    "content": "Prije mape uma ili kartica u Memo AI-ju kratko pokaži gotovu bilješku napravljenu iz slajdova tog predavanja (formule neka se vide ispravno ako ih ima).",
     "link": null
    },
    "type": "text"
@@ -6256,6 +6522,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-818f-86b6-e723dfba6b94": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Pokaže na komentarje, nasmeh v kamero) Zdaj pa vi: v komentarje mi napišite najbolj smešno opombo, kar ste jih kdaj dobili. ",
+   "text": {
+    "content": "(Pokaže na komentarje, nasmeh v kamero) Zdaj pa vi: v komentarje mi napišite najbolj smešno opombo, kar ste jih kdaj dobili. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8190-804b-ec9ab117bcc8": [
   {
    "annotations": {
@@ -6289,6 +6574,224 @@
    "plain_text": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) Začnemo kar z eno hudo: »Učenec je sredi razlage dvignil roko in vprašal, ali lahko gre domov, ker je itak čisto izgubljen.« Iskreno, to je najbolj pošten učenec v celi šoli, vsaj ne laže, da kaj razume. ",
    "text": {
     "content": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) Začnemo kar z eno hudo: »Učenec je sredi razlage dvignil roko in vprašal, ali lahko gre domov, ker je itak čisto izgubljen.« Iskreno, to je najbolj pošten učenec v celi šoli, vsaj ne laže, da kaj razume. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8192-a3b9-d078bb066e89": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Če vas AI že tako mika, ga raje uporabite za nekaj, kar vam res koristi. (",
+   "text": {
+    "content": "Če vas AI že tako mika, ga raje uporabite za nekaj, kar vam res koristi. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Recimo Memo AI, aplikacijo, s katero se jaz učim. (",
+   "text": {
+    "content": ") Recimo Memo AI, aplikacijo, s katero se jaz učim. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Vanjo naložite PDF ali poslikate strani iz zvezka, čez par minut pa imate iz tega urejene zapiske. (",
+   "text": {
+    "content": ") Vanjo naložite PDF ali poslikate strani iz zvezka, čez par minut pa imate iz tega urejene zapiske. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Potem si sami izberete, kako boste predelali snov: s karticami, kvizom, podkastom ali glasovnim tutorjem, ki vam vse razloži na glas. (",
+   "text": {
+    "content": ") Potem si sami izberete, kako boste predelali snov: s karticami, kvizom, podkastom ali glasovnim tutorjem, ki vam vse razloži na glas. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Jaz pa najbolj obožujem poskusni test. (",
+   "text": {
+    "content": ") Jaz pa najbolj obožujem poskusni test. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Dobim vprašanja iz svoje snovi, jih rešim, na koncu pa vidim odstotek in razlago pri vsakem odgovoru. ",
+   "text": {
+    "content": ") Dobim vprašanja iz svoje snovi, jih rešim, na koncu pa vidim odstotek in razlago pri vsakem odgovoru. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8193-9868-d953851e12e6": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je med kontrolno nalogo iz peresnice potegnil doma rešen test in ga hotel oddati kot svojega.« Kakšen strateg, ta je bil za korak pred celim zbornico. Če bi toliko načrtovanja vložil v učenje, bi bil že odličnjak. ",
+   "text": {
+    "content": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je med kontrolno nalogo iz peresnice potegnil doma rešen test in ga hotel oddati kot svojega.« Kakšen strateg, ta je bil za korak pred celim zbornico. Če bi toliko načrtovanja vložil v učenje, bi bil že odličnjak. ",
     "link": null
    },
    "type": "text"
@@ -6520,6 +7023,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81a2-99b6-d245bd6f8ca9": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Okej, gremo naprej. (📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je med poukom skozi okno vrgel petardo in s tem spravil v nevarnost celoten razred.« (Zoom, nejeveren pogled v kamero) Ljudje, kako vas sploh še niso vrgli s šole? Mene so iz razreda pošiljali že zato, ker sem preveč klepetala, vi pa tam prirejate ognjemete. ",
+   "text": {
+    "content": "Okej, gremo naprej. (📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je med poukom skozi okno vrgel petardo in s tem spravil v nevarnost celoten razred.« (Zoom, nejeveren pogled v kamero) Ljudje, kako vas sploh še niso vrgli s šole? Mene so iz razreda pošiljali že zato, ker sem preveč klepetala, vi pa tam prirejate ognjemete. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81a2-a7b7-dd24f405fbb8": [
   {
    "annotations": {
@@ -6534,6 +7056,61 @@
    "plain_text": "(Sediš za mizo pred testom s kemičnim v roki in zmedeno gledaš v kamero) POV: med testom se spomniš točno tistega enega slajda, ampak naročnine Možgani Premium pa seveda nimaš 😭 ",
    "text": {
     "content": "(Sediš za mizo pred testom s kemičnim v roki in zmedeno gledaš v kamero) POV: med testom se spomniš točno tistega enega slajda, ampak naročnine Možgani Premium pa seveda nimaš 😭 ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81a3-85fa-cd7c2c67e42d": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Pa si možgane highkey nadgradiš kar s tole aplikacijo 🧠 ",
+   "text": {
+    "content": ") Pa si možgane highkey nadgradiš kar s tole aplikacijo 🧠 ",
     "link": null
    },
    "type": "text"
@@ -6667,6 +7244,25 @@
    "plain_text": "Med demom naj bo tvoj obraz ves čas v manjšem okvirčku (slika v sliki) ali pa se izmenjuje s posnetki aplikacije.",
    "text": {
     "content": "Med demom naj bo tvoj obraz ves čas v manjšem okvirčku (slika v sliki) ali pa se izmenjuje s posnetki aplikacije.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81ab-9968-f453b89eec05": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Talking head, bold sticker: 'Popusti za studente za koje sigurno nisi znala ‼️') Devedeset devet posto studenata u Srbiji nema pojma o ovim popustima. (Point at the save button) Prvo sačuvaj ovaj video, zatrebat će ti. ",
+   "text": {
+    "content": "(Talking head, bold sticker: 'Popusti za studente za koje sigurno nisi znala ‼️') Devedeset devet posto studenata u Srbiji nema pojma o ovim popustima. (Point at the save button) Prvo sačuvaj ovaj video, zatrebat će ti. ",
     "link": null
    },
    "type": "text"
@@ -6843,6 +7439,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81b5-b0b2-c34ce92978b0": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Outro: creator back on camera, like-and-follow gesture) Lajkuj i zaprati za još studentskih fora. ",
+   "text": {
+    "content": "(Outro: creator back on camera, like-and-follow gesture) Lajkuj i zaprati za još studentskih fora. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81b6-a46c-fe5243ea27a1": [
   {
    "annotations": {
@@ -6919,6 +7534,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81ba-baec-cccd3068a3fd": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Napis 3/4 Kino in gledališče 🍿) Tri: s študentsko je kino cenejši, gledališče pa včasih celo za pol cene. ",
+   "text": {
+    "content": "(Napis 3/4 Kino in gledališče 🍿) Tri: s študentsko je kino cenejši, gledališče pa včasih celo za pol cene. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81ba-be28-e8396d2d42f0": [
   {
    "annotations": {
@@ -6952,6 +7586,25 @@
    "plain_text": "(Napis ♐ STRELEC ♐, telefon na ušesu, sproščena drža) Ej, a imaš polnilec, tistega tvojega hitrega? Sekundo, profesorica, res samo sekundo. Ti, polnilec, a ga imaš ali ne? Moj je mrtev, profesorica, saj vidite, da sem v krizi. Prav, prav, zdaj poslušam, kar izvolite. Mhm, aha. Čakajte, ena ali sedem, nisem dobro slišala? A je to vsaj pozitivno? Aja, potem pa super, najlepša hvala, res! Torej, polnilec, a je v torbi ali ne? ",
    "text": {
     "content": "(Napis ♐ STRELEC ♐, telefon na ušesu, sproščena drža) Ej, a imaš polnilec, tistega tvojega hitrega? Sekundo, profesorica, res samo sekundo. Ti, polnilec, a ga imaš ali ne? Moj je mrtev, profesorica, saj vidite, da sem v krizi. Prav, prav, zdaj poslušam, kar izvolite. Mhm, aha. Čakajte, ena ali sedem, nisem dobro slišala? A je to vsaj pozitivno? Aja, potem pa super, najlepša hvala, res! Torej, polnilec, a je v torbi ali ne? ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81bc-8adf-d595516a79f2": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Napis 1/4 Prevoz 🚆) Ena: s statusom imaš subvencionirano mesečno za vlak in avtobus. ",
+   "text": {
+    "content": "(Napis 1/4 Prevoz 🚆) Ena: s statusom imaš subvencionirano mesečno za vlak in avtobus. ",
     "link": null
    },
    "type": "text"
@@ -7126,6 +7779,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81c8-8057-c4a4444390a9": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je dobil enko in učitelja prosil, naj staršem ne izda spoilerjev.« Fant ima prav, vsaj do govorilnih ur bi lahko počakali. Včasih ste enko lahko mirno zamolčali in mami je izvedela šele, ko je sedla pred razredničarko. Potem je prišla domov vsa rdeča v obraz in vprašala, zakaj mora ravno ona vedno zardevati na govorilnih urah. Ampak do takrat ste vsaj živeli v miru. Danes pa ocena pristane na maminem telefonu, še preden pridete iz šole, in pri vratih vas že čaka pridiga. ",
+   "text": {
+    "content": "(📎 Posnetki zaslona smešnih opomb iz eAsistenta – glej gradivo) »Učenec je dobil enko in učitelja prosil, naj staršem ne izda spoilerjev.« Fant ima prav, vsaj do govorilnih ur bi lahko počakali. Včasih ste enko lahko mirno zamolčali in mami je izvedela šele, ko je sedla pred razredničarko. Potem je prišla domov vsa rdeča v obraz in vprašala, zakaj mora ravno ona vedno zardevati na govorilnih urah. Ampak do takrat ste vsaj živeli v miru. Danes pa ocena pristane na maminem telefonu, še preden pridete iz šole, in pri vratih vas že čaka pridiga. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81c8-9279-e7a21b627370": [
   {
    "annotations": {
@@ -7140,6 +7812,61 @@
    "plain_text": "Odpri probni test, odgovori na 2–3 vprašanja in pokaži rezultat z odstotkom in povratno informacijo.",
    "text": {
     "content": "Odpri probni test, odgovori na 2–3 vprašanja in pokaži rezultat z odstotkom in povratno informacijo.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81ca-b8ae-c187c99614e7": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Štiri pa je Memo AI, ki ga lahko začneš brezplačno. (📎 Memo AI · memoai.eu/creator – glej gradivo) Naložiš PDF ali posnetek predavanja, čez par minut pa imaš zapiske, kartice in kviz. ",
+   "text": {
+    "content": ") Štiri pa je Memo AI, ki ga lahko začneš brezplačno. (📎 Memo AI · memoai.eu/creator – glej gradivo) Naložiš PDF ali posnetek predavanja, čez par minut pa imaš zapiske, kartice in kviz. ",
     "link": null
    },
    "type": "text"
@@ -7777,6 +8504,61 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81e3-a9a4-dd845f15b386": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") I četvrti, Memo AI probaš besplatno, a od PDF-a ti napravi bilješke, kartice i kviz. ",
+   "text": {
+    "content": ") I četvrti, Memo AI probaš besplatno, a od PDF-a ti napravi bilješke, kartice i kviz. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81e4-90bf-cee2da83e4db": [
   {
    "annotations": {
@@ -7815,6 +8597,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81ea-9ee7-c3ccb597db19": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Napis PART 5 na zaslonu, energično v kamero) Reagiram na najbolj smešne opombe iz eAsistenta, peti del! Danes gremo takoj na polno, ker mi je prvo opombo poslal nekdo izmed vas. ",
+   "text": {
+    "content": "(Napis PART 5 na zaslonu, energično v kamero) Reagiram na najbolj smešne opombe iz eAsistenta, peti del! Danes gremo takoj na polno, ker mi je prvo opombo poslal nekdo izmed vas. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81eb-9fad-fa9d8c0a4c8b": [
   {
    "annotations": {
@@ -7848,6 +8649,25 @@
    "plain_text": "Snemaj navpično (9:16), s sprednjo kamero, v kadru od pasu navzgor; posnetek naj traja 2:00–2:45, podnapisi naj bodo v slovenščini.",
    "text": {
     "content": "Snemaj navpično (9:16), s sprednjo kamero, v kadru od pasu navzgor; posnetek naj traja 2:00–2:45, podnapisi naj bodo v slovenščini.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81ed-b469-d16ed3b46f40": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Jump cut, sticker '3/4 Kino i pozorište 🍿 -15% / -50%') Treći, u Cineplexxu kao student imaš jeftiniju kartu za film. A karte za predstave znaju biti i upola jeftinije. ",
+   "text": {
+    "content": "(Jump cut, sticker '3/4 Kino i pozorište 🍿 -15% / -50%') Treći, u Cineplexxu kao student imaš jeftiniju kartu za film. A karte za predstave znaju biti i upola jeftinije. ",
     "link": null
    },
    "type": "text"

@@ -986,6 +986,16 @@
   "views": 311,
   "views_7d": 311
  },
+ "7690238727280528662": {
+  "created": 1790523239,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 160000
+ },
  "7690266924109860148": {
   "backfill": true,
   "created": 1790529797,
@@ -1057,6 +1067,16 @@
   "mature": true,
   "views": 866,
   "views_7d": 866
+ },
+ "7690620015048953110": {
+  "created": 1790612014,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 6336
  },
  "7690654361739087124": {
   "backfill": true,
@@ -1237,6 +1257,16 @@
   "mature": true,
   "views": 1205,
   "views_7d": 1205
+ },
+ "7690919279583038722": {
+  "created": 1790681696,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 4074
  },
  "7690929476250651926": {
   "backfill": true,
@@ -1540,6 +1570,16 @@
   "mature": true,
   "views": 7116,
   "views_7d": 7116
+ },
+ "7691324800123342102": {
+  "created": 1790776111,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 191500
  },
  "7691328126873341206": {
   "backfill": true,
@@ -1889,6 +1929,16 @@
   "views": 6053,
   "views_7d": 6053
  },
+ "7691704749481037078": {
+  "created": 1790864576,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": true,
+  "views": 57500
+ },
  "7691707480010738976": {
   "backfill": true,
   "created": 1790865203,
@@ -2172,12 +2222,12 @@
   "created": 1790947924,
   "format": null,
   "handle": "study.with.mili",
-  "hook": "",
+  "hook": "Good luck to freshmen, watch what you do",
   "judged": false,
   "local": true,
-  "mature": false,
-  "views": 3087,
-  "views_7d": 3087
+  "mature": true,
+  "views": 3155,
+  "views_7d": 3155
  },
  "7692069840877554976": {
   "created": 1790949578,
@@ -2216,23 +2266,23 @@
   "created": 1790956111,
   "format": null,
   "handle": "learnwithhanna",
-  "hook": "",
+  "hook": "What kind of teachers do you have?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4216,
-  "views_7d": 4216
+  "views": 4217,
+  "views_7d": 4217
  },
  "7692097952373869856": {
   "created": 1790956121,
   "format": null,
   "handle": "studywithanamarija",
-  "hook": "",
+  "hook": "Teachers can have a private life, and we can't?!",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 69800,
-  "views_7d": 69800
+  "views": 70900,
+  "views_7d": 70900
  },
  "7692099132911029510": {
   "created": 1790956433,
@@ -2260,89 +2310,89 @@
   "created": 1790957266,
   "format": null,
   "handle": "learnwithpaola",
-  "hook": "",
+  "hook": "Freshmen, want part 2?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2147,
-  "views_7d": 2147
+  "views": 2153,
+  "views_7d": 2153
  },
  "7692108611601976608": {
   "created": 1790958604,
   "format": null,
   "handle": "creatortipsbymonika",
-  "hook": "",
+  "hook": "Apply via the link in the profile (creator recruitment)",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 651,
-  "views_7d": 651
+  "views": 656,
+  "views_7d": 656
  },
  "7692126502187535637": {
   "created": 1790962771,
   "format": null,
   "handle": "studytipsbytara",
-  "hook": "",
+  "hook": "Freshmen, which faculty did you enroll in?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 28700,
-  "views_7d": 28700
+  "views": 28800,
+  "views_7d": 28800
  },
  "7692135485308800274": {
   "created": 1790964865,
   "format": null,
   "handle": "studywithandja",
-  "hook": "",
+  "hook": "POV: it's not just a dream, it's you in the future",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1932,
-  "views_7d": 1932
+  "views": 1937,
+  "views_7d": 1937
  },
  "7692137922698562848": {
   "created": 1790965427,
   "format": null,
   "handle": "studywithkarmen",
-  "hook": "",
+  "hook": "How can anyone study anatomy from a book after this: 3D organs",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1730,
-  "views_7d": 1730
+  "views": 1734,
+  "views_7d": 1734
  },
  "7692139493918248199": {
   "created": 1790965794,
   "format": null,
   "handle": "study_with_zo",
-  "hook": "",
+  "hook": "If you're a freshman, you must hear this: where to find course notes",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7804,
-  "views_7d": 7804
+  "views": 7826,
+  "views_7d": 7826
  },
  "7692146809577213204": {
   "created": 1790967502,
   "format": null,
   "handle": "study_with_hexi",
-  "hook": "",
+  "hook": "Four faculties with no future in 2026",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 43200,
-  "views_7d": 43200
+  "views": 43500,
+  "views_7d": 43500
  },
  "7692147891699338528": {
   "created": 1790967750,
   "format": null,
   "handle": "tea_studytok",
-  "hook": "",
+  "hook": "Our generation is the worst? Rant defending 2009-2015 kids, with an AI cheat code",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2691,
-  "views_7d": 2691
+  "views": 2700,
+  "views_7d": 2700
  },
  "7692158324032163124": {
   "bootstrap_tries": 1,
@@ -2359,34 +2409,34 @@
   "created": 1790971248,
   "format": null,
   "handle": "studywithreveka",
-  "hook": "",
+  "hook": "What teachers think we listen to on a test vs what we actually listen to",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3809,
-  "views_7d": 3809
+  "views": 3820,
+  "views_7d": 3820
  },
  "7692165511697779999": {
   "created": 1790971868,
   "format": null,
   "handle": "learnwithniksi",
-  "hook": "",
+  "hook": "We were all freshmen once",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 488,
-  "views_7d": 488
+  "views": 500,
+  "views_7d": 500
  },
  "7692179330721451284": {
   "created": 1790975071,
   "format": "A20261009014121",
   "handle": "learnwithmina",
-  "hook": "",
+  "hook": "Deleting this video in two hours!",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1586,
-  "views_7d": 1586
+  "views": 1597,
+  "views_7d": 1597
  },
  "7692184479858806037": {
   "created": 1790976277,
@@ -2414,67 +2464,67 @@
   "created": 1790994349,
   "format": "A20261009015525",
   "handle": "studywithvalentina",
-  "hook": "",
+  "hook": "If you're not using Astra AI yet, I don't get you",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 8581,
-  "views_7d": 8581
+  "views": 8696,
+  "views_7d": 8696
  },
  "7692375934661381408": {
   "created": 1791020844,
   "format": null,
   "handle": "learnwithpaola",
-  "hook": "",
+  "hook": "Don't be like me in first year of college",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1803,
-  "views_7d": 1803
+  "views": 1809,
+  "views_7d": 1809
  },
  "7692381521113615648": {
   "created": 1791022146,
   "format": null,
   "handle": "learnwithhanna",
-  "hook": "",
+  "hook": "Peaceful Saturday until you remember how much material you have to learn, then you remember the app that gets you through it in 15 minutes",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7845,
-  "views_7d": 7845
+  "views": 7853,
+  "views_7d": 7853
  },
  "7692414303197990165": {
   "created": 1791029779,
   "format": null,
   "handle": "studytipsbytara",
-  "hook": "",
+  "hook": "How many of these 4 do you do?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 9417,
-  "views_7d": 9417
+  "views": 9459,
+  "views_7d": 9459
  },
  "7692437819729530133": {
   "created": 1791035257,
   "format": null,
   "handle": "studywithandjela",
-  "hook": "",
+  "hook": "This happens to me every time at exams",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1267,
-  "views_7d": 1267
+  "views": 1271,
+  "views_7d": 1271
  },
  "7692445112235724065": {
   "created": 1791036951,
   "format": null,
   "handle": "studywithkarllo",
-  "hook": "",
+  "hook": "Every day I regret not knowing this sooner",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2493,
-  "views_7d": 2493
+  "views": 2497,
+  "views_7d": 2497
  },
  "7692447948029824277": {
   "created": 1791037610,
@@ -2491,12 +2541,23 @@
   "created": 1791042433,
   "format": null,
   "handle": "learnwithanja",
-  "hook": "",
+  "hook": "Do you hate these drawings too?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1213,
-  "views_7d": 1213
+  "views": 1227,
+  "views_7d": 1227
+ },
+ "7692471092144885014": {
+  "created": 1791043003,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": false,
+  "views": 11600,
+  "views_7d": 11600
  },
  "7692477891979791624": {
   "created": 1791044586,
@@ -2524,78 +2585,78 @@
   "created": 1791045657,
   "format": "A20261009014121",
   "handle": "learnwithsaraa",
-  "hook": "",
+  "hook": "Did you know this secret?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2533,
-  "views_7d": 2533
+  "views": 2539,
+  "views_7d": 2539
  },
  "7692486893312773377": {
   "created": 1791046716,
   "format": null,
   "handle": "study.with.nataliaa",
-  "hook": "",
+  "hook": "Do you agree with my opinion? Reading comments",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 11200,
-  "views_7d": 11200
+  "views": 11600,
+  "views_7d": 11600
  },
  "7692489776338832658": {
   "created": 1791047355,
   "format": null,
   "handle": "learnwithtika",
-  "hook": "",
+  "hook": "Why am I always the last to find out?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 32900,
-  "views_7d": 32900
+  "views": 33000,
+  "views_7d": 33000
  },
  "7692498167585082657": {
   "created": 1791049303,
   "format": null,
   "handle": "studywithanamarija",
-  "hook": "",
+  "hook": "4 types of people in class",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3358,
-  "views_7d": 3358
+  "views": 3362,
+  "views_7d": 3362
  },
  "7692538183451462919": {
   "created": 1791058631,
   "format": null,
   "handle": "studywithandja",
-  "hook": "",
+  "hook": "What are your favorite study methods?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2031,
-  "views_7d": 2031
+  "views": 2037,
+  "views_7d": 2037
  },
  "7692541161159871751": {
   "created": 1791059325,
   "format": null,
   "handle": "learnwithtamara",
-  "hook": "",
+  "hook": "We all have these 5 teachers at school",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3189,
-  "views_7d": 3189
+  "views": 3210,
+  "views_7d": 3210
  },
  "7692543573765410069": {
   "created": 1791059882,
   "format": null,
   "handle": "study_with_hexi",
-  "hook": "",
+  "hook": "How not to waste 4 years at university",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2298,
-  "views_7d": 2298
+  "views": 2306,
+  "views_7d": 2306
  },
  "7692543575103524116": {
   "created": 1791059882,
@@ -2619,49 +2680,60 @@
   "views": 289,
   "views_7d": 289
  },
- "7692551011256257825": {
-  "created": 1791061607,
+ "7692545784230792468": {
+  "created": 1791060393,
   "format": null,
-  "handle": "helenci_study",
+  "handle": "smartishaangelisaa",
   "hook": "",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7184,
-  "views_7d": 7184
+  "views": 40000,
+  "views_7d": 40000
+ },
+ "7692551011256257825": {
+  "created": 1791061607,
+  "format": null,
+  "handle": "helenci_study",
+  "hook": "Ranking ways students cheat on tests",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 7211,
+  "views_7d": 7211
  },
  "7692555772751777045": {
   "created": 1791062722,
   "format": null,
   "handle": "studywithreveka",
-  "hook": "",
+  "hook": "Top 3 worst last-period subjects",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 21200,
-  "views_7d": 21200
+  "views": 21500,
+  "views_7d": 21500
  },
  "7692561753288346910": {
   "created": 1791064121,
   "format": null,
   "handle": "learnwithniksi",
-  "hook": "",
+  "hook": "Which faculty do you study at?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 576,
-  "views_7d": 576
+  "views": 592,
+  "views_7d": 592
  },
  "7692562251127000340": {
   "created": 1791064228,
   "format": null,
   "handle": "learnwithmina",
-  "hook": "",
+  "hook": "Which grade are you in?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1791,
-  "views_7d": 1791
+  "views": 1798,
+  "views_7d": 1798
  },
  "7692563801731845382": {
   "bootstrap_tries": 1,
@@ -2722,23 +2794,23 @@
   "created": 1791104552,
   "format": "A20261009014121",
   "handle": "learnwithpaola",
-  "hook": "",
+  "hook": "Deleting this video in 2 hours",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1283,
-  "views_7d": 1283
+  "views": 1296,
+  "views_7d": 1296
  },
  "7692739533045026080": {
   "created": 1791105501,
   "format": null,
   "handle": "astra_ai_hr",
-  "hook": "",
+  "hook": "Astra AI now has a light mode",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 868,
-  "views_7d": 868
+  "views": 870,
+  "views_7d": 870
  },
  "7692795948145118465": {
   "bootstrap_tries": 1,
@@ -2751,16 +2823,27 @@
   "mature": false,
   "views": 143100
  },
+ "7692810489906203926": {
+  "created": 1791122026,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": false,
+  "views": 12600,
+  "views_7d": 12600
+ },
  "7692818969807441185": {
   "created": 1791123996,
   "format": null,
   "handle": "learnwithhanna",
-  "hook": "",
+  "hook": "Crazy! (study app reaction)",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 74500,
-  "views_7d": 74500
+  "views": 75400,
+  "views_7d": 75400
  },
  "7692837834499034388": {
   "created": 1791128390,
@@ -2777,12 +2860,12 @@
   "created": 1791129651,
   "format": null,
   "handle": "study.with.nataliaa",
-  "hook": "",
+  "hook": "Are you an intelligent lazy person?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1182,
-  "views_7d": 1182
+  "views": 1188,
+  "views_7d": 1188
  },
  "7692849426099883316": {
   "created": 1791131088,
@@ -2799,12 +2882,12 @@
   "created": 1791133585,
   "format": null,
   "handle": "learnwithsaraa",
-  "hook": "",
+  "hook": "Does anyone disagree?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1078,
-  "views_7d": 1078
+  "views": 1082,
+  "views_7d": 1082
  },
  "7692860275355028768": {
   "created": 1791133613,
@@ -2821,23 +2904,23 @@
   "created": 1791135117,
   "format": null,
   "handle": "studywithanamarija",
-  "hook": "",
+  "hook": "Advice for all college freshmen",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 858,
-  "views_7d": 858
+  "views": 863,
+  "views_7d": 863
  },
  "7692867767564848391": {
   "created": 1791135363,
   "format": null,
   "handle": "studywithandja",
-  "hook": "",
+  "hook": "POV: this will help every visual learner",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 998,
-  "views_7d": 998
+  "views": 1007,
+  "views_7d": 1007
  },
  "7692872043406085384": {
   "created": 1791136358,
@@ -2854,12 +2937,12 @@
   "created": 1791140221,
   "format": null,
   "handle": "creatortipsbymonika",
-  "hook": "",
+  "hook": "This is your chance (UGC creator recruitment)",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 461,
-  "views_7d": 461
+  "views": 462,
+  "views_7d": 462
  },
  "7692893077480033556": {
   "created": 1791141256,
@@ -2876,155 +2959,166 @@
   "created": 1791141907,
   "format": "A20261008211912",
   "handle": "tea_studytok",
-  "hook": "",
+  "hook": "Test meme: you know the answer was in the textbook but lack a premium brain, so Astra AI shows it",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 9307,
-  "views_7d": 9307
+  "views": 9319,
+  "views_7d": 9319
  },
  "7692896444281392405": {
   "created": 1791142041,
   "format": null,
   "handle": "ucisamilicom",
-  "hook": "",
+  "hook": "Useful for anyone studying medicine",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 787,
-  "views_7d": 787
+  "views": 788,
+  "views_7d": 788
  },
  "7692897441338658081": {
   "created": 1791142266,
   "format": null,
   "handle": "helenci_study",
+  "hook": "Ranking the worst types of teachers",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 2254,
+  "views_7d": 2254
+ },
+ "7692904891307642164": {
+  "created": 1791144005,
+  "format": "A20261009014121",
+  "handle": "smartishaangelisaa",
   "hook": "",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2248,
-  "views_7d": 2248
+  "views": 59300,
+  "views_7d": 59300
  },
  "7692906051858910471": {
   "created": 1791144277,
   "format": "A20261009014121",
   "handle": "learnwithanja",
-  "hook": "",
+  "hook": "Deleting this video in 2 hours: thank me for your best grades",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 38800,
-  "views_7d": 38800
+  "views": 39000,
+  "views_7d": 39000
  },
  "7692913345145425204": {
   "created": 1791145970,
   "format": "A20261008205804",
   "handle": "learnwithmateja",
-  "hook": "",
+  "hook": "How far down the list can you get? You're out if...",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 27400,
-  "views_7d": 27400
+  "views": 27700,
+  "views_7d": 27700
  },
  "7692922721985973524": {
   "created": 1791148159,
   "format": null,
   "handle": "studytipsbytara",
-  "hook": "",
+  "hook": "Which subject is hardest for you?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 763,
-  "views_7d": 763
+  "views": 767,
+  "views_7d": 767
  },
  "7692929512782318868": {
   "created": 1791149743,
   "format": null,
   "handle": "study_with_hexi",
-  "hook": "",
+  "hook": "Hellooo (attention-grabbing opener)",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2330,
-  "views_7d": 2330
+  "views": 2372,
+  "views_7d": 2372
  },
  "7692929647243218197": {
   "created": 1791149781,
   "format": null,
   "handle": "studywithreveka",
-  "hook": "",
+  "hook": "I WON'T send you my notes",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2771,
-  "views_7d": 2771
+  "views": 2782,
+  "views_7d": 2782
  },
  "7692930254213532959": {
   "created": 1791149918,
   "format": null,
   "handle": "learnwithniksi",
-  "hook": "",
+  "hook": "Which subject is the worst?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 10000,
-  "views_7d": 10000
+  "views": 10100,
+  "views_7d": 10100
  },
  "7692932457070415111": {
   "created": 1791150432,
   "format": null,
   "handle": "learnwithtamara",
-  "hook": "",
+  "hook": "You'll study so well teachers will think you cheat",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1210,
-  "views_7d": 1210
+  "views": 1232,
+  "views_7d": 1232
  },
  "7692935509022215425": {
   "created": 1791151181,
   "format": null,
   "handle": "kera.vas.uci",
-  "hook": "",
+  "hook": "How many have you collected so far?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 10600,
-  "views_7d": 10600
+  "views": 10700,
+  "views_7d": 10700
  },
  "7692936210544610561": {
   "created": 1791151301,
   "format": null,
   "handle": "study_with_zo",
-  "hook": "",
+  "hook": "How can anyone study anatomy from a book after this? 3D organs",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2505,
-  "views_7d": 2505
+  "views": 2509,
+  "views_7d": 2509
  },
  "7692998398085057799": {
   "created": 1791165777,
   "format": "A20261009015525",
   "handle": "studywithvalentina",
-  "hook": "",
+  "hook": "Do you use Astra AI?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 43300,
-  "views_7d": 43300
+  "views": 43600,
+  "views_7d": 43600
  },
  "7693085801839676724": {
   "created": 1791186126,
   "format": null,
   "handle": "come_study_with_s",
-  "hook": "",
+  "hook": "Tell me if it helped you too",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 367,
-  "views_7d": 367
+  "views": 368,
+  "views_7d": 368
  },
  "7693115623232097537": {
   "created": 1791193069,
@@ -3041,45 +3135,45 @@
   "created": 1791198893,
   "format": null,
   "handle": "ucisaprofom",
-  "hook": "",
+  "hook": "Do you have these people in your class?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 667,
-  "views_7d": 667
+  "views": 668,
+  "views_7d": 668
  },
  "7693146886814878984": {
   "created": 1791200349,
   "format": null,
   "handle": "learnwithtika",
-  "hook": "",
+  "hook": "Such a weird way of studying",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 690,
-  "views_7d": 690
+  "views": 707,
+  "views_7d": 707
  },
  "7693150886922702113": {
   "created": 1791201279,
   "format": null,
   "handle": "studywithkarllo",
-  "hook": "",
+  "hook": "Tell me your study methods",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 674,
-  "views_7d": 674
+  "views": 684,
+  "views_7d": 684
  },
  "7693154013256273172": {
   "created": 1791202006,
   "format": "A20261009014121",
   "handle": "studywithandjela",
-  "hook": "",
+  "hook": "Follow for more secrets from teachers",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 28600,
-  "views_7d": 28600
+  "views": 28800,
+  "views_7d": 28800
  },
  "7693171738707807491": {
   "created": 1791206136,
@@ -3096,45 +3190,45 @@
   "created": 1791211806,
   "format": null,
   "handle": "foxara.vas.uci",
-  "hook": "",
+  "hook": "What's your name?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 64000,
-  "views_7d": 64000
+  "views": 64300,
+  "views_7d": 64300
  },
  "7693210552113302817": {
   "created": 1791215168,
   "format": "A20261009014121",
   "handle": "studywithanamarija",
-  "hook": "",
+  "hook": "Secret revealed: what teachers hide",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1826,
-  "views_7d": 1826
+  "views": 1833,
+  "views_7d": 1833
  },
  "7693220046407011636": {
   "created": 1791217425,
   "format": null,
   "handle": "study.with.mili",
-  "hook": "",
+  "hook": "Did you know you can make a quiz?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 23900,
-  "views_7d": 23900
+  "views": 24000,
+  "views_7d": 24000
  },
  "7693223229644623136": {
   "created": 1791218123,
   "format": null,
   "handle": "learnwithhanna",
-  "hook": "",
+  "hook": "Study motivation with no text",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4933,
-  "views_7d": 4933
+  "views": 4941,
+  "views_7d": 4941
  },
  "7693250228912147719": {
   "created": 1791224415,
@@ -3162,122 +3256,133 @@
   "created": 1791226733,
   "format": null,
   "handle": "ucisamilicom",
-  "hook": "",
+  "hook": "Study tips with Astra AI",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 904,
-  "views_7d": 904
+  "views": 905,
+  "views_7d": 905
  },
  "7693268578958626100": {
   "created": 1791228719,
   "format": null,
   "handle": "study.with.nataliaa",
-  "hook": "",
+  "hook": "Are you going to one of these high schools?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 40700,
-  "views_7d": 40700
+  "views": 41400,
+  "views_7d": 41400
  },
  "7693270813574745352": {
   "created": 1791229203,
   "format": null,
   "handle": "studywithandja",
-  "hook": "",
+  "hook": "POV: how to pass anatomy",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2894,
-  "views_7d": 2894
+  "views": 3025,
+  "views_7d": 3025
  },
  "7693275701230750997": {
   "created": 1791230344,
   "format": null,
   "handle": "study_with_hexi",
-  "hook": "",
+  "hook": "Which type is still missing?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1425,
-  "views_7d": 1425
+  "views": 1442,
+  "views_7d": 1442
  },
  "7693282080666537237": {
   "created": 1791231826,
   "format": null,
   "handle": "studywithreveka",
-  "hook": "",
+  "hook": "Me going to study because I was too embarrassed to dance on TikTok in 2020",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4899,
-  "views_7d": 4899
+  "views": 4915,
+  "views_7d": 4915
  },
  "7693287946375515413": {
   "created": 1791233197,
   "format": null,
   "handle": "learnwithsaraa",
-  "hook": "",
+  "hook": "Do you agree?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1940,
-  "views_7d": 1940
+  "views": 1952,
+  "views_7d": 1952
  },
  "7693288035630189855": {
   "created": 1791233215,
   "format": null,
   "handle": "learnwithniksi",
-  "hook": "",
+  "hook": "No, I don't have time",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 370,
-  "views_7d": 370
+  "views": 382,
+  "views_7d": 382
+ },
+ "7693291236744121620": {
+  "created": 1791233962,
+  "format": null,
+  "handle": "smartishaangelisaa",
+  "hook": "",
+  "judged": true,
+  "local": true,
+  "mature": false,
+  "views": 133500,
+  "views_7d": 133500
  },
  "7693293017175723285": {
   "created": 1791234373,
   "format": "A20261008210957",
   "handle": "learnwithmateja",
-  "hook": "",
+  "hook": "Top 5 hardest faculties you should never enroll in",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3985,
-  "views_7d": 3985
+  "views": 4006,
+  "views_7d": 4006
  },
  "7693302228668484872": {
   "created": 1791236524,
   "format": null,
   "handle": "study_with_zo",
-  "hook": "",
+  "hook": "Almost...",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1715,
-  "views_7d": 1715
+  "views": 1717,
+  "views_7d": 1717
  },
  "7693302426903776533": {
   "created": 1791236561,
   "format": null,
   "handle": "studytipsbytara",
-  "hook": "",
+  "hook": "A small trick that could change how you study",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1172,
-  "views_7d": 1172
+  "views": 1174,
+  "views_7d": 1174
  },
  "7693306922518236422": {
   "created": 1791237646,
   "format": null,
   "handle": "kera.vas.uci",
-  "hook": "",
+  "hook": "Tag your lazy friend",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 8132,
-  "views_7d": 8132
+  "views": 8257,
+  "views_7d": 8257
  },
  "7693458159976844551": {
   "created": 1791272826,
@@ -3294,12 +3399,12 @@
   "created": 1791277517,
   "format": "A20261009015525",
   "handle": "studywithandjela",
-  "hook": "",
+  "hook": "This is the only thing that helped me study",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7285,
-  "views_7d": 7285
+  "views": 7326,
+  "views_7d": 7326
  },
  "7693512012105600277": {
   "created": 1791285361,
@@ -3316,51 +3421,51 @@
   "created": 1791289541,
   "format": "A20261008210957",
   "handle": "study.with.mili",
-  "hook": "",
+  "hook": "Did I rank the faculties well?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 14100,
-  "views_7d": 14100
+  "views": 14300,
+  "views_7d": 14300
  },
  "7693539666611473697": {
   "created": 1791291798,
   "format": null,
   "handle": "studywithanamarija",
-  "hook": "",
+  "hook": "AI is allowed at university",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1473,
-  "views_7d": 1473
+  "views": 1481,
+  "views_7d": 1481
  },
  "7693572167576915208": {
   "created": 1791299366,
   "format": null,
   "handle": "learnwithtika",
-  "hook": "",
+  "hook": "Have your lectures started? Study tips",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1428,
-  "views_7d": 1428
+  "views": 1451,
+  "views_7d": 1451
  },
  "7693590120347258120": {
   "created": 1791303547,
   "format": null,
   "handle": "learnwithanja",
-  "hook": "",
+  "hook": "Solve the task correctly and I'll follow you back",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 549,
-  "views_7d": 549
+  "views": 558,
+  "views_7d": 558
  },
  "7693593309402483988": {
   "created": 1791304289,
   "format": "A20261008210957",
   "handle": "ucenje.sa.lili",
-  "hook": "",
+  "hook": "Is your faculty on the list?",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3371,23 +3476,23 @@
   "created": 1791305129,
   "format": null,
   "handle": "study.with.nataliaa",
-  "hook": "",
+  "hook": "I wish someone had told me this earlier",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 729,
-  "views_7d": 729
+  "views": 738,
+  "views_7d": 738
  },
  "7693603076590046496": {
   "created": 1791306560,
   "format": null,
   "handle": "learnwithsaralara",
-  "hook": "",
+  "hook": "The lazy person with great grades",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4042,
-  "views_7d": 4042
+  "views": 4058,
+  "views_7d": 4058
  },
  "7693614549269810450": {
   "bootstrap_tries": 1,
@@ -3404,139 +3509,150 @@
   "created": 1791310274,
   "format": null,
   "handle": "study_with_zo",
-  "hook": "",
+  "hook": "You really need to hear this",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5236,
-  "views_7d": 5236
+  "views": 5265,
+  "views_7d": 5265
  },
  "7693623863720103176": {
   "created": 1791311405,
   "format": null,
   "handle": "ucisaprofom",
-  "hook": "",
+  "hook": "Med students, this is a lifesaver",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 484,
-  "views_7d": 484
+  "views": 485,
+  "views_7d": 485
  },
  "7693625431852944673": {
   "created": 1791311764,
   "format": null,
   "handle": "learnwithpaola",
-  "hook": "",
+  "hook": "Comment 'JA' if you need help with a subject",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 293,
-  "views_7d": 293
+  "views": 302,
+  "views_7d": 302
  },
  "7693630877946891552": {
   "created": 1791313033,
   "format": null,
   "handle": "tea_studytok",
-  "hook": "",
+  "hook": "Physics teacher thought I cheated because of great grades",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2359,
-  "views_7d": 2359
+  "views": 2388,
+  "views_7d": 2388
  },
  "7693631795740282132": {
   "created": 1791313252,
   "format": null,
   "handle": "learnwithsaraa",
-  "hook": "",
+  "hook": "You're very lucky",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 67000,
-  "views_7d": 67000
+  "views": 67400,
+  "views_7d": 67400
  },
  "7693632608311266581": {
   "created": 1791313439,
   "format": null,
   "handle": "ucisamilicom",
-  "hook": "",
+  "hook": "Do you forget everything when the teacher calls on you?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1942,
-  "views_7d": 1942
+  "views": 1944,
+  "views_7d": 1944
  },
  "7693633927709265185": {
   "created": 1791313748,
   "format": null,
   "handle": "learnwithhanna",
-  "hook": "",
+  "hook": "Definitely save and share this video",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2759,
-  "views_7d": 2759
+  "views": 2767,
+  "views_7d": 2767
  },
  "7693638353685581074": {
   "created": 1791314783,
   "format": "A20261009014121",
   "handle": "learnwithtamara",
-  "hook": "",
+  "hook": "Things teachers hide from you",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1780,
-  "views_7d": 1780
+  "views": 1819,
+  "views_7d": 1819
  },
  "7693644473397480725": {
   "created": 1791316209,
   "format": "A20261009014121",
   "handle": "learnwithmateja",
+  "hook": "3 things teachers hide from you (deleting this video in 4 hours)",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 10500,
+  "views_7d": 10500
+ },
+ "7693644965397728533": {
+  "created": 1791316321,
+  "format": null,
+  "handle": "smartishaangelisaa",
   "hook": "",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 10400,
-  "views_7d": 10400
+  "views": 3428,
+  "views_7d": 3428
  },
  "7693653993653849365": {
   "created": 1791318424,
   "format": null,
   "handle": "studytipsbytara",
-  "hook": "",
+  "hook": "How long did it take you to solve this math problem?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1007,
-  "views_7d": 1007
+  "views": 1013,
+  "views_7d": 1013
  },
  "7693654832082652446": {
   "created": 1791318628,
   "format": null,
   "handle": "learnwithniksi",
-  "hook": "",
+  "hook": "Is this cheating?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1168,
-  "views_7d": 1168
+  "views": 1207,
+  "views_7d": 1207
  },
  "7693657868733517077": {
   "created": 1791319326,
   "format": null,
   "handle": "study_with_hexi",
-  "hook": "",
+  "hook": "If I were principal for a day I'd do these 4 things",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5243,
-  "views_7d": 5243
+  "views": 5286,
+  "views_7d": 5286
  },
  "7693661908070599956": {
   "created": 1791320261,
   "format": null,
   "handle": "ucenje.sa.lili",
-  "hook": "",
+  "hook": "Do you have these people in your class?",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3547,34 +3663,34 @@
   "created": 1791320896,
   "format": null,
   "handle": "studywithreveka",
-  "hook": "",
+  "hook": "3 most important things in 8th grade",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6895,
-  "views_7d": 6895
+  "views": 6946,
+  "views_7d": 6946
  },
  "7693676659379113236": {
   "created": 1791323697,
   "format": null,
   "handle": "learnwithmina",
-  "hook": "",
+  "hook": "Which faculty did you enroll in?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1586,
-  "views_7d": 1586
+  "views": 1595,
+  "views_7d": 1595
  },
  "7693676971666033941": {
   "created": 1791323769,
   "format": null,
   "handle": "learnwithandj",
-  "hook": "",
+  "hook": "How to get good grades if you're lazy",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5822,
-  "views_7d": 5822
+  "views": 5928,
+  "views_7d": 5928
  },
  "7693684473686150406": {
   "bootstrap_tries": 1,
@@ -3595,8 +3711,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 882,
-  "views_7d": 882
+  "views": 883,
+  "views_7d": 883
  },
  "7693850770462067976": {
   "created": 1791364236,
@@ -3606,8 +3722,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1209,
-  "views_7d": 1209
+  "views": 1219,
+  "views_7d": 1219
  },
  "7693869002799549716": {
   "created": 1791368480,
@@ -3617,8 +3733,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1537,
-  "views_7d": 1537
+  "views": 1543,
+  "views_7d": 1543
  },
  "7693892837590584609": {
   "created": 1791374026,
@@ -3639,8 +3755,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2195,
-  "views_7d": 2195
+  "views": 2276,
+  "views_7d": 2276
  },
  "7693914411005725984": {
   "created": 1791379049,
@@ -3650,8 +3766,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7279,
-  "views_7d": 7279
+  "views": 7288,
+  "views_7d": 7288
  },
  "7693926613863501078": {
   "created": 1791381895,
@@ -3672,8 +3788,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 401,
-  "views_7d": 401
+  "views": 403,
+  "views_7d": 403
  },
  "7693939339843144961": {
   "created": 1791384853,
@@ -3683,8 +3799,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5667,
-  "views_7d": 5667
+  "views": 5893,
+  "views_7d": 5893
  },
  "7693948611582840082": {
   "created": 1791387015,
@@ -3694,8 +3810,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 929,
-  "views_7d": 929
+  "views": 993,
+  "views_7d": 993
  },
  "7693955179850435860": {
   "created": 1791388541,
@@ -3705,8 +3821,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 766,
-  "views_7d": 766
+  "views": 767,
+  "views_7d": 767
  },
  "7693959973138631968": {
   "created": 1791389657,
@@ -3716,8 +3832,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 887,
-  "views_7d": 887
+  "views": 891,
+  "views_7d": 891
  },
  "7693979744295013638": {
   "created": 1791394265,
@@ -3727,19 +3843,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 756,
-  "views_7d": 756
+  "views": 757,
+  "views_7d": 757
  },
  "7693980090752879924": {
   "created": 1791394387,
   "format": null,
   "handle": "study.with.mili",
-  "hook": "",
+  "hook": "Did you know about this trick? 😱",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 79300,
-  "views_7d": 79300
+  "views": 84100,
+  "views_7d": 84100
  },
  "7693984751857847604": {
   "created": 1791395430,
@@ -3749,8 +3865,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 259,
-  "views_7d": 259
+  "views": 260,
+  "views_7d": 260
  },
  "7693987440628960530": {
   "created": 1791396056,
@@ -3760,8 +3876,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 708,
-  "views_7d": 708
+  "views": 736,
+  "views_7d": 736
  },
  "7693993217406094624": {
   "created": 1791397397,
@@ -3771,8 +3887,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3066,
-  "views_7d": 3066
+  "views": 3101,
+  "views_7d": 3101
  },
  "7693997841781476628": {
   "created": 1791398482,
@@ -3782,8 +3898,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6347,
-  "views_7d": 6347
+  "views": 6430,
+  "views_7d": 6430
  },
  "7694002832734686497": {
   "created": 1791399635,
@@ -3793,8 +3909,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2809,
-  "views_7d": 2809
+  "views": 2844,
+  "views_7d": 2844
+ },
+ "7694015236390554901": {
+  "created": 1791402525,
+  "format": null,
+  "handle": "smartishaangelisaa",
+  "hook": "",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 44300,
+  "views_7d": 44300
  },
  "7694017344863046945": {
   "created": 1791403014,
@@ -3804,8 +3931,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1026,
-  "views_7d": 1026
+  "views": 1042,
+  "views_7d": 1042
  },
  "7694023804967832852": {
   "created": 1791404525,
@@ -3815,8 +3942,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 614,
-  "views_7d": 614
+  "views": 625,
+  "views_7d": 625
  },
  "7694026386398366983": {
   "created": 1791405128,
@@ -3826,8 +3953,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2900,
-  "views_7d": 2900
+  "views": 2990,
+  "views_7d": 2990
  },
  "7694026494271704321": {
   "created": 1791405221,
@@ -3837,8 +3964,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6240,
-  "views_7d": 6240
+  "views": 6514,
+  "views_7d": 6514
  },
  "7694027197060959495": {
   "created": 1791405312,
@@ -3848,8 +3975,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 685,
-  "views_7d": 685
+  "views": 700,
+  "views_7d": 700
  },
  "7694029525889355029": {
   "created": 1791405858,
@@ -3859,8 +3986,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 19000,
-  "views_7d": 19000
+  "views": 22100,
+  "views_7d": 22100
  },
  "7694033991564840213": {
   "created": 1791406899,
@@ -3881,8 +4008,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5935,
-  "views_7d": 5935
+  "views": 6140,
+  "views_7d": 6140
  },
  "7694038782693199125": {
   "created": 1791408009,
@@ -3892,8 +4019,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2418,
-  "views_7d": 2418
+  "views": 2455,
+  "views_7d": 2455
  },
  "7694042335914642709": {
   "created": 1791408841,
@@ -3903,8 +4030,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2094,
-  "views_7d": 2094
+  "views": 2134,
+  "views_7d": 2134
  },
  "7694047809275776277": {
   "created": 1791410116,
@@ -3914,8 +4041,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2313,
-  "views_7d": 2313
+  "views": 2374,
+  "views_7d": 2374
  },
  "7694048926395059486": {
   "bootstrap_tries": 1,
@@ -3936,8 +4063,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 13300,
-  "views_7d": 13300
+  "views": 13600,
+  "views_7d": 13600
  },
  "7694209281977011488": {
   "created": 1791447708,
@@ -3947,8 +4074,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 733,
-  "views_7d": 733
+  "views": 742,
+  "views_7d": 742
  },
  "7694220674855882002": {
   "created": 1791450362,
@@ -3958,8 +4085,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 282,
-  "views_7d": 282
+  "views": 285,
+  "views_7d": 285
  },
  "7694232525132074260": {
   "created": 1791453120,
@@ -3969,19 +4096,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 223,
-  "views_7d": 223
+  "views": 245,
+  "views_7d": 245
  },
  "7694248365436964097": {
   "created": 1791456834,
   "format": null,
   "handle": "study.with.mili",
-  "hook": "",
+  "hook": "Do you go to one of these high schools?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 74400,
-  "views_7d": 74400
+  "views": 92600,
+  "views_7d": 92600
  },
  "7694274598363335957": {
   "created": 1791462913,
@@ -3991,8 +4118,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 284,
-  "views_7d": 284
+  "views": 285,
+  "views_7d": 285
  },
  "7694283195155582230": {
   "created": 1791464918,
@@ -4002,8 +4129,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6674,
-  "views_7d": 6674
+  "views": 6892,
+  "views_7d": 6892
  },
  "7694290405809982752": {
   "created": 1791466593,
@@ -4013,8 +4140,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2875,
-  "views_7d": 2875
+  "views": 2921,
+  "views_7d": 2921
+ },
+ "7694296712805879062": {
+  "created": 1791468064,
+  "format": null,
+  "handle": "lern.mit.domi",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": false,
+  "views": 1565,
+  "views_7d": 1565
  },
  "7694301661703064852": {
   "created": 1791469218,
@@ -4024,8 +4162,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4850,
-  "views_7d": 4850
+  "views": 5090,
+  "views_7d": 5090
  },
  "7694315631931346194": {
   "created": 1791472467,
@@ -4035,8 +4173,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 533,
-  "views_7d": 533
+  "views": 534,
+  "views_7d": 534
  },
  "7694317792979455239": {
   "created": 1791472970,
@@ -4046,8 +4184,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1487,
-  "views_7d": 1487
+  "views": 1727,
+  "views_7d": 1727
  },
  "7694339411772771591": {
   "created": 1791478006,
@@ -4057,8 +4195,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4684,
-  "views_7d": 4684
+  "views": 5364,
+  "views_7d": 5364
  },
  "7694346236983266592": {
   "created": 1791479591,
@@ -4068,8 +4206,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 274,
-  "views_7d": 274
+  "views": 284,
+  "views_7d": 284
  },
  "7694354919297502496": {
   "created": 1791481611,
@@ -4079,8 +4217,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 459,
-  "views_7d": 459
+  "views": 493,
+  "views_7d": 493
  },
  "7694360559491304712": {
   "created": 1791482929,
@@ -4090,8 +4228,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 10500,
-  "views_7d": 10500
+  "views": 22900,
+  "views_7d": 22900
  },
  "7694360730086247712": {
   "created": 1791482966,
@@ -4101,8 +4239,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1190,
-  "views_7d": 1190
+  "views": 1272,
+  "views_7d": 1272
  },
  "7694368402290248992": {
   "created": 1791484750,
@@ -4112,8 +4250,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3947,
-  "views_7d": 3947
+  "views": 5086,
+  "views_7d": 5086
  },
  "7694371283529698593": {
   "created": 1791485423,
@@ -4123,8 +4261,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1520,
-  "views_7d": 1520
+  "views": 1623,
+  "views_7d": 1623
  },
  "7694379279764835602": {
   "created": 1791487287,
@@ -4134,8 +4272,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1253,
-  "views_7d": 1253
+  "views": 2047,
+  "views_7d": 2047
  },
  "7694386565300194561": {
   "created": 1791488995,
@@ -4145,19 +4283,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5477,
-  "views_7d": 5477
+  "views": 7062,
+  "views_7d": 7062
  },
  "7694393004118854930": {
   "created": 1791490485,
   "format": null,
   "handle": "learnwithtamara",
-  "hook": "",
+  "hook": "Everyone would learn like this 😂",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 43800,
-  "views_7d": 43800
+  "views": 0,
+  "views_7d": 0
  },
  "7694400286906961173": {
   "created": 1791492180,
@@ -4167,8 +4305,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1470,
-  "views_7d": 1470
+  "views": 3461,
+  "views_7d": 3461
+ },
+ "7694403597358026005": {
+  "created": 1791492954,
+  "format": null,
+  "handle": "smartishaangelisaa",
+  "hook": "",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 17500,
+  "views_7d": 17500
  },
  "7694411217401646356": {
   "created": 1791494725,
@@ -4178,19 +4327,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 933,
-  "views_7d": 933
+  "views": 1945,
+  "views_7d": 1945
  },
  "7694415560993508609": {
   "created": 1791495742,
   "format": null,
   "handle": "kera.vas.uci",
-  "hook": "",
+  "hook": "Are you better than 99% of people?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 20700,
-  "views_7d": 20700
+  "views": 87600,
+  "views_7d": 87600
  },
  "7694416412391066900": {
   "created": 1791495940,
@@ -4200,8 +4349,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 458,
-  "views_7d": 458
+  "views": 656,
+  "views_7d": 656
  },
  "7694418116289269012": {
   "created": 1791496332,
@@ -4211,8 +4360,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1486,
-  "views_7d": 1486
+  "views": 2755,
+  "views_7d": 2755
  },
  "7694418332405026078": {
   "created": 1791496391,
@@ -4222,18 +4371,51 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 141,
-  "views_7d": 141
+  "views": 272,
+  "views_7d": 272
  },
  "7694419034376375572": {
   "created": 1791496549,
   "format": "A20261009014121",
   "handle": "learnwithandj",
+  "hook": "This is something no teacher will tell you – deleting the video in 2 hours",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 42400,
+  "views_7d": 42400
+ },
+ "7694608829270494516": {
+  "created": 1791540732,
+  "format": null,
+  "handle": "ucisaprofom",
   "hook": "",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 27800,
-  "views_7d": 27800
+  "views": 104,
+  "views_7d": 104
+ },
+ "7694650734532381953": {
+  "created": 1791550509,
+  "format": null,
+  "handle": "study.with.mili",
+  "hook": "",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 12100,
+  "views_7d": 12100
+ },
+ "7694659464502185248": {
+  "created": 1791552519,
+  "format": null,
+  "handle": "studywithanamarija",
+  "hook": "",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 152,
+  "views_7d": 152
  }
 }

@@ -180,6 +180,56 @@
   },
   "title_en": "Top 5 easiest faculties (countdown listicle with a mid-list app demo)"
  },
+ "A20261008211912": {
+  "accepted_sources": [
+   "7691071853334498580"
+  ],
+  "allowed_localisation": [
+   "On-screen text translated into the country's language/slang (Slovenian, Croatian, Bosnian, Serbian), keeping the 'mozak premium' / brain-subscription joke and the 'highkey' Gen-Z tone",
+   "Choice of trending audio, as long as it is a no-voiceover meme sound trending in that country",
+   "Creator, setting (classroom, lecture hall, desk at home staged as a test) and subject of the slides",
+   "App interface language set to the local language",
+   "Which one or two real features are shown in shot 2 (note, flashcards, mind map, quiz, practice test)",
+   "Laptop or phone for the screen shot",
+   "Caption wording and hashtags"
+  ],
+  "beats": [
+   "Beat 1 (hook, ~0-3s): The creator sits at a desk in a test setting, looking stressed and blank, chewing a pen or staring at the paper. On-screen text: 'POV: Setiš se tog jednog slajda na testu ali nisi pretplaćen na mozak premium' (localised). Trending audio plays from the first frame.",
+   "Beat 2 (payoff, ~3-8s): Cut on the beat to a handheld shot of a laptop screen with Memo AI open. The lecture PowerPoint/PDF has already been turned into a note, and the creator scrolls or clicks through the note, flashcards or mind map. On-screen text: 'Pa highkey nadogradiš mozak uz Memo AI' (localised)."
+  ],
+  "canonical_source": "7691071853334498580",
+  "filming": "Length 6-10 seconds, vertical 9:16, no voiceover. Only a trending audio clip plays, matching the original's vibe (a hard-hitting rap or meme sound); no product claims in the audio. Shot 1: a static or slightly handheld medium close-up of the creator at a desk with a test sheet and pen, showing exaggerated stress or confusion and a natural, unpolished look. Shot 2: a handheld POV shot of a real laptop (a phone is fine as an alternative) showing memoai.eu. Demo sequence: a finished note made from the lecture slides (formulas shown properly if relevant), then a quick tap or scroll into flashcards or the mind map. Optionally, a 1-second flash of the PowerPoint/PDF upload before the finished note. Cut out the few-minute processing wait. Two text overlays in total, one per shot, in the native TikTok font style.",
+  "generated": 1791554270,
+  "hook": "On-screen text over a stressed creator at a test: 'POV: You're trying to remember that one slide during the test but you're not subscribed to brain premium'",
+  "not_allowed": [
+   "Adding a voiceover, talking-head explanation or spoken brand mention (that makes it a different format)",
+   "Adding more beats, a tutorial walkthrough or a long demo: it must stay a two-shot POV meme",
+   "Dropping the 'brain premium/upgrade' subscription joke or the stressed-at-test setup",
+   "Showing or implying use of the app during the test itself, or cheating",
+   "Claiming the app solves a single photographed task instantly (snap and solve), grades the user's own homework, accepts photos in the chat, exports PDFs, accepts pasted text, or has an Android app in the store",
+   "Claiming notes are instant (processing takes a few minutes, so cut the wait rather than claim speed)",
+   "Promising grades or test results, or saying it is fully free (correct: one free note, then a 3-day free trial)",
+   "Showing Astra AI branding or features Memo AI doesn't have"
+  ],
+  "premise": "A relatable POV meme with no voiceover. A student freezes in a test because they can't recall one slide from the lecture. The fix is a joke 'brain upgrade': Memo AI turns the lecture slides into study material, so next time they remember it.",
+  "product": {
+   "cta": "none (the 'nadogradiš mozak uz Memo AI' overlay is the only implied push; an optional caption or comment may mention memoai.eu and the free start)",
+   "features_used": [
+    "Upload a lecture PowerPoint or PDF",
+    "Notes generated from the slides (formulas shown properly)",
+    "Flashcards",
+    "Mind map",
+    "Web app at memoai.eu used on a laptop"
+   ],
+   "introduced_at_beat": 2,
+   "spoken_brand": "not spoken (the brand appears only in the beat-2 on-screen text and on the laptop screen showing memoai.eu)"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7691071853334498580": "https://www.tiktok.com/@studywithreveka/video/7691071853334498580"
+  },
+  "title_en": "Brain Premium with Memo AI 🧠"
+ },
  "A20261008224450": {
   "accepted_sources": [
    "7688930483304090898"

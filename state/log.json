@@ -871,5 +871,86 @@
   "ts": 1791536064,
   "type": "judge_failed",
   "video": "7692061360221457686"
+ },
+ {
+  "format": null,
+  "level": "viral",
+  "ts": 1791553575,
+  "type": "alert",
+  "video": "7693291236744121620",
+  "views": 133500
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791553581,
+  "type": "alert",
+  "video": "7694360559491304712",
+  "views": 22900
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791553586,
+  "type": "alert",
+  "video": "7694650734532381953",
+  "views": 12100
+ },
+ {
+  "format": "A20261008204718",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (92 words (original 84)) / script reworded again: Too many lines are near-translations of the example. The hook (99% of st",
+   "🇸🇮 script rewritten sentence by sentence (91 words (original 84)) / script reworded again: More than a third of the sentences are direct translations of the exampl"
+  ],
+  "tries": 3,
+  "ts": 1791554248,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example's second on-screen line names the brand ('nadogradiš mozak uz Astra AI'), but the script's second line 'Sreć / script reworde",
+   "🇸🇮 script reworded again: The example's second on-screen line names the brand ('uz Astra AI'), but the script only says 's tole aplikacijo'. The b / reword refused"
+  ],
+  "tries": 3,
+  "ts": 1791554714,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261009001913",
+  "reasons": [
+   "cross-country check fail: independent_wording sl: Most of the SL script translates the example's sentences closely. The hook, all five remarks, the 'not bad, don't try this' line, the segue, 'Gremo pa naprej na naslednjo opombo' and the firecracker joke are near-translations. The firecracker joke is 'Ne vem, kako vas sploh š"
+  ],
+  "tries": 4,
+  "ts": 1791555168,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261009015525",
+   "A20261008224450",
+   "A20261009014121"
+  ],
+  "ts": 1791555293,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261009014121",
+  "position": 6,
+  "ts": 1791555293,
+  "type": "format_published"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261009015525",
+   "A20261008224450",
+   "A20261009014121"
+  ],
+  "ts": 1791555294,
+  "type": "rerank"
  }
 ]

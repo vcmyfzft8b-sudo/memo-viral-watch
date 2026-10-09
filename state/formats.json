@@ -25,10 +25,11 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: format_consistency sl: Stickers '1/4 Prevoz 🚆' and '3/4 Kino in gledališče 🍿' have no discount figure, and the reference requires one on every numbered sticker. Item 1 gives no real percentage. Item 3 names no local cinema chain (just 'v kinu'). The Memo AI item has two sentences instead of the orig"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (92 words (original 84)) / script reworded again: Too many lines are near-translations of the example. The hook (99% of st",
+    "🇸🇮 script rewritten sentence by sentence (91 words (original 84)) / script reworded again: More than a third of the sentences are direct translations of the exampl"
    ],
    "since": 1791492822,
-   "tries": 2
+   "tries": 3
   },
   "revived": {
    "at": 1791502910,
@@ -93,11 +94,11 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The original's second on-screen line names the brand ('...uz Astra AI'), but our second line ('Srećom, dan",
-    "🇸🇮 script reworded again: The original's second on-screen line names the brand ('uz Astra AI'), but our second line only says 's tole aplikacijo'. / script rewritt"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example's second on-screen line names the brand ('nadogradiš mozak uz Astra AI'), but the script's second line 'Sreć / script reworde",
+    "🇸🇮 script reworded again: The example's second on-screen line names the brand ('uz Astra AI'), but the script only says 's tole aplikacijo'. The b / reword refused"
    ],
    "since": 1791494592,
-   "tries": 2
+   "tries": 3
   },
   "reworded": {
    "sh": true,
@@ -164,6 +165,7 @@
   "title": "Prestani učiti s ChatGPT-jem 🚫"
  },
  {
+  "archived_reason": "did not pass the page check: cross-country check fail: independent_wording sl: Most of the SL script translates the example's sentences closely. The hook, all five remarks, the 'not bad, don't try this' line, the segue, 'Gremo pa",
   "created": 1791505153,
   "description": "Talking-head reaction series where the creator reads and jokes about funny e-diary teacher remarks shown as screenshot overlays, with a mid-video segue ('if you want to use AI, use it properly') into a quick app demo before returning to more remarks.",
   "id": "A20261009001913",
@@ -188,10 +190,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: independent_wording sl: Most remarks and reactions are close translations of the example's sentences. Examples: the pre-solved test, the AI-generated note 'po preverjanju izkazalo', 'Roko na srce, to pa sploh ni slaba fora... pri kakšnem profesorju bi še šlo skozi... tega ne poskušajte', the firecra"
+    "cross-country check fail: independent_wording sl: Most of the SL script translates the example's sentences closely. The hook, all five remarks, the 'not bad, don't try this' line, the segue, 'Gremo pa naprej na naslednjo opombo' and the firecracker joke are near-translations. The firecracker joke is 'Ne vem, kako vas sploh š"
    ],
    "since": 1791506039,
-   "tries": 3
+   "tries": 4
   },
   "revived": {
    "at": 1791509180,
@@ -204,24 +206,17 @@
   },
   "script": "Idemo s reakcijom na najsmješnije bilješke iz e-dnevnika, part 5. Ovaj put krećemo žestoko, s bilješkom koju mi je poslao neko od vas. Piše: „Učenik je, kad su mu rekli da ostavi mobitel za vrijeme sata, počeo vikati: Pusti me, stara, igram Clash Royale.“ Ma pusti ga, ženo draga, možda mu je protivnik bacio Mega Knighta. Hoćeš da izgubi trofeje zbog tebe? A čuj ovog brata: „Učenik je na kontrolnom izvadio test koji je riješio unaprijed i htio ga predati kao svoj.“ Kako se toga sjetio? Tri dana ga nema, a on već smišlja neku prevaru. Sljedeća glasi: „Učenik je donio sliku doktorskog opravdanja. Provjerom se ispostavilo da je opravdanje napravila vještačka inteligencija.“ Iskreno, nije mu ni loše ispalo. Kod nekog profesora bi možda i prošlo, ali nemojte to probati. Ako baš hoćete koristiti AI, koristite ga za nešto pametno. Recimo za učenje, s aplikacijom Memo AI. Ubaciš svoje bilješke u ",
   "source_video": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406",
-  "status": "pending",
+  "status": "archived",
   "title": "Najsmješnije bilješke iz e-dnevnika 😂"
  },
  {
   "created": 1791510081,
   "description": "Talking-head 'secrets teachers hide from you' video with satisfying slime-cutting hook and a fake 'deleting in 2 hours' urgency line, then a close-up laptop screen walkthrough of the study app's features.",
   "id": "A20261009014121",
+  "listed_at": 1791555293,
   "page_id": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe",
   "pages": {
    "sl": "3f465e84-a3c2-81c1-b18f-e757875dad14"
-  },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "cross-country check fail: directions_match sl: Six of the seven app cues in the script use a non-standard marker, '(📎 Memo AI · memoai.eu/creator – glej gradivo)', and the directions point to that marker. Only the first one is a real [CUE: ...] marker. Make all of them [CUE: Memo AI · memoai.eu/creator] and point the directi"
-   ],
-   "since": 1791510878,
-   "tries": 2
   },
   "reworded": {
    "sh": true,
@@ -229,7 +224,7 @@
   },
   "script": "Ovo su stvari koje ti profesori nikad neće reći. Za dva sata brišem ovaj video, pa ako ga gledaš baš sada, stvarno imaš sreće. Ovu tajnu mi je odala moja tetka, a ona radi kao profesorka. Danas skoro nijedan profesor ne sastavlja testove sam, bukvalno svi redom koriste AI. Tetka mi je pokazala koji AI alat koristi kad sprema test, i iskreno, mislim da ga koristi većina profesora. A ovo je taj sajt koji mi je ona pokazala. Sve što trebaš je da klikneš na Scan i uslikaš stranice iz udžbenika, recimo iz geografije, ili bilješke koje je neko iz razreda pisao na času, a ako imaš PDF ili Word dokument, i njega samo ubaciš. Za par minuta ti od onoga što ubaciš napravi sređene bilješke, baš po tvom gradivu. Kreneš od bilješki, onda pređeš na kartice, a na kraju riješiš probni test koji ti pokaže postotak. Ako ti je lakše slušati, tu je i tutor koji ti gradivo naglas objasni temu po temu. Odlični",
   "source_video": "https://www.tiktok.com/@studywithvalentina/video/7691071802373623058",
-  "status": "pending",
+  "status": "active",
   "title": "Tajne koje profesori kriju 😱"
  },
  {

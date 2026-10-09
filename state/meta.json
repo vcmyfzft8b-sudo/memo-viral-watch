@@ -1,7 +1,7 @@
 {
  "audit": {
-  "A20261008204718:sh": "fixed",
-  "A20261008204718:sl": "fixed",
+  "A20261008204718:sh": "failed",
+  "A20261008204718:sl": "failed",
   "A20261008205804:sh": "fixed",
   "A20261008210957:sh": "fixed",
   "A20261008211912:sh": "failed",
@@ -10,7 +10,7 @@
   "A20261008224450:sl": "fixed",
   "A20261008231529:sh": "fixed",
   "A20261008231529:sl": "fixed",
-  "A20261009001913:sh": "fixed",
+  "A20261009001913:sh": "ok",
   "A20261009001913:sl": "fixed",
   "A20261009014121:sh": "ok",
   "A20261009014121:sl": "ok",
@@ -26,10 +26,10 @@
   "A20261008224450:sl": "f1ff688365ded1f1c215eab9a66f110d5979c442597d6d5ab8264e19f8148a01",
   "A20261008231529:sh": "52ff9f608332b0359a55cf0c850e4a4cb6ac62f3b7b2e306291e3918212a47a4",
   "A20261008231529:sl": "c3520168a7204baccfb35d7777c1ff35cd57aa2d821626c91da7aaae2072955a",
-  "A20261009001913:sh": "f0f5972b614aa0e2720293daee58d1f3e3d4fdf191e73735ef1d55be88c29080",
-  "A20261009001913:sl": "6b92df19ded3dd55de5e659b535489c32e6e7a5d4bb20e57f4ca2925f40da4bf",
+  "A20261009001913:sh": "f7ea3d4ed5df4c77464cb30494c0473b8f3d51519dcf3817833217a46bad2891",
+  "A20261009001913:sl": "e2b170618d3946204887a36549539a29da0ce3e1a9f5676c809f008dec48fbe3",
   "A20261009014121:sh": "076992b45eb563b56bdf278fe3a28efc136c911c267a87b536b5a5e14ac327b6",
-  "A20261009014121:sl": "a98f1d0d3b12358207c63d825f4fe8e24810551ad90b391902723c7239dc69b2",
+  "A20261009014121:sl": "71749208b666a92485a60a049b08879ea7e58535b3a12ec04cbb34af62498523",
   "A20261009015525:sh": "af4c4adaee919e8efac2ea767c04d8e1116edb795c3772f0ca62ad97fa9e957f",
   "A20261009015525:sl": "45ed50dc7e41013dcc0b678f8aa30f85f86bd5b92bd45df173f740aa8d09b05f"
  },
@@ -386,7 +386,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791530243,
+   "checked_at": 1791555131,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -399,17 +399,16 @@
      "video_identity": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0"
     }
    },
-   "key": "00f86134eba99361b4ece7d8c9430d389592dfda092c4a8858d223f89a97a15e",
+   "key": "579dfeeb4621ce3a11a1058effdae86425a856c92eda2ae7641579c51f95f9eb",
    "passed": false,
    "reasons": [
-    "independent_wording sl: Most remarks and reactions are close translations of the example's sentences. Examples: the pre-solved test, the AI-generated note 'po preverjanju izkazalo', 'Roko na srce, to pa sploh ni slaba fora... pri kakšnem profesorju bi še šlo skozi... tega ne poskušajte', the firecracker 'skozi okno učilnice vrgel petardo in s tem ogrozil', 'Kako ste vi sploh še vpisani na te šole? Jaz bi... že trikrat letela' and the Clash Royale trophies line. Remarks should be newly invented or anonymised, and the reactions rewritten.",
-    "directions_match sh: The directions never ask for burned-in captions, which the reference filming requires. The rest of the demo sequence and the cue quotes match the script."
+    "independent_wording sl: Most of the SL script translates the example's sentences closely. The hook, all five remarks, the 'not bad, don't try this' line, the segue, 'Gremo pa naprej na naslednjo opombo' and the firecracker joke are near-translations. The firecracker joke is 'Ne vem, kako vas sploh še imajo na teh šolah… trikrat letela ven'. The parents riff is also translated: 'starši bi res lahko počakali vsaj do roditeljskega', mum blushing at the meeting, 'vsaj do sestanka ste imeli mir'. Rewrite these as invented remarks in the same categories, with original jokes."
    ],
    "results": {
     "directions_match": {
      "sh": {
-      "issue": "The directions never ask for burned-in captions, which the reference filming requires. The rest of the demo sequence and the cue quotes match the script.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -442,7 +441,7 @@
       "pass": true
      },
      "sl": {
-      "issue": "Most remarks and reactions are close translations of the example's sentences. Examples: the pre-solved test, the AI-generated note 'po preverjanju izkazalo', 'Roko na srce, to pa sploh ni slaba fora... pri kakšnem profesorju bi še šlo skozi... tega ne poskušajte', the firecracker 'skozi okno učilnice vrgel petardo in s tem ogrozil', 'Kako ste vi sploh še vpisani na te šole? Jaz bi... že trikrat letela' and the Clash Royale trophies line. Remarks should be newly invented or anonymised, and the reactions rewritten.",
+      "issue": "Most of the SL script translates the example's sentences closely. The hook, all five remarks, the 'not bad, don't try this' line, the segue, 'Gremo pa naprej na naslednjo opombo' and the firecracker joke are near-translations. The firecracker joke is 'Ne vem, kako vas sploh še imajo na teh šolah… trikrat letela ven'. The parents riff is also translated: 'starši bi res lahko počakali vsaj do roditeljskega', mum blushing at the meeting, 'vsaj do sestanka ste imeli mir'. Rewrite these as invented remarks in the same categories, with original jokes.",
       "pass": false
      }
     },
@@ -458,7 +457,7 @@
     }
    },
    "status": "fail",
-   "summary": "Both pages follow the format and claim only real Memo AI features. SL fails independent wording because it largely translates the example's remarks and reactions, and SH's directions leave out the required burned-in captions.",
+   "summary": "Both countries follow the reference structure and only claim real Memo AI features, but the SL script is mostly a close translation of the example video and needs independent rewriting.",
    "title_fixes": {},
    "version": "group-2026-10-08.2"
   },
@@ -467,7 +466,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791530390,
+   "checked_at": 1791555243,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -480,11 +479,9 @@
      "video_identity": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab"
     }
    },
-   "key": "319831ed04542529eb36d05c256654978392c162270435e19d798ee23fce634a",
-   "passed": false,
-   "reasons": [
-    "directions_match sl: Six of the seven app cues in the script use a non-standard marker, '(📎 Memo AI · memoai.eu/creator – glej gradivo)', and the directions point to that marker. Only the first one is a real [CUE: ...] marker. Make all of them [CUE: Memo AI · memoai.eu/creator] and point the directions at that. Also, the directions list the 'new note → photos → upload' step last, after the features. Put it first so it matches the demo order."
-   ],
+   "key": "8ca9032e07723a8f9591192e8354699452804cbec8c06e38aef27e2a953674ee",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
@@ -492,8 +489,8 @@
       "pass": true
      },
      "sl": {
-      "issue": "Six of the seven app cues in the script use a non-standard marker, '(📎 Memo AI · memoai.eu/creator – glej gradivo)', and the directions point to that marker. Only the first one is a real [CUE: ...] marker. Make all of them [CUE: Memo AI · memoai.eu/creator] and point the directions at that. Also, the directions list the 'new note → photos → upload' step last, after the features. Put it first so it matches the demo order.",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "features_claims": {
@@ -537,8 +534,8 @@
      }
     }
    },
-   "status": "fail",
-   "summary": "Both scripts follow all 14 beats in order, show the app from beat 6 without speaking the brand, are worded independently, and keep the 'no guarantees' result line. Neither has invented features, and neither title needs fixing. The one fail is SL's filming directions: six of the seven app cues use a non-standard marker instead of [CUE: ...], and the demo steps are listed out of order.",
+   "status": "pass",
+   "summary": "Both the SH and SL versions follow all 14 beats in the reference order and replace the Astra steps with real Memo AI steps. They keep the brand on screen only, avoid grade guarantees, use their own wording and have filming directions that fit their scripts.",
    "title_fixes": {},
    "version": "group-2026-10-08.2"
   },
@@ -672,7 +669,7 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1791527938,
+ "last_run": 1791553417,
  "top3": [
   "A20261008205804",
   "A20261008210957",
