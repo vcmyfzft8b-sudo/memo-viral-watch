@@ -1,7 +1,7 @@
 {
  "audit": {
-  "A20261008204718:sh": "failed",
-  "A20261008204718:sl": "failed",
+  "A20261008204718:sh": "fixed",
+  "A20261008204718:sl": "fixed",
   "A20261008205804:sh": "fixed",
   "A20261008210957:sh": "fixed",
   "A20261008211912:sh": "failed",
@@ -20,8 +20,8 @@
   "A20261009210824:sl": "fixed"
  },
  "audit_fingerprints": {
-  "A20261008204718:sh": "cee760e015831ec2cc74bda869d4f09fc7a471035ce3452cd069fbf218557690",
-  "A20261008204718:sl": "1db0cac12423c0651aec4d0a35b4a560a2a39750b666e4896acd803e595c14e3",
+  "A20261008204718:sh": "b2fa88ddbfe26c4235d151a2335f56fab0862073fabf2d71cbbc78811ccc4ee6",
+  "A20261008204718:sl": "3d3adaab39e23eea1428ab438854551c09483e402ad9815e2f7de3cd15dc9418",
   "A20261008205804:sh": "e1710fe6af3e53183c3440a4461012ac7db71505e071fd007b0655069384e4e5",
   "A20261008210957:sh": "e8f783f3e3d946092c4cc0e6de2a142fe4a25a2e97e462b06f264fd7dc9b1d8f",
   "A20261008224450:sh": "cb3695e705fe5842108dbbdef719a5647927a6e104c61e371695ded7a37b8689",
@@ -34,7 +34,7 @@
   "A20261009014121:sl": "71749208b666a92485a60a049b08879ea7e58535b3a12ec04cbb34af62498523",
   "A20261009015525:sh": "af4c4adaee919e8efac2ea767c04d8e1116edb795c3772f0ca62ad97fa9e957f",
   "A20261009015525:sl": "45ed50dc7e41013dcc0b678f8aa30f85f86bd5b92bd45df173f740aa8d09b05f",
-  "A20261009210824:sl": "196e3f99f40e6c0ed9f9784c9b8567a31a0908af4819d413eab31fa92177573d"
+  "A20261009210824:sl": "45060c856db8efd0256049d664b79c6a001419bd7d0ef59c68f3552b9342e915"
  },
  "discovered_at": 1791527938,
  "group_audit": {
@@ -43,7 +43,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791528621,
+   "checked_at": 1791581660,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -56,28 +56,29 @@
      "video_identity": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e"
     }
    },
-   "key": "a7e6f700cb72f64c758a026290a2718998ca71bcb11825f7ff8a0c1320ecdbf6",
+   "key": "41a506cb6c24f5df1dec825c3bcf612f556c33562475de0546a5d70e3d3f9ae1",
    "passed": false,
    "reasons": [
-    "format_consistency sl: Stickers '1/4 Prevoz 🚆' and '3/4 Kino in gledališče 🍿' have no discount figure, and the reference requires one on every numbered sticker. Item 1 gives no real percentage. Item 3 names no local cinema chain (just 'v kinu'). The Memo AI item has two sentences instead of the original's one short sentence.",
-    "features_claims sh: The title '4 studentska popusta…' counts Memo AI as a fourth student discount, which the reference does not allow. Title fixed by removing the number.",
-    "directions_match sl: For item 4 the directions say to film yourself using the app on a phone ('posnemi sebe'), but they also call it a screen recording ('posnetek zaslona'). The reference asks for a screen recording. The script also has a stray duplicate cue '(📎 Memo AI · memoai.eu/creator – glej gradivo)' in the middle of the item."
+    "format_consistency sl: Items 1 and 3 have no real local operator, cinema chain or verified percentage ('vlak in avtobus precej cenejša', 'kino je s študentsko cenejši'). The hook drops the '99%' line, and Memo AI gets two sentences instead of the original's one. The spoken outro 'Pa srečno s študijem!' replaces the like-and-follow CTA.",
+    "script_matches_example sl: The example names specific discounts with figures (operator + %, cinema chain + %, theatres up to 50%). The SL script keeps only vague claims with no named operator or chain. The item 4 VO is longer than the example's single short line.",
+    "directions_match sh: There is no '4/4 Memo AI' numbered sticker in the cues or directions, so not every item gets an n/4 sticker. The rest of the screen-recording sequence and the outro match.",
+    "directions_match sl: Stickers 1/4 and 3/4 have no discount figure, and there is no '4/4 Memo AI' sticker. The outro contradicts itself: the creator waves and says 'Pa srečno s študijem!', then a separate silent like-and-follow gesture shot is added that the script doesn't have."
    ],
    "results": {
     "directions_match": {
      "sh": {
-      "issue": "",
-      "pass": true
+      "issue": "There is no '4/4 Memo AI' numbered sticker in the cues or directions, so not every item gets an n/4 sticker. The rest of the screen-recording sequence and the outro match.",
+      "pass": false
      },
      "sl": {
-      "issue": "For item 4 the directions say to film yourself using the app on a phone ('posnemi sebe'), but they also call it a screen recording ('posnetek zaslona'). The reference asks for a screen recording. The script also has a stray duplicate cue '(📎 Memo AI · memoai.eu/creator – glej gradivo)' in the middle of the item.",
+      "issue": "Stickers 1/4 and 3/4 have no discount figure, and there is no '4/4 Memo AI' sticker. The outro contradicts itself: the creator waves and says 'Pa srečno s študijem!', then a separate silent like-and-follow gesture shot is added that the script doesn't have.",
       "pass": false
      }
     },
     "features_claims": {
      "sh": {
-      "issue": "The title '4 studentska popusta…' counts Memo AI as a fourth student discount, which the reference does not allow. Title fixed by removing the number.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -90,7 +91,7 @@
       "pass": true
      },
      "sl": {
-      "issue": "Stickers '1/4 Prevoz 🚆' and '3/4 Kino in gledališče 🍿' have no discount figure, and the reference requires one on every numbered sticker. Item 1 gives no real percentage. Item 3 names no local cinema chain (just 'v kinu'). The Memo AI item has two sentences instead of the original's one short sentence.",
+      "issue": "Items 1 and 3 have no real local operator, cinema chain or verified percentage ('vlak in avtobus precej cenejša', 'kino je s študentsko cenejši'). The hook drops the '99%' line, and Memo AI gets two sentences instead of the original's one. The spoken outro 'Pa srečno s študijem!' replaces the like-and-follow CTA.",
       "pass": false
      }
     },
@@ -110,16 +111,14 @@
       "pass": true
      },
      "sl": {
-      "issue": "",
-      "pass": true
+      "issue": "The example names specific discounts with figures (operator + %, cinema chain + %, theatres up to 50%). The SL script keeps only vague claims with no named operator or chain. The item 4 VO is longer than the example's single short line.",
+      "pass": false
      }
     }
    },
    "status": "fail",
-   "summary": "SH follows the format closely and only needs a title fix so Memo AI isn't counted as a discount; SL fails on stickers without figures, no named cinema chain, a two-sentence Memo AI item and contradictory screen-recording directions.",
-   "title_fixes": {
-    "sh": "Studentski popusti koje skoro svi propuštaju 🎟️"
-   },
+   "summary": "SH follows the format apart from the missing 4/4 Memo AI sticker in its directions. SL drifts from the format: its local discounts aren't named or quantified, it has no spoken like-and-follow outro, its stickers have no figures, and its outro directions contradict each other.",
+   "title_fixes": {},
    "version": "group-2026-10-08.2"
   },
   "A20261008205804": {

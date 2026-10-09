@@ -4645,6 +4645,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-8139-9958-e2284b9585bc": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Nalepiš izrezan logotip aplikacije na prazno polje) Polje je kupila ena aplikacija, več o njej vam povem takoj. Pomaga dijakom in študentom pri učenju, deluje pa v brskalniku na telefonu ali prenosniku. ",
+   "text": {
+    "content": "(Nalepiš izrezan logotip aplikacije na prazno polje) Polje je kupila ena aplikacija, več o njej vam povem takoj. Pomaga dijakom in študentom pri učenju, deluje pa v brskalniku na telefonu ali prenosniku. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8139-9e28-ee69ebf622a2": [
   {
    "annotations": {
@@ -5393,6 +5412,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-8158-ba2f-c7fc98c60b74": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Redoslijed demonstracije prati scenarij: ubacivanje PDF-a, prezentacije ili snimka predavanja → gotove bilješke s formulama → kartice → kviz s objašnjenjima → probni test s rezultatom u postotku → podcast.",
+   "text": {
+    "content": "Redoslijed demonstracije prati scenarij: ubacivanje PDF-a, prezentacije ili snimka predavanja → gotove bilješke s formulama → kartice → kviz s objašnjenjima → probni test s rezultatom u postotku → podcast.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-8159-952f-f99068abc963": [
   {
    "annotations": {
@@ -5667,6 +5705,25 @@
    "plain_text": "Izbliza snimi poleđinu laptopa dok kod rečenice „Idemo ga izrezati, samo da ne izrežem i laptop.” izrezuješ označeno polje; ostavi nespretno, neglatko rezanje u videu.",
    "text": {
     "content": "Izbliza snimi poleđinu laptopa dok kod rečenice „Idemo ga izrezati, samo da ne izrežem i laptop.” izrezuješ označeno polje; ostavi nespretno, neglatko rezanje u videu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8160-bb74-c88c16d94634": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Držiš zaprt prenosnik, pokrov s polji in cenami je obrnjen proti kameri) Na hrbtni strani prenosnika sem odprla oglasni prostor in prvo polje je že prodano. Vsak kvadratek ima svojo ceno, od pet do petdeset evrov. (Pokažeš na prodano polje) Tale tukaj pa ima zdaj lastnika. (Nerodno izrezuješ papir s prodanega polja) Okej, zdaj ga moram nekako spraviti stran, samo da ne potrgam vsega. Hm, malo grbasto je, ampak bo čisto v redu. ",
+   "text": {
+    "content": "(Držiš zaprt prenosnik, pokrov s polji in cenami je obrnjen proti kameri) Na hrbtni strani prenosnika sem odprla oglasni prostor in prvo polje je že prodano. Vsak kvadratek ima svojo ceno, od pet do petdeset evrov. (Pokažeš na prodano polje) Tale tukaj pa ima zdaj lastnika. (Nerodno izrezuješ papir s prodanega polja) Okej, zdaj ga moram nekako spraviti stran, samo da ne potrgam vsega. Hm, malo grbasto je, ampak bo čisto v redu. ",
     "link": null
    },
    "type": "text"
@@ -6278,6 +6335,25 @@
    "plain_text": "Drži poklopac laptopa okrenut prema kameri, podijeljen trakom ili isprekidanim linijama na polja s cijenama u tvojoj valuti, i odmah pričaj u kameru dok je naslov na ekranu.",
    "text": {
     "content": "Drži poklopac laptopa okrenut prema kameri, podijeljen trakom ili isprekidanim linijama na polja s cijenama u tvojoj valuti, i odmah pričaj u kameru dok je naslov na ekranu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-8179-af39-ce85b8753996": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Na zaslonu najprej pokaži končan zapisek iz prosojnic s predavanja, nato hitro tapni ali podrsaj na kartice ali miselni vzorec.",
+   "text": {
+    "content": "Na zaslonu najprej pokaži končan zapisek iz prosojnic s predavanja, nato hitro tapni ali podrsaj na kartice ali miselni vzorec.",
     "link": null
    },
    "type": "text"
@@ -7946,6 +8022,169 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81be-9d22-ee912217504c": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Vanjo naložite svoj PDF, prosojnice ali pa kar posnamete predavanje. (",
+   "text": {
+    "content": ") Vanjo naložite svoj PDF, prosojnice ali pa kar posnamete predavanje. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Izberete slovenščino in čez par minut dobite pregledne zapiske, kjer so tudi formule lepo zapisane. (",
+   "text": {
+    "content": ") Izberete slovenščino in čez par minut dobite pregledne zapiske, kjer so tudi formule lepo zapisane. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Potem so tu kartice za učenje na pamet, kviz z razlagami in poskusni test, ki vam pokaže odstotek. (",
+   "text": {
+    "content": ") Potem so tu kartice za učenje na pamet, kviz z razlagami in poskusni test, ki vam pokaže odstotek. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Vse lahko spremenite celo v podcast in ga poslušate na avtobusu ali med sprehodom. ",
+   "text": {
+    "content": ") Vse lahko spremenite celo v podcast in ga poslušate na avtobusu ali med sprehodom. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81be-a7e3-e540d23ae119": [
   {
    "annotations": {
@@ -8444,6 +8683,25 @@
    "plain_text": "U mapi uma pokaži jedro, mitohondrije i membranu, a kod tutora neka se čuje kako govori naglas i prekini ga pitanjem.",
    "text": {
     "content": "U mapi uma pokaži jedro, mitohondrije i membranu, a kod tutora neka se čuje kako govori naglas i prekini ga pitanjem.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81d1-bae4-f253bb7425ac": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Spet v kamero, pokrov z nalepljenim logotipom je viden) Pokukajte, kaj zmore, in mi v komentarje napišite, kdo bo po vašem kupil naslednje polje. ",
+   "text": {
+    "content": "(Spet v kamero, pokrov z nalepljenim logotipom je viden) Pokukajte, kaj zmore, in mi v komentarje napišite, kdo bo po vašem kupil naslednje polje. ",
     "link": null
    },
    "type": "text"
@@ -9281,6 +9539,25 @@
    "plain_text": "Kad čitaš bilješke (npr. „Pusti me, stara, igram Clash Royale“), ubaci screenshot te bilješke iz e-dnevnika kao bijelu karticu ispod lica, preko donje polovine ekrana – tako da se tvoje lice i dalje vidi dok reaguješ.",
    "text": {
     "content": "Kad čitaš bilješke (npr. „Pusti me, stara, igram Clash Royale“), ubaci screenshot te bilješke iz e-dnevnika kao bijelu karticu ispod lica, preko donje polovine ekrana – tako da se tvoje lice i dalje vidi dok reaguješ.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f465e84-a3c2-81f1-9599-ceda97ab15d7": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Izbliza snimi kako lijepiš isprintan logo Memo AI na izrezano polje.",
+   "text": {
+    "content": "Izbliza snimi kako lijepiš isprintan logo Memo AI na izrezano polje.",
     "link": null
    },
    "type": "text"

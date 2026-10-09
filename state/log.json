@@ -987,5 +987,69 @@
   "type": "alert",
   "video": "7692061360221457686",
   "views": 1100000
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261009015525",
+   "A20261008224450",
+   "A20261009014121"
+  ],
+  "ts": 1791581146,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261009015525",
+   "A20261008224450",
+   "A20261009014121"
+  ],
+  "ts": 1791581146,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008204718",
+  "reasons": [
+   "cross-country check fail: format_consistency sl: Items 1 and 3 have no real local operator, cinema chain or verified percentage ('vlak in avtobus precej cenejša', 'kino je s študentsko cenejši'). The hook drops the '99%' line, and Memo AI gets two sentences instead of the original's one. The spoken outro 'Pa srečno s študije"
+  ],
+  "tries": 4,
+  "ts": 1791581691,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example's second on-screen line names the brand ('uz Astra AI'), but our second line ('Srećom, sad i mozak možeš lag / script reworde",
+   "🇸🇮 script reworded again: The example's on-screen text names the brand in the second line ('uz Astra AI'), but our second line never says Memo AI. / filming direct"
+  ],
+  "tries": 4,
+  "ts": 1791582230,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261009210824",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The original names the brand aloud twice: 'kupio ovo polje od Studyflash' and 'Studyflash je tvrtka osnova"
+  ],
+  "tries": 2,
+  "ts": 1791582669,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791582676,
+  "type": "rerank"
  }
 ]
