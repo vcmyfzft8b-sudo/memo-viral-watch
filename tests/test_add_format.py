@@ -59,3 +59,17 @@ class AddFormatFailureTests(unittest.TestCase):
                 main.add_format(['https://www.tiktok.com/@a/video/1'])
         self.assertIn('session limit', str(e.exception))
         push.assert_called_once()
+
+
+class OriginalSubtitleTests(unittest.TestCase):
+    def test_the_original_speech_track_wins_over_tiktoks_translation(self):
+        item = {'id': '1', 'createTime': 1, 'desc': '', 'stats': {}, 'video': {'duration': 30, 'subtitleInfos': [
+            {'Url': 'mt', 'Source': 'MT', 'LanguageCodeName': 'hrv-HR'},
+            {'Url': 'asr', 'Source': 'ASR', 'LanguageCodeName': 'deu-DE'}]}}
+        got = []
+        with mock.patch.object(main.tiktok, '_item', return_value=(item, None)), \
+                mock.patch.object(main.tiktok, '_get', side_effect=lambda url, tries=3, session=None: got.append(url) or 'WEBVTT\n\nHallo'), \
+                mock.patch.object(main.tiktok.time, 'sleep'):
+            d = main.tiktok.video_detail('a', '1')
+        self.assertEqual(got, ['asr'])
+        self.assertEqual(d['subtitles'], 'Hallo')

@@ -83,6 +83,6 @@
     "campaigns": {}
   },
   "other_apps": {
-    "Studyflash": "study\\s*-?\\s*flash"
+    "Studyflash": "stud(?:y|io|ie|i)\\s*-?\\s*fl[ae]sh"
   }
 }
