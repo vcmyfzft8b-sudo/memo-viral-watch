@@ -9506,6 +9506,25 @@
    "type": "text"
   }
  ],
+ "3f465e84-a3c2-81f0-b578-ceadc0d31413": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Posnemi bližnji plan, kako izrezan logotip aplikacije nalepiš na prazno polje.",
+   "text": {
+    "content": "Posnemi bližnji plan, kako izrezan logotip aplikacije nalepiš na prazno polje.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f465e84-a3c2-81f1-899b-dfc1689f9b50": [
   {
    "annotations": {

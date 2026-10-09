@@ -1051,5 +1051,50 @@
   ],
   "ts": 1791582676,
   "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791584650,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791584650,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261009210824",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The brand intro leaves out the reference beat 6 point that Memo AI works in the browser on any phone or laptop. The demo also drops 'formulas shown properly' from the notes beat, and the language line does not name Croatian/Bosnian/Serbian. Everything else (hook, board, sold f"
+  ],
+  "tries": 1,
+  "ts": 1791584813,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261008231529",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791584821,
+  "type": "rerank"
  }
 ]

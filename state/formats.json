@@ -257,10 +257,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script reworded again: The original names the brand aloud twice: 'kupio ovo polje od Studyflash' and 'Studyflash je tvrtka osnova"
+    "cross-country check fail: format_consistency sh: The brand intro leaves out the reference beat 6 point that Memo AI works in the browser on any phone or laptop. The demo also drops 'formulas shown properly' from the notes beat, and the language line does not name Croatian/Bosnian/Serbian. Everything else (hook, board, sold f"
    ],
    "since": 1791580932,
-   "tries": 2
+   "tries": 1
   },
   "reworded": {
    "sh": true,
