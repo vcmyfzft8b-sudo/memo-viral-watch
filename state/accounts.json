@@ -24,12 +24,14 @@
   "status": "active"
  },
  "creatortipsbymonika": {
+  "blocked": true,
+  "blocked_reason": "user, 10 Oct 2026: Astra's creator-recruiting account, not a creator",
   "checked": 1791531184,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791491762,
   "source": "lightreel-2026-10-08",
-  "status": "active"
+  "status": "inactive"
  },
  "foxara.vas.uci": {
   "checked": 1791531186,
