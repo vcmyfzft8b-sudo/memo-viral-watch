@@ -112,7 +112,6 @@
   "title": "Top 5 najlakših fakulteta 🎓"
  },
  {
-  "archived_reason": "did not pass the page check: 🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (24 words (original 29)) / script corrected towards the original: Line 2 is reworded. The original 'Pa highkey nadogradiš ; 🇸🇮 rewrite refused: the scrip",
   "created": 1791494352,
   "description": "No-voiceover POV meme with trending audio: creator looks stressed during a test because she can't remember a slide, then a handheld shot of a laptop screen showing the study app as the 'brain upgrade'.",
   "faithful": {
@@ -132,22 +131,13 @@
   "pages": {
    "sl": "3f365e84-a3c2-816c-89f2-f02737fabba1"
   },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (24 words (original 29)) / script corrected towards the original: Line 2 is reworded. The original 'Pa highkey nadogradiš ",
-    "🇸🇮 rewrite refused: the script has 19 words, it must have 24-37 / script corrected towards the original: The original's second line 'Pa highkey nadogradiš mozak uz"
-   ],
-   "since": 1791645064,
-   "tries": 4
-  },
   "reworded": {
    "sh": true,
    "sl": true
   },
   "script": "POV: Sjetiš se baš tog jednog slajda na testu, a mozak ti nema premium paket 😭 Pa highkey nadogradiš mozak uz Memo AI 🧠",
   "source_video": "https://www.tiktok.com/@studywithreveka/video/7691071853334498580",
-  "status": "archived",
+  "status": "pending",
   "title": "Mozak premium uz Memo AI 🧠"
  },
  {
@@ -369,7 +359,6 @@
   "title": "Prodajem mjesto na laptopu za reklamu 🤑"
  },
  {
-  "archived_reason": "did not pass the page check: cross-country check fail: format_consistency sh: The CUE that shows Memo AI sits in the middle of beat 4, before the last gossip question. That puts the app on screen before the final phone close-up. ",
   "created": 1791637493,
   "description": "Satisfying ASMR-style prop action (squeezing ketchup into a glass of water) while the audio is a live conversation with the app's voice tutor explaining a school topic as juicy gossip, ending with a close-up of the phone showing the voice tutor and an 'the app is called X' text overlay.",
   "faithful": {
@@ -389,26 +378,26 @@
   "pages": {
    "sl": "3f565e84-a3c2-8128-b4dc-e7924264635c"
   },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "cross-country check fail: format_consistency sh: The CUE that shows Memo AI sits in the middle of beat 4, before the last gossip question. That puts the app on screen before the final phone close-up. The script also never places the beat-5 reveal (phone close-up with the overlay 'aplikacija se zove Memo AI') at the end.; for"
-   ],
-   "since": 1791638262,
-   "tries": 4
-  },
   "reworded": {
    "sh": true,
    "sl": true
   },
   "script": "Čak je i telefon u tvojoj ruci sastavljen od atoma. Stani, stani, stani. Stani malo, a možeš li mi to ispričati kao neki sočan trač? Može, slušaj ovo: jezgro ti je glavna zvijezda koju svi prate, a elektroni? E, oni su kao fanovi koji se stalno motaju okolo, a nikad mu ne uspiju prići skroz blizu. Ludo, zar ne? Jesu li ti elektroni, po tebi, vjerni fanovi? Kao kad nekome posudiš bilješke – čista sapunica, jel' da? A koji su atomi, po tebi, najgori u ovoj trač ekipi?",
   "source_video": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930",
-  "status": "archived",
+  "status": "pending",
   "title": "Gradivo kao sočan trač 🍿"
  },
  {
   "created": 1791648877,
   "description": "Talking-head 'ranking/list of student types' video while making a drink on camera, where the last type leads into a friend's study-app recommendation with a screen recording of the app on a laptop and a 'part 2' teaser.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261010161437",
   "listed_at": 1791662147,
   "localized": {
@@ -430,6 +419,14 @@
  {
   "created": 1791649226,
   "description": "Funny talking-head study vlog where the creator's sister froze her apartment keys in ice so she has to study until it melts, with a study montage set to a love song whose 'only you I need' line lands on the study app on screen.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261010162026",
   "listed_at": 1791662170,
   "localized": {
@@ -448,6 +445,14 @@
  {
   "created": 1791649768,
   "description": "Talking-head 'secret app' reveal where the creator does a casual drink-making activity with an on-screen list of university faculties, then films a laptop screen showing the app's lessons and quizzes, naming the app at the end and asking viewers to comment if their faculty is on the list.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261010162928",
   "listed_at": 1791662669,
   "localized": {
@@ -470,6 +475,14 @@
  {
   "created": 1791650318,
   "description": "Talking-head creator cuts a paper strip of the day's 24 hours with scissors to show how little study time is left, then demos the study app's features on a tablet.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261010163838",
   "listed_at": 1791662198,
   "localized": {
