@@ -1285,6 +1285,7 @@ def main():
     ap.add_argument('--faithful-rewrite', action='store_true', help='once: every page script becomes the original transcribed/translated almost 1:1 (only the app swapped)')
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
+    ap.add_argument('--reopen', default='', help='format id: an archived format gets fresh quality-check tries (e.g. after its script was approved by hand)')
     ap.add_argument('--renote', action='store_true', help='every page (live, waiting, archived): the note under the inspiration video gets the current text')
     ap.add_argument('--fix-cues', action='store_true', help="every page: the app shown as a '📎 material' cue becomes the app link cue")
     ap.add_argument('--trash-staging', default='', help='page ids (comma-separated): move these leftover staging pages to the Notion trash - only if no format uses them')
@@ -1594,6 +1595,18 @@ def main():
         for f in fmts:
             if f.get('status') in ('pending', 'active') or (f.get('archived_reason') or '').startswith('did not pass'):
                 print(f"gate-now: {f.get('status'):8} | {f['title']}", flush=True)
+        return
+    if a.reopen:
+        fmts = load_formats()
+        f = next((f for f in fmts if f['id'] == a.reopen.strip()), None)
+        if not f:
+            raise SystemExit(f'reopen: no format {a.reopen}')
+        if f.get('status') != 'active':
+            f['status'] = 'pending'
+            f.pop('pending', None)
+            f.pop('archived_reason', None)
+        state.save('formats.json', fmts)
+        print('reopened:', f['title'], '->', f['status'])
         return
     if a.renote:
         cfg, n = load_config(), 0
