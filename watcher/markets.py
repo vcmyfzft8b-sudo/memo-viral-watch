@@ -31,15 +31,26 @@ TEXT = {
         'codes': ('sr', 'hr', 'bs', 'sh', 'cnr', 'me'),
         'names': ('serbo-croatian', 'serbian', 'croatian', 'bosnian', 'montenegrin', 'bcs', 'bcms'),
         'video_heading': 'Video za inspiraciju', 'source': 'Original na TikToku',
+        # The ⚠️ note under the inspiration video. Its first 30 characters tell "same language" (…_same) from "other
+        # language" apart (audit._note_is_same) - keep those starts as they are.
         'inspo_note': [
-            '**Važno:** Snimi svoj video po scenariju ispod. Video za inspiraciju ti pokazuje samo tempo, atmosferu, '
-            'svjetlo i uglove kamere – kako izgleda ekran i kako pokazuješ aplikaciju.',
-            f'U videu se koristi {SOURCE}. Napravi sve isto, samo s aplikacijom {OURS}: pokaži sve što se vidi u videu za '
-            f'inspiraciju – otvori {OURS} u trenucima kad se otvara {SOURCE} i pokaži ga na isti način. {SOURCE} se u tvom '
-            'videu nigdje ne smije vidjeti ni čuti.'],
-        'inspo_note_same': '**Važno:** Video za inspiraciju je na našem jeziku i pokazuje upravo ovaj format – uzmi ga kao '
-                           'uzor za tempo, atmosferu, svjetlo, uglove kamere i način na koji pokazuješ aplikaciju. Ali '
-                           'izgovori naš scenarij ispod, ne tekst iz videa.',
+            '**Važno:** Snimi svoj video po scenariju ispod. Video za inspiraciju je od drugog brenda i nije video koji '
+            'trebaš napraviti. Od njega kopiraj samo ukupnu atmosferu (vibe), uglove kamere, način snimanja, montažu i '
+            'trenutke u kojima se pokazuje aplikacija (demo) – za to služe videi za inspiraciju.',
+            f'U videu se koristi druga aplikacija. Napravi sve isto, samo s aplikacijom {OURS}: otvori {OURS} u trenucima '
+            'kad se u videu otvara ta aplikacija i pokaži ga na isti način. Ta aplikacija se u tvom videu nigdje ne smije '
+            'vidjeti ni čuti.'],
+        'inspo_note_same': '**Važno:** Video za inspiraciju je na našem jeziku i pokazuje upravo ovaj format, ali je od '
+                           'drugog brenda i nije video koji trebaš napraviti. Od njega kopiraj samo ukupnu atmosferu (vibe), '
+                           'uglove kamere, način snimanja, montažu i trenutke u kojima se pokazuje aplikacija (demo) – za to '
+                           'služe videi za inspiraciju. Izgovori naš scenarij ispod, ne tekst iz videa.',
+        # inspiration video that is already a Memo AI video (our own creators' videos, added by hand)
+        'inspo_note_own': f'**Važno:** Snimi svoj video po scenariju ispod. Video za inspiraciju je već {OURS} video. Od '
+                          'njega kopiraj ukupnu atmosferu (vibe), uglove kamere, način snimanja, montažu i trenutke u '
+                          'kojima se pokazuje aplikacija (demo).',
+        'inspo_note_own_same': f'**Važno:** Video za inspiraciju je na našem jeziku, pokazuje upravo ovaj format i već je '
+                               f'{OURS} video. Uzmi ga kao uzor za ukupnu atmosferu (vibe), uglove kamere, način snimanja, '
+                               'montažu i trenutke u kojima se pokazuje aplikacija (demo). Izgovori naš scenarij ispod.',
         'title_h': 'NASLOV', 'script_h': '💬SCENARIJ', 'hook_h': '🎬 VIZUELNI HOOK', 'res_h': 'MATERIJALI',
         'sub_voice': 'Automatski titlovi', 'sub_silent': 'Muzika iz biblioteke platforme, bez glasa',
         'silent_label': 'Tekst na ekranu – ne izgovaraj:',
@@ -99,14 +110,22 @@ TEXT = {
         'names': ('slovenian', 'slovene'),
         'video_heading': 'Video za navdih', 'source': 'Original na TikToku',
         'inspo_note': [
-            '**Pomembno:** Posnemi svoj video po scenariju spodaj. Video za navdih ti pokaže le tempo, vzdušje, svetlobo '
-            'in kote kamere – kako izgleda zaslon in kako pokažeš aplikacijo.',
-            f'V videu je uporabljena aplikacija {SOURCE}. Naredi vse enako, le z aplikacijo {OURS}: pokaži vse, kar se vidi '
-            f'v videu za navdih – odpri {OURS} v trenutkih, ko se odpre {SOURCE}, in ga pokaži na enak način. {SOURCE} se v '
-            'tvojem videu ne sme nikjer videti ali slišati.'],
-        'inspo_note_same': '**Pomembno:** Video za navdih je v slovenščini in prikazuje točno ta format – vzemi ga za zgled '
-                           'za tempo, vzdušje, svetlobo, kote kamere in način, kako pokažeš aplikacijo. Povej pa naš '
-                           'scenarij spodaj, ne besedila iz videa.',
+            '**Pomembno:** Posnemi svoj video po scenariju spodaj. Video za navdih je od druge znamke in ni video, ki ga '
+            'moraš posneti. Od njega kopiraj le splošno vzdušje (vibe), kote kamere, način snemanja, montažo in trenutke, '
+            'ko se pokaže aplikacija (demo) – za to so videi za navdih.',
+            f'V videu je uporabljena druga aplikacija. Naredi vse enako, le z aplikacijo {OURS}: odpri {OURS} v trenutkih, '
+            'ko se v videu odpre ta aplikacija, in ga pokaži na enak način. Te aplikacije se v tvojem videu ne sme nikjer '
+            'videti ali slišati.'],
+        'inspo_note_same': '**Pomembno:** Video za navdih je v slovenščini in prikazuje točno ta format, ampak je od druge '
+                           'znamke in ni video, ki ga moraš posneti. Od njega kopiraj le splošno vzdušje (vibe), kote '
+                           'kamere, način snemanja, montažo in trenutke, ko se pokaže aplikacija (demo) – za to so videi za '
+                           'navdih. Povej naš scenarij spodaj, ne besedila iz videa.',
+        'inspo_note_own': f'**Pomembno:** Posnemi svoj video po scenariju spodaj. Video za navdih je že {OURS} video. Od '
+                          'njega kopiraj splošno vzdušje (vibe), kote kamere, način snemanja, montažo in trenutke, ko se '
+                          'pokaže aplikacija (demo).',
+        'inspo_note_own_same': f'**Pomembno:** Video za navdih je v slovenščini, prikazuje točno ta format in je že {OURS} '
+                               'video. Vzemi ga za zgled za splošno vzdušje (vibe), kote kamere, način snemanja, montažo in '
+                               'trenutke, ko se pokaže aplikacija (demo). Povej naš scenarij spodaj.',
         'title_h': 'NASLOV', 'script_h': '💬SCENARIJ', 'hook_h': '🎬 VIZUALNI HOOK', 'res_h': 'GRADIVO',
         'sub_voice': 'Samodejni podnapisi', 'sub_silent': 'Glasba iz knjižnice platforme, brez glasu',
         'silent_label': 'Besedilo na zaslonu – ne govori:',
@@ -182,6 +201,13 @@ def avoid_found(lang, text):
     """Words that do not belong on this market's pages (ekavian forms on ijekavian pages, Serbo-Croatian on Slovenian)."""
     bad = set(TEXT[lang].get('avoid_words', '').split())
     return sorted({w for w in re.findall(r'\w+', (text or '').lower()) if w in bad})
+
+
+def of(mkts, fmt):
+    """The markets a format is made for: all, or only those in fmt['only_markets'] (e.g. a Slovenian-only format added
+    by hand). Every per-format loop over the markets goes through this."""
+    only = (fmt or {}).get('only_markets')
+    return [mk for mk in mkts if not only or mk['key'] in only]
 
 
 def load(cfg):

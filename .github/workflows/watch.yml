@@ -8,7 +8,7 @@ on:
       mode:
         description: 'normal = alerts + build pages · only-detect = alerts only · dry-run = no alerts, no writes'
         type: choice
-        options: [normal, only-detect, dry-run, test-notify, test-claude, setup-notion, hook-lab, fill-markets, reset-pending, verify, export, trash-staging, fix-cues, gate-now, relocalize, faithful-rewrite, relayout, relink, accounts-sync, bootstrap, check-hot, test-discord, relist, weekly, own-sync, megasheet-check, lineup, lineup-apply, localize, localize-recheck, reword, reword-dry, audit, audit-failed, group-audit, group-audit-force, group-fix, approval-drafts, apply-approved, gate-rehearsal, align, standardize, accounts-add]
+        options: [normal, only-detect, dry-run, test-notify, test-claude, setup-notion, hook-lab, fill-markets, reset-pending, verify, export, trash-staging, fix-cues, renote, gate-now, relocalize, faithful-rewrite, relayout, relink, accounts-sync, bootstrap, check-hot, test-discord, relist, weekly, own-sync, megasheet-check, lineup, lineup-apply, localize, localize-recheck, reword, reword-dry, audit, audit-failed, group-audit, group-audit-force, group-fix, approval-drafts, apply-approved, gate-rehearsal, align, standardize, accounts-add]
         default: normal
       test_viral:
         description: 'Optional: TikTok video URL -> send the full VIRAL Slack message for it (no Notion changes)'
@@ -146,6 +146,7 @@ jobs:
             export)      python -m watcher.main --export ;;
             trash-staging) python -m watcher.main --trash-staging "$TARGET" ;;
             fix-cues)    python -m watcher.main --fix-cues ;;
+            renote)      python -m watcher.main --renote ;;
             gate-now)    python -m watcher.main --gate-now ;;
             relocalize)  python -m watcher.main --relocalize ;;
             faithful-rewrite) python -m watcher.main --faithful-rewrite ;;

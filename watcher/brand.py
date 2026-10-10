@@ -62,3 +62,20 @@ def count_source(text):
 
 def count_ours(text):
     return len(OURS_RE.findall(text or ''))
+
+
+def count_app(text):
+    """How often an ORIGINAL names its app - the watched/other app, or Memo AI itself (videos of our own creators added
+    by hand). The script names Memo AI exactly that often."""
+    return count_source(text) + count_ours(text)
+
+
+def links_for(links, fmt):
+    """The page links of one format: a format can have its own app link (fmt['app_link'], e.g. a page on memoai.eu
+    with the exact thing creators film for this format) instead of the general one."""
+    return {**links, CUE: fmt['app_link']} if (fmt or {}).get('app_link') else links
+
+
+def cue_label(link):
+    """Label of the app link cue: 'Memo AI · memoai.eu/creator' (or the format's own page)."""
+    return f"{OURS} · {re.sub(r'^https?://(www\.)?', '', link or '').rstrip('/')}" if link else CUE_LABEL

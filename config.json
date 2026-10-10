@@ -83,6 +83,7 @@
     "campaigns": {}
   },
   "other_apps": {
-    "Studyflash": "stud(?:y|io|ie|i)\\s*-?\\s*fl[ae]sh"
+    "Studyflash": "stud(?:y|io|ie|i)\\s*-?\\s*fl[ae]sh",
+    "Turbo AI": "\\bturbo\\s*-?\\s*\\.?\\s*a\\.?\\s*i\\b"
   }
 }

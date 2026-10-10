@@ -1,0 +1,56 @@
+{
+  "_about": "Options for formats added by hand (add_format), keyed by the example video's id. only_markets: only these lists (e.g. [\"sl\"]). app_link: the format's own page on memoai.eu that creators film (instead of memoai.eu/creator). brief: note from the campaign team for the script writer and the checks. own_brand: the example is already a Memo AI video of our own creators.",
+  "7685932867339209998": {
+    "app_link": "https://www.memoai.eu/ugc/oral-quiz",
+    "brief": "The original promotes another app's oral quiz page (Turbo AI). Our version uses Memo AI's oral quiz page https://www.memoai.eu/ugc/oral-quiz: the creator opens it on a laptop, picks their language and presses play - it plays a short spoken quiz dialogue (two voices) with the text on screen. The creator does NOT say these lines: exactly like the original, they film their own embarrassed / laughing reaction while the quiz audio plays, then turn the camera to the laptop screen with the quiz. The script is the dialogue that plays from that page - use the page's own wording for the page language (Slovenian page: the Slovenian version below; Serbo-Croatian page: the Croatian version below - creators can also pick Bosnian or Serbian on the page), for the same lines the original plays (if the original stops mid-way, stop at the same point). Put cue 'memo' where the laptop with the oral quiz is shown. The quiz dialogue names no app, so the spoken script does not name Memo AI either. 'DICK' is the medical mnemonic (dextrose, insulin, calcium, Kayexalate) and the joke of the format - keep it. SLOVENIAN: 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' / 'Seveda samo s privolitvijo.' / 'Pacientka je nezavestna. Privolitve ne more dati.' / 'Potem ji moraš DICK vseeno dati.' / 'Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.' / 'Dati jih moraš v tem vrstnem redu, in sicer takole. Dekstroza gre najprej kot IV bolus, da insulin ne zniža preveč krvnega sladkorja. Insulin gre IV takoj za njo in v približno petnajstih minutah potisne kalij v celice. Kalcijev glukonat daš IV v nekaj minutah, da zaščitiš srce pred aritmijo, medtem ko kalij pada. Kayexalate pride zadnji, skozi usta ali rektalno, da odvečni kalij za vedno odstrani iz telesa.' CROATIAN: 'Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?' / 'Pa naravno, samo uz pristanak.' / 'Pacijentica je bez svijesti. Ne može dati pristanak.' / 'Onda joj DICK moraš dati svejedno.' / 'Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.' / 'Moraš ih dati tim redoslijedom, i to ovako. Dekstroza ide prva kao IV bolus, da inzulin ne sruši šećer u krvi. Inzulin ide IV odmah za njom i za otprilike petnaest minuta potiskuje kalij u stanice. Kalcijev glukonat daješ IV kroz nekoliko minuta da zaštitiš srce od aritmije dok kalij pada. Kayexalate ide zadnji, na usta ili rektalno, da zauvijek izbaci višak kalija iz tijela.'"
+  },
+  "7690627181776620822": {
+    "only_markets": [
+      "sl"
+    ],
+    "own_brand": true
+  },
+  "7681308323064368406": {
+    "only_markets": [
+      "sl"
+    ],
+    "own_brand": true
+  },
+  "7694637898045426966": {
+    "only_markets": [
+      "sl"
+    ],
+    "own_brand": true
+  },
+  "7689133868242177302": {
+    "only_markets": [
+      "sl"
+    ],
+    "own_brand": true
+  },
+  "7689496592142978326": {
+    "only_markets": [
+      "sl"
+    ],
+    "own_brand": true
+  },
+  "7689520427110092054": {
+    "only_markets": [
+      "sl"
+    ],
+    "own_brand": true
+  },
+  "7688806667072474391": {
+    "only_markets": [
+      "sl"
+    ],
+    "own_brand": true
+  },
+  "7691761923930524950": {
+    "only_markets": [
+      "sl"
+    ],
+    "own_brand": true,
+    "brief": "Keep the script 1:1, with one change: the original creator's personal discount code (ŠPELA50) becomes '[TVOJA KODA]' - every creator says their own Memo AI code there."
+  }
+}

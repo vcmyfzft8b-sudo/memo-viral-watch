@@ -19,7 +19,7 @@ import time
 import traceback
 
 from . import align, audit, builder, classify, crosscheck, detect, discover, gate, hot, lineup, llm, localize, markets as M, media, notify, notion, own, rank, reword, soniox, state, tiktok, weekly
-from .brand import OURS, SOURCE
+from .brand import OURS, SOURCE, links_for
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 PRIMARY = M.PRIMARY
@@ -282,7 +282,7 @@ def run(dry_run=False, only_detect=False):
         if is_due:
             try:  # Monday: every active format gets its missing language pages
                 for mk in mkts:
-                    if any(f.get('status') == 'active' and not page_of(f, mk['key']) for f in fmts):
+                    if any(f.get('status') == 'active' and not page_of(f, mk['key']) and M.of([mk], f) for f in fmts):
                         state.save('formats.json', fmts)
                         fill_market(mk['key'])
                         fmts[:] = load_formats()
@@ -407,7 +407,7 @@ def market_links(fmt, mkts):
     return ' · '.join(f"<{page_url(page_of(fmt, mk['key']))}|{mk['T']['flag']}>" for mk in mkts if page_of(fmt, mk['key']))
 
 
-def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, label=None, force=False):
+def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, label=None, force=False, extra=None):
     """Every viral video (creators from ALL markets): download + Soniox transcript, Claude (Opus) judges it against
     ALL our formats (list + archive) and translates the script to English. Then for every market:
     in the list -> nothing to build (missing language pages are added); in the archive -> brought back everywhere;
@@ -465,9 +465,9 @@ def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, labe
                 outcome = f"🆕 *NEW format – not in Notion yet*, not added ({blocked})"
             else:
                 fmt, problems, position = build_format(v, mkts, fmts, history, cfg, prepared=prepared,
-                                                       description=verdict.get('new_format_description', ''))
+                                                       description=verdict.get('new_format_description', ''), extra=extra)
                 result.update({'built': fmt['id'], 'problems': problems, 'position': position})
-                outcome = (f"🆕 *NEW format → checked & added as #{position}* in all lists: *{fmt['title']}* ({market_links(fmt, mkts)})"
+                outcome = (f"🆕 *NEW format → checked & added as #{position}* in {'the ' + '/'.join(fmt['only_markets']) + ' list' if fmt.get('only_markets') else 'all lists'}: *{fmt['title']}* ({market_links(fmt, mkts)})"
                            if position else
                            f"🆕 *NEW format* – *{fmt['title']}* – ⏳ *held back until every language page passes the check* "
                            f"(tried again next run):\n" + '\n'.join(problems))
@@ -498,8 +498,9 @@ def _prepare(v, prepared):
     return work, video_file, transcript, media.frames(video_file, work), True
 
 
-def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, attempts=1):
-    """Build one market's page (its language, current layout). Returns (page_id_or_url, spec, problems)."""
+def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, attempts=1, fmt=None):
+    """Build one market's page (its language, current layout). fmt: the format (its own app link / campaign note).
+    Returns (page_id_or_url, spec, problems)."""
     if replace_page:
         locked = next((f for f in load_formats() if page_of(f, mk['key']) == replace_page
                        and align.approved_script(f['id'], mk['lang'])), None)
@@ -509,7 +510,8 @@ def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, 
     try:
         feedback = ''
         for _ in range(attempts):  # rebuilds may retry with the reason the last attempt was rejected
-            spec = builder.build_spec(v, transcript, frames, cfg['models']['build'], lang=mk['lang'], feedback=feedback)
+            spec = builder.build_spec(v, transcript, frames, cfg['models']['build'], lang=mk['lang'], feedback=feedback,
+                                      brief=(fmt or {}).get('brief', ''))
             problems = builder.validate(spec, transcript, lang=mk['lang'])
             if not problems:
                 break
@@ -517,7 +519,7 @@ def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, 
         if replace_page and problems:
             return None, spec, problems
         upload_id = notion.upload_video(media.for_notion(video_file, work))
-        blocks = notion.page_blocks(spec, v, upload_id, cfg['links'], lang=mk['lang'], lab_url=mk['visual_hook_lab'],
+        blocks = notion.page_blocks(spec, {**v, 'own': v.get('own') or (fmt or {}).get('own_brand')}, upload_id, links_for(cfg['links'], fmt), lang=mk['lang'], lab_url=mk['visual_hook_lab'],
                                     same_lang=(transcript.get('language') or '')[:2] == mk['lang'])
     finally:
         if own:
@@ -544,13 +546,13 @@ def ensure_market_pages(fmt, v, mkts, fmts, history, cfg, prepared):
     into that market's format folder (and list)."""
     added = []
     meta, accounts = CTX.get('meta', {}), CTX.get('accounts') or state.load('accounts.json', {})
-    for mk in mkts:
+    for mk in M.of(mkts, fmt):
         if page_of(fmt, mk['key']):
             continue
         pending_pages = fmt.setdefault('pending_pages', {})
         pid = pending_pages.get(mk['key'])
         if not pid:
-            pid, spec, problems = make_page(v, mk, cfg, prepared, parent=cfg['notion']['radar_page'], attempts=3)
+            pid, spec, problems = make_page(v, mk, cfg, prepared, parent=cfg['notion']['radar_page'], attempts=3, fmt=fmt)
             if problems:
                 continue
             pending_pages[mk['key']] = pid
@@ -569,23 +571,24 @@ def ensure_market_pages(fmt, v, mkts, fmts, history, cfg, prepared):
     return added
 
 
-def build_format(v, mkts, fmts, history, cfg, prepared=None, description=''):
-    """New format: build its page in every market's language and add it to every list.
-    Returns (format entry, problems, position)."""
+def build_format(v, mkts, fmts, history, cfg, prepared=None, description='', extra=None):
+    """New format: build its page in every market's language and add it to every list. extra: options of a format
+    added by hand (only_markets, app_link, brief). Returns (format entry, problems, position)."""
     fid = 'A' + datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d%H%M%S')
-    entry = {'id': fid, 'source_video': v['url'], 'created': int(time.time()), 'pages': {}, 'status': 'pending'}
+    entry = {'id': fid, 'source_video': v['url'], 'created': int(time.time()), 'pages': {}, 'status': 'pending',
+             **{k: x for k, x in (extra or {}).items() if x}}
     problems = []
-    for mk in mkts:  # built where creators can't see it yet (private staging page) - the gate publishes it
-        pid, spec, probs = make_page(v, mk, cfg, prepared, parent=cfg['notion']['radar_page'], attempts=3)
+    for mk in M.of(mkts, entry):  # built where creators can't see it yet (private staging page) - the gate publishes it
+        pid, spec, probs = make_page(v, mk, cfg, prepared, parent=cfg['notion']['radar_page'], attempts=3, fmt=entry)
         if probs:
             problems.append(f"{mk['T']['flag']} {'; '.join(probs)}")
             continue
         set_page(entry, mk['key'], pid)
-        if mk['key'] == PRIMARY or 'title' not in entry:
+        if mk['key'] == M.of(mkts, entry)[0]['key'] or 'title' not in entry:
             entry.update({'title': spec['page_title'], 'description': spec.get('registry_description') or description,
                           'script': ' '.join(seg.get('text', '') for seg in spec.get('script', []))[:900]})
         assets = spec.get('assets_needed') or []
-        if assets and mk['key'] == mkts[0]['key']:
+        if assets and mk['key'] == M.of(mkts, entry)[0]['key']:
             notify.push('📎 New format needs a resource', f"{spec['page_title']}: " + ', '.join(a['name'] for a in assets))
     entry.setdefault('title', v.get('hook_en') or 'new format')
     fmts.append(entry)
@@ -602,14 +605,14 @@ def revive_format(fmt, v, mkts, fmts, history, cfg, prepared=None):
     the lists), missing markets are built in the staging page, then the quality gate checks every page. Only if all
     pass do they move into the format folders and the format is listed again. Returns (published, position, reasons)."""
     fmt.pop('pending', None)  # a comeback starts with fresh quality-check attempts (old ones led to the archive)
-    for mk in mkts:
+    for mk in M.of(mkts, fmt):
         m = mk['key']
         pid = page_of(fmt, m)
         try:
             if pid:
-                make_page(v, mk, cfg, prepared, replace_page=pid, attempts=3)
+                make_page(v, mk, cfg, prepared, replace_page=pid, attempts=3, fmt=fmt)
             else:
-                new_pid, spec, problems = make_page(v, mk, cfg, prepared, parent=cfg['notion']['radar_page'], attempts=3)
+                new_pid, spec, problems = make_page(v, mk, cfg, prepared, parent=cfg['notion']['radar_page'], attempts=3, fmt=fmt)
                 if not problems:
                     set_page(fmt, m, new_pid)
         except Exception as e:
@@ -757,7 +760,7 @@ def fill_market(m):
     mk = next(x for x in M.load({**cfg, 'markets': {k: {**v, 'enabled': True} for k, v in cfg['markets'].items()}}) if x['key'] == m)
     fmts, history = load_formats(), state.load('history.json', {})
     built = 0
-    for f in [f for f in fmts if f.get('status') == 'active' and not page_of(f, m)]:
+    for f in [f for f in fmts if f.get('status') == 'active' and not page_of(f, m) and M.of([mk], f)]:
         url = source_video(f)
         if not url:
             print('no inspiration video for', f['title'])
@@ -938,7 +941,7 @@ def rebuild_page(fmt, mk, url):
     v = tiktok.video_detail(*m.groups()) if m else None
     if not v:
         return False, 'example video unavailable'
-    page, spec, problems = make_page(v, mk, cfg, None, replace_page=page_of(fmt, mk['key']), attempts=3)
+    page, spec, problems = make_page(v, mk, cfg, None, replace_page=page_of(fmt, mk['key']), attempts=3, fmt=fmt)
     if problems:
         return False, '; '.join(problems)[:150]
     fmt.setdefault('reworded', {})[mk['key']] = True
@@ -972,7 +975,7 @@ def standardize(only=None):
                     if not v:
                         report.append((f['title'], m, 'error', f'example video unavailable: {url}'))
                         continue
-                    page, spec, problems = make_page(v, mk, cfg, None, replace_page=pid, attempts=3)
+                    page, spec, problems = make_page(v, mk, cfg, None, replace_page=pid, attempts=3, fmt=f)
                     if problems:
                         report.append((f['title'], m, 'not rebuilt', '; '.join(problems)[:150]))
                         continue
@@ -1123,6 +1126,38 @@ def resolve_url(url):
         return url
 
 
+HAND_FORMATS = os.path.join(ROOT, 'registry', 'hand_formats.json')
+
+
+def hand_options(video_id):
+    """Options for a format added by hand, by its example video's id (registry/hand_formats.json): only_markets (e.g.
+    ["sl"] - only the Slovenian list), app_link (the format's own page on memoai.eu that creators film), brief (a note
+    from the campaign team for the script writer and the checks), own_brand (the example is already a Memo AI video of
+    our own creators - the note under it does not call it another brand's video)."""
+    try:
+        with open(HAND_FORMATS) as f:
+            opts = json.load(f).get(str(video_id)) or {}
+    except FileNotFoundError:
+        return {}
+    return {k: opts[k] for k in ('only_markets', 'app_link', 'brief', 'own_brand') if opts.get(k)}
+
+
+def add_formats(arg):
+    """Several formats in one run: groups separated by ';' (each group: comma-separated links, first = example).
+    Every group is added on its own; a failed one does not stop the others (the run turns red at the end)."""
+    failed = []
+    for group in [g for g in arg.split(';') if g.strip()]:
+        try:
+            add_format([u for u in group.split(',') if u.strip()])
+        except SystemExit as e:
+            failed.append(f'{group.strip()[:80]}: {e}')
+        except Exception as e:
+            traceback.print_exc()
+            failed.append(f'{group.strip()[:80]}: {str(e)[:150]}')
+    if failed:
+        raise SystemExit('add-format failed for:\n' + '\n'.join(failed))
+
+
 def add_format(urls):
     """A format added by hand from TikTok videos of ANY app (e.g. a study app we do not watch, like Studyflash). The first video
     goes through exactly what a viral video goes through: judged against all our formats (list + archive) - known ->
@@ -1156,8 +1191,9 @@ def add_format(urls):
     for v in vids:
         to_history(history, v, local, now)
     first = vids[0]
+    extra = hand_options(first['id'])
     result = handle_viral(first, mkts, fmts, history, cfg, now, only_detect=False, force=True,
-                          label=f"➕ Format added by hand (@{first['handle']})")
+                          label=f"➕ Format added by hand (@{first['handle']})", extra=extra)
     fid = first.get('format')
     for v in vids[1:]:
         set_format(v, history, fid, judged=True)
@@ -1186,7 +1222,7 @@ def group_report(fmts, mkts, cfg, meta, fix=False, force=False):
             for mk in mkts:
                 pid = page_of(f, mk['key'])
                 if pid and not align.approved_script(f['id'], mk['lang']) and (
-                        reword.fix_app_material_cues(pid, cfg['links']['memo']) + reword.fix_asset_cues(pid)):
+                        reword.fix_app_material_cues(pid, links_for(cfg['links'], f)['memo']) + reword.fix_asset_cues(pid)):
                     notes.append(f"{f['title']}: {mk['key']}: script cues cleaned (resources)")
     results, dups = crosscheck.run(fmts, mkts, cfg, page_of, meta, force=force)
     if fix:
@@ -1244,6 +1280,7 @@ def main():
     ap.add_argument('--faithful-rewrite', action='store_true', help='once: every page script becomes the original transcribed/translated almost 1:1 (only the app swapped)')
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
+    ap.add_argument('--renote', action='store_true', help='every page (live, waiting, archived): the note under the inspiration video gets the current text')
     ap.add_argument('--fix-cues', action='store_true', help="every page: the app shown as a '📎 material' cue becomes the app link cue")
     ap.add_argument('--trash-staging', default='', help='page ids (comma-separated): move these leftover staging pages to the Notion trash - only if no format uses them')
     ap.add_argument('--export', action='store_true', help='all scripts as one encrypted Markdown file (state/scripts_export.enc)')
@@ -1256,7 +1293,7 @@ def main():
     ap.add_argument('--check-hot', action='store_true', help='strict Claude check of ALL viral videos from the last 7 days')
     ap.add_argument('--init-market', default='', help='market key: connect a new market to the shared format list')
     ap.add_argument('--fill-market', default='', help='market key: build missing pages of active formats')
-    ap.add_argument('--add-format', default='', help='TikTok link(s), comma-separated: add this format by hand (any app), first link = example')
+    ap.add_argument('--add-format', default='', help="TikTok link(s), comma-separated: add this format by hand (any app), first link = example; ';' separates formats")
     ap.add_argument('--test-viral', default='', help='TikTok URL: send the full viral Slack message for it (no Notion changes)')
     a = ap.parse_args()
     if a.test_discord:
@@ -1467,7 +1504,7 @@ def main():
         rerank(M.load(load_config()), load_formats(), state.load('history.json', {}), load_config(), force=True)
         return
     if a.add_format:
-        add_format([u for u in a.add_format.split(',') if u.strip()])
+        add_formats(a.add_format)
         return
     if a.test_viral:
         import re as _re
@@ -1521,7 +1558,8 @@ def main():
                     else:  # note under the video: creators may swap the names for their own country's
                         note = next((reword._plain(b) for b in notion.children(pid) if b['type'] == 'callout'
                                      and '⚠' in str(b['callout'].get('icon'))), '')
-                        localize.set_note(pid, m['lang'], note.replace('**', '')[:30] == T['inspo_note_same'].replace('**', '')[:30])
+                        localize.set_note(pid, m['lang'], note.replace('**', '')[:30] == T['inspo_note_same'].replace('**', '')[:30],
+                                          own=f.get('own_brand'))
                         st, why = 'ok', 'note with the swap-the-names line'
                 except Exception as e:
                     st, why = 'error', str(e)[:200]
@@ -1552,12 +1590,33 @@ def main():
             if f.get('status') in ('pending', 'active') or (f.get('archived_reason') or '').startswith('did not pass'):
                 print(f"gate-now: {f.get('status'):8} | {f['title']}", flush=True)
         return
+    if a.renote:
+        cfg, n = load_config(), 0
+        for f in load_formats():
+            for key, m in cfg['markets'].items():
+                pid, T = page_of(f, key), M.TEXT[m['lang']]
+                if not pid:
+                    continue
+                try:
+                    note = next((reword._plain(b) for b in notion.children(pid) if b['type'] == 'callout'
+                                 and '⚠' in str(b['callout'].get('icon'))), '')
+                    if not note:
+                        continue
+                    same = note.replace('**', '')[:30] == T['inspo_note_same'].replace('**', '')[:30]
+                    want = '\n'.join(notion.inspo_note(m['lang'], same, f.get('own_brand'))).replace('**', '')
+                    if note.strip() != want.strip():
+                        localize.set_note(pid, m['lang'], same, own=f.get('own_brand'))
+                        n += 1
+                except Exception as e:
+                    print('renote failed:', f['title'], key, str(e)[:150])
+        print(f'renote: {n} notes updated')
+        return
     if a.fix_cues:
         cfg, n = load_config(), 0
         for f in [f for f in load_formats() if f.get('status') in ('active', 'pending')]:
             for key in cfg['markets']:
                 if page_of(f, key):
-                    n += reword.fix_app_material_cues(page_of(f, key), cfg['links']['memo'])
+                    n += reword.fix_app_material_cues(page_of(f, key), links_for(cfg['links'], f)['memo'])
         print(f'fix-cues: {n} paragraphs now use the app link cue')
         return
     if a.trash_staging:

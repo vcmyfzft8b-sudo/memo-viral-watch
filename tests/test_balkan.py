@@ -154,3 +154,36 @@ def test_reviewers_see_the_visual_hook_lab_line():
     with mock.patch.object(notion, 'children', lambda pid: page):
         got = [reword._plain(b) for b in reword.direction_blocks('p')]
     assert len(got) == 2 and 'Visual Hook Lab' in got[1]
+
+
+def test_format_options_markets_link_and_brand_counts():
+    from watcher import main
+    mkts = [{'key': 'sh'}, {'key': 'sl'}]
+    assert markets.of(mkts, {}) == mkts and markets.of(mkts, {'only_markets': ['sl']}) == [{'key': 'sl'}]
+    links = {'memo': 'https://memoai.eu/creator'}
+    own = brand.links_for(links, {'app_link': 'https://www.memoai.eu/ugc/oral-quiz'})
+    assert own['memo'] == 'https://www.memoai.eu/ugc/oral-quiz' and brand.links_for(links, {}) is links
+    assert brand.cue_label(own['memo']) == 'Memo AI · memoai.eu/ugc/oral-quiz'
+    assert brand.cue_label(links['memo']) == brand.CUE_LABEL
+    assert brand.count_app('Probaj Memo AI, koda ŠPELA50') == 1  # an original of our own creators names Memo AI
+    assert brand.count_app('Astra AI je super') == 1
+    assert brand.count_source('Turbo AI oral quiz') == 1
+    with mock.patch.object(main, 'add_format', side_effect=[None, SystemExit('no video')]) as add:
+        try:
+            main.add_formats('https://a/video/1, https://a/video/2; https://b/video/3')
+            raise AssertionError('a failed format must fail the run')
+        except SystemExit as e:
+            assert 'b/video/3' in str(e)
+    assert add.call_args_list[0][0][0] == ['https://a/video/1', ' https://a/video/2']
+
+
+def test_note_under_the_example_says_other_brand_or_own_video():
+    from watcher import audit, notion
+    for lang in ('sh', 'sl'):
+        other = ' '.join(notion.inspo_note(lang, same_lang=False))
+        assert ('drugog brenda' if lang == 'sh' else 'druge znamke') in other and '(vibe)' in other and 'Astra' not in other
+        own = ' '.join(notion.inspo_note(lang, same_lang=True, own=True))
+        assert 'Memo AI video' in own and 'brenda' not in own and 'znamke' not in own
+        for same in (False, True):
+            for o in (False, True):
+                assert audit._note_is_same(notion.inspo_note(lang, same, o)[0], lang) == same

@@ -8,6 +8,7 @@ materials), every held page (still in the private staging area, invisible to cre
 import re
 
 from . import notion, rank, state
+from .brand import links_for
 from .markets import TEXT
 
 
@@ -24,7 +25,7 @@ def _title(page_id):
     return ''.join(x['plain_text'] for x in next(v for v in p['properties'].values() if v['type'] == 'title')['title'])
 
 
-def check_page(pid, T, links):
+def check_page(pid, T, links, lang=None, own=False):
     """Problems of one format page in our layout."""
     blocks = notion.children(pid)
     text = ' '.join(_plain(b) for b in blocks)
@@ -51,6 +52,9 @@ def check_page(pid, T, links):
             section.append(b)
     if len(section) != 2 or not _plain(section[0]).startswith(T['hook_start'].strip()) or 'Visual Hook Lab' not in _plain(section[1]):
         out.append(f'visual hook section is not "one sentence + Visual Hook Lab line" ({len(section)} lines)')
+    note = next((_plain(b) for b in blocks if b['type'] == 'callout' and '⚠' in str(b['callout'].get('icon'))), '')
+    if lang and note.strip() not in ['\n'.join(notion.inspo_note(lang, same, own)).replace('**', '').strip() for same in (False, True)]:
+        out.append('note under the inspiration video is not the current text')
     if re.search(r'astra', ' '.join(_plain(b) for b in blocks if b['type'] != 'callout'), re.I):
         out.append('Astra mentioned outside the note')
     return out
@@ -87,7 +91,7 @@ def run(cfg, fmts, page_of):
         for f in fmts:
             pid = page_of(f, key)
             if not pid:
-                if f.get('status') in ('active', 'pending'):
+                if f.get('status') in ('active', 'pending') and key in (f.get('only_markets') or [key]):
                     problems.append(f"{flag} {f['title']}: no page")
                 continue
             where = _parent(pid)
@@ -98,7 +102,7 @@ def run(cfg, fmts, page_of):
             if f.get('status') == 'pending' and where != radar:
                 problems.append(f"{flag} {f['title']}: held page not in the staging area")
             if f.get('status') == 'active':
-                bad = check_page(pid, T, cfg['links'])
+                bad = check_page(pid, T, links_for(cfg['links'], f), m['lang'], f.get('own_brand'))
                 problems += [f"{flag} {f['title']}: {x}" for x in bad]
                 if not bad:
                     ok.append(f"{flag} {f['title']}: page complete")

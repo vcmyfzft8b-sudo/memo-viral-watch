@@ -19,8 +19,8 @@ import re
 from urllib.parse import urlsplit
 
 from . import align, llm, localize, notion, reword, state, tiktok
-from .brand import FACTS, OURS, OURS_SITE, SOURCE, count_ours, count_source, says_source
-from .markets import TEXT, avoid_found, lang_matches
+from .brand import FACTS, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, links_for, says_source
+from .markets import TEXT, avoid_found, lang_matches, of
 
 ORIGINALS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'originals.json')
 
@@ -81,6 +81,7 @@ def nested_instructions(blocks):
 
 def check(fmt, page_id, lang, model, links=None):
     """Returns (passed, verdict dict, example url)."""
+    links = links_for(links, fmt) if links is not None else None
     observed_fingerprint = fingerprint(page_id)
     src = localize.current_source(page_id)
     url = src['url'] if src else None
@@ -106,6 +107,7 @@ def check(fmt, page_id, lang, model, links=None):
     lang_name = localize.LANG_NAME[lang]
     prompt = f"""FORMAT: {fmt['title']}
 What the format is: {fmt.get('description', '')}
+{('Note from the campaign team for this format (pages that follow it are right): ' + fmt['brief']) if fmt.get('brief') else ''}
 
 EXAMPLE VIDEO on the page ({url or 'verified uploaded legacy video'}):
 {example[:3000] or '(no example video)'}
@@ -160,7 +162,8 @@ Return JSON {{"example_same_format": true, "script_follows_example": true, "scri
     same = lang_matches(lang, v.get('example_language'))
     v['note_ok'] = bool(note) and ((same and _note_is_same(note, lang)) or (not same and not _note_is_same(note, lang)))
     v['same_lang'] = same
-    v['views_ok'] = legacy_exemption or v['views'] >= localize.MIN_VIEWS or url == originals().get(fmt['id'])
+    v['views_ok'] = (legacy_exemption or v['views'] >= localize.MIN_VIEWS or url == originals().get(fmt['id'])
+                     or bool(url and url == fmt.get('source_video')))  # the format's own source (e.g. picked by hand)
     v['title_block'] = title_block
     locked = align.approved_script(fmt['id'], lang)
     if locked and links is None:
@@ -175,7 +178,7 @@ Return JSON {{"example_same_format": true, "script_follows_example": true, "scri
     base = align.source_script(example)
     spoken = reword.spoken_text(reword.script_blocks(page_id))
     v['length_ok'] = v['approved_matches'] or align._words(spoken) <= 1.10 * max(align._words(base), 1)
-    want, have = count_source(base), count_ours(spoken)
+    want, have = count_app(base), count_ours(spoken)
     v['brand_count_ok'] = v['approved_matches'] or have == want
     if not v['brand_count_ok']:
         v['script_issues'].append(f'spoken brand count is {have}; source requires {want}; linked filming cues do not count')
@@ -223,7 +226,7 @@ def _put_example(fmt, m, page_id, lang, url, same_lang):
         localize.replace_video(page_id, src, d, lang)
     else:
         localize.add_section(page_id, d, lang)
-    localize.set_note(page_id, lang, same_lang)
+    localize.set_note(page_id, lang, same_lang, own=fmt.get('own_brand'))
     fmt.setdefault('inspo', {})[m] = {'url': url, 'views': d['views'], 'strict': True, 'audit': True}
     return True
 
@@ -265,7 +268,7 @@ def fix_page(fmt, mk, cfg, history, accounts, meta, page_of, rounds=5, rebuild=N
                 fmt.get('reworded', {}).pop(m, None)
             continue
         if not v.get('note_ok') and v.get('example_same_format'):
-            localize.set_note(pid, lang, v['same_lang'])
+            localize.set_note(pid, lang, v['same_lang'], own=fmt.get('own_brand'))
             notes.append('note under the video corrected')
             continue
         if v.get('example_same_format') and (not v.get('length_ok') or not v.get('script_faithful')
@@ -324,7 +327,7 @@ def run(fmts, mkts, cfg, history, accounts, meta, page_of, workers=8, rebuild=No
     import concurrent.futures as cf
     last = meta.setdefault('audit', {})
     fingerprints = meta.setdefault('audit_fingerprints', {})
-    jobs = [(f, mk) for f in fmts if f.get('status') == 'active' for mk in mkts]
+    jobs = [(f, mk) for f in fmts if f.get('status') == 'active' for mk in of(mkts, f)]
 
     def one(job):
         f, mk = job

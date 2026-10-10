@@ -67,7 +67,7 @@ def _examples():
     return '\n'.join(out)
 
 
-def build_spec(video, transcript, frames, model, lang=PRIMARY, feedback=''):
+def build_spec(video, transcript, frames, model, lang=PRIMARY, feedback='', brief=''):
     """video: tiktok.video_detail dict; transcript: soniox result; frames: [(seconds, path)]; lang: a markets.TEXT key."""
     T = TEXT[lang]
     rules = RULES.format(lang=T['lang_name'], style=T['style'], country=COUNTRY[lang], ours=OURS, source=SOURCE,
@@ -79,6 +79,7 @@ def build_spec(video, transcript, frames, model, lang=PRIMARY, feedback=''):
 
 {rules}
 {FACTS}
+{('NOTE FROM THE CAMPAIGN TEAM for this format (follow it): ' + brief) if brief else ''}
 
 ORIGINAL VIDEO (@{video['handle']}, {video['views']} views, {video['duration']}s, language: {transcript.get('language') or '?'})
 ON-SCREEN TEXT (TikTok text stickers): {video.get('sticker') or '-'}

@@ -11,8 +11,8 @@ import json
 import re
 
 from . import llm, notion, state
-from .brand import CATEGORY, OURS, OURS_SITE, SOURCE, count_ours, count_source, says_source
-from .markets import TEXT
+from .brand import CATEGORY, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, says_source
+from .markets import TEXT, of
 
 TOKEN = re.compile(r'⟦(\d+)⟧(.*?)⟦/\1⟧', re.S)
 
@@ -86,6 +86,7 @@ def reword_page(fmt, page_id, lang, model, original='', feedback=''):
     prompt = f"""This is the {T['lang_name']} script of a UGC video format ("{fmt['title']}") for {OURS}, an
 {CATEGORY}. It must be the original {SOURCE} video, transcribed and translated (if needed) almost one to one.
 {('The original video on the page: ' + original[:2500]) if original else ''}
+{('Note from the campaign team for this format (follow it): ' + fmt['brief']) if fmt.get('brief') else ''}
 
 Make EVERY paragraph a faithful translation/transcription of the matching part of the original: the same sentences in
 the same order, the same meaning, words, jokes, numbers, places and claims; nothing added, nothing left out, nothing
@@ -133,7 +134,7 @@ def _validate(enc, new, original=''):
         spoken = spoken_text(rendered)
         if align._words(spoken) > 1.10 * align._words(base):
             return 'script exceeds 110% of the original word count', []
-        want, have = count_source(base), count_ours(spoken)
+        want, have = count_app(base), count_ours(spoken)
         if have != want:
             return f'spoken brand count is {have}; source requires {want}; cue labels do not count', []
     return '', changes
@@ -152,7 +153,7 @@ def apply(changes):
 def run(fmts, mkts, cfg, page_of, originals=None, dry=False):
     """Returns [(format title, market, status, detail, changes)]."""
     import concurrent.futures as cf
-    jobs = [(f, mk) for f in fmts if f.get('status') == 'active' for mk in mkts
+    jobs = [(f, mk) for f in fmts if f.get('status') == 'active' for mk in of(mkts, f)
             if page_of(f, mk['key']) and not (f.get('reworded') or {}).get(mk['key'])]
 
     def one(job):
@@ -282,7 +283,7 @@ def in_resources(name, resources):
 def fix_app_material_cues(page_id, link):
     """'(📎 Memo AI · memoai.eu/creator – vidi materijale)' in a script is the app shown as a "material" - it becomes the
     normal app link cue '(Memo AI · memoai.eu/creator)'. Returns how many paragraphs changed."""
-    from .brand import CUE_LABEL
+    from .brand import cue_label
     pat = re.compile(r'\((?:📎\s*)+Memo AI[^()]*\)\s*')
     fixed = 0
     for b in script_blocks(page_id):
@@ -297,7 +298,7 @@ def fix_app_material_cues(page_id, link):
                 if t[pos:m.start()]:
                     out.append({'type': 'text', 'text': {'content': t[pos:m.start()]}, 'annotations': x.get('annotations', {})})
                 out += [{'type': 'text', 'text': {'content': '('}},
-                        {'type': 'text', 'text': {'content': CUE_LABEL, 'link': {'url': link}}},
+                        {'type': 'text', 'text': {'content': cue_label(link), 'link': {'url': link}}},
                         {'type': 'text', 'text': {'content': ') '}}]
                 pos = m.end()
             if t[pos:]:

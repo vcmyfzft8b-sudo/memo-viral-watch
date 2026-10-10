@@ -15,7 +15,7 @@ class AddFormatTests(unittest.TestCase):
                         'url': 'https://www.tiktok.com/@lern.mit.domi/video/2'}}
         fmts = [{'id': 'OLD', 'status': 'active', 'title': 'old'}]
 
-        def viral(v, mkts, f, history, cfg, now, only_detect, test=False, label=None, force=False):
+        def viral(v, mkts, f, history, cfg, now, only_detect, test=False, label=None, force=False, extra=None):
             self.assertTrue(force)  # the user picked it: never blocked as "weak engagement"
             f.append({'id': 'NEW', 'status': 'active', 'title': 'MacBook'})
             main.set_format(v, history, 'NEW', judged=True)

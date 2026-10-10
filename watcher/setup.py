@@ -422,10 +422,10 @@ def hook_lab(cfg, market=None, page=None):
 def relink(cfg, fmts, page_of):
     """Every format page (live, held or archived): app links and their labels point to the current app link
     (config links.memo). Only links change - no text, no layout."""
-    from .brand import CUE_LABEL, OURS_SITE
-    target = cfg['links']['memo']
+    from .brand import OURS_SITE, cue_label, links_for
     changed = 0
     for f in fmts:
+        target = links_for(cfg['links'], f)['memo']  # a format can have its own app page
         for key in cfg['markets']:
             pid = page_of(f, key)
             for b in _walk(pid) if pid else []:
@@ -438,7 +438,7 @@ def relink(cfg, fmts, page_of):
                     if x.get('type') == 'text' and OURS_SITE in link and link != target:
                         label = x['plain_text']
                         if label.startswith('Memo AI ·'):
-                            label = CUE_LABEL
+                            label = cue_label(target)
                         x = {'type': 'text', 'text': {'content': label, 'link': {'url': target}},
                              'annotations': x.get('annotations', {})}
                         touched = True
@@ -451,4 +451,4 @@ def relink(cfg, fmts, page_of):
                 if touched:
                     notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': new}})
                     changed += 1
-    print(f'relink: {changed} blocks now link to {target}')
+    print(f"relink: {changed} blocks now link to {cfg['links']['memo']} (or the format's own app page)")

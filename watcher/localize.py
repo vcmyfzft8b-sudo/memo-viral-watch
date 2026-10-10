@@ -19,7 +19,7 @@ import time
 
 from . import discover, llm, media, notion, soniox, tiktok
 from .brand import SOURCE, TOPIC
-from .markets import TEXT, lang_matches
+from .markets import TEXT, lang_matches, of
 
 LANG_NAME = {k: t['lang_name'] for k, t in TEXT.items()}
 MIN_VIEWS = 10_000  # an inspiration video must be proven, not just in the right language
@@ -147,7 +147,7 @@ def add_section(page_id, d, lang):
     section = [notion.block('heading_1', [notion.rt(T['video_heading'])]),
                notion.block('video', type='file_upload', file_upload={'id': upload}),
                notion.para([notion.rt(T['source'], link=d['url'])]),
-               notion.block('callout', notion.md('\n'.join(T['inspo_note'])), icon={'type': 'emoji', 'emoji': '⚠️'},
+               notion.block('callout', notion.md('\n'.join(notion.inspo_note(lang))), icon={'type': 'emoji', 'emoji': '⚠️'},
                             color='gray_background'),
                notion.block('divider')]
     try:
@@ -220,7 +220,7 @@ def set_note(page_id, lang, same_lang, own=False):
 def finish(f, m, pid, lang, url, cfg):
     """After a same-language example is on the page: note says so, script mirrors that example sentence by sentence."""
     from . import align
-    set_note(pid, lang, True)
+    set_note(pid, lang, True, own=f.get('own_brand'))
     status, why = align.align_page(f, pid, lang, cfg, cfg['links'])
     if status == 'ok':
         f.setdefault('reworded', {})[m] = True
@@ -239,7 +239,7 @@ def run(fmts, mkts, history, accounts, meta, cfg, page_of, now=None, tries=4, ex
         ranked = sorted(((vid, v) for vid, v in history.items() if v.get('format') == f['id']), key=lambda x: -x[1]['views'])[:60]
         for h in {v['handle'] for _, v in ranked} - set(langs):
             langs[h] = discover.language(h)
-        for mk in mkts:
+        for mk in of(mkts, f):
             m, lang = mk['key'], mk['lang']
             pid = page_of(f, m)
             if not pid:
@@ -324,7 +324,7 @@ def recheck(fmts, mkts, history, accounts, meta, cfg, page_of, now=None):
     now = now or time.time()
     report = []
     for f in [f for f in fmts if f.get('status') == 'active']:
-        for mk in mkts:
+        for mk in of(mkts, f):
             m, lang = mk['key'], mk['lang']
             from . import align
             if align.approved_script(f['id'], lang) or (page_of(f, m) and embedded_record(page_of(f, m))):

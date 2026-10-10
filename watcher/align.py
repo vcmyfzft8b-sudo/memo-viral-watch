@@ -15,7 +15,7 @@ import json
 import re
 
 from . import llm, localize, notion, reword, state
-from .brand import CUE, FACTS, OURS, OURS_SITE, SOURCE, SOURCE_RE, count_ours, count_source
+from .brand import CUE, FACTS, OURS, OURS_SITE, SOURCE, SOURCE_RE, count_app, count_ours, count_source, links_for
 from .markets import TEXT
 
 SOURCE_MENTION = SOURCE_RE  # spoken/written mentions of the watched app (incl. speech-to-text mishearings)
@@ -74,6 +74,7 @@ def align_page(fmt, page_id, lang, cfg, links, feedback='', draft_url=None):
     """Returns (status, why). With draft_url: writes NOTHING - returns ('draft', spec) for a replacement script that
     follows that example (used to prepare replacements of approval-locked scripts for the user's approval)."""
     T = TEXT[lang]
+    links = links_for(links, fmt)
     src = localize.current_source(page_id)
     url = draft_url or (src['url'] if src else None)
     ok = None if draft_url else approved(fmt['id'], lang, url)
@@ -106,6 +107,8 @@ recording is shown, and the asset names):
 {old_script[:3000]}
 
 {FACTS}
+
+{('NOTE FROM THE CAMPAIGN TEAM for this format (follow it): ' + fmt['brief']) if fmt.get('brief') else ''}
 
 {('REFERENCE DEFINITION of this format (beats, product moment, brand/CTA rules): ' + json.dumps(ref, ensure_ascii=False)) if ref else ''}
 
@@ -194,7 +197,7 @@ def _validate(spec, n_orig, source=None, lang=None):
         return f'the script has {n} words, it must have {int(n_orig * 0.85)}-{max_words(n_orig)}'
     if count_source(text):
         return f'{SOURCE} is mentioned'
-    want = count_source(source) if source is not None else int(spec.get('source_mentions_in_original') or 0)
+    want = count_app(source) if source is not None else int(spec.get('source_mentions_in_original') or 0)
     have = count_ours(text)
     if have != want:
         return f'"{OURS}"/the website appears {have} times, but the original names {SOURCE} {want} times'

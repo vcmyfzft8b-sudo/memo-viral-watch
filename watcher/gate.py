@@ -11,6 +11,7 @@ import re
 import time
 
 from . import audit, crosscheck, notify, notion, state, tiktok
+from .markets import of
 
 MAX_TRIES = 4
 
@@ -22,7 +23,7 @@ def _build_missing(fmt, mk, cfg, make_page, set_page, staging):
     v = tiktok.video_detail(*m.groups()) if m else None
     if not v:
         return f"{mk['T']['flag']} no page and the source video is unavailable"
-    pid, spec, problems = make_page(v, mk, cfg, None, parent=staging, attempts=3)
+    pid, spec, problems = make_page(v, mk, cfg, None, parent=staging, attempts=3, fmt=fmt)
     if problems:
         return f"{mk['T']['flag']} page could not be built: {'; '.join(problems)[:120]}"
     set_page(fmt, mk['key'], pid)
@@ -32,6 +33,7 @@ def _build_missing(fmt, mk, cfg, make_page, set_page, staging):
 def check(fmt, mkts, cfg, history, accounts, meta, page_of, set_page, make_page, rebuild):
     """Builds missing pages and audits (and fixes) every market page. Returns (passed, reasons)."""
     staging = cfg['notion']['radar_page']
+    mkts = of(mkts, fmt)  # e.g. a Slovenian-only format: only its markets
     reasons = []
     try:  # the reference (built from the source video) protects that video as the example before any page is checked
         crosscheck.ensure_reference(fmt, page_of, cfg)
@@ -90,6 +92,7 @@ def _rollback(fmt, checkpoint=None):
 
 def publish(fmt, mkts, page_of, checkpoint=None):
     """Move all pages or compensate every attempted move; persist recovery before side effects."""
+    mkts = of(mkts, fmt)
     missing = [mk['key'] for mk in mkts if not page_of(fmt, mk['key'])]
     if missing:
         raise RuntimeError('publish: missing pages: ' + ', '.join(missing))
@@ -142,6 +145,7 @@ def finish_listing(fmt, mkts, fmts, history, cfg, rerank, checkpoint=None):
 
 
 def has_unknown(fmt, mkts, meta):
+    mkts = of(mkts, fmt)
     return (any(meta.get('audit', {}).get(f"{fmt['id']}:{mk['key']}") in ('unverified', 'error', None) for mk in mkts)
             or meta.get('group_audit', {}).get(fmt['id'], {}).get('status') == 'unverified')
 

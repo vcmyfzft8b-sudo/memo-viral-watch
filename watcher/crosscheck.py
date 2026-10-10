@@ -29,8 +29,8 @@ import time
 from urllib.parse import urlsplit
 
 from . import align, audit, llm, localize, notion, reword
-from .brand import FACTS, OURS, SOURCE, TOPIC
-from .markets import PRIMARY, TEXT
+from .brand import FACTS, OURS, SOURCE, TOPIC, links_for
+from .markets import PRIMARY, TEXT, of
 
 AUDIT_VERSION = 'group-2026-10-10.localized-sl'
 REFERENCES = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'format_references.json')
@@ -74,6 +74,7 @@ VIDEO ({url}):
 {example[:4000]}
 
 {FACTS}
+{('NOTE FROM THE CAMPAIGN TEAM for this format (the reference must follow it): ' + fmt['brief']) if fmt.get('brief') else ''}
 
 Write the format's reference definition that every country's page must follow. Return JSON {{"title_en": "", "hook": "",
 "premise": "", "beats": ["<beat 1>", "..."], "filming": "<length, shots, demo sequence>",
@@ -138,6 +139,7 @@ def video_identity(page_id, cache=None):
 
 def page_inputs(fmt, mkts, page_of, meta=None):
     """What a group result depends on, per market (None for a missing page)."""
+    mkts = of(mkts, fmt)
     out = {}
     for mk in mkts:
         pid = page_of(fmt, mk['key'])
@@ -179,6 +181,7 @@ def duplicates(groups):
 
 def approval_status(fmt, mkts, page_of, links):
     """Separate from quality: is approved wording locked, and is it preserved on the live page?"""
+    mkts, links = of(mkts, fmt), links_for(links, fmt)
     out = {}
     for mk in mkts:
         locked = align.approved_script(fmt['id'], mk['lang'])
@@ -257,6 +260,7 @@ def judge(fmt, ref, evidence, model):
 {json.dumps(ref, ensure_ascii=False, indent=1)}
 
 {FACTS}
+{('NOTE FROM THE CAMPAIGN TEAM for this format (pages that follow it are right): ' + fmt['brief']) if fmt.get('brief') else ''}
 
 Below are the countries' pages of this format. Compare them TOGETHER against the reference and against each
 other. Be strict:
@@ -302,6 +306,7 @@ Return JSON {{"titles": {{"<country>": "<fixed title>"}}, "results": {{"<dimensi
 
 def check_group(fmt, mkts, cfg, page_of, meta, dup_list=None, force=False):
     """Returns the group result (also cached in meta['group_audit'][format_id])."""
+    mkts = of(mkts, fmt)  # e.g. a Slovenian-only format: its one page is the group
     store = meta.setdefault('group_audit', {})
     ref = reference(fmt['id']) or ensure_reference(fmt, page_of, cfg)
     inputs = page_inputs(fmt, mkts, page_of, meta)
@@ -444,6 +449,7 @@ def fix_group(fmt, mkts, cfg, page_of, meta, res, put_example, links):
     2. script not following the example / not faithful to it / wrong app features -> rewritten (align_page)
     3. directions not matching -> directions rewritten
     Returns (changed, awaiting_approval)."""
+    mkts, links = of(mkts, fmt), links_for(links, fmt)
     ref = reference(fmt['id']) or {}
     results = res.get('results') or {}
     changed, awaiting = [], []

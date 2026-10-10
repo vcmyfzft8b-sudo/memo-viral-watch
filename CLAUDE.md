@@ -57,6 +57,18 @@ blocked). The app's name goes into config.json `other_apps` (regex) so it is rep
 (Studyflash is there). A failed add alerts and turns the run red. TikTok subtitles: the original ASR track is used,
 never TikTok's machine translation.
 
+Options per hand-added format: `registry/hand_formats.json`, keyed by the example video's id – `only_markets`
+(e.g. `["sl"]`: only the Slovenian list, used for our own Slovenian creators' videos), `app_link` (the format's own page
+on memoai.eu that creators film, e.g. memoai.eu/ugc/oral-quiz), `brief` (note from the campaign team for the script
+writer and every check), `own_brand` (example is already a Memo AI video → the note under it doesn't say "another
+brand"). Several formats in one run: separate them with `;` in the add_format input.
+
+## Note under the inspiration video (user's wording, 10 Oct 2026)
+The ⚠️ callout says: the inspiration video is from another brand and is NOT the video to make – copy only the overall
+vibe, camera angles, how it's filmed, editing and where the demos are (that's what inspiration videos are for); the
+second line says to swap the other app for Memo AI. `mode=renote` puts the current text on every page; `verify`
+checks it.
+
 ## All scripts in one file
 `mode=export` writes every format page (title, script with cues, visual hook) as Markdown, encrypted with
 registry/export_cert.pem, to state/scripts_export.enc (repo and logs are public). Decrypt on the Mac with

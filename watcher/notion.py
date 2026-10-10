@@ -6,7 +6,7 @@ import time
 import requests
 
 from . import builder
-from .brand import CUE, CUE_LABEL
+from .brand import CUE, cue_label
 from .markets import PRIMARY, TEXT
 
 API = 'https://api.notion.com/v1'
@@ -100,13 +100,15 @@ def inspo_note(lang, same_lang=False, own=False):
     """The note under the inspiration video: same-language example = 'use it as the model, say our script';
     otherwise 'film from our script, the video shows pacing/look'. The "app swap" line only for the other app's videos."""
     T = TEXT[lang]
-    first = T['inspo_note_same'] if same_lang else T['inspo_note'][0]
-    lines = [first] if own else [first, T['inspo_note'][1]]
+    if own:  # the example is already a Memo AI video (our own creators): no "other brand / swap the app" lines
+        lines = [T['inspo_note_own_same'] if same_lang else T['inspo_note_own']]
+    else:
+        lines = [T['inspo_note_same'] if same_lang else T['inspo_note'][0], T['inspo_note'][1]]
     return lines + ([T['local_note']] if T.get('local_note') else [])  # Balkan: creators may use their own country's names
 
 
 def cue_links(links):
-    return {CUE: (CUE_LABEL, links[CUE])}
+    return {CUE: (cue_label(links[CUE]), links[CUE])}
 
 
 def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, same_lang=False):
@@ -135,7 +137,7 @@ def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, 
     blocks.append(divider())
 
     blocks.append(block('heading_2', [rt('🔧'), rt(T['res_h'], bold=True)]))
-    res = [rt(CUE_LABEL, link=links[CUE])]
+    res = [rt(cue_label(links[CUE]), link=links[CUE])]
     for asset in spec.get('assets_needed', []):
         res.append(rt(f"\n📎 {asset['name']} – {T['asset_todo']}: {asset.get('description', '')}"))
     blocks.append(block('callout', res, icon={'type': 'emoji', 'emoji': '💡'}, color='gray_background'))
