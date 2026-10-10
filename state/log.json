@@ -1343,5 +1343,204 @@
   ],
   "ts": 1791645998,
   "type": "rerank"
+ },
+ {
+  "format": "A20261008204718",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 title fixed: 3 web stranice koje djeluju ilegalno / example not this format (The format is a listicle of little-known student discounts (transport, free Micr) /",
+   "🇸🇮 example not this format (The example is a '3 websites that feel illegal' listicle (photo geolocation, not) / put back the original Astra AI video / script rewri"
+  ],
+  "tries": 1,
+  "ts": 1791648837,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008204718",
+  "position": null,
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 title fixed: 3 web stranice koje djeluju ilegalno / example not this format (The format is a listicle of little-known student discounts (transport, free Micr) /",
+   "🇸🇮 example not this format (The example is a '3 websites that feel illegal' listicle (photo geolocation, not) / put back the original Astra AI video / script rewri"
+  ],
+  "ts": 1791648837,
+  "type": "format_held",
+  "video": "7691324800123342102"
+ },
+ {
+  "format": "A20261008204718",
+  "level": "viral",
+  "ts": 1791648839,
+  "type": "alert",
+  "video": "7691324800123342102",
+  "views": 193100
+ },
+ {
+  "format": "A20261008210957",
+  "level": "viral",
+  "ts": 1791648860,
+  "type": "alert",
+  "video": "7690238727280528662",
+  "views": 163600
+ },
+ {
+  "format": "A20261010161437",
+  "reasons": [
+   "cross-country check fail: format_consistency sl: The hook stage direction tells the creator to put a mixed-language title on screen: 'koje svi / 5 UČENCEV / OBOŽUJEMO'. It should match the Slovenian title 'ki jih vsi / 🧑🏼‍🎓5 UČENCEV👩🏼‍🎓 / OBOŽUJEMO'."
+  ],
+  "tries": 1,
+  "ts": 1791649207,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010161437",
+  "page_de": "3f565e84-a3c2-81e8-afd8-d8f29ac8cb48",
+  "pages": {
+   "sl": "3f565e84-a3c2-817e-9399-d8a7083c900f"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sl: The hook stage direction tells the creator to put a mixed-language title on screen: 'koje svi / 5 UČENCEV / OBOŽUJEMO'. It should match the Slovenian title 'ki jih vsi / 🧑🏼‍🎓5 UČENCEV👩🏼‍🎓 / OBOŽUJEMO'."
+  ],
+  "ts": 1791649207,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010161437",
+  "format": "A20261010161437",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sl: The hook stage direction tells the creator to put a mixed-language title on screen: 'koje svi / 5 UČENCEV / OBOŽUJEMO'. It should match the Slovenian title 'ki jih vsi / 🧑🏼‍🎓5 UČENCEV👩🏼‍🎓 / OBOŽUJEMO'."
+  ],
+  "ts": 1791649208,
+  "type": "alert",
+  "video": "7693291236744121620",
+  "views": 148600
+ },
+ {
+  "format": "A20261010162026",
+  "reasons": [
+   "cross-country check fail: directions_match sl: The directions open with a close-up of the frozen keys before the talking-head. The example, the reference hook and SL's own cue script all open with the selfie and caption, and SH's directions say the same, so the two countries contradict each other. Fix: start with the selfie "
+  ],
+  "tries": 1,
+  "ts": 1791649732,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010162026",
+  "page_de": "3f565e84-a3c2-81dd-93d3-c4a95caeb49d",
+  "pages": {
+   "sl": "3f565e84-a3c2-81f3-a771-d05601b576fa"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: directions_match sl: The directions open with a close-up of the frozen keys before the talking-head. The example, the reference hook and SL's own cue script all open with the selfie and caption, and SH's directions say the same, so the two countries contradict each other. Fix: start with the selfie "
+  ],
+  "ts": 1791649732,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010162026",
+  "format": "A20261010162026",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: directions_match sl: The directions open with a close-up of the frozen keys before the talking-head. The example, the reference hook and SL's own cue script all open with the selfie and caption, and SH's directions say the same, so the two countries contradict each other. Fix: start with the selfie "
+  ],
+  "ts": 1791649732,
+  "type": "alert",
+  "video": "7693614549269810450",
+  "views": 144500
+ },
+ {
+  "format": "A20261009015525",
+  "level": "viral",
+  "ts": 1791649750,
+  "type": "alert",
+  "video": "7687358418922900756",
+  "views": 134300
+ },
+ {
+  "format": "A20261010162928",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / script corrected towards the origi",
+   "🇸🇮 title fixed: 1. Pravna fakulteta 👩‍⚖️\n2. FOV 👨‍💼\n3. Ekonomska fakulteta 💵 / script rewritten sentence by sentence (124 words (original 131)) / filming direction"
+  ],
+  "tries": 1,
+  "ts": 1791650284,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010162928",
+  "page_de": "3f565e84-a3c2-81d3-8e98-c731ff969e40",
+  "pages": {
+   "sl": "3f565e84-a3c2-81f9-b33c-fc4551d00ce7"
+  },
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / script corrected towards the origi",
+   "🇸🇮 title fixed: 1. Pravna fakulteta 👩‍⚖️\n2. FOV 👨‍💼\n3. Ekonomska fakulteta 💵 / script rewritten sentence by sentence (124 words (original 131)) / filming direction"
+  ],
+  "ts": 1791650284,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010162928",
+  "format": "A20261010162928",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / script corrected towards the origi",
+   "🇸🇮 title fixed: 1. Pravna fakulteta 👩‍⚖️\n2. FOV 👨‍💼\n3. Ekonomska fakulteta 💵 / script rewritten sentence by sentence (124 words (original 131)) / filming direction"
+  ],
+  "ts": 1791650285,
+  "type": "alert",
+  "video": "7687680254495788308",
+  "views": 130100
+ },
+ {
+  "format": "A20261008205804",
+  "level": "viral",
+  "ts": 1791650299,
+  "type": "alert",
+  "video": "7694766667355770134",
+  "views": 113700
+ },
+ {
+  "format": "A20261010163838",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / sti",
+   "🇸🇮 filming directions corrected / script rewritten sentence by sentence (206 words (original 208)) / script corrected towards the original: Added details not in th"
+  ],
+  "tries": 1,
+  "ts": 1791650890,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010163838",
+  "page_de": "3f565e84-a3c2-810a-8dc3-f502cc653ae8",
+  "pages": {
+   "sl": "3f565e84-a3c2-812f-88c5-c7a29c250a40"
+  },
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / sti",
+   "🇸🇮 filming directions corrected / script rewritten sentence by sentence (206 words (original 208)) / script corrected towards the original: Added details not in th"
+  ],
+  "ts": 1791650890,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010163838",
+  "format": "A20261010163838",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / sti",
+   "🇸🇮 filming directions corrected / script rewritten sentence by sentence (206 words (original 208)) / script corrected towards the original: Added details not in th"
+  ],
+  "ts": 1791650891,
+  "type": "alert",
+  "video": "7688802612111510805",
+  "views": 104800
  }
 ]

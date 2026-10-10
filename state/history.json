@@ -614,11 +614,12 @@
  },
  "7687358418922900756": {
   "backfill": true,
+  "bootstrap_tries": 1,
   "created": 1789852608,
-  "format": null,
+  "format": "A20261009015525",
   "handle": "smartishaangelisaa",
   "hook": "How can anyone study anatomy from a book after seeing this 3D organ view",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 133700,
@@ -650,11 +651,12 @@
  },
  "7687680254495788308": {
   "backfill": true,
+  "bootstrap_tries": 1,
   "created": 1789927541,
-  "format": null,
+  "format": "A20261010162928",
   "handle": "smartishaangelisaa",
   "hook": "Graduating students, what are you enrolling in?",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 129100,
@@ -794,9 +796,9 @@
  },
  "7688802612111510805": {
   "backfill": true,
-  "bootstrap_tries": 1,
+  "bootstrap_tries": 2,
   "created": 1790188861,
-  "format": null,
+  "format": "A20261010163838",
   "handle": "learn.with.darija",
   "hook": "Balkan study tips video with no text or speech",
   "judged": true,
@@ -987,11 +989,12 @@
   "views_7d": 311
  },
  "7690238727280528662": {
+  "bootstrap_tries": 1,
   "created": 1790523239,
-  "format": null,
+  "format": "A20261008210957",
   "handle": "lern.mit.domi",
   "hook": "",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 160000
@@ -1572,11 +1575,12 @@
   "views_7d": 7116
  },
  "7691324800123342102": {
+  "bootstrap_tries": 1,
   "created": 1790776111,
-  "format": null,
+  "format": "A20261008204718",
   "handle": "lern.mit.domi",
   "hook": "",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 191500
@@ -3330,8 +3334,9 @@
   "views_7d": 414
  },
  "7693291236744121620": {
+  "bootstrap_tries": 1,
   "created": 1791233962,
-  "format": null,
+  "format": "A20261010161437",
   "handle": "smartishaangelisaa",
   "hook": "The 5 students we all love (class types ranking)",
   "judged": true,
@@ -3495,9 +3500,9 @@
   "views_7d": 4210
  },
  "7693614549269810450": {
-  "bootstrap_tries": 1,
+  "bootstrap_tries": 2,
   "created": 1791309237,
-  "format": null,
+  "format": "A20261010162026",
   "handle": "studywithandja",
   "hook": "",
   "judged": true,
@@ -4606,11 +4611,12 @@
   "views_7d": 6658
  },
  "7694766667355770134": {
+  "bootstrap_tries": 1,
   "created": 1791577482,
-  "format": null,
+  "format": "A20261008205804",
   "handle": "foxara.vas.uci",
   "hook": "Did you win? (caption only; no speech or on-screen text)",
-  "judged": false,
+  "judged": true,
   "local": true,
   "mature": false,
   "views": 97200,

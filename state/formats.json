@@ -13,17 +13,17 @@
   "id": "A20261008204718",
   "inspo": {
    "sh": {
-    "at": 1791502939,
-    "prev": "https://www.tiktok.com/@karla_studytok/video/7683950978386742560",
+    "at": 1791648555,
+    "prev": "https://www.tiktok.com/@lern.mit.domi/video/7691324800123342102",
     "strict": true,
     "url": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
-    "views": 202400
+    "views": 204500
    },
    "sl": {
     "audit": true,
     "strict": true,
     "url": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
-    "views": 202400
+    "views": 204500
    }
   },
   "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
@@ -31,18 +31,18 @@
    "sl": "3f365e84-a3c2-81fb-b984-fbf04f3851f5"
   },
   "pending": {
-   "kind": "new",
+   "kind": "revive",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 title fixed: Popusti za učenike i studente za koje sigurno niste znali ‼️ / filming directions corrected / filming directions corrected / script corrected towar",
-    "🇸🇮 title fixed: Popusti za dijake in študente, za katere zagotovo nisi vedel / script rewritten sentence by sentence (89 words (original 84)) / title fixed: Popust"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 title fixed: 3 web stranice koje djeluju ilegalno / example not this format (The format is a listicle of little-known student discounts (transport, free Micr) /",
+    "🇸🇮 example not this format (The example is a '3 websites that feel illegal' listicle (photo geolocation, not) / put back the original Astra AI video / script rewri"
    ],
-   "since": 1791644569,
+   "since": 1791648837,
    "tries": 1
   },
   "revived": {
-   "at": 1791502910,
-   "because": "https://www.tiktok.com/@karla_studytok/video/7683950978386742560",
-   "views": 173600
+   "at": 1791648523,
+   "because": "https://www.tiktok.com/@lern.mit.domi/video/7691324800123342102",
+   "views": 193100
   },
   "reworded": {
    "sh": true,
@@ -376,5 +376,101 @@
   "source_video": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930",
   "status": "pending",
   "title": "Gradivo kao sočan trač 🍿"
+ },
+ {
+  "created": 1791648877,
+  "description": "Talking-head 'ranking/list of student types' video while making a drink on camera, where the last type leads into a friend's study-app recommendation with a screen recording of the app on a laptop and a 'part 2' teaser.",
+  "id": "A20261010161437",
+  "page_id": "3f565e84-a3c2-81e8-afd8-d8f29ac8cb48",
+  "pages": {
+   "sl": "3f565e84-a3c2-817e-9399-d8a7083c900f"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: format_consistency sl: The hook stage direction tells the creator to put a mixed-language title on screen: 'koje svi / 5 UČENCEV / OBOŽUJEMO'. It should match the Slovenian title 'ki jih vsi / 🧑🏼‍🎓5 UČENCEV👩🏼‍🎓 / OBOŽUJEMO'."
+   ],
+   "since": 1791649207,
+   "tries": 1
+  },
+  "reworded": {
+   "sl": true
+  },
+  "script": "Pet učenika u razredu koje svi obožavamo. Ona osoba u odjeljenju koja uvijek, ali uvijek ima da ti pozajmi hemijsku. Ja mislim da oni imaju bukvalno infinity broj hemijskih u rancu. Znate ono kad cijelo odjeljenje nešto misli, ali se bukvalno niko ne usudi da to kaže, i onda ta jedna osoba ustane i kaže to nastavniku. Skidam kapu. Ona osoba u odjeljenju koja ti bukvalno 2 minuta prije nekog testa sve objasni. Moja drugarica je bukvalno ovaj posljednji tip osobe, i ona je meni otkrila kako zapravo ona sve to sama skapira. Onda ona meni kaže: „Instaliraj ovu aplikaciju“ i pogledajte ovo. U njoj možeš ubaciti bilo koje gradivo koje spremaš, zatim snimiti predavanje, ubaciti PDF ili prezentaciju, i uslikati sav materijal iz svoje sveske ili knjige. Sada možeš izabrati bilo koji način na koji želiš da učiš. Evo, ja sam ovdje na primjer izabrala flash kartice. Ostalo ćemo snimati u part 2.",
+  "source_video": "https://www.tiktok.com/@smartishaangelisaa/video/7693291236744121620",
+  "status": "pending",
+  "title": "5 učenika koje svi obožavamo 🧑‍🎓"
+ },
+ {
+  "created": 1791649226,
+  "description": "Funny talking-head study vlog where the creator's sister froze her apartment keys in ice so she has to study until it melts, with a study montage set to a love song whose 'only you I need' line lands on the study app on screen.",
+  "id": "A20261010162026",
+  "page_id": "3f565e84-a3c2-81dd-93d3-c4a95caeb49d",
+  "pages": {
+   "sl": "3f565e84-a3c2-81f3-a771-d05601b576fa"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: directions_match sl: The directions open with a close-up of the frozen keys before the talking-head. The example, the reference hook and SL's own cue script all open with the selfie and caption, and SH's directions say the same, so the two countries contradict each other. Fix: start with the selfie "
+   ],
+   "since": 1791649732,
+   "tries": 1
+  },
+  "script": "Sestra mi je zaledila ključeve od stana jer ništa ne učim, a ispitni rok se bliži. Pa kad se ovo malo odledi, da otključam svoj stan. Uzimamo ovu knjigu. I krećemo s učenjem. Ne trebaju skupa kola, ne treba ni stan, ne treba mi puno toga da ostvarim san. Ne treba mi brdo para, niti sto drugara, samo ti mi trebaš, dušo, ostalo me smara. Ne treba mi crkva, ja sam s tobom naš'o spas, ne treba mi partija, a tebi dajem. Moji ključevi su dovoljno istopljeni, tako da mogu izaći iz stana. Ne znam šta bih rekla za ovaj način učenja.",
+  "source_video": "https://www.tiktok.com/@studywithandja/video/7693614549269810450",
+  "status": "pending",
+  "title": "Sestra mi je zaledila ključeve 🧊"
+ },
+ {
+  "created": 1791649768,
+  "description": "Talking-head 'secret app' reveal where the creator does a casual drink-making activity with an on-screen list of university faculties, then films a laptop screen showing the app's lessons and quizzes, naming the app at the end and asking viewers to comment if their faculty is on the list.",
+  "id": "A20261010162928",
+  "page_id": "3f565e84-a3c2-81d3-8e98-c731ff969e40",
+  "pages": {
+   "sl": "3f565e84-a3c2-81f9-b33c-fc4551d00ce7"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / script corrected towards the origi",
+    "🇸🇮 title fixed: 1. Pravna fakulteta 👩‍⚖️\n2. FOV 👨‍💼\n3. Ekonomska fakulteta 💵 / script rewritten sentence by sentence (124 words (original 131)) / filming direction"
+   ],
+   "since": 1791650284,
+   "tries": 1
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Ako ideš na neki od ovih fakulteta, čestitam ti, jer si upravo ubo jackpot. Nećete ni povjerovati koliki ste srećnici, zato što sam pronašla aplikaciju koja ti od svih lekcija za ove fakultete napravi bilješke. Nemojte ovo otkrivati mnogo ljudi, već neka ostane to neka naša mala tajna. Znači, ovdje treba da ubaciš predavanje, biraš snimak, PDF ili slike bilješki, i to sa godine koju pohađaš i fakulteta koji studiraš. I ovdje možeš pronaći bilješke, kartice i kviz napravljene od predavanja sa tog fakulteta. I sada imaš uvod u svaku lekciju, i poslije svake definicije dobiješ brzi kviz kako bi utvrdio da li si to dobro razumio. U pitanju je ova aplikacija koja se zove Memo AI. U komentarima mi napišite da li se vaš fakultet nalazi na ovom spisku.",
+  "source_video": "https://www.tiktok.com/@smartishaangelisaa/video/7687680254495788308",
+  "status": "pending",
+  "title": "Jackpot za sve brucoše 🎰"
+ },
+ {
+  "created": 1791650318,
+  "description": "Talking-head creator cuts a paper strip of the day's 24 hours with scissors to show how little study time is left, then demos the study app's features on a tablet.",
+  "id": "A20261010163838",
+  "page_id": "3f565e84-a3c2-810a-8dc3-f502cc653ae8",
+  "pages": {
+   "sl": "3f565e84-a3c2-812f-88c5-c7a29c250a40"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / sti",
+    "🇸🇮 filming directions corrected / script rewritten sentence by sentence (206 words (original 208)) / script corrected towards the original: Added details not in th"
+   ],
+   "since": 1791650890,
+   "tries": 1
+  },
+  "reworded": {
+   "sl": true
+  },
+  "script": "Svaki put kada dobijemo lošu ocjenu s nekog kontrolnog, nastavnici i roditelji kažu da smo imali dovoljno vremena da naučimo. Recimo da nam je vrijeme spavanja od 10 pa do 7. U školi smo do 1. Kada dođemo kući, naravno želimo malo da se odmorimo, za to uzimamo sat vremena. Onda za ručak, doručak i večeru, sveukupno uzimamo možda još sat vremena. Za vannastavne aktivnosti uzimamo 2 sata. Za vrijeme sa porodicom uzimamo još 2 sata. I ostaje nam samo 2 sata da naučimo sve što smo trebali. Sada ću vam pokazati aplikaciju sa kojom bukvalno učite jako brzo, kroz nekakve igrice, i mnogo je lagano. Ta aplikacija se zove Memo AI, i u njoj imate ovu ovdje opciju: \"Probni test\". Ovdje imate opciju \"Nova bilješka\", ali pošto sam ja već napravila jednu bilješku, nastaviću. Prije nego što dođete do ovog dijela, imate opciju da birate da li ćete snimiti predavanje, ubaciti PDF ili uslikati svoje bilješ",
+  "source_video": "https://www.tiktok.com/@learn.with.darija/video/7688802612111510805",
+  "status": "pending",
+  "title": "Imamo samo 2 sata za učenje? ✂️"
  }
 ]

@@ -602,5 +602,239 @@
    "7694393004118854930": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930"
   },
   "title_en": "Study material as juicy gossip 🍿 (ASMR prop + voice tutor)"
+ },
+ "A20261010161437": {
+  "accepted_sources": [
+   "7693291236744121620"
+  ],
+  "allowed_localisation": [
+   "Language and dialect of speech and on-screen text (Slovenian, Croatian, Bosnian, Serbian), including local words like odeljenje/razred, hemijska/kemijska/kuli, test/kontrolni",
+   "The drink being made and the setting (kitchen, desk, café-style corner)",
+   "Creator's look and gender. The friend may be drugarica/prijateljica/frend",
+   "Emoji and font styling of the 3-line title, kept as the same 3-line structure",
+   "The subject and material shown in the demo (e.g. biology PDF, history textbook photos)",
+   "Which study modes are listed aloud before flashcards, as long as they are real Memo AI features",
+   "Wording of the 'install' line, e.g. 'Instaliraj' vs 'Otvori memoai.eu', because Memo AI is a web app"
+  ],
+  "beats": [
+   "1. Hook: talking head, making a drink, says 'Pet učenika u razredu koje svi obožavamo' with the 3-line on-screen title.",
+   "2. Type 1: the person who always, but ALWAYS, has a pen to lend you, with the joke that they have a literal infinity of pens in their backpack.",
+   "3. Type 2: the whole class thinks something but nobody dares say it, then that one person stands up and says it to the teacher. 'Skidam kapu.'",
+   "4. Type 3: the person who explains everything to you literally 2 minutes before a test.",
+   "5. Twist: 'Moja drugarica je bukvalno ovaj poslednji tip osobe', and she showed me how she actually figures it all out herself. Then she told me: 'Instaliraj Memo AI' / 'Otvori Memo AI', and look at this. Cut to the laptop screen recording.",
+   "6. Demo: in Memo AI you can upload whatever you're studying for: a recorded lecture, a PDF, or up to 10 photos of your notebook or textbook. It makes the notes (wait cut). Then you can pick any way you want to study: flashcards, quiz, practice test, mind map, podcast, voice tutor. 'Evo, ja sam ovde na primer izabrala flash kartice.' Flashcards open on screen.",
+   "7. Outro: 'Ostalo ćemo snimati u part 2.' Hard stop, no extra CTA."
+  ],
+  "canonical_source": "7693291236744121620",
+  "filming": "About 35–50 s, vertical 9:16. Shot A: medium close-up talking head at a kitchen counter or desk, making a drink (coffee, iced drink, matcha) over beats 1–5, with natural jump cuts between types and the bold 3-line title over the hook. Shot B (beat 6): screen recording of memoai.eu in a laptop browser, or the laptop filmed over the shoulder, with the voiceover continuing. Demo order: open Memo AI → upload/scan material (PDF or photos of notebook/textbook pages) → jump-cut the few-minute wait → the finished note appears → open the study options list → tap Flashcards → flip 1–2 cards. Optionally cut back to the talking head for the 'part 2' line.",
+  "generated": 1791648983,
+  "hook": "Pet učenika u razredu koje svi obožavamo. A talking head says this straight to camera while making a drink. On-screen text: 'koje svi / 🧑🏼‍🎓5 UČENIKA👩🏼‍🎓 / OBOŽAVAMO'.",
+  "not_allowed": [
+   "Changing the list of student types, their order, or the pen/infinity, 'skidam kapu' and 2-minutes-before-test lines",
+   "Leaving out the drink-making talking head or turning it into a voiceover-only or text-only video",
+   "Dropping the friend-as-last-type bridge, or naming the app before beat 5",
+   "Showing the app on a phone instead of a laptop screen recording as the main demo",
+   "Picking any study mode other than flashcards as the one shown",
+   "Replacing the 'part 2' ending with a hard CTA, a discount, or a link-in-bio push",
+   "Showing or claiming features Memo AI lacks: picking a test date or target score as app settings, snap-and-solve, homework grading, pasting text, PDF export, photos in chat, a store Android app",
+   "Mentioning or showing Astra AI, Studyflash or any other app"
+  ],
+  "premise": "A relatable list of the student types everyone in class loves, filmed casually while the creator makes a drink. The last type (the friend who explains everything 2 minutes before a test) turns into the payoff. The creator's friend is that person, and she shared her secret: Memo AI. The creator shows it on a laptop screen recording, picks flashcards, and ends on a 'part 2' teaser instead of a hard sell.",
+  "product": {
+   "cta": "none (the soft 'Ostalo ćemo snimati u part 2' teaser takes its place)",
+   "features_used": [
+    "Upload a PDF / Word / PowerPoint, or a recorded lecture",
+    "Scan or upload up to 10 photos of notebook or textbook pages",
+    "Generated notes",
+    "Flashcards (the feature shown)",
+    "Choice of study modes: quiz with explanations, graded practice test, mind map, podcast, voice tutor",
+    "Web app on a laptop (memoai.eu)"
+   ],
+   "introduced_at_beat": 5,
+   "spoken_brand": "Beat 5, in the friend's quoted line ('Instaliraj/Otvori Memo AI'). It is the same spot where the original names the app. The memoai.eu URL is visible in the browser bar during the screen recording but never read aloud."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7693291236744121620": "https://www.tiktok.com/@smartishaangelisaa/video/7693291236744121620"
+  },
+  "title_en": "5 students we all love 🧑‍🎓"
+ },
+ "A20261010162026": {
+  "accepted_sources": [
+   "7693614549269810450"
+  ],
+  "allowed_localisation": [
+   "Language of the speech and captions (Slovenian, Croatian, Bosnian or Serbian), translated almost word for word",
+   "The love song: the original or a locally known love song with an equivalent 'only you I need' line that lands on Memo AI",
+   "Who froze the keys (sister, brother, roommate, mum) and the exact wording of the caption",
+   "The subject, textbook and exam on screen; the local exam-period wording",
+   "The room, desk setup, ice container and the creator's look",
+   "The device Memo AI is shown on (phone or laptop) and which real Memo AI features follow the note in the montage",
+   "Optional memoai.eu text on screen"
+  ],
+  "beats": [
+   "1. Hook: selfie talking-head with the caption 'MY SISTER LOCKED ME IN THE APARTMENT!!'. She explains that her sister froze her keys because she isn't studying and the exam period is coming. Close-up of the keys frozen in ice.",
+   "2. Rule set-up: 'So when this melts a bit, I can unlock my apartment.' The ice block is placed visibly near the study spot.",
+   "3. Start studying: 'We take this book. And we start studying.' She picks up the textbook, opens it and sits down at the desk or bed.",
+   "4. Montage over the love song, first lines ('I don't need an expensive car, I don't need an apartment, I don't need much to make my dream come true, I don't need a pile of money or a hundred friends'). Quick cuts: reading, highlighting, scanning textbook pages with the Memo AI Scan camera, and the ice melting in between.",
+   "5. Punchline sync: on the line 'only you I need, darling, everything else bores me' the screen shows Memo AI (the finished notes from the scanned pages, then flashcards or a quiz). The app is the 'you' in the song.",
+   "6. Montage continues over the rest of the song ('I don't need a church, with you I found salvation...'). More Memo AI use (quiz with explanations, practice test score or mind map) cut with the shrinking ice.",
+   "7. Payoff: 'My keys are melted enough, so I can leave the apartment.' She shows the keys freed from the ice or water.",
+   "8. Deadpan ending: 'I don't know what to say about this way of studying.' A second caption says she's grateful because she actually passed this exam 🍀."
+  ],
+  "canonical_source": "7693614549269810450",
+  "filming": "About 30–45 s, vertical 9:16, phone selfie plus handheld shots. Shots: (1) talking-head selfie for hook and rule; (2) close-up of the keys frozen in an ice block, in a bowl or on a plate, re-shot at 2–3 later points to show it melting as a timer; (3) picking up and opening the textbook at the desk; (4) montage set to the love song with fast cuts: reading, highlighting, scanning pages with the Memo AI Scan camera (cut the waiting while the note is made), then screen shots of the finished Memo AI note. The 'only you I need, darling' line lands exactly on the Memo AI screen, followed by flashcards / quiz with explanations / practice test percentage; (5) the keys freed from the ice; (6) a closing talking-head line. Demo order: scan textbook pages (up to 10 photos) → note → flashcards → quiz or practice test. Memo AI is visible on a phone or laptop screen; the app is never named out loud.",
+  "generated": 1791649392,
+  "hook": "Selfie talking-head in the apartment with a big on-screen caption: 'MY SISTER LOCKED ME IN THE APARTMENT!!' The creator says straight away: 'My sister froze my apartment keys in ice because I'm not studying at all and the exam period is coming.' Then she shows the keys frozen in a block of ice.",
+  "not_allowed": [
+   "Removing the frozen-keys-in-ice lockdown or the melting ice as the study timer",
+   "Montage without a love song, or the 'only you I need' line not landing on Memo AI on screen",
+   "Turning it into a spoken ad, a tutorial voice-over or a feature walkthrough instead of a funny vlog",
+   "Dropping the opening explanation, the keys-released payoff or the deadpan closing line",
+   "Showing features Memo AI doesn't have (snap-and-solve answers to one task, homework checking, photos in chat, PDF export, pasting text, an Android store app)",
+   "Showing or naming Astra AI, Studyflash or any other study app",
+   "A different situation, e.g. a parent's phone ban or a timer app instead of frozen keys"
+  ],
+  "premise": "A funny self-imposed lockdown. The creator's sister froze her apartment keys in ice, so she can't leave until it melts and has to study in the meantime. The melting ice works as a study timer. The study montage plays over a love song, and the line 'only you I need, darling' hits exactly when Memo AI is on screen, so the app becomes the 'love' that gets her through. The ending is a dry, deadpan comment about the method. A caption adds that she did pass the exam.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "Scan camera: photos of textbook pages (up to 10)",
+    "notes from the scanned pages",
+    "flashcards",
+    "quiz with explanations",
+    "graded practice test (percentage + feedback)",
+    "mind map"
+   ],
+   "introduced_at_beat": 4,
+   "spoken_brand": "not spoken – Memo AI appears only on screen during the study montage (optionally memoai.eu in a caption)"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7693614549269810450": "https://www.tiktok.com/@studywithandja/video/7693614549269810450"
+  },
+  "title_en": "My sister froze my keys in ice 🧊"
+ },
+ "A20261010162928": {
+  "accepted_sources": [
+   "7687680254495788308"
+  ],
+  "allowed_localisation": [
+   "language of speech and overlays (Slovenian, Croatian, Bosnian, Serbian)",
+   "the on-screen faculty list: the country's real universities and faculties",
+   "the drink being made and the kitchen/room setting",
+   "creator's gender/look and matching grammatical forms",
+   "the subject and lecture shown in the demo",
+   "local slang equivalent for 'hit the jackpot' and 'our little secret' with the same meaning",
+   "the 🎰 emoji / caption wording"
+  ],
+  "beats": [
+   "1. Hook (talking head, making a drink, faculty list overlaid): 'If you go to one of these faculties, congratulations, you just hit the jackpot.'",
+   "2. Build-up: 'You won't believe how lucky you are, because I found an app that has all the lessons for these faculties written down.' The original line stays. 'has all the lessons written down' becomes 'makes notes from every lecture for these faculties' (a lecture recording, PDF, PowerPoint or photos of notes).",
+   "3. Secrecy line: 'Don't reveal this to too many people, let it stay our little secret.'",
+   "4. Laptop screen demo, step by step: 'So here you choose…'. The original's level/faculty/year/city picker becomes the real Memo AI flow: upload the lecture recording, PDF/PowerPoint or scan up to 10 photos of notes or the board, then choose the language.",
+   "5. Demo, the lessons: 'And here you can find the lectures…'. 'lectures uploaded by students from that faculty' becomes 'notes made from your faculty's lectures', with formulas shown properly.",
+   "6. Demo, quizzes: 'And now you have an intro to every lesson, and after every definition you get a quick quiz to check if you understood it well.' Shown as the Memo AI notes plus the quiz with explanations.",
+   "7. Brand reveal: 'The app in question is called Memo AI.'",
+   "8. CTA: 'Write in the comments whether your faculty is on this list.'"
+  ],
+  "canonical_source": "7687680254495788308",
+  "filming": "Total length about 30–45 s. Shot A, about 8–12 s: selfie talking head while casually making a drink (coffee, matcha, juice). The faculty list stays on screen as a text overlay the whole time. Shot B, about 20–30 s: handheld phone films a laptop screen with memoai.eu open while the voiceover continues. Demo order: upload or scan the material (lecture, PDF/PPT or photos of notes) → cut the few minutes of waiting → finished notes with an intro/overview of the lesson → scroll through definitions → open the quiz with explanations and answer a question. End on the Memo AI screen while the app is named, then speak the comment CTA. Casual, conspiratorial, excited tone with no studio polish.",
+  "generated": 1791649861,
+  "hook": "Talking-head opener while the creator casually makes a drink, with a list of university faculties on screen: \"If you go to one of these faculties, congratulations, because you just hit the jackpot.\"",
+  "not_allowed": [
+   "dropping the on-screen faculty list or the comment CTA about the list",
+   "replacing the casual drink-making talking head with another setting (e.g. a desk tutorial, street interview, skit)",
+   "naming Memo AI before the end or more than once",
+   "showing or claiming a faculty/year/city lecture library uploaded by other students, or any feature Memo AI lacks (snap-and-solve, homework grading, photos in chat, PDF export, pasted text, store Android app)",
+   "showing or mentioning Astra AI, Studyflash or any other app",
+   "dropping the 'secret / keep it between us' framing or the laptop-screen demo",
+   "turning it into a multi-feature showcase beyond the notes and quiz flow"
+  ],
+  "premise": "The creator acts like a student who found a 'secret' app that has all the lessons for the faculties on the list. Viewers are 'lucky' and asked to keep it 'our little secret'. A short laptop demo goes through the steps and shows lessons and quizzes. The app is named only at the end, and viewers are asked to comment whether their faculty is on the list.",
+  "product": {
+   "cta": "Write in the comments whether your faculty is on this list.",
+   "features_used": [
+    "upload of a lecture recording, PDF or PowerPoint",
+    "Scan camera / up to 10 photos of notes, textbook pages or the board",
+    "notes (formulas shown properly)",
+    "quiz with explanations",
+    "speaks Slovenian/Croatian/Bosnian/Serbian"
+   ],
+   "introduced_at_beat": 2,
+   "spoken_brand": "Brand name 'Memo AI' is spoken only once, at the end (beat 7). Before that it is 'an app'. The URL is not spoken."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7687680254495788308": "https://www.tiktok.com/@smartishaangelisaa/video/7687680254495788308"
+  },
+  "title_en": "Jackpot for all freshmen 🎰"
+ },
+ "A20261010163838": {
+  "accepted_sources": [
+   "7688802612111510805"
+  ],
+  "allowed_localisation": [
+   "Language and dialect of the script (Slovenian, Croatian, Bosnian or Serbian) as long as it is a near word-for-word translation of the original",
+   "Local school terms (e.g. 'kontrolni', 'test', 'preverjanje', 'kontrolka'), with the same meaning",
+   "Creator's look, gender, room and desk setup",
+   "Paper colour, how the hours are marked on the strip, and type of scissors",
+   "Device used for the demo (tablet, phone or laptop showing memoai.eu)",
+   "App UI language and the example subject or material shown in the note",
+   "Title/overlay wording, translated from 'Imamo samo 2 sata za učenje? ✂️'",
+   "Small grammar adjustments so the feature names read naturally in the local language"
+  ],
+  "beats": [
+   "1. Hook: talking head with the paper strip and scissors. 'Svaki put kada dobijemo lošu ocjenu s nekog kontrolnog, nastavnici i roditelji kažu da smo imali dovoljno vremena da naučimo.'",
+   "2. Sleep: 'Recimo da nam je vrijeme spavanja od 10 pa do 7.' The creator cuts off the 9-hour sleep segment.",
+   "3. School: 'U školi smo do 1.' The creator cuts off the school segment.",
+   "4. Rest: 'Kada dođemo kući, naravno želimo malo da se odmorimo, za to uzimamo sat vremena.' The creator cuts off 1 hour.",
+   "5. Meals: 'Onda za ručak, doručak i večeru, sveukupno uzimamo možda još sat vremena.' The creator cuts off 1 hour.",
+   "6. Extracurriculars: 'Za vannastavne aktivnosti uzimamo 2 sata.' The creator cuts off 2 hours.",
+   "7. Family: 'Za vrijeme sa porodicom uzimamo još 2 sata.' The creator cuts off 2 hours.",
+   "8. Payoff: the creator holds up the small leftover scrap. 'I ostaje nam samo 2 sata da naučimo sve što smo trebali.'",
+   "9. Pivot to the app: 'Sada ću vam pokazati aplikaciju sa kojom bukvalno učite jako brzo, kroz nekakve igrice, i mnogo je lagano. Ta aplikacija se zove Memo AI.' The creator picks up the tablet with Memo AI open.",
+   "10. Starting a note: on the tablet, the creator shows the option to make a new note ('Ovdje imate opciju da napravite novu bilješku, ali pošto sam ja već započela jednu, nastaviću') and opens an existing note.",
+   "11. Material input: 'Prije nego što dođete do ovog dijela, imate opciju da birate da li snimate predavanje, učitate PDF, Word ili PowerPoint, link ili slikate do 10 slika bilješki, i onda ubacite sav svoj materijal u aplikaciju.'",
+   "12. Flashcards demo: 'Na primjer, ovo su flash kartice: ovdje imate pitanje, i onda okrenete, i imate odgovor.' The creator taps a card to flip it.",
+   "13. Feature rundown while scrolling or tapping through each one: 'Pored flash kartica imate bilješke, podkaste, mapu uma, čitanje naglas, i kviz s objašnjenjima. Imate i probni test s ocjenom i glasovnog tutora koji vam objašnjava gradivo naglas.'"
+  ],
+  "canonical_source": "7688802612111510805",
+  "filming": "About 60–80 seconds, vertical 9:16, one continuous talking-head setup at a desk or table, in a natural student look. The first part (beats 1–8) is a medium shot of the creator holding a long paper strip that stands for 24 hours, optionally marked with hours. The creator cuts off one segment per sentence with scissors so each cut lands on its number, then holds the small 2-hour scrap up to the camera. The second part (beats 9–13) uses the same framing with the creator holding a tablet (or phone/laptop showing memoai.eu) toward the camera, with optional screen-capture inserts. The demo runs in this order: Memo AI home → create new note option, then open an existing note → material input options (record, upload file, link, scan photos) → flashcards, with a flip from question to answer → quick taps or scrolls through notes, podcast, mind map, read-aloud, quiz, graded practice test and voice tutor. Do not show waiting while a note is being made; cut it.",
+  "generated": 1791650431,
+  "hook": "Text overlay/title: 'Imamo samo 2 sata za učenje? ✂️'. The creator opens with the familiar complaint: 'Every time we get a bad grade on a test, teachers and parents say we had enough time to study.' They hold a paper strip that stands for the day's 24 hours, with scissors in their other hand.",
+  "not_allowed": [
+   "Dropping the physical paper strip and scissors, or replacing the cutting with a graphic, a list or a clock animation",
+   "Changing the time breakdown or the final result (sleep 10–7, school until 1, 1h rest, 1h meals, 2h extracurriculars, 2h family, 2h left)",
+   "Reordering the beats so the app appears before the 2-hour reveal",
+   "Showing or naming any other app (Astra AI, Studyflash, etc.)",
+   "Showing or claiming features Memo AI does not have: snap-and-solve answers, homework checking, photos in chat, PDF export, pasting text, a store Android app, video lessons, or choosing a target grade or test date",
+   "Adding a spoken hard-sell CTA, discount or price talk that is not in the original",
+   "Turning it into a voiceover-only or screen-recording-only video without the talking-head creator",
+   "Changing the angle from 'teachers and parents say we had enough time' to a different hook or problem"
+  ],
+  "premise": "A talking-head student uses scissors and a paper strip of the day's 24 hours to show that teachers and parents are wrong. They cut away sleep, school, rest, meals, extracurricular activities and family time until only a 2-hour scrap is left. Then they show the app that lets you learn very fast and easily in those 2 hours: Memo AI, demoed on a tablet.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "create a new note",
+    "record a lecture / upload PDF, Word or PowerPoint / web link / up to 10 photos via Scan camera or gallery",
+    "flashcards (question → flip → answer)",
+    "notes",
+    "podcast",
+    "mind map",
+    "read-aloud",
+    "quiz with explanations",
+    "graded practice test (percentage + feedback per answer)",
+    "voice tutor that explains the material out loud"
+   ],
+   "introduced_at_beat": 9,
+   "spoken_brand": "Said once in beat 9: 'Ta aplikacija se zove Memo AI'. The memoai.eu URL is not spoken and may only appear on screen."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7688802612111510805": "https://www.tiktok.com/@learn.with.darija/video/7688802612111510805"
+  },
+  "title_en": "Only 2 hours to study? ✂️ – Cutting up a paper strip of the day's 24 hours, then a study-app demo"
  }
 }

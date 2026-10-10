@@ -7,9 +7,22 @@
   "A20261009001913:sh": "failed",
   "A20261009001913:sl": "failed",
   "A20261010130453:sh": "failed",
-  "A20261010130453:sl": "failed"
+  "A20261010130453:sl": "failed",
+  "A20261010161437:sh": "fixed",
+  "A20261010161437:sl": "fixed",
+  "A20261010162026:sh": "fixed",
+  "A20261010162026:sl": "fixed",
+  "A20261010162928:sh": "failed",
+  "A20261010162928:sl": "failed",
+  "A20261010163838:sh": "failed",
+  "A20261010163838:sl": "failed"
  },
- "audit_fingerprints": {},
+ "audit_fingerprints": {
+  "A20261010161437:sh": "506923b42dd694ea7f935cd3ad4b38449945160da9cdccb56d9ea52350271161",
+  "A20261010161437:sl": "caeeee9fd394274b88d840dc506c4553405dab6e270a3f84fad7a4a9aa37cec0",
+  "A20261010162026:sh": "7616849f3bcf23ca843116ebb16f86524b90270c078e77474b43e19e32a206d0",
+  "A20261010162026:sl": "a5810cc225748cb0107f218cb2ff43a4fd8e436114a2170c87df30ce38164bb5"
+ },
  "discovered_at": 1791527938,
  "faithful_rewrite_started": 1791643120,
  "group_audit": {
@@ -904,6 +917,166 @@
     "sh": "Gradivo kao sočan trač 🍿"
    },
    "version": "group-2026-10-10.faithful-hook"
+  },
+  "A20261010161437": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791649177,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7693291236744121620",
+     "video_identity": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0"
+    },
+    "sl": {
+     "source_id": "7693291236744121620",
+     "video_identity": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0"
+    }
+   },
+   "key": "7981beb2189e933efa8e04ff4cf088ad9f6854ff2e0f6b19972c967fa8a891d6",
+   "passed": false,
+   "reasons": [
+    "format_consistency sl: The hook stage direction tells the creator to put a mixed-language title on screen: 'koje svi / 5 UČENCEV / OBOŽUJEMO'. It should match the Slovenian title 'ki jih vsi / 🧑🏼‍🎓5 UČENCEV👩🏼‍🎓 / OBOŽUJEMO'."
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The hook stage direction tells the creator to put a mixed-language title on screen: 'koje svi / 5 UČENCEV / OBOŽUJEMO'. It should match the Slovenian title 'ki jih vsi / 🧑🏼‍🎓5 UČENCEV👩🏼‍🎓 / OBOŽUJEMO'.",
+      "pass": false
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "Both countries follow the format and translate the original closely, and both replace the test-date and target-score claims with real Memo AI features; the only fix needed is in SL, where the hook stage direction gives a mixed Serbian/Slovenian on-screen title that does not match its Slovenian title.",
+   "title_fixes": {},
+   "version": "group-2026-10-10.faithful-hook"
+  },
+  "A20261010162026": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791649701,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7693614549269810450",
+     "video_identity": "sha256:8401ad9c8d9a1547a0ec81908a62ca7723b27e82a9bb3f040bb97275e09efdb4"
+    },
+    "sl": {
+     "source_id": "7693614549269810450",
+     "video_identity": "sha256:02a503e54e5bd36afaa705ca8c88d341075b84819de51c93e4f3b74fab2ed518"
+    }
+   },
+   "key": "75f2ffbb07356a635d2a749885b6e2667ea554a3e9983f141a54590e3404c42d",
+   "passed": false,
+   "reasons": [
+    "directions_match sl: The directions open with a close-up of the frozen keys before the talking-head. The example, the reference hook and SL's own cue script all open with the selfie and caption, and SH's directions say the same, so the two countries contradict each other. Fix: start with the selfie talking straight to camera, caption on screen, holding up the red bowl with the keys frozen in ice."
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The directions open with a close-up of the frozen keys before the talking-head. The example, the reference hook and SL's own cue script all open with the selfie and caption, and SH's directions say the same, so the two countries contradict each other. Fix: start with the selfie talking straight to camera, caption on screen, holding up the red bowl with the keys frozen in ice.",
+      "pass": false
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "Both countries follow the frozen-keys format closely and translate it almost word for word, with Memo AI cued on 'only you I need, darling'; the only failure is SL's filming directions, which open with the key close-up instead of the selfie.",
+   "title_fixes": {},
+   "version": "group-2026-10-10.faithful-hook"
   }
  },
  "group_duplicates": [],
@@ -938,6 +1111,7 @@
   "learnwithtamara": "sh",
   "learnwithtamy": "sh",
   "learnwithtika": "sh",
+  "lern.mit.domi": "",
   "smartishaangelisaa": "sh",
   "study.with.mili": "sh",
   "study.with.nataliaa": "sh",
@@ -970,6 +1144,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/160678ef-32dd-44af-bb6f-7a66f1b10436/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/202e841a-77a0-402c-8bae-35611033dfeb/video-notion.mp4": "sha256:2863a59e5df5fb158d39b04ccad651e449a674c01d28b27611cd5b291504cb87",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/23baa518-4640-4556-8e8e-4aa3c4331160/video-notion.mp4": "sha256:61696db2bb051d7382dd8e4bb6ddf26b57583264a2d8913b15aea64c2b749b94",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/25821af1-372a-453f-91e1-03e7b2fecca7/video.mp4": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/2c7d9ce4-ec78-4471-9516-94292f3e1227/video-notion.mp4": "sha256:9c02af67e47bd9ac17022fe8d832f4478e998428889e6141ed3779cabab38af7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/31a27f31-6d7a-492b-9a2f-5e21683e902a/video.mp4": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/337a99d9-13da-42a6-894a-f679e2935f94/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
@@ -980,6 +1155,8 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/481b3103-ec71-4664-a107-837fa596a460/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/4b623f87-a173-46be-9765-b8700a7903d3/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/4c43ba16-0bde-42ca-a741-bc88f316fe6d/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/52fa3806-18da-439d-ace4-f4c8a6cd2041/video-notion.mp4": "sha256:02a503e54e5bd36afaa705ca8c88d341075b84819de51c93e4f3b74fab2ed518",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/5533d356-9de1-4f27-8e21-d9d7e3f125aa/video-notion.mp4": "sha256:8401ad9c8d9a1547a0ec81908a62ca7723b27e82a9bb3f040bb97275e09efdb4",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/631fce93-8196-45d8-a854-da27fbc82d72/video-notion.mp4": "sha256:fa7d6f7f9a8ade294db9b305f23b9c45690bd9122a41071e1a75a268daafdb99",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/635ba303-0ce3-42a9-b988-0cc452861169/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6b3809ad-cf04-4426-8f8d-da0a3d675711/video-notion.mp4": "sha256:728cf7db67b5988163b4b35079212302d7be123337b97b582d506266b1fa9fea",
@@ -991,6 +1168,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/b724117d-0c36-4e93-972f-055d7c412d9d/video-notion.mp4": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/bc335721-f9ea-426a-a184-1dc49df91c0a/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d7a785da-5e23-40f6-9646-04afe72c6f2d/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d8652e47-9cec-4e2c-873c-20c8d5d7d2ec/video.mp4": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/dd9ebb60-8ddb-4a86-a657-f317fcdea81f/video.mp4": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/df86fa94-9d8c-4cfe-b69a-cc024d1c5e79/video.mp4": "sha256:e513b4868ed887f7d0fd7d95c00b0d8f505555382b0a29f910e4500bab96995b",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/f1862454-a6e1-4442-b139-1b9f803b769c/video-notion.mp4": "sha256:c885900fe56e7d31e3feb4705ce828c344025ae7ef682156992baed17396de77",
