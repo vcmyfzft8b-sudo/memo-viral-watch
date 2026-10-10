@@ -1,6 +1,9 @@
 {
- "note": "Accounts checked by hand (with evidence): add = Astra AI UGC to track, inactive = pause, own_add = our Memo AI creators {handle: market}.",
+ "note": "Accounts checked by hand: add = Astra AI UGC to track, inactive = pause, block = never track (user's decision), own_add = our Memo AI creators {handle: market}.",
  "add": {},
  "inactive": {},
- "own_add": {}
+ "own_add": {},
+ "block": {
+  "creatortipsbymonika": "user, 10 Oct 2026: Astra's creator-recruiting account, not a creator"
+ }
 }

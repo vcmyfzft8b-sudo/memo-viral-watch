@@ -830,6 +830,9 @@ def accounts_add(path):
     for h, why in data.get('inactive', {}).items():
         if h in accounts:
             accounts[h].update({'status': 'inactive', 'paused_reason': why})
+    for h, why in data.get('block', {}).items():  # never tracked again (the 3-day check skips blocked accounts)
+        accounts.setdefault(h, {'since': int(now)})
+        accounts[h].update({'status': 'inactive', 'blocked': True, 'blocked_reason': why})
     state.save('accounts.json', accounts)
     own_accounts, own_videos = own.load()
     for h, market in data.get('own_add', {}).items():
@@ -1238,6 +1241,7 @@ def main():
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
     ap.add_argument('--hook-lab', default='', nargs='?', const='-', help='[market:page_id] a copy of the Parakeet Visual Hook Lab -> that market\'s language, linked from its pages')
     ap.add_argument('--faithful-rewrite', action='store_true', help='once: every page script becomes the original transcribed/translated almost 1:1 (only the app swapped)')
+    ap.add_argument('--trash-staging', default='', help='page ids (comma-separated): move these leftover staging pages to the Notion trash - only if no format uses them')
     ap.add_argument('--export', action='store_true', help='all scripts as one encrypted Markdown file (state/scripts_export.enc)')
     ap.add_argument('--verify', action='store_true', help='read-only check of every list and page in Notion against the state')
     ap.add_argument('--reset-pending', action='store_true', help='formats waiting at the gate get their 4 tries back (after a fix)')
@@ -1498,6 +1502,19 @@ def main():
         return
     if a.faithful_rewrite:
         faithful_rewrite()
+        return
+    if a.trash_staging:
+        fmts, pages = load_formats(), state.load('notion.json', {})
+        radar = (pages.get('radar_page') or '').replace('-', '')
+        used = {(page_of(f, k) or '').replace('-', '') for f in fmts for k in load_config()['markets']}
+        used |= {(p or '').replace('-', '') for f in fmts for p in (f.get('pending_pages') or {}).values()}
+        for pid in [p.strip().replace('-', '') for p in a.trash_staging.split(',') if p.strip()]:
+            parent = ((notion.api('GET', f'/pages/{pid}').get('parent') or {}).get('page_id') or '').replace('-', '')
+            if pid in used or parent != radar:
+                print('kept (in use or not in the staging area):', pid)
+                continue
+            notion.api('PATCH', f'/pages/{pid}', {'archived': True})  # Notion trash: can be restored there
+            print('moved to the Notion trash:', pid)
         return
     if a.export:
         from . import export
