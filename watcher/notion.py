@@ -101,7 +101,8 @@ def inspo_note(lang, same_lang=False, own=False):
     otherwise 'film from our script, the video shows pacing/look'. The "app swap" line only for the other app's videos."""
     T = TEXT[lang]
     first = T['inspo_note_same'] if same_lang else T['inspo_note'][0]
-    return [first] if own else [first, T['inspo_note'][1]]
+    lines = [first] if own else [first, T['inspo_note'][1]]
+    return lines + ([T['local_note']] if T.get('local_note') else [])  # Balkan: creators may use their own country's names
 
 
 def cue_links(links):

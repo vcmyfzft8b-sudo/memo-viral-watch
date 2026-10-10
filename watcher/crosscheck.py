@@ -32,7 +32,7 @@ from . import align, audit, llm, localize, notion, reword
 from .brand import FACTS, OURS, SOURCE, TOPIC
 from .markets import PRIMARY, TEXT
 
-AUDIT_VERSION = 'group-2026-10-10.hook-section'
+AUDIT_VERSION = 'group-2026-10-10.localized-sl'
 REFERENCES = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'format_references.json')
 DIMENSIONS = ('format_consistency', 'script_matches_example', 'faithful_translation', 'features_claims',
               'directions_match')
@@ -268,7 +268,9 @@ other. Be strict:
 - faithful_translation: is the script this country's example transcribed / translated almost one to one - the same
   sentences in the same order, same meaning, words, jokes, numbers and claims, nothing added, left out or
   reworded? Allowed differences only: the app ({SOURCE} or another study app) -> {OURS} at the same spots, its
-  website -> memoai.eu, an app feature {OURS} lacks -> the closest real one, the language's spelling rules.
+  website -> memoai.eu, an app feature {OURS} lacks -> the closest real one, the language's spelling rules, and for
+  COUNTRY SL only: country-specific names localized to REAL Slovenian ones (that is required there: a Slovenian page
+  that keeps foreign faculties, cities or discounts FAILS). COUNTRY SH keeps the original's names.
 - features_claims (script AND on-screen title): only real {OURS} app features. All other claims, numbers and jokes
   stay exactly as in the original (that is correct, not a problem).
 - directions_match: is the visual hook section (OUR FILMING DIRECTIONS) one sentence, two at most, telling the creator

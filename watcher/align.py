@@ -121,7 +121,8 @@ one - {T['style']}:
 3. An app feature {OURS} does not have becomes the closest real {OURS} feature (only those words, see above).
 4. Address the viewer exactly as the original does ({T['address']}).
 5. Keep the original's on-screen texts and call to action exactly where they are.
-6. Cues: put cue "{CUE}" on the sentence where the original shows the app/site, "asset" (with asset_name exactly as
+6. {T.get('localize') or 'Names of universities, schools, cities, shops etc. stay exactly as in the original.'}
+7. Cues: put cue "{CUE}" on the sentence where the original shows the app/site, "asset" (with asset_name exactly as
    in our current script) where it shows something like a screen recording, "direction" (asset_name = short stage
    direction) for important acting moments, else null.
 Return JSON {{"source_mentions_in_original": <number>, "voiceover": {str(voiceover).lower()},

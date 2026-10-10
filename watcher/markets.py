@@ -23,6 +23,10 @@ TEXT = {
                   'the speaker\'s own past-tense verbs in the FEMININE form (naučila sam, uslikala sam) - most creators '
                   'are women and a man simply switches the ending'),
         'address': 'ti (informal singular; "vi" only if the original speaks to a group - then consistently)',
+        # One Balkan page serves four countries: names stay as in the original, the creator may swap them.
+        'localize': '',
+        'local_note': ('Ako scenarij spominje fakultete, škole, gradove, firme, cijene ili popuste iz neke zemlje, '
+                       'slobodno ih zamijeni onima iz svoje zemlje.'),
         # Soniox language codes and the language names a model may return for this market's videos.
         'codes': ('sr', 'hr', 'bs', 'sh', 'cnr', 'me'),
         'names': ('serbo-croatian', 'serbian', 'croatian', 'bosnian', 'montenegrin', 'bcs', 'bcms'),
@@ -80,6 +84,14 @@ TEXT = {
                   'past-tense verbs in the FEMININE form (naučila sem, slikala sem) - most creators are women and a man '
                   'simply switches the ending'),
         'address': 'ti (informal singular; "vi" only if the original speaks to a group - then consistently)',
+        # Slovenian pages are localized: country-specific things become real Slovenian ones (user, 10 Oct 2026).
+        'localize': ('Country-specific things are LOCALIZED for Slovenia: universities/faculties, schools, exams, '
+                     'grades, cities, shops, brands, prices in other currencies, local discounts and programmes become '
+                     'REAL Slovenian equivalents with their correct official names that make the same point (e.g. a '
+                     'faculty of sport -> "Fakulteta za šport (Univerza v Ljubljani)", the matura -> "splošna matura", '
+                     'a Serbian train discount -> the real Slovenian student discount). Never invent names, offers or '
+                     'numbers that do not exist in Slovenia; everything else stays one to one.'),
+        'local_note': '',
         'codes': ('sl',),
         'names': ('slovenian', 'slovene'),
         'video_heading': 'Video za navdih', 'source': 'Original na TikToku',

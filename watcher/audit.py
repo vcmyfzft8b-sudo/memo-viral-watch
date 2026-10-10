@@ -127,7 +127,8 @@ Check strictly:
    the same order with the same meaning, words, jokes, numbers and claims, nothing added, nothing left out, nothing
    reworded? The only allowed differences: {SOURCE} (or another study app it promotes) -> {OURS} at the same spots,
    its website -> {OURS_SITE}, an app feature {OURS} lacks -> the closest real {OURS} feature, the page language's
-   spelling rules. false if sentences are paraphrased, merged, added or dropped.
+   spelling rules{(' and this localization: ' + TEXT[lang]['localize']) if TEXT[lang].get('localize') else ' (names of universities, schools, cities etc. stay as in the original)'}.
+   false if sentences are paraphrased, merged, added or dropped.
 5. directions_ok: is the VISUAL HOOK section only one sentence (two at most) telling the creator to copy what the
    example video does in its first seconds (followed by one line offering the Visual Hook Lab instead) - concrete,
    matching the example's opening, and no other filming tips?

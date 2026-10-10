@@ -24,6 +24,7 @@ RULES = """RULES
   {ours} does not have becomes the closest real {ours} feature (only those words). If the original only shows the
   app ("this app here"), only show it too. Language: {style}. If the original is already in {lang}, the script is its
   transcript with only those changes (and the spelling rules of the language).
+- {localize}
 - Copy the STYLE and STRUCTURE of the example pages below (layout, cues, directions), never their content.
 - The word "{source}" (or "Astra") must not appear anywhere in your output.
 - Every moment where the original video SHOWS the study app on screen gets cue "{cue}". Plain stage directions
@@ -70,7 +71,8 @@ def build_spec(video, transcript, frames, model, lang=PRIMARY, feedback=''):
     """video: tiktok.video_detail dict; transcript: soniox result; frames: [(seconds, path)]; lang: a markets.TEXT key."""
     T = TEXT[lang]
     rules = RULES.format(lang=T['lang_name'], style=T['style'], country=COUNTRY[lang], ours=OURS, source=SOURCE,
-                         site=OURS_SITE, cue=CUE)
+                         site=OURS_SITE, cue=CUE, localize=T.get('localize') or
+                         'Names of universities, schools, cities, shops etc. stay exactly as in the original.')
     timed = '\n'.join(f"[{s['start']:.1f}-{s['end']:.1f}s] {s['text']}" for s in transcript.get('segments', [])) or '(no speech)'
     content = [{'type': 'text', 'text': f"""Example pages in our layout (follow this style and structure, write in {T['lang_name']}):
 {_examples()}

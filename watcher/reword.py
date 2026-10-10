@@ -96,6 +96,7 @@ Rules:
 - Keep every token ⟦n⟧...⟦/n⟧ exactly as it is (same number, same text inside) and in the same order and paragraph.
 - Keep **bold** lines bold (they are on-screen texts). No backticks. Never mention {SOURCE}.
 - Linked cue labels are filming directions, not spoken words.
+- {T.get('localize') or 'Names of universities, schools, cities, shops etc. stay exactly as in the original.'}
 
 {('A reviewer found these problems - fix them: ' + feedback) if feedback else ''}
 

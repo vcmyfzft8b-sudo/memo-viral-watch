@@ -22,6 +22,10 @@ Claude, every 3 days) and turns their viral formats into Memo AI creator pages i
   words, jokes, numbers, claims. Only these change: the app (Astra AI, Studyflash, …) -> Memo AI at the same spots,
   its website -> memoai.eu, an app feature Memo AI lacks -> the closest real one, the page language's spelling
   (ijekavian / Slovenian). No "independent wording", no toning down.
+- Localization: 🇸🇮 Slovenian scripts turn country-specific things (faculties, schools, exams, cities, shops, prices,
+  discounts) into REAL Slovenian ones with correct names (markets.TEXT['sl']['localize']); 🇧🇦🇭🇷🇷🇸🇲🇪 Balkan
+  scripts keep the original's names and the note under the video says creators may swap them for their own
+  country's (TEXT['sh']['local_note']).
 - Visual hook section = ONE sentence (two at most): "Napravi isti vizuelni hook kao u videu za inspiraciju: …" (what
   the example does in its first seconds) + one line "Želiš drugi vizuelni hook? Izaberi jedan iz Visual Hook Lab."
   Nothing else (`reword.fix_directions` enforces it, `verify` checks it).

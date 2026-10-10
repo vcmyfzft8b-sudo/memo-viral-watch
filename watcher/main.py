@@ -1242,6 +1242,7 @@ def main():
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
     ap.add_argument('--hook-lab', default='', nargs='?', const='-', help='[market:page_id] a copy of the Parakeet Visual Hook Lab -> that market\'s language, linked from its pages')
     ap.add_argument('--faithful-rewrite', action='store_true', help='once: every page script becomes the original transcribed/translated almost 1:1 (only the app swapped)')
+    ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--fix-cues', action='store_true', help="every page: the app shown as a '📎 material' cue becomes the app link cue")
     ap.add_argument('--trash-staging', default='', help='page ids (comma-separated): move these leftover staging pages to the Notion trash - only if no format uses them')
@@ -1505,6 +1506,33 @@ def main():
         return
     if a.faithful_rewrite:
         faithful_rewrite()
+        return
+    if a.relocalize:
+        cfg, fmts = load_config(), load_formats()
+        done = 0
+        for f in [f for f in fmts if f.get('status') in ('active', 'pending')]:
+            for key, m in cfg['markets'].items():
+                pid, T = page_of(f, key), M.TEXT[m['lang']]
+                if not pid or (f.get('localized') or {}).get(key):
+                    continue
+                try:
+                    if T.get('localize'):  # script: the original 1:1, country-specific names made local and real
+                        st, why = align.align_page(f, pid, m['lang'], cfg, cfg['links'])
+                    else:  # note under the video: creators may swap the names for their own country's
+                        note = next((reword._plain(b) for b in notion.children(pid) if b['type'] == 'callout'
+                                     and '⚠' in str(b['callout'].get('icon'))), '')
+                        localize.set_note(pid, m['lang'], note.replace('**', '')[:30] == T['inspo_note_same'].replace('**', '')[:30])
+                        st, why = 'ok', 'note with the swap-the-names line'
+                except Exception as e:
+                    st, why = 'error', str(e)[:200]
+                print(f"{f['title'][:45]} | {key} | {st} | {why}", flush=True)
+                if st == 'ok':
+                    f.setdefault('localized', {})[key] = True
+                    done += 1
+                state.save('formats.json', fmts)
+                if 'limit' in why:
+                    return
+        print(f'relocalize: {done} pages done')
         return
     if a.gate_now:
         cfg, fmts = load_config(), load_formats()
