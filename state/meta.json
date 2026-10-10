@@ -1,27 +1,36 @@
 {
  "audit": {
-  "A20261008204718:sh": "failed",
-  "A20261008204718:sl": "failed",
+  "A20261008204718:sh": "fixed",
+  "A20261008204718:sl": "fixed",
   "A20261008211912:sh": "failed",
   "A20261008211912:sl": "failed",
-  "A20261009001913:sh": "failed",
-  "A20261009001913:sl": "failed",
-  "A20261010130453:sh": "failed",
-  "A20261010130453:sl": "failed",
-  "A20261010161437:sh": "fixed",
-  "A20261010161437:sl": "fixed",
+  "A20261009001913:sh": "fixed",
+  "A20261009001913:sl": "fixed",
+  "A20261010130453:sh": "fixed",
+  "A20261010130453:sl": "ok",
+  "A20261010161437:sh": "ok",
+  "A20261010161437:sl": "failed",
   "A20261010162026:sh": "fixed",
-  "A20261010162026:sl": "fixed",
-  "A20261010162928:sh": "failed",
+  "A20261010162026:sl": "failed",
+  "A20261010162928:sh": "fixed",
   "A20261010162928:sl": "failed",
-  "A20261010163838:sh": "failed",
-  "A20261010163838:sl": "failed"
+  "A20261010163838:sh": "fixed",
+  "A20261010163838:sl": "fixed"
  },
  "audit_fingerprints": {
-  "A20261010161437:sh": "506923b42dd694ea7f935cd3ad4b38449945160da9cdccb56d9ea52350271161",
+  "A20261008204718:sh": "88369e6451f1c19c82ee59e33a628847609fb9f598abd93b957410be4c23380b",
+  "A20261008204718:sl": "b71499f30bb9a36c5428783cdcebf372c0959d72826f41d2ce42fea11546a957",
+  "A20261009001913:sh": "92afbce4ce49727c6493b5fda6408a0551d96e526e0f54ec058a95f6c757246b",
+  "A20261009001913:sl": "95149ad48a59d30f7ab597310f8d00f6c9108fddbea056c6ff801639b71860eb",
+  "A20261010130453:sh": "f77765908ae5945da11228d3d6d26b3f24d3b4dd694e2881d6172c1160444847",
+  "A20261010130453:sl": "308d4512d9b3cfd75fcfa290eaa2e4c268f4ee6e50520c5f928080bc6113631d",
+  "A20261010161437:sh": "221209b37c6b05818ac9eac99aa769815ffd201708e084b30491265d9889a5f0",
   "A20261010161437:sl": "caeeee9fd394274b88d840dc506c4553405dab6e270a3f84fad7a4a9aa37cec0",
-  "A20261010162026:sh": "7616849f3bcf23ca843116ebb16f86524b90270c078e77474b43e19e32a206d0",
-  "A20261010162026:sl": "a5810cc225748cb0107f218cb2ff43a4fd8e436114a2170c87df30ce38164bb5"
+  "A20261010162026:sh": "3a00788ac101c97c752eb8fe0c0ee5411fa2c95188ce383dd5abbea588028449",
+  "A20261010162026:sl": "a5810cc225748cb0107f218cb2ff43a4fd8e436114a2170c87df30ce38164bb5",
+  "A20261010162928:sh": "2caf7e0793be6c45eab53a6d8db8a1351cb29bdd9a454b3192d07830a8c907b5",
+  "A20261010163838:sh": "f71ea1e4ba4abb8fe8d915f146ae597c923491e1f0c9946f270a745c8bbe5872",
+  "A20261010163838:sl": "3a2321020fb667ac02138de5cf2c7015add053061bd656873e9f479f7d985a41"
  },
  "discovered_at": 1791527938,
  "faithful_rewrite_started": 1791643120,
@@ -31,7 +40,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791646865,
+   "checked_at": 1791659828,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -44,20 +53,14 @@
      "video_identity": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e"
     }
    },
-   "key": "616960fce015f34ed5feac34e02535b4069ca73ff6793f7f716f79a2540a8c37",
-   "passed": false,
-   "reasons": [
-    "format_consistency sh: Script has no like-and-follow outro (beat 6 is required, and the not_allowed list forbids dropping it).",
-    "format_consistency sl: Item 4 has no '4/4 Memo AI' sticker, which breaks the numbered X/4 structure. Script also has no like-and-follow outro (beat 6).",
-    "script_matches_example sl: Example shows a '4/4 Astra Ai' sticker on item 4, but the script's cue for item 4 has no 4/4 sticker.",
-    "faithful_translation sh: Hook drops 'učenike' and changes '99% vas ne zna' to 'devedeset devet posto njih ne zna'. 'Takođe pored toga', 'kao drugo' and 'zabava' are left out. Ekavian/Croatian forms are mixed in ('prije', 'kinima' instead of 'bioskopima', 'Prijevoz' instead of 'Prevoz', 'spremi', 'učiniti', 'poštom' instead of 'mejlom'). Hook sticker in the cue ('nisi znao') does not match the title ('niste znali').",
-    "directions_match sh: Adds a gesture (pointing at the save icon) that the example's opening does not show. It should only copy the talking head to camera with the on-screen title."
-   ],
+   "key": "d1398b30956fd93c4c5a582d2cba6cd1e089756e5d29d1f6f4821624ce128453",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
-      "issue": "Adds a gesture (pointing at the save icon) that the example's opening does not show. It should only copy the talking head to camera with the on-screen title.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -66,8 +69,8 @@
     },
     "faithful_translation": {
      "sh": {
-      "issue": "Hook drops 'učenike' and changes '99% vas ne zna' to 'devedeset devet posto njih ne zna'. 'Takođe pored toga', 'kao drugo' and 'zabava' are left out. Ekavian/Croatian forms are mixed in ('prije', 'kinima' instead of 'bioskopima', 'Prijevoz' instead of 'Prevoz', 'spremi', 'učiniti', 'poštom' instead of 'mejlom'). Hook sticker in the cue ('nisi znao') does not match the title ('niste znali').",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -86,12 +89,12 @@
     },
     "format_consistency": {
      "sh": {
-      "issue": "Script has no like-and-follow outro (beat 6 is required, and the not_allowed list forbids dropping it).",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
-      "issue": "Item 4 has no '4/4 Memo AI' sticker, which breaks the numbered X/4 structure. Script also has no like-and-follow outro (beat 6).",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "script_matches_example": {
@@ -100,13 +103,13 @@
       "pass": true
      },
      "sl": {
-      "issue": "Example shows a '4/4 Astra Ai' sticker on item 4, but the script's cue for item 4 has no 4/4 sticker.",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     }
    },
-   "status": "fail",
-   "summary": "Both countries keep the four-item student-discount listicle and swap Memo AI in correctly at item 4, but neither script has the like-and-follow outro. SH's translation is not faithful (dropped words and mixed Croatian/ijekavian forms) and its directions add a gesture the example doesn't show. SL is missing the 4/4 Memo AI sticker.",
+   "status": "pass",
+   "summary": "Both SH and SL follow the example's hook, its four numbered discount items, its stickers and Memo AI as item 4 with the screen-recording cue, and translate it almost one to one with only allowed changes (Astra AI and the 'trailer' slip become a Memo AI free trial). Neither script has the like-and-follow outro, but the example's speech has none either.",
    "title_fixes": {},
    "version": "group-2026-10-10.faithful-hook"
   },
@@ -522,7 +525,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791647540,
+   "checked_at": 1791659892,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -535,7 +538,7 @@
      "video_identity": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0"
     }
    },
-   "key": "a826cdbcd46d982e2237ee0bc6cfdfc6782f24f67d524e6c55224f227d5c54aa",
+   "key": "7029bfe71d71c6d3b8e554e8baeb9f8b19912a043d810707a18a90480b4caef5",
    "passed": true,
    "reasons": [],
    "results": {
@@ -591,7 +594,7 @@
     }
    },
    "status": "pass",
-   "summary": "Both SH and SL keep the reference format: the PART 5 hook, the five remarks in the original order and the AI fake-doctor's-note segue into Memo AI at beat 5, with Astra AI swapped only where it was spoken. The 'true-false' and 'oral tests' features are mapped to quiz with explanations and voice tutor, the remarks continue after the demo and the comments CTA is kept. Both translations are near one to one and the directions are concrete single sentences, so nothing needs fixing.",
+   "summary": "Both the SH and SL scripts translate the example almost one to one and follow its structure: the PART 5 hook, three remarks, the 'use AI properly' segue into Memo AI, the return to two more remarks and the comments CTA. Astra AI is replaced by Memo AI, and the true/false and oral-test features become real Memo AI features (quiz with explanations, voice tutor). The SL feature list is in a slightly different order, the directions are fine, and no title fixes are needed.",
    "title_fixes": {},
    "version": "group-2026-10-10.faithful-hook"
   },
@@ -839,7 +842,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791647869,
+   "checked_at": 1791659813,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -852,12 +855,12 @@
      "video_identity": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56"
     }
    },
-   "key": "6463546d742ef4ce0bc3f0f538d8a75a2e13608cee2dd4532b5574947cfa4baa",
+   "key": "af6dceb1a6668e1c0b4116254a138a8d6a080e072f91a4d67062c5174c6521d0",
    "passed": false,
    "reasons": [
-    "format_consistency sl: The Memo AI cue comes before the last gossip question, so the app appears during beat 4. The reference shows it only in the final phone close-up after the dialogue (beat 5).",
-    "script_matches_example sl: The app cue sits in the middle of the tutor's gossip questions. In the example the dialogue runs to the end and the app reveal comes only after it.",
-    "faithful_translation sl: The opening line 'Vse v telefonu, ki ga držiš' means 'everything in the phone'. The original says everything, right down to the phone you are holding, is made of atoms. It should be e.g. 'Vse, celo telefon, ki ga držiš, je narejeno iz atomov.'"
+    "format_consistency sl: The [CUE: Memo AI · memoai.eu/creator] comes before the last gossip question ('Kaj misliš, kateri atomi so najhujši...'), so the app appears during beat 4. The reference shows the app only in the final phone close-up (beat 5).",
+    "script_matches_example sl: The app cue sits inside the gossip escalation, not after the last line where the example's reveal comes. Move the cue to the end.",
+    "faithful_translation sh: The tutor's 'Važi, slušaj ovo' was changed to 'Može, slušaj ovo'. That is a reworded word with no reason. Keep 'Važi'. Small fixes such as 'Jež' to 'Sve' and the ijekavian spelling are fine."
    ],
    "results": {
     "directions_match": {
@@ -872,12 +875,12 @@
     },
     "faithful_translation": {
      "sh": {
-      "issue": "",
-      "pass": true
+      "issue": "The tutor's 'Važi, slušaj ovo' was changed to 'Može, slušaj ovo'. That is a reworded word with no reason. Keep 'Važi'. Small fixes such as 'Jež' to 'Sve' and the ijekavian spelling are fine.",
+      "pass": false
      },
      "sl": {
-      "issue": "The opening line 'Vse v telefonu, ki ga držiš' means 'everything in the phone'. The original says everything, right down to the phone you are holding, is made of atoms. It should be e.g. 'Vse, celo telefon, ki ga držiš, je narejeno iz atomov.'",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "features_claims": {
@@ -896,7 +899,7 @@
       "pass": true
      },
      "sl": {
-      "issue": "The Memo AI cue comes before the last gossip question, so the app appears during beat 4. The reference shows it only in the final phone close-up after the dialogue (beat 5).",
+      "issue": "The [CUE: Memo AI · memoai.eu/creator] comes before the last gossip question ('Kaj misliš, kateri atomi so najhujši...'), so the app appears during beat 4. The reference shows the app only in the final phone close-up (beat 5).",
       "pass": false
      }
     },
@@ -906,16 +909,14 @@
       "pass": true
      },
      "sl": {
-      "issue": "The app cue sits in the middle of the tutor's gossip questions. In the example the dialogue runs to the end and the app reveal comes only after it.",
+      "issue": "The app cue sits inside the gossip escalation, not after the last line where the example's reveal comes. Move the cue to the end.",
       "pass": false
      }
     }
    },
    "status": "fail",
-   "summary": "SH follows the format and the example closely and only needs a title aligned to the format. SL places the Memo AI cue before the last gossip line, which breaks the beat-5 reveal, and its opening line changes the meaning of the original.",
-   "title_fixes": {
-    "sh": "Gradivo kao sočan trač 🍿"
-   },
+   "summary": "Both countries keep the ASMR ketchup hook and the gossip format; SH changes the tutor's 'Važi' to 'Može', and SL puts the Memo AI cue before the last gossip line instead of at the final reveal.",
+   "title_fixes": {},
    "version": "group-2026-10-10.faithful-hook"
   },
   "A20261010161437": {
@@ -1077,6 +1078,86 @@
    "summary": "Both countries follow the frozen-keys format closely and translate it almost word for word, with Memo AI cued on 'only you I need, darling'; the only failure is SL's filming directions, which open with the key close-up instead of the selfie.",
    "title_fixes": {},
    "version": "group-2026-10-10.faithful-hook"
+  },
+  "A20261010163838": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791660262,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7688802612111510805",
+     "video_identity": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7"
+    },
+    "sl": {
+     "source_id": "7688802612111510805",
+     "video_identity": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7"
+    }
+   },
+   "key": "e34f6712ca85e115827ac5f23db81685ed8bc23ff007b9d8db776469899457aa",
+   "passed": false,
+   "reasons": [
+    "faithful_translation sh: Minor rewording: 'već započela jedan ispit' became 'već napravila jednu bilješku'. Only the noun needed to change, so it should read 'već započela jednu bilješku'."
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "Minor rewording: 'već započela jedan ispit' became 'već napravila jednu bilješku'. Only the noun needed to change, so it should read 'već započela jednu bilješku'.",
+      "pass": false
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "Both countries follow the paper-strip-and-scissors format with correct beats, timing, Memo AI feature swaps and titles; the only issue is a small rewording in the SH script ('napravila' instead of 'započela').",
+   "title_fixes": {},
+   "version": "group-2026-10-10.faithful-hook"
   }
  },
  "group_duplicates": [],
@@ -1141,6 +1222,7 @@
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/0704a1dc-0341-4f0f-9eb3-42bfb53281b6/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/14ab7617-867b-440b-ba89-9076b4231496/video.mp4": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/160678ef-32dd-44af-bb6f-7a66f1b10436/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/202e841a-77a0-402c-8bae-35611033dfeb/video-notion.mp4": "sha256:2863a59e5df5fb158d39b04ccad651e449a674c01d28b27611cd5b291504cb87",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/23baa518-4640-4556-8e8e-4aa3c4331160/video-notion.mp4": "sha256:61696db2bb051d7382dd8e4bb6ddf26b57583264a2d8913b15aea64c2b749b94",
@@ -1154,6 +1236,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/42b6d9eb-a157-4f0a-bc5d-dcc0c2214e20/video.mp4": "sha256:e513b4868ed887f7d0fd7d95c00b0d8f505555382b0a29f910e4500bab96995b",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/481b3103-ec71-4664-a107-837fa596a460/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/4b623f87-a173-46be-9765-b8700a7903d3/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/4baa93b7-5468-4c23-af0e-6ea5ef61e029/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/4c43ba16-0bde-42ca-a741-bc88f316fe6d/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/52fa3806-18da-439d-ace4-f4c8a6cd2041/video-notion.mp4": "sha256:02a503e54e5bd36afaa705ca8c88d341075b84819de51c93e4f3b74fab2ed518",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/5533d356-9de1-4f27-8e21-d9d7e3f125aa/video-notion.mp4": "sha256:8401ad9c8d9a1547a0ec81908a62ca7723b27e82a9bb3f040bb97275e09efdb4",
@@ -1169,8 +1252,10 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/bc335721-f9ea-426a-a184-1dc49df91c0a/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d7a785da-5e23-40f6-9646-04afe72c6f2d/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d8652e47-9cec-4e2c-873c-20c8d5d7d2ec/video.mp4": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/dac31acc-a23e-4449-94a0-efa52cf634f2/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/dd9ebb60-8ddb-4a86-a657-f317fcdea81f/video.mp4": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/df86fa94-9d8c-4cfe-b69a-cc024d1c5e79/video.mp4": "sha256:e513b4868ed887f7d0fd7d95c00b0d8f505555382b0a29f910e4500bab96995b",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/e56fd24b-0c18-4ddb-ab5b-2e7d499efb85/video.mp4": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/f1862454-a6e1-4442-b139-1b9f803b769c/video-notion.mp4": "sha256:c885900fe56e7d31e3feb4705ce828c344025ae7ef682156992baed17396de77",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/fd23fb00-7c58-473e-b4bc-404869c20add/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5"
  }

@@ -26,18 +26,10 @@
     "views": 204500
    }
   },
+  "listed_at": 1791660319,
   "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
   "pages": {
    "sl": "3f365e84-a3c2-81fb-b984-fbf04f3851f5"
-  },
-  "pending": {
-   "kind": "revive",
-   "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script corrected towards the original: Sticker 'Prevoz' is the ekavian/Serbian form; use the ijekavian 'Prijevoz'; Sticker 'Biosk",
-    "🇸🇮 filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / still"
-   ],
-   "since": 1791648837,
-   "tries": 1
   },
   "revived": {
    "at": 1791648523,
@@ -50,7 +42,7 @@
   },
   "script": "Popusti za učenike i studente o kojima 99% ljudi nema pojma. Prije nego što odeš dalje, sačuvaj ovaj video, jer će ti zatrebati. Prvo, prijevoz: sa studentskom karticom imaš popust na karte za međugradske linije, a neke avio-kompanije imaju i studentske cijene za letove. Drugo: Microsoft Office možeš imati potpuno besplatno. Znači Word, Excel, PowerPoint – samo se prijaviš sa školskim ili fakultetskim mailom i sve ti je besplatno. Treće, zabava: u Cineplexxu su ti karte za kino jeftinije, a u mnogim teatrima predstave često plaćaš i do pola cijene. Četvrto: Memo AI možeš probati besplatno. Ako ne znaš šta je Memo AI i kako radi, evo, sad ću ti pokazati. Memo AI je alat koji ti pomaže u učenju: ubaciš ono iz čega učiš – PDF, prezentaciju, snimak predavanja ili slike. Kad ubaciš, recimo, slike iz udžbenika ili sveske, Memo AI ti za par minuta napravi bilješke, kartice i kviz. I onda biraš ",
   "source_video": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
-  "status": "pending",
+  "status": "active",
   "title": "Studentski popusti koje svi propuštaju 🎟️"
  },
  {
@@ -126,11 +118,11 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (24 words (original 29)) / title fixed: POV: Setiš se tog jednog slajda na testu, ali nisi pretplaće / script corrected to",
-    "🇸🇮 script rewritten sentence by sentence (31 words (original 29)) / title fixed: POV: na testu se spomniš tiste ene prosojnice, ampak nisi na / script corrected to"
+    "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (24 words (original 29)) / title fixed: POV: Sjetiš se tog jednog slajda na testu, ali nisi pretplać / script corrected to",
+    "🇸🇮 rewrite refused: \"Memo AI\"/the website appears 1 times, but the original names Astra AI 0 times / script corrected towards the original: The second on-screen li"
    ],
    "since": 1791645064,
-   "tries": 0
+   "tries": 1
   },
   "reworded": {
    "sh": true,
@@ -238,18 +230,10 @@
     "views": 139800
    }
   },
+  "listed_at": 1791660337,
   "page_id": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
   "pages": {
    "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
-  },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (345 words (original 342)) / title fixed: PART 5 / filming directions corrected / script corrected towards the original: T",
-    "🇸🇮 script rewritten sentence by sentence (363 words (original 342)) / filming directions corrected / filming directions corrected / filming directions corrected / "
-   ],
-   "since": 1791645618,
-   "tries": 0
   },
   "revived": {
    "at": 1791509180,
@@ -262,7 +246,7 @@
   },
   "script": "Idemo s reakcijom na najsmješnije bilješke iz e-dnevnika, part 5. Ovaj put krećemo žestoko, s bilješkom koju mi je poslao neko od vas. Piše: „Učenik je, kad su mu rekli da ostavi mobitel za vrijeme sata, počeo vikati: Pusti me, stara, igram Clash Royale.“ Ma pusti ga, ženo draga, možda mu je protivnik bacio Mega Knighta. Hoćeš da izgubi trofeje zbog tebe? A čuj ovog brata: „Učenik je na kontrolnom izvadio test koji je riješio unaprijed i htio ga predati kao svoj.“ Kako se toga sjetio? Tri dana ga nema, a on već smišlja neku prevaru. Sljedeća glasi: „Učenik je donio sliku doktorskog opravdanja. Provjerom se ispostavilo da je opravdanje napravila vještačka inteligencija.“ Iskreno, nije mu ni loše ispalo. Kod nekog profesora bi možda i prošlo, ali nemojte to probati. Ako baš hoćete koristiti AI, koristite ga za nešto pametno. Recimo za učenje, s aplikacijom Memo AI. Ubaciš svoje bilješke u ",
   "source_video": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406",
-  "status": "pending",
+  "status": "active",
   "title": "Najsmješnije bilješke iz e-dnevnika 😂"
  },
  {
@@ -362,11 +346,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script rewritten sentence by sentence (89 words (original 87)) / filming directions corrected / script corrected towards the orig",
-    "🇸🇮 title fixed: Učna snov kot sočen trač 🍿 / filming directions corrected / filming directions corrected / filming directions corrected / filming directions correc"
+    "cross-country check fail: format_consistency sl: The [CUE: Memo AI · memoai.eu/creator] comes before the last gossip question ('Kaj misliš, kateri atomi so najhujši...'), so the app appears during beat 4. The reference shows the app only in the final phone close-up (beat 5).; script_matches_example sl: The app cue sits insid"
    ],
    "since": 1791638262,
-   "tries": 0
+   "tries": 1
   },
   "reworded": {
    "sh": true,
@@ -388,10 +371,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: format_consistency sl: The hook stage direction tells the creator to put a mixed-language title on screen: 'koje svi / 5 UČENCEV / OBOŽUJEMO'. It should match the Slovenian title 'ki jih vsi / 🧑🏼‍🎓5 UČENCEV👩🏼‍🎓 / OBOŽUJEMO'."
+    "🇸🇮 filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / still"
    ],
    "since": 1791649207,
-   "tries": 0
+   "tries": 1
   },
   "reworded": {
    "sl": true
@@ -412,10 +395,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: directions_match sl: The directions open with a close-up of the frozen keys before the talking-head. The example, the reference hook and SL's own cue script all open with the selfie and caption, and SH's directions say the same, so the two countries contradict each other. Fix: start with the selfie "
+    "🇸🇮 filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / still"
    ],
    "since": 1791649732,
-   "tries": 0
+   "tries": 1
   },
   "script": "Sestra mi je zaledila ključeve od stana jer ništa ne učim, a ispitni rok se bliži. Pa kad se ovo malo odledi, da otključam svoj stan. Uzimamo ovu knjigu. I krećemo s učenjem. Ne trebaju skupa kola, ne treba ni stan, ne treba mi puno toga da ostvarim san. Ne treba mi brdo para, niti sto drugara, samo ti mi trebaš, dušo, ostalo me smara. Ne treba mi crkva, ja sam s tobom naš'o spas, ne treba mi partija, a tebi dajem. Moji ključevi su dovoljno istopljeni, tako da mogu izaći iz stana. Ne znam šta bih rekla za ovaj način učenja.",
   "source_video": "https://www.tiktok.com/@studywithandja/video/7693614549269810450",
@@ -433,11 +416,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / script corrected towards the origi",
-    "🇸🇮 title fixed: 1. Pravna fakulteta 👩‍⚖️\n2. FOV 👨‍💼\n3. Ekonomska fakulteta 💵 / script rewritten sentence by sentence (124 words (original 131)) / filming direction"
+    "🇸🇮 filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / still"
    ],
    "since": 1791650284,
-   "tries": 0
+   "tries": 1
   },
   "reworded": {
    "sh": true,
@@ -459,11 +441,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / sti",
-    "🇸🇮 filming directions corrected / script rewritten sentence by sentence (206 words (original 208)) / script corrected towards the original: Added details not in th"
+    "cross-country check fail: faithful_translation sh: Minor rewording: 'već započela jedan ispit' became 'već napravila jednu bilješku'. Only the noun needed to change, so it should read 'već započela jednu bilješku'."
    ],
    "since": 1791650890,
-   "tries": 0
+   "tries": 1
   },
   "reworded": {
    "sl": true

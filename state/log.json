@@ -1578,5 +1578,142 @@
   "tries": 1,
   "ts": 1791659550,
   "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791659628,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791659629,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791660319,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008204718",
+  "position": 5,
+  "ts": 1791660320,
+  "type": "format_published"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (24 words (original 29)) / title fixed: POV: Sjetiš se tog jednog slajda na testu, ali nisi pretplać / script corrected to",
+   "🇸🇮 rewrite refused: \"Memo AI\"/the website appears 1 times, but the original names Astra AI 0 times / script corrected towards the original: The second on-screen li"
+  ],
+  "tries": 1,
+  "ts": 1791660320,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791660337,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261009001913",
+  "position": 3,
+  "ts": 1791660337,
+  "type": "format_published"
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "cross-country check fail: format_consistency sl: The [CUE: Memo AI · memoai.eu/creator] comes before the last gossip question ('Kaj misliš, kateri atomi so najhujši...'), so the app appears during beat 4. The reference shows the app only in the final phone close-up (beat 5).; script_matches_example sl: The app cue sits insid"
+  ],
+  "tries": 1,
+  "ts": 1791660337,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010161437",
+  "reasons": [
+   "🇸🇮 filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / still"
+  ],
+  "tries": 1,
+  "ts": 1791660337,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010162026",
+  "reasons": [
+   "🇸🇮 filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / still"
+  ],
+  "tries": 1,
+  "ts": 1791660337,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010162928",
+  "reasons": [
+   "🇸🇮 filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / still"
+  ],
+  "tries": 1,
+  "ts": 1791660337,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010163838",
+  "reasons": [
+   "cross-country check fail: faithful_translation sh: Minor rewording: 'već započela jedan ispit' became 'već napravila jednu bilješku'. Only the noun needed to change, so it should read 'već započela jednu bilješku'."
+  ],
+  "tries": 1,
+  "ts": 1791660337,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791660350,
+  "type": "rerank"
  }
 ]
