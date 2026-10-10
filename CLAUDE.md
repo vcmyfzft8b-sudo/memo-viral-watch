@@ -59,9 +59,9 @@ registry/export_cert.pem, to state/scripts_export.enc (repo and logs are public)
 `mode=verify` (read-only): every list (order, numbering, layout), live page (video, sections, links), held page
 (staging) and both hook labs against the state; also lists leftover staging pages (never deletes).
 
-## Status (10 Oct 2026)
-41 followed creators (40 Astra AI + @lern.mit.domi for the Studyflash format). 7 live formats in both lists
-(BCS + SLO), verify clean; 3 archived after 4 failed checks (come back if they go viral again).
-Open: Discord server logo (user uploads Downloads/astra-ai-logo.png); keep or drop @creatortipsbymonika (Astra's
-recruiter account); 2 leftover pages in the private staging area from a failed Studyflash attempt (trash only with
-the user's OK). The Claude subscription is shared with the JobStep watcher – heavy days can hit its limit.
+## Status (10 Oct 2026, evening)
+40 Astra AI creators followed (+ @lern.mit.domi for Studyflash); @creatortipsbymonika blocked (Astra's recruiter account,
+registry/accounts_add.json "block"). 15 formats, all scripts near 1:1 with the short visual hook section: 7 live in both
+lists (verify clean), 8 in the quality check (decided by the next 6-hourly runs). Only views (100k+) decide.
+All scripts: mode=export + scripts/read_export.sh. Open: Discord server logo (user). The Claude subscription is shared
+with the JobStep watcher - heavy days can hit its limit.
