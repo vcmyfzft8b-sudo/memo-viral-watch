@@ -842,47 +842,50 @@
    "7685932867339209998"
   ],
   "allowed_localisation": [
-   "Page language: Slovenian page for Slovenia, using the Slovenian lines as given. Serbo-Croatian page using the Croatian lines as given ('Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?' / 'Pa naravno, samo uz pristanak.' / 'Pacijentica je bez svijesti. Ne može dati pristanak.' / 'Onda joj DICK moraš dati svejedno.' / 'Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.' / 'Moraš ih dati tim redoslijedom, i to ovako.'). The creator may also pick Bosnian or Serbian on the page and use that page's own wording.",
-   "On-screen caption text translated into the local language, keeping the meaning 'I'm not made for nursing 😳' (or 'for medicine').",
-   "Creator's look, room, desk setup, laptop model and natural reaction style (giggling, face-covering, head-shaking).",
-   "Exact clip length within 7–15 s and the exact moment of the camera turn, as long as the laptop is shown by the line 'in sicer takole' / 'i to ovako'."
+   "Page language and script version: Slovenian page and wording for SI. Croatian wording on the Serbo-Croatian page, and creators may pick Bosnian or Serbian on the page instead",
+   "Caption or title wording in the local language (e.g. 'Nisem ustvarjena za zdravstveno nego 😳' / 'Nisam stvorena za sestrinstvo 😳')",
+   "The creator's look, room, laptop model and lighting",
+   "Natural extra reactions (laughing, covering face, groaning) between lines, as long as the CREATOR lines are said as written",
+   "Hashtags and caption extras in the local language"
   ],
   "beats": [
-   "Selfie close-up of the creator at a desk with the laptop off-camera. The quiz audio plays line 1: 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' The creator's eyes widen and a hand goes to their mouth.",
-   "Audio line 2: 'Seveda samo s privolitvijo.' The creator nods awkwardly and starts to smile.",
-   "Audio line 3: 'Pacientka je nezavestna. Privolitve ne more dati.' The creator cringes, laughs and looks away from the camera.",
-   "Audio line 4: 'Potem ji moraš DICK vseeno dati.' The creator reacts the hardest: covers their face, laughs and shakes their head in disbelief.",
-   "Audio line 5: 'Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.' The creator shows relief and still laughs, as if to say 'oh, it's the mnemonic'.",
-   "[memo] Audio line 6: 'Dati jih moraš v tem vrstnem redu, in sicer takole.' The creator turns the camera to the laptop screen. Memo AI's oral quiz page (memoai.eu/ugc/oral-quiz) fills the frame, with the dialogue text on screen and the quiz playing. The video cuts off right after 'in sicer takole', exactly where the original stops ('And the way to do it is this—')."
+   "1 - Hook, face cam: the creator, embarrassed and holding back laughter, listens as the tutor plays from the laptop. SI: (Memo AI govori) 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' / HR: (govori Memo AI) 'Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?'",
+   "2 - Face cam: the creator answers out loud, live, in a self-righteous tone. SI CREATOR: 'Seveda samo s privolitvijo.' / HR CREATOR: 'Pa naravno, samo uz pristanak.'",
+   "3 - Face cam: the tutor shoots that down. SI: (Memo AI govori) 'Pacientka je nezavestna. Privolitve ne more dati.' / HR: (govori Memo AI) 'Pacijentica je bez svijesti. Ne može dati pristanak.' The creator, caught off guard: 'Oh.'",
+   "4 - Face cam: the tutor escalates. SI: (Memo AI govori) 'Potem ji moraš DICK vseeno dati.' / HR: (govori Memo AI) 'Onda joj DICK moraš dati svejedno.' The creator is shocked and starts laughing. SI CREATOR: 'Brez privolitve?' / HR CREATOR: 'Bez pristanka?'",
+   "5 - Face cam: the reveal. SI: (Memo AI govori) 'Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.' / HR: (govori Memo AI) 'Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.' The creator, relieved and embarrassed: 'Oh.'",
+   "6 - memo: the creator turns the camera from their face to the laptop screen showing the oral quiz page playing, while the tutor goes on. SI: (Memo AI govori) 'Dati jih moraš v tem vrstnem redu, in sicer takole.' / HR: (govori Memo AI) 'Moraš ih dati tim redoslijedom, i to ovako.' The video cuts right there, mid-explanation, exactly where the original stops."
   ],
+  "brief": "The original promotes another app's oral quiz (Turbo AI). Our version uses Memo AI's oral quiz page https://www.memoai.eu/ugc/oral-quiz: the creator opens it on a laptop, picks their language and presses play. It is a dialogue between the app's voice tutor (TUTOR - these lines play as audio from the page, the creator does NOT say them) and the creator (CREATOR - the creator says these short answers out loud themselves, live, in the pauses). Exactly like the original: the creator films their own face reacting (embarrassed / laughing) while the quiz runs and answers, then turns the camera to the laptop screen with the quiz. The script is this dialogue with the page's own wording for the page language (Slovenian page: the Slovenian version; Serbo-Croatian page: the Croatian version - creators can also pick Bosnian or Serbian on the page), for the same lines the original plays (if the original stops mid-way, stop at the same point). Mark every TUTOR line with a direction like '(Memo AI govori)' / '(govori Memo AI)' so creators know it plays from the page, and put cue 'memo' where the laptop with the oral quiz is shown. The dialogue names no app, so no line names Memo AI. 'DICK' is the medical mnemonic (dextrose, insulin, calcium, Kayexalate) and the joke of the format - keep it. SLOVENIAN: TUTOR 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' / CREATOR 'Seveda samo s privolitvijo.' / TUTOR 'Pacientka je nezavestna. Privolitve ne more dati.' / CREATOR 'Oh.' / TUTOR 'Potem ji moraš DICK vseeno dati.' / CREATOR 'Brez privolitve?' / TUTOR 'Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.' / CREATOR 'Oh.' / TUTOR 'Dati jih moraš v tem vrstnem redu, in sicer takole. Dekstroza gre najprej kot IV bolus, da insulin ne zniža preveč krvnega sladkorja. Insulin gre IV takoj za njo in v približno petnajstih minutah potisne kalij v celice. Kalcijev glukonat daš IV v nekaj minutah, da zaščitiš srce pred aritmijo, medtem ko kalij pada. Kayexalate pride zadnji, skozi usta ali rektalno, da odvečni kalij za vedno odstrani iz telesa.' CROATIAN: TUTOR 'Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?' / CREATOR 'Pa naravno, samo uz pristanak.' / TUTOR 'Pacijentica je bez svijesti. Ne može dati pristanak.' / CREATOR 'Oh.' / TUTOR 'Onda joj DICK moraš dati svejedno.' / CREATOR 'Bez pristanka?' / TUTOR 'Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.' / CREATOR 'Oh.' / TUTOR 'Moraš ih dati tim redoslijedom, i to ovako. Dekstroza ide prva kao IV bolus, da inzulin ne sruši šećer u krvi. Inzulin ide IV odmah za njom i za otprilike petnaest minuta potiskuje kalij u stanice. Kalcijev glukonat daješ IV kroz nekoliko minuta da zaštitiš srce od aritmije dok kalij pada. Kayexalate ide zadnji, na usta ili rektalno, da zauvijek izbaci višak kalija iz tijela.'",
   "canonical_source": "7685932867339209998",
-  "filming": "7–15 seconds, vertical 9:16, handheld phone, one continuous take or at most two cuts. Shot 1: front-camera selfie close-up of the creator at a desk or in bed with a study setup. The creator does not speak. The only audio is the quiz dialogue played aloud from the laptop speakers and recorded live, with the creator's natural laughing reactions. Shot 2: the camera swings or turns to the laptop screen showing Memo AI's oral quiz page at https://www.memoai.eu/ugc/oral-quiz. Before filming, the creator has opened the page, picked their language (Slovenian, or Croatian/Bosnian/Serbian) and pressed play. The page plays two voices with the text on screen. The video stops at the line 'Dati jih moraš v tem vrstnem redu, in sicer takole.' / 'Moraš ih dati tim redoslijedom, i to ovako.' The rest of the explanation is not included. The on-screen caption is the format title, e.g. 'Nisam stvorena za sestrinstvo 😳' (SI: 'Nisem ustvarjena za zdravstveno nego 😳'). There is no voiceover and no brand text overlay.",
-  "generated": 1791668689,
-  "hook": "From the first second, the quiz voice plays 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' (HR/BS/SR page: 'Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?') over a close-up selfie shot of the creator, who is already blushing and covering their mouth.",
+  "filming": "About 15-25 seconds, vertical 9:16, one continuous handheld take on a phone in selfie mode, no voiceover added in editing. Setup: a laptop opened to https://www.memoai.eu/ugc/oral-quiz with the page language picked (Slovenian page for SI; Croatian, Bosnian or Serbian on the Serbo-Croatian page) and play pressed before recording starts. All TUTOR lines play as real audio from the laptop, and the creator never says them. The creator says only the CREATOR lines, live, in the pauses. Shot 1 (beats 1-5): close-up of the creator's face, real embarrassed or laughing reactions, hands near the mouth or face allowed. Shot 2 (beat 6, cue 'memo'): in the same take, the creator flips or turns the phone to film the laptop screen with the oral quiz page clearly readable while the audio keeps playing. End abruptly on 'in sicer takole.' / 'i to ovako.' No ending card and no talking to camera about the app.",
+  "generated": 1791670913,
+  "hook": "Tight selfie close-up of the creator's face, already flustered and trying not to laugh. The first oral-quiz line plays out loud from the laptop: (Memo AI govori) 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' / HR: (govori Memo AI) 'Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?'. The caption carries the format title in the local language, e.g. SI 'Nisem ustvarjena za zdravstveno nego 😳', HR/BS/SR 'Nisam stvorena za sestrinstvo 😳'.",
   "not_allowed": [
-   "The creator speaking or lip-syncing the quiz lines instead of filming a silent reaction while the audio plays from the laptop.",
-   "Using any audio other than the dialogue from Memo AI's oral quiz page, or rewriting its lines.",
-   "Continuing past 'in sicer takole' / 'i to ovako' into the full dosing explanation, or ending before the mnemonic reveal.",
-   "Leaving out the final camera turn to the laptop showing the oral quiz page.",
-   "Adding a spoken or voiceover brand mention, a spoken URL, a CTA or a feature walkthrough.",
-   "Showing or naming Astra AI, Turbo AI, Studyflash or any other app.",
-   "Claiming or showing features Memo AI does not have (snap-and-solve, homework grading, photos in chat, PDF export, pasting text, Android store app).",
-   "Turning it into a talking-head explainer, a tutorial or a before/after study-results video instead of a reaction clip."
+   "The creator saying or lip-syncing the TUTOR lines, or adding a voiceover instead of the page audio",
+   "Removing or censoring the DICK mnemonic or the consent double meaning",
+   "Naming Memo AI or any app in the dialogue, or adding a spoken pitch, CTA or end card",
+   "Never turning the camera to the laptop, or showing the laptop from the start instead of the face-reaction-then-reveal structure",
+   "Continuing past 'in sicer takole.' / 'i to ovako.' into the full dosing explanation, or ending at a different point than the original",
+   "Swapping in a different mnemonic, subject or joke, or making it a staged two-person sketch",
+   "Mentioning or showing Turbo AI, Astra AI, Studyflash or any other app",
+   "Showing or claiming features Memo AI does not have (snap and solve, homework grading, photos in chat, PDF export, pasting text, Android store app)"
   ],
-  "premise": "A nursing or medical student is quizzing themselves with an AI oral quiz. The two-voice dialogue plays the hyperkalemia mnemonic DICK (dextrose, insulin, calcium, Kayexalate) as an awkward double entendre. The creator films their own embarrassed, laughing reaction and says nothing. At the end they turn the camera to the laptop to show it really is a study quiz. The joke is that the innocent medical mnemonic sounds filthy until the last line reveals it.",
+  "premise": "The creator is studying with Memo AI's oral quiz page (https://www.memoai.eu/ugc/oral-quiz) on a laptop. The tutor voice asks a medical question that sounds very dirty. The creator answers it live, embarrassed, as if it really were dirty, until the tutor explains that DICK is the hyperkalemia mnemonic (dextrose, insulin, calcium, Kayexalate). The creator films their own face reacting the whole time, then turns the camera to the laptop to show the quiz. The double meaning is the joke, and the payoff is that it turns into a real study moment.",
   "product": {
    "cta": "none",
    "features_used": [
-    "Spoken quiz on Memo AI's oral quiz page (memoai.eu/ugc/oral-quiz): a two-voice question-and-answer dialogue with the text on screen, in Slovenian, Croatian, Bosnian or Serbian"
+    "voice tutor that explains material out loud (the oral quiz dialogue on the memoai.eu oral quiz page)",
+    "quiz (oral quiz format shown on the laptop screen)"
    ],
-   "introduced_at_beat": 6,
-   "spoken_brand": "not spoken – Memo AI is only shown on the laptop screen (oral quiz page on memoai.eu) in the final shot"
+   "introduced_at_beat": 1,
+   "spoken_brand": "not spoken - the brand never appears in the dialogue. Memo AI shows only as the oral quiz page on the laptop screen (cue 'memo', beat 6), and the tutor voice playing from the page is heard from beat 1"
   },
   "rejected_sources": {},
   "source_urls": {
    "7685932867339209998": "https://www.tiktok.com/@nicole.lockedin/video/7685932867339209998"
   },
-  "title_en": "I'm not made for nursing 😳 – embarrassed reaction to the DICK mnemonic oral quiz"
+  "title_en": "I'm not made for nursing 😳 (oral quiz DICK mnemonic reaction)"
  },
  "A20261010215329": {
   "accepted_sources": [
