@@ -1542,5 +1542,41 @@
   "type": "alert",
   "video": "7688802612111510805",
   "views": 104800
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791659226,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791659227,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008204718",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 filming directions corrected / script corrected towards the original: Sticker 'Prevoz' is the ekavian/Serbian form; use the ijekavian 'Prijevoz'; Sticker 'Biosk",
+   "🇸🇮 filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / filming directions corrected / still"
+  ],
+  "tries": 1,
+  "ts": 1791659550,
+  "type": "format_held"
  }
 ]
