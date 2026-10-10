@@ -14,9 +14,7 @@ Every 6 hours (GitHub Actions) it:
    optional phone push via ntfy, + a log line on the private Notion page *Viral-Radar (interno)*:
    - 🟡 **taking off** – 5k views within 6 h, 20k within 24 h, 50k within 48 h, or 10× the creator's usual views
    - 🟢 **viral** – 100k+ views within 7 days (20 of 269 recent Balkan Astra AI videos got there, 8 Oct 2026)
-   - "weak" is added when shares + saves are below 0.75 % of views (Balkan TikTok shares/saves less than DACH:
-     a typical viral Astra video has ~1.2 %, so JobStep's 1.5 % would skip most of them) – weak videos never
-     become formats
+   - only views count (user's decision, 10 Oct 2026): every viral video can become a format, shares/saves don't matter
 4. **Builds a new format page** when a viral video (good engagement) uses a format that is not in the list yet:
    download → Soniox transcription → frames → Claude writes the page (Astra AI → Memo AI, a Memo AI link at every app
    moment, title, visual hook, materials) → automatic checks (no "Astra", Latin script only, ijekavian, length within

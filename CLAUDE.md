@@ -33,7 +33,7 @@ Claude, every 3 days) and turns their viral formats into Memo AI creator pages i
   formati", one guide page per market (list "👉 … (OBAVEZNO/OBVEZNO)" laid out 1:1 like the Parakeet list, all formats,
   archive, Visual Hook Lab = copy of Parakeet's, translated). Page ids: `state/notion.json`.
 - App links on pages → https://memoai.eu/creator (user's choice); creators SAY memoai.eu.
-- Engagement bar 0.75 % shares+saves (user's choice; Balkan viral videos average ~1.2 %).
+- No shares/saves bar (user's choice, 10 Oct 2026): only views (100k+) decide what becomes a format.
 - Brand matching knows declined forms (Astri, Astru, Astro …): `brand.SOURCE_RE`.
 - Own Memo AI creators: off until there is a Memo AI campaign in Megasheet (`config.json` → "megasheet").
 
