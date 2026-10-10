@@ -1715,5 +1715,184 @@
   ],
   "ts": 1791660350,
   "type": "rerank"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 23 words, it must have 24-37 / script corrected towards the original: The second on-screen line says 'uz ovu aplikaciju', but th",
+   "🇸🇮 script rewritten sentence by sentence (24 words (original 29)) / script corrected towards the original: The example's on-screen text names the app ('uz Astra AI"
+  ],
+  "tries": 2,
+  "ts": 1791662129,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: Beat 5 is missing: the script never adds the closing phone close-up with the overlay 'aplikacija se zove Memo AI'. The only reveal is the [CUE] placed before the last gossip question, so the reference's ending is not written out.; format_consistency sl: Beat 5 is missing: the "
+  ],
+  "tries": 2,
+  "ts": 1791662129,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791662147,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010161437",
+  "position": 5,
+  "ts": 1791662147,
+  "type": "format_published"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791662170,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010162026",
+  "position": 5,
+  "ts": 1791662170,
+  "type": "format_published"
+ },
+ {
+  "format": "A20261010162928",
+  "reasons": [
+   "cross-country check fail: faithful_translation sl: Two words were added that are not in the original: 'Tega res ne razkrivajte' (original: 'Nemojte ovo otkrivati') and 'a si to res dobro razumel' (original: 'da li si to dobro razumeo'). Remove both instances of 'res'.; features_claims sh: 'aplikaciju koja ima zapisane bilješ"
+  ],
+  "tries": 2,
+  "ts": 1791662170,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791662198,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010163838",
+  "position": 9,
+  "ts": 1791662198,
+  "type": "format_published"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 23 words, it must have 24-37 / script corrected towards the original: The second on-screen line in the original reads 'Pa highke",
+   "🇸🇮 script rewritten sentence by sentence (24 words (original 29)) / script corrected towards the original: The script adds 's predavanja', which the original does "
+  ],
+  "tries": 3,
+  "ts": 1791662645,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: Beat 5 is missing: the script has no closing phone close-up and no overlay «aplikacija se zove Memo AI». The app CUE also sits before the last gossip line instead of after the dialogue at the reveal.; format_consistency sl: Beat 5 is missing: the script has no closing phone cl"
+  ],
+  "tries": 3,
+  "ts": 1791662645,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791662669,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010162928",
+  "position": 10,
+  "ts": 1791662670,
+  "type": "format_published"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 script rewritten sentence by sentence (24 words (original 29)) / script corrected towards the original: Line 2 is reworded. The original 'Pa highkey nadogradiš ",
+   "🇸🇮 rewrite refused: the script has 19 words, it must have 24-37 / script corrected towards the original: The original's second line 'Pa highkey nadogradiš mozak uz"
+  ],
+  "tries": 4,
+  "ts": 1791663144,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The CUE that shows Memo AI sits in the middle of beat 4, before the last gossip question. That puts the app on screen before the final phone close-up. The script also never places the beat-5 reveal (phone close-up with the overlay 'aplikacija se zove Memo AI') at the end.; for"
+  ],
+  "tries": 4,
+  "ts": 1791663145,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791663146,
+  "type": "rerank"
  }
 ]
