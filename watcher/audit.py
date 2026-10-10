@@ -272,7 +272,8 @@ def fix_page(fmt, mk, cfg, history, accounts, meta, page_of, rounds=5, rebuild=N
                 fmt.setdefault('reworded', {})[m] = True
             notes.append(f'script rewritten sentence by sentence ({why})' if st == 'ok' else f'rewrite refused: {why}')
             continue
-        if not v.get('title_ok') and v.get('title_suggestion') and v.get('title_block'):
+        if (not v.get('title_ok') and v.get('title_suggestion') and v.get('title_block')
+                and not avoid_found(lang, v['title_suggestion'])):
             tb = v['title_block']
             notion.api('PATCH', f"/blocks/{tb['id']}", {tb['type']: {'rich_text': [notion.rt(v['title_suggestion'], bold=True)]}})
             notes.append(f"title fixed: {v['title_suggestion'][:60]}")

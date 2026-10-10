@@ -69,7 +69,8 @@ TEXT = {
         'avoid_reason': 'ekavian words (the pages are ijekavian)',
         'avoid_words': 'lepo lep lepa lepe vreme deca dece dete reč reči mesto mesta pesma videti razumeti hteo '
                        'htela devojka devojke mleko uvek gde ovde onde negde nigde sneg cena cene ponedeljak nedelja '
-                       'nedelju belo beli bela primer primeri primera ocena ocene uspeh uspeha',
+                       'nedelju belo beli bela primer primeri primera ocena ocene uspeh uspeha setiš seti setim '
+                       'sećaš sećam seća sećanje celo cela ceo celu celi',
     },
     'sl': {
         'flag': '🇸🇮', 'name': 'Slovenija', 'lang_name': 'Slovenian',

@@ -445,8 +445,11 @@ def fix_group(fmt, mkts, cfg, page_of, meta, res, put_example, links):
     ref = reference(fmt['id']) or {}
     results = res.get('results') or {}
     changed, awaiting = [], []
+    from .markets import avoid_found
     for m, t in (res.get('title_fixes') or {}).items():
         pid = page_of(fmt, m)
+        if m in TEXT and avoid_found(m, t):  # a fixed title must follow the page language's rules too
+            continue
         if pid and set_title(pid, t):  # a title is not part of a script approval
             changed.append(f'{m}: title -> {t[:60]}')
     for mk in mkts:
