@@ -7,7 +7,7 @@
   "A20261009001913:sh": "fixed",
   "A20261009001913:sl": "fixed",
   "A20261010130453:sh": "ok",
-  "A20261010130453:sl": "ok",
+  "A20261010130453:sl": "fixed",
   "A20261010161437:sh": "ok",
   "A20261010161437:sl": "fixed",
   "A20261010162026:sh": "ok",
@@ -22,8 +22,8 @@
   "A20261008204718:sl": "b71499f30bb9a36c5428783cdcebf372c0959d72826f41d2ce42fea11546a957",
   "A20261009001913:sh": "92afbce4ce49727c6493b5fda6408a0551d96e526e0f54ec058a95f6c757246b",
   "A20261009001913:sl": "95149ad48a59d30f7ab597310f8d00f6c9108fddbea056c6ff801639b71860eb",
-  "A20261010130453:sh": "69ed82c07b008d8684250df26d3f114df84725e0c43fcfaa8e67f464960eb06c",
-  "A20261010130453:sl": "bbfd8925caa5c5de09d5bd4a382d04526010ed28c7c6053fb8f2caa1e1a6a47c",
+  "A20261010130453:sh": "a143c7b9c404feff80f05c01cfeb1dd54bab37fe74df25490d63dabe59468be7",
+  "A20261010130453:sl": "76767a81beaf4b9dfcac6666a9eb8ac29b61c7527a094ca6ddbe6b690295cda8",
   "A20261010161437:sh": "9ae2c0d0f0c414cfe7ded9b4181d5bf5a915b933346548ac7b8db74b25022d40",
   "A20261010161437:sl": "4193ced0e6304ef54fece6999fd0eb0d8292d51cb423c217177f03e30a0e7760",
   "A20261010162026:sh": "3669f37e4cc79afb0e7066ef4ac5e4df32bb4cdf9c1d7b489ff99e8cc274342d",
@@ -843,7 +843,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791662804,
+   "checked_at": 1791665420,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -856,12 +856,12 @@
      "video_identity": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56"
     }
    },
-   "key": "7aa177aca92dbab4e8cfd7e8f97477f189f0f434eeca85716f0d5a2bc6c81751",
+   "key": "9a09e75dfcfa4dae0a734417dc17a9a57af30e84e2c78c50a37bcec49701725f",
    "passed": false,
    "reasons": [
-    "format_consistency sh: The CUE that shows Memo AI sits in the middle of beat 4, before the last gossip question. That puts the app on screen before the final phone close-up. The script also never places the beat-5 reveal (phone close-up with the overlay 'aplikacija se zove Memo AI') at the end.",
-    "format_consistency sl: The CUE that shows Memo AI sits in the middle of beat 4, before the last gossip question. That puts the app on screen before the final phone close-up. The script also never places the beat-5 reveal (phone close-up with the overlay 'aplikacija se imenuje Memo AI') at the end.",
-    "faithful_translation sl: The opening adds 'Vse,' ('everything'), so it now means 'everything, even the phone…' instead of 'even the phone you are holding…'. Remove it, e.g. 'Celo telefon, ki ga držiš, je narejen iz atomov.' The filler 'pač' in 'Ti so pač kot fani' is also added and should be removed."
+    "format_consistency sh: The Memo AI cue [CUE: Memo AI · memoai.eu/creator] sits in the middle of beat 4, before the last gossip question. That shows the app before the final phone close-up, which the format forbids. The script also has no ending shot of the phone close-up with the voice tutor screen and the closing overlay. Move the cue to the end as its own phone close-up shot.",
+    "script_matches_example sh: The spoken lines match the example line by line, but the app reveal comes too early. The cue is placed before 'Šta misliš, koji su atomi najgori u ovom trač klanu?' instead of after the dialogue as the closing phone close-up.",
+    "faithful_translation sl: The opening line 'Cel telefon, ki ga držiš' means 'the whole phone you're holding', not 'even the phone you're holding' (original 'Čak i telefon koji držiš'). Use 'Celo telefon, ki ga držiš, je narejen iz atomov.'"
    ],
    "results": {
     "directions_match": {
@@ -880,7 +880,7 @@
       "pass": true
      },
      "sl": {
-      "issue": "The opening adds 'Vse,' ('everything'), so it now means 'everything, even the phone…' instead of 'even the phone you are holding…'. Remove it, e.g. 'Celo telefon, ki ga držiš, je narejen iz atomov.' The filler 'pač' in 'Ti so pač kot fani' is also added and should be removed.",
+      "issue": "The opening line 'Cel telefon, ki ga držiš' means 'the whole phone you're holding', not 'even the phone you're holding' (original 'Čak i telefon koji držiš'). Use 'Celo telefon, ki ga držiš, je narejen iz atomov.'",
       "pass": false
      }
     },
@@ -896,18 +896,18 @@
     },
     "format_consistency": {
      "sh": {
-      "issue": "The CUE that shows Memo AI sits in the middle of beat 4, before the last gossip question. That puts the app on screen before the final phone close-up. The script also never places the beat-5 reveal (phone close-up with the overlay 'aplikacija se zove Memo AI') at the end.",
+      "issue": "The Memo AI cue [CUE: Memo AI · memoai.eu/creator] sits in the middle of beat 4, before the last gossip question. That shows the app before the final phone close-up, which the format forbids. The script also has no ending shot of the phone close-up with the voice tutor screen and the closing overlay. Move the cue to the end as its own phone close-up shot.",
       "pass": false
      },
      "sl": {
-      "issue": "The CUE that shows Memo AI sits in the middle of beat 4, before the last gossip question. That puts the app on screen before the final phone close-up. The script also never places the beat-5 reveal (phone close-up with the overlay 'aplikacija se imenuje Memo AI') at the end.",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "script_matches_example": {
      "sh": {
-      "issue": "",
-      "pass": true
+      "issue": "The spoken lines match the example line by line, but the app reveal comes too early. The cue is placed before 'Šta misliš, koji su atomi najgori u ovom trač klanu?' instead of after the dialogue as the closing phone close-up.",
+      "pass": false
      },
      "sl": {
       "issue": "",
@@ -916,7 +916,7 @@
     }
    },
    "status": "fail",
-   "summary": "Both pages follow the example's dialogue and premise, but in both the Memo AI CUE comes in the middle of beat 4 instead of at a final reveal close-up, and the SL opening adds 'Vse' (plus the filler 'pač'), which changes the wording of the original.",
+   "summary": "Both pages copy the ketchup ASMR hook and the gossip dialogue faithfully, but SH shows the Memo AI cue mid-dialogue instead of in the final phone close-up, and SL mistranslates 'even' in the opening line as 'Cel' instead of 'Celo'.",
    "title_fixes": {},
    "version": "group-2026-10-10.localized-sl"
   },

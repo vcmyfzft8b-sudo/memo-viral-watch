@@ -1894,5 +1894,100 @@
   ],
   "ts": 1791663146,
   "type": "rerank"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 23 words, it must have 24-37 / script corrected towards the original: The original's second line names the app ('nadogradiš moza",
+   "🇸🇮 script rewritten sentence by sentence (25 words (original 29)) / script corrected towards the original: The original's second line names the app ('uz Astra AI')"
+  ],
+  "tries": 1,
+  "ts": 1791664288,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The Memo AI cue comes before the last gossip question ('Šta misliš, koji su atomi najgori u ovom trač klanu?'). That shows the app during beat 4 instead of only at the final phone close-up in beat 5. Move the cue after the last line.; script_matches_example sh: The product cue"
+  ],
+  "tries": 1,
+  "ts": 1791664288,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 38 words, it must have 24-37 / script corrected towards the original: The original's second line says 'Pa highkey nadogradiš moz",
+   "🇸🇮 script rewritten sentence by sentence (25 words (original 29)) / script corrected towards the original: Line 1 adds 'končno' and 'pač', which the original does "
+  ],
+  "tries": 2,
+  "ts": 1791664761,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The [CUE: Memo AI] marker comes before the last gossip line, in the middle of beat 4. That shows the app before the final phone close-up, which the format does not allow. The script also leaves out the beat-5 closing overlay «aplikacija se zove Memo AI», so Memo AI is never na"
+  ],
+  "tries": 2,
+  "ts": 1791664761,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 21 words, it must have 24-37 / script corrected towards the original: The second line says 'uz ovu aplikaciju' where the origina",
+   "🇸🇮 script rewritten sentence by sentence (25 words (original 29)) / script corrected towards the original: Line 2 leaves out the brand. The original says 'nadograd"
+  ],
+  "tries": 3,
+  "ts": 1791665251,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The [CUE: Memo AI · memoai.eu/creator] marker sits mid-beat 4, before the last gossip question. That shows the app before the final phone close-up, which the reference forbids. The script also lacks the beat 5 reveal (phone close-up with the overlay 'aplikacija se zove Memo AI"
+  ],
+  "tries": 3,
+  "ts": 1791665251,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261008211912",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 23 words, it must have 24-37 / script corrected towards the original: Line 2 says 'uz ovu aplikaciju' where the original on-scre",
+   "🇸🇮 rewrite refused: the script has 19 words, it must have 24-37 / script corrected towards the original: The script drops the brand from line 2. The original says "
+  ],
+  "tries": 4,
+  "ts": 1791665739,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The Memo AI cue [CUE: Memo AI · memoai.eu/creator] sits in the middle of beat 4, before the last gossip question. That shows the app before the final phone close-up, which the format forbids. The script also has no ending shot of the phone close-up with the voice tutor screen "
+  ],
+  "tries": 4,
+  "ts": 1791665739,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791665742,
+  "type": "rerank"
  }
 ]

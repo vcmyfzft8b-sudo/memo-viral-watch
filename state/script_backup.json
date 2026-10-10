@@ -10483,6 +10483,25 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-8106-863a-e7ef88401f9d": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Velja, poslušaj tole: jedro je kot ena mega popularna zvezda, vsi so okrog nje, elektroni pa? Ti so pa kot fani, ki ful letajo naokrog, ampak se ji nikoli ne morejo čisto približat. Noro, a ne? ",
+   "text": {
+    "content": "Velja, poslušaj tole: jedro je kot ena mega popularna zvezda, vsi so okrog nje, elektroni pa? Ti so pa kot fani, ki ful letajo naokrog, ampak se ji nikoli ne morejo čisto približat. Noro, a ne? ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-8107-9bd9-de235a842e77": [
   {
    "annotations": {
@@ -10827,6 +10846,25 @@
    "plain_text": "Od prve sekunde sjedi za stolom i polako cijedi kečap iz boce u čašu vode, gledaj dolje u čašu dok se čuje glas tutora, a naslov je na ekranu.",
    "text": {
     "content": "Od prve sekunde sjedi za stolom i polako cijedi kečap iz boce u čašu vode, gledaj dolje u čašu dok se čuje glas tutora, a naslov je na ekranu.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f565e84-a3c2-811b-9e54-cf13befe87ca": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu se končno spomniš tistega enega slajda, ampak pač nisi naročena na možgane premium. ",
+   "text": {
+    "content": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu se končno spomniš tistega enega slajda, ampak pač nisi naročena na možgane premium. ",
     "link": null
    },
    "type": "text"
@@ -12198,6 +12236,25 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-8182-9269-fd491c432faa": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Static close-up, hands only: ketchup squeezed into a glass of water; the voice tutor is heard explaining) Celo telefon, ki ga držiš, je narejen iz atomov. (Student loudly interrupts the tutor; ketchup squeezing continues) Čakaj, čakaj, čakaj. Čakaj, čakaj, a mi lahko to razložiš kot en sočen trač? ",
+   "text": {
+    "content": "(Static close-up, hands only: ketchup squeezed into a glass of water; the voice tutor is heard explaining) Celo telefon, ki ga držiš, je narejen iz atomov. (Student loudly interrupts the tutor; ketchup squeezing continues) Čakaj, čakaj, čakaj. Čakaj, čakaj, a mi lahko to razložiš kot en sočen trač? ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-8184-860c-f21a82917a40": [
   {
    "annotations": {
@@ -12498,6 +12555,25 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-81b1-98cc-ff278a1effc6": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu se spomniš tistega enega slajda, ampak pač nisi naročena na možgane premium. ",
+   "text": {
+    "content": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu se spomniš tistega enega slajda, ampak pač nisi naročena na možgane premium. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-81c7-af55-d5466c596f36": [
   {
    "annotations": {
@@ -12531,6 +12607,61 @@
    "plain_text": "(student interrupts the tutor, ketchup squeezing continues) Čekaj, čekaj, čekaj. Čekaj, čekaj, jel možeš da mi objasniš to kao neki sočni trač? ",
    "text": {
     "content": "(student interrupts the tutor, ketchup squeezing continues) Čekaj, čekaj, čekaj. Čekaj, čekaj, jel možeš da mi objasniš to kao neki sočni trač? ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f565e84-a3c2-81ca-9f13-c5c3e0c7b054": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Kaj misliš, a so ti elektroni zvesti fani? Si sposodiš zapiske, prava žajfnica, a ne? (",
+   "text": {
+    "content": "Kaj misliš, a so ti elektroni zvesti fani? Si sposodiš zapiske, prava žajfnica, a ne? (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Kaj misliš, kateri atomi so najhujši v tem tračarskem klanu? ",
+   "text": {
+    "content": ") Kaj misliš, kateri atomi so najhujši v tem tračarskem klanu? ",
     "link": null
    },
    "type": "text"
@@ -12574,6 +12705,61 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-81cc-a053-e850c9744717": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Pa si pač highkey kar sama nadgradiš možgane, a veš? ",
+   "text": {
+    "content": ") Pa si pač highkey kar sama nadgradiš možgane, a veš? ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-81cd-853b-effaa80b1ea4": [
   {
    "annotations": {
@@ -12607,6 +12793,25 @@
    "plain_text": "Tista oseba v razredu, ki ti dobesedno 2 minuti pred kakšnim testom vse razloži. ",
    "text": {
     "content": "Tista oseba v razredu, ki ti dobesedno 2 minuti pred kakšnim testom vse razloži. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f565e84-a3c2-81d0-8bbf-fc649d84df5c": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu se spomniš tistega enega slajda, ampak pač nisi naročena na možgane premium. ",
+   "text": {
+    "content": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu se spomniš tistega enega slajda, ampak pač nisi naročena na možgane premium. ",
     "link": null
    },
    "type": "text"
@@ -12870,6 +13075,61 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-81ea-90f3-f93f8b07da82": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Pa si potem highkey kar nadgradiš možgane, a veš. ",
+   "text": {
+    "content": ") Pa si potem highkey kar nadgradiš možgane, a veš. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-81eb-91c6-f564aa42475b": [
   {
    "annotations": {
@@ -12884,6 +13144,61 @@
    "plain_text": "(Jump cut, sticker '1/4 Prevoz 🚆 ✈️ -20% / -10%') Imate i deset posto u Air Serbiji na letove. ",
    "text": {
     "content": "(Jump cut, sticker '1/4 Prevoz 🚆 ✈️ -20% / -10%') Imate i deset posto u Air Serbiji na letove. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f565e84-a3c2-81ed-93ef-fce129142426": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Pa si itak kar highkey nadgradiš svoje možgane, a veš. ",
+   "text": {
+    "content": ") Pa si itak kar highkey nadgradiš svoje možgane, a veš. ",
     "link": null
    },
    "type": "text"
