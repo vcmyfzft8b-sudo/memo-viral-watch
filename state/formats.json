@@ -533,10 +533,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: format_consistency sh: The creator speaks two lines ('Oh.' and 'Znači, bez njenog pristanka?'), with stage directions 'Ti kažeš' and a lean-in to the camera. The reference requires a silent reaction while only the quiz audio plays, and lists the creator speaking as not allowed.; faithful_translation"
+    "cross-country check fail: format_consistency sh: The creator speaks lines ('Oh.' and 'Bez njenog pristanka?'), but the reference says the creator stays silent. The quiz lines are also reworded instead of using the oral-quiz page's Croatian wording, e.g. 'Pa, naravno da ću to napraviti samo uz njen pristanak' instead of 'Pa n"
    ],
    "since": 1791669170,
-   "tries": 1
+   "tries": 2
   },
   "reworded": {
    "sh": true,
@@ -605,6 +605,7 @@
   "created": 1791669727,
   "description": "Fortune-teller style talking video by candlelight where the creator 'reads the future' from handwritten paper cards held over a candle (grade 5, study method, app name), ending with a discount code.",
   "id": "A20261010220207",
+  "listed_at": 1791670520,
   "only_markets": [
    "sl"
   ],
@@ -612,17 +613,9 @@
   "pages": {
    "sl": "3f565e84-a3c2-8163-886b-cbc5d4c74674"
   },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "cross-country check fail: format_consistency sl: In beat 3 the stage directions only give the [CUE] marker. They never tell the creator to hold up a handwritten card that says 'Memo AI' over the candle, which the reference requires. Add '(nov listek z napisom Memo AI nad svečo)' before the line."
-   ],
-   "since": 1791669870,
-   "tries": 1
-  },
   "script": "Diva, vidim same petke v tem šolskem letu zate. Diva, samo uporabi active recall metodo. Memo AI ti sam dela zapiske brez tebe, diva, zraven pa še flashcarde in teste, diva. Pa z mojo kodo [TVOJA KODA] maš X % popusta, diva.",
   "source_video": "https://www.tiktok.com/@spelcaa41/video/7688806667072474391",
-  "status": "pending",
+  "status": "active",
   "title": "Diva, vidim same petke zate 🔮"
  }
 ]

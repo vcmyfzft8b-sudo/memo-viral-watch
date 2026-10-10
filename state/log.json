@@ -2338,5 +2338,88 @@
   ],
   "ts": 1791669896,
   "type": "rerank"
+ },
+ {
+  "format": "A20261008205804",
+  "level": "viral",
+  "ts": 1791670203,
+  "type": "alert",
+  "video": "7694766667355770134",
+  "views": 124200
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791670207,
+  "type": "alert",
+  "video": "7695057463996943617",
+  "views": 75400
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791670211,
+  "type": "alert",
+  "video": "7695007777751584020",
+  "views": 19000
+ },
+ {
+  "format": "A20261010214237",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The creator speaks lines ('Oh.' and 'Bez njenog pristanka?'), but the reference says the creator stays silent. The quiz lines are also reworded instead of using the oral-quiz page's Croatian wording, e.g. 'Pa, naravno da ću to napraviti samo uz njen pristanak' instead of 'Pa n"
+  ],
+  "tries": 2,
+  "ts": 1791670495,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261010162026",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261010162928",
+   "A20261009015525",
+   "A20261010220207",
+   "A20261010215744",
+   "A20261010215543",
+   "A20261010161437",
+   "A20261009014121"
+  ],
+  "ts": 1791670520,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010220207",
+  "position": 13,
+  "ts": 1791670521,
+  "type": "format_published"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261010162026",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261010162928",
+   "A20261009015525",
+   "A20261010220207",
+   "A20261010215744",
+   "A20261010215543",
+   "A20261010161437",
+   "A20261009014121"
+  ],
+  "ts": 1791670521,
+  "type": "rerank"
  }
 ]

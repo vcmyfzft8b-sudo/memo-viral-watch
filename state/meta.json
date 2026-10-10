@@ -17,7 +17,7 @@
   "A20261010163838:sh": "ok",
   "A20261010163838:sl": "ok",
   "A20261010214237:sh": "fixed",
-  "A20261010214237:sl": "fixed",
+  "A20261010214237:sl": "ok",
   "A20261010215329:sl": "ok",
   "A20261010215543:sl": "ok",
   "A20261010215744:sl": "fixed",
@@ -38,12 +38,12 @@
   "A20261010162928:sl": "8f09c654bce2dd29e102a29b6b0714d62e12709bdbb02856f4c86e712f680599",
   "A20261010163838:sh": "3d5371b22f0210793c94eca3c5f291cc1c6789dc64eac202c241916bab31749b",
   "A20261010163838:sl": "947a67f61eef2319c8df6ce96ee81c921a412995e9ce1d1a21495e0fdcaed8aa",
-  "A20261010214237:sh": "a0d73ad4b5c92cc2cc41e30227615d9bc37c0641949fa660dc94e74f5b0346eb",
+  "A20261010214237:sh": "bbf338ed81707edd3868ce48bc05be6c807f04f7e6b13dd779d667fd5f8e14aa",
   "A20261010214237:sl": "9f69fcac35c9eb36c2b4dcec7d74f0da8afc96dd387ae480f57ed6109e0def9c",
   "A20261010215329:sl": "93084276db24eee73dc2070db6c220d0f259514459208731c6389276c30dcd34",
   "A20261010215543:sl": "6540fc9c15a76c22f1bfb20fe017159023dab867806e480705a028b7dc8ceef9",
   "A20261010215744:sl": "bea348f3bbc1b221385faaf5ecb4a413734b55190aea3875f34432b64e7654d8",
-  "A20261010220207:sl": "258021cb43237cfd8ea8a397991f0c449f2c09cac05b237c61b02eef0b9c43b9"
+  "A20261010220207:sl": "770c39a538fb2b8edec76cbac349c36e08b8a3c5a878231e55e1247423ce8fc5"
  },
  "discovered_at": 1791527938,
  "faithful_rewrite_started": 1791643120,
@@ -1249,7 +1249,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791669138,
+   "checked_at": 1791670461,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1262,11 +1262,11 @@
      "video_identity": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e"
     }
    },
-   "key": "6b2b9861da7179cea399d23b9440878b69b156992ac380d91bc9cba5a3325641",
+   "key": "5c5284b5e2c158f737c7e12a6c8ab2348ce38c3e350f85eec45bb1d69684199f",
    "passed": false,
    "reasons": [
-    "format_consistency sh: The creator speaks two lines ('Oh.' and 'Znači, bez njenog pristanka?'), with stage directions 'Ti kažeš' and a lean-in to the camera. The reference requires a silent reaction while only the quiz audio plays, and lists the creator speaking as not allowed.",
-    "faithful_translation sh: It adds 'Oh.' (twice) and 'Znači, bez njenog pristanka?' as the creator's own lines. These are not part of the oral quiz page's Croatian dialogue, which the campaign note says must be used word for word. Remove them so only the page lines remain, ending at 'i to ovako'."
+    "format_consistency sh: The creator speaks lines ('Oh.' and 'Bez njenog pristanka?'), but the reference says the creator stays silent. The quiz lines are also reworded instead of using the oral-quiz page's Croatian wording, e.g. 'Pa, naravno da ću to napraviti samo uz njen pristanak' instead of 'Pa naravno, samo uz pristanak.' and 'A način na koji se to radi je ovaj' instead of 'i to ovako'.",
+    "faithful_translation sh: It does not use the page's Croatian dialogue word for word. Lines are reworded and padded ('jednostavno', 'baš', 'uz njen pristanak'), and the last line should be 'Moraš ih dati tim redoslijedom, i to ovako.' It also adds lines for the creator to speak ('Oh.' and 'Bez njenog pristanka?'), which the page dialogue does not contain."
    ],
    "results": {
     "directions_match": {
@@ -1281,7 +1281,7 @@
     },
     "faithful_translation": {
      "sh": {
-      "issue": "It adds 'Oh.' (twice) and 'Znači, bez njenog pristanka?' as the creator's own lines. These are not part of the oral quiz page's Croatian dialogue, which the campaign note says must be used word for word. Remove them so only the page lines remain, ending at 'i to ovako'.",
+      "issue": "It does not use the page's Croatian dialogue word for word. Lines are reworded and padded ('jednostavno', 'baš', 'uz njen pristanak'), and the last line should be 'Moraš ih dati tim redoslijedom, i to ovako.' It also adds lines for the creator to speak ('Oh.' and 'Bez njenog pristanka?'), which the page dialogue does not contain.",
       "pass": false
      },
      "sl": {
@@ -1301,7 +1301,7 @@
     },
     "format_consistency": {
      "sh": {
-      "issue": "The creator speaks two lines ('Oh.' and 'Znači, bez njenog pristanka?'), with stage directions 'Ti kažeš' and a lean-in to the camera. The reference requires a silent reaction while only the quiz audio plays, and lists the creator speaking as not allowed.",
+      "issue": "The creator speaks lines ('Oh.' and 'Bez njenog pristanka?'), but the reference says the creator stays silent. The quiz lines are also reworded instead of using the oral-quiz page's Croatian wording, e.g. 'Pa, naravno da ću to napraviti samo uz njen pristanak' instead of 'Pa naravno, samo uz pristanak.' and 'A način na koji se to radi je ovaj' instead of 'i to ovako'.",
       "pass": false
      },
      "sl": {
@@ -1321,7 +1321,7 @@
     }
    },
    "status": "fail",
-   "summary": "SL follows the reference and the campaign note in full. SH fails format consistency and faithful translation because it makes the creator speak 'Oh.' and 'Znači, bez njenog pristanka?', which are not lines from the quiz page and break the silent-reaction rule.",
+   "summary": "SL follows the reference and the oral-quiz page's Slovenian wording exactly; SH fails format consistency and faithful translation because it rewords the page's Croatian lines and has the creator speak ('Oh.' and 'Bez njenog pristanka?') when the creator should stay silent.",
    "title_fixes": {},
    "version": "group-2026-10-10.localized-sl"
   },
@@ -1488,7 +1488,7 @@
    "approval": {
     "sl": "not_locked"
    },
-   "checked_at": 1791669854,
+   "checked_at": 1791670266,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1497,11 +1497,9 @@
      "video_identity": "sha256:525e62b8a2fad76941212d4fe044020de6bf63e88bbd42958cfd9edfd6d6bd1a"
     }
    },
-   "key": "4f57a70dd197f48ad82e38165623dc02df9ac8fe7bc2f9502c77efd4ef09f777",
-   "passed": false,
-   "reasons": [
-    "format_consistency sl: In beat 3 the stage directions only give the [CUE] marker. They never tell the creator to hold up a handwritten card that says 'Memo AI' over the candle, which the reference requires. Add '(nov listek z napisom Memo AI nad svečo)' before the line."
-   ],
+   "key": "e75189046c21246d6abd496c58d9a98d3a99c93f90c77d7f28c5b97d184c3232",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sl": {
@@ -1523,8 +1521,8 @@
     },
     "format_consistency": {
      "sl": {
-      "issue": "In beat 3 the stage directions only give the [CUE] marker. They never tell the creator to hold up a handwritten card that says 'Memo AI' over the candle, which the reference requires. Add '(nov listek z napisom Memo AI nad svečo)' before the line.",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "script_matches_example": {
@@ -1534,8 +1532,8 @@
      }
     }
    },
-   "status": "fail",
-   "summary": "The SL page is a faithful, word-for-word match of the example with valid Memo AI claims and a matching title and hook; the only gap is that beat 3's stage directions leave out the handwritten 'Memo AI' card over the candle.",
+   "status": "pass",
+   "summary": "The SL page passes every check: the script matches the example almost word for word, with only the allowed swap of ŠPELA50 to the [TVOJE IME]50 placeholder and minor spelling changes; it keeps the candlelit fortune-teller card beats in order, makes only real Memo AI claims (notes, flashcards, tests), and its title and filming directions match the example's opening.",
    "title_fixes": {},
    "version": "group-2026-10-10.localized-sl"
   }
@@ -1593,11 +1591,11 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1791637293,
+ "last_run": 1791669969,
  "top3": [
   "A20261008205804",
   "A20261008210957",
-  "A20261009210824"
+  "A20261009001913"
  ],
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
