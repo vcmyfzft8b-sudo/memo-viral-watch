@@ -139,7 +139,7 @@ Check strictly:
    spoken script must not name it either. Parenthesized linked cue labels are filming instructions, not spoken words.
    For silent videos compare on-screen text instead.
 7. title_ok: the on-screen TITLE ({title!r}) is the example's on-screen title/hook translated almost one to one (only
-   the app swapped).
+   the app swapped) and follows the page's language rules ({TEXT[lang]['style']}).
 {FACTS}
 script_ok is false if the script or directions show/mention an app feature {OURS} does not have.
 Return JSON {{"example_same_format": true, "script_follows_example": true, "script_faithful": true, "script_ok": true,
@@ -185,6 +185,8 @@ Return JSON {{"example_same_format": true, "script_follows_example": true, "scri
     if locked and not v['approved_matches']:
         passed = False
         v['script_issues'].append('live script or example differs from the approved version')
+    if avoid_found(lang, title):  # e.g. an ekavian title on an ijekavian page
+        v['title_ok'] = False
     if says_source(script):
         passed = False
         v['script_issues'].append(f'{SOURCE} is mentioned in the script')
