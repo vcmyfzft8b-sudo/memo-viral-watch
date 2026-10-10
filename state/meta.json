@@ -17,7 +17,9 @@
   "A20261009015525:sh": "fixed",
   "A20261009015525:sl": "ok",
   "A20261009210824:sh": "fixed",
-  "A20261009210824:sl": "ok"
+  "A20261009210824:sl": "ok",
+  "A20261010130453:sh": "fixed",
+  "A20261010130453:sl": "ok"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "b2fa88ddbfe26c4235d151a2335f56fab0862073fabf2d71cbbc78811ccc4ee6",
@@ -35,7 +37,9 @@
   "A20261009015525:sh": "af4c4adaee919e8efac2ea767c04d8e1116edb795c3772f0ca62ad97fa9e957f",
   "A20261009015525:sl": "45ed50dc7e41013dcc0b678f8aa30f85f86bd5b92bd45df173f740aa8d09b05f",
   "A20261009210824:sh": "304a991a47bc04bb8185ef3c7b0bff85ed8381c82892067c1eb92ff514922446",
-  "A20261009210824:sl": "d77f0a78a38377b7ba63910374ae14a7198156b1d348493db7b6117be6a58f78"
+  "A20261009210824:sl": "d77f0a78a38377b7ba63910374ae14a7198156b1d348493db7b6117be6a58f78",
+  "A20261010130453:sh": "a21d5d1ca47e7a5a243501fff11a049129de9bd9d766ccd232e2fb5e2f4462d8",
+  "A20261010130453:sl": "befc28f9e7dbc6f74d97c81a4f4b27dd89c4c483fad1cbd85e93f5ca13f25384"
  },
  "discovered_at": 1791527938,
  "group_audit": {
@@ -697,6 +701,87 @@
    "summary": "Both SH and SL follow the laptop ad-space format in the reference order and wording. Hook, priced fields, comic removal, logo reveal at beat 5, factual brand intro, laptop demo and the 'next buyer' CTA are all present. Claims are accurate, directions are consistent and neither title needs a fix. Minor SH note: the script cue only has the creator holding the printed logo at the reveal line. The directions add sticking it on right after that line, slightly later than the reference's reveal moment.",
    "title_fixes": {},
    "version": "group-2026-10-08.2"
+  },
+  "A20261010130453": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791638505,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7694393004118854930",
+     "video_identity": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56"
+    },
+    "sl": {
+     "source_id": "7694393004118854930",
+     "video_identity": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56"
+    }
+   },
+   "key": "da0abef4e10b7747cbd73cc3bada27c183b7cf1755bdfd2e98464c590f19eefb",
+   "passed": false,
+   "reasons": [
+    "format_consistency sh: Script has three mid-conversation Memo AI markers (after 'Haos, a?', after the question about the exes and after 'čista serija, zar ne?'), and the directions show a Memo AI label at each one during the ketchup shot. The reference shows the brand only in the final overlay and on the phone screen in beat 6. The other changes are allowed: ketchup on a plate is an allowed ASMR prop and influencer/exes are an allowed gossip metaphor.",
+    "directions_match sh: Directions tell the creator to show a small Memo AI label at the three mid-video markers. This contradicts the reference rule that the brand appears only in the final overlay and on the phone screen. Remove those markers and labels and keep branding only in the last 3–5 s phone shot."
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "Directions tell the creator to show a small Memo AI label at the three mid-video markers. This contradicts the reference rule that the brand appears only in the final overlay and on the phone screen. Remove those markers and labels and keep branding only in the last 3–5 s phone shot.",
+      "pass": false
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "Script has three mid-conversation Memo AI markers (after 'Haos, a?', after the question about the exes and after 'čista serija, zar ne?'), and the directions show a Memo AI label at each one during the ketchup shot. The reference shows the brand only in the final overlay and on the phone screen in beat 6. The other changes are allowed: ketchup on a plate is an allowed ASMR prop and influencer/exes are an allowed gossip metaphor.",
+      "pass": false
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "independent_wording": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "SL follows the reference on every check; SH fails format_consistency and directions_match because it shows Memo AI labels during the ketchup shot, when the brand should appear only in the final phone shot and overlay.",
+   "title_fixes": {},
+   "version": "group-2026-10-08.2"
   }
  },
  "group_rejected": {
@@ -750,7 +835,7 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1791613295,
+ "last_run": 1791637293,
  "top3": [
   "A20261008205804",
   "A20261008210957",
@@ -775,6 +860,8 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/635ba303-0ce3-42a9-b988-0cc452861169/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6b3809ad-cf04-4426-8f8d-da0a3d675711/video-notion.mp4": "sha256:728cf7db67b5988163b4b35079212302d7be123337b97b582d506266b1fa9fea",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6f1028c2-5e96-411c-853d-a6021f5a9fc3/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/7ac6cf49-8965-4e31-bf34-2ef929edc8ab/video.mp4": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9be007a3-73e8-4039-8ca1-2bbd3e875287/video.mp4": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9f1396bc-73e4-473d-9aec-ac88d25d3cba/video-notion.mp4": "sha256:d3f2a1475e9c417b9ea3df8e1dba8f19445423cd8a088b1a6f9494a872a49aa7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/b724117d-0c36-4e93-972f-055d7c412d9d/video-notion.mp4": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d7a785da-5e23-40f6-9646-04afe72c6f2d/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",

@@ -263,5 +263,30 @@
   "source_video": "https://www.tiktok.com/@lern.mit.domi/video/7692061360221457686",
   "status": "active",
   "title": "Prodajem mjesto na laptopu za reklamu 🤑"
+ },
+ {
+  "created": 1791637493,
+  "description": "Satisfying ASMR-style prop action (squeezing ketchup into a glass of water) while the audio is a live conversation with the app's voice tutor explaining a school topic as juicy gossip, ending with a close-up of the phone showing the voice tutor and an 'the app is called X' text overlay.",
+  "id": "A20261010130453",
+  "page_id": "3f565e84-a3c2-81ae-825a-c3d10f74823b",
+  "pages": {
+   "sl": "3f565e84-a3c2-8128-b4dc-e7924264635c"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: format_consistency sh: Script has three mid-conversation Memo AI markers (after 'Haos, a?', after the question about the exes and after 'čista serija, zar ne?'), and the directions show a Memo AI label at each one during the ketchup shot. The reference shows the brand only in the final overlay and o"
+   ],
+   "since": 1791638262,
+   "tries": 2
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Čak je i telefon u tvojoj ruci sastavljen od atoma. Stani, stani, stani. Stani malo, a možeš li mi to ispričati kao neki sočan trač? Može, slušaj ovo: jezgro ti je glavna zvijezda koju svi prate, a elektroni? E, oni su kao fanovi koji se stalno motaju okolo, a nikad mu ne uspiju prići skroz blizu. Ludo, zar ne? Jesu li ti elektroni, po tebi, vjerni fanovi? Kao kad nekome posudiš bilješke – čista sapunica, jel' da? A koji su atomi, po tebi, najgori u ovoj trač ekipi?",
+  "source_video": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930",
+  "status": "pending",
+  "title": "Gradivo kao sočan trač 🍿"
  }
 ]

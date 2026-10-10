@@ -624,5 +624,57 @@
    "7692061360221457686": "https://www.tiktok.com/@lern.mit.domi/video/7692061360221457686"
   },
   "title_en": "Selling ad space on my laptop 🤑"
+ },
+ "A20261010130453": {
+  "accepted_sources": [
+   "7694393004118854930"
+  ],
+  "allowed_localisation": [
+   "Language of the conversation and overlay: Slovenian, Croatian, Bosnian or Serbian (e.g. SL 'aplikacija se imenuje Memo AI', HR/BS 'aplikacija se zove Memo AI', SR 'aplikacija se zove Memo AI')",
+   "School topic explained (atoms, cells, a history event, a literature work, etc.), as long as it's retold as gossip/drama",
+   "Exact gossip metaphors, slang and local expressions ('ludilo', 'prava sapunica', 'trač', etc.)",
+   "Choice of ASMR prop action (ketchup in water, honey drip, slime, sauce squeeze), as long as it stays a satisfying close-up with no face",
+   "Subtitle styling, plus the voice and gender of the student",
+   "Length within 20–35 s"
+  ],
+  "beats": [
+   "1. ASMR prop close-up starts right away (ketchup squeezed into a glass of water, no face). In the audio, the Memo AI voice tutor is mid-explanation of a school topic from the student's note (e.g. atoms: 'everything, even the phone you're holding, is made of atoms').",
+   "2. The student interrupts the tutor out loud: 'Wait, wait, wait... can you explain that to me like juicy gossip?'",
+   "3. The tutor agrees ('Okay, listen to this:') and retells the core concept as celebrity gossip: the nucleus is the mega-popular star everyone surrounds, and the electrons are fans who keep circling but can never get fully close. The ASMR action continues.",
+   "4. The tutor adds more drama and asks the student questions in gossip style (e.g. 'Crazy, right? Do you think these electrons are loyal fans?' / 'A real soap opera, right?'), so it feels like a live, two-way conversation.",
+   "5. The tutor ends on a cliffhanger gossip question about the topic (e.g. 'Which atoms do you think are the worst in this gossip clan?').",
+   "6. Cut to a close-up of the phone screen showing the Memo AI voice tutor running on that note, with the text overlay 'the app is called Memo AI' (local-language equivalent)."
+  ],
+  "canonical_source": "7694393004118854930",
+  "filming": "Length 20–35 s, vertical 9:16, one continuous take or 2 shots. Shot A (about 85% of the video): static, tight, well-lit close-up of the ASMR prop action (ketchup into a glass of water, or an equally satisfying slow pour/squeeze), with hands only and no face. Audio is a real screen/voice recording of a conversation with the Memo AI voice tutor in the local language. The user's interruption has to be audible and the tutor actually responds to it. Shot B (last 3–5 s): close-up of a phone showing memoai.eu open in the browser with the voice tutor screen playing for an existing note on the topic (note title visible), plus the overlay 'the app is called Memo AI'. Optional subtle subtitles in the local language. Note creation is not shown, so there is no waiting time on screen.",
+  "generated": 1791637594,
+  "hook": "Close-up of a satisfying ASMR-style prop action (squeezing ketchup slowly into a glass of water). Over it you hear the Memo AI voice tutor already mid-explanation of a school topic, for example 'Everything around you, even the phone you're holding, is made of atoms...', and the user cuts in: 'Wait, wait, wait... can you explain that to me like juicy gossip?'",
+  "not_allowed": [
+   "Showing a face/talking head or a presenter speaking to the camera instead of the ASMR prop close-up",
+   "Replacing the live voice-tutor conversation with a voiceover, text-only video or a tutorial walkthrough of the app",
+   "Dropping the 'explain it like juicy gossip' request or the gossip/drama retelling",
+   "Speaking the brand or adding a spoken CTA or sales pitch. The brand goes only in the final overlay and on the phone screen",
+   "Mentioning or showing Astra AI, Studyflash or any other app",
+   "Claiming the voice tutor is a separate standalone chatbot that knows everything. It explains the material of a note the user created",
+   "Claiming snap-and-solve, instant answers to a single photographed task, homework checking/grading, photos in the chat, PDF export, pasting text, or an Android app from the store",
+   "Claiming unlimited free use. The free start is only one free note, then a 3-day free trial",
+   "Showing a long note-generation wait on screen"
+  ],
+  "premise": "A student interrupts Memo AI's voice tutor while it explains their study material and asks it to retell the topic as juicy gossip. The tutor switches to a drama/soap-opera tone (the nucleus is the celebrity, the electrons are fans who can never get close), so a dry school topic becomes fun to listen to. The video shows only a hypnotic ASMR prop action, so the audio carries all the content. A final close-up of the phone shows that the voice came from Memo AI.",
+  "product": {
+   "cta": "none (only the text overlay 'the app is called Memo AI')",
+   "features_used": [
+    "Voice tutor that explains the note's material out loud topic by topic",
+    "Interrupting the voice tutor to ask it to explain differently",
+    "Notes created from the student's material (e.g. lecture, PDF or photos of textbook pages)"
+   ],
+   "introduced_at_beat": 1,
+   "spoken_brand": "not spoken (the brand only appears in the final on-screen text overlay and on the phone screen in beat 6)"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7694393004118854930": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930"
+  },
+  "title_en": "Study material as juicy gossip 🍿 (ASMR prop + voice tutor)"
  }
 }

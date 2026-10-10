@@ -1200,5 +1200,69 @@
   ],
   "ts": 1791613630,
   "type": "rerank"
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (89 words (original 87)) / script reworded again: Most lines are near-direct translations"
+  ],
+  "tries": 1,
+  "ts": 1791638262,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010130453",
+  "page_de": "3f565e84-a3c2-81ae-825a-c3d10f74823b",
+  "pages": {
+   "sl": "3f565e84-a3c2-8128-b4dc-e7924264635c"
+  },
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (89 words (original 87)) / script reworded again: Most lines are near-direct translations"
+  ],
+  "ts": 1791638262,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010130453",
+  "format": "A20261010130453",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "🇧🇦🇭🇷🇷🇸🇲🇪 note under the video corrected / script rewritten sentence by sentence (89 words (original 87)) / script reworded again: Most lines are near-direct translations"
+  ],
+  "ts": 1791638263,
+  "type": "alert",
+  "video": "7694393004118854930",
+  "views": 101800
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791638267,
+  "type": "alert",
+  "video": "7694789457416850694",
+  "views": 49900
+ },
+ {
+  "format": "A20261010130453",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: Script has three mid-conversation Memo AI markers (after 'Haos, a?', after the question about the exes and after 'čista serija, zar ne?'), and the directions show a Memo AI label at each one during the ketchup shot. The reference shows the brand only in the final overlay and o"
+  ],
+  "tries": 2,
+  "ts": 1791638534,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791638535,
+  "type": "rerank"
  }
 ]
