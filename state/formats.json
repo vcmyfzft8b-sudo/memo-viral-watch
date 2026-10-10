@@ -1,8 +1,15 @@
 [
  {
-  "archived_reason": "did not pass the page check: cross-country check fail: format_consistency sl: Items 1 and 3 have no real local operator, cinema chain or verified percentage ('vlak in avtobus precej cenejša', 'kino je s študentsko cenejši'). The ",
   "created": 1791492438,
   "description": "Talking-head listicle of little-known student discounts (transport, free Microsoft Office, cinema/theatre) with numbered on-screen stickers, where the last item is the study app shown as a screen recording before a like-and-follow outro.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261008204718",
   "inspo": {
    "sh": {
@@ -23,14 +30,6 @@
   "pages": {
    "sl": "3f365e84-a3c2-81fb-b984-fbf04f3851f5"
   },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "cross-country check fail: format_consistency sl: Items 1 and 3 have no real local operator, cinema chain or verified percentage ('vlak in avtobus precej cenejša', 'kino je s študentsko cenejši'). The hook drops the '99%' line, and Memo AI gets two sentences instead of the original's one. The spoken outro 'Pa srečno s študije"
-   ],
-   "since": 1791492822,
-   "tries": 4
-  },
   "revived": {
    "at": 1791502910,
    "because": "https://www.tiktok.com/@karla_studytok/video/7683950978386742560",
@@ -42,12 +41,20 @@
   },
   "script": "Popusti za učenike i studente o kojima 99% ljudi nema pojma. Prije nego što odeš dalje, sačuvaj ovaj video, jer će ti zatrebati. Prvo, prijevoz: sa studentskom karticom imaš popust na karte za međugradske linije, a neke avio-kompanije imaju i studentske cijene za letove. Drugo: Microsoft Office možeš imati potpuno besplatno. Znači Word, Excel, PowerPoint – samo se prijaviš sa školskim ili fakultetskim mailom i sve ti je besplatno. Treće, zabava: u Cineplexxu su ti karte za kino jeftinije, a u mnogim teatrima predstave često plaćaš i do pola cijene. Četvrto: Memo AI možeš probati besplatno. Ako ne znaš šta je Memo AI i kako radi, evo, sad ću ti pokazati. Memo AI je alat koji ti pomaže u učenju: ubaciš ono iz čega učiš – PDF, prezentaciju, snimak predavanja ili slike. Kad ubaciš, recimo, slike iz udžbenika ili sveske, Memo AI ti za par minuta napravi bilješke, kartice i kviz. I onda biraš ",
   "source_video": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
-  "status": "archived",
+  "status": "pending",
   "title": "Studentski popusti koje svi propuštaju 🎟️"
  },
  {
   "created": 1791493084,
   "description": "Talking-head 'elimination game' video where the creator lists playful 'you're out if…' conditions on a growing on-screen numbered list, with the last item being the study app, followed by a quick screen-recorded app demo and a comment call-to-action.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261008205804",
   "listed_at": 1791493524,
   "page_id": "3f365e84-a3c2-81ed-a906-d5caef049749",
@@ -67,6 +74,14 @@
  {
   "created": 1791493797,
   "description": "Talking-head countdown listicle (top 5 easiest faculties) filmed while cutting paper with scissors as a visual hook, with a mid-list app demo filmed on a phone over a book before revealing places 2 and 1.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261008210957",
   "listed_at": 1791494192,
   "page_id": "3f365e84-a3c2-8158-a10f-d25c82347e03",
@@ -84,22 +99,20 @@
   "title": "Top 5 najlakših fakulteta 🎓"
  },
  {
-  "archived_reason": "did not pass the page check: 🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example's second on-screen line names the brand ('uz Astra AI'), but our second line ('Srećom, sad i mozak možeš lag / script reworde; 🇸🇮 script reworded again: The",
   "created": 1791494352,
   "description": "No-voiceover POV meme with trending audio: creator looks stressed during a test because she can't remember a slide, then a handheld shot of a laptop screen showing the study app as the 'brain upgrade'.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261008211912",
   "page_id": "3f365e84-a3c2-819d-9066-dc90353d437e",
   "pages": {
    "sl": "3f365e84-a3c2-816c-89f2-f02737fabba1"
-  },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 script reworded again: The example's second on-screen line names the brand ('uz Astra AI'), but our second line ('Srećom, sad i mozak možeš lag / script reworde",
-    "🇸🇮 script reworded again: The example's on-screen text names the brand in the second line ('uz Astra AI'), but our second line never says Memo AI. / filming direct"
-   ],
-   "since": 1791494592,
-   "tries": 4
   },
   "reworded": {
    "sh": true,
@@ -107,12 +120,20 @@
   },
   "script": "POV: Sjetiš se baš tog jednog slajda na testu, a mozak ti nema premium paket 😭 Pa highkey nadogradiš mozak uz Memo AI 🧠",
   "source_video": "https://www.tiktok.com/@studywithreveka/video/7691071853334498580",
-  "status": "archived",
+  "status": "pending",
   "title": "Mozak premium uz Memo AI 🧠"
  },
  {
   "created": 1791499490,
   "description": "Comedy skit where one creator acts out how different zodiac signs react to getting a failing grade from an off-screen teacher, with one sign bragging about the study app as a mid-video product mention over a green-screen classroom.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261008224450",
   "inspo": {
    "sh": {
@@ -150,6 +171,14 @@
  {
   "created": 1791501329,
   "description": "Talking-head warning rant listing reasons not to use ChatGPT for studying (accuracy, no real learning, over-reliance, privacy), with the study app pitched mid-video as the better alternative via logo and screen-recording overlays.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261008231529",
   "listed_at": 1791508474,
   "page_id": "3f365e84-a3c2-8120-b838-fd3c99181a38",
@@ -166,9 +195,16 @@
   "title": "Prestani učiti s ChatGPT-jem 🚫"
  },
  {
-  "archived_reason": "did not pass the page check: cross-country check fail: independent_wording sl: Most of the SL script translates the example's sentences closely. The hook, all five remarks, the 'not bad, don't try this' line, the segue, 'Gremo pa",
   "created": 1791505153,
   "description": "Talking-head reaction series where the creator reads and jokes about funny e-diary teacher remarks shown as screenshot overlays, with a mid-video segue ('if you want to use AI, use it properly') into a quick app demo before returning to more remarks.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261009001913",
   "inspo": {
    "sh": {
@@ -188,14 +224,6 @@
   "pages": {
    "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
   },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "cross-country check fail: independent_wording sl: Most of the SL script translates the example's sentences closely. The hook, all five remarks, the 'not bad, don't try this' line, the segue, 'Gremo pa naprej na naslednjo opombo' and the firecracker joke are near-translations. The firecracker joke is 'Ne vem, kako vas sploh š"
-   ],
-   "since": 1791506039,
-   "tries": 4
-  },
   "revived": {
    "at": 1791509180,
    "because": "https://www.tiktok.com/@kera.vas.uci/video/7691827966711581953",
@@ -207,12 +235,20 @@
   },
   "script": "Idemo s reakcijom na najsmješnije bilješke iz e-dnevnika, part 5. Ovaj put krećemo žestoko, s bilješkom koju mi je poslao neko od vas. Piše: „Učenik je, kad su mu rekli da ostavi mobitel za vrijeme sata, počeo vikati: Pusti me, stara, igram Clash Royale.“ Ma pusti ga, ženo draga, možda mu je protivnik bacio Mega Knighta. Hoćeš da izgubi trofeje zbog tebe? A čuj ovog brata: „Učenik je na kontrolnom izvadio test koji je riješio unaprijed i htio ga predati kao svoj.“ Kako se toga sjetio? Tri dana ga nema, a on već smišlja neku prevaru. Sljedeća glasi: „Učenik je donio sliku doktorskog opravdanja. Provjerom se ispostavilo da je opravdanje napravila vještačka inteligencija.“ Iskreno, nije mu ni loše ispalo. Kod nekog profesora bi možda i prošlo, ali nemojte to probati. Ako baš hoćete koristiti AI, koristite ga za nešto pametno. Recimo za učenje, s aplikacijom Memo AI. Ubaciš svoje bilješke u ",
   "source_video": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406",
-  "status": "archived",
+  "status": "pending",
   "title": "Najsmješnije bilješke iz e-dnevnika 😂"
  },
  {
   "created": 1791510081,
   "description": "Talking-head 'secrets teachers hide from you' video with satisfying slime-cutting hook and a fake 'deleting in 2 hours' urgency line, then a close-up laptop screen walkthrough of the study app's features.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261009014121",
   "listed_at": 1791555293,
   "page_id": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe",
@@ -231,6 +267,14 @@
  {
   "created": 1791510925,
   "description": "Talking-to-camera study app recommendation where the creator holds up a laptop showing the app, then films the laptop screen while exploring one school subject (biology/cells) and ends back on camera pointing at the app.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261009015525",
   "listed_at": 1791530818,
   "page_id": "3f465e84-a3c2-810b-b433-d079ee2a9dd1",
@@ -249,6 +293,14 @@
  {
   "created": 1791580104,
   "description": "Talking-head video where the creator 'sells' ad spots drawn as priced fields on the back of their laptop, reveals the study app as the first buyer by cutting out and sticking on its logo, then demos its features on the laptop screen.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261009210824",
   "listed_at": 1791586906,
   "page_id": "3f465e84-a3c2-815f-9cd7-d9b447463dd2",
@@ -267,6 +319,14 @@
  {
   "created": 1791637493,
   "description": "Satisfying ASMR-style prop action (squeezing ketchup into a glass of water) while the audio is a live conversation with the app's voice tutor explaining a school topic as juicy gossip, ending with a close-up of the phone showing the voice tutor and an 'the app is called X' text overlay.",
+  "faithful": {
+   "sh": true,
+   "sl": true
+  },
+  "hook_short": {
+   "sh": true,
+   "sl": true
+  },
   "id": "A20261010130453",
   "page_id": "3f565e84-a3c2-81ae-825a-c3d10f74823b",
   "pages": {

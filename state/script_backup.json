@@ -10730,6 +10730,3457 @@
    "type": "text"
   }
  ],
+ "hook:3f365e84-a3c2-810e-8152-eeed9afe21db": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Govori sproščeno v kamero in ob besedi »enko« pokaži en prst v kamero.",
+    "text": {
+     "content": "Govori sproščeno v kamero in ob besedi »enko« pokaži en prst v kamero.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri Devici lahko vstaviš en sam neobvezen posnetek, dolg 2–3 sekunde (slika v sliki ali zamenjava zelenega ozadja), in sicer od »potem pa strani slikam, do deset slik naenkrat« do »Naredi mi še kartice za ponavljanje in kviz«. Posnemi sebe, kako uporabljaš Memo AI v brskalniku na telefonu (memoai.eu, ne aplikacije iz trgovine): najprej Scan s kamero slika strani zvezka, nato ustvarjeni zapiski, nato kartice ali zaslon z odstotkom poskusnega testa. Čakanje na nalaganje izreži, vse ostalo o aplikaciji pa samo povej.",
+    "text": {
+     "content": "Pri Devici lahko vstaviš en sam neobvezen posnetek, dolg 2–3 sekunde (slika v sliki ali zamenjava zelenega ozadja), in sicer od »potem pa strani slikam, do deset slik naenkrat« do »Naredi mi še kartice za ponavljanje in kviz«. Posnemi sebe, kako uporabljaš Memo AI v brskalniku na telefonu (memoai.eu, ne aplikacije iz trgovine): najprej Scan s kamero slika strani zvezka, nato ustvarjeni zapiski, nato kartice ali zaslon z odstotkom poskusnega testa. Čakanje na nalaganje izreži, vse ostalo o aplikaciji pa samo povej.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Vsak lik posnemi pred ozadjem učilnice z zeleno tablo (green screen) in na vrh postavi napis z znamenjem: ♍ DEVICA ♍, ♏ ŠKORPIJON ♏, ♌ LEV ♌ in ♎ TEHTNICA ♎; za vsako znamenje spremeni držo, glas in energijo.",
+    "text": {
+     "content": "Vsak lik posnemi pred ozadjem učilnice z zeleno tablo (green screen) in na vrh postavi napis z znamenjem: ♍ DEVICA ♍, ♏ ŠKORPIJON ♏, ♌ LEV ♌ in ♎ TEHTNICA ♎; za vsako znamenje spremeni držo, glas in energijo.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Med posameznimi znamenji naredi oster rez, profesorice pa nikoli ne pokaži – glej rahlo mimo kamere v višino katedra in reagiraj na njene neslišne besede.",
+    "text": {
+     "content": "Med posameznimi znamenji naredi oster rez, profesorice pa nikoli ne pokaži – glej rahlo mimo kamere v višino katedra in reagiraj na njene neslišne besede.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Posnetek končaj pri Tehtnici, ko moleš pramen proti katedru in vprašaš »A je to bolj drogerijska konica ali že konica za drago francosko olje?« – trd rez, brez outra in brez omembe aplikacije.",
+    "text": {
+     "content": "Posnetek končaj pri Tehtnici, ko moleš pramen proti katedru in vprašaš »A je to bolj drogerijska konica ali že konica za drago francosko olje?« – trd rez, brez outra in brez omembe aplikacije.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Snemaj navpično (9:16), s sprednjo kamero, v kadru od pasu navzgor; posnetek naj traja 2:00–2:45, podnapisi naj bodo v slovenščini.",
+    "text": {
+     "content": "Snemaj navpično (9:16), s sprednjo kamero, v kadru od pasu navzgor; posnetek naj traja 2:00–2:45, podnapisi naj bodo v slovenščini.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-8120-b838-fd3c99181a38": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sasvim blizu kamere, ozbiljnog lica, podigni ruku kao „stop“ i odmah izgovori „Stop, ChatGPT ostavite na miru.“, dok je na ekranu veliki naslov sa crvenim „CHATGPT“.",
+    "text": {
+     "content": "Sasvim blizu kamere, ozbiljnog lica, podigni ruku kao „stop“ i odmah izgovori „Stop, ChatGPT ostavite na miru.“, dok je na ekranu veliki naslov sa crvenim „CHATGPT“.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na svakom mjestu s linkom u scenariju ostaješ u kadru i pričaš u kameru, a aplikaciju prikaži samo kao snimak ekrana telefona preko sebe – bez snimanja sebe dok koristiš telefon. Izreži vrijeme učitavanja.",
+    "text": {
+     "content": "Na svakom mjestu s linkom u scenariju ostaješ u kadru i pričaš u kameru, a aplikaciju prikaži samo kao snimak ekrana telefona preko sebe – bez snimanja sebe dok koristiš telefon. Izreži vrijeme učitavanja.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod rečenice „Pogledajte, ovako izgleda kad je otvorim.“ ubaci logo Memo AI kao naljepnicu pored svoje glave, a kod „za par minuta dobijete pregledne bilješke, kviz s objašnjenjima i kartice za ponavljanje.“ preko sebe stavi snimak ekrana kviza i kartica iz Memo AI.",
+    "text": {
+     "content": "Kod rečenice „Pogledajte, ovako izgleda kad je otvorim.“ ubaci logo Memo AI kao naljepnicu pored svoje glave, a kod „za par minuta dobijete pregledne bilješke, kviz s objašnjenjima i kartice za ponavljanje.“ preko sebe stavi snimak ekrana kviza i kartica iz Memo AI.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Snimak ekrana na telefonu: tapni Scan, slikaj 2–3 stranice iz skripte ili sveske, izreži čekanje, pokaži gotove bilješke, prevuci na kartice i otvori jedno pitanje iz kviza s objašnjenjem.",
+    "text": {
+     "content": "Snimak ekrana na telefonu: tapni Scan, slikaj 2–3 stranice iz skripte ili sveske, izreži čekanje, pokaži gotove bilješke, prevuci na kartice i otvori jedno pitanje iz kviza s objašnjenjem.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Cijeli video snimi u jednom selfie kadru: telefon u visini očiju, sjediš u sobi ili za stolom, dnevno svjetlo, opušten izgled, brzi rezovi između rečenica.",
+    "text": {
+     "content": "Cijeli video snimi u jednom selfie kadru: telefon u visini očiju, sjediš u sobi ili za stolom, dnevno svjetlo, opušten izgled, brzi rezovi između rečenica.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Ubaci titlove govora preko cijelog videa; po želji na vrhu naslov „Prestani učiti s ChatGPT-jem 🚫“.",
+    "text": {
+     "content": "Ubaci titlove govora preko cijelog videa; po želji na vrhu naslov „Prestani učiti s ChatGPT-jem 🚫“.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Po želji kod svakog razloga kratko ubaci natpis s brojem: „1. Tačnost“, „2. Ne naučiš“, „3. Zavisnost“, „4. Privatnost“.",
+    "text": {
+     "content": "Po želji kod svakog razloga kratko ubaci natpis s brojem: „1. Tačnost“, „2. Ne naučiš“, „3. Zavisnost“, „4. Privatnost“.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Osim snimaka aplikacije ne ubacuj nikakve druge snimke – sve ostalo vrijeme si u kadru.",
+    "text": {
+     "content": "Osim snimaka aplikacije ne ubacuj nikakve druge snimke – sve ostalo vrijeme si u kadru.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-812c-8690-c4d957b2a619": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Že od prve sekunde govoriš v kamero in s škarjami režeš list papirja, na vrhu ekrana pa je naslov.",
+    "text": {
+     "content": "Že od prve sekunde govoriš v kamero in s škarjami režeš list papirja, na vrhu ekrana pa je naslov.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri vsakem mestu zamenjaj napis na vrhu ekrana, npr. »5. turizem in hotelirstvo 🏨«, »4. management 📈«, »3. poslovne študije 🤓«, »2. mediji in komunikologija 📱«, »1. šport 🏃«.",
+    "text": {
+     "content": "Pri vsakem mestu zamenjaj napis na vrhu ekrana, npr. »5. turizem in hotelirstvo 🏨«, »4. management 📈«, »3. poslovne študije 🤓«, »2. mediji in komunikologija 📱«, »1. šport 🏃«.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri »Uporabljam Memo AI« snemaj od zgoraj telefon, ki leži na knjigi na mizi, in z drugo roko klikaj po aplikaciji (Scan, zapiski, kartice, kviz, poskusni test z rezultatom v odstotkih). Pri vsakem prikazu povezave na zaslonu ostani v tem posnetku. Čakanje na nalaganje izreži.",
+    "text": {
+     "content": "Pri »Uporabljam Memo AI« snemaj od zgoraj telefon, ki leži na knjigi na mizi, in z drugo roko klikaj po aplikaciji (Scan, zapiski, kartice, kviz, poskusni test z rezultatom v odstotkih). Pri vsakem prikazu povezave na zaslonu ostani v tem posnetku. Čakanje na nalaganje izreži.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za drugo in prvo mesto se vrni v kamero.",
+    "text": {
+     "content": "Za drugo in prvo mesto se vrni v kamero.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-814b-a78d-ef26edc77a19": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sjedi za stolom s hrpom svojih bilježnica ispred sebe i odmah energično govori u kameru, s naslovom na ekranu: 'Studentski popusti za koje sigurno nisi znao ‼️'. Počni s 'Devedeset devet posto studenata u Srbiji nema pojma o ovim popustima.' Odmah nakon toga pokaži prstom na ikonu za spremanje dok govoriš 'Sačuvaj video prije gledanja, zatrebat će ti.'",
+    "text": {
+     "content": "Sjedi za stolom s hrpom svojih bilježnica ispred sebe i odmah energično govori u kameru, s naslovom na ekranu: 'Studentski popusti za koje sigurno nisi znao ‼️'. Počni s 'Devedeset devet posto studenata u Srbiji nema pojma o ovim popustima.' Odmah nakon toga pokaži prstom na ikonu za spremanje dok govoriš 'Sačuvaj video prije gledanja, zatrebat će ti.'",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na stavkama 1 do 3 stavi natpis označen brojem, s emojijem i popustom ili oznakom FREE na kraju: '1/4 Prevoz ✈️ -10%', '2/4 Microsoft Office 📝 FREE', '3/4 Kino i predstave 🍿 -15% / -50%'.",
+    "text": {
+     "content": "Na stavkama 1 do 3 stavi natpis označen brojem, s emojijem i popustom ili oznakom FREE na kraju: '1/4 Prevoz ✈️ -10%', '2/4 Microsoft Office 📝 FREE', '3/4 Kino i predstave 🍿 -15% / -50%'.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Između stavki 1–3 napravi brze jump cutove; stavke 1–3 snimaj samo pred kamerom, bez ikakvih snimki ekrana.",
+    "text": {
+     "content": "Između stavki 1–3 napravi brze jump cutove; stavke 1–3 snimaj samo pred kamerom, bez ikakvih snimki ekrana.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na četvrtoj stavci, čim se pojavi Memo AI, ubaci snimku ekrana aplikacije; to je jedina snimka ekrana u videu i traje 4–8 s: otvori memoai.eu u pregledniku, učitaj PDF, jump cutom preskoči obradu, skrolaj kroz generirane bilješke, okreni 2–3 kartice i odgovori na jedno pitanje iz kviza te pokaži objašnjenje. Aplikacija je na lokalnom jeziku.",
+    "text": {
+     "content": "Na četvrtoj stavci, čim se pojavi Memo AI, ubaci snimku ekrana aplikacije; to je jedina snimka ekrana u videu i traje 4–8 s: otvori memoai.eu u pregledniku, učitaj PDF, jump cutom preskoči obradu, skrolaj kroz generirane bilješke, okreni 2–3 kartice i odgovori na jedno pitanje iz kviza te pokaži objašnjenje. Aplikacija je na lokalnom jeziku.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za kraj se vrati pred kameru i napravi gestu lajkanja i praćenja uz 'Lajkaj i zaprati za još studentskih fora.'",
+    "text": {
+     "content": "Za kraj se vrati pred kameru i napravi gestu lajkanja i praćenja uz 'Lajkaj i zaprati za još studentskih fora.'",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-8158-a10f-d25c82347e03": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Govori direktno u kameru dok cik-cak režeš list papira, a naslov „5 faksova gdje nećeš izgubiti živce 🎓🤩“ je na ekranu.",
+    "text": {
+     "content": "Govori direktno u kameru dok cik-cak režeš list papira, a naslov „5 faksova gdje nećeš izgubiti živce 🎓🤩“ je na ekranu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu gdje u scenariju stoji (Memo AI · memoai.eu). Izreži vrijeme učitavanja.",
+    "text": {
+     "content": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu gdje u scenariju stoji (Memo AI · memoai.eu). Izreži vrijeme učitavanja.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za svako mjesto stavi novi naslov na ekran, npr. „5. turizam i hotelijerstvo 🏨“, „4. menadžment 📈“, „3. poslovne studije 🤓“, „2. mediji i komunikacije 📱“, „1. sport 🏃“.",
+    "text": {
+     "content": "Za svako mjesto stavi novi naslov na ekran, npr. „5. turizam i hotelijerstvo 🏨“, „4. menadžment 📈“, „3. poslovne studije 🤓“, „2. mediji i komunikacije 📱“, „1. sport 🏃“.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Od rečenice „Drugo mjesto drže mediji i komunikacije.“ pa do kraja vrati se u kameru.",
+    "text": {
+     "content": "Od rečenice „Drugo mjesto drže mediji i komunikacije.“ pa do kraja vrati se u kameru.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Demo snimaj preko ramena ili odozgo: telefon držiš iznad otvorene knjige ili skripte.",
+    "text": {
+     "content": "Demo snimaj preko ramena ili odozgo: telefon držiš iznad otvorene knjige ili skripte.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Otvori memoai.eu u pregledniku na telefonu, tapni Scan i uslikaj 1–3 stranice bilješki ili izaberi PDF skripte.",
+    "text": {
+     "content": "Otvori memoai.eu u pregledniku na telefonu, tapni Scan i uslikaj 1–3 stranice bilješki ili izaberi PDF skripte.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Preskoči čekanje rezom, pa pokaži gotove bilješke, prođi kroz kartice prevlačenjem i otvori kviz.",
+    "text": {
+     "content": "Preskoči čekanje rezom, pa pokaži gotove bilješke, prođi kroz kartice prevlačenjem i otvori kviz.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na kraju otvori probni test i pokaži ocjenu u procentima i objašnjenje uz svaki odgovor.",
+    "text": {
+     "content": "Na kraju otvori probni test i pokaži ocjenu u procentima i objašnjenje uz svaki odgovor.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-816c-89f2-f02737fabba1": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sediš za mizo pred listom s testom in pod stresom gledaš v list ter grizeš kemični, na ekranu je napis »POV: na testu ti pade na pamet tista ena prosojnica, ampak tvoji možgani nimajo premium naročnine, tako da vidiš samo zamegljen obris 😭«, v ozadju pa glasba iz knjižnice platforme.",
+    "text": {
+     "content": "Sediš za mizo pred listom s testom in pod stresom gledaš v list ter grizeš kemični, na ekranu je napis »POV: na testu ti pade na pamet tista ena prosojnica, ampak tvoji možgani nimajo premium naročnine, tako da vidiš samo zamegljen obris 😭«, v ozadju pa glasba iz knjižnice platforme.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Takoj ko se pojavi Memo AI, pri »Zato si jih highkey nadgradiš in prosojnice s predavanja spremeniš v zapiske 🧠« s telefonom posnemi zaslon prenosnika, na katerem je odprt Memo AI z miselnim vzorcem ali zapiski iste snovi, in počasi premikaj kamero. Čakanje na nalaganje izreži.",
+    "text": {
+     "content": "Takoj ko se pojavi Memo AI, pri »Zato si jih highkey nadgradiš in prosojnice s predavanja spremeniš v zapiske 🧠« s telefonom posnemi zaslon prenosnika, na katerem je odprt Memo AI z miselnim vzorcem ali zapiski iste snovi, in počasi premikaj kamero. Čakanje na nalaganje izreži.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na zaslonu najprej pokaži končan zapisek iz prosojnic s predavanja, nato hitro tapni ali podrsaj na kartice ali miselni vzorec.",
+    "text": {
+     "content": "Na zaslonu najprej pokaži končan zapisek iz prosojnic s predavanja, nato hitro tapni ali podrsaj na kartice ali miselni vzorec.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-819d-9066-dc90353d437e": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Bez glasa, uz trending zvuk: sjedi za stolom s testom, piši olovkom i zabrinuto gledaj u test, a POV tekst je na ekranu.",
+    "text": {
+     "content": "Bez glasa, uz trending zvuk: sjedi za stolom s testom, piši olovkom i zabrinuto gledaj u test, a POV tekst je na ekranu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod teksta „POV: Na testu ti padne pitanje baš s onog jednog slajda, a tvoj mozak i dalje radi na besplatnoj verziji 😭“ ubaci na oko pola sekunde zamućen slajd iz svog predavanja ili udžbenika, kao sjećanje koje se ne vidi jasno, a onda se vrati na sebe, pogledaj u stranu i stavi ruku u kosu.",
+    "text": {
+     "content": "Kod teksta „POV: Na testu ti padne pitanje baš s onog jednog slajda, a tvoj mozak i dalje radi na besplatnoj verziji 😭“ ubaci na oko pola sekunde zamućen slajd iz svog predavanja ili udžbenika, kao sjećanje koje se ne vidi jasno, a onda se vrati na sebe, pogledaj u stranu i stavi ruku u kosu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod oznake (Memo AI · memoai.eu/creator) i teksta „Srećom, sad i mozak možeš bez muke nadograditi na premium 🧠“ snimi ekran laptopa iz ruke: u Memo AI-ju prvo kratko pokaži gotovu bilješku napravljenu iz slajdova tog predavanja (formule neka se vide ispravno ako ih ima), zatim otvori mapu uma ili kartice iz tog istog predavanja, a na kraju polako pokaži početnu stranicu Memo AI-ja. Izreži vrijeme učitavanja.",
+    "text": {
+     "content": "Kod oznake (Memo AI · memoai.eu/creator) i teksta „Srećom, sad i mozak možeš bez muke nadograditi na premium 🧠“ snimi ekran laptopa iz ruke: u Memo AI-ju prvo kratko pokaži gotovu bilješku napravljenu iz slajdova tog predavanja (formule neka se vide ispravno ako ih ima), zatim otvori mapu uma ili kartice iz tog istog predavanja, a na kraju polako pokaži početnu stranicu Memo AI-ja. Izreži vrijeme učitavanja.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-81b2-8c98-d419a8b912b6": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sedi čisto blizu kamere in takoj z energijo govori naravnost vanjo.",
+    "text": {
+     "content": "Sedi čisto blizu kamere in takoj z energijo govori naravnost vanjo.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Stavek »Še zadnji krog« posnemi še v kamero. Pri »Vanj vržeš zapiske, PDF ali Word ali pa do 10 fotk hkrati.« preklopi na posnetek zaslona telefona z memoai.eu v brskalniku, tvoj glas pa teče naprej čez posnetek. Na posnetku naloži PDF ali s funkcijo Scan fotografiraj strani zvezka. Čakanje na nalaganje izreži.",
+    "text": {
+     "content": "Stavek »Še zadnji krog« posnemi še v kamero. Pri »Vanj vržeš zapiske, PDF ali Word ali pa do 10 fotk hkrati.« preklopi na posnetek zaslona telefona z memoai.eu v brskalniku, tvoj glas pa teče naprej čez posnetek. Na posnetku naloži PDF ali s funkcijo Scan fotografiraj strani zvezka. Čakanje na nalaganje izreži.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Ves video naj bo v zgornjem kotu oštevilčen seznam, ki se začne z 1. in se ob vsakem krogu dopolni z barvno ključno besedo: 1. -IČ, 2. NISI SLEDILEC/KA, 3. KAVA, 4. 10+ ZAVIHKOV, 5. MAMI/OČI, 6. MEMO AI.",
+    "text": {
+     "content": "Ves video naj bo v zgornjem kotu oštevilčen seznam, ki se začne z 1. in se ob vsakem krogu dopolni z barvno ključno besedo: 1. -IČ, 2. NISI SLEDILEC/KA, 3. KAVA, 4. 10+ ZAVIHKOV, 5. MAMI/OČI, 6. MEMO AI.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri stavku »Še nisi med mojimi sledilci?« s prstom pokaži desno proti profilni sliki in gumbu za follow, pri »Še zadnji krog« pa dvigni telefon z odprtim Memo AI v kamero.",
+    "text": {
+     "content": "Pri stavku »Še nisi med mojimi sledilci?« s prstom pokaži desno proti profilni sliki in gumbu za follow, pri »Še zadnji krog« pa dvigni telefon z odprtim Memo AI v kamero.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnji stavek »Pa ti? V komentarju mi zaupaj, kateri krog je bil zate zadnji.« se vrni v kamero.",
+    "text": {
+     "content": "Za zadnji stavek »Pa ti? V komentarju mi zaupaj, kateri krog je bil zate zadnji.« se vrni v kamero.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri »Iz tega ti Memo AI pripravi pregledne zapiske…« pokaži končan zapisek, nato se klikni skozi kartice, kviz z razlagami in miselni vzorec ter ostani na karticah.",
+    "text": {
+     "content": "Pri »Iz tega ti Memo AI pripravi pregledne zapiske…« pokaži končan zapisek, nato se klikni skozi kartice, kviz z razlagami in miselni vzorec ter ostani na karticah.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri »Najraje imam kartice…« na posnetku zaslona obrni kartico in pokaži rešitev.",
+    "text": {
+     "content": "Pri »Najraje imam kartice…« na posnetku zaslona obrni kartico in pokaži rešitev.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-81b5-88b5-e2225ef1bc0b": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sasvim blizu kamere izgovori prvu rečenicu i podigni jedan prst kad kažeš „jedinicu”.",
+    "text": {
+     "content": "Sasvim blizu kamere izgovori prvu rečenicu i podigni jedan prst kad kažeš „jedinicu”.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Odglumi četiri znaka jedan za drugim, svaki s natpisom gore (♍ DJEVICA ♍, ♏ ŠKORPIJA ♏, ♌ LAV ♌, ♎ VAGA ♎) i slikom učionice kao pozadinom (green screen). Snimaj vertikalno 9:16, od pojasa naviše, prednjom kamerom. „Profesoricu” nikad ne vidimo: gledaš malo pored kamere, u visini klupe, i reaguješ na njene nečujne rečenice („Molim?”).",
+    "text": {
+     "content": "Odglumi četiri znaka jedan za drugim, svaki s natpisom gore (♍ DJEVICA ♍, ♏ ŠKORPIJA ♏, ♌ LAV ♌, ♎ VAGA ♎) i slikom učionice kao pozadinom (green screen). Snimaj vertikalno 9:16, od pojasa naviše, prednjom kamerom. „Profesoricu” nikad ne vidimo: gledaš malo pored kamere, u visini klupe, i reaguješ na njene nečujne rečenice („Molim?”).",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod „Ja samo uslikam ono što sam pisala u svesci na vašem času, do deset slika odjednom.” po želji stavi preko sebe jedan kratak snimak ekrana iz Memo AI, ukupno 2–3 sekunde (web verzija memoai.eu u browseru na telefonu, ne aplikacija iz storea): kamera za skeniranje slika stranice sveske, pa generisane bilješke, pa kartice za ponavljanje ili ekran s postotkom probnog testa. Osim toga proizvod se pokazuje samo riječima.",
+    "text": {
+     "content": "Kod „Ja samo uslikam ono što sam pisala u svesci na vašem času, do deset slika odjednom.” po želji stavi preko sebe jedan kratak snimak ekrana iz Memo AI, ukupno 2–3 sekunde (web verzija memoai.eu u browseru na telefonu, ne aplikacija iz storea): kamera za skeniranje slika stranice sveske, pa generisane bilješke, pa kartice za ponavljanje ili ekran s postotkom probnog testa. Osim toga proizvod se pokazuje samo riječima.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Između znakova napravi oštar rez; svaki znak igraj drugačijim držanjem, glasom i energijom.",
+    "text": {
+     "content": "Između znakova napravi oštar rez; svaki znak igraj drugačijim držanjem, glasom i energijom.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Djevica priča o Memo AI samouvjereno i pomalo nadmeno, kao dokaz da jedinica nije moguća.",
+    "text": {
+     "content": "Djevica priča o Memo AI samouvjereno i pomalo nadmeno, kao dokaz da jedinica nije moguća.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Video završi na posljednjoj šali Vage („Znate šta, recite vi, vi ste profesorica, vi znate bolje.”), bez dodatne rečenice o proizvodu.",
+    "text": {
+     "content": "Video završi na posljednjoj šali Vage („Znate šta, recite vi, vi ste profesorica, vi znate bolje.”), bez dodatne rečenice o proizvodu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Ukupna dužina oko 2:00–2:45 (tekst je dug, igraj živim tempom), titlovi na lokalnom jeziku.",
+    "text": {
+     "content": "Ukupna dužina oko 2:00–2:45 (tekst je dug, igraj živim tempom), titlovi na lokalnom jeziku.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-81ed-a906-d5caef049749": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sjedi blizu kamere, energično se nagni naprijed i odmah pričaj u kameru, dok se na ekranu pojavljuje prazna numerisana lista od 1 do 6 i naslov. Svaki put kad izgovoriš novo pravilo, na listi se pojavi jedan kratak red za njega.",
+    "text": {
+     "content": "Sjedi blizu kamere, energično se nagni naprijed i odmah pričaj u kameru, dok se na ekranu pojavljuje prazna numerisana lista od 1 do 6 i naslov. Svaki put kad izgovoriš novo pravilo, na listi se pojavi jedan kratak red za njega.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Rečenicu „I za kraj, ako ti je Memo AI već na telefonu, letiš i ti, jer ozbiljno ne znam za bolji alat za učenje.“ izgovori još u kameru, a 6. stavka na listi neka bude Memo AI. Od rečenice „Ubaciš slike svojih bilješki ili fajlove s predavanja...“ pređi na snimak ekrana telefona s memoai.eu u browseru, a tvoj glas nastavlja preko njega. Izreži vrijeme učitavanja.",
+    "text": {
+     "content": "Rečenicu „I za kraj, ako ti je Memo AI već na telefonu, letiš i ti, jer ozbiljno ne znam za bolji alat za učenje.“ izgovori još u kameru, a 6. stavka na listi neka bude Memo AI. Od rečenice „Ubaciš slike svojih bilješki ili fajlove s predavanja...“ pređi na snimak ekrana telefona s memoai.eu u browseru, a tvoj glas nastavlja preko njega. Izreži vrijeme učitavanja.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnju rečenicu vrati se u kameru.",
+    "text": {
+     "content": "Za zadnju rečenicu vrati se u kameru.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na snimku ekrana otvori Memo AI i ubaci PDF/fajl s predavanja ili preko Scan uslikaj stranice iz sveske.",
+    "text": {
+     "content": "Na snimku ekrana otvori Memo AI i ubaci PDF/fajl s predavanja ili preko Scan uslikaj stranice iz sveske.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Izreži čekanje i pokaži gotove sređene bilješke.",
+    "text": {
+     "content": "Izreži čekanje i pokaži gotove sređene bilješke.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Uz „kartice, kvizove, podcast, mentalnu mapu, čak i probni test“ redom tapkaj kroz kartice, kviz, podcast, mentalnu mapu i probni test s procentom rezultata.",
+    "text": {
+     "content": "Uz „kartice, kvizove, podcast, mentalnu mapu, čak i probni test“ redom tapkaj kroz kartice, kviz, podcast, mentalnu mapu i probni test s procentom rezultata.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Uz rečenicu o karticama ostani na karticama i okreni jednu da se vidi odgovor.",
+    "text": {
+     "content": "Uz rečenicu o karticama ostani na karticama i okreni jednu da se vidi odgovor.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-81fa-af2c-f4bcacc9beac": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Takoj čisto od blizu v kamero z na široko odprtimi očmi in dvignjeno roko reci »Prosim te, nehaj uporabljati ChatGPT.«, na ekranu pa naj bo velik naslov z rdeče poudarjenim »ChatGPT«.",
+    "text": {
+     "content": "Takoj čisto od blizu v kamero z na široko odprtimi očmi in dvignjeno roko reci »Prosim te, nehaj uporabljati ChatGPT.«, na ekranu pa naj bo velik naslov z rdeče poudarjenim »ChatGPT«.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri »Kar zdaj na telefonu ali laptopu odpri memoai.eu in jo preizkusi, prvi zapisek je zastonj.« in naslednjih stavkih o zapiskih, kvizu in karticah daj zraven kratek posnetek zaslona telefona na memoai.eu: tapneš Scan, poslikaš 2–3 strani učbenika ali zvezka, nato se pokažejo končani pregledni zapiski, swipe na kartice z vprašanji in eno kvizno vprašanje z razlago. Čakanje na nalaganje izreži.",
+    "text": {
+     "content": "Pri »Kar zdaj na telefonu ali laptopu odpri memoai.eu in jo preizkusi, prvi zapisek je zastonj.« in naslednjih stavkih o zapiskih, kvizu in karticah daj zraven kratek posnetek zaslona telefona na memoai.eu: tapneš Scan, poslikaš 2–3 strani učbenika ali zvezka, nato se pokažejo končani pregledni zapiski, swipe na kartice z vprašanji in eno kvizno vprašanje z razlago. Čakanje na nalaganje izreži.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri »Obstaja pa precej pametnejša rešitev, in sicer Memo AI.« in »Da ne ostane samo pri besedah, ti jo kar tukaj pokažem na ekranu.« ves čas govori v kamero, ob glavo pa dodaj logotip ali posnetek zaslona Memo AI kot nalepko.",
+    "text": {
+     "content": "Pri »Obstaja pa precej pametnejša rešitev, in sicer Memo AI.« in »Da ne ostane samo pri besedah, ti jo kar tukaj pokažem na ekranu.« ves čas govori v kamero, ob glavo pa dodaj logotip ali posnetek zaslona Memo AI kot nalepko.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri zasebnosti se nagni bliže h kameri in govori resno, pri priznanju »Priznam, po vsakem kregu s fantom ali s frendico sem mu poslala cel roman« pa se rahlo v zadregi nasmehni.",
+    "text": {
+     "content": "Pri zasebnosti se nagni bliže h kameri in govori resno, pri priznanju »Priznam, po vsakem kregu s fantom ali s frendico sem mu poslala cel roman« pa se rahlo v zadregi nasmehni.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri zadnjem stavku »Za konec pa mi v komentarju napiši, kako ti je všeč Memo AI in ali je rešil tudi tebe, tako kot je mene.« govori v kamero, brez dodatnih vložkov.",
+    "text": {
+     "content": "Pri zadnjem stavku »Za konec pa mi v komentarju napiši, kako ti je všeč Memo AI in ali je rešil tudi tebe, tako kot je mene.« govori v kamero, brez dodatnih vložkov.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Vse posnemi v enem kosu kot selfie: telefon v višini oči, sediš v sobi ali za mizo, naravna svetloba, sproščen videz, med stavki hitri rezi.",
+    "text": {
+     "content": "Vse posnemi v enem kosu kot selfie: telefon v višini oči, sediš v sobi ali za mizo, naravna svetloba, sproščen videz, med stavki hitri rezi.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Govor naj bo ves čas podnaslovljen na ekranu.",
+    "text": {
+     "content": "Govor naj bo ves čas podnaslovljen na ekranu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Po želji ob vsakem razlogu za kratek čas dodaj oštevilčen napis: »1. Točnost«, »2. Ne naučiš se«, »3. Odvisnost«, »4. Zasebnost«.",
+    "text": {
+     "content": "Po želji ob vsakem razlogu za kratek čas dodaj oštevilčen napis: »1. Točnost«, »2. Ne naučiš se«, »3. Odvisnost«, »4. Zasebnost«.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Tretji razlog o odvisnosti povej kot svoje mnenje (»Po mojem ...«), brez omenjanja študij, strokovnjakov ali univerz.",
+    "text": {
+     "content": "Tretji razlog o odvisnosti povej kot svoje mnenje (»Po mojem ...«), brez omenjanja študij, strokovnjakov ali univerz.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Razen vložkov z aplikacijo Memo AI ne dodajaj nobenih drugih posnetkov.",
+    "text": {
+     "content": "Razen vložkov z aplikacijo Memo AI ne dodajaj nobenih drugih posnetkov.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f365e84-a3c2-81fb-b984-fbf04f3851f5": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sedi za kupom zvezkov, živahno gestikuliraj in govori naravnost v kamero, na ekranu pa je naslov »Študentski popusti, za katere zagotovo nisi vedela ‼️«.",
+    "text": {
+     "content": "Sedi za kupom zvezkov, živahno gestikuliraj in govori naravnost v kamero, na ekranu pa je naslov »Študentski popusti, za katere zagotovo nisi vedela ‼️«.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Točke 1–3 posnemi samo v kamero s hitrimi jump cuti in napisi »1/4 Prevoz 🚆«, »2/4 Microsoft Office 📝 FREE« in »3/4 Kino in gledališče 🍿«; po želji dodaj kratek vložek, npr. vstopnico ali prijavni zaslon za Microsoft Office.",
+    "text": {
+     "content": "Točke 1–3 posnemi samo v kamero s hitrimi jump cuti in napisi »1/4 Prevoz 🚆«, »2/4 Microsoft Office 📝 FREE« in »3/4 Kino in gledališče 🍿«; po želji dodaj kratek vložek, npr. vstopnico ali prijavni zaslon za Microsoft Office.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri četrti točki, ko se pojavi napis »Memo AI · memoai.eu/creator«, vstavi posnetek zaslona telefona (screen recording) aplikacije v trajanju približno 4–8 s: odpri memoai.eu v brskalniku, naloži PDF ali posnetek predavanja, preskoči čakanje na obdelavo z jump cutom, pokaži pomikanje po zapiskih, obrni 2 kartici in odgovori na eno vprašanje kviza s prikazano razlago. Vsak korak naj traja približno sekundo, da celoten posnetek ne preseže 8 s.",
+    "text": {
+     "content": "Pri četrti točki, ko se pojavi napis »Memo AI · memoai.eu/creator«, vstavi posnetek zaslona telefona (screen recording) aplikacije v trajanju približno 4–8 s: odpri memoai.eu v brskalniku, naloži PDF ali posnetek predavanja, preskoči čakanje na obdelavo z jump cutom, pokaži pomikanje po zapiskih, obrni 2 kartici in odgovori na eno vprašanje kviza s prikazano razlago. Vsak korak naj traja približno sekundo, da celoten posnetek ne preseže 8 s.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na koncu se vrni v kamero, se na kratko nasmehni, pomahaj in reci »Pa srečno s študijem!«.",
+    "text": {
+     "content": "Na koncu se vrni v kamero, se na kratko nasmehni, pomahaj in reci »Pa srečno s študijem!«.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Aplikacija Memo AI naj bo na posnetku zaslona v slovenščini.",
+    "text": {
+     "content": "Aplikacija Memo AI naj bo na posnetku zaslona v slovenščini.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Zadnji kader naj bo kratek outro za všeček in sledenje: brez dodatnega govora s kretnjo pokaži, naj gledalke video všečkajo in ti sledijo.",
+    "text": {
+     "content": "Zadnji kader naj bo kratek outro za všeček in sledenje: brez dodatnega govora s kretnjo pokaži, naj gledalke video všečkajo in ti sledijo.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f465e84-a3c2-810b-b433-d079ee2a9dd1": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sjedi blizu kamere i pored lica drži otvoren laptop s Memo AI (npr. mapa uma o ćeliji). Odmah počni pričati u kameru dok je naslov 'moja omiljena aplikacija za biologiju🧬🧫' na ekranu prve 2-3 s. Kod „Dobro, hobi možda ne, ali gradivo bih prešla za pola vremena.“ ostani u kameri, razigrano se ispravi, odmahni rukom i nasmij se.",
+    "text": {
+     "content": "Sjedi blizu kamere i pored lica drži otvoren laptop s Memo AI (npr. mapa uma o ćeliji). Odmah počni pričati u kameru dok je naslov 'moja omiljena aplikacija za biologiju🧬🧫' na ekranu prve 2-3 s. Kod „Dobro, hobi možda ne, ali gradivo bih prešla za pola vremena.“ ostani u kameri, razigrano se ispravi, odmahni rukom i nasmij se.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Memo AI otvori u pregledniku na laptopu i snimaj ekran telefonom iz ruke, preko ramena ili ravno, tako da se vidi tvoj prst ili kursor. Ubaci PDF poglavlja o ćeliji ili slike stranica udžbenika, pa jump cutom preskoči čekanje do bilješki.",
+    "text": {
+     "content": "Memo AI otvori u pregledniku na laptopu i snimaj ekran telefonom iz ruke, preko ramena ili ravno, tako da se vidi tvoj prst ili kursor. Ubaci PDF poglavlja o ćeliji ili slike stranica udžbenika, pa jump cutom preskoči čekanje do bilješki.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "U mapi uma pokaži jedro, mitohondrije i membranu, a kod „a chat pitam čemu služi ribosom“ neka se vidi kako kucaš pitanje o ribosomu.",
+    "text": {
+     "content": "U mapi uma pokaži jedro, mitohondrije i membranu, a kod „a chat pitam čemu služi ribosom“ neka se vidi kako kucaš pitanje o ribosomu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod tutora neka se čuje kako govori naglas i prekini ga pitanjem.",
+    "text": {
+     "content": "Kod tutora neka se čuje kako govori naglas i prekini ga pitanjem.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod „Biologija je ovdje samo primjer, ista fora ti prolazi za svaki predmet, od predavanja i PDF-a do slika bilježaka.“ snimi ekran s prstom ili kursorom i brzim kadrovima kartica, kviza i testa za vježbu s postotkom X% → Y%.",
+    "text": {
+     "content": "Kod „Biologija je ovdje samo primjer, ista fora ti prolazi za svaki predmet, od predavanja i PDF-a do slika bilježaka.“ snimi ekran s prstom ili kursorom i brzim kadrovima kartica, kviza i testa za vježbu s postotkom X% → Y%.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za „Ne mogu vjerovati koliko je dobra.“ vrati se u kameru.",
+    "text": {
+     "content": "Za „Ne mogu vjerovati koliko je dobra.“ vrati se u kameru.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod „Ma da, ovo je ta moja aplikacija za učenje bez koje ne mogu.“ rukom pokaži na laptop koji i dalje držiš pored lica, s otvorenim Memo AI.",
+    "text": {
+     "content": "Kod „Ma da, ovo je ta moja aplikacija za učenje bez koje ne mogu.“ rukom pokaži na laptop koji i dalje držiš pored lica, s otvorenim Memo AI.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f465e84-a3c2-8147-b6fe-d7abf605d2a6": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sedi blizu kamere in energično začni govoriti naravnost vanjo, na zaslonu se pojavi napis PART 5, pri »peti del« pa v kamero pokaži pet prstov.",
+    "text": {
+     "content": "Sedi blizu kamere in energično začni govoriti naravnost vanjo, na zaslonu se pojavi napis PART 5, pri »peti del« pa v kamero pokaži pet prstov.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri vsaki opombi v zgornji polovici slike pokaži posnetek zaslona te opombe iz materialov in ga pusti na zaslonu ves čas, ko opombo bereš, ti pa medtem reagiraj v kamero.",
+    "text": {
+     "content": "Pri vsaki opombi v zgornji polovici slike pokaži posnetek zaslona te opombe iz materialov in ga pusti na zaslonu ves čas, ko opombo bereš, ti pa medtem reagiraj v kamero.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Takoj ko se pojavi Memo AI, posnemi sebe, kako uporabljaš aplikacijo na telefonu – na vsakem mestu z oznako Memo AI v scenariju. Čakanje na nalaganje izreži.",
+    "text": {
+     "content": "Takoj ko se pojavi Memo AI, posnemi sebe, kako uporabljaš aplikacijo na telefonu – na vsakem mestu z oznako Memo AI v scenariju. Čakanje na nalaganje izreži.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Demo začni z nalaganjem PDF-ja ali skeniranjem fotografij strani iz zvezka, nato pokaži končne urejene zapiske.",
+    "text": {
+     "content": "Demo začni z nalaganjem PDF-ja ali skeniranjem fotografij strani iz zvezka, nato pokaži končne urejene zapiske.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Hitro pokaži možnosti učenja: kartice, kviz, podkast in glasovni tutor; pri karticah pokaži vprašanje in tapni za odgovor.",
+    "text": {
+     "content": "Hitro pokaži možnosti učenja: kartice, kviz, podkast in glasovni tutor; pri karticah pokaži vprašanje in tapni za odgovor.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri »Moj absolutni favorit je pa poskusni test« odpri poskusni test, odgovori na 2–3 vprašanja in pokaži zaslon z rezultatom v odstotkih ter povratno informacijo pri vsakem odgovoru.",
+    "text": {
+     "content": "Pri »Moj absolutni favorit je pa poskusni test« odpri poskusni test, odgovori na 2–3 vprašanja in pokaži zaslon z rezultatom v odstotkih ter povratno informacijo pri vsakem odgovoru.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Med demom naj bo tvoj obraz ves čas v manjšem okvirčku (slika v sliki) ali pa se izmenjuje s posnetki aplikacije.",
+    "text": {
+     "content": "Med demom naj bo tvoj obraz ves čas v manjšem okvirčku (slika v sliki) ali pa se izmenjuje s posnetki aplikacije.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Po demu se takoj vrni v kamero in nadaljuj z opombami čez sliko.",
+    "text": {
+     "content": "Po demu se takoj vrni v kamero in nadaljuj z opombami čez sliko.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Celoten video opremi z vžganimi podnapisi.",
+    "text": {
+     "content": "Celoten video opremi z vžganimi podnapisi.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnji stavek se vrni v kamero, pokaži na komentarje in se nasmehni.",
+    "text": {
+     "content": "Za zadnji stavek se vrni v kamero, pokaži na komentarje in se nasmehni.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri zadnji opombi v kamero sproščeno povej primerjavo: pred eAsistentom si lahko cveka skrival vse do roditeljskega sestanka, danes pa obvestilo mami prileti na telefon, še preden zapustiš učilnico.",
+    "text": {
+     "content": "Pri zadnji opombi v kamero sproščeno povej primerjavo: pred eAsistentom si lahko cveka skrival vse do roditeljskega sestanka, danes pa obvestilo mami prileti na telefon, še preden zapustiš učilnico.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f465e84-a3c2-815f-9cd7-d9b447463dd2": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sjedi za stolom, drži u kameru zatvoren laptop s nacrtanim poljima i cijenama na poleđini, gledaj direktno u kameru i govori, a naslov „Prvi kupac🤑” je na ekranu.",
+    "text": {
+     "content": "Sjedi za stolom, drži u kameru zatvoren laptop s nacrtanim poljima i cijenama na poleđini, gledaj direktno u kameru i govori, a naslov „Prvi kupac🤑” je na ekranu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kad zalijepiš logo Memo AI na izrezano polje, otvori laptop i snimaj sebe kako koristiš aplikaciju na laptopu (snimak ekrana ili preko ramena) – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+    "text": {
+     "content": "Kad zalijepiš logo Memo AI na izrezano polje, otvori laptop i snimaj sebe kako koristiš aplikaciju na laptopu (snimak ekrana ili preko ramena) – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Poleđinu laptopa prekrij bijelim papirom ili folijom i nacrtaj isprekidana polja s cijenama (npr. 5 €, 10 €, 20 €, 50 €). Jedno polje jasno označi kao prodano.",
+    "text": {
+     "content": "Poleđinu laptopa prekrij bijelim papirom ili folijom i nacrtaj isprekidana polja s cijenama (npr. 5 €, 10 €, 20 €, 50 €). Jedno polje jasno označi kao prodano.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Isprintan logo Memo AI: drži ga u kadru kod rečenice „Kockicu je platio Memo AI, evo odmah ti pričam ko su oni.”, pa odmah nakon nje, prije demonstracije aplikacije, izbliza snimi kako ga lijepiš na izrezano polje na laptopu; na kraju videa logo je i dalje zalijepljen na tom polju.",
+    "text": {
+     "content": "Isprintan logo Memo AI: drži ga u kadru kod rečenice „Kockicu je platio Memo AI, evo odmah ti pričam ko su oni.”, pa odmah nakon nje, prije demonstracije aplikacije, izbliza snimi kako ga lijepiš na izrezano polje na laptopu; na kraju videa logo je i dalje zalijepljen na tom polju.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnju rečenicu vrati se u kameru i drži laptop tako da se poleđina sa zalijepljenim logom Memo AI vidi u kadru.",
+    "text": {
+     "content": "Za zadnju rečenicu vrati se u kameru i drži laptop tako da se poleđina sa zalijepljenim logom Memo AI vidi u kadru.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Izbliza snimi poleđinu laptopa dok kod rečenica „Sad ide mala operacija, oprezno. Samo da mi papir ne pukne na pola. Okej, ispalo je malo krivo, ali može.” nespretno izrezuješ i skidaš papir s označenog polja; ostavi nespretno, neglatko skidanje u videu.",
+    "text": {
+     "content": "Izbliza snimi poleđinu laptopa dok kod rečenica „Sad ide mala operacija, oprezno. Samo da mi papir ne pukne na pola. Okej, ispalo je malo krivo, ali može.” nespretno izrezuješ i skidaš papir s označenog polja; ostavi nespretno, neglatko skidanje u videu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Redoslijed demonstracije prati scenarij: ubacivanje PDF-a, slajdova ili snimka predavanja → odabir jezika → sređene bilješke s formulama → kartice → kviz s objašnjenjima → probni test s rezultatom u postotku → podcast.",
+    "text": {
+     "content": "Redoslijed demonstracije prati scenarij: ubacivanje PDF-a, slajdova ili snimka predavanja → odabir jezika → sređene bilješke s formulama → kartice → kviz s objašnjenjima → probni test s rezultatom u postotku → podcast.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f465e84-a3c2-8170-9ec3-ee47d9934a43": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sedi in drži odprt prenosnik z Memo AI tik ob obrazu. Glej v kamero z zasanjanim, navdušenim izrazom in z roko pokaži na zaslon. Naslov naj bo na ekranu prve 2–3 sekunde. Pri »No, najljubši mogoče ne, bi jo pa predelala v pol manj časa.« ostani v kameri in se hudomušno popravi.",
+    "text": {
+     "content": "Sedi in drži odprt prenosnik z Memo AI tik ob obrazu. Glej v kamero z zasanjanim, navdušenim izrazom in z roko pokaži na zaslon. Naslov naj bo na ekranu prve 2–3 sekunde. Pri »No, najljubši mogoče ne, bi jo pa predelala v pol manj časa.« ostani v kameri in se hudomušno popravi.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Memo AI snemaj na prenosniku kot v videu za navdih: zaslon od blizu, s prstom ali kazalcem na zaslonu, na vsakem mestu z oznako »glej gradivo«. Med »Vržem noter PDF o celici …« in »Biologija je le primer, gre za vsak predmet …« se s kamero premikaj po nalaganju PDF-ja, zapiskih, miselnem vzorcu, klepetu in glasovnem tutorju. Čakanje na nalaganje izreži. Pri glasovnem tutorju, še pred »Biologija je le primer …«, pokaži, kako ti celico razlaga na glas, in ga vmes prekini z vprašanjem. Med »Biologija je le primer, gre za vsak predmet …« na hitro pokaži kartice, kviz in ocenjen preizkus znanja z rezultatom v odstotkih, vsakega le za trenutek.",
+    "text": {
+     "content": "Memo AI snemaj na prenosniku kot v videu za navdih: zaslon od blizu, s prstom ali kazalcem na zaslonu, na vsakem mestu z oznako »glej gradivo«. Med »Vržem noter PDF o celici …« in »Biologija je le primer, gre za vsak predmet …« se s kamero premikaj po nalaganju PDF-ja, zapiskih, miselnem vzorcu, klepetu in glasovnem tutorju. Čakanje na nalaganje izreži. Pri glasovnem tutorju, še pred »Biologija je le primer …«, pokaži, kako ti celico razlaga na glas, in ga vmes prekini z vprašanjem. Med »Biologija je le primer, gre za vsak predmet …« na hitro pokaži kartice, kviz in ocenjen preizkus znanja z rezultatom v odstotkih, vsakega le za trenutek.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnja dva stavka (»Brez heca, zaljubljena sem.« in »Zdaj veste, zakaj me nikoli ne vidite brez nje.«) se vrni v kamero in pokaži na prenosnik.",
+    "text": {
+     "content": "Za zadnja dva stavka (»Brez heca, zaljubljena sem.« in »Zdaj veste, zakaj me nikoli ne vidite brez nje.«) se vrni v kamero in pokaži na prenosnik.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f465e84-a3c2-8189-b47d-f03858456d14": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pred kamero drži zaprt prenosnik s pokrovom, ki je s črtkanimi črtami razdeljen na polja s cenami v evrih (od 5 € do 50 €, npr. 5 €, 10 €, 20 €, 50 €), prodano polje naj bo jasno označeno, in govori naravnost v kamero.",
+    "text": {
+     "content": "Pred kamero drži zaprt prenosnik s pokrovom, ki je s črtkanimi črtami razdeljen na polja s cenami v evrih (od 5 € do 50 €, npr. 5 €, 10 €, 20 €, 50 €), prodano polje naj bo jasno označeno, in govori naravnost v kamero.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Takoj ko se pojavi Memo AI · memoai.eu/creator, pokaži aplikacijo na odprtem prenosniku – na vsakem takem mestu v scenariju. Zaslon posnemi kot snemanje zaslona ali čez ramo, ne samo na telefonu. Vrstni red: nalaganje PDF-ja, prosojnic ali posnetka predavanja, ustvarjanje zapiskov, zapiski s formulami, kartice, kviz z razlagami, poskusni test z odstotkom, podcast. Čakanje na nalaganje izreži.",
+    "text": {
+     "content": "Takoj ko se pojavi Memo AI · memoai.eu/creator, pokaži aplikacijo na odprtem prenosniku – na vsakem takem mestu v scenariju. Zaslon posnemi kot snemanje zaslona ali čez ramo, ne samo na telefonu. Vrstni red: nalaganje PDF-ja, prosojnic ali posnetka predavanja, ustvarjanje zapiskov, zapiski s formulami, kartice, kviz z razlagami, poskusni test z odstotkom, podcast. Čakanje na nalaganje izreži.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pokrov prenosnika pripravi tako, da se nič ne poškoduje: polja in cene naredi na papirju, ki ga lahko izrežeš. Pri »Okej, zdaj ga moram nekako spraviti stran, samo da ne potrgam vsega.« posnemi izrezovanje prodanega polja iz bližine in pusti nerodno, malo grbasto izrezovanje v posnetku.",
+    "text": {
+     "content": "Pokrov prenosnika pripravi tako, da se nič ne poškoduje: polja in cene naredi na papirju, ki ga lahko izrežeš. Pri »Okej, zdaj ga moram nekako spraviti stran, samo da ne potrgam vsega.« posnemi izrezovanje prodanega polja iz bližine in pusti nerodno, malo grbasto izrezovanje v posnetku.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnji stavek se vrni v kamero, pokrov z nalepljenim logotipom naj bo viden.",
+    "text": {
+     "content": "Za zadnji stavek se vrni v kamero, pokrov z nalepljenim logotipom naj bo viden.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Posnemi bližnji plan, kako izrezan logotip aplikacije nalepiš na prazno polje.",
+    "text": {
+     "content": "Posnemi bližnji plan, kako izrezan logotip aplikacije nalepiš na prazno polje.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f465e84-a3c2-81a1-b4dc-e985ce68e3f4": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Sjedi blizu kamere i energično, uz puno mimike, pričaj direktno u kameru, dok ti se na ekranu pojavljuje natpis „PART 5“ u šarenim slovima; kod „5“ pokaži pet prstiju. Kod „Prvu ste mi vi poslali“ pokaži prstom prema gledaocima.",
+    "text": {
+     "content": "Sjedi blizu kamere i energično, uz puno mimike, pričaj direktno u kameru, dok ti se na ekranu pojavljuje natpis „PART 5“ u šarenim slovima; kod „5“ pokaži pet prstiju. Kod „Prvu ste mi vi poslali“ pokaži prstom prema gledaocima.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu (memoai.eu): učitaj PDF ili uslikaj svoje bilješke → izreži vrijeme obrade → gotove bilješke → brzo prikaži kartice, kviz, podcast i glasovnog tutora → otvori probni test i odgovori na 2–3 pitanja → ekran s rezultatom, procentom i povratnom informacijom po odgovoru. Tvoje lice ostaje u slici u slici ili se smjenjuje sa snimkom aplikacije.",
+    "text": {
+     "content": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu (memoai.eu): učitaj PDF ili uslikaj svoje bilješke → izreži vrijeme obrade → gotove bilješke → brzo prikaži kartice, kviz, podcast i glasovnog tutora → otvori probni test i odgovori na 2–3 pitanja → ekran s rezultatom, procentom i povratnom informacijom po odgovoru. Tvoje lice ostaje u slici u slici ili se smjenjuje sa snimkom aplikacije.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod svake bilješke („Kaže:“, „Sljedeća:“, „A onda ovo:“, „Idemo dalje:“, „I za kraj:“) ubaci odgovarajući screenshot bilješki iz e-dnevnika iz materijala u gornji dio kadra, preko sebe, dok čitaš bilješku, a reaguj u kameru. Kod prve bilješke podigni ruke i glumi advokata, kod treće klimni glavom impresionirano, kod petarde pogledaj u kameru s nevjericom, a kod zadnje glumi sutkinju za stolom.",
+    "text": {
+     "content": "Kod svake bilješke („Kaže:“, „Sljedeća:“, „A onda ovo:“, „Idemo dalje:“, „I za kraj:“) ubaci odgovarajući screenshot bilješki iz e-dnevnika iz materijala u gornji dio kadra, preko sebe, dok čitaš bilješku, a reaguj u kameru. Kod prve bilješke podigni ruke i glumi advokata, kod treće klimni glavom impresionirano, kod petarde pogledaj u kameru s nevjericom, a kod zadnje glumi sutkinju za stolom.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnju rečenicu („Ostavite mi u komentarima svoje najluđe bilješke iz e-dnevnika.“) vrati se u kameru.",
+    "text": {
+     "content": "Za zadnju rečenicu („Ostavite mi u komentarima svoje najluđe bilješke iz e-dnevnika.“) vrati se u kameru.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Nakon demonstracije odmah se vrati na talking head uz screenshot bilješki, počevši od „Idemo dalje:“.",
+    "text": {
+     "content": "Nakon demonstracije odmah se vrati na talking head uz screenshot bilješki, počevši od „Idemo dalje:“.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod „Bolje da AI upregnete za nešto korisno.“ ostani u kameri, bez screenshota, kao prelaz na demonstraciju Memo AI.",
+    "text": {
+     "content": "Kod „Bolje da AI upregnete za nešto korisno.“ ostani u kameri, bez screenshota, kao prelaz na demonstraciju Memo AI.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kod „Ali nemojte ovo pokušavati, ukor vas sigurno čeka.“ pogledaj ozbiljno u kameru i odmahni prstom.",
+    "text": {
+     "content": "Kod „Ali nemojte ovo pokušavati, ukor vas sigurno čeka.“ pogledaj ozbiljno u kameru i odmahni prstom.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f465e84-a3c2-81c1-b18f-e757875dad14": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Govori naravnost v kamero z naslovom na zaslonu in medtem s škarjami režeš slajm, to počni ves začetni del, ko govoriš v kamero.",
+    "text": {
+     "content": "Govori naravnost v kamero z naslovom na zaslonu in medtem s škarjami režeš slajm, to počni ves začetni del, ko govoriš v kamero.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Od stavka »Na računalniku mi je odprla točno tole.« do konca predstavitve aplikacije posnemi od blizu zaslon prenosnika, na katerem uporabljaš aplikacijo. Čakanje na nalaganje izreži.",
+    "text": {
+     "content": "Od stavka »Na računalniku mi je odprla točno tole.« do konca predstavitve aplikacije posnemi od blizu zaslon prenosnika, na katerem uporabljaš aplikacijo. Čakanje na nalaganje izreži.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pri »Na računalniku mi je odprla točno tole.« odpri memoai.eu/creator na prenosniku, posnemi zaslon od blizu in s prstom pokaži vsak korak.",
+    "text": {
+     "content": "Pri »Na računalniku mi je odprla točno tole.« odpri memoai.eu/creator na prenosniku, posnemi zaslon od blizu in s prstom pokaži vsak korak.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pokaži, kako klikneš gumb za nov zapisek, izbereš fotke in naložiš slike učbenika ali zvezka.",
+    "text": {
+     "content": "Pokaži, kako klikneš gumb za nov zapisek, izbereš fotke in naložiš slike učbenika ali zvezka.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Prikaži ustvarjene zapiske, nato prelistaj kartice, reši preizkusni test in pokaži odstotek ter razlago pri vsakem odgovoru.",
+    "text": {
+     "content": "Prikaži ustvarjene zapiske, nato prelistaj kartice, reši preizkusni test in pokaži odstotek ter razlago pri vsakem odgovoru.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na hitro pokaži še kviz z razlagami, miselni vzorec, podcast, glasovni tutor in klepet, s prstom pokaži vsak gumb, ko ga omeniš.",
+    "text": {
+     "content": "Na hitro pokaži še kviz z razlagami, miselni vzorec, podcast, glasovni tutor in klepet, s prstom pokaži vsak gumb, ko ga omeniš.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnja stavka »Tak način učenja ti res pomaga, da greš na test z več znanja in brez tistega cmoka v grlu.« in »Sledi mi za še več takih skrivnosti!« se vrni v kamero.",
+    "text": {
+     "content": "Za zadnja stavka »Tak način učenja ti res pomaga, da greš na test z več znanja in brez tistega cmoka v grlu.« in »Sledi mi za še več takih skrivnosti!« se vrni v kamero.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f465e84-a3c2-81e9-8b59-d81f3994a6fe": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Od prve sekunde gnječi i reži šarenu slime makazama blizu kamere dok govoriš direktno u kameru, a naslov je na ekranu.",
+    "text": {
+     "content": "Od prve sekunde gnječi i reži šarenu slime makazama blizu kamere dok govoriš direktno u kameru, a naslov je na ekranu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Od rečenice „Tetka je ovo imala otvoreno na laptopu, pa sam odmah i ja probala.“, na svakom mjestu s oznakom (Memo AI · memoai.eu/creator) snimaj Memo AI na ekranu laptopa izbliza, iz ruke, i prstom pokazuj svaki korak koji spominješ. Snimak ekrana telefona može poslužiti samo kao kratak umetak. Izreži vrijeme učitavanja.",
+    "text": {
+     "content": "Od rečenice „Tetka je ovo imala otvoreno na laptopu, pa sam odmah i ja probala.“, na svakom mjestu s oznakom (Memo AI · memoai.eu/creator) snimaj Memo AI na ekranu laptopa izbliza, iz ruke, i prstom pokazuj svaki korak koji spominješ. Snimak ekrana telefona može poslužiti samo kao kratak umetak. Izreži vrijeme učitavanja.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnje rečenice vrati se u kameru, pokaži na dugme za praćenje i namigni.",
+    "text": {
+     "content": "Za zadnje rečenice vrati se u kameru, pokaži na dugme za praćenje i namigni.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za dio o tetki nagni se bliže kameri i govori zavjerenički, kao da odaješ tajnu.",
+    "text": {
+     "content": "Za dio o tetki nagni se bliže kameri i govori zavjerenički, kao da odaješ tajnu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f565e84-a3c2-8128-b4dc-e7924264635c": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Od prve sekunde snemaj statičen, svetel posnetek od blizu: počasi stiskaj kečap v kozarec z vodo, samo roke, brez obraza. Ta posnetek traja vse do oznake Memo AI.",
+    "text": {
+     "content": "Od prve sekunde snemaj statičen, svetel posnetek od blizu: počasi stiskaj kečap v kozarec z vodo, samo roke, brez obraza. Ta posnetek traja vse do oznake Memo AI.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Ob oznaki Memo AI, v zadnjih 3–5 s, preklopi na bližnji posnetek telefona (samo roke in zaslon, brez obraza): v brskalniku je odprt memoai.eu, glasovni tutor teče pri obstoječem zapisku o atomih, naslov zapiska pa je viden. Zadnje vprašanje »Kateri atomi so po tvoje največji spletkarji v tej druščini?« naj se sliši na tem posnetku. Ustvarjanja zapiska in čakanja na nalaganje ne kaži.",
+    "text": {
+     "content": "Ob oznaki Memo AI, v zadnjih 3–5 s, preklopi na bližnji posnetek telefona (samo roke in zaslon, brez obraza): v brskalniku je odprt memoai.eu, glasovni tutor teče pri obstoječem zapisku o atomih, naslov zapiska pa je viden. Zadnje vprašanje »Kateri atomi so po tvoje največji spletkarji v tej druščini?« naj se sliši na tem posnetku. Ustvarjanja zapiska in čakanja na nalaganje ne kaži.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Pogovor posnemi z glasovnim tutorjem v Memo AI pri snovi o atomih: tutorja prekini z »Čakaj, čakaj, stop!« in »A mi lahko to razložiš kot en res sočen trač?« – njegove odgovore pusti take, kot jih pove aplikacija.",
+    "text": {
+     "content": "Pogovor posnemi z glasovnim tutorjem v Memo AI pri snovi o atomih: tutorja prekini z »Čakaj, čakaj, stop!« in »A mi lahko to razložiš kot en res sočen trač?« – njegove odgovore pusti take, kot jih pove aplikacija.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na posnetek telefona v zadnjih 3–5 s dodaj napis »aplikacija se imenuje Memo AI«.",
+    "text": {
+     "content": "Na posnetek telefona v zadnjih 3–5 s dodaj napis »aplikacija se imenuje Memo AI«.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+    "text": {
+     "content": "🚨👇 Vizualni hook je obvezen v vsakem videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:3f565e84-a3c2-81ae-825a-c3d10f74823b": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Od prve sekunde snimaj statičan, uzak i dobro osvijetljen krupni kadar tanjira (tanjir umjesto čaše vode je namjerno izabran jer ga scenarij spominje): polako i ravnomjerno cijedi kečap iz boce na tanjir, tako da kretanje bude glatko i ugodno za gledanje. U kadru su samo ruke, bez lica, dok se čuje glas tutora, a naslov je na ekranu. Ovaj kadar traje kroz cijeli razgovor, sve do završnog pitanja o najvećoj zmiji.",
+    "text": {
+     "content": "Od prve sekunde snimaj statičan, uzak i dobro osvijetljen krupni kadar tanjira (tanjir umjesto čaše vode je namjerno izabran jer ga scenarij spominje): polako i ravnomjerno cijedi kečap iz boce na tanjir, tako da kretanje bude glatko i ugodno za gledanje. U kadru su samo ruke, bez lica, dok se čuje glas tutora, a naslov je na ekranu. Ovaj kadar traje kroz cijeli razgovor, sve do završnog pitanja o najvećoj zmiji.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Zvuk je tvoj pravi razgovor s glasovnim tutorom u Memo AI: pusti tutora da objašnjava atome, prekini ga rečenicom „Čekaj, čekaj, stani – možeš mi to ispričati kao pravi trač?“ i snimi kako odgovara – njegove rečenice iz scenarija su samo smjer, tutor će ih reći svojim riječima.",
+    "text": {
+     "content": "Zvuk je tvoj pravi razgovor s glasovnim tutorom u Memo AI: pusti tutora da objašnjava atome, prekini ga rečenicom „Čekaj, čekaj, stani – možeš mi to ispričati kao pravi trač?“ i snimi kako odgovara – njegove rečenice iz scenarija su samo smjer, tutor će ih reći svojim riječima.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Za zadnje 3–5 sekundi: kad tutor postavi završno pitanje „A koji bi element, po tebi, bio najveća zmija u cijeloj ovoj priči?“, pređi na krupni kadar telefona s otvorenim memoai.eu u pregledniku i ekranom glasovnog tutora za postojeću bilješku o atomima (naslov bilješke se vidi). Ne prikazuj kreiranje bilješke ni vrijeme učitavanja. Dodaj tekst na ekranu: „Aplikacija se zove Memo AI‼️‼️‼️“ i ostavi ga do kraja.",
+    "text": {
+     "content": "Za zadnje 3–5 sekundi: kad tutor postavi završno pitanje „A koji bi element, po tebi, bio najveća zmija u cijeloj ovoj priči?“, pređi na krupni kadar telefona s otvorenim memoai.eu u pregledniku i ekranom glasovnog tutora za postojeću bilješku o atomima (naslov bilješke se vidi). Ne prikazuj kreiranje bilješke ni vrijeme učitavanja. Dodaj tekst na ekranu: „Aplikacija se zove Memo AI‼️‼️‼️“ i ostavi ga do kraja.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Na tri označena mjesta u scenariju (nakon „Haos, a?“, nakon pitanja o bivšima i nakon „čista serija, zar ne?“) ostavi kadar s kečapom kakav jeste i samo nakratko prikaži mali, diskretan natpis Memo AI na ekranu. To nisu posebni kadrovi telefona.",
+    "text": {
+     "content": "Na tri označena mjesta u scenariju (nakon „Haos, a?“, nakon pitanja o bivšima i nakon „čista serija, zar ne?“) ostavi kadar s kečapom kakav jeste i samo nakratko prikaži mali, diskretan natpis Memo AI na ekranu. To nisu posebni kadrovi telefona.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+    "text": {
+     "content": "🚨👇 Vizuelni hook je obavezan u svakom videu!",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   }
+  ]
+ ],
  "page:3f365e84-a3c2-810e-8152-eeed9afe21db": [
   [
    {
