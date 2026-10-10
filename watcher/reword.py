@@ -176,22 +176,20 @@ def run(fmts, mkts, cfg, page_of, originals=None, dry=False):
 
 
 def direction_blocks(page_id):
-    """Blocks of the 🎬 filming-directions section (without the mandatory 🚨 line and the Visual Hook Lab link)."""
-    blocks = notion.children(page_id)
+    """The visual hook section(s) as the reviewers see them: every text line under 🎬 (older pages: 👀), including the
+    line offering the Visual Hook Lab - leaving that line out made the reviewer report it as missing, again and again.
+    The example's TikTok link is never a direction."""
     out, inside = [], False
-    for b in blocks:  # 🎬 = directions (👀 = an older heading for them)
+    for b in notion.children(page_id):
         if b['type'].startswith('heading'):
             inside = '🎬' in _plain(b) or '👀' in _plain(b)
             continue
         if b['type'] == 'divider':
             inside = False
             continue
-        t = _plain(b)
-        has_link = any(((x.get('text') or {}).get('link') or {}).get('url', '').startswith('http') and
-                       OURS_SITE not in ((x.get('text') or {}).get('link') or {}).get('url', '')
-                       for x in b.get(b['type'], {}).get('rich_text', []))
-        if inside and b['type'] in ('paragraph', 'bulleted_list_item') and t.strip() and '🚨' not in t \
-                and 'Visual Hook Lab' not in t and not has_link:  # the example's TikTok link is never a direction
+        links = [((x.get('text') or {}).get('link') or {}).get('url') or '' for x in (b.get(b['type']) or {}).get('rich_text', []) or []]
+        if inside and b['type'] in ('paragraph', 'bulleted_list_item') and _plain(b).strip() \
+                and not any('tiktok.com' in u for u in links):
             out.append(b)
     return out
 

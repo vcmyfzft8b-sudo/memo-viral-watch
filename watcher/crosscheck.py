@@ -32,7 +32,7 @@ from . import align, audit, llm, localize, notion, reword
 from .brand import FACTS, OURS, SOURCE, TOPIC
 from .markets import PRIMARY, TEXT
 
-AUDIT_VERSION = 'group-2026-10-10.faithful-hook'
+AUDIT_VERSION = 'group-2026-10-10.hook-section'
 REFERENCES = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'format_references.json')
 DIMENSIONS = ('format_consistency', 'script_matches_example', 'faithful_translation', 'features_claims',
               'directions_match')

@@ -139,3 +139,18 @@ def test_visual_hook_section_is_one_sentence_plus_the_lab_line():
     section = blocks[i + 1:next(k for k in range(i + 1, len(blocks)) if blocks[k]['type'] == 'divider')]
     assert len(section) == 2
     assert section[1]['paragraph']['rich_text'][1]['text']['link'] == {'url': 'https://lab'}
+
+
+def test_reviewers_see_the_visual_hook_lab_line():
+    from watcher import notion, reword
+    def blk(t, typ='paragraph', link=None):
+        x = {'type': 'text', 'plain_text': t, 'text': {'content': t, 'link': {'url': link} if link else None}}
+        return {'id': t[:8], 'type': typ, typ: {'rich_text': [x]}}
+    page = [blk('🎬 VIZUELNI HOOK', 'heading_2'), blk('Napravi isti vizuelni hook kao u videu za inspiraciju: …'),
+            {'id': 'l', 'type': 'paragraph', 'paragraph': {'rich_text': [
+                {'type': 'text', 'plain_text': 'Želiš drugi vizuelni hook? Izaberi jedan iz ', 'text': {'content': '', 'link': None}},
+                {'type': 'text', 'plain_text': 'Visual Hook Lab', 'text': {'content': '', 'link': {'url': 'https://lab'}}}]}},
+            {'id': 'd', 'type': 'divider', 'divider': {}}]
+    with mock.patch.object(notion, 'children', lambda pid: page):
+        got = [reword._plain(b) for b in reword.direction_blocks('p')]
+    assert len(got) == 2 and 'Visual Hook Lab' in got[1]
