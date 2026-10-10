@@ -16280,6 +16280,82 @@
    }
   ]
  ],
+ "hook:3f565e84-a3c2-81e8-afd8-d8f29ac8cb48": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Napravi isti vizuelni hook kao u videu za inspiraciju: sjediš za stolom, gledaš u kameru i istiskuješ karamel preliv iz flaše po unutrašnjosti prazne staklene krigle, a naslov je na ekranu.",
+    "text": {
+     "content": "Napravi isti vizuelni hook kao u videu za inspiraciju: sjediš za stolom, gledaš u kameru i istiskuješ karamel preliv iz flaše po unutrašnjosti prazne staklene krigle, a naslov je na ekranu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Želiš drugi vizuelni hook? Izaberi jedan iz ",
+    "text": {
+     "content": "Želiš drugi vizuelni hook? Izaberi jedan iz ",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/5f765e84a3c283dea50a814e2296c7fc"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ".",
+    "text": {
+     "content": ".",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
  "hook:3f565e84-a3c2-81f3-a771-d05601b576fa": [
   [
    {
