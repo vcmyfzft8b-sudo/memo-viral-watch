@@ -2226,7 +2226,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 3303,
+  "views": 3330,
   "views_7d": 3303
  },
  "7692069840877554976": {
@@ -2281,7 +2281,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 72600,
+  "views": 72700,
   "views_7d": 72600
  },
  "7692099132911029510": {
@@ -2314,7 +2314,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 2172,
+  "views": 2173,
   "views_7d": 2172
  },
  "7692108611601976608": {
@@ -2325,7 +2325,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 660,
+  "views": 661,
   "views_7d": 660
  },
  "7692126502187535637": {
@@ -2347,7 +2347,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 1955,
+  "views": 1957,
   "views_7d": 1955
  },
  "7692137922698562848": {
@@ -2358,8 +2358,8 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 1759,
-  "views_7d": 1759
+  "views": 1760,
+  "views_7d": 1760
  },
  "7692139493918248199": {
   "created": 1790965794,
@@ -2369,8 +2369,8 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 7905,
-  "views_7d": 7905
+  "views": 7918,
+  "views_7d": 7918
  },
  "7692146809577213204": {
   "created": 1790967502,
@@ -2391,8 +2391,8 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 2716,
-  "views_7d": 2716
+  "views": 2717,
+  "views_7d": 2717
  },
  "7692158324032163124": {
   "bootstrap_tries": 1,
@@ -2424,8 +2424,8 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 510,
-  "views_7d": 510
+  "views": 514,
+  "views_7d": 514
  },
  "7692179330721451284": {
   "created": 1790975071,
@@ -2467,9 +2467,9 @@
   "hook": "If you're not using Astra AI yet, I don't get you",
   "judged": false,
   "local": true,
-  "mature": false,
-  "views": 8850,
-  "views_7d": 8850
+  "mature": true,
+  "views": 8866,
+  "views_7d": 8866
  },
  "7692375934661381408": {
   "created": 1791020844,
@@ -2479,8 +2479,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1821,
-  "views_7d": 1821
+  "views": 1823,
+  "views_7d": 1823
  },
  "7692381521113615648": {
   "created": 1791022146,
@@ -2490,8 +2490,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7878,
-  "views_7d": 7878
+  "views": 7883,
+  "views_7d": 7883
  },
  "7692414303197990165": {
   "created": 1791029779,
@@ -2501,8 +2501,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 9550,
-  "views_7d": 9550
+  "views": 9570,
+  "views_7d": 9570
  },
  "7692437819729530133": {
   "created": 1791035257,
@@ -2512,8 +2512,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1275,
-  "views_7d": 1275
+  "views": 1276,
+  "views_7d": 1276
  },
  "7692445112235724065": {
   "created": 1791036951,
@@ -2523,14 +2523,14 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2506,
-  "views_7d": 2506
+  "views": 2510,
+  "views_7d": 2510
  },
  "7692447948029824277": {
   "created": 1791037610,
   "format": null,
   "handle": "come_study_with_s",
-  "hook": "",
+  "hook": "For everyone who hates oral exams",
   "judged": false,
   "local": true,
   "mature": false,
@@ -2545,8 +2545,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1247,
-  "views_7d": 1247
+  "views": 1250,
+  "views_7d": 1250
  },
  "7692471092144885014": {
   "created": 1791043003,
@@ -2567,8 +2567,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 822,
-  "views_7d": 822
+  "views": 823,
+  "views_7d": 823
  },
  "7692478766852967686": {
   "bootstrap_tries": 1,
@@ -2589,8 +2589,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2553,
-  "views_7d": 2553
+  "views": 2556,
+  "views_7d": 2556
  },
  "7692486893312773377": {
   "created": 1791046716,
@@ -2622,8 +2622,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3377,
-  "views_7d": 3377
+  "views": 3380,
+  "views_7d": 3380
  },
  "7692538183451462919": {
   "created": 1791058631,
@@ -2633,8 +2633,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2070,
-  "views_7d": 2070
+  "views": 2072,
+  "views_7d": 2072
  },
  "7692541161159871751": {
   "created": 1791059325,
@@ -2644,8 +2644,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3272,
-  "views_7d": 3272
+  "views": 3277,
+  "views_7d": 3277
  },
  "7692543573765410069": {
   "created": 1791059882,
@@ -2655,8 +2655,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2329,
-  "views_7d": 2329
+  "views": 2335,
+  "views_7d": 2335
  },
  "7692543575103524116": {
   "created": 1791059882,
@@ -2688,8 +2688,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 40900,
-  "views_7d": 40900
+  "views": 41000,
+  "views_7d": 41000
  },
  "7692551011256257825": {
   "created": 1791061607,
@@ -2699,8 +2699,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7267,
-  "views_7d": 7267
+  "views": 7276,
+  "views_7d": 7276
  },
  "7692555772751777045": {
   "created": 1791062722,
@@ -2710,8 +2710,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 22000,
-  "views_7d": 22000
+  "views": 22100,
+  "views_7d": 22100
  },
  "7692561753288346910": {
   "created": 1791064121,
@@ -2721,8 +2721,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 609,
-  "views_7d": 609
+  "views": 613,
+  "views_7d": 613
  },
  "7692562251127000340": {
   "created": 1791064228,
@@ -2772,7 +2772,7 @@
   "created": 1791103306,
   "format": null,
   "handle": "ucisaprofom",
-  "hook": "",
+  "hook": "Which grade is next? Reading comments",
   "judged": false,
   "local": true,
   "mature": false,
@@ -2783,7 +2783,7 @@
   "created": 1791104436,
   "format": null,
   "handle": "ucisamilicom",
-  "hook": "",
+  "hook": "How much time do you spend on your phone?",
   "judged": false,
   "local": true,
   "mature": false,
@@ -2842,8 +2842,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 77200,
-  "views_7d": 77200
+  "views": 77400,
+  "views_7d": 77400
  },
  "7692837834499034388": {
   "created": 1791128390,
@@ -2864,8 +2864,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1194,
-  "views_7d": 1194
+  "views": 1195,
+  "views_7d": 1195
  },
  "7692849426099883316": {
   "created": 1791131088,
@@ -2886,8 +2886,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1097,
-  "views_7d": 1097
+  "views": 1099,
+  "views_7d": 1099
  },
  "7692860275355028768": {
   "created": 1791133613,
@@ -2908,8 +2908,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 868,
-  "views_7d": 868
+  "views": 869,
+  "views_7d": 869
  },
  "7692867767564848391": {
   "created": 1791135363,
@@ -2919,14 +2919,14 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1033,
-  "views_7d": 1033
+  "views": 1037,
+  "views_7d": 1037
  },
  "7692872043406085384": {
   "created": 1791136358,
   "format": null,
   "handle": "ucisaprofom",
-  "hook": "",
+  "hook": "Send this to someone preparing for the biology entrance exam",
   "judged": false,
   "local": true,
   "mature": false,
@@ -2941,8 +2941,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 471,
-  "views_7d": 471
+  "views": 472,
+  "views_7d": 472
  },
  "7692893077480033556": {
   "created": 1791141256,
@@ -2963,8 +2963,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 9369,
-  "views_7d": 9369
+  "views": 9378,
+  "views_7d": 9378
  },
  "7692896444281392405": {
   "created": 1791142041,
@@ -2974,8 +2974,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 788,
-  "views_7d": 788
+  "views": 790,
+  "views_7d": 790
  },
  "7692897441338658081": {
   "created": 1791142266,
@@ -2985,8 +2985,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2275,
-  "views_7d": 2275
+  "views": 2281,
+  "views_7d": 2281
  },
  "7692904891307642164": {
   "created": 1791144005,
@@ -2996,8 +2996,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 59900,
-  "views_7d": 59900
+  "views": 60000,
+  "views_7d": 60000
  },
  "7692906051858910471": {
   "created": 1791144277,
@@ -3029,8 +3029,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 770,
-  "views_7d": 770
+  "views": 772,
+  "views_7d": 772
  },
  "7692929512782318868": {
   "created": 1791149743,
@@ -3040,8 +3040,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2426,
-  "views_7d": 2426
+  "views": 2433,
+  "views_7d": 2433
  },
  "7692929647243218197": {
   "created": 1791149781,
@@ -3062,8 +3062,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 10300,
-  "views_7d": 10300
+  "views": 10400,
+  "views_7d": 10400
  },
  "7692932457070415111": {
   "created": 1791150432,
@@ -3095,8 +3095,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2521,
-  "views_7d": 2521
+  "views": 2522,
+  "views_7d": 2522
  },
  "7692998398085057799": {
   "created": 1791165777,
@@ -3150,8 +3150,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 723,
-  "views_7d": 723
+  "views": 726,
+  "views_7d": 726
  },
  "7693150886922702113": {
   "created": 1791201279,
@@ -3161,8 +3161,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 701,
-  "views_7d": 701
+  "views": 703,
+  "views_7d": 703
  },
  "7693154013256273172": {
   "created": 1791202006,
@@ -3172,8 +3172,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 29000,
-  "views_7d": 29000
+  "views": 29100,
+  "views_7d": 29100
  },
  "7693171738707807491": {
   "created": 1791206136,
@@ -3194,8 +3194,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 64700,
-  "views_7d": 64700
+  "views": 64800,
+  "views_7d": 64800
  },
  "7693210552113302817": {
   "created": 1791215168,
@@ -3205,8 +3205,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1844,
-  "views_7d": 1844
+  "views": 1847,
+  "views_7d": 1847
  },
  "7693220046407011636": {
   "created": 1791217425,
@@ -3227,14 +3227,14 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4967,
-  "views_7d": 4967
+  "views": 4969,
+  "views_7d": 4969
  },
  "7693250228912147719": {
   "created": 1791224415,
   "format": null,
   "handle": "ucisaprofom",
-  "hook": "",
+  "hook": "What do you do when you have 100 pages to learn?",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3271,8 +3271,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 42300,
-  "views_7d": 42300
+  "views": 42400,
+  "views_7d": 42400
  },
  "7693270813574745352": {
   "created": 1791229203,
@@ -3282,8 +3282,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3437,
-  "views_7d": 3437
+  "views": 3528,
+  "views_7d": 3528
  },
  "7693275701230750997": {
   "created": 1791230344,
@@ -3293,8 +3293,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1473,
-  "views_7d": 1473
+  "views": 1479,
+  "views_7d": 1479
  },
  "7693282080666537237": {
   "created": 1791231826,
@@ -3304,8 +3304,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4958,
-  "views_7d": 4958
+  "views": 4962,
+  "views_7d": 4962
  },
  "7693287946375515413": {
   "created": 1791233197,
@@ -3315,8 +3315,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1974,
-  "views_7d": 1974
+  "views": 1975,
+  "views_7d": 1975
  },
  "7693288035630189855": {
   "created": 1791233215,
@@ -3326,8 +3326,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 395,
-  "views_7d": 395
+  "views": 399,
+  "views_7d": 399
  },
  "7693291236744121620": {
   "created": 1791233962,
@@ -3337,8 +3337,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 145400,
-  "views_7d": 145400
+  "views": 145800,
+  "views_7d": 145800
  },
  "7693293017175723285": {
   "created": 1791234373,
@@ -3348,8 +3348,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4035,
-  "views_7d": 4035
+  "views": 4041,
+  "views_7d": 4041
  },
  "7693302228668484872": {
   "created": 1791236524,
@@ -3359,8 +3359,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1737,
-  "views_7d": 1737
+  "views": 1738,
+  "views_7d": 1738
  },
  "7693302426903776533": {
   "created": 1791236561,
@@ -3381,14 +3381,14 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 8514,
-  "views_7d": 8514
+  "views": 8536,
+  "views_7d": 8536
  },
  "7693458159976844551": {
   "created": 1791272826,
   "format": null,
   "handle": "ucisaprofom",
-  "hook": "",
+  "hook": "How many hours a day do you use your phone?",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3403,14 +3403,14 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7376,
-  "views_7d": 7376
+  "views": 7378,
+  "views_7d": 7378
  },
  "7693512012105600277": {
   "created": 1791285361,
   "format": null,
   "handle": "ucisamilicom",
-  "hook": "",
+  "hook": "The body works, I don't",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3425,8 +3425,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 14800,
-  "views_7d": 14800
+  "views": 14900,
+  "views_7d": 14900
  },
  "7693539666611473697": {
   "created": 1791291798,
@@ -3436,8 +3436,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1493,
-  "views_7d": 1493
+  "views": 1494,
+  "views_7d": 1494
  },
  "7693572167576915208": {
   "created": 1791299366,
@@ -3447,8 +3447,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1512,
-  "views_7d": 1512
+  "views": 1519,
+  "views_7d": 1519
  },
  "7693590120347258120": {
   "created": 1791303547,
@@ -3458,8 +3458,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 585,
-  "views_7d": 585
+  "views": 589,
+  "views_7d": 589
  },
  "7693593309402483988": {
   "created": 1791304289,
@@ -3480,8 +3480,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 756,
-  "views_7d": 756
+  "views": 758,
+  "views_7d": 758
  },
  "7693603076590046496": {
   "created": 1791306560,
@@ -3491,8 +3491,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4147,
-  "views_7d": 4147
+  "views": 4160,
+  "views_7d": 4160
  },
  "7693614549269810450": {
   "bootstrap_tries": 1,
@@ -3513,8 +3513,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5311,
-  "views_7d": 5311
+  "views": 5317,
+  "views_7d": 5317
  },
  "7693623863720103176": {
   "created": 1791311405,
@@ -3546,8 +3546,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2428,
-  "views_7d": 2428
+  "views": 2430,
+  "views_7d": 2430
  },
  "7693631795740282132": {
   "created": 1791313252,
@@ -3579,8 +3579,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2783,
-  "views_7d": 2783
+  "views": 2788,
+  "views_7d": 2788
  },
  "7693638353685581074": {
   "created": 1791314783,
@@ -3590,8 +3590,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1888,
-  "views_7d": 1888
+  "views": 1895,
+  "views_7d": 1895
  },
  "7693644473397480725": {
   "created": 1791316209,
@@ -3612,8 +3612,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3519,
-  "views_7d": 3519
+  "views": 3525,
+  "views_7d": 3525
  },
  "7693653993653849365": {
   "created": 1791318424,
@@ -3623,8 +3623,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1041,
-  "views_7d": 1041
+  "views": 1042,
+  "views_7d": 1042
  },
  "7693654832082652446": {
   "created": 1791318628,
@@ -3634,8 +3634,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1254,
-  "views_7d": 1254
+  "views": 1266,
+  "views_7d": 1266
  },
  "7693657868733517077": {
   "created": 1791319326,
@@ -3645,8 +3645,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5368,
-  "views_7d": 5368
+  "views": 5387,
+  "views_7d": 5387
  },
  "7693661908070599956": {
   "created": 1791320261,
@@ -3667,8 +3667,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7029,
-  "views_7d": 7029
+  "views": 7031,
+  "views_7d": 7031
  },
  "7693676659379113236": {
   "created": 1791323697,
@@ -3678,8 +3678,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1609,
-  "views_7d": 1609
+  "views": 1610,
+  "views_7d": 1610
  },
  "7693676971666033941": {
   "created": 1791323769,
@@ -3689,8 +3689,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6033,
-  "views_7d": 6033
+  "views": 6043,
+  "views_7d": 6043
  },
  "7693684473686150406": {
   "bootstrap_tries": 1,
@@ -3722,8 +3722,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1253,
-  "views_7d": 1253
+  "views": 1259,
+  "views_7d": 1259
  },
  "7693869002799549716": {
   "created": 1791368480,
@@ -3755,8 +3755,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2384,
-  "views_7d": 2384
+  "views": 2390,
+  "views_7d": 2390
  },
  "7693914411005725984": {
   "created": 1791379049,
@@ -3766,14 +3766,14 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7307,
-  "views_7d": 7307
+  "views": 7310,
+  "views_7d": 7310
  },
  "7693926613863501078": {
   "created": 1791381895,
   "format": null,
   "handle": "astra_ai_rs",
-  "hook": "",
+  "hook": "Extra motivation for studying",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3784,7 +3784,7 @@
   "created": 1791383021,
   "format": null,
   "handle": "creatortipsbymonika",
-  "hook": "",
+  "hook": "Apply via link to become a creator",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3795,29 +3795,29 @@
   "created": 1791384853,
   "format": null,
   "handle": "learnwithmateja",
-  "hook": "",
+  "hook": "Guess the school subject from 3 words in 3 seconds",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6127,
-  "views_7d": 6127
+  "views": 6133,
+  "views_7d": 6133
  },
  "7693948611582840082": {
   "created": 1791387015,
   "format": null,
   "handle": "learnwithtika",
-  "hook": "",
+  "hook": "Know the exam questions before the exam?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1090,
-  "views_7d": 1090
+  "views": 1101,
+  "views_7d": 1101
  },
  "7693955179850435860": {
   "created": 1791388541,
   "format": null,
   "handle": "ucisamilicom",
-  "hook": "",
+  "hook": "What to do in 5th grade",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3828,18 +3828,18 @@
   "created": 1791389657,
   "format": null,
   "handle": "learnwithpaola",
-  "hook": "",
+  "hook": "How does this work for you?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 917,
-  "views_7d": 917
+  "views": 918,
+  "views_7d": 918
  },
  "7693979744295013638": {
   "created": 1791394265,
   "format": "A20261008210957",
   "handle": "ucisaprofom",
-  "hook": "",
+  "hook": "Which school is ranked number 1?",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3854,14 +3854,14 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 89600,
-  "views_7d": 89600
+  "views": 90000,
+  "views_7d": 90000
  },
  "7693984751857847604": {
   "created": 1791395430,
   "format": null,
   "handle": "ucenje.sa.lili",
-  "hook": "",
+  "hook": "Three types of students in every class",
   "judged": false,
   "local": true,
   "mature": false,
@@ -3872,128 +3872,128 @@
   "created": 1791396056,
   "format": null,
   "handle": "studywithandja",
-  "hook": "",
+  "hook": "POV: night before exam, making notes from the notes",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 790,
-  "views_7d": 790
+  "views": 793,
+  "views_7d": 793
  },
  "7693993217406094624": {
   "created": 1791397397,
   "format": null,
   "handle": "karla_studytok",
-  "hook": "",
+  "hook": "Worst advice",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3125,
-  "views_7d": 3125
+  "views": 3129,
+  "views_7d": 3129
  },
  "7693997841781476628": {
   "created": 1791398482,
   "format": null,
   "handle": "learnwithsaraa",
-  "hook": "",
+  "hook": "Top 3 students everyone loves",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6557,
-  "views_7d": 6557
+  "views": 6567,
+  "views_7d": 6567
  },
  "7694002832734686497": {
   "created": 1791399635,
   "format": null,
   "handle": "learnwithhanna",
-  "hook": "",
+  "hook": "Try this study tip",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2885,
-  "views_7d": 2885
+  "views": 2887,
+  "views_7d": 2887
  },
  "7694015236390554901": {
   "created": 1791402525,
   "format": "A20261008205804",
   "handle": "smartishaangelisaa",
-  "hook": "",
+  "hook": "You're out if you eat eggs, don't follow me, wear white, used ChatGPT",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 48200,
-  "views_7d": 48200
+  "views": 48400,
+  "views_7d": 48400
  },
  "7694017344863046945": {
   "created": 1791403014,
   "format": null,
   "handle": "tea_studytok",
-  "hook": "",
+  "hook": "Study method for lazy people",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1081,
-  "views_7d": 1081
+  "views": 1085,
+  "views_7d": 1085
  },
  "7694023804967832852": {
   "created": 1791404525,
   "format": null,
   "handle": "ucenje.sa.lili",
-  "hook": "",
+  "hook": "Do you agree with my opinion?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 638,
-  "views_7d": 638
+  "views": 645,
+  "views_7d": 645
  },
  "7694026386398366983": {
   "created": 1791405128,
   "format": null,
   "handle": "learnwithtamara",
-  "hook": "",
+  "hook": "Study method for lazy people",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3181,
-  "views_7d": 3181
+  "views": 3198,
+  "views_7d": 3198
  },
  "7694026494271704321": {
   "created": 1791405221,
   "format": null,
   "handle": "kera.vas.uci",
-  "hook": "",
+  "hook": "If it gets 1000 likes in 2h I'll leave the video up",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6995,
-  "views_7d": 6995
+  "views": 7031,
+  "views_7d": 7031
  },
  "7694027197060959495": {
   "created": 1791405312,
   "format": null,
   "handle": "learnwithanja",
-  "hook": "",
+  "hook": "Best results",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 736,
-  "views_7d": 736
+  "views": 738,
+  "views_7d": 738
  },
  "7694029525889355029": {
   "created": 1791405858,
   "format": "A20261008205804",
   "handle": "study_with_hexi",
-  "hook": "",
+  "hook": "99% can't beat me: you're out if your name ends in a",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 25200,
-  "views_7d": 25200
+  "views": 25400,
+  "views_7d": 25400
  },
  "7694033991564840213": {
   "created": 1791406899,
   "format": null,
   "handle": "ucisamilicom",
-  "hook": "",
+  "hook": "How do I get there on time?",
   "judged": false,
   "local": true,
   "mature": false,
@@ -4004,45 +4004,45 @@
   "created": 1791407859,
   "format": null,
   "handle": "helenci_study",
-  "hook": "",
+  "hook": "Matcha with orange hair and an orange",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6304,
-  "views_7d": 6304
+  "views": 6323,
+  "views_7d": 6323
  },
  "7694038782693199125": {
   "created": 1791408009,
   "format": null,
   "handle": "studytipsbytara",
-  "hook": "",
+  "hook": "Are you lazy when it comes to studying?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2509,
-  "views_7d": 2509
+  "views": 2523,
+  "views_7d": 2523
  },
  "7694042335914642709": {
   "created": 1791408841,
   "format": null,
   "handle": "studywithreveka",
-  "hook": "",
+  "hook": "You'll be such a good student teachers think you cheat",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2206,
-  "views_7d": 2206
+  "views": 2217,
+  "views_7d": 2217
  },
  "7694047809275776277": {
   "created": 1791410116,
   "format": null,
   "handle": "learnwithmina",
-  "hook": "",
+  "hook": "What's your worst subject?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2465,
-  "views_7d": 2465
+  "views": 2474,
+  "views_7d": 2474
  },
  "7694048926395059486": {
   "bootstrap_tries": 1,
@@ -4107,8 +4107,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 112300,
-  "views_7d": 112300
+  "views": 113100,
+  "views_7d": 113100
  },
  "7694274598363335957": {
   "created": 1791462913,
@@ -4129,8 +4129,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7173,
-  "views_7d": 7173
+  "views": 7241,
+  "views_7d": 7241
  },
  "7694290405809982752": {
   "created": 1791466593,
@@ -4140,8 +4140,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2933,
-  "views_7d": 2933
+  "views": 2935,
+  "views_7d": 2935
  },
  "7694296712805879062": {
   "created": 1791468064,
@@ -4151,8 +4151,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 1846,
-  "views_7d": 1846
+  "views": 1860,
+  "views_7d": 1860
  },
  "7694301661703064852": {
   "created": 1791469218,
@@ -4162,8 +4162,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5344,
-  "views_7d": 5344
+  "views": 5347,
+  "views_7d": 5347
  },
  "7694315631931346194": {
   "created": 1791472467,
@@ -4173,8 +4173,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 538,
-  "views_7d": 538
+  "views": 539,
+  "views_7d": 539
  },
  "7694317792979455239": {
   "created": 1791472970,
@@ -4184,8 +4184,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2032,
-  "views_7d": 2032
+  "views": 2040,
+  "views_7d": 2040
  },
  "7694339411772771591": {
   "created": 1791478006,
@@ -4195,8 +4195,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5632,
-  "views_7d": 5632
+  "views": 5648,
+  "views_7d": 5648
  },
  "7694346236983266592": {
   "created": 1791479591,
@@ -4206,8 +4206,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 304,
-  "views_7d": 304
+  "views": 306,
+  "views_7d": 306
  },
  "7694354919297502496": {
   "created": 1791481611,
@@ -4217,8 +4217,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 605,
-  "views_7d": 605
+  "views": 613,
+  "views_7d": 613
  },
  "7694360559491304712": {
   "created": 1791482929,
@@ -4228,8 +4228,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 35200,
-  "views_7d": 35200
+  "views": 36500,
+  "views_7d": 36500
  },
  "7694360730086247712": {
   "created": 1791482966,
@@ -4239,8 +4239,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1431,
-  "views_7d": 1431
+  "views": 1451,
+  "views_7d": 1451
  },
  "7694368402290248992": {
   "created": 1791484750,
@@ -4250,8 +4250,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5417,
-  "views_7d": 5417
+  "views": 5427,
+  "views_7d": 5427
  },
  "7694371283529698593": {
   "created": 1791485423,
@@ -4261,8 +4261,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1737,
-  "views_7d": 1737
+  "views": 1748,
+  "views_7d": 1748
  },
  "7694379279764835602": {
   "created": 1791487287,
@@ -4272,8 +4272,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2193,
-  "views_7d": 2193
+  "views": 2198,
+  "views_7d": 2198
  },
  "7694386565300194561": {
   "created": 1791488995,
@@ -4283,8 +4283,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 9389,
-  "views_7d": 9389
+  "views": 9437,
+  "views_7d": 9437
  },
  "7694393004118854930": {
   "created": 1791490485,
@@ -4294,8 +4294,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 97900,
-  "views_7d": 97900
+  "views": 99100,
+  "views_7d": 99100
  },
  "7694400286906961173": {
   "created": 1791492180,
@@ -4305,8 +4305,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4285,
-  "views_7d": 4285
+  "views": 4332,
+  "views_7d": 4332
  },
  "7694403597358026005": {
   "created": 1791492954,
@@ -4316,8 +4316,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 18900,
-  "views_7d": 18900
+  "views": 19000,
+  "views_7d": 19000
  },
  "7694411217401646356": {
   "created": 1791494725,
@@ -4327,8 +4327,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3463,
-  "views_7d": 3463
+  "views": 3474,
+  "views_7d": 3474
  },
  "7694415560993508609": {
   "created": 1791495742,
@@ -4338,8 +4338,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 124000,
-  "views_7d": 124000
+  "views": 125600,
+  "views_7d": 125600
  },
  "7694416412391066900": {
   "created": 1791495940,
@@ -4349,8 +4349,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 815,
-  "views_7d": 815
+  "views": 819,
+  "views_7d": 819
  },
  "7694418116289269012": {
   "created": 1791496332,
@@ -4360,8 +4360,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4016,
-  "views_7d": 4016
+  "views": 4042,
+  "views_7d": 4042
  },
  "7694418332405026078": {
   "created": 1791496391,
@@ -4371,8 +4371,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 337,
-  "views_7d": 337
+  "views": 339,
+  "views_7d": 339
  },
  "7694419034376375572": {
   "created": 1791496549,
@@ -4382,8 +4382,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 55000,
-  "views_7d": 55000
+  "views": 56200,
+  "views_7d": 56200
  },
  "7694608829270494516": {
   "created": 1791540732,
@@ -4393,8 +4393,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 167,
-  "views_7d": 167
+  "views": 248,
+  "views_7d": 248
  },
  "7694650734532381953": {
   "created": 1791550509,
@@ -4404,8 +4404,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 173800,
-  "views_7d": 173800
+  "views": 182000,
+  "views_7d": 182000
  },
  "7694659464502185248": {
   "created": 1791552519,
@@ -4415,8 +4415,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6500,
-  "views_7d": 6500
+  "views": 6596,
+  "views_7d": 6596
  },
  "7694684963073035552": {
   "created": 1791558456,
@@ -4426,8 +4426,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1490,
-  "views_7d": 1490
+  "views": 1590,
+  "views_7d": 1590
  },
  "7694698390881324308": {
   "created": 1791561583,
@@ -4437,8 +4437,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2101,
-  "views_7d": 2101
+  "views": 2188,
+  "views_7d": 2188
  },
  "7694701244438351124": {
   "created": 1791562251,
@@ -4448,19 +4448,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 272,
-  "views_7d": 272
+  "views": 281,
+  "views_7d": 281
  },
  "7694714220482465031": {
   "created": 1791565274,
   "format": null,
   "handle": "studywithandja",
-  "hook": "",
+  "hook": "POV: God wouldn't have given you that dream for no reason ♥️",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7840,
-  "views_7d": 7840
+  "views": 8345,
+  "views_7d": 8345
  },
  "7694728627178507528": {
   "created": 1791568629,
@@ -4470,8 +4470,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 238,
-  "views_7d": 238
+  "views": 240,
+  "views_7d": 240
  },
  "7694740351424154898": {
   "created": 1791571355,
@@ -4481,8 +4481,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4332,
-  "views_7d": 4332
+  "views": 4881,
+  "views_7d": 4881
  },
  "7694744612740582663": {
   "created": 1791572348,
@@ -4492,8 +4492,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 339,
-  "views_7d": 339
+  "views": 370,
+  "views_7d": 370
  },
  "7694745835527064852": {
   "created": 1791572632,
@@ -4503,8 +4503,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 528,
-  "views_7d": 528
+  "views": 563,
+  "views_7d": 563
  },
  "7694746465016581409": {
   "created": 1791572776,
@@ -4514,19 +4514,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3160,
-  "views_7d": 3160
+  "views": 3567,
+  "views_7d": 3567
  },
  "7694747075157691668": {
   "created": 1791572921,
   "format": null,
   "handle": "learnwithmateja",
-  "hook": "",
+  "hook": "Do you open the book, read two pages, and suddenly staring at the ceiling is more interesting than studying? Comment a crying emoji if this happens to you too.",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5113,
-  "views_7d": 5113
+  "views": 5442,
+  "views_7d": 5442
  },
  "7694747415961963797": {
   "created": 1791573003,
@@ -4536,19 +4536,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 709,
-  "views_7d": 709
+  "views": 750,
+  "views_7d": 750
  },
  "7694749062603623713": {
   "created": 1791573381,
   "format": null,
   "handle": "tea_studytok",
-  "hook": "",
+  "hook": "5 types of teachers we all have",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5132,
-  "views_7d": 5132
+  "views": 5264,
+  "views_7d": 5264
  },
  "7694752304603385120": {
   "created": 1791574134,
@@ -4558,19 +4558,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2267,
-  "views_7d": 2267
+  "views": 2405,
+  "views_7d": 2405
  },
  "7694752902853823745": {
   "created": 1791574283,
   "format": null,
   "handle": "study_with_hexi",
-  "hook": "",
+  "hook": "How far did you get? Numbered 1–5 levels with on-screen text like '99.9% of you won't succeed', 'you don't follow me', 'LIE'",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5405,
-  "views_7d": 5405
+  "views": 7900,
+  "views_7d": 7900
  },
  "7694754797324438802": {
   "created": 1791574720,
@@ -4580,8 +4580,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2812,
-  "views_7d": 2812
+  "views": 4365,
+  "views_7d": 4365
  },
  "7694757057957858566": {
   "created": 1791575247,
@@ -4591,8 +4591,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 69,
-  "views_7d": 69
+  "views": 164,
+  "views_7d": 164
  },
  "7694762451065146656": {
   "created": 1791576496,
@@ -4602,19 +4602,19 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1116,
-  "views_7d": 1116
+  "views": 2336,
+  "views_7d": 2336
  },
  "7694766667355770134": {
   "created": 1791577482,
   "format": null,
   "handle": "foxara.vas.uci",
-  "hook": "",
+  "hook": "Did you win? (caption only; no speech or on-screen text)",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 10300,
-  "views_7d": 10300
+  "views": 25700,
+  "views_7d": 25700
  },
  "7694769065109507361": {
   "created": 1791578039,
@@ -4624,8 +4624,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 562,
-  "views_7d": 562
+  "views": 1065,
+  "views_7d": 1065
  },
  "7694772429494816020": {
   "created": 1791578829,
@@ -4635,8 +4635,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3230,
-  "views_7d": 3230
+  "views": 3777,
+  "views_7d": 3777
  },
  "7694775366581292320": {
   "created": 1791579507,
@@ -4646,8 +4646,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 825,
-  "views_7d": 825
+  "views": 1009,
+  "views_7d": 1009
  },
  "7694781153961708801": {
   "created": 1791580859,
@@ -4657,8 +4657,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 395,
-  "views_7d": 395
+  "views": 556,
+  "views_7d": 556
  },
  "7694788903487753473": {
   "created": 1791582664,
@@ -4668,8 +4668,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 756,
-  "views_7d": 756
+  "views": 852,
+  "views_7d": 852
  },
  "7694789457416850694": {
   "created": 1791582877,
@@ -4679,8 +4679,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2970,
-  "views_7d": 2970
+  "views": 8598,
+  "views_7d": 8598
  },
  "7694790351969717535": {
   "created": 1791583008,
@@ -4690,7 +4690,18 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 138,
-  "views_7d": 138
+  "views": 298,
+  "views_7d": 298
+ },
+ "7694810980722674965": {
+  "created": 1791587802,
+  "format": null,
+  "handle": "study.with.nataliaa",
+  "hook": "",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 390,
+  "views_7d": 390
  }
 }
