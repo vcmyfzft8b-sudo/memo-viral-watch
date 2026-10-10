@@ -154,13 +154,27 @@ def hold(fmt, reasons, kind, count_attempt=True):
     state.log({'type': 'format_held', 'format': fmt['id'], 'tries': p['tries'], 'reasons': reasons})
 
 
-def retry_pending(fmts, mkts, cfg, history, accounts, meta, page_of, set_page, make_page, rebuild, rerank):
+def retry_pending(fmts, mkts, cfg, history, accounts, meta, page_of, set_page, make_page, rebuild, rerank, workers=4):
     """Every run: formats waiting at the gate are checked again; published -> Slack, given up after MAX_TRIES."""
+    import concurrent.futures as cf
     checkpoint = lambda: (state.save('formats.json', fmts), state.save('meta.json', meta))
-    for f in [f for f in fmts if f.get('status') == 'pending' or f.get('list_repair_pending')]:
+    todo = [f for f in fmts if f.get('status') == 'pending' or f.get('list_repair_pending')]
+
+    def checked(f):  # the slow part (Claude reads, fixes and re-checks every page): several formats at the same time
+        if f.get('status') == 'active' and f.get('list_repair_pending'):
+            return True, []
+        try:
+            return check(f, mkts, cfg, history, accounts, meta, page_of, set_page, make_page, rebuild)
+        except Exception as e:
+            return None, [str(e)[:200]]
+    with cf.ThreadPoolExecutor(max(1, min(workers, len(todo) or 1))) as ex:
+        results = dict(zip([f['id'] for f in todo], ex.map(checked, todo)))
+    for f in todo:  # publishing and the list update stay one after another (they write the shared lists)
         try:
             repair = f.get('status') == 'active' and f.get('list_repair_pending')
-            ok, reasons = (True, []) if repair else check(f, mkts, cfg, history, accounts, meta, page_of, set_page, make_page, rebuild)
+            ok, reasons = results[f['id']]
+            if ok is None:
+                raise RuntimeError('; '.join(reasons))
             if ok:
                 if not repair:
                     publish(f, mkts, page_of, checkpoint)
