@@ -65,6 +65,11 @@ def load_formats():
     if formats is None:
         with open(os.path.join(ROOT, 'registry', 'formats.json')) as f:
             formats = json.load(f)
+    for f in formats:  # options of formats added by hand follow registry/hand_formats.json (edits there apply right away)
+        m = re.search(r'/video/(\d+)', f.get('source_video') or '')
+        opts = hand_options(m.group(1)) if m else {}
+        for k, x in opts.items():
+            f[k] = x
     return formats
 
 

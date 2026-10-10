@@ -187,3 +187,12 @@ def test_note_under_the_example_says_other_brand_or_own_video():
         for same in (False, True):
             for o in (False, True):
                 assert audit._note_is_same(notion.inspo_note(lang, same, o)[0], lang) == same
+
+
+def test_hand_format_options_follow_the_registry():
+    from watcher import main, state
+    fmts = [{'id': 'A1', 'source_video': 'https://www.tiktok.com/@x/video/42', 'brief': 'old'}]
+    with mock.patch.object(state, 'load', return_value=fmts), \
+            mock.patch.object(main, 'hand_options', side_effect=lambda vid: {'brief': 'new', 'only_markets': ['sl']} if vid == '42' else {}):
+        f = main.load_formats()[0]
+    assert f['brief'] == 'new' and f['only_markets'] == ['sl']

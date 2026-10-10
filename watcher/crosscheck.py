@@ -55,8 +55,8 @@ def ensure_reference(fmt, page_of, cfg):
     from its source video. Returns the reference or None (then the group stays unverified and is tried again)."""
     from . import state
     ref = reference(fmt['id'])
-    if ref:
-        return ref
+    if ref and (ref.get('brief') or '') == (fmt.get('brief') or '') or ref and 'generated' not in ref:
+        return ref  # a generated definition is rebuilt when the format's campaign note changed (reviewed ones never)
     url = fmt.get('source_video') or (fmt.get('revived') or {}).get('because')
     pid = page_of(fmt, PRIMARY)
     if not url and pid:
@@ -91,7 +91,7 @@ and numbers stay; never list them as not allowed.)"""
     if not (isinstance(r.get('beats'), list) and r['beats'] and r.get('hook') and isinstance(r.get('product'), dict)):
         return None
     ref = {**r, 'canonical_source': vid, 'accepted_sources': [vid], 'rejected_sources': {}, 'source_urls': {vid: url},
-           'generated': int(time.time())}
+           'generated': int(time.time()), **({'brief': fmt['brief']} if fmt.get('brief') else {})}
     with state.LOCK:
         generated = state.load('format_references.json', {})
         generated[fmt['id']] = ref
