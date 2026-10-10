@@ -519,5 +519,110 @@
   "source_video": "https://www.tiktok.com/@learn.with.darija/video/7688802612111510805",
   "status": "active",
   "title": "Imamo samo 2 sata za učenje? ✂️"
+ },
+ {
+  "app_link": "https://www.memoai.eu/ugc/oral-quiz",
+  "brief": "The original promotes another app's oral quiz page (Turbo AI). Our version uses Memo AI's oral quiz page https://www.memoai.eu/ugc/oral-quiz: the creator opens it on a laptop, picks their language and presses play - it plays a short spoken quiz dialogue (two voices) with the text on screen. The creator does NOT say these lines: exactly like the original, they film their own embarrassed / laughing reaction while the quiz audio plays, then turn the camera to the laptop screen with the quiz. The script is the dialogue that plays from that page - use the page's own wording for the page language (Slovenian page: the Slovenian version below; Serbo-Croatian page: the Croatian version below - creators can also pick Bosnian or Serbian on the page), for the same lines the original plays (if the original stops mid-way, stop at the same point). Put cue 'memo' where the laptop with the oral quiz is shown. The quiz dialogue names no app, so the spoken script does not name Memo AI either. 'DICK' is the medical mnemonic (dextrose, insulin, calcium, Kayexalate) and the joke of the format - keep it. SLOVENIAN: 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' / 'Seveda samo s privolitvijo.' / 'Pacientka je nezavestna. Privolitve ne more dati.' / 'Potem ji moraš DICK vseeno dati.' / 'Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.' / 'Dati jih moraš v tem vrstnem redu, in sicer takole. Dekstroza gre najprej kot IV bolus, da insulin ne zniža preveč krvnega sladkorja. Insulin gre IV takoj za njo in v približno petnajstih minutah potisne kalij v celice. Kalcijev glukonat daš IV v nekaj minutah, da zaščitiš srce pred aritmijo, medtem ko kalij pada. Kayexalate pride zadnji, skozi usta ali rektalno, da odvečni kalij za vedno odstrani iz telesa.' CROATIAN: 'Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?' / 'Pa naravno, samo uz pristanak.' / 'Pacijentica je bez svijesti. Ne može dati pristanak.' / 'Onda joj DICK moraš dati svejedno.' / 'Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.' / 'Moraš ih dati tim redoslijedom, i to ovako. Dekstroza ide prva kao IV bolus, da inzulin ne sruši šećer u krvi. Inzulin ide IV odmah za njom i za otprilike petnaest minuta potiskuje kalij u stanice. Kalcijev glukonat daješ IV kroz nekoliko minuta da zaštitiš srce od aritmije dok kalij pada. Kayexalate ide zadnji, na usta ili rektalno, da zauvijek izbaci višak kalija iz tijela.'",
+  "created": 1791668557,
+  "description": "Creator films their own embarrassed, laughing reaction to an AI oral-quiz page playing an awkward double-entendre medical mnemonic dialogue, then turns the camera to the laptop screen showing the quiz.",
+  "id": "A20261010214237",
+  "page_id": "3f565e84-a3c2-81a7-a074-c1dff1489259",
+  "pages": {
+   "sl": "3f565e84-a3c2-8158-aa07-fd81fb00a741"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: format_consistency sh: The creator speaks two lines ('Oh.' and 'Znači, bez njenog pristanka?'), with stage directions 'Ti kažeš' and a lean-in to the camera. The reference requires a silent reaction while only the quiz audio plays, and lists the creator speaking as not allowed.; faithful_translation"
+   ],
+   "since": 1791669170,
+   "tries": 1
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati? Pa naravno, samo uz pristanak. Pacijentica je bez svijesti. Ne može dati pristanak. Oh. Onda joj DICK moraš dati svejedno. Bez pristanka? Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate. Oh. Moraš ih dati tim redoslijedom, i to ovako. Dekstroza ide prva kao IV bolus, da inzulin ne sruši šećer u krvi.",
+  "source_video": "https://www.tiktok.com/@nicole.lockedin/video/7685932867339209998",
+  "status": "pending",
+  "title": "Nisam stvorena za sestrinstvo 😳"
+ },
+ {
+  "created": 1791669209,
+  "description": "Casual 'get ready with me' style talking-head video where the creator gives a numbered list of school study tips while doing makeup, with the study app shown briefly as the favourite tool in tip one.",
+  "id": "A20261010215329",
+  "listed_at": 1791669325,
+  "only_markets": [
+   "sl"
+  ],
+  "own_brand": true,
+  "pages": {
+   "sl": "3f565e84-a3c2-819d-b4f4-c5221cf35b40"
+  },
+  "script": "Vsi vemo, da je 8. razred eden izmed najtežjih razredov. Zdaj ti povem par nasvetov, kako se boš letos učil, da boš imel dobre ocene. Prvi nasvet je: pozabi na branje svojih zapiskov. Zaradi tega, ker imaš zdaj toliko aplikacij, ki te same berejo. Tale je moja najljubša, ker ti sama prebere zapiske, potem ti iz teh zapiskov naredi flashcarde, teste, kvize. Na tak način se res lahko ful v easy naučiš snov, pa tudi ne vzame ti toliko veliko časa, kot bi ti, če bi samo bral zapiske. Drugi nasvet je, da medtem ko se učiš, delaš z eno roko osmice na list papirja. To sem že rekla v drugih videih, ker se mi pač res zdi, da deluje. Potem tretji nasvet je pa, da v šoli, ko si delaš na primer zapiske pa to, da si že tam podčrtaš te stavke, ki jih je učiteljica še posebej poudarila. Shranite si nujno tale video in upam, da si kaj pomagate s tem.",
+  "source_video": "https://www.tiktok.com/@school.hacks.byklara/video/7681308323064368406",
+  "status": "active",
+  "title": "3 nasveti za dobre ocene v 8. razredu 📚"
+ },
+ {
+  "created": 1791669343,
+  "description": "Talking-head before/after where the creator shows her messy handwritten university notes, says a friend showed her an app, then holds up a tablet with the AI-generated notes and ends with 'save this video'.",
+  "id": "A20261010215543",
+  "listed_at": 1791669437,
+  "only_markets": [
+   "sl"
+  ],
+  "own_brand": true,
+  "pages": {
+   "sl": "3f565e84-a3c2-81ed-97db-f512256a519e"
+  },
+  "script": "Takole so zgledali moji zapiski: 1. letnik faksa. Zgledajo grozno. Površni so, pa tako pol stvari manjka. Potem mi je pa moja frendica pokazala metodo, kako ona dela zapiske, in so pač res perfektni, pa še zraven lahko lepo posluša pri pouku. Ona uporablja tole aplikacijo, ki ti basically naredi tako perfektne zapiske, pač, glejte to. In samo, tako da daš slike, vse, ti poudari pomembne stvari. Tako da ja, pač, zdaj so moji zapiski perfektni. Zraven pa lahko pač sledim še bolj zbrano pri pouku, zaradi tega, ker mi ni treba se zraven ubadati še s pisanjem. Tako da, shranite si nujno tale video.",
+  "source_video": "https://www.tiktok.com/@school.hacks.byklara/video/7694637898045426966",
+  "status": "active",
+  "title": "Moji zapiski so zdaj perfektni ✨"
+ },
+ {
+  "created": 1791669464,
+  "description": "Get-ready-with-me talking-head list of 'high school phases you need to skip' while doing makeup, with the study app slipped in as the advice for one phase and shown only as a logo sticker.",
+  "id": "A20261010215744",
+  "listed_at": 1791669667,
+  "only_markets": [
+   "sl"
+  ],
+  "own_brand": true,
+  "pages": {
+   "sl": "3f565e84-a3c2-817f-af1e-dbcc97fe5d10"
+  },
+  "reworded": {
+   "sl": true
+  },
+  "script": "To so faze srednje šole, ki jih morate skipat, tako, nujno. Prva faza je dejtanje svojih sošolcev – ne, dejtanje svojih sošolk, sošolcev, ker če slučajno gre kaj narobe, ker probably bo, se boste morali gledat še vsa 4 leta, vsak dan, heh. Druga faza, ki jo morate skipat, je prekomerno uporabljanje ChatGPT-ja pa Geminija v šoli, zato ker vsi profesorji že vejo za ChatGPT, okej, pač res vejo, in enim res ni všeč. Bolj bi vam priporočala tale app, ker te v bistvu dejansko dobro nauči snov; noter imaš tudi inštruktorja, lahko narediš flashcarde, teste, kvize, potem lahko noter pišeš probne teste, ki ti jih še oceni, pač na tak način, da se pač zraven še učiš, kar je crazy, dela ti v bistvu tudi miselne vzorce, bere ti zapiske, imaš podcaste, pač dobesedno imaš vse. Naslednja faza, ki jo moraš skipat, je, da koga buliš, pač, ne bulijaj, pač nismo več osnovna šola, a veš, kaj mislim. Tako da ",
+  "source_video": "https://www.tiktok.com/@school.hacks.byklara/video/7689133868242177302",
+  "status": "active",
+  "title": "Faze srednje šole, ki jih MORAŠ skipat ⚠️"
+ },
+ {
+  "created": 1791669727,
+  "description": "Fortune-teller style talking video by candlelight where the creator 'reads the future' from handwritten paper cards held over a candle (grade 5, study method, app name), ending with a discount code.",
+  "id": "A20261010220207",
+  "only_markets": [
+   "sl"
+  ],
+  "own_brand": true,
+  "pages": {
+   "sl": "3f565e84-a3c2-8163-886b-cbc5d4c74674"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: format_consistency sl: In beat 3 the stage directions only give the [CUE] marker. They never tell the creator to hold up a handwritten card that says 'Memo AI' over the candle, which the reference requires. Add '(nov listek z napisom Memo AI nad svečo)' before the line."
+   ],
+   "since": 1791669870,
+   "tries": 1
+  },
+  "script": "Diva, vidim same petke v tem šolskem letu zate. Diva, samo uporabi active recall metodo. Memo AI ti sam dela zapiske brez tebe, diva, zraven pa še flashcarde in teste, diva. Pa z mojo kodo [TVOJA KODA] maš X % popusta, diva.",
+  "source_video": "https://www.tiktok.com/@spelcaa41/video/7688806667072474391",
+  "status": "pending",
+  "title": "Diva, vidim same petke zate 🔮"
  }
 ]

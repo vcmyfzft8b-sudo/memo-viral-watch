@@ -1989,5 +1989,354 @@
   ],
   "ts": 1791665742,
   "type": "rerank"
+ },
+ {
+  "format": "A20261010214237",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The creator speaks two lines ('Oh.' and 'Znači, bez njenog pristanka?'), with stage directions 'Ti kažeš' and a lean-in to the camera. The reference requires a silent reaction while only the quiz audio plays, and lists the creator speaking as not allowed.; faithful_translation"
+  ],
+  "tries": 1,
+  "ts": 1791669170,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010214237",
+  "page_de": "3f565e84-a3c2-81a7-a074-c1dff1489259",
+  "pages": {
+   "sl": "3f565e84-a3c2-8158-aa07-fd81fb00a741"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sh: The creator speaks two lines ('Oh.' and 'Znači, bez njenog pristanka?'), with stage directions 'Ti kažeš' and a lean-in to the camera. The reference requires a silent reaction while only the quiz audio plays, and lists the creator speaking as not allowed.; faithful_translation"
+  ],
+  "ts": 1791669170,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010214237",
+  "format": "A20261010214237",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sh: The creator speaks two lines ('Oh.' and 'Znači, bez njenog pristanka?'), with stage directions 'Ti kažeš' and a lean-in to the camera. The reference requires a silent reaction while only the quiz audio plays, and lists the creator speaking as not allowed.; faithful_translation"
+  ],
+  "ts": 1791669171,
+  "type": "alert",
+  "video": "7685932867339209998",
+  "views": 910100
+ },
+ {
+  "format": "A20261009014121",
+  "level": "viral",
+  "ts": 1791669189,
+  "type": "alert",
+  "video": "7690627181776620822",
+  "views": 54800
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791669190,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791669325,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010215329",
+  "page_de": null,
+  "pages": {
+   "sl": "3f565e84-a3c2-819d-b4f4-c5221cf35b40"
+  },
+  "position": 12,
+  "problems": [],
+  "ts": 1791669325,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010215329",
+  "format": "A20261010215329",
+  "level": "viral",
+  "position": 12,
+  "problems": [],
+  "ts": 1791669325,
+  "type": "alert",
+  "video": "7681308323064368406",
+  "views": 50900
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261009015525",
+   "A20261009014121"
+  ],
+  "ts": 1791669326,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261009015525",
+   "A20261010215543",
+   "A20261009014121"
+  ],
+  "ts": 1791669437,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010215543",
+  "page_de": null,
+  "pages": {
+   "sl": "3f565e84-a3c2-81ed-97db-f512256a519e"
+  },
+  "position": 14,
+  "problems": [],
+  "ts": 1791669437,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010215543",
+  "format": "A20261010215543",
+  "level": "viral",
+  "position": 14,
+  "problems": [],
+  "ts": 1791669440,
+  "type": "alert",
+  "video": "7694637898045426966",
+  "views": 1791
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261009015525",
+   "A20261010215543",
+   "A20261009014121"
+  ],
+  "ts": 1791669441,
+  "type": "rerank"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261010215744",
+   "A20261009015525",
+   "A20261010215543",
+   "A20261009014121"
+  ],
+  "ts": 1791669667,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010215744",
+  "page_de": null,
+  "pages": {
+   "sl": "3f565e84-a3c2-817f-af1e-dbcc97fe5d10"
+  },
+  "position": 13,
+  "problems": [],
+  "ts": 1791669667,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010215744",
+  "format": "A20261010215744",
+  "level": "viral",
+  "position": 13,
+  "problems": [],
+  "ts": 1791669668,
+  "type": "alert",
+  "video": "7689133868242177302",
+  "views": 11600
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261010215744",
+   "A20261009015525",
+   "A20261010215543",
+   "A20261009014121"
+  ],
+  "ts": 1791669669,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010161437",
+  "level": "viral",
+  "ts": 1791669695,
+  "type": "alert",
+  "video": "7689520427110092054",
+  "views": 32400
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261008231529",
+   "A20261010161437",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261010215744",
+   "A20261009015525",
+   "A20261010215543",
+   "A20261009014121"
+  ],
+  "ts": 1791669714,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261010220207",
+  "reasons": [
+   "cross-country check fail: format_consistency sl: In beat 3 the stage directions only give the [CUE] marker. They never tell the creator to hold up a handwritten card that says 'Memo AI' over the candle, which the reference requires. Add '(nov listek z napisom Memo AI nad svečo)' before the line."
+  ],
+  "tries": 1,
+  "ts": 1791669870,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010220207",
+  "page_de": null,
+  "pages": {
+   "sl": "3f565e84-a3c2-8163-886b-cbc5d4c74674"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sl: In beat 3 the stage directions only give the [CUE] marker. They never tell the creator to hold up a handwritten card that says 'Memo AI' over the candle, which the reference requires. Add '(nov listek z napisom Memo AI nad svečo)' before the line."
+  ],
+  "ts": 1791669870,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261010220207",
+  "format": "A20261010220207",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sl: In beat 3 the stage directions only give the [CUE] marker. They never tell the creator to hold up a handwritten card that says 'Memo AI' over the candle, which the reference requires. Add '(nov listek z napisom Memo AI nad svečo)' before the line."
+  ],
+  "ts": 1791669871,
+  "type": "alert",
+  "video": "7688806667072474391",
+  "views": 16600
+ },
+ {
+  "format": "A20261008210957",
+  "level": "viral",
+  "ts": 1791669894,
+  "type": "alert",
+  "video": "7691761923930524950",
+  "views": 12000
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261010162026",
+   "A20261008231529",
+   "A20261010161437",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261010215744",
+   "A20261009015525",
+   "A20261010215543",
+   "A20261009014121"
+  ],
+  "ts": 1791669896,
+  "type": "rerank"
  }
 ]

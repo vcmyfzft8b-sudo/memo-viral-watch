@@ -836,5 +836,254 @@
    "7688802612111510805": "https://www.tiktok.com/@learn.with.darija/video/7688802612111510805"
   },
   "title_en": "Only 2 hours to study? ✂️ – Cutting up a paper strip of the day's 24 hours, then a study-app demo"
+ },
+ "A20261010214237": {
+  "accepted_sources": [
+   "7685932867339209998"
+  ],
+  "allowed_localisation": [
+   "Page language: Slovenian page for Slovenia, using the Slovenian lines as given. Serbo-Croatian page using the Croatian lines as given ('Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?' / 'Pa naravno, samo uz pristanak.' / 'Pacijentica je bez svijesti. Ne može dati pristanak.' / 'Onda joj DICK moraš dati svejedno.' / 'Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.' / 'Moraš ih dati tim redoslijedom, i to ovako.'). The creator may also pick Bosnian or Serbian on the page and use that page's own wording.",
+   "On-screen caption text translated into the local language, keeping the meaning 'I'm not made for nursing 😳' (or 'for medicine').",
+   "Creator's look, room, desk setup, laptop model and natural reaction style (giggling, face-covering, head-shaking).",
+   "Exact clip length within 7–15 s and the exact moment of the camera turn, as long as the laptop is shown by the line 'in sicer takole' / 'i to ovako'."
+  ],
+  "beats": [
+   "Selfie close-up of the creator at a desk with the laptop off-camera. The quiz audio plays line 1: 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' The creator's eyes widen and a hand goes to their mouth.",
+   "Audio line 2: 'Seveda samo s privolitvijo.' The creator nods awkwardly and starts to smile.",
+   "Audio line 3: 'Pacientka je nezavestna. Privolitve ne more dati.' The creator cringes, laughs and looks away from the camera.",
+   "Audio line 4: 'Potem ji moraš DICK vseeno dati.' The creator reacts the hardest: covers their face, laughs and shakes their head in disbelief.",
+   "Audio line 5: 'Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.' The creator shows relief and still laughs, as if to say 'oh, it's the mnemonic'.",
+   "[memo] Audio line 6: 'Dati jih moraš v tem vrstnem redu, in sicer takole.' The creator turns the camera to the laptop screen. Memo AI's oral quiz page (memoai.eu/ugc/oral-quiz) fills the frame, with the dialogue text on screen and the quiz playing. The video cuts off right after 'in sicer takole', exactly where the original stops ('And the way to do it is this—')."
+  ],
+  "canonical_source": "7685932867339209998",
+  "filming": "7–15 seconds, vertical 9:16, handheld phone, one continuous take or at most two cuts. Shot 1: front-camera selfie close-up of the creator at a desk or in bed with a study setup. The creator does not speak. The only audio is the quiz dialogue played aloud from the laptop speakers and recorded live, with the creator's natural laughing reactions. Shot 2: the camera swings or turns to the laptop screen showing Memo AI's oral quiz page at https://www.memoai.eu/ugc/oral-quiz. Before filming, the creator has opened the page, picked their language (Slovenian, or Croatian/Bosnian/Serbian) and pressed play. The page plays two voices with the text on screen. The video stops at the line 'Dati jih moraš v tem vrstnem redu, in sicer takole.' / 'Moraš ih dati tim redoslijedom, i to ovako.' The rest of the explanation is not included. The on-screen caption is the format title, e.g. 'Nisam stvorena za sestrinstvo 😳' (SI: 'Nisem ustvarjena za zdravstveno nego 😳'). There is no voiceover and no brand text overlay.",
+  "generated": 1791668689,
+  "hook": "From the first second, the quiz voice plays 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' (HR/BS/SR page: 'Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?') over a close-up selfie shot of the creator, who is already blushing and covering their mouth.",
+  "not_allowed": [
+   "The creator speaking or lip-syncing the quiz lines instead of filming a silent reaction while the audio plays from the laptop.",
+   "Using any audio other than the dialogue from Memo AI's oral quiz page, or rewriting its lines.",
+   "Continuing past 'in sicer takole' / 'i to ovako' into the full dosing explanation, or ending before the mnemonic reveal.",
+   "Leaving out the final camera turn to the laptop showing the oral quiz page.",
+   "Adding a spoken or voiceover brand mention, a spoken URL, a CTA or a feature walkthrough.",
+   "Showing or naming Astra AI, Turbo AI, Studyflash or any other app.",
+   "Claiming or showing features Memo AI does not have (snap-and-solve, homework grading, photos in chat, PDF export, pasting text, Android store app).",
+   "Turning it into a talking-head explainer, a tutorial or a before/after study-results video instead of a reaction clip."
+  ],
+  "premise": "A nursing or medical student is quizzing themselves with an AI oral quiz. The two-voice dialogue plays the hyperkalemia mnemonic DICK (dextrose, insulin, calcium, Kayexalate) as an awkward double entendre. The creator films their own embarrassed, laughing reaction and says nothing. At the end they turn the camera to the laptop to show it really is a study quiz. The joke is that the innocent medical mnemonic sounds filthy until the last line reveals it.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "Spoken quiz on Memo AI's oral quiz page (memoai.eu/ugc/oral-quiz): a two-voice question-and-answer dialogue with the text on screen, in Slovenian, Croatian, Bosnian or Serbian"
+   ],
+   "introduced_at_beat": 6,
+   "spoken_brand": "not spoken – Memo AI is only shown on the laptop screen (oral quiz page on memoai.eu) in the final shot"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7685932867339209998": "https://www.tiktok.com/@nicole.lockedin/video/7685932867339209998"
+  },
+  "title_en": "I'm not made for nursing 😳 – embarrassed reaction to the DICK mnemonic oral quiz"
+ },
+ "A20261010215329": {
+  "accepted_sources": [
+   "7681308323064368406"
+  ],
+  "allowed_localisation": [
+   "Language and dialect of the speech and on-screen text (Slovenian, Croatian, Bosnian, Serbian)",
+   "Grade naming if the local school system differs (e.g. '8. razred' kept, or the local equivalent final primary-school grade)",
+   "Natural local slang and filler words (e.g. 'ful v easy' becomes the local equivalent)",
+   "The creator, setting, makeup products and outfit",
+   "The app UI language in the demo, and which material appears in the demo note (a local school subject)",
+   "Small wording changes to keep the speech natural, as long as every claim and tip stays the same"
+  ],
+  "beats": [
+   "1. Hook (makeup in progress, looking at the camera): 8th grade is one of the hardest grades, so here are a few tips for studying this year and getting good grades.",
+   "2. Tip one: forget reading your own notes, because now there are lots of apps that read them for you. 'This one is my favourite' (Memo AI shown briefly on the phone): it reads your notes out loud, then turns those notes into flashcards, tests and quizzes. That way you really learn the material super easily, and it takes less time than just reading your notes.",
+   "3. Tip two: while you study, draw figure eights on a sheet of paper with one hand. 'I've said this in other videos too, because I really think it works.'",
+   "4. Tip three: in class, when you're taking notes, underline right away the sentences the teacher especially stressed.",
+   "5. Outro/CTA: 'Definitely save this video, and I hope it helps you.'"
+  ],
+  "canonical_source": "7681308323064368406",
+  "filming": "About 40-50 s, vertical 9:16, one continuous selfie-style talking-head shot of the creator at a mirror or desk doing makeup (foundation, mascara and so on) and talking casually to the camera. There are no jump-cut sets and no voiceover. Demo sequence, only in tip one, about 3-5 s: the creator holds up the phone, or a quick cut-in shows the screen. A note made from photographed or uploaded notes appears, then read-aloud playing, then the Flashcards, Quiz and Practice test tabs. Cut out any waiting while the note is being made. Then straight back to makeup. Optional on-screen text: the title plus 'Nasvet 1 / 2 / 3' labels.",
+  "generated": 1791669260,
+  "hook": "Talking head while doing makeup: \"Everyone knows 8th grade is one of the hardest grades. Now I'll give you a few tips on how to study this year so you get good grades.\" The on-screen title is '3 nasveti za dobre ocene v 8. razredu 📚' or its local translation.",
+  "not_allowed": [
+   "Dropping the GRWM/makeup talking-head framing or turning it into a screen-recording tutorial",
+   "Changing the number of tips or their order, or replacing tips two and three with other tips",
+   "Making the app the subject of the whole video or adding an app CTA/URL in place of 'save this video'",
+   "Moving the app to a tip other than tip one, or showing it for longer than a brief demo",
+   "Showing or naming Astra AI or any other study app, or features Memo AI does not have (snap-and-solve, homework grading, photos in chat, PDF export, pasting text, a store Android app)",
+   "Adding a voiceover, skits or multiple characters"
+  ],
+  "premise": "A casual 'get ready with me' video. A schoolgirl does her makeup and casually gives a numbered list of 3 study tips for 8th grade. Tip one is to stop reading your notes yourself and let an app do it, and she briefly shows Memo AI as her favourite. Tips two and three are low-tech study hacks. She ends by telling viewers to save the video.",
+  "product": {
+   "cta": "Save this video (no app CTA)",
+   "features_used": [
+    "scan/upload photos of notes or upload a file to create a note",
+    "read-aloud",
+    "flashcards",
+    "quiz with explanations",
+    "graded practice test"
+   ],
+   "introduced_at_beat": 2,
+   "spoken_brand": "not spoken (only 'this one is my favourite', and the app is shown on screen)"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7681308323064368406": "https://www.tiktok.com/@school.hacks.byklara/video/7681308323064368406"
+  },
+  "title_en": "3 tips for good grades in 8th grade 📚 (GRWM-style study tips)"
+ },
+ "A20261010215543": {
+  "accepted_sources": [
+   "7694637898045426966"
+  ],
+  "allowed_localisation": [
+   "Language of the script (Slovenian, Croatian, Bosnian, Serbian), translated almost one to one, with local student slang equivalents of 'faks', 'frendica', 'pač', 'basically'",
+   "Creator's look, room and setting",
+   "Subject and content of the handwritten notes and of the Memo AI note on the tablet, in the local language",
+   "Device showing the note (tablet, or laptop/phone if no tablet)",
+   "Caption/title wording and hashtags in the local language; memoai.eu in the caption",
+   "Name of the year of study / local word for university"
+  ],
+  "beats": [
+   "BEFORE / hook: she holds her messy handwritten first-year notes up to the camera and says they look awful, sloppy and half the content is missing.",
+   "Friend reveal: her friend showed her the method she uses for notes. They're really perfect, and she can also listen properly in class.",
+   "Product reveal: 'Ona uporablja tole aplikacijo' (Memo AI). She holds up a tablet with the Memo AI note on screen and says it basically makes perfect notes for you. 'Glejte to.'",
+   "Feature mention: she points at the note on the tablet: you can add photos, and it puts the important parts front and center (the original's highlights claim stays word for word).",
+   "AFTER / payoff: so now her notes are perfect, and she can follow the lecture with more focus because she doesn't have to bother writing at the same time.",
+   "CTA: 'Tako da, shranite si nujno tale video.'"
+  ],
+  "canonical_source": "7694637898045426966",
+  "filming": "About 25–35 s, vertical 9:16, one continuous selfie talking-head shot in a casual indoor setting (room or desk), natural light, direct to camera, informal spoken language with fillers like 'pač' and 'basically'. Shot 1 (0–6 s): she holds the messy handwritten notebook pages close to the lens. Shot 2 (6–14 s): talking head telling the friend story. Shot 3 (14–25 s): she holds a tablet to the camera showing a finished Memo AI note (headings, structured text, formulas shown properly) and may scroll a little. Optional quick insert: adding photos of notes or recording a lecture in Memo AI, then cut straight to the finished note with no waiting shown. Shot 4 (25–end): talking head with the tablet still visible, then the save-this-video CTA. On-screen text is optional; the title text 'Moji zapiski so zdaj perfektni ✨' may be shown as a caption.",
+  "generated": 1791669393,
+  "hook": "Creator on camera holds up her messy handwritten first-year university notes: 'Takole so zgledali moji zapiski: 1. letnik faksa. Zgledajo grozno.'",
+  "not_allowed": [
+   "Dropping the before/after structure (messy handwritten notes first, then the AI note on a screen)",
+   "Removing the friend-recommendation story or replacing it with the creator finding the app herself or a direct ad read",
+   "Turning it into a screen-recording tutorial or voice-over without the creator on camera",
+   "Changing the CTA from 'save this video' to something else (e.g. a download/link-in-bio push as the main CTA)",
+   "Showing or claiming features Memo AI doesn't have (snap-and-solve answers, homework grading, PDF export, photos in chat, pasted text, Play Store Android app)",
+   "Mentioning or showing Astra AI or any other app (Studyflash, Turbo AI)",
+   "Showing long loading/waiting screens",
+   "Adding extra product sections (quiz, podcast, voice tutor demo) that make the video a feature showcase instead of a note-taking before/after"
+  ],
+  "premise": "Talking-head before/after testimonial. A university student admits her handwritten notes were sloppy and half-empty. A friend showed her how she takes notes: she uses Memo AI, which makes perfect notes for her so she can listen in class. The creator shows the result on a tablet and tells viewers to save the video.",
+  "product": {
+   "cta": "Save this video ('shranite si nujno tale video')",
+   "features_used": [
+    "Upload up to 10 photos (in-app Scan camera or gallery) of notes/textbook pages to make notes",
+    "Record a lecture in class and turn it into notes",
+    "Structured notes (formulas shown properly)"
+   ],
+   "introduced_at_beat": 3,
+   "spoken_brand": "Not spoken in the original, which only says 'tole aplikacijo'. The Memo AI name and UI are shown on the tablet screen. The brand or memoai.eu may go in the caption or an on-screen sticker only."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7694637898045426966": "https://www.tiktok.com/@school.hacks.byklara/video/7694637898045426966"
+  },
+  "title_en": "My notes are perfect now ✨"
+ },
+ "A20261010215744": {
+  "accepted_sources": [
+   "7689133868242177302"
+  ],
+  "allowed_localisation": [
+   "Language and local slang of the country (Slovenian, Croatian, Bosnian, Serbian), translated almost one to one",
+   "School-system wording (e.g. srednja škola / gimnazija, '4 leta/godine')",
+   "The creator's look, setting and makeup products",
+   "Caption and title styling, sticker placement and size",
+   "Small filler words and the speaker's natural speech rhythm"
+  ],
+  "beats": [
+   "1. Hook (makeup in progress, talking head): \"To so faze srednje šole, ki jih morate skipat, tako, nujno.\"",
+   "2. Phase 1, dating your classmates: \"Prva faza je dejtanje svojih sošolcev, ker če slučajno gre kaj narobe, ker probably bo, se bo treba gledat še vsa 4 leta, vsak dan, heh.\" She keeps applying makeup throughout.",
+   "3. Phase 2, overusing ChatGPT and Gemini at school: \"Druga faza, ki jo rabite skipat, je prekomerno uporabljanje ChatGPT-ja pa Gemini-ja v šoli, zaradi tega, ker vse učiteljice vejo že za ChatGPT, okej, pač res vejo, in jim res ni všeč.\"",
+   "4. Product pivot inside phase 2 (the Memo AI logo sticker appears next to her face): \"Bolj vam bi priporočala tale app, ker te v bistvu dejansko dobro nauči snov; noter imaš tudi glasovnega inštruktorja, znaš narediti flashcarde, teste, kvize z razlagami, pač na tak način, da se pač zraven še učiš, kar je crazy, dela ti v bistvu tudi miselne vzorce, bere ti zapiske, imaš podcaste, pač dobesedno imaš vse.\" The original's 'igraš igrice noter' (games) becomes quizzes with explanations, because Memo AI has no games.",
+   "5. Phase 3, bullying: \"Naslednja faza, ki jo rabiš skipat, je, da koga buliš, pač tako, ne bodi bully, pač nismo osnovna šola več, a veš, kaj mislim.\"",
+   "6. Wrap-up: \"Tako da ja, to so faze srednje šole, ki jih rabite nujno skipat.\" She finishes the look."
+  ],
+  "canonical_source": "7689133868242177302",
+  "filming": "About 45–60 s, vertical 9:16, one continuous or lightly jump-cut selfie take of a GRWM at a mirror or desk with makeup products (foundation, concealer, mascara, lip). The voice is natural and casual. The title text stays on screen the whole time. There is no screen recording and no app demo: the only product visual is a Memo AI logo sticker placed next to her during beat 4, from the start of the recommendation to the end of the feature list. Optional small on-screen captions or phase numbers ('1.', '2.', '3.').",
+  "generated": 1791669522,
+  "hook": "While doing her makeup to camera, the creator opens with: \"To so faze srednje šole, ki jih morate skipat, tako, nujno.\" On-screen title: \"Faze srednje šole, ki jih MORAŠ skipat ⚠️\".",
+  "not_allowed": [
+   "Saying the brand name or URL aloud, or adding a spoken or on-screen CTA",
+   "Replacing the logo sticker with a screen recording or app demo",
+   "Dropping the GRWM makeup activity or the talking-head format",
+   "Changing the list structure (three phases, with the app inside the ChatGPT/Gemini phase) or moving the app to another phase",
+   "Naming Astra AI or any other study app (Studyflash, Turbo AI)",
+   "Claiming features Memo AI lacks (games, snap-and-solve, homework grading, PDF export, Android store app)",
+   "Turning it into an ad-style or scripted product review"
+  ],
+  "premise": "A high-school girl does a get-ready-with-me makeup routine while talking straight to camera. She goes through a short list of high school 'phases' you need to skip, in a big-sister tone with light jokes. The phase about overusing ChatGPT and Gemini at school turns into a soft recommendation for 'tale app' (Memo AI). The app shows up only as a logo sticker, and its name is never said.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "voice tutor that explains the material out loud",
+    "flashcards",
+    "graded practice test",
+    "quiz with explanations",
+    "mind map",
+    "read-aloud of notes",
+    "podcast"
+   ],
+   "introduced_at_beat": 4,
+   "spoken_brand": "not spoken (she says 'tale app'; the brand is shown only as a Memo AI logo sticker)"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7689133868242177302": "https://www.tiktok.com/@school.hacks.byklara/video/7689133868242177302"
+  },
+  "title_en": "High school phases you HAVE to skip ⚠️ (GRWM list)"
+ },
+ "A20261010220207": {
+  "accepted_sources": [
+   "7688806667072474391"
+  ],
+  "allowed_localisation": [
+   "Language of the speech and on-screen text (Slovenian, Croatian, Bosnian, Serbian), translated almost word for word",
+   "The local word for the top grade and its number in the local grading system (e.g. 5 / petica in SI, HR, BA, RS)",
+   "The local spelling of 'diva', or the local equivalent of that address",
+   "The creator's name inside the discount code (keeping the 50 and the 50% off)",
+   "The creator, room, candle styling and card handwriting",
+   "Subtitle font and placement"
+  ],
+  "beats": [
+   "1. Prophecy of the grade: the creator holds the first handwritten card (the grade 5) over the candle and says 'Diva, I see only 5s for you this school year.' The on-screen text repeats the line.",
+   "2. The method: the next card names the study method and the creator says 'Diva, just use the active recall method.'",
+   "3. The app: the next card shows the app name and the creator says 'Memo AI makes your notes for you, without you, diva, plus flashcards and tests, diva.'",
+   "4. The discount: the last card shows the code and the creator says 'And with my code [NAME]50 you get 50% off, diva.'"
+  ],
+  "canonical_source": "7688806667072474391",
+  "filming": "About 10-15 seconds, vertical 9:16, one continuous or lightly cut selfie-style talking shot in a dark room lit only by one or more candles in the foreground. Moody, mystical framing with the creator's face lit warmly by the candle. For each beat the creator lifts a small handwritten paper card (grade 5 / 'active recall' / 'Memo AI' / code) and holds it above or next to the flame, close to the lens, then lowers it for the next one. No screen recording of the app is needed. If a demo is added, a brief 1-2 second insert of a Memo AI note turning into flashcards and a test is the most it can be. The words are spoken slowly in a mysterious, deadpan fortune-teller voice. Big white subtitles split into short chunks follow the speech.",
+  "generated": 1791669790,
+  "hook": "Lit by a candle like a fortune teller, the creator holds a handwritten paper card over the flame and says: 'Diva, I see only 5s (top grades) for you this school year.'",
+  "not_allowed": [
+   "Dropping the fortune-teller / candlelight card-reading setup (e.g. a plain talking head, a desk vlog or a screen recording as the main visual)",
+   "Taking out the repeated 'diva' address at the end of each line",
+   "Changing the order of the prophecies (grade → method → app → code)",
+   "Swapping the handwritten cards over the candle for digital graphics only",
+   "Ending without the discount code",
+   "Naming Astra AI or any other app, or giving Memo AI features it does not have (snap and solve, homework checking, Android store app, PDF export)",
+   "Turning it into a long tutorial or a feature walkthrough"
+  ],
+  "premise": "The creator plays a mystic fortune teller who 'reads the viewer's future' from handwritten paper cards held over a candle. Each card shows one prophecy: top grades, the study method that gets them (active recall), the app that does the work (Memo AI) and finally a discount code. Every line ends with the address 'Diva'. The fortune-teller act is a playful way to present study advice and an app promo.",
+  "product": {
+   "cta": "Use my code [CREATORNAME]50 for 50% off Memo AI",
+   "features_used": [
+    "AI-generated notes from your material",
+    "Flashcards",
+    "Practice tests / quizzes"
+   ],
+   "introduced_at_beat": 3,
+   "spoken_brand": "Beat 3: 'Memo AI ti sam dela zapiske brez tebe' ('Memo AI makes your notes for you, without you'). The name is also written on a handwritten card held over the candle. No URL is spoken."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7688806667072474391": "https://www.tiktok.com/@spelcaa41/video/7688806667072474391"
+  },
+  "title_en": "Diva, I see only straight A's for you 🔮: candlelit fortune-teller card reading"
  }
 }

@@ -15,7 +15,13 @@
   "A20261010162928:sh": "fixed",
   "A20261010162928:sl": "ok",
   "A20261010163838:sh": "ok",
-  "A20261010163838:sl": "ok"
+  "A20261010163838:sl": "ok",
+  "A20261010214237:sh": "fixed",
+  "A20261010214237:sl": "fixed",
+  "A20261010215329:sl": "ok",
+  "A20261010215543:sl": "ok",
+  "A20261010215744:sl": "fixed",
+  "A20261010220207:sl": "ok"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "88369e6451f1c19c82ee59e33a628847609fb9f598abd93b957410be4c23380b",
@@ -31,7 +37,13 @@
   "A20261010162928:sh": "ef64cf7324e328b0e8445e9dc5db497e29e70a2c27c48f0e2029684910db70d4",
   "A20261010162928:sl": "8f09c654bce2dd29e102a29b6b0714d62e12709bdbb02856f4c86e712f680599",
   "A20261010163838:sh": "3d5371b22f0210793c94eca3c5f291cc1c6789dc64eac202c241916bab31749b",
-  "A20261010163838:sl": "947a67f61eef2319c8df6ce96ee81c921a412995e9ce1d1a21495e0fdcaed8aa"
+  "A20261010163838:sl": "947a67f61eef2319c8df6ce96ee81c921a412995e9ce1d1a21495e0fdcaed8aa",
+  "A20261010214237:sh": "a0d73ad4b5c92cc2cc41e30227615d9bc37c0641949fa660dc94e74f5b0346eb",
+  "A20261010214237:sl": "9f69fcac35c9eb36c2b4dcec7d74f0da8afc96dd387ae480f57ed6109e0def9c",
+  "A20261010215329:sl": "93084276db24eee73dc2070db6c220d0f259514459208731c6389276c30dcd34",
+  "A20261010215543:sl": "6540fc9c15a76c22f1bfb20fe017159023dab867806e480705a028b7dc8ceef9",
+  "A20261010215744:sl": "bea348f3bbc1b221385faaf5ecb4a413734b55190aea3875f34432b64e7654d8",
+  "A20261010220207:sl": "258021cb43237cfd8ea8a397991f0c449f2c09cac05b237c61b02eef0b9c43b9"
  },
  "discovered_at": 1791527938,
  "faithful_rewrite_started": 1791643120,
@@ -1231,6 +1243,301 @@
    "summary": "Both SH and SL pass every check. They keep the paper-strip-and-scissors hook, the 24-hour breakdown and the 2-hour payoff in the original order, introduce Memo AI at beat 9 in the same spot as Astra AI, and change the features Memo AI lacks (picking a target grade or test date, video, true-false practice, written and oral mock exams) to the closest real Memo AI features.",
    "title_fixes": {},
    "version": "group-2026-10-10.localized-sl"
+  },
+  "A20261010214237": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791669138,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7685932867339209998",
+     "video_identity": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e"
+    },
+    "sl": {
+     "source_id": "7685932867339209998",
+     "video_identity": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e"
+    }
+   },
+   "key": "6b2b9861da7179cea399d23b9440878b69b156992ac380d91bc9cba5a3325641",
+   "passed": false,
+   "reasons": [
+    "format_consistency sh: The creator speaks two lines ('Oh.' and 'Znači, bez njenog pristanka?'), with stage directions 'Ti kažeš' and a lean-in to the camera. The reference requires a silent reaction while only the quiz audio plays, and lists the creator speaking as not allowed.",
+    "faithful_translation sh: It adds 'Oh.' (twice) and 'Znači, bez njenog pristanka?' as the creator's own lines. These are not part of the oral quiz page's Croatian dialogue, which the campaign note says must be used word for word. Remove them so only the page lines remain, ending at 'i to ovako'."
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "It adds 'Oh.' (twice) and 'Znači, bez njenog pristanka?' as the creator's own lines. These are not part of the oral quiz page's Croatian dialogue, which the campaign note says must be used word for word. Remove them so only the page lines remain, ending at 'i to ovako'.",
+      "pass": false
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "The creator speaks two lines ('Oh.' and 'Znači, bez njenog pristanka?'), with stage directions 'Ti kažeš' and a lean-in to the camera. The reference requires a silent reaction while only the quiz audio plays, and lists the creator speaking as not allowed.",
+      "pass": false
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "SL follows the reference and the campaign note in full. SH fails format consistency and faithful translation because it makes the creator speak 'Oh.' and 'Znači, bez njenog pristanka?', which are not lines from the quiz page and break the silent-reaction rule.",
+   "title_fixes": {},
+   "version": "group-2026-10-10.localized-sl"
+  },
+  "A20261010215329": {
+   "approval": {
+    "sl": "not_locked"
+   },
+   "checked_at": 1791669300,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sl": {
+     "source_id": "7681308323064368406",
+     "video_identity": "sha256:d0add6744924765d53bae9e7eded48d334e2b647ee2e543f2423c30ac2369ddd"
+    }
+   },
+   "key": "0b400f27c020e3d69a33b79c16f55d0d8101d5ec5d9bf626be77a904fd6793c4",
+   "passed": true,
+   "reasons": [],
+   "results": {
+    "directions_match": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "pass",
+   "summary": "The Slovenian page matches the reference and the example video: same hook, the same 3 tips in the same order, the app appears briefly in tip one, it ends with 'save this video', the script is near word for word (only 'kot ti bi' was reordered to the grammatical 'kot bi ti'), and every claim is a real Memo AI feature.",
+   "title_fixes": {},
+   "version": "group-2026-10-10.localized-sl"
+  },
+  "A20261010215543": {
+   "approval": {
+    "sl": "not_locked"
+   },
+   "checked_at": 1791669413,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sl": {
+     "source_id": "7694637898045426966",
+     "video_identity": "sha256:94c0657877b8e8e6e8c50d4cc90c7d1637c22ea51223bb5806359329eccdc13f"
+    }
+   },
+   "key": "c6bbd39bc4b15c4fa04af953b6ce0f4699040fc97a9965aff6cbdaf85a9b5640",
+   "passed": true,
+   "reasons": [],
+   "results": {
+    "directions_match": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "pass",
+   "summary": "The Slovenian page passes every check: the script matches the example almost word for word, fixing only the mis-heard 'sane… dati' to 'samo… daš'; the claims (adding photos, highlighting important parts) are allowed; the save-this-video CTA is kept; and the one-sentence directions match the opening with the messy notes.",
+   "title_fixes": {},
+   "version": "group-2026-10-10.localized-sl"
+  },
+  "A20261010215744": {
+   "approval": {
+    "sl": "not_locked"
+   },
+   "checked_at": 1791669639,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sl": {
+     "source_id": "7689133868242177302",
+     "video_identity": "sha256:6d9255e331dd7c8b64670323d9e94b21e8bf3cd63b64b07868444d8fb949ced5"
+    }
+   },
+   "key": "6ea523c515f0e82fa229a07fc58c372178e8ffe9c1971a0f3f21251f2405f8ac",
+   "passed": true,
+   "reasons": [],
+   "results": {
+    "directions_match": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "pass",
+   "summary": "The Slovenian page passes every check: the script follows the example closely, with the hook, three phases and the 'tale app' pivot in phase 2 in the same order; the brand is never spoken, 'igraš igrice' (games) is correctly swapped for 'kvize z razlagami' (quizzes with explanations), every listed feature is real, and the directions are one concrete sentence that copies the GRWM makeup opening.",
+   "title_fixes": {},
+   "version": "group-2026-10-10.localized-sl"
+  },
+  "A20261010220207": {
+   "approval": {
+    "sl": "not_locked"
+   },
+   "checked_at": 1791669854,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sl": {
+     "source_id": "7688806667072474391",
+     "video_identity": "sha256:525e62b8a2fad76941212d4fe044020de6bf63e88bbd42958cfd9edfd6d6bd1a"
+    }
+   },
+   "key": "4f57a70dd197f48ad82e38165623dc02df9ac8fe7bc2f9502c77efd4ef09f777",
+   "passed": false,
+   "reasons": [
+    "format_consistency sl: In beat 3 the stage directions only give the [CUE] marker. They never tell the creator to hold up a handwritten card that says 'Memo AI' over the candle, which the reference requires. Add '(nov listek z napisom Memo AI nad svečo)' before the line."
+   ],
+   "results": {
+    "directions_match": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sl": {
+      "issue": "In beat 3 the stage directions only give the [CUE] marker. They never tell the creator to hold up a handwritten card that says 'Memo AI' over the candle, which the reference requires. Add '(nov listek z napisom Memo AI nad svečo)' before the line.",
+      "pass": false
+     }
+    },
+    "script_matches_example": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "The SL page is a faithful, word-for-word match of the example with valid Memo AI claims and a matching title and hook; the only gap is that beat 3's stage directions leave out the handwritten 'Memo AI' card over the candle.",
+   "title_fixes": {},
+   "version": "group-2026-10-10.localized-sl"
   }
  },
  "group_duplicates": [],
@@ -1297,6 +1604,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/0704a1dc-0341-4f0f-9eb3-42bfb53281b6/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/14ab7617-867b-440b-ba89-9076b4231496/video.mp4": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/160678ef-32dd-44af-bb6f-7a66f1b10436/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/176f192d-8c8a-47d0-911a-9c25aa4be9d2/video.mp4": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/202e841a-77a0-402c-8bae-35611033dfeb/video-notion.mp4": "sha256:2863a59e5df5fb158d39b04ccad651e449a674c01d28b27611cd5b291504cb87",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/23baa518-4640-4556-8e8e-4aa3c4331160/video-notion.mp4": "sha256:61696db2bb051d7382dd8e4bb6ddf26b57583264a2d8913b15aea64c2b749b94",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/25821af1-372a-453f-91e1-03e7b2fecca7/video.mp4": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0",
@@ -1316,14 +1624,19 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/631fce93-8196-45d8-a854-da27fbc82d72/video-notion.mp4": "sha256:fa7d6f7f9a8ade294db9b305f23b9c45690bd9122a41071e1a75a268daafdb99",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/635ba303-0ce3-42a9-b988-0cc452861169/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6b3809ad-cf04-4426-8f8d-da0a3d675711/video-notion.mp4": "sha256:728cf7db67b5988163b4b35079212302d7be123337b97b582d506266b1fa9fea",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6d47f5ca-5e1e-4884-9c4f-bfb5a68d3c0b/video.mp4": "sha256:525e62b8a2fad76941212d4fe044020de6bf63e88bbd42958cfd9edfd6d6bd1a",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6f1028c2-5e96-411c-853d-a6021f5a9fc3/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/7ac6cf49-8965-4e31-bf34-2ef929edc8ab/video.mp4": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/83fef604-0475-4c30-9549-24afb86f18f6/video-notion.mp4": "sha256:6d9255e331dd7c8b64670323d9e94b21e8bf3cd63b64b07868444d8fb949ced5",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/8b381c7b-99d6-492f-820d-d8e098d7b61f/video.mp4": "sha256:8c47ffe4d80533045109936b0de0f8121ee7c9b7fc4ea9c5aee611394c837370",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9be007a3-73e8-4039-8ca1-2bbd3e875287/video.mp4": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9edb0d45-eb1b-40c2-a197-2c07e66f3d39/video-notion.mp4": "sha256:d0add6744924765d53bae9e7eded48d334e2b647ee2e543f2423c30ac2369ddd",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9f1396bc-73e4-473d-9aec-ac88d25d3cba/video-notion.mp4": "sha256:d3f2a1475e9c417b9ea3df8e1dba8f19445423cd8a088b1a6f9494a872a49aa7",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/a53c0f68-f1ec-4bab-ada0-27f112dc1bf4/video-notion.mp4": "sha256:94c0657877b8e8e6e8c50d4cc90c7d1637c22ea51223bb5806359329eccdc13f",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/aae379ab-089c-41ee-9ad3-c6632897453e/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/b724117d-0c36-4e93-972f-055d7c412d9d/video-notion.mp4": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/bc335721-f9ea-426a-a184-1dc49df91c0a/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/c1c7ab27-88f0-4039-903f-543c18ee8185/video.mp4": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d7a785da-5e23-40f6-9646-04afe72c6f2d/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d8652e47-9cec-4e2c-873c-20c8d5d7d2ec/video.mp4": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/dac31acc-a23e-4449-94a0-efa52cf634f2/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",

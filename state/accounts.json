@@ -184,6 +184,20 @@
   "source": "added-by-hand",
   "status": "manual"
  },
+ "nicole.lockedin": {
+  "added_format": true,
+  "lang": "",
+  "since": 1791668541,
+  "source": "added-by-hand",
+  "status": "manual"
+ },
+ "school.hacks.byklara": {
+  "added_format": true,
+  "lang": "sl",
+  "since": 1791669171,
+  "source": "added-by-hand",
+  "status": "manual"
+ },
  "smartishaangelisaa": {
   "blocked_reason": "not_ugc: Serbian General viral/engagement content; no mention of Astra AI or any promoted app.",
   "checked": 1791531358,
@@ -192,6 +206,13 @@
   "since": 1791490439,
   "source": "lightreel-2026-10-08",
   "status": "active"
+ },
+ "spelcaa41": {
+  "added_format": true,
+  "lang": "sl",
+  "since": 1791669669,
+  "source": "added-by-hand",
+  "status": "manual"
  },
  "study.with.mili": {
   "checked": 1791531374,
