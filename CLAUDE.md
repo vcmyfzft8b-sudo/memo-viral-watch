@@ -50,6 +50,11 @@ blocked). The app's name goes into config.json `other_apps` (regex) so it is rep
 (Studyflash is there). A failed add alerts and turns the run red. TikTok subtitles: the original ASR track is used,
 never TikTok's machine translation.
 
+## All scripts in one file
+`mode=export` writes every format page (title, script with cues, visual hook) as Markdown, encrypted with
+registry/export_cert.pem, to state/scripts_export.enc (repo and logs are public). Decrypt on the Mac with
+`scripts/read_export.sh` (private key: ~/.config/memo-viral-watch/export_key.pem - never commit it).
+
 ## Check everything
 `mode=verify` (read-only): every list (order, numbering, layout), live page (video, sections, links), held page
 (staging) and both hook labs against the state; also lists leftover staging pages (never deletes).

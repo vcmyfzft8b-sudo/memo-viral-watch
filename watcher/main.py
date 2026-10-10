@@ -1238,6 +1238,7 @@ def main():
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
     ap.add_argument('--hook-lab', default='', nargs='?', const='-', help='[market:page_id] a copy of the Parakeet Visual Hook Lab -> that market\'s language, linked from its pages')
     ap.add_argument('--faithful-rewrite', action='store_true', help='once: every page script becomes the original transcribed/translated almost 1:1 (only the app swapped)')
+    ap.add_argument('--export', action='store_true', help='all scripts as one encrypted Markdown file (state/scripts_export.enc)')
     ap.add_argument('--verify', action='store_true', help='read-only check of every list and page in Notion against the state')
     ap.add_argument('--reset-pending', action='store_true', help='formats waiting at the gate get their 4 tries back (after a fix)')
     ap.add_argument('--fill-markets', action='store_true', help='every market gets its missing pages (live and waiting formats), then re-sort')
@@ -1497,6 +1498,10 @@ def main():
         return
     if a.faithful_rewrite:
         faithful_rewrite()
+        return
+    if a.export:
+        from . import export
+        export.run(load_config(), load_formats(), page_of)
         return
     if a.verify:
         from . import verify
