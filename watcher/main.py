@@ -1513,7 +1513,7 @@ def main():
         for f in [f for f in fmts if f.get('status') in ('active', 'pending')]:
             for key, m in cfg['markets'].items():
                 pid, T = page_of(f, key), M.TEXT[m['lang']]
-                if not pid or (f.get('localized') or {}).get(key):
+                if not pid or (f.get('localized') or {}).get(key) == 'v2-teen':
                     continue
                 try:
                     if T.get('localize'):  # script: the original 1:1, country-specific names made local and real
@@ -1527,7 +1527,7 @@ def main():
                     st, why = 'error', str(e)[:200]
                 print(f"{f['title'][:45]} | {key} | {st} | {why}", flush=True)
                 if st == 'ok':
-                    f.setdefault('localized', {})[key] = True
+                    f.setdefault('localized', {})[key] = 'v2-teen'  # version: Slovenian local names + teen tone
                     done += 1
                 state.save('formats.json', fmts)
                 if 'limit' in why:

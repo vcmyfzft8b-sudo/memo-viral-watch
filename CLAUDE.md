@@ -22,6 +22,8 @@ Claude, every 3 days) and turns their viral formats into Memo AI creator pages i
   words, jokes, numbers, claims. Only these change: the app (Astra AI, Studyflash, …) -> Memo AI at the same spots,
   its website -> memoai.eu, an app feature Memo AI lacks -> the closest real one, the page language's spelling
   (ijekavian / Slovenian). No "independent wording", no toning down.
+- Tone: 🇸🇮 Slovenian scripts (translations) are casual spoken Slovenian the way teenagers talk on TikTok
+  (markets.TEXT['sl']['style']); 🇧🇦🇭🇷🇷🇸🇲🇪 Balkan scripts are transcripts and stay as spoken.
 - Localization: 🇸🇮 Slovenian scripts turn country-specific things (faculties, schools, exams, cities, shops, prices,
   discounts) into REAL Slovenian ones with correct names (markets.TEXT['sl']['localize']); 🇧🇦🇭🇷🇷🇸🇲🇪 Balkan
   scripts keep the original's names and the note under the video says creators may swap them for their own

@@ -78,11 +78,13 @@ TEXT = {
     },
     'sl': {
         'flag': '🇸🇮', 'name': 'Slovenija', 'lang_name': 'Slovenian',
-        'style': ('casual spoken standard Slovenian like a real Slovenian TikTok creator (not a dialect), ti-form, natural, '
-                  'a faithful translation that still sounds natural - and never Croatian/Serbian words or forms (the source videos are '
-                  'Serbo-Croatian: "što", "koji", "već", "gdje" must become "kaj", "ki", "že", "kje"); the speaker\'s own '
-                  'past-tense verbs in the FEMININE form (naučila sem, slikala sem) - most creators are women and a man '
-                  'simply switches the ending'),
+        'style': ('casual spoken Slovenian the way Slovenian TEENAGERS talk on TikTok - relaxed and informal, not '
+                  'textbook language: everyday words and fillers teens really use (e.g. "ful", "itak", "res", "kul", '
+                  '"a veš", "pač", "tipa", "zihr", "js"/"jaz" as spoken), short punchy sentences, ti-form; still easy to '
+                  'read and not overdone - a natural translation, never stiff or formal - and never Croatian/Serbian '
+                  'words or forms (the source videos are Serbo-Croatian: "što", "koji", "već", "gdje" must become '
+                  '"kaj", "ki", "že", "kje"); the speaker\'s own past-tense verbs in the FEMININE form (naučila sem, '
+                  'slikala sem) - most creators are women and a man simply switches the ending'),
         'address': 'ti (informal singular; "vi" only if the original speaks to a group - then consistently)',
         # Slovenian pages are localized: country-specific things become real Slovenian ones (user, 10 Oct 2026).
         'localize': ('Country-specific things are LOCALIZED for Slovenia: universities/faculties, schools, exams, '
