@@ -1242,6 +1242,7 @@ def main():
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
     ap.add_argument('--hook-lab', default='', nargs='?', const='-', help='[market:page_id] a copy of the Parakeet Visual Hook Lab -> that market\'s language, linked from its pages')
     ap.add_argument('--faithful-rewrite', action='store_true', help='once: every page script becomes the original transcribed/translated almost 1:1 (only the app swapped)')
+    ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--fix-cues', action='store_true', help="every page: the app shown as a '📎 material' cue becomes the app link cue")
     ap.add_argument('--trash-staging', default='', help='page ids (comma-separated): move these leftover staging pages to the Notion trash - only if no format uses them')
     ap.add_argument('--export', action='store_true', help='all scripts as one encrypted Markdown file (state/scripts_export.enc)')
@@ -1504,6 +1505,24 @@ def main():
         return
     if a.faithful_rewrite:
         faithful_rewrite()
+        return
+    if a.gate_now:
+        cfg, fmts = load_config(), load_formats()
+        mkts = M.load(cfg)
+        history, meta, accounts = state.load('history.json', {}), state.load('meta.json', {}), state.load('accounts.json', {})
+        CTX.update({'meta': meta, 'accounts': accounts})
+        for r in range(1, gate.MAX_TRIES + 1):
+            waiting = [f for f in fmts if f.get('status') == 'pending']
+            if not waiting:
+                break
+            print(f'gate-now round {r}: {len(waiting)} waiting', flush=True)
+            gate.retry_pending(fmts, mkts, cfg, history, accounts, meta, page_of, set_page, make_page, rebuild_page, rerank)
+            state.save('formats.json', fmts)
+            state.save('meta.json', meta)
+        rerank(mkts, fmts, history, cfg)
+        for f in fmts:
+            if f.get('status') in ('pending', 'active') or (f.get('archived_reason') or '').startswith('did not pass'):
+                print(f"gate-now: {f.get('status'):8} | {f['title']}", flush=True)
         return
     if a.fix_cues:
         cfg, n = load_config(), 0
