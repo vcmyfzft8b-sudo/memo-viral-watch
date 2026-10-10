@@ -29,7 +29,7 @@
   "listed_at": 1791660319,
   "localized": {
    "sh": "v2-teen",
-   "sl": true
+   "sl": "v2-teen"
   },
   "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
   "pages": {
@@ -63,8 +63,8 @@
   "id": "A20261008205804",
   "listed_at": 1791493524,
   "localized": {
-   "sh": true,
-   "sl": true
+   "sh": "v2-teen",
+   "sl": "v2-teen"
   },
   "page_id": "3f365e84-a3c2-81ed-a906-d5caef049749",
   "pages": {
@@ -94,8 +94,8 @@
   "id": "A20261008210957",
   "listed_at": 1791494192,
   "localized": {
-   "sh": true,
-   "sl": true
+   "sh": "v2-teen",
+   "sl": "v2-teen"
   },
   "page_id": "3f365e84-a3c2-8158-a10f-d25c82347e03",
   "pages": {
@@ -124,7 +124,8 @@
   },
   "id": "A20261008211912",
   "localized": {
-   "sh": true
+   "sh": "v2-teen",
+   "sl": "v2-teen"
   },
   "page_id": "3f365e84-a3c2-819d-9066-dc90353d437e",
   "pages": {
@@ -176,7 +177,8 @@
   },
   "listed_at": 1791529481,
   "localized": {
-   "sh": true
+   "sh": "v2-teen",
+   "sl": "v2-teen"
   },
   "page_id": "3f365e84-a3c2-81b5-88b5-e2225ef1bc0b",
   "pages": {
@@ -209,6 +211,10 @@
   },
   "id": "A20261008231529",
   "listed_at": 1791508474,
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f365e84-a3c2-8120-b838-fd3c99181a38",
   "pages": {
    "sl": "3f365e84-a3c2-81fa-af2c-f4bcacc9beac"
@@ -249,6 +255,10 @@
    }
   },
   "listed_at": 1791660337,
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
   "pages": {
    "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
@@ -280,6 +290,10 @@
   },
   "id": "A20261009014121",
   "listed_at": 1791555293,
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe",
   "pages": {
    "sl": "3f465e84-a3c2-81c1-b18f-e757875dad14"
@@ -306,6 +320,10 @@
   },
   "id": "A20261009015525",
   "listed_at": 1791530818,
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f465e84-a3c2-810b-b433-d079ee2a9dd1",
   "pages": {
    "sl": "3f465e84-a3c2-8170-9ec3-ee47d9934a43"
@@ -332,6 +350,10 @@
   },
   "id": "A20261009210824",
   "listed_at": 1791586906,
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f465e84-a3c2-815f-9cd7-d9b447463dd2",
   "pages": {
    "sl": "3f465e84-a3c2-8189-b47d-f03858456d14"
@@ -357,6 +379,10 @@
    "sl": true
   },
   "id": "A20261010130453",
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f565e84-a3c2-81ae-825a-c3d10f74823b",
   "pages": {
    "sl": "3f565e84-a3c2-8128-b4dc-e7924264635c"
@@ -382,6 +408,10 @@
   "created": 1791648877,
   "description": "Talking-head 'ranking/list of student types' video while making a drink on camera, where the last type leads into a friend's study-app recommendation with a screen recording of the app on a laptop and a 'part 2' teaser.",
   "id": "A20261010161437",
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f565e84-a3c2-81e8-afd8-d8f29ac8cb48",
   "pages": {
    "sl": "3f565e84-a3c2-817e-9399-d8a7083c900f"
@@ -406,6 +436,10 @@
   "created": 1791649226,
   "description": "Funny talking-head study vlog where the creator's sister froze her apartment keys in ice so she has to study until it melts, with a study montage set to a love song whose 'only you I need' line lands on the study app on screen.",
   "id": "A20261010162026",
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f565e84-a3c2-81dd-93d3-c4a95caeb49d",
   "pages": {
    "sl": "3f565e84-a3c2-81f3-a771-d05601b576fa"
@@ -427,6 +461,10 @@
   "created": 1791649768,
   "description": "Talking-head 'secret app' reveal where the creator does a casual drink-making activity with an on-screen list of university faculties, then films a laptop screen showing the app's lessons and quizzes, naming the app at the end and asking viewers to comment if their faculty is on the list.",
   "id": "A20261010162928",
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f565e84-a3c2-81d3-8e98-c731ff969e40",
   "pages": {
    "sl": "3f565e84-a3c2-81f9-b33c-fc4551d00ce7"
@@ -452,6 +490,10 @@
   "created": 1791650318,
   "description": "Talking-head creator cuts a paper strip of the day's 24 hours with scissors to show how little study time is left, then demos the study app's features on a tablet.",
   "id": "A20261010163838",
+  "localized": {
+   "sh": "v2-teen",
+   "sl": "v2-teen"
+  },
   "page_id": "3f565e84-a3c2-810a-8dc3-f502cc653ae8",
   "pages": {
    "sl": "3f565e84-a3c2-812f-88c5-c7a29c250a40"
