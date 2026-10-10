@@ -96,6 +96,8 @@ seconds (red). Use them to see the visual hook, what is shown on screen and when
     for seg in spec.get('script', []):
         if seg.get('cue') in ('null', 'None', ''):
             seg['cue'] = None
+        if seg.get('cue') == 'asset' and re.search(r'memo\s*ai', seg.get('asset_name') or '', re.I):
+            seg['cue'], seg['asset_name'] = CUE, ''  # the app itself is never a "material" - it is the app link cue
     return spec
 
 

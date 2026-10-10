@@ -1185,7 +1185,8 @@ def group_report(fmts, mkts, cfg, meta, fix=False, force=False):
         for f in [f for f in fmts if f.get('status') in ('active', 'pending')]:
             for mk in mkts:
                 pid = page_of(f, mk['key'])
-                if pid and not align.approved_script(f['id'], mk['lang']) and reword.fix_asset_cues(pid):
+                if pid and not align.approved_script(f['id'], mk['lang']) and (
+                        reword.fix_app_material_cues(pid, cfg['links']['memo']) + reword.fix_asset_cues(pid)):
                     notes.append(f"{f['title']}: {mk['key']}: script cues cleaned (resources)")
     results, dups = crosscheck.run(fmts, mkts, cfg, page_of, meta, force=force)
     if fix:
@@ -1241,6 +1242,7 @@ def main():
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
     ap.add_argument('--hook-lab', default='', nargs='?', const='-', help='[market:page_id] a copy of the Parakeet Visual Hook Lab -> that market\'s language, linked from its pages')
     ap.add_argument('--faithful-rewrite', action='store_true', help='once: every page script becomes the original transcribed/translated almost 1:1 (only the app swapped)')
+    ap.add_argument('--fix-cues', action='store_true', help="every page: the app shown as a '📎 material' cue becomes the app link cue")
     ap.add_argument('--trash-staging', default='', help='page ids (comma-separated): move these leftover staging pages to the Notion trash - only if no format uses them')
     ap.add_argument('--export', action='store_true', help='all scripts as one encrypted Markdown file (state/scripts_export.enc)')
     ap.add_argument('--verify', action='store_true', help='read-only check of every list and page in Notion against the state')
@@ -1502,6 +1504,14 @@ def main():
         return
     if a.faithful_rewrite:
         faithful_rewrite()
+        return
+    if a.fix_cues:
+        cfg, n = load_config(), 0
+        for f in [f for f in load_formats() if f.get('status') in ('active', 'pending')]:
+            for key in cfg['markets']:
+                if page_of(f, key):
+                    n += reword.fix_app_material_cues(page_of(f, key), cfg['links']['memo'])
+        print(f'fix-cues: {n} paragraphs now use the app link cue')
         return
     if a.trash_staging:
         fmts, pages = load_formats(), state.load('notion.json', {})

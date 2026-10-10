@@ -280,6 +280,35 @@ def in_resources(name, resources):
     return any(w in resources for w in words)
 
 
+def fix_app_material_cues(page_id, link):
+    """'(📎 Memo AI · memoai.eu/creator – vidi materijale)' in a script is the app shown as a "material" - it becomes the
+    normal app link cue '(Memo AI · memoai.eu/creator)'. Returns how many paragraphs changed."""
+    from .brand import CUE_LABEL
+    pat = re.compile(r'\((?:📎\s*)+Memo AI[^()]*\)\s*')
+    fixed = 0
+    for b in script_blocks(page_id):
+        rich, out, changed = b[b['type']].get('rich_text', []), [], False
+        for x in rich:
+            if x.get('type') != 'text' or not pat.search(x.get('plain_text', '')):
+                out.append({k: v for k, v in x.items() if k in ('type', 'text', 'mention', 'annotations')})
+                continue
+            changed = True
+            t, pos = x['plain_text'], 0
+            for m in pat.finditer(t):
+                if t[pos:m.start()]:
+                    out.append({'type': 'text', 'text': {'content': t[pos:m.start()]}, 'annotations': x.get('annotations', {})})
+                out += [{'type': 'text', 'text': {'content': '('}},
+                        {'type': 'text', 'text': {'content': CUE_LABEL, 'link': {'url': link}}},
+                        {'type': 'text', 'text': {'content': ') '}}]
+                pos = m.end()
+            if t[pos:]:
+                out.append({'type': 'text', 'text': {'content': t[pos:]}, 'annotations': x.get('annotations', {})})
+        if changed:
+            notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': out}})
+            fixed += 1
+    return fixed
+
+
 def fix_asset_cues(page_id):
     """Repairs script cues: decorated more than once ('📎 📎 📎 … – vidi materijale – vidi materijale'), or pointing to
     the resources section for something that is not there (then it is a plain stage direction '(eDnevnik)')."""

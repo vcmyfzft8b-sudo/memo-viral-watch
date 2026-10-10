@@ -161,6 +161,8 @@ def _write(fmt, page_id, lang, cfg, links, spec, info):
     for seg in spec['script']:
         if seg.get('cue') in ('null', 'None', ''):
             seg['cue'] = None
+        if seg.get('cue') == 'asset' and count_ours(seg.get('asset_name') or ''):
+            seg['cue'], seg['asset_name'] = CUE, ''  # the app itself is never a "material" - it is the app link cue
         if resources is not None and seg.get('cue') == 'asset' and not reword.in_resources(notion.asset_label(seg.get('asset_name')), resources):
             seg['cue'] = 'direction'  # nothing in the resources to point to -> a plain stage direction
             seg['asset_name'] = notion.asset_label(seg.get('asset_name'))
