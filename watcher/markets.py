@@ -19,7 +19,7 @@ TEXT = {
         'style': ('casual spoken Serbo-Croatian like a real TikTok creator from the region - Latin script ONLY (never '
                   'Cyrillic), IJEKAVIAN forms (vrijeme, lijepo, gdje, dijete, uvijek, mjesto, cijena), and words the '
                   'whole region understands (Croatia, Bosnia and Herzegovina, Montenegro, Serbia): avoid words only one '
-                  'country uses when a shared one exists; ti-form, natural, not formal, not a literal translation; '
+                  'country uses when a shared one exists; ti-form, a faithful translation that still sounds natural; '
                   'the speaker\'s own past-tense verbs in the FEMININE form (naučila sam, uslikala sam) - most creators '
                   'are women and a man simply switches the ending'),
         'address': 'ti (informal singular; "vi" only if the original speaks to a group - then consistently)',
@@ -45,6 +45,8 @@ TEXT = {
         'return_line': 'Za zadnju rečenicu vrati se u kameru.',
         'scores_line': 'X i Y u scenariju: pročitaj broj koji ti aplikacija pokaže.',
         'required_line': '🚨👇 Vizuelni hook je obavezan u svakom videu!',
+        'hook_start': 'Napravi isti vizuelni hook kao u videu za inspiraciju: ',
+        'hook_alt': 'Želiš drugi vizuelni hook? Izaberi jedan iz ',
         'draft_prefix': 'NACRT – ',
         'list_title': 'Koje videe snimaš (OBAVEZNO)', 'list_h1': 'Kako snimaš svoje videe',
         'list_heading': 'SNIMAJ SADA: ovi formati',
@@ -72,7 +74,7 @@ TEXT = {
     'sl': {
         'flag': '🇸🇮', 'name': 'Slovenija', 'lang_name': 'Slovenian',
         'style': ('casual spoken standard Slovenian like a real Slovenian TikTok creator (not a dialect), ti-form, natural, '
-                  'not formal, not a literal translation - and never Croatian/Serbian words or forms (the source videos are '
+                  'a faithful translation that still sounds natural - and never Croatian/Serbian words or forms (the source videos are '
                   'Serbo-Croatian: "što", "koji", "već", "gdje" must become "kaj", "ki", "že", "kje"); the speaker\'s own '
                   'past-tense verbs in the FEMININE form (naučila sem, slikala sem) - most creators are women and a man '
                   'simply switches the ending'),
@@ -98,6 +100,8 @@ TEXT = {
         'return_line': 'Za zadnji stavek se vrni v kamero.',
         'scores_line': 'X in Y v scenariju: preberi številko, ki ti jo pokaže aplikacija.',
         'required_line': '🚨👇 Vizualni hook je obvezen v vsakem videu!',
+        'hook_start': 'Naredi enak vizualni hook kot v videu za navdih: ',
+        'hook_alt': 'Želiš drugačen vizualni hook? Izberi ga v ',
         'draft_prefix': 'OSNUTEK – ',
         'list_title': 'Kakšne videe snemaš (OBVEZNO)', 'list_h1': 'Kako snemaš svoje videe',
         'list_heading': 'SNEMAJ ZDAJ: ti formati',

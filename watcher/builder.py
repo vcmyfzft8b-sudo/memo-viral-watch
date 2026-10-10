@@ -17,40 +17,32 @@ viral videos made by creators of {SOURCE_DESC}, a competing app, into the same f
 language. Reply with JSON only."""
 
 RULES = """RULES
-- Output language for ALL creator-facing text (page_title, title_hook, script, visual_hook_first, extra_hook_lines,
-  asset names/descriptions, directions): {lang}. Script style: {style}. Mirror the original SENTENCE BY SENTENCE:
-  exactly one sentence of ours per sentence of the original, same order, about the same length - the whole script at
-  most 110% of the original speech, add nothing. Same meaning, but build every sentence differently (other word
-  order, question instead of statement, other words) - never a 1:1 transcription or literal translation, even more
-  so when the original is already in {lang}. Name "{ours}" exactly where (and as often as) the original names
-  {source}; if the original only shows the app ("this app here"), only show it too. A website/call to action at the
-  end only if the original has one. Keep the hook idea and on-screen title punchy. Copy the STYLE and STRUCTURE of the
-  example pages below, never their content.
-- Replace {source} with {ours} everywhere (its website -> {site}). The word "{source}" (or "Astra") must not appear
-  anywhere in your output.
-- Concrete scores/grades/percentages the app shows become X (before) and Y (after) - creators read their own numbers.
-- Adapt country-specific things to {country} (schools, exams like the matura, subjects, grades, places) when the
-  original names local ones.
-- Tone down promises nobody can guarantee (e.g. "guaranteed top grade", "pass any exam without studying").
+- The script is the ORIGINAL video, transcribed and - if needed - translated into {lang}, almost one to one: the same
+  sentences in the same order with the same meaning, words, jokes, numbers, places and claims; nothing added, nothing
+  left out, nothing reworded. Only these change: "{source}" (and any other study app the video promotes) becomes
+  "{ours}" - exactly where and as often as the original names it -, its website becomes {site}, and an app feature
+  {ours} does not have becomes the closest real {ours} feature (only those words). If the original only shows the
+  app ("this app here"), only show it too. Language: {style}. If the original is already in {lang}, the script is its
+  transcript with only those changes (and the spelling rules of the language).
+- Copy the STYLE and STRUCTURE of the example pages below (layout, cues, directions), never their content.
+- The word "{source}" (or "Astra") must not appear anywhere in your output.
 - Every moment where the original video SHOWS the study app on screen gets cue "{cue}". Plain stage directions
   (e.g. surprised reaction, music, showing a notebook) use cue "direction" with the direction as text in asset_name.
   Otherwise cue null. Put the cue on the segment where that screen starts.
 - Notebooks, textbooks, worksheets and the creator's own study material are NEVER assets: creators show their own.
 - Public websites/apps the creator can simply open and film are NOT assets: use cue "direction" with a short
-  direction and add one extra_hook_lines entry with the exact page to open.
+  direction.
 - Only things a creator cannot make or open themselves count as assets (cue "asset", e.g. a recording of a full
-  class group chat). For every asset, add one extra_hook_lines entry that says how to show it.
+  class group chat).
 - Address creators neutrally (informal "you"), never with a gendered word for "creator".
 - No voiceover videos (only on-screen text + music): set voiceover=false; each script segment is one text overlay.
-- title_hook: the on-screen hook/title of the original, adapted to punchy {lang} (keep caps/emojis style).
+- title_hook: the on-screen hook/title of the original, translated one to one into {lang} (same caps/emojis).
 - page_title: short {lang} hook for the Notion page name + one emoji at the end.
-- visual_hook_first: one sentence telling the creator what to do in the first seconds, based on what the original
-  creator does in the first 3 seconds (action/prop + speaking to camera + title on screen).
-- return_to_camera: true if the original goes back to talking to the camera for the last line(s).
-- extra_hook_lines: 0-2 extra lines only if the original needs special filming instructions. Never mention X/Y scores
-  or going back to the camera at the end (both are added automatically). Every direction must refer to a line that is
-  really in YOUR script (quote your own wording, not the original's). Never repeat the standard
-  line about filming {ours} on the phone at every link and cutting loading times - it is added automatically."""
+- visual_hook_first: ONE sentence (two at most) that tells the creator to copy the example video's visual hook:
+  exactly what the original creator does in the first seconds (action, prop, where they look, what is on screen),
+  e.g. "<start> you sit at the desk, slowly peel a mandarin and look into the camera while the title is on screen."
+  Write it in {lang}. Nothing else goes into this field (no filming tips, no app instructions).
+- return_to_camera / extra_hook_lines: leave false / empty (the visual hook section holds only the sentence above)."""
 
 
 COUNTRY = {'sh': 'the whole region (Croatia, Bosnia and Herzegovina, Serbia, Montenegro) - prefer things every '
@@ -108,25 +100,13 @@ seconds (red). Use them to see the visual hook, what is shown on screen and when
 
 
 def hook_lines(spec, lang=PRIMARY):
+    """The visual hook section: one (at most two) sentence(s) - copy the example's opening. The line offering the
+    Visual Hook Lab instead is added by notion.page_blocks."""
     T = TEXT[lang]
-    cues = {s.get('cue') for s in spec.get('script', [])}
-    lines = [spec['visual_hook_first']]
-    if CUE in cues:
-        lines.append(T['app_line'])
-    text = ' '.join(s['text'] for s in spec.get('script', []))
-    has_x, has_y = bool(re.search(r'\bX\b', text)), bool(re.search(r'\bY\b', text))
-    # the model's own extra lines must not repeat the standard lines (scores / back to camera)
-    extra = [l for l in spec.get('extra_hook_lines', [])
-             if not re.search(r'\bX\b|\bY\b', l) and not (spec.get('return_to_camera') and _similar(l, T['return_line']))]
-    lines += extra
-    if spec.get('return_to_camera'):
-        lines.append(T['return_line'])
-    if has_x or has_y:
-        line = T['scores_line']
-        if not (has_x and has_y):  # only one score in the script -> only name that one
-            line = re.sub(r'X\s+(und|et|e|y|i|in)\s+Y', 'X' if has_x else 'Y', line)
-        lines.append(line)
-    return lines
+    first = (spec.get('visual_hook_first') or '').strip()
+    if first and not first.lower().startswith(T['hook_start'].strip().lower()[:20]):
+        first = T['hook_start'] + first[0].lower() + first[1:]
+    return [first] if first else []
 
 
 def _similar(a, b):
@@ -146,7 +126,6 @@ def validate(spec, transcript, lang=PRIMARY):
             problems.append(f'missing {key}')
     texts = [spec.get('page_title', ''), spec.get('title_hook', ''), spec.get('visual_hook_first', '')]
     texts += [s.get('text', '') + ' ' + (s.get('asset_name') or '') for s in spec.get('script', [])]
-    texts += spec.get('extra_hook_lines', [])
     blob = ' '.join(texts)
     if says_source(blob):
         problems.append(f'"{SOURCE}" appears in the page text')

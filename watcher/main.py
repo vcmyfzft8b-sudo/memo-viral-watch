@@ -1004,6 +1004,59 @@ def standardize(only=None):
     return report
 
 
+def faithful_rewrite():
+    """Once (user's decision, 10 Oct 2026): every script is the original video transcribed / translated almost one to
+    one - only the app is swapped. Rewrites every page of the live and waiting formats sentence by sentence, reopens
+    formats the gate archived (they mostly failed the old "independent wording" rule), drops the generated format
+    references (rebuilt without "claims we must not make") and clears the page-check results. Remembers finished pages
+    (fmt['faithful']), so it simply continues after a usage limit. Publishing happens in reset-pending / normal runs."""
+    cfg, fmts = load_config(), load_formats()
+    mkts = M.load(cfg)
+    meta = state.load('meta.json', {})
+    if not meta.get('faithful_rewrite_started'):
+        meta['faithful_rewrite_started'] = int(time.time())
+        state.save('format_references.json', {})
+        meta['audit'], meta['audit_fingerprints'] = {}, {}
+    for f in fmts:
+        if f.get('status') == 'archived' and (f.get('archived_reason') or '').startswith('did not pass the page check'):
+            f['status'] = 'pending'
+            f.pop('pending', None)
+            f.pop('archived_reason', None)
+            print('reopened:', f['title'])
+    state.save('formats.json', fmts)
+    state.save('meta.json', meta)
+    done = failed = 0
+    for f in [f for f in fmts if f.get('status') in ('active', 'pending')]:
+        for mk in mkts:
+            pid = page_of(f, mk['key'])
+            if not pid or ((f.get('faithful') or {}).get(mk['key']) and (f.get('hook_short') or {}).get(mk['key'])):
+                continue
+            try:
+                st, why = ('ok', 'already faithful') if (f.get('faithful') or {}).get(mk['key']) else \
+                    align.align_page(f, pid, mk['lang'], cfg, cfg['links'])
+                hs, hwhy = reword.fix_directions(f, pid, mk['lang'], cfg['models']['classify'])  # short visual hook section
+                if hs == 'ok':
+                    f.setdefault('hook_short', {})[mk['key']] = True
+                else:
+                    why += f' | hook: {hwhy}'
+            except Exception as e:
+                st, why = 'error', str(e)[:200]
+            print(f"{f['title'][:45]} | {mk['key']} | {st} | {why}", flush=True)
+            if st == 'ok':
+                f.setdefault('faithful', {})[mk['key']] = True
+                done += 1
+            else:
+                failed += 1
+            state.save('formats.json', fmts)
+            if 'limit' in why:
+                print('usage limit reached - run faithful-rewrite again later, it continues where it stopped')
+                return
+    left = sum(1 for f in fmts if f.get('status') in ('active', 'pending') for mk in mkts
+               if page_of(f, mk['key']) and not ((f.get('faithful') or {}).get(mk['key']) and (f.get('hook_short') or {}).get(mk['key'])))
+    notify.push('✍️ Scripts switched to near 1:1 translations + short visual hook', f'{done} pages rewritten now, {failed} failed, {left} still to do.'
+                + ('' if left else ' Next: the quality check publishes the reopened formats.'))
+
+
 def bootstrap(limit, days=30):
     """The format list starts empty. This builds the first formats
     from the strongest viral videos of the tracked accounts in the last `days` days - exactly like a viral video in a
@@ -1184,6 +1237,7 @@ def main():
     ap.add_argument('--relist', action='store_true', help='only re-draw the format lists (order + going-viral section)')
     ap.add_argument('--setup-notion', action='store_true', help='create the Notion pages (list, all formats, archive, radar, hook lab) once')
     ap.add_argument('--hook-lab', default='', nargs='?', const='-', help='[market:page_id] a copy of the Parakeet Visual Hook Lab -> that market\'s language, linked from its pages')
+    ap.add_argument('--faithful-rewrite', action='store_true', help='once: every page script becomes the original transcribed/translated almost 1:1 (only the app swapped)')
     ap.add_argument('--verify', action='store_true', help='read-only check of every list and page in Notion against the state')
     ap.add_argument('--reset-pending', action='store_true', help='formats waiting at the gate get their 4 tries back (after a fix)')
     ap.add_argument('--fill-markets', action='store_true', help='every market gets its missing pages (live and waiting formats), then re-sort')
@@ -1440,6 +1494,9 @@ def main():
         from . import setup
         market, _, page = (a.hook_lab if ':' in a.hook_lab else ':').partition(':')
         setup.hook_lab(load_config(), market or None, page or None)
+        return
+    if a.faithful_rewrite:
+        faithful_rewrite()
         return
     if a.verify:
         from . import verify

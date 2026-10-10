@@ -3,11 +3,11 @@
 Rules (agreed 2026-10-07):
 - one sentence of ours per sentence of the original, about the same length; the whole script at most 110% of the
   original (and at least 80%) - nothing added;
-- same meaning, but built differently (other word order, question instead of statement, other words);
+- the original transcribed and translated (if needed) almost one to one - same words, nothing reworded;
 - "Memo AI" is said/written exactly where the original says/writes Astra AI (same number of times). If the original
   only SHOWS the app without naming it, we only show it too ("this app here");
 - a website / call to action only where the original has one (Astra AI's site -> memoai.eu);
-- the app (link cue) appears at the same moments as in the original; scores are X/Y; no promises nobody can keep.
+- the app (link cue) appears at the same moments as in the original; only the app (and features it lacks) change.
 Only the script section is replaced (old text backed up in state/script_backup.json); the filming directions are
 then matched to the new script.
 """
@@ -109,20 +109,18 @@ recording is shown, and the asset names):
 
 {('REFERENCE DEFINITION of this format (beats, product moment, brand/CTA rules): ' + json.dumps(ref, ensure_ascii=False)) if ref else ''}
 
-Write our new {T['lang_name']} script ({T['style']}) for the SAME FORMAT, independently worded:
-1. Same beats in the same order as the original (and the reference), the product introduced at the same beat, about
-   the same length. The whole script must have {int(n_orig * 0.8)}-{max_words(n_orig)} words (the original has
-   {n_orig}). Add no new beats, claims or features.
-2. Write every beat in your OWN words, as a creator would tell it from scratch: do NOT translate or paraphrase the
-   original's sentences one by one, do not keep its sentence structure, images or turns of phrase (only the hook
-   idea may stay close). A native viewer who saw the original must not recognise any sentence.
-3. Where the original says or writes {SOURCE} / its website, write "{OURS}" / {OURS_SITE} - exactly as often and
-   at the same spots. Where the original only shows the app without naming it (e.g. "this app here"), do the same:
-   do NOT name it. Never mention {SOURCE}.
-4. A website / call to action at the end only if the original has one.
-5. Scores/grades/percentages the app shows are X (before) and Y (after). No promises nobody can keep ("you will get
-   a 5", "you pass the matura for sure") - say "it really helps" instead. Address the viewer as {T['address']}.
-   Language: {T['style']}.
+Write our {T['lang_name']} script for this video: the ORIGINAL, transcribed and translated (if needed) almost one to
+one - {T['style']}:
+1. The same sentences in the same order with the same meaning, words, jokes, numbers, places and claims. Nothing
+   added, nothing left out, nothing reworded. The whole script has {int(n_orig * 0.8)}-{max_words(n_orig)} words (the
+   original has {n_orig}). If the original is already in {T['lang_name']}, keep its wording (only the spelling rules
+   of the language and the changes below).
+2. Only these change: where the original says or writes {SOURCE} (or another study app it promotes) / its website,
+   write "{OURS}" / {OURS_SITE} - exactly as often and at the same spots. Where the original only shows the app
+   without naming it (e.g. "this app here"), do the same: do NOT name it. Never mention {SOURCE}.
+3. An app feature {OURS} does not have becomes the closest real {OURS} feature (only those words, see above).
+4. Address the viewer exactly as the original does ({T['address']}).
+5. Keep the original's on-screen texts and call to action exactly where they are.
 6. Cues: put cue "{CUE}" on the sentence where the original shows the app/site, "asset" (with asset_name exactly as
    in our current script) where it shows something like a screen recording, "direction" (asset_name = short stage
    direction) for important acting moments, else null.

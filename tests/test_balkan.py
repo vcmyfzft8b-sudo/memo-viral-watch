@@ -126,3 +126,16 @@ def test_slovenian_pages_have_every_text_and_reject_serbo_croatian_leftovers():
     assert any('Croatian/Serbian' in p for p in builder.validate(spec(ok + ' Što ćeš?'), {'text': ''}, lang='sl'))
     assert any('characters' in p for p in builder.validate(spec(ok + ' Đak.'), {'text': ''}, lang='sl'))
     assert markets.lang_matches('sl', 'Slovenian') and not markets.lang_matches('sl', 'Croatian')
+
+
+def test_visual_hook_section_is_one_sentence_plus_the_lab_line():
+    from watcher import notion
+    s = {**spec('Memo AI tekst.'), 'visual_hook_first': 'sjediš za stolom i guliš mandarinu.', 'extra_hook_lines': ['x'],
+         'return_to_camera': True}
+    assert builder.hook_lines(s, 'sh') == ['Napravi isti vizuelni hook kao u videu za inspiraciju: sjediš za stolom i guliš mandarinu.']
+    blocks = notion.page_blocks(s, {'url': 'https://www.tiktok.com/@a/video/1'}, None, {'memo': 'https://memoai.eu/creator'},
+                                lang='sh', lab_url='https://lab')
+    i = next(k for k, b in enumerate(blocks) if b['type'] == 'heading_2' and '🎬' in b['heading_2']['rich_text'][0]['text']['content'])
+    section = blocks[i + 1:next(k for k in range(i + 1, len(blocks)) if blocks[k]['type'] == 'divider')]
+    assert len(section) == 2
+    assert section[1]['paragraph']['rich_text'][1]['text']['link'] == {'url': 'https://lab'}

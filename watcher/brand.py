@@ -39,9 +39,10 @@ and an AI chat about the note. From a photo of a worksheet/exercises it writes n
 step with worked examples. Making a note takes a few minutes (cut the waiting). The app speaks Slovenian, Croatian,
 Bosnian and Serbian. Free start: one free note, then a 3-day free trial.
 It does NOT have: an instant answer to a single photographed task ("snap and solve"), checking/grading the user's own
-homework, photos in the chat, PDF export, pasting text, an Android app from the store. If the original shows an Astra
-AI feature Memo AI does not have, replace that sentence with an equivalent step that exists (e.g. snap and solve ->
-scan the worksheet, Memo AI explains how to solve it step by step), keeping the sentence count.""" + (
+homework, photos in the chat, PDF export, pasting text, an Android app from the store. If the original names an app
+feature Memo AI does not have, change only the words of that feature to the closest real Memo AI feature (e.g. snap and
+solve -> scan the worksheet and Memo AI explains how to solve it step by step); the rest of the sentence stays
+word for word.""" + (
     f" Some originals promote another app instead of Astra AI ({', '.join(OTHER_APPS)}): treat that app exactly like "
     "Astra AI - Memo AI replaces it at the same spots and as often, and it must never appear." if OTHER_APPS else '')
 

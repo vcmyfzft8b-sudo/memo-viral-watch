@@ -130,8 +130,7 @@ def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, 
 
     blocks.append(block('heading_2', [rt(T['hook_h'])]))
     blocks += [para([rt(line)]) for line in builder.hook_lines(spec, lang)]
-    blocks.append(para([rt(T['required_line'])]))
-    blocks.append(para([rt('Visual Hook Lab', link=lab_url or links.get('visual_hook_lab'))]))
+    blocks.append(para([rt(T['hook_alt']), rt('Visual Hook Lab', link=lab_url or links.get('visual_hook_lab')), rt('.')]))
     blocks.append(divider())
 
     blocks.append(block('heading_2', [rt('🔧'), rt(T['res_h'], bold=True)]))

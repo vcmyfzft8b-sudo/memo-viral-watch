@@ -42,6 +42,15 @@ def check_page(pid, T, links):
         out.append(f"no app link to {links['memo']}")
     if any('memoai.eu' in u and u != links['memo'] for u in urls):
         out.append('old app link left')
+    k = next((n for n, b in enumerate(blocks) if b['type'].startswith('heading') and '🎬' in _plain(b)), None)
+    section = []
+    for b in blocks[k + 1:] if k is not None else []:
+        if b['type'] == 'divider' or b['type'].startswith('heading'):
+            break
+        if _plain(b).strip():
+            section.append(b)
+    if len(section) != 2 or not _plain(section[0]).startswith(T['hook_start'].strip()) or 'Visual Hook Lab' not in _plain(section[1]):
+        out.append(f'visual hook section is not "one sentence + Visual Hook Lab line" ({len(section)} lines)')
     if re.search(r'astra', ' '.join(_plain(b) for b in blocks if b['type'] != 'callout'), re.I):
         out.append('Astra mentioned outside the note')
     return out

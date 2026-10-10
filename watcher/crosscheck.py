@@ -10,8 +10,8 @@ against each other. A similar topic alone never makes two videos the same format
 Results are reported per dimension and country, separately:
   format_consistency      - example + script follow the reference (same hook, beats, order, demo, product timing)
   script_matches_example  - the script tells what the example shows
-  independent_wording     - wording is independently written (not translated sentences with the brand swapped)
-  features_claims         - only real Memo AI features, no invented testimonials / guaranteed grades or exams
+  faithful_translation    - the script is the example transcribed / translated almost one to one (only the app swapped)
+  features_claims         - only real Memo AI app features (all other claims stay as in the original)
   directions_match        - filming directions match the script
   approval                - approval-lock status (preserved / changed / not locked) - NEVER part of 'passed'
 
@@ -32,9 +32,9 @@ from . import align, audit, llm, localize, notion, reword
 from .brand import FACTS, OURS, SOURCE, TOPIC
 from .markets import PRIMARY, TEXT
 
-AUDIT_VERSION = 'group-2026-10-08.2'
+AUDIT_VERSION = 'group-2026-10-10.faithful-hook'
 REFERENCES = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'format_references.json')
-DIMENSIONS = ('format_consistency', 'script_matches_example', 'independent_wording', 'features_claims',
+DIMENSIONS = ('format_consistency', 'script_matches_example', 'faithful_translation', 'features_claims',
               'directions_match')
 
 
@@ -79,8 +79,9 @@ Write the format's reference definition that every country's page must follow. R
 "premise": "", "beats": ["<beat 1>", "..."], "filming": "<length, shots, demo sequence>",
 "product": {{"introduced_at_beat": <number>, "spoken_brand": "<where the brand/URL is said, or 'not spoken'>",
 "cta": "<the call to action, or 'none'>", "features_used": ["<only real {OURS} features>"]}},
-"allowed_localisation": ["<what may differ per country>"], "not_allowed": ["<what would make it another format,
-and claims we must not make>"]}}"""
+"allowed_localisation": ["<what may differ per country>"], "not_allowed": ["<what would make it another format>"]}}
+(The scripts are the original transcribed/translated almost one to one with only the app swapped - its claims, jokes
+and numbers stay; never list them as not allowed.)"""
     try:
         r = llm.chat_json(cfg['models']['build'], 'You define UGC video formats precisely. Reply with JSON only.', prompt,
                           timeout=900)
@@ -264,21 +265,22 @@ other. Be strict:
   the brand/URL spoken only where the reference says so, the same CTA? Only the listed allowed localisation
   differences may differ. A similar topic ({TOPIC}) alone is NOT the same format.
 - script_matches_example: does the script tell what this country's example shows (beats, order, product timing)?
-- independent_wording: is the script independently written? FAIL if most sentences are translations or light
-  rewrites of the example's sentences with the brand swapped. Same beats are expected; same sentences are not.
-- features_claims (script AND on-screen title): only real {OURS} features; X/Y score placeholders kept; no invented
-  testimonials, no guaranteed grades, no guaranteed passed exams (matura, entrance exams).
-- directions_match: do the filming directions match the script (no quotes of lines that are not in the script, no
-  contradictions, no features {OURS} lacks) and cover the reference's filming/demonstration sequence? Cue
-  markers the directions refer to are the [CUE: ...] markers. The brand counts as spoken only where it is in the
-  spoken text; a [CUE: ...] marker shows it on screen.
+- faithful_translation: is the script this country's example transcribed / translated almost one to one - the same
+  sentences in the same order, same meaning, words, jokes, numbers and claims, nothing added, left out or
+  reworded? Allowed differences only: the app ({SOURCE} or another study app) -> {OURS} at the same spots, its
+  website -> memoai.eu, an app feature {OURS} lacks -> the closest real one, the language's spelling rules.
+- features_claims (script AND on-screen title): only real {OURS} app features. All other claims, numbers and jokes
+  stay exactly as in the original (that is correct, not a problem).
+- directions_match: is the visual hook section (OUR FILMING DIRECTIONS) one sentence, two at most, telling the creator
+  to copy what this country's example video does in its first seconds - concrete and matching that opening? Nothing
+  else is expected there (no demonstration sequence, no app instructions).
 
 {chr(10).join(blocks)}
 
 Never put the character " inside an issue text (write ' or « » instead) - the answer must be valid JSON.
-If a country's on-screen title makes a claim we can't make (an invented number of interviews, a time promise, a
-guaranteed result) or, in a silent on-screen-text format, differs from the script's first on-screen line, put a fixed
-title for it in "titles" (same language and style, same hook idea), else leave it out.
+If a country's on-screen title is not the example's on-screen title translated almost one to one (only the app
+swapped) or, in a silent on-screen-text format, differs from the script's first on-screen line, put a fixed title for
+it in "titles" (same language), else leave it out.
 Return JSON {{"titles": {{"<country>": "<fixed title>"}}, "results": {{"<dimension>": {{"<country>": {{"pass": true, "issue": "<short, empty if pass>"}}}}}},
 "summary": "<one sentence>"}} with every dimension {list(DIMENSIONS)} for every country {sorted(evidence)}."""
     for attempt in range(3):  # an unreadable answer is asked again, never guessed
@@ -437,7 +439,7 @@ def group_cycle(fmt, mkts, cfg, page_of, meta, put_example=None):
 def fix_group(fmt, mkts, cfg, page_of, meta, res, put_example, links):
     """Automatic repairs for a failed group - never on approval-locked pages (those are reported for approval).
     1. a country whose example is not this format -> the reference's canonical example
-    2. script not following the example / not independently worded / wrong claims -> rewritten (align_page)
+    2. script not following the example / not faithful to it / wrong app features -> rewritten (align_page)
     3. directions not matching -> directions rewritten
     Returns (changed, awaiting_approval)."""
     ref = reference(fmt['id']) or {}
@@ -483,7 +485,7 @@ def fix_group(fmt, mkts, cfg, page_of, meta, res, put_example, links):
             if url and (not cur or cur_id not in (ref.get('accepted_sources') or [])):
                 put_example(fmt, m, pid, lang, url)
                 changed.append(f'{m}: example -> canonical {canon}')
-        if set(failing) & {'format_consistency', 'script_matches_example', 'independent_wording', 'features_claims'}:
+        if set(failing) & {'format_consistency', 'script_matches_example', 'faithful_translation', 'features_claims'}:
             st, why = align.align_page(fmt, pid, lang, cfg, links, feedback=issues)
             changed.append(f'{m}: script rewritten' if st == 'ok' else f'{m}: rewrite refused ({why})')
         if set(failing) & {'format_consistency', 'directions_match'}:
@@ -494,7 +496,7 @@ def fix_group(fmt, mkts, cfg, page_of, meta, res, put_example, links):
 
 def approval_drafts(fmts, mkts, cfg, page_of, meta):
     """Approval-locked scripts that fail the group check get a replacement DRAFT (nothing is written to Notion): same
-    beats and product timing as the reference's canonical example, independently worded. Stored in
+    beats and product timing as the reference's canonical example, faithful to it. Stored in
     meta['approval_drafts'] for the user to approve."""
     out = meta.setdefault('approval_drafts', {})
     for f in fmts:
