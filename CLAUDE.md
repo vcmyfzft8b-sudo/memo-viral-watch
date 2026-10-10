@@ -17,6 +17,15 @@ Claude, every 3 days) and turns their viral formats into Memo AI creator pages i
 - Alerts go to Discord `#astra-alerts` (DISCORD_ALERTS_WEBHOOK_URL), not Slack.
 - Approved scripts (registry/approved_scripts.json) are locked – only change with the user's OK.
 
+## Script rules (user's decision, 10 Oct 2026)
+- A script is the ORIGINAL video transcribed and translated (if needed) almost one to one – same sentences, order,
+  words, jokes, numbers, claims. Only these change: the app (Astra AI, Studyflash, …) -> Memo AI at the same spots,
+  its website -> memoai.eu, an app feature Memo AI lacks -> the closest real one, the page language's spelling
+  (ijekavian / Slovenian). No "independent wording", no toning down.
+- Visual hook section = ONE sentence (two at most): "Napravi isti vizuelni hook kao u videu za inspiraciju: …" (what
+  the example does in its first seconds) + one line "Želiš drugi vizuelni hook? Izaberi jedan iz Visual Hook Lab."
+  Nothing else (`reword.fix_directions` enforces it, `verify` checks it).
+
 ## Where things are
 - Who is who + real Memo AI features: `watcher/brand.py` (checked against the Memo AI app code). Market texts and
   language rules: `watcher/markets.py`.
