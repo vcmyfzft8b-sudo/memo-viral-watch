@@ -10851,6 +10851,61 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-8118-ac23-d926a42a3a0e": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://www.memoai.eu/ugc/oral-quiz",
+   "plain_text": "Memo AI · memoai.eu/ugc/oral-quiz",
+   "text": {
+    "content": "Memo AI · memoai.eu/ugc/oral-quiz",
+    "link": {
+     "url": "https://www.memoai.eu/ugc/oral-quiz"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") (govori kviz) Dati jih moraš v tem vrstnem redu, in sicer takole. ",
+   "text": {
+    "content": ") (govori kviz) Dati jih moraš v tem vrstnem redu, in sicer takole. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-811b-9e54-cf13befe87ca": [
   {
    "annotations": {
@@ -12884,6 +12939,25 @@
    "plain_text": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu se spomniš tistega enega slajda, ampak pač nisi naročena na možgane premium. ",
    "text": {
     "content": "(Med testom za mizo pod stresom gleda v list in grize kemični) POV: na testu se spomniš tistega enega slajda, ampak pač nisi naročena na možgane premium. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f565e84-a3c2-81c0-8a3c-ed7a8f67cb44": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(Selfie close-up, laptop with the oral quiz already playing; creator flustered, trying not to laugh; caption: Nisem ustvarjena za zdravstveno nego 😳) (govori kviz) Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš? (Creator answers live, self-righteous, holding back a laugh) Seveda samo s privolitvijo. (govori kviz) Pacientka je nezavestna. Privolitve ne more dati. (Creator caught off guard, eyes wide) Oh. (govori kviz) Potem ji moraš DICK vseeno dati. (Creator shocked, covers mouth, bursts out laughing) Brez privolitve? (govori kviz) Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate. (Creator relieved and embarrassed, still laughing) Oh. ",
+   "text": {
+    "content": "(Selfie close-up, laptop with the oral quiz already playing; creator flustered, trying not to laugh; caption: Nisem ustvarjena za zdravstveno nego 😳) (govori kviz) Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš? (Creator answers live, self-righteous, holding back a laugh) Seveda samo s privolitvijo. (govori kviz) Pacientka je nezavestna. Privolitve ne more dati. (Creator caught off guard, eyes wide) Oh. (govori kviz) Potem ji moraš DICK vseeno dati. (Creator shocked, covers mouth, bursts out laughing) Brez privolitve? (govori kviz) Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate. (Creator relieved and embarrassed, still laughing) Oh. ",
     "link": null
    },
    "type": "text"

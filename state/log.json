@@ -2499,5 +2499,55 @@
   ],
   "ts": 1791671244,
   "type": "rerank"
+ },
+ {
+  "format": "A20261010214237",
+  "reasons": [
+   "cross-country check fail: format_consistency sl: Beat 6 has no 'memo' cue and no direction to turn the camera from the face to the laptop, only a [CUE] marker. TUTOR lines are marked '(govori tutor)' instead of '(Memo AI govori)'. The stage directions are in English, not Slovenian."
+  ],
+  "tries": 2,
+  "ts": 1791671504,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010214237",
+  "reasons": [
+   "cross-country check fail: format_consistency sl: TUTOR lines are marked only as '(govori tutor)', not with a Memo AI direction like '(Memo AI govori)', and each line has the marker twice. Beat 6 has no 'memo' cue and no direction to turn the camera from the face to the laptop, only a bare [CUE]. The campaign note requires bo"
+  ],
+  "tries": 3,
+  "ts": 1791671629,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261010214237",
+  "reasons": [
+   "cross-country check fail: format_consistency sl: The 'memo' cue is missing: beat 6 has only the [CUE] link marker and never tells the creator to turn the camera from their face to the laptop. Tutor lines are marked '(govori tutor)' instead of '(Memo AI govori)' as the brief asks, and the direction is duplicated before each l"
+  ],
+  "tries": 4,
+  "ts": 1791671796,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261008231529",
+   "A20261010162026",
+   "A20261008204718",
+   "A20261010163838",
+   "A20261008224450",
+   "A20261010215329",
+   "A20261010162928",
+   "A20261009015525",
+   "A20261010220207",
+   "A20261010215744",
+   "A20261010215543",
+   "A20261010161437",
+   "A20261009014121"
+  ],
+  "ts": 1791671797,
+  "type": "rerank"
  }
 ]

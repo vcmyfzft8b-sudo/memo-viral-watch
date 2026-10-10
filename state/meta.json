@@ -16,8 +16,8 @@
   "A20261010162928:sl": "ok",
   "A20261010163838:sh": "ok",
   "A20261010163838:sl": "ok",
-  "A20261010214237:sh": "fixed",
-  "A20261010214237:sl": "fixed",
+  "A20261010214237:sh": "ok",
+  "A20261010214237:sl": "ok",
   "A20261010215329:sl": "ok",
   "A20261010215543:sl": "ok",
   "A20261010215744:sl": "fixed",
@@ -39,7 +39,7 @@
   "A20261010163838:sh": "3d5371b22f0210793c94eca3c5f291cc1c6789dc64eac202c241916bab31749b",
   "A20261010163838:sl": "947a67f61eef2319c8df6ce96ee81c921a412995e9ce1d1a21495e0fdcaed8aa",
   "A20261010214237:sh": "127ed8fc3050cea37bbfd9991d1a2e288d53bc901d4437755ab0cdc8be19bf8c",
-  "A20261010214237:sl": "ec760bd32bf6e5b6ce4f523693545d4a56da6aa1c8c9427fa7bc3b92bdfab201",
+  "A20261010214237:sl": "21e90c890e7abf4897cc7da8636022054715ea0c1839eb78eb763a87f95a8dea",
   "A20261010215329:sl": "93084276db24eee73dc2070db6c220d0f259514459208731c6389276c30dcd34",
   "A20261010215543:sl": "6540fc9c15a76c22f1bfb20fe017159023dab867806e480705a028b7dc8ceef9",
   "A20261010215744:sl": "bea348f3bbc1b221385faaf5ecb4a413734b55190aea3875f34432b64e7654d8",
@@ -1249,7 +1249,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791671198,
+   "checked_at": 1791671769,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1262,10 +1262,10 @@
      "video_identity": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e"
     }
    },
-   "key": "445003fe09bfa1a10bd7acad21b3c06134245c1baad71d8995c3463f0b5d74e5",
+   "key": "2bd497356dceaad9e68743fdc5086beec997255d105a0617af6862d5a59ba011",
    "passed": false,
    "reasons": [
-    "format_consistency sl: The beat-6 'memo' cue and the instruction to turn the camera from the face to the laptop are missing. The script only has a [CUE] link marker, so the face-then-laptop reveal is never directed. TUTOR lines are marked '(govori kviz)' instead of '(Memo AI govori)', and the stage directions are in English, not Slovenian."
+    "format_consistency sl: The 'memo' cue is missing: beat 6 has only the [CUE] link marker and never tells the creator to turn the camera from their face to the laptop. Tutor lines are marked '(govori tutor)' instead of '(Memo AI govori)' as the brief asks, and the direction is duplicated before each line."
    ],
    "results": {
     "directions_match": {
@@ -1304,7 +1304,7 @@
       "pass": true
      },
      "sl": {
-      "issue": "The beat-6 'memo' cue and the instruction to turn the camera from the face to the laptop are missing. The script only has a [CUE] link marker, so the face-then-laptop reveal is never directed. TUTOR lines are marked '(govori kviz)' instead of '(Memo AI govori)', and the stage directions are in English, not Slovenian.",
+      "issue": "The 'memo' cue is missing: beat 6 has only the [CUE] link marker and never tells the creator to turn the camera from their face to the laptop. Tutor lines are marked '(govori tutor)' instead of '(Memo AI govori)' as the brief asks, and the direction is duplicated before each line.",
       "pass": false
      }
     },
@@ -1320,7 +1320,7 @@
     }
    },
    "status": "fail",
-   "summary": "SH fully follows the reference with the page's Croatian wording, correct TUTOR/CREATOR marking and the 'memo' camera-turn cue, while SL has a correct dialogue and stopping point but fails format consistency because it lacks the 'memo' cue and camera-turn direction and uses non-standard, English-language stage directions.",
+   "summary": "Both scripts use the page's exact dialogue and stop at the original's cut point, but SL fails format consistency because it has no 'memo' cue telling the creator to turn the camera to the laptop and its tutor-line marker is non-standard.",
    "title_fixes": {},
    "version": "group-2026-10-10.localized-sl"
   },
