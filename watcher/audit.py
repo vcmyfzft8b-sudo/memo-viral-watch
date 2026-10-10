@@ -187,6 +187,7 @@ Return JSON {{"example_same_format": true, "script_follows_example": true, "scri
         v['script_issues'].append('live script or example differs from the approved version')
     if avoid_found(lang, title):  # e.g. an ekavian title on an ijekavian page
         v['title_ok'] = False
+        passed = False
     if says_source(script):
         passed = False
         v['script_issues'].append(f'{SOURCE} is mentioned in the script')
