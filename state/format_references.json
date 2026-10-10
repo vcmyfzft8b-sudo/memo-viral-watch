@@ -1,1 +1,209 @@
-{}
+{
+ "A20261008204718": {
+  "accepted_sources": [
+   "7691776401896131861"
+  ],
+  "allowed_localisation": [
+   "Spoken and on-screen language: Slovenian, Croatian, Bosnian or Serbian, with local spelling and slang",
+   "The country named in the hook (e.g. Slovenija instead of Srbija)",
+   "Local names of the airline, cinema chain and theatres where the country's script names them",
+   "Creator, setting, outfit and sticker visual style",
+   "Which real Memo AI features appear in the screen recording (e.g. mind map, practice test or voice tutor instead of quiz), as long as it stays a short demo",
+   "Exact wording of the outro (like/follow)"
+  ],
+  "beats": [
+   "1. Hook: talking head with on-screen title 'Student discounts you definitely didn't know about ‼️'. Spoken: 'student discounts in [country] that 99% of you don't know about' plus 'save this video before you watch it, because you'll need it'.",
+   "2. Item 1/4, transport: sticker '1/4 Transport 🚆 ✈️ (-20% / -10%)'. Spoken: you also get 10% off flights with the airline named in the original.",
+   "3. Item 2/4, Microsoft Office: sticker '2/4 Microsoft Office 📝 (FREE)' plus a 'FREE' sticker. Spoken: you get free Microsoft Office (PowerPoint, Excel, Word); just log in with your school or student email and it's all free.",
+   "4. Item 3/4, cinema and theatre: sticker '3/4 Cinema & theatre 🍿 (-15% / -50%)'. Spoken: for fun, Cineplexx cinemas give a ticket discount, and most theatres go up to 50% off.",
+   "5. Item 4/4, Memo AI: sticker '4/4 Memo AI'. Spoken: 'fourth, you get a free trial on Memo AI'. Cut to a screen recording of Memo AI: upload a lecture/PDF or scan notes, the note is created (waiting cut), then flashcards and a quiz are shown.",
+   "6. Outro: talking head or text asking viewers to like and follow."
+  ],
+  "canonical_source": "7691776401896131861",
+  "filming": "About 25–40 s, vertical 9:16. Shot as a selfie-style talking head in a casual setting (room or desk), with fast jump cuts between items. Each item has a numbered on-screen sticker (X/4) with emoji and discount percentage or FREE. Item 4 cuts to a phone or laptop screen recording of memoai.eu: open Memo AI, upload a PDF/lecture or scan notes with the Scan camera (up to 10 photos), show the finished note, then tap through flashcards and a quiz with explanations. The note-generation wait is cut. Close on a short like-and-follow outro.",
+  "generated": 1791644246,
+  "hook": "Talking head straight to camera, with the on-screen text 'Student discounts you definitely didn't know about ‼️'. The spoken line is 'Student discounts in [country] that 99% of you don't know about', followed right away by 'save this video before you watch it, because you'll need it'.",
+  "not_allowed": [
+   "Changing it from a talking-head numbered listicle of student discounts into another format (skit, tutorial-only, voiceover-only)",
+   "Dropping the numbered X/4 stickers or the four-item structure",
+   "Introducing Memo AI before the last item or making it more than one item of the list",
+   "Leaving out the Memo AI screen recording in item 4",
+   "Mentioning Astra AI, Studyflash or any other study app",
+   "Showing or claiming features Memo AI doesn't have (snap-and-solve, homework grading, photos in chat, PDF export, pasting text, Android store app)",
+   "Removing the 'save this video' opener or the like-and-follow outro"
+  ],
+  "premise": "A student creator shares a quick insider list of four little-known pupil and student discounts: transport, free Microsoft Office, and cinema/theatre. Each item gets a numbered sticker. The fourth and last 'discount' is Memo AI, which you can try for free. It is shown as a screen recording of the web app before a like-and-follow outro.",
+  "product": {
+   "cta": "Spoken at the start: save the video. Item 4: try Memo AI for free (one free note, then a 3-day free trial). Outro: like and follow.",
+   "features_used": [
+    "Upload a PDF/Word/PowerPoint or a recorded lecture",
+    "Scan camera: photos of notes or textbook pages (up to 10)",
+    "Notes generated from the material",
+    "Flashcards",
+    "Quiz with explanations",
+    "Free start: one free note, then a 3-day free trial"
+   ],
+   "introduced_at_beat": 5,
+   "spoken_brand": "Said once, as the fourth list item ('fourth, you get a free trial on Memo AI'). It appears on the '4/4 Memo AI' sticker and memoai.eu may be visible in the screen recording. It is not mentioned before item 4."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7691776401896131861": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861"
+  },
+  "title_en": "Student discounts everyone misses 🎟️"
+ },
+ "A20261008211912": {
+  "accepted_sources": [
+   "7691071853334498580"
+  ],
+  "allowed_localisation": [
+   "Language of the on-screen text: Slovenian, Croatian, Bosnian or Serbian, translated almost word for word, keeping 'POV', 'mozak premium'/'brain premium' and 'highkey'",
+   "The specific trending audio track, as long as it is a currently trending no-lyrics-focus or rap meme sound used as background (no voiceover)",
+   "Creator identity, outfit, room or classroom setting",
+   "School subject shown in the lecture slides and notes on the laptop",
+   "App interface language (SL/HR/BS/SR)",
+   "Laptop model, and the choice between flashcards and quiz as the optional second screen in the demo"
+  ],
+  "beats": [
+   "Beat 1 – Stress (about 0–3 s): The creator sits at a desk in a test or exam setting. She looks stressed and blank, and may stare at the paper, chew a pen or rub her forehead because she can't recall the slide. On-screen text: \"POV: Setiš se tog jednog slajda na testu ali nisi pretplaćen na mozak premium\". Trending rap audio plays. There is no voiceover.",
+   "Beat 2 – Brain upgrade (about 3–8 s): Hard cut on the beat to a handheld phone shot of a laptop screen with Memo AI (memoai.eu) open, showing notes made from the lecture slides (PowerPoint/PDF) and, optionally, a quick scroll or click into the flashcards or quiz. On-screen text: \"Pa highkey nadogradiš mozak uz Memo AI\" (So you highkey upgrade your brain with Memo AI). The same audio keeps playing with no voiceover."
+  ],
+  "canonical_source": "7691071853334498580",
+  "filming": "Total length 6–10 s, vertical 9:16, TikTok-native look. Shot 1 is a static or slightly handheld medium close-up of the creator at a desk in a test setting (paper and pen, classroom or desk vibe), lasting about 3 s, with an exaggerated stressed or blank face. Shot 2 is a handheld POV phone recording of a laptop screen (not a screen recording), lasting about 3–5 s. Demo sequence: the Memo AI note made from the lecture slides is already open, with formulas rendered properly if any appear. Slowly scroll the note, then optionally click once into the flashcards or the quiz. The cut lands on a beat of the trending audio. Captions use TikTok's native text style. No voiceover or talking, and no waiting or loading screens are shown.",
+  "generated": 1791644594,
+  "hook": "On-screen text over a close-up of the creator looking stressed at her desk during a test: \"POV: Setiš se tog jednog slajda na testu ali nisi pretplaćen na mozak premium\" (POV: You remember that one slide on the test but you're not subscribed to brain premium). The trending rap audio plays from the first frame.",
+  "not_allowed": [
+   "Adding a voiceover, talking-to-camera or spoken explanation",
+   "Changing the two-beat structure (stressed test moment, then laptop 'brain upgrade' reveal)",
+   "Replacing the handheld laptop-screen shot with a clean screen recording or showing the app on an Android store listing",
+   "Dropping the 'brain premium' subscription joke or the 'upgrade your brain' payoff",
+   "Showing or naming Astra AI, Studyflash or any other study app",
+   "Showing features Memo AI does not have (snap-and-solve on a single task, homework checking, photos in chat, PDF export, pasting text)",
+   "Adding an explicit CTA, price, promo code or tutorial-style walkthrough",
+   "Showing the note-generation waiting time"
+  ],
+  "premise": "A no-voiceover POV meme. Remembering a slide during a test is framed as a paid 'brain premium' subscription the student doesn't have. The punchline is that she 'highkey upgrades her brain' with Memo AI, shown as a handheld shot of a laptop screen with the app open. The joke works through on-screen text, facial expression and trending audio only. Nobody speaks.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "Upload a PowerPoint or PDF of lecture slides",
+    "Notes generated from the slides (formulas shown properly)",
+    "Flashcards",
+    "Quiz with explanations"
+   ],
+   "introduced_at_beat": 2,
+   "spoken_brand": "not spoken (brand appears only in on-screen text, 'uz Memo AI', and on the laptop screen showing memoai.eu)"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7691071853334498580": "https://www.tiktok.com/@studywithreveka/video/7691071853334498580"
+  },
+  "title_en": "Brain Premium with Memo AI 🧠"
+ },
+ "A20261009001913": {
+  "accepted_sources": [
+   "7693684473686150406"
+  ],
+  "allowed_localisation": [
+   "Language and dialect of the script (Slovenian for Slovenia; Croatian/Bosnian/Serbian elsewhere), translated almost one to one",
+   "The local name of the e-diary system (e.g. eAsistent in Slovenia, e-Dnevnik elsewhere) and the look of the overlay screenshots",
+   "The local grading-scale word for the failing grade (e.g. 'enka' / 'jedinica' / 'cvek')",
+   "Local wording for the parents' meeting, the belt line and slang, keeping the same joke",
+   "The part number on screen",
+   "The creator, their room/setting and on-screen caption styling",
+   "The demo's on-screen app language and the sample notes/subject used"
+  ],
+  "beats": [
+   "Hook: face to camera with an on-screen 'PART 5' label. 'I'm reacting to the funniest e-diary remarks, part 5. This time we start aggressively, with a remark one of you sent me.'",
+   "Remark 1 (screenshot overlay): after being warned to put away his phone during class, the student yelled. Creator voices him: 'Leave me alone, old lady, I'm playing Clash Royale.' Joke defending him: maybe his opponent played Mega Knight, she can't forbid everything, he'll lose trophies.",
+   "Remark 2 (overlay): during a test the student took out a pre-solved test and tried to hand it in as his own work. Joke: 'What did this guy come up with? He's out of the public eye for 3 days and he's already plotting a scam.'",
+   "Remark 3 (overlay): the student submitted a photo of a doctor's note, which turned out to be AI-generated. Joke: 'Honestly, it's not bad, it might even pass with some teachers… don't try it.'",
+   "Segue + Memo AI demo: 'If you're going to use AI anyway, better use it the right way, like Memo AI, the study app.' You literally upload all your notes to the app and it gives you different ways to learn: flashcards, quiz, podcast, practice tests, and a voice tutor that explains the material out loud. 'My favourite is the practice tests: I get all the lessons, pick which ones I want, get questions, answer them, and at the end I get my test result.'",
+   "Return: 'And we're moving on to the next remark.' Remark 4 (overlay): during class the student threw a firecracker out of the classroom window and put the other students' safety at risk. Joke: 'I'm amazed you even stay in these schools. They'd have kicked me out 3 times already. I talk in class and they want to kick me out.'",
+   "Remark 5 (overlay, 'and to finish'): the student got a 1 (fail) and asked if it could be kept spoiler-free for his parents. Joke: it's really not fair, at least wait for the parents' meeting. With e-diaries you used to be able to stay quiet until the meeting. Mum comes home: 'Do I have to blush every time at that parents' meeting?' At least you were alive until the meeting. Now the belt is waiting for you at the door.",
+   "Outro CTA: 'And send me your funniest remarks in the comments.'"
+  ],
+  "canonical_source": "7693684473686150406",
+  "filming": "About 75–90 s, vertical 9:16, one continuous talking-head shot: creator at home or in a bedroom, phone at eye level, casual and sarcastic delivery with jump cuts between lines. Each e-diary remark appears as a screenshot overlay (e-diary style, the remark text highlighted) above or beside the creator while it is read out. A 'PART 5' text label sits on screen from the start. Demo sequence (about 15–20 s, screen recording overlaid or full screen with creator voice-over): open memoai.eu on a phone → upload notes (PDF or photos via Scan or gallery) → cut the few-minute wait → quickly flash the generated note, flashcards, quiz with explanations, podcast and voice tutor → pick the topics for a practice test → answer questions → result screen with percentage and per-answer feedback. Then cut straight back to the talking head for 'and we're moving on to the next remark'.",
+  "generated": 1791645101,
+  "hook": "Creator talks to camera with 'PART 5' (series number) on screen: 'I'm reacting to the funniest e-diary remarks, part 5. This time we're starting aggressively, with a remark one of you sent me.'",
+  "not_allowed": [
+   "Removing the screenshot-overlay remarks or replacing them with a different gimmick (skits, POV acting, stitches with other creators)",
+   "Dropping the AI fake-doctor's-note remark or the 'if you're going to use AI, use it properly' segue that leads into the product",
+   "Moving the product to the start or end, or turning the video into a standalone app review instead of a mid-video segue with a return to the remarks",
+   "Leaving out the return to more remarks after the demo, or the closing 'send me your remarks in the comments' CTA",
+   "Mentioning Astra AI, Studyflash or any other study app, or showing features Memo AI doesn't have (snap-and-solve answers, homework grading, photos in chat, PDF export, pasting text, a store Android app)",
+   "Changing it from a single creator's talking-head reaction to a voice-over-only or multi-person format"
+  ],
+  "premise": "A talking-head reaction series. The creator reads real-sounding e-diary teacher remarks, shown as screenshot overlays, and jokes about each one. The third remark is about a student who used AI to fake a doctor's note. That gives a natural segue: 'If you're going to use AI anyway, better use it properly', followed by a quick Memo AI study-app demo. Then the creator goes back to the remarks and ends by asking viewers to send their own.",
+  "product": {
+   "cta": "No direct product CTA. The video ends with the series CTA: 'Send me your funniest remarks in the comments.'",
+   "features_used": [
+    "Upload notes (PDF/Word/PowerPoint or up to 10 photos via in-app Scan or gallery)",
+    "Flashcards",
+    "Quiz with explanations (replaces true/false and quizzes)",
+    "Podcast",
+    "Graded practice test (percentage + feedback per answer)",
+    "Voice tutor that explains the material out loud topic by topic (replaces oral tests)"
+   ],
+   "introduced_at_beat": 5,
+   "spoken_brand": "Spoken once at the mid-video segue (beat 5): 'Memo AI, the study app', right after 'if you're going to use AI anyway, better use it properly'. It replaces Astra AI at the same spot and the same number of times. memoai.eu may appear on screen during the demo."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7693684473686150406": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406"
+  },
+  "title_en": "Funniest e-diary teacher remarks 😂 (reaction series, Part X) with an 'if you're going to use AI, use it properly' segue into Memo AI"
+ },
+ "A20261010130453": {
+  "accepted_sources": [
+   "7694393004118854930"
+  ],
+  "allowed_localisation": [
+   "Spoken language of the dialogue: Slovenian, Croatian, Bosnian or Serbian, translated almost one to one from the original",
+   "Wording of the closing overlay in the local language (e.g. 'aplikacija se zove Memo AI' / 'aplikacija se imenuje Memo AI')",
+   "Local slang for 'gossip' / 'tea' / 'soap opera' that keeps the same meaning",
+   "Student's voice, gender and accent; the tutor voice as it sounds in the local-language app",
+   "Exact glass, ketchup brand, background surface and lighting",
+   "Burned-in caption style and font",
+   "Tiny timing differences of ±5 seconds"
+  ],
+  "beats": [
+   "1. ASMR cold open: tight close-up of hands squeezing ketchup into a glass of water while the voice tutor explains plainly: 'Even the phone you're holding is made of atoms.'",
+   "2. Interruption: the student cuts the tutor off ('Wait, wait, wait… can you explain that to me like some juicy gossip?'). This shows the tutor can be interrupted mid-explanation. The ketchup squeezing continues.",
+   "3. Gossip reframe: the tutor replies 'OK, listen to this:'. The nucleus is a mega-popular star that everyone hangs around, and the electrons are fans who keep circling but can never get totally close. Then: 'Crazy, right?'",
+   "4. Gossip escalation: the tutor keeps the drama going with questions back to the student: are the electrons loyal fans, borrowing notes, 'a real soap opera, right?', and 'which atoms are the worst in this gossip clan?'. The ASMR prop action stays on screen throughout.",
+   "5. Reveal: cut to a close-up of the phone showing Memo AI's voice tutor screen mid-conversation, with the text overlay 'the app is called Memo AI'."
+  ],
+  "canonical_source": "7694393004118854930",
+  "filming": "About 20–30 seconds, vertical 9:16, no face on camera. Shot 1 (about 80% of the runtime) is one continuous, static, tightly framed close-up of the ASMR prop action: ketchup squeezed into a clear glass of water against a clean background, in soft natural light, with the trickle and squeeze sounds audible under the voice. The audio is a real screen or voice recording of a live Memo AI voice tutor session on a note about atoms, made beforehand from an uploaded or scanned lesson; the waiting time is cut. The student's voice interrupts naturally, and the tutor's gossip answers play over the prop footage. Shot 2 (last 3–5 seconds) is a close-up of the phone held in hand or set beside the glass, showing the Memo AI voice tutor screen at memoai.eu, with the overlay 'the app is called Memo AI'. No other on-screen text except optional burned-in captions of the dialogue.",
+  "generated": 1791645648,
+  "hook": "Opens straight on a satisfying ASMR close-up: ketchup is slowly squeezed into a clear glass of water. At the same moment the voice tutor is mid-explanation: 'Even the phone you're holding is made of atoms.' There is no intro, no face and no text. The visual is oddly satisfying, and the line is relatable because the viewer is holding a phone.",
+  "not_allowed": [
+   "Replacing the ASMR prop action (ketchup into water) with a talking head, a screen recording only, or a different, non-satisfying visual",
+   "Removing the student's interruption that asks for the explanation 'as juicy gossip'",
+   "Changing the gossip framing to another style (e.g. rap, a story for kids, a meme) or dropping the star/fans metaphor",
+   "Showing the app or naming Memo AI before the final phone close-up",
+   "Adding a spoken brand mention, URL read-out, pricing or an explicit CTA voiceover",
+   "Showing or claiming features Memo AI does not have (snap-and-solve answers, homework grading, photos in chat, PDF export, pasting text, an Android store app)",
+   "Mentioning or showing Astra AI, Studyflash or any other app",
+   "Turning it into a multi-feature demo (flashcards, quiz, mind map, etc.) instead of a single voice-tutor conversation"
+  ],
+  "premise": "A student puts on a calming ASMR prop action and talks live with Memo AI's voice tutor. The tutor explains a school topic (atoms). The student interrupts and asks for it as juicy gossip. The tutor turns the physics into celebrity and soap-opera drama: the nucleus is a mega-popular star and the electrons are fans who orbit it but can never get close. It keeps throwing gossip questions back at the student. The appeal is that boring material suddenly sounds like tea worth listening to, and the app is only named at the very end.",
+  "product": {
+   "cta": "none (the only push is the closing on-screen text 'the app is called Memo AI')",
+   "features_used": [
+    "voice tutor that explains the material out loud topic by topic",
+    "interrupting the voice tutor mid-explanation to ask for a different explanation",
+    "note made from an uploaded or scanned lesson (the material the voice tutor explains)"
+   ],
+   "introduced_at_beat": 5,
+   "spoken_brand": "not spoken; the brand appears only as the closing text overlay 'the app is called Memo AI' on the phone close-up (the tutor's voice is heard from beat 1 but not named)"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7694393004118854930": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930"
+  },
+  "title_en": "Study material as juicy gossip 🍿 (ASMR prop + voice tutor)"
+ }
+}

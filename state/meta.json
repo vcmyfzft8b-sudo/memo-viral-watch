@@ -1,5 +1,14 @@
 {
- "audit": {},
+ "audit": {
+  "A20261008204718:sh": "failed",
+  "A20261008204718:sl": "failed",
+  "A20261008211912:sh": "failed",
+  "A20261008211912:sl": "failed",
+  "A20261009001913:sh": "failed",
+  "A20261009001913:sl": "failed",
+  "A20261010130453:sh": "failed",
+  "A20261010130453:sl": "failed"
+ },
  "audit_fingerprints": {},
  "discovered_at": 1791527938,
  "faithful_rewrite_started": 1791643120,
