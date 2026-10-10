@@ -52,6 +52,119 @@
   },
   "title_en": "Student discounts everyone misses 🎟️"
  },
+ "A20261008205804": {
+  "accepted_sources": [
+   "7692158324032163124"
+  ],
+  "allowed_localisation": [
+   "Language and dialect of the script (Slovenian, Croatian, Bosnian, Serbian), translated almost one to one",
+   "Local surname ending in the hook (e.g. '-ić' or a country-typical ending such as '-č' in Slovenia)",
+   "Local messaging apps named in the share-button condition (Viber, WhatsApp, etc.)",
+   "Words used for grades/exams and for 'flashcards' in the local school vocabulary",
+   "Creator, setting, on-screen list font/colors and emoji",
+   "Which Memo AI screens are shown in the demo, as long as they are real features listed above",
+   "Small wording changes needed for natural speech, keeping every claim, joke and number (99%, 20% battery)"
+  ],
+  "beats": [
+   "1. Hook condition: 'Ako ti prezime završava na \"ić\", ispadaš.' Item 1 appears on the list.",
+   "2. Challenge line: '99% vas neće uspjeti da završi ovu igru.'",
+   "3. Follow condition: 'Ako me ne pratiš, ispadaš, ali možeš da se vratiš u igru ako me sada odmah ovdje zapratiš.' Item 2 appears.",
+   "4. 'Ako više voliš zimu od ljeta, također ispadaš.' Item 3 appears.",
+   "5. 'Idemo dalje: ako ti telefon trenutno ima manje od 20% baterije, ispadaš.' Item 4 appears.",
+   "6. Share-button condition: 'A sada klikni share dugme na Viber ili WhatsApp, i ako ti prva osoba iskoči otac ili majka, ispadaš.' Item 5 appears.",
+   "7. Final twist: 'I za kraj, ako koristiš Memo AI aplikaciju za učenje, ispadaš, jer je realno najbolja aplikacija za učenje.' The last item appears with Memo AI in it.",
+   "8. Demo voiceover over a screen recording: 'Bukvalno, samo uploadujete sve vaše bilješke i slike na aplikaciju, izaberete [what you want Memo AI to make from them]. I Memo AI će vam ponuditi razne načine učenja, kao što su kartice, kvizovi, podcasti, probni ispiti.' (Astra's exam-date/grade picker and true/false mode are swapped for real Memo AI options: choose the output, quiz, graded practice test.)",
+   "9. Favourite feature: 'A meni su omiljene kartice za učenje, gdje dobijem pitanje i ako ne znam odgovor, samo kliknem na ekran i dođem do rješenja.' Show a flashcard being flipped.",
+   "10. Comment CTA back on camera: 'A vi mi u komentarima pišite do kojeg broja ste uspjeli doći.'"
+  ],
+  "canonical_source": "7692158324032163124",
+  "filming": "About 45–60 s, vertical 9:16. Beats 1–7 are a single talking-head shot: phone at eye level, casual home or room setting, quick cuts between conditions. An on-screen numbered list grows by one line per condition, with the Memo AI line last. Beats 8–9 cut to a phone screen recording of memoai.eu: upload notes/photos (Scan camera or gallery, up to 10 photos), or a PDF. Then a fast cut over the few-minute wait, the generated note, and quick flashes of flashcards, quiz with explanations, podcast and graded practice test (percentage + feedback). End on a flashcard being tapped to reveal the answer. Beat 10 returns to talking head or a voiceover on the last frame.",
+  "generated": 1791646251,
+  "hook": "Talking head straight to camera, first condition right away: 'Ako ti prezime završava na \"ić\", ispadaš.' Then the challenge: '99% vas neće uspjeti da završi ovu igru.' Item 1 appears on a numbered on-screen list.",
+  "not_allowed": [
+   "Dropping the growing numbered elimination list, or the 'ispadaš' rule for each condition",
+   "Moving the Memo AI condition anywhere other than last on the list",
+   "Replacing the talking-head game with a skit, voiceover-only video or a straight tutorial",
+   "Skipping the screen-recorded app demo after the final condition",
+   "Changing the CTA from 'comment which number you reached' to a link/download CTA",
+   "Mentioning Astra AI, Studyflash or any other competitor app",
+   "Showing or claiming features Memo AI lacks: exam-date/target-grade planner, snap-and-solve instant answers, homework grading, photos in chat, PDF export, pasting text, a store Android app"
+  ],
+  "premise": "The creator runs a playful 'you're out if…' elimination game. Each condition is added as the next numbered item on an on-screen list that keeps growing, so viewers keep watching to see if they survive. The last item says you're out if you use Memo AI, because it's honestly the best study app. That twist leads into a quick screen-recorded Memo AI demo and a comment CTA asking how far viewers got.",
+  "product": {
+   "cta": "Comment how far down the list (which number) you got. A soft follow ask is built into beat 3.",
+   "features_used": [
+    "Upload of notes and photos (in-app Scan camera or gallery, up to 10 photos) or a PDF/Word/PowerPoint file",
+    "Notes generated from the material",
+    "Flashcards (tap to reveal the answer)",
+    "Quiz with explanations",
+    "Podcast",
+    "Graded practice test (percentage + feedback per answer)"
+   ],
+   "introduced_at_beat": 7,
+   "spoken_brand": "Said once as the last elimination condition ('ako koristiš Memo AI aplikaciju za učenje, ispadaš') and again in the demo ('Memo AI će vam ponuditi…'). Shown as the last item on the on-screen list. The URL memoai.eu may appear on screen in the demo."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692158324032163124": "https://www.tiktok.com/@kera.vas.uci/video/7692158324032163124"
+  },
+  "title_en": "Elimination game: how long can you last? 🎮"
+ },
+ "A20261008210957": {
+  "accepted_sources": [
+   "7692478766852967686"
+  ],
+  "allowed_localisation": [
+   "Language/dialect of the script (Slovenian, Croatian, Bosnian, Serbian), translated almost one to one",
+   "Faculty names adapted to the local equivalent names in that country (same 5 faculty types in the same order)",
+   "Creator's gender forms, local slang for 'cramming' (bubanje / piflanje / guljenje) and filler words",
+   "Subject and textbook shown in the demo",
+   "Desk setting, the paper being cut, colour of scissors",
+   "Optional subtitles in the local language"
+  ],
+  "beats": [
+   "1. Hook (talking head, cutting paper with scissors): 'These are the top 5 easiest faculties. If you plan to enrol, choose one of these, because you won't lose many nerves.'",
+   "2. Place 5: Faculty of Tourism and Hotel Management. Relatively easy because much of the material is about tourism, management and practical things.",
+   "3. Place 4: Faculty of Management. Not as many demanding maths and science subjects as at many other faculties.",
+   "4. Place 3: Faculty of Business Studies. The material is mostly understandable and tied to real situations, so there's little classic cramming and everything can be connected with logic.",
+   "5. Hold-back and disclaimer before places 2 and 1: 'Before I say which faculties are at places 1 and 2, I want to make clear that every faculty is hard, but I've picked out the 5 easiest. And how to make it even easier, I'll show you now.'",
+   "6. App recommendation and demo (phone over a book): 'I'll recommend you an app, it's Memo AI. You just need to scan the pages of the subject or material you need. Here, let's take something like this for example. Here you choose flashcards or a quiz, and that's how you can learn, practise and do the exam. There's a new option, it's the practice test.' The practice test gives a percentage and feedback on each answer.",
+   "7. Place 2: Faculty of Media and Communication. The material is mostly about communication, media and creative subjects, so there's not much learning – I mean, not learning, but cramming (the self-correction stays).",
+   "8. Place 1: 'and at number 1, what else could it be,' Faculty of Sport and Physical Education. It has a lot of practical classes, so you don't just learn from a book, and there aren't as many subjects tied to that. There are subjects, but not as many as at other faculties. The video ends on this reveal."
+  ],
+  "canonical_source": "7692478766852967686",
+  "filming": "About 60–75 s, vertical 9:16, selfie/talking-head framing. Beats 1–5 and 7–8 are shot as one continuous talking head (or cut lightly) at a desk while the creator cuts paper with scissors the whole time. This is the constant visual hook. Beat 6 cuts to a phone filmed from above over an open textbook or notebook, with the voice-over continuing. Demo sequence: open memoai.eu on the phone → tap Scan and photograph 1–3 textbook pages lying under the phone → show the finished note for that subject (skip the waiting with a jump cut) → open flashcards or the quiz and answer one or two → open the practice test, answer and show the percentage score with feedback per answer. Then cut back to the talking head with scissors for places 2 and 1. No on-screen text is required; captions are optional.",
+  "generated": 1791646317,
+  "hook": "The creator faces the camera and cuts paper with scissors (the visual hook) while saying the opening line almost word for word: 'These are the top 5 easiest faculties. If you're planning to enrol, pick one of these, because you won't lose many nerves.'",
+  "not_allowed": [
+   "Removing the scissors-cutting visual hook or replacing the talking head with voice-over only",
+   "Changing the countdown structure (5 → 1) or the order or types of the faculties",
+   "Moving the app demo out of the slot between place 3 and place 2, or dropping the hold-back/disclaimer that leads into it",
+   "Revealing places 2 and 1 before the demo",
+   "Adding a spoken URL, download CTA, discount or extra ending after the place-1 reveal",
+   "Showing features Memo AI lacks: subject search, mood/familiarity selection, snap-and-solve, homework checking, photos in the chat, PDF export, pasting text, an Android store app",
+   "Mentioning or showing Astra AI, Studyflash or any other study app",
+   "Turning it into a review, tutorial-only video or a 'hardest faculties' list"
+  ],
+  "premise": "A student creator counts down the 5 easiest faculties from place 5 to place 1. Each place gets a one-sentence reason why it is easy (practical subjects, little maths, little rote memorising). After place 3 the creator holds back places 2 and 1, adds a disclaimer that every faculty is hard, and promises to show how to make any faculty even easier. That promise leads into a short phone demo of Memo AI. Then the countdown resumes and ends on the place-1 reveal.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "Scan camera: photos (up to 10) of textbook pages/notes",
+    "notes generated from the scanned material",
+    "flashcards",
+    "quiz with explanations",
+    "graded practice test (percentage + feedback per answer)"
+   ],
+   "introduced_at_beat": 6,
+   "spoken_brand": "Spoken once, in beat 6 ('it's Memo AI'), after place 3 and before places 2 and 1. memoai.eu may appear on the phone screen but is not spoken."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692478766852967686": "https://www.tiktok.com/@study.with.mili/video/7692478766852967686"
+  },
+  "title_en": "Top 5 Easiest Faculties – countdown listicle with scissors hook and mid-list Memo AI demo"
+ },
  "A20261008211912": {
   "accepted_sources": [
    "7691071853334498580"
@@ -99,6 +212,116 @@
    "7691071853334498580": "https://www.tiktok.com/@studywithreveka/video/7691071853334498580"
   },
   "title_en": "Brain Premium with Memo AI 🧠"
+ },
+ "A20261008224450": {
+  "accepted_sources": [
+   "7688930483304090898"
+  ],
+  "allowed_localisation": [
+   "Language of the script (Slovenian for Slovenija; Croatian, Bosnian or Serbian on the other Balkan pages), translated almost one to one",
+   "The local grade system: in Slovenia 1 is also a fail and 5 the top grade, so the 1→5/4 haggle stays; adapt the numbers only if a country's scale differs",
+   "How the teacher is addressed (profesorka / učiteljica / local equivalent)",
+   "Small wording changes to keep the slang natural (e.g. 'boli me uho')",
+   "The hair-oil brand may be swapped for a locally known one if Garnier isn't recognised",
+   "Which zodiac sign name or emoji labels each segment, if shown on screen",
+   "The creator's gender, look, outfit and the exact green-screen classroom image",
+   "Small props (the object handed off, the phone, hair)"
+  ],
+  "beats": [
+   "Hook: the creator states the premise ('Ovako se horoskopski znakovi ponašaju kada dobiju 1 u školi') over the green-screen classroom.",
+   "Sign 1, the indifferent one: 'Uh, da, dobila sam 1. A, okej.' Then, after the teacher asks something: 'Da, zapravo me boli uvo.' The sign shrugs it off completely.",
+   "Sign 2, the calculating, over-researched one: refuses to accept the grade ('Dali ste mi 1? ... Da, niste mi dali 1'). Claims the 1 wasn't in their calculation 'two months ahead' and that they have studied every hole in the teacher's 'broken' school system.",
+   "Sign 2, product brag (mid-video): 'Zato što koristim Memo AI aplikaciju.' Mocks the teacher for not knowing it ('svi znaju u ovoj učionici'). Lists what it does: it gives you a podcast to listen to and shortens the material into notes. You just send a photo of what you wrote in your notebook in class, and it writes notes that explain everything you need to do step by step, from start to finish. With it you learn a month's material in literally 1 day. Ends with: 'po tome što ste sve radili iz Memo AI-a, to nije istina. Hvala.'",
+   "Sign 3, the vindictive one: 'Dobila sam 1! Hahaha. Pridrži mi ovo' (hands an object off-screen). Threatens the teacher by listing everything they know: the husband's name, the dog's name, the mother's and brother's addresses, the brother 'who was in prison'. Then 'negotiates' the 1 up to a 5 ('Ajde, može i 4, ali 5'), ending with 'Eto, sve smo se dogovorile.'",
+   "Sign 4, the family star: panics about what to tell mum and dad and whether to lie. Is 'the smartest person in the whole family' and everyone (grandma, grandpa, aunt, uncle) says they always get straight 5s. It's the first 1 of their life. Has to call dad: 'izvinite, molim vas. Da?'",
+   "Sign 5, the indecisive one: mishears the teacher as talking about split ends ('Što su mi ispucali krajevi?'), then realises it's a 1. Ignores the grade to agonise over hair oil, Garnier or 'some expensive French one', and asks the teacher which end looks worse. The video ends abruptly on this joke."
+  ],
+  "canonical_source": "7688930483304090898",
+  "filming": "About 2–3 minutes, vertical 9:16, one creator, selfie or tripod medium close-up in front of a green-screen classroom background. It is shot as one continuous monologue split into sign segments with jump cuts. Each sign gets a small change of attitude, voice, gesture or prop (sign 3 hands something off-screen, sign 4 picks up the phone, sign 5 plays with the ends of their hair). The sign's name or emoji can appear as an on-screen label per segment. The teacher is never seen or heard: the creator looks off-camera, pauses and reacts ('Molim?', 'Mhm'). The product appears only in speech, in sign 2's rant. There is no app screen recording, or at most an optional brief green-screen flash of the Memo AI scan → notes/podcast screen while the features are listed. No end card.",
+  "generated": 1791646433,
+  "hook": "Creator to camera over a green-screen classroom, speaking the opening line: 'This is how the zodiac signs act when they get a 1 at school.' The video then cuts straight into the first sign's reaction.",
+  "not_allowed": [
+   "Removing the multi-sign structure or using fewer than the core reactions (indifferent, calculating with app brag, vindictive threat with grade haggling, family-star panic, indecisive hair-oil ending)",
+   "Moving the product mention out of the calculating sign's mid-video rant, or making it the hook or an outro",
+   "Adding a spoken URL, an end card or a call to action ('download', 'link in bio', 'free trial')",
+   "Showing or hearing the teacher on screen (the teacher must stay off-screen and implied)",
+   "Using more than one creator, or turning it into a talking-head review or tutorial",
+   "Claiming Memo AI features it doesn't have (snap-and-solve answers, grading homework, photos in chat, PDF export, an Android store app)",
+   "Mentioning Astra AI, Studyflash or any other study app",
+   "Adding a resolved ending or a moral; it must end abruptly on the indecisive sign's joke"
+  ],
+  "premise": "One creator plays every zodiac sign in turn. Each sign reacts in its own stereotyped way when an off-screen teacher ('profesorka') announces a failing grade of 1. Only the teacher's side of the talk is implied, through pauses, 'Molim?' and 'Mhm'. The over-prepared, calculating sign says the 1 is impossible because they study with Memo AI, and that rant is the mid-video product mention. The skit then moves on to more signs and ends on an unresolved joke, with no outro.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "Podcast generated from the material",
+    "Notes that shorten/summarise the material",
+    "Photos of handwritten class notes from the notebook (Scan camera or gallery, up to 10 photos)",
+    "Notes that explain the method step by step from start to finish (in place of the original's 'writes everything I need to do')"
+   ],
+   "introduced_at_beat": 4,
+   "spoken_brand": "Said only by sign 2 in beat 4: 'koristim Memo AI aplikaciju', then 'Ne znate koja je to aplikacija?', then again at the end of the rant ('sve radili iz Memo AI-a'). No URL is said."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7688930483304090898": "https://www.tiktok.com/@studywithvalentina/video/7688930483304090898"
+  },
+  "title_en": "Zodiac signs when they get a 1 (failing grade)"
+ },
+ "A20261008231529": {
+  "accepted_sources": [
+   "7692577375296507154"
+  ],
+  "allowed_localisation": [
+   "Language and dialect of the script: Slovenian, Croatian, Bosnian or Serbian, translated almost one to one",
+   "Creator's identity, look, gender and setting (any relatable student)",
+   "Wording of the title overlay in the local language, keeping the meaning 'Stop studying with ChatGPT 🚫'",
+   "Local school or university context in the personal example (e.g. 'faks' or 'gimnazija' terms) while the example itself stays the same",
+   "The UI language shown in the screen-recording overlay, plus the subject or material photographed in the demo",
+   "Exact video length within about ±20 seconds, and the cut rhythm",
+   "Gender of the partner in the fight anecdote (boyfriend/girlfriend), keeping the friend/partner argument example"
+  ],
+  "beats": [
+   "1. Hook warning to camera: don't use ChatGPT; I know you all use it and so did I, but you have to hear this, listen carefully.",
+   "2. Reason 1 – accuracy: people use ChatGPT because it supposedly has 'all' the information, but nobody asks how accurate that information really is.",
+   "3. Reason 2 – it doesn't really help you learn: personal university example of photographing study material and sending it so ChatGPT says what to circle on a test when cheating, how to learn something faster, or makes a study plan. That's a big mistake.",
+   "4. Product pivot: 'There's a much better solution for you: the Memo AI app. I'll put a picture of it somewhere here.' Logo/screenshot overlay appears. CTA: everyone go to memoai.eu right now. Enthusiastic pitch: you just photograph your study material and it makes a summary (notes), quizzes and flashcards with questions, so you learn in literally 2 days what used to take you 2–3 weeks.",
+   "5. Reason 3 – over-reliance on AI: research at Stanford and universities around the world found that kids and people today learn much worse, are interested in far fewer things, and develop critical thinking, logic and creativity more slowly because they rely too much on ChatGPT.",
+   "6. Reason 4 – privacy, 'maybe the most important one': nobody knows how ChatGPT stores your data or where it sends and shares it. Personal confession: they used it after fights with a boyfriend or friend to write out what happened and ask who was right. That's very bad because ChatGPT keeps all that information somewhere.",
+   "7. Wrap-up: I've given you alternatives and serious reasons. If you keep using it, at least don't tell it too much, use it in a specific way, and always remember it may well be wrong.",
+   "8. Sign-off comment CTA: 'That's it for this video. Tell me in the comments how you like the Memo AI app and whether it saved you like it saved me.'"
+  ],
+  "canonical_source": "7692577375296507154",
+  "filming": "About 2:00–2:30, vertical 9:16. A single continuous talking-head selfie shot of one creator (student, about 18–24), sitting close to the camera at home or in their room. The tone is earnest and confiding, like an urgent warning, with jump cuts between the reasons. Text overlay for the title/hook at the start, optionally with a 🚫 emoji. Product sequence in beat 4 only: the Memo AI logo or app screenshot pops up as an overlay next to the creator's face. Then a short screen-recording overlay: Scan camera photographing notes or textbook pages → a finished note appears (cut the generation wait) → scroll through the summary notes → flip a few flashcards → answer a quiz question with its explanation. The overlay can show memoai.eu as on-screen text during the CTA. No other demos are needed. The rest of the video is pure talking head.",
+  "generated": 1791646528,
+  "hook": "Direct-to-camera warning: \"Ne uporabljajte ChatGPT-ja. Vem, da ga verjetno vsi uporabljate, tudi jaz sem ga, ampak to morate slišati. Pozorno me poslušajte.\" Title overlay: \"Prestani učiti s ChatGPT-jem 🚫\"",
+  "not_allowed": [
+   "Changing the structure from a reasons-not-to-use-ChatGPT warning rant into a tutorial, a skit, a day-in-the-life or a plain product review",
+   "Introducing Memo AI at the start or the end instead of in the middle of the reasons list (after the 'doesn't help you learn' reason)",
+   "Dropping or reordering the four reasons (accuracy → no real learning → over-reliance → privacy), or swapping them for other reasons",
+   "Removing the personal confessions (using ChatGPT at uni/for tests, and the fight anecdote) or the closing advice to overshare less and remember it can be wrong",
+   "Replacing the talking head with voiceover-only, B-roll or multiple people",
+   "Mentioning or showing Astra AI, Studyflash or any other study app",
+   "Showing or claiming features Memo AI lacks: snap-and-solve instant answers, homework checking/grading, photos in the chat, PDF export, pasting text, or downloading from the App Store / Google Play (the CTA must point to memoai.eu)",
+   "Dropping the comment CTA asking whether Memo AI saved the viewers too"
+  ],
+  "premise": "A student creator gives a serious, confiding warning rant. They list the reasons you should not use ChatGPT for studying: the answers may be wrong, you don't really learn, people rely on AI too much, and your private data is at risk. In the middle of the list they pitch Memo AI as the much better study alternative, then finish the list and ask viewers in the comments whether Memo AI saved them too.",
+  "product": {
+   "cta": "Go to memoai.eu right now and start using Memo AI (replaces the original 'go to the App Store and install'). End-of-video comment CTA: tell me in the comments how you like Memo AI and whether it saved you like it saved me.",
+   "features_used": [
+    "Scan camera / up to 10 photos of study material (notes, textbook pages)",
+    "Notes (summary of the material)",
+    "Flashcards",
+    "Quiz with explanations"
+   ],
+   "introduced_at_beat": 4,
+   "spoken_brand": "Beat 4 ('rešitev je aplikacija Memo AI', 'pojdite na memoai.eu in začnite z Memo AI') and beat 8 (comment CTA: 'kako vam je všeč aplikacija Memo AI, vas je rešila kot mene?')"
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692577375296507154": "https://www.tiktok.com/@studywithvalentina/video/7692577375296507154"
+  },
+  "title_en": "Stop studying with ChatGPT 🚫"
  },
  "A20261009001913": {
   "accepted_sources": [
@@ -154,6 +377,180 @@
    "7693684473686150406": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406"
   },
   "title_en": "Funniest e-diary teacher remarks 😂 (reaction series, Part X) with an 'if you're going to use AI, use it properly' segue into Memo AI"
+ },
+ "A20261009014121": {
+  "accepted_sources": [
+   "7691071802373623058"
+  ],
+  "allowed_localisation": [
+   "Language of speech and on-screen text (Slovenian for Slovenija; Croatian, Bosnian or Serbian elsewhere), translated almost one to one",
+   "Local school vocabulary and grade wording, e.g. 'petica' / 'odlično (5)' / the local top grade",
+   "The example subject (geography by default; may switch to a locally common subject)",
+   "App interface language shown on screen",
+   "Relative swapped in for 'tetka' only if more natural locally (must stay a teacher relative)",
+   "Creator's look, room, laptop and slime colour/type",
+   "Exact emoji choice in the overlay"
+  ],
+  "beats": [
+   "Hook: satisfying slime-cutting footage with the 'things teachers hide from you 😱‼️' text overlay. The creator says 'Ove stvari vaši profesori kriju od vas.'",
+   "Fake urgency: 'Brišem ovaj video za 2 sata, tako da ako vidite ovaj video, imali ste mnogo sreće.'",
+   "Insider source: 'Moja tetka je profesorka i ONA mi je otkrila ovu tajnu.'",
+   "The secret: 'Nijedan profesor više ne piše testove sam, bukvalno danas svi koriste AI.' The aunt showed which AI tool she uses and the creator thinks most teachers use it.",
+   "Reveal: 'Ovo je sajt koji mi je moja tetka pokazala.' Memo AI (memoai.eu) appears on the laptop screen.",
+   "Demo setup: the creator clicks to create a new note and picks the material for the subject they are studying, e.g. geography. Instead of the original's date and target-grade settings, they upload their own notes: a textbook photo or a photo of what a classmate wrote down in class, as photos (up to 10, Scan camera or gallery) or a document (PDF/Word/PowerPoint).",
+   "AI output: right away, Memo AI builds study material tailored to you from what you sent (the original says 'plan učenja baš za vas'; this is kept, with the wait cut). Start with the notes, then move on to flashcards, then the practice test.",
+   "Feature rundown: the graded practice test with a percentage and feedback on every answer, plus the voice tutor that explains the material out loud (this replaces the original's 'written or oral mock exam' line). Quizzes with explanations are also a great option, along with the mind map and AI chat for practising and revising.",
+   "Payoff: 'Iskreno, ako ovo budete radili na ovaj način, bukvalno ćete biti toliko spremljeni za test da ćete imati peticu sigurno.'",
+   "CTA: 'Zapratite me za još tajni!'"
+  ],
+  "canonical_source": "7691071802373623058",
+  "filming": "About 45–70 s, vertical 9:16, continuous voice-over in a confident conspiratorial tone. Shot 1 (0–5 s): close-up of slime being cut, with the big text overlay with emojis on screen through the hook. Shots 2–4: slime footage or a talking-head under the urgency, aunt and secret lines. From the reveal on: a phone filming the laptop screen in close-up, scrolling through memoai.eu in the local language. Demo order: create a new note → choose subject/material (geography example) → upload textbook or classmate's note photos or a document → cut the processing wait → generated notes → flashcards → practice test with percentage score and per-answer feedback → voice tutor → quiz with explanations → quick glimpse of mind map/AI chat → back to the creator or slime for the CTA.",
+  "generated": 1791646639,
+  "hook": "Close-up of hands cutting satisfying slime as the hook shot. Bold on-screen text reads 'Stvari koje profesori kriju od Vas 😱‼️' (local-language equivalent), and the creator opens with 'Ove stvari vaši profesori kriju od vas.' followed straight away by the fake urgency line 'Brišem ovaj video za 2 sata, tako da ako vidite ovaj video, imali ste mnogo sreće.'",
+  "not_allowed": [
+   "Removing the slime-cutting satisfying hook or the 'secrets teachers hide' overlay",
+   "Dropping the fake 'deleting this video in 2 hours' urgency line",
+   "Dropping the teacher-relative insider source or the 'teachers use AI to write tests' secret",
+   "Replacing the laptop screen walkthrough with a phone-only, app-store or talking-head-only explanation",
+   "Showing or claiming features Memo AI lacks: snap-and-solve instant answers, homework checking/grading, photos in chat, PDF export, pasting text, Android store app",
+   "Mentioning or showing Astra AI, Studyflash or any other app",
+   "Ending with a CTA other than following for more secrets",
+   "Turning it into a review, comparison, tutorial-with-instructions or skit format"
+  ],
+  "premise": "A student creator lets viewers in on an insider secret. Their aunt is a teacher and told them that no teacher writes tests alone anymore because they all use AI. The aunt then showed them the site she uses, and the creator walks through it on a laptop: photos of notes or textbook pages go in, and Memo AI turns them into study material that gets you ready for a top grade.",
+  "product": {
+   "cta": "Zapratite me za još tajni! (follow for more secrets)",
+   "features_used": [
+    "Upload up to 10 photos of notes or textbook pages (Scan camera or gallery)",
+    "Upload PDF, Word or PowerPoint document",
+    "Notes (formulas shown properly)",
+    "Flashcards",
+    "Graded practice test (percentage + feedback per answer)",
+    "Voice tutor that explains the material out loud topic by topic",
+    "Quiz with explanations",
+    "Mind map",
+    "AI chat about the note",
+    "Local language (Slovenian/Croatian/Bosnian/Serbian)"
+   ],
+   "introduced_at_beat": 5,
+   "spoken_brand": "Shown on screen as the site the aunt revealed ('Ovo je sajt koji mi je moja tetka pokazala'). The memoai.eu URL and Memo AI interface are visible on the laptop. In the original the brand is not said aloud, so it is said aloud only where the original named Astra AI."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7691071802373623058": "https://www.tiktok.com/@studywithvalentina/video/7691071802373623058"
+  },
+  "title_en": "Secrets teachers hide from you 😱"
+ },
+ "A20261009015525": {
+  "accepted_sources": [
+   "7692189117098003733"
+  ],
+  "allowed_localisation": [
+   "Language and dialect of the speech and on-screen text (Slovenian for Slovenija; Croatian, Bosnian or Serbian for other Balkan pages), translated almost one to one",
+   "Local slang or fillers that keep the same meaning ('ljudi', 'kao', 'ajde')",
+   "Wording of the biology caption, as long as it keeps 'best app for studying biology' and the 🧬🧫 emojis",
+   "The creator's look, room and laptop model",
+   "Which cell is shown (animal, plant, bacterial) and the source material in the local school curriculum and language",
+   "Which other subjects flash by in beat 5",
+   "The Memo AI interface language shown on screen"
+  ],
+  "beats": [
+   "1. Hook, talking to camera with the laptop held up and Memo AI visible: 'If I'd had this earlier, I'd have studied biology every day. Okay, maybe not, but twice as fast.' On-screen text: best app for studying biology 🧬🧫.",
+   "2. Cut to the laptop screen. Choose the material: 'You can pick which cell you want to learn about.' On screen, the creator picks or uploads the biology material on cells (textbook pages scanned with Scan, or a PDF/lecture) and opens the Memo AI note on that cell.",
+   "3. Explore the parts: 'Then you look at the cell, tap any part of it, and get all the information about it.' On screen, the creator opens the mind map of the cell, taps one branch (one organelle), and asks the AI chat about it.",
+   "4. Up-close reaction: 'You can see the cell this up close. Guys, I honestly didn't know our cell looks exactly like this. It was never like this in the textbook.' On screen, the creator scrolls the detailed notes and flips flashcards about the cell's parts.",
+   "5. Any subject: 'I only showed you part of biology, but guys, you have notes, flashcards, quizzes and mind maps for any subject.' On screen, a quick scroll through notes from other subjects. 'I'm thrilled.'",
+   "6. Reveal, back on camera with the laptop held up, pointing at Memo AI: 'It's this app, the same app you know I always use for studying.'"
+  ],
+  "canonical_source": "7692189117098003733",
+  "filming": "15–35 s, vertical 9:16, one creator at a desk or in their room, filmed on a phone. Shots: (A) selfie-style talking to camera, holding up an open laptop with Memo AI clearly visible; (B) the phone films the laptop screen over the shoulder or straight on, with the creator's voiceover continuing and fingers or cursor clicking; (C) back to talking to camera, pointing at the app on the laptop. Demo order on the screen: choose the cell material or the Memo AI note → mind map of the cell, tap one part → AI chat answer or explanation of that part → scroll the notes and flip flashcards → short scroll past notes from other subjects. Cut any loading or note generation. Keep the on-screen text caption on the hook. Casual, excited, spoken tone with fillers ('like', 'guys').",
+  "generated": 1791646716,
+  "hook": "A creator talks to the camera and holds up a laptop with Memo AI open. They say: 'If I'd had this earlier, I'd have studied biology every day. Okay, maybe not, but twice as fast.' The on-screen text reads 'the best app for studying biology🧬🧫', written in the local language.",
+  "not_allowed": [
+   "Dropping the laptop: no hold-up on camera, or no filming of the laptop screen (for example, a phone-only screen recording)",
+   "Changing the subject away from biology and cells as the demo subject",
+   "Removing the shape of the reveal, where the creator returns to camera and points at the app",
+   "Adding a spoken brand name, URL, price or a hard CTA that the original doesn't have",
+   "Turning it into a skit, a POV, a voiceover-only video, a comparison or a list of many features",
+   "Showing or claiming features Memo AI doesn't have: interactive 3D cell models or simulations, snap and solve, grading homework, photos in chat, PDF export, an Android store app",
+   "Mentioning or showing Astra AI, Studyflash or any other app",
+   "Showing long generation or waiting screens"
+  ],
+  "premise": "A student recommends the study app they always use. They speak straight to camera, then film their laptop screen while they explore one school subject (biology, cells) in Memo AI. They react to how much clearer it is than the textbook and say it works for any subject. At the end they turn back to the camera and point at the app on the laptop. Memo AI replaces Astra AI (or any other app the original promotes) every time and in the same places.",
+  "product": {
+   "cta": "No spoken CTA. There is only the implied recommendation: the creator points at the app on the laptop in the final shot.",
+   "features_used": [
+    "Upload a PDF / lecture, or scan textbook pages with the in-app Scan camera",
+    "Notes",
+    "Mind map",
+    "AI chat about the note",
+    "Flashcards",
+    "Quiz (briefly shown as part of 'any subject')",
+    "Works for any subject"
+   ],
+   "introduced_at_beat": 1,
+   "spoken_brand": "Not spoken. The brand is shown on the laptop screen (memoai.eu, Memo AI interface) in beats 1, 2–5 and 6. Beat 6 only says 'this app, the same app you know I always use'."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692189117098003733": "https://www.tiktok.com/@learnwithandj/video/7692189117098003733"
+  },
+  "title_en": "Biology twice as fast? 🧬: talking to camera, holding up a laptop, then a screen demo of one subject"
+ },
+ "A20261009210824": {
+  "accepted_sources": [
+   "7692061360221457686"
+  ],
+  "allowed_localisation": [
+   "Language of the speech and captions (Slovenian, Croatian, Bosnian, Serbian)",
+   "Currency and exact prices written in the lid fields (€ in Slovenia, local currency elsewhere)",
+   "Local name for the best grade (e.g. 5 / odlično instead of the German 1)",
+   "Laptop brand/model (doesn't have to be a MacBook)",
+   "Creator, setting, handwriting and colours of the drawn fields",
+   "Which field is the sold one and how the logo is attached (sticker, printed cut-out, tape)",
+   "Local examples of where to listen to the podcast (bus, tram, walk)"
+  ],
+  "beats": [
+   "Hook: the creator holds up the back of the laptop and says they're selling the space on the back for ads and already have their 1st buyer.",
+   "Points across the grid of differently priced fields on the lid: 'you can see lots of different prices here, and exactly this field was bought.'",
+   "Tries to peel or remove the cut-out Memo AI logo/sticker, joking 'I hope it really comes off', then sticks it on the bought field: 'I'd say that's good enough.'",
+   "Reveal: 'and this field was bought by Memo AI, I'll tell you more about it in a second.'",
+   "Company intro (claim kept from the original): Memo AI is a company founded in 2023 that became known for helping students and pupils study.",
+   "Demo on the laptop screen: you just upload all your documents, pick your target grade (of course the best one) and get a study plan made for you.",
+   "Demo continues: flashcards for memorising, quizzes with possible exam questions to lock in all the material, and even a podcast about all the material you can listen to while walking or on the bus.",
+   "CTA: 'so feel free to check it out, and comment below who you think will buy the next spot.'"
+  ],
+  "canonical_source": "7692061360221457686",
+  "filming": "About 35–50 s, vertical 9:16, one creator speaking straight to the camera in one handheld or tripod setup. Shot 1: medium close-up of the creator holding the closed laptop with the drawn price grid on the lid facing the camera. Shot 2: close-up of the hands peeling or cutting out the Memo AI logo and sticking it on the sold field. Shot 3: open the laptop and show memoai.eu on the screen in the local language. Demo order: upload documents (PDF/slides) → note created (cut the few-minute wait) → flashcards → quiz with explanations → podcast playing. Fast jump cuts and on-screen captions of the speech.",
+  "generated": 1791646770,
+  "hook": "Talking head holding the closed laptop lid toward the camera: 'I'm selling the space on the back of my laptop for ads, and I already have my 1st buyer.'",
+  "not_allowed": [
+   "Dropping the 'selling ad space on the laptop' framing or the drawn price grid on the back of the laptop",
+   "Revealing the brand before the sticker/logo is placed on the bought field",
+   "Showing the app only on a phone instead of the laptop screen",
+   "Any other study app (including Studyflash or Astra AI) appearing or being named",
+   "Showing features Memo AI doesn't have (snap and solve, homework checking, photos in chat, PDF export, pasting text, Android store app)",
+   "Ending without the 'guess who buys the next spot' comment CTA",
+   "Turning it into a voiceover or screen-recording-only video without the talking creator"
+  ],
+  "premise": "The creator has turned the back of their laptop into an ad billboard: the lid is split into hand-drawn fields, each with a price written on it. One field has 'sold', and the buyer turns out to be the study app Memo AI. The creator peels or cuts out its logo, sticks it onto the sold field, says who the 'advertiser' is and what it does while demoing it on the laptop screen, then asks viewers to guess who will buy the next spot.",
+  "product": {
+   "cta": "Feel free to check out Memo AI, and comment below who you think will buy the next spot.",
+   "features_used": [
+    "Upload PDF, Word or PowerPoint documents",
+    "Notes generated from the uploaded material (a study plan built from the material)",
+    "Flashcards",
+    "Quiz with explanations (possible exam questions)",
+    "Podcast about the material"
+   ],
+   "introduced_at_beat": 4,
+   "spoken_brand": "Said in beat 4 ('this field was bought by Memo AI') and again in beat 5 ('Memo AI is a company founded in 2023…'). The logo on the lid and the memoai.eu screen show it visually; the URL is not spoken."
+  },
+  "rejected_sources": {},
+  "source_urls": {
+   "7692061360221457686": "https://www.tiktok.com/@lern.mit.domi/video/7692061360221457686"
+  },
+  "title_en": "I'm selling ad space on my laptop 🤑"
  },
  "A20261010130453": {
   "accepted_sources": [

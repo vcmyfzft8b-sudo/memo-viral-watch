@@ -18,7 +18,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791581660,
+   "checked_at": 1791646865,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -31,23 +31,34 @@
      "video_identity": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e"
     }
    },
-   "key": "41a506cb6c24f5df1dec825c3bcf612f556c33562475de0546a5d70e3d3f9ae1",
+   "key": "616960fce015f34ed5feac34e02535b4069ca73ff6793f7f716f79a2540a8c37",
    "passed": false,
    "reasons": [
-    "format_consistency sl: Items 1 and 3 have no real local operator, cinema chain or verified percentage ('vlak in avtobus precej cenejša', 'kino je s študentsko cenejši'). The hook drops the '99%' line, and Memo AI gets two sentences instead of the original's one. The spoken outro 'Pa srečno s študijem!' replaces the like-and-follow CTA.",
-    "script_matches_example sl: The example names specific discounts with figures (operator + %, cinema chain + %, theatres up to 50%). The SL script keeps only vague claims with no named operator or chain. The item 4 VO is longer than the example's single short line.",
-    "directions_match sh: There is no '4/4 Memo AI' numbered sticker in the cues or directions, so not every item gets an n/4 sticker. The rest of the screen-recording sequence and the outro match.",
-    "directions_match sl: Stickers 1/4 and 3/4 have no discount figure, and there is no '4/4 Memo AI' sticker. The outro contradicts itself: the creator waves and says 'Pa srečno s študijem!', then a separate silent like-and-follow gesture shot is added that the script doesn't have."
+    "format_consistency sh: Script has no like-and-follow outro (beat 6 is required, and the not_allowed list forbids dropping it).",
+    "format_consistency sl: Item 4 has no '4/4 Memo AI' sticker, which breaks the numbered X/4 structure. Script also has no like-and-follow outro (beat 6).",
+    "script_matches_example sl: Example shows a '4/4 Astra Ai' sticker on item 4, but the script's cue for item 4 has no 4/4 sticker.",
+    "faithful_translation sh: Hook drops 'učenike' and changes '99% vas ne zna' to 'devedeset devet posto njih ne zna'. 'Takođe pored toga', 'kao drugo' and 'zabava' are left out. Ekavian/Croatian forms are mixed in ('prije', 'kinima' instead of 'bioskopima', 'Prijevoz' instead of 'Prevoz', 'spremi', 'učiniti', 'poštom' instead of 'mejlom'). Hook sticker in the cue ('nisi znao') does not match the title ('niste znali').",
+    "directions_match sh: Adds a gesture (pointing at the save icon) that the example's opening does not show. It should only copy the talking head to camera with the on-screen title."
    ],
    "results": {
     "directions_match": {
      "sh": {
-      "issue": "There is no '4/4 Memo AI' numbered sticker in the cues or directions, so not every item gets an n/4 sticker. The rest of the screen-recording sequence and the outro match.",
+      "issue": "Adds a gesture (pointing at the save icon) that the example's opening does not show. It should only copy the talking head to camera with the on-screen title.",
       "pass": false
      },
      "sl": {
-      "issue": "Stickers 1/4 and 3/4 have no discount figure, and there is no '4/4 Memo AI' sticker. The outro contradicts itself: the creator waves and says 'Pa srečno s študijem!', then a separate silent like-and-follow gesture shot is added that the script doesn't have.",
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "Hook drops 'učenike' and changes '99% vas ne zna' to 'devedeset devet posto njih ne zna'. 'Takođe pored toga', 'kao drugo' and 'zabava' are left out. Ekavian/Croatian forms are mixed in ('prije', 'kinima' instead of 'bioskopima', 'Prijevoz' instead of 'Prevoz', 'spremi', 'učiniti', 'poštom' instead of 'mejlom'). Hook sticker in the cue ('nisi znao') does not match the title ('niste znali').",
       "pass": false
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
      }
     },
     "features_claims": {
@@ -62,22 +73,12 @@
     },
     "format_consistency": {
      "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "Items 1 and 3 have no real local operator, cinema chain or verified percentage ('vlak in avtobus precej cenejša', 'kino je s študentsko cenejši'). The hook drops the '99%' line, and Memo AI gets two sentences instead of the original's one. The spoken outro 'Pa srečno s študijem!' replaces the like-and-follow CTA.",
+      "issue": "Script has no like-and-follow outro (beat 6 is required, and the not_allowed list forbids dropping it).",
       "pass": false
-     }
-    },
-    "independent_wording": {
-     "sh": {
-      "issue": "",
-      "pass": true
      },
      "sl": {
-      "issue": "",
-      "pass": true
+      "issue": "Item 4 has no '4/4 Memo AI' sticker, which breaks the numbered X/4 structure. Script also has no like-and-follow outro (beat 6).",
+      "pass": false
      }
     },
     "script_matches_example": {
@@ -86,35 +87,56 @@
       "pass": true
      },
      "sl": {
-      "issue": "The example names specific discounts with figures (operator + %, cinema chain + %, theatres up to 50%). The SL script keeps only vague claims with no named operator or chain. The item 4 VO is longer than the example's single short line.",
+      "issue": "Example shows a '4/4 Astra Ai' sticker on item 4, but the script's cue for item 4 has no 4/4 sticker.",
       "pass": false
      }
     }
    },
    "status": "fail",
-   "summary": "SH follows the format apart from the missing 4/4 Memo AI sticker in its directions. SL drifts from the format: its local discounts aren't named or quantified, it has no spoken like-and-follow outro, its stickers have no figures, and its outro directions contradict each other.",
+   "summary": "Both countries keep the four-item student-discount listicle and swap Memo AI in correctly at item 4, but neither script has the like-and-follow outro. SH's translation is not faithful (dropped words and mixed Croatian/ijekavian forms) and its directions add a gesture the example doesn't show. SL is missing the 4/4 Memo AI sticker.",
    "title_fixes": {},
-   "version": "group-2026-10-08.2"
+   "version": "group-2026-10-10.faithful-hook"
   },
   "A20261008205804": {
    "approval": {
-    "sh": "not_locked"
+    "sh": "not_locked",
+    "sl": "not_locked"
    },
-   "checked_at": 1791493500,
+   "checked_at": 1791646961,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
     "sh": {
      "source_id": "7692158324032163124",
      "video_identity": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6"
+    },
+    "sl": {
+     "source_id": "7692158324032163124",
+     "video_identity": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6"
     }
    },
-   "key": "3f353acb7598815f4b28d85f259c746c6e8a9d38e341d18ab5d928af8b8bb2cd",
-   "passed": true,
-   "reasons": [],
+   "key": "3156ed33d4ca7e6db7a8d01e824523bc9e24a24e683755631697d57c6e402f59",
+   "passed": false,
+   "reasons": [
+    "faithful_translation sh: Beat 8: 'izaberete kada vam je ispit i kakvu ocjenu želite' should only have its feature words swapped, keeping 'izaberete' (e.g. 'izaberete šta želite da vam Memo AI napravi od njih'). Instead the whole clause became a new sentence, 'i za par minuta dobijete sređene bilješke'."
+   ],
    "results": {
     "directions_match": {
      "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "Beat 8: 'izaberete kada vam je ispit i kakvu ocjenu želite' should only have its feature words swapped, keeping 'izaberete' (e.g. 'izaberete šta želite da vam Memo AI napravi od njih'). Instead the whole clause became a new sentence, 'i za par minuta dobijete sređene bilješke'.",
+      "pass": false
+     },
+     "sl": {
       "issue": "",
       "pass": true
      }
@@ -123,16 +145,18 @@
      "sh": {
       "issue": "",
       "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
      }
     },
     "format_consistency": {
      "sh": {
       "issue": "",
       "pass": true
-     }
-    },
-    "independent_wording": {
-     "sh": {
+     },
+     "sl": {
       "issue": "",
       "pass": true
      }
@@ -141,39 +165,68 @@
      "sh": {
       "issue": "",
       "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
      }
     }
    },
-   "status": "pass",
-   "summary": "SH passes on all five checks: it follows all 11 beats in order, brings in Memo AI as the 6th and last condition, uses only real features, is written independently, and its directions match the script. Two minor points: the CTA asks 'which rule knocked you out' instead of 'how far you got', and 'već na telefonu' should not suggest an app from a store.",
+   "status": "fail",
+   "summary": "Both countries follow the elimination-game format, with Memo AI as the last condition, the demo and the comment CTA; SL is a faithful translation, while SH rewrote the beat-8 'izaberete…' clause instead of only swapping the exam-date/grade feature.",
    "title_fixes": {},
-   "version": "group-2026-10-08.2"
+   "version": "group-2026-10-10.faithful-hook"
   },
   "A20261008210957": {
    "approval": {
-    "sh": "not_locked"
+    "sh": "not_locked",
+    "sl": "not_locked"
    },
-   "checked_at": 1791494165,
+   "checked_at": 1791646999,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
     "sh": {
      "source_id": "7692478766852967686",
      "video_identity": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d"
+    },
+    "sl": {
+     "source_id": "7692478766852967686",
+     "video_identity": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d"
     }
    },
-   "key": "8cecf80e1399b12508bc289bd1b452405829f42b8688824e0d60400e76ad1433",
-   "passed": true,
-   "reasons": [],
+   "key": "b0a72ae8f0779b1bb8db0ee60740e332e4eb0c7ff4dde893a2a5417bd18e7089",
+   "passed": false,
+   "reasons": [
+    "directions_match sh: The example has no on-screen text, but the directions add an on-screen title '5 faksova gdje nećeš izgubiti živce 🎓🤩' that it never shows. They also add a zig-zag cut the example doesn't show. Keep only: talk to the camera while cutting a sheet of paper with scissors."
+   ],
    "results": {
     "directions_match": {
      "sh": {
+      "issue": "The example has no on-screen text, but the directions add an on-screen title '5 faksova gdje nećeš izgubiti živce 🎓🤩' that it never shows. They also add a zig-zag cut the example doesn't show. Keep only: talk to the camera while cutting a sheet of paper with scissors.",
+      "pass": false
+     },
+     "sl": {
       "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "Minor: 'olakšate… vam' was changed to the singular 'olakšaš… ti'. The rest is one to one, with the allowed changes: ijekavian forms, female gender forms, and the 'Priprema za test'/mood-selection features swapped for PDF/scan and notes/flashcards/quiz.",
+      "pass": true
+     },
+     "sl": {
+      "issue": "Minor: the plural 'vam' became the singular 'ti', which is acceptable. Otherwise a faithful translation, with 'Priprema za test'/search swapped for the Scan feature and the mood selection swapped for notes/flashcards/quiz.",
       "pass": true
      }
     },
     "features_claims": {
      "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
       "issue": "",
       "pass": true
      }
@@ -182,10 +235,8 @@
      "sh": {
       "issue": "",
       "pass": true
-     }
-    },
-    "independent_wording": {
-     "sh": {
+     },
+     "sl": {
       "issue": "",
       "pass": true
      }
@@ -194,20 +245,108 @@
      "sh": {
       "issue": "",
       "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
      }
     }
    },
-   "status": "pass",
-   "summary": "SH passes every check: it follows the 5→1 countdown with the disclaimer, the bridge and a 3-sentence Memo AI demo between places 3 and 2; the brand is spoken only once, the script is independently worded, the claims are real features, and the directions cover the full demo sequence.",
+   "status": "fail",
+   "summary": "Both countries follow the countdown format, with the scissors hook and the Memo AI demo between place 3 and place 2, and their scripts are faithful translations. SH's filming directions fail because they add an on-screen title and a zig-zag cut that the example doesn't have.",
    "title_fixes": {},
-   "version": "group-2026-10-08.2"
+   "version": "group-2026-10-10.faithful-hook"
+  },
+  "A20261008211912": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791647148,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7691071853334498580",
+     "video_identity": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5"
+    },
+    "sl": {
+     "source_id": "7691071853334498580",
+     "video_identity": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5"
+    }
+   },
+   "key": "bff95239e02696d085411a79bc790745c19cf2ebefbd7b6ac387e7be011f4964",
+   "passed": false,
+   "reasons": [
+    "format_consistency sh: The beat 2 payoff no longer names the brand. 'uz Memo AI' becomes 'uz ovu aplikaciju koju vidiš ovdje', but the reference requires 'uz Memo AI' in the on-screen text.",
+    "format_consistency sl: The beat 2 payoff drops the brand. 'Pa si highkey nadgradiš možgane' leaves out 'z Memo AI', but the reference requires the brand in the on-screen text.",
+    "faithful_translation sh: Line 2 is reworded. The original 'uz Astra AI' should become 'uz Memo AI', not 'uz ovu aplikaciju koju vidiš ovdje'. The emojis are also additions.",
+    "faithful_translation sl: Line 2 leaves out the app name. It should read 'Pa si highkey nadgradiš možgane z Memo AI'. The emojis are also additions.",
+    "directions_match sl: The quoted on-screen text («ampak tvoji možgani nimajo premium naročnine») differs from the script and title («ampak nisi naročena na možgane premium»)."
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The quoted on-screen text («ampak tvoji možgani nimajo premium naročnine») differs from the script and title («ampak nisi naročena na možgane premium»).",
+      "pass": false
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "Line 2 is reworded. The original 'uz Astra AI' should become 'uz Memo AI', not 'uz ovu aplikaciju koju vidiš ovdje'. The emojis are also additions.",
+      "pass": false
+     },
+     "sl": {
+      "issue": "Line 2 leaves out the app name. It should read 'Pa si highkey nadgradiš možgane z Memo AI'. The emojis are also additions.",
+      "pass": false
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "The beat 2 payoff no longer names the brand. 'uz Memo AI' becomes 'uz ovu aplikaciju koju vidiš ovdje', but the reference requires 'uz Memo AI' in the on-screen text.",
+      "pass": false
+     },
+     "sl": {
+      "issue": "The beat 2 payoff drops the brand. 'Pa si highkey nadgradiš možgane' leaves out 'z Memo AI', but the reference requires the brand in the on-screen text.",
+      "pass": false
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The beats and order match. The beat 1 stage direction appears twice, which is minor.",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "Both countries keep the two-beat silent POV structure, but each drops 'Memo AI' from the payoff line ('upgrade your brain'): SH replaces it with a vague phrase and SL omits it. SL's filming directions also quote hook text that differs from its script.",
+   "title_fixes": {},
+   "version": "group-2026-10-10.faithful-hook"
   },
   "A20261008224450": {
    "approval": {
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791529429,
+   "checked_at": 1791647283,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -220,14 +359,29 @@
      "video_identity": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a"
     }
    },
-   "key": "088b334852c2d260a31774ddf9f4f77e212f1ec5e10c41d5115f7a019785ae48",
-   "passed": true,
-   "reasons": [],
+   "key": "ced91897afb53f8f0d1d87a2ad685fb986a173ec8b79c8b10b6e4a265bcdc1c9",
+   "passed": false,
+   "reasons": [
+    "format_consistency sh: The cue for sign 2 says 'drži telefon na uhu'. That makes the calculating sign look like a phone call, but in the reference the phone belongs only to sign 4. The final hair-oil joke is also cut off before its punchline.",
+    "script_matches_example sh: The script ends mid-sentence ('je l' ovo više za Garnier ili je'). It drops the example's closing joke 'više neki fazon nekog francuskog skupog, nekog skupljeg ulja?'.",
+    "faithful_translation sh: The last sentence of the example is left out (the expensive French oil punchline). Everything else is a close translation.",
+    "features_claims sl: It keeps the original 'mi ta aplikacija napiše vse, kar moram narediti', which suggests the app does the work for you. The reference requires the real-feature wording: notes that explain step by step what to do, from start to finish (e.g. 'mi napiše zapiske, ki mi korak za korakom razložijo vse, kar moram narediti')."
+   ],
    "results": {
     "directions_match": {
      "sh": {
       "issue": "",
       "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "The last sentence of the example is left out (the expensive French oil punchline). Everything else is a close translation.",
+      "pass": false
      },
      "sl": {
       "issue": "",
@@ -240,24 +394,14 @@
       "pass": true
      },
      "sl": {
-      "issue": "",
-      "pass": true
+      "issue": "It keeps the original 'mi ta aplikacija napiše vse, kar moram narediti', which suggests the app does the work for you. The reference requires the real-feature wording: notes that explain step by step what to do, from start to finish (e.g. 'mi napiše zapiske, ki mi korak za korakom razložijo vse, kar moram narediti').",
+      "pass": false
      }
     },
     "format_consistency": {
      "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "independent_wording": {
-     "sh": {
-      "issue": "",
-      "pass": true
+      "issue": "The cue for sign 2 says 'drži telefon na uhu'. That makes the calculating sign look like a phone call, but in the reference the phone belongs only to sign 4. The final hair-oil joke is also cut off before its punchline.",
+      "pass": false
      },
      "sl": {
       "issue": "",
@@ -266,8 +410,8 @@
     },
     "script_matches_example": {
      "sh": {
-      "issue": "",
-      "pass": true
+      "issue": "The script ends mid-sentence ('je l' ovo više za Garnier ili je'). It drops the example's closing joke 'više neki fazon nekog francuskog skupog, nekog skupljeg ulja?'.",
+      "pass": false
      },
      "sl": {
       "issue": "",
@@ -275,17 +419,17 @@
      }
     }
    },
-   "status": "pass",
-   "summary": "Both the SH and SL pages pass every dimension: each keeps the hook, the 4-sign order (Virgo with the Memo AI brag in the middle, Scorpio, Leo, Libra ending on the hair joke) and spoken brand placement; the Astra AI sentences and real-sounding threats are replaced with real Memo AI features and absurd bargaining, and the directions match the script. Minor, non-failing: the SL brag runs about 8 sentences instead of about 5, and its closing line says it prepares down to the last detail with Memo AI instead of the reference's 'with Memo AI that just isn't possible'.",
+   "status": "fail",
+   "summary": "SH is cut off before the final hair-oil punchline and puts the phone prop on sign 2. SL is a faithful match but keeps the vague 'writes everything I need to do' claim instead of the step-by-step notes feature.",
    "title_fixes": {},
-   "version": "group-2026-10-08.2"
+   "version": "group-2026-10-10.faithful-hook"
   },
   "A20261008231529": {
    "approval": {
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791508429,
+   "checked_at": 1791647462,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -298,11 +442,23 @@
      "video_identity": "sha256:728cf7db67b5988163b4b35079212302d7be123337b97b582d506266b1fa9fea"
     }
    },
-   "key": "ae14100a3973a2518ce5d97c68576ebf7365d21e11c6ed232e0fb78f53b1b22c",
-   "passed": true,
-   "reasons": [],
+   "key": "c6a1954dbc1ed02c85d954f77bb728e12ab568360b84fc87dded1dfe421a229d",
+   "passed": false,
+   "reasons": [
+    "directions_match sl: The quoted opening line 'Ne uporabljaj ChatGPT-ja' is singular and does not match the script's plural opening 'Ne uporabljajte ChatGPT-ja'. Change it to 'Ne uporabljajte ChatGPT-ja ...'."
+   ],
    "results": {
     "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The quoted opening line 'Ne uporabljaj ChatGPT-ja' is singular and does not match the script's plural opening 'Ne uporabljajte ChatGPT-ja'. Change it to 'Ne uporabljajte ChatGPT-ja ...'.",
+      "pass": false
+     }
+    },
+    "faithful_translation": {
      "sh": {
       "issue": "",
       "pass": true
@@ -332,16 +488,6 @@
       "pass": true
      }
     },
-    "independent_wording": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
     "script_matches_example": {
      "sh": {
       "issue": "",
@@ -353,17 +499,17 @@
      }
     }
    },
-   "status": "pass",
-   "summary": "Both SH and SL pass every check: each keeps the 4-reason talking-head warning with Memo AI introduced after reason 2, is written independently of the example, and replaces the Astra AI claims (App Store install, cheating, 2-3 weeks into 2 days, the Stanford study) with real features, the memoai.eu URL and opinion framing. Their filming directions also match the scripts and the reference's Scan, notes, flashcards and quiz demo.",
+   "status": "fail",
+   "summary": "Both scripts follow the reference closely: the four reasons stay in the same order, Memo AI comes in mid-list with the memoai.eu CTA, the translations are faithful and only real features are claimed; the one fix needed is that the SL filming directions quote the opening line in the singular, not the plural used in the script.",
    "title_fixes": {},
-   "version": "group-2026-10-08.2"
+   "version": "group-2026-10-10.faithful-hook"
   },
   "A20261009001913": {
    "approval": {
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791555131,
+   "checked_at": 1791647540,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -376,13 +522,21 @@
      "video_identity": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0"
     }
    },
-   "key": "579dfeeb4621ce3a11a1058effdae86425a856c92eda2ae7641579c51f95f9eb",
-   "passed": false,
-   "reasons": [
-    "independent_wording sl: Most of the SL script translates the example's sentences closely. The hook, all five remarks, the 'not bad, don't try this' line, the segue, 'Gremo pa naprej na naslednjo opombo' and the firecracker joke are near-translations. The firecracker joke is 'Ne vem, kako vas sploh še imajo na teh šolah… trikrat letela ven'. The parents riff is also translated: 'starši bi res lahko počakali vsaj do roditeljskega', mum blushing at the meeting, 'vsaj do sestanka ste imeli mir'. Rewrite these as invented remarks in the same categories, with original jokes."
-   ],
+   "key": "a826cdbcd46d982e2237ee0bc6cfdfc6782f24f67d524e6c55224f227d5c54aa",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
      "sh": {
       "issue": "",
       "pass": true
@@ -412,16 +566,6 @@
       "pass": true
      }
     },
-    "independent_wording": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "Most of the SL script translates the example's sentences closely. The hook, all five remarks, the 'not bad, don't try this' line, the segue, 'Gremo pa naprej na naslednjo opombo' and the firecracker joke are near-translations. The firecracker joke is 'Ne vem, kako vas sploh še imajo na teh šolah… trikrat letela ven'. The parents riff is also translated: 'starši bi res lahko počakali vsaj do roditeljskega', mum blushing at the meeting, 'vsaj do sestanka ste imeli mir'. Rewrite these as invented remarks in the same categories, with original jokes.",
-      "pass": false
-     }
-    },
     "script_matches_example": {
      "sh": {
       "issue": "",
@@ -433,17 +577,17 @@
      }
     }
    },
-   "status": "fail",
-   "summary": "Both countries follow the reference structure and only claim real Memo AI features, but the SL script is mostly a close translation of the example video and needs independent rewriting.",
+   "status": "pass",
+   "summary": "Both SH and SL keep the reference format: the PART 5 hook, the five remarks in the original order and the AI fake-doctor's-note segue into Memo AI at beat 5, with Astra AI swapped only where it was spoken. The 'true-false' and 'oral tests' features are mapped to quiz with explanations and voice tutor, the remarks continue after the demo and the comments CTA is kept. Both translations are near one to one and the directions are concrete single sentences, so nothing needs fixing.",
    "title_fixes": {},
-   "version": "group-2026-10-08.2"
+   "version": "group-2026-10-10.faithful-hook"
   },
   "A20261009014121": {
    "approval": {
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791555243,
+   "checked_at": 1791647656,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -456,11 +600,21 @@
      "video_identity": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab"
     }
    },
-   "key": "8ca9032e07723a8f9591192e8354699452804cbec8c06e38aef27e2a953674ee",
+   "key": "fba62c9b132a466427c00b000c614a9a7a12e7589ce784530ddcf23112e16a1a",
    "passed": true,
    "reasons": [],
    "results": {
     "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
      "sh": {
       "issue": "",
       "pass": true
@@ -490,16 +644,6 @@
       "pass": true
      }
     },
-    "independent_wording": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
     "script_matches_example": {
      "sh": {
       "issue": "",
@@ -512,16 +656,16 @@
     }
    },
    "status": "pass",
-   "summary": "Both the SH and SL versions follow all 14 beats in the reference order and replace the Astra steps with real Memo AI steps. They keep the brand on screen only, avoid grade guarantees, use their own wording and have filming directions that fit their scripts.",
+   "summary": "Both the SH and SL versions follow the reference closely and pass every dimension: the slime hook, 2-hour deletion line, teacher-aunt secret and laptop demo are in the original order, Memo AI only replaces features it lacks (new note instead of new test, Scan photos instead of date and grade settings, voice tutor instead of oral exam, mind map and chat instead of true/false and exercises), and both end with the follow-for-more-secrets CTA.",
    "title_fixes": {},
-   "version": "group-2026-10-08.2"
+   "version": "group-2026-10-10.faithful-hook"
   },
   "A20261009015525": {
    "approval": {
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791530777,
+   "checked_at": 1791647755,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -534,177 +678,31 @@
      "video_identity": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32"
     }
    },
-   "key": "1b1e183411fcf5cee5d12807680fb858d1b1ccf5d960576d858dda8c1870a753",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "independent_wording": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both the SH and SL pages pass every check. Each keeps the 8 spoken sentences in the reference order, with the laptop held to camera at the start, the screen demo of the cell in the middle (PDF upload, notes, mind map, AI chat, voice tutor, quick flashes of study tools) and pointing at the app at the end. Neither says the brand aloud, both replace the 3D and simulation claims with real Memo AI features, and the wording is written independently of the example.",
-   "title_fixes": {},
-   "version": "group-2026-10-08.2"
-  },
-  "A20261009210824": {
-   "approval": {
-    "sh": "not_locked",
-    "sl": "not_locked"
-   },
-   "checked_at": 1791586866,
-   "deterministic": {},
-   "duplicates": [],
-   "inputs": {
-    "sh": {
-     "source_id": "7692061360221457686",
-     "video_identity": "sha256:274dccbdf202d089a540c2cdfc273ea99a643c1f792b99d8b1ac3a01d2598a4f"
-    },
-    "sl": {
-     "source_id": "7692061360221457686",
-     "video_identity": "sha256:274dccbdf202d089a540c2cdfc273ea99a643c1f792b99d8b1ac3a01d2598a4f"
-    }
-   },
-   "key": "3d937beb59d513f6c55e1be10991e788315296c273b210d72b2db9098c3efeaf",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "independent_wording": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both SH and SL follow the laptop ad-space format in the reference order and wording. Hook, priced fields, comic removal, logo reveal at beat 5, factual brand intro, laptop demo and the 'next buyer' CTA are all present. Claims are accurate, directions are consistent and neither title needs a fix. Minor SH note: the script cue only has the creator holding the printed logo at the reveal line. The directions add sticking it on right after that line, slightly later than the reference's reveal moment.",
-   "title_fixes": {},
-   "version": "group-2026-10-08.2"
-  },
-  "A20261010130453": {
-   "approval": {
-    "sh": "not_locked",
-    "sl": "not_locked"
-   },
-   "checked_at": 1791638505,
-   "deterministic": {},
-   "duplicates": [],
-   "inputs": {
-    "sh": {
-     "source_id": "7694393004118854930",
-     "video_identity": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56"
-    },
-    "sl": {
-     "source_id": "7694393004118854930",
-     "video_identity": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56"
-    }
-   },
-   "key": "da0abef4e10b7747cbd73cc3bada27c183b7cf1755bdfd2e98464c590f19eefb",
+   "key": "8fc65dcb20c9deb50b9ede3a646061c1d2c2203cd2402e44932e9308034f7188",
    "passed": false,
    "reasons": [
-    "format_consistency sh: Script has three mid-conversation Memo AI markers (after 'Haos, a?', after the question about the exes and after 'čista serija, zar ne?'), and the directions show a Memo AI label at each one during the ketchup shot. The reference shows the brand only in the final overlay and on the phone screen in beat 6. The other changes are allowed: ketchup on a plate is an allowed ASMR prop and influencer/exes are an allowed gossip metaphor.",
-    "directions_match sh: Directions tell the creator to show a small Memo AI label at the three mid-video markers. This contradicts the reference rule that the brand appears only in the final overlay and on the phone screen. Remove those markers and labels and keep branding only in the last 3–5 s phone shot."
+    "format_consistency sh: Beats 2-3 only have link markers. Nothing tells the creator to film the laptop screen (pick the cell material, open the mind map, tap one part, ask the AI chat). Beat 6 has only a link marker, with no direction to go back on camera and point at the app on the laptop.",
+    "faithful_translation sl: The script adds 'v miselnem vzorcu' to 'Potem pogledate celico'. That phrase is not in the original, which names no missing feature at that spot, so it should be 'Potem pogledate celico, kliknete na katerikoli del na njej...'."
    ],
    "results": {
     "directions_match": {
      "sh": {
-      "issue": "Directions tell the creator to show a small Memo AI label at the three mid-video markers. This contradicts the reference rule that the brand appears only in the final overlay and on the phone screen. Remove those markers and labels and keep branding only in the last 3–5 s phone shot.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
       "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The script adds 'v miselnem vzorcu' to 'Potem pogledate celico'. That phrase is not in the original, which names no missing feature at that spot, so it should be 'Potem pogledate celico, kliknete na katerikoli del na njej...'.",
+      "pass": false
      }
     },
     "features_claims": {
@@ -719,18 +717,8 @@
     },
     "format_consistency": {
      "sh": {
-      "issue": "Script has three mid-conversation Memo AI markers (after 'Haos, a?', after the question about the exes and after 'čista serija, zar ne?'), and the directions show a Memo AI label at each one during the ketchup shot. The reference shows the brand only in the final overlay and on the phone screen in beat 6. The other changes are allowed: ketchup on a plate is an allowed ASMR prop and influencer/exes are an allowed gossip metaphor.",
+      "issue": "Beats 2-3 only have link markers. Nothing tells the creator to film the laptop screen (pick the cell material, open the mind map, tap one part, ask the AI chat). Beat 6 has only a link marker, with no direction to go back on camera and point at the app on the laptop.",
       "pass": false
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "independent_wording": {
-     "sh": {
-      "issue": "",
-      "pass": true
      },
      "sl": {
       "issue": "",
@@ -749,11 +737,176 @@
     }
    },
    "status": "fail",
-   "summary": "SL follows the reference on every check; SH fails format_consistency and directions_match because it shows Memo AI labels during the ketchup shot, when the brand should appear only in the final phone shot and overlay.",
+   "summary": "Both pages follow the format and correctly swap 'simulacije' for real Memo AI features. SH is missing the stage directions for the screen demo and the final reveal on camera, and SL adds 'v miselnem vzorcu', which is not in the original speech.",
    "title_fixes": {},
-   "version": "group-2026-10-08.2"
+   "version": "group-2026-10-10.faithful-hook"
+  },
+  "A20261009210824": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791647798,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7692061360221457686",
+     "video_identity": "sha256:274dccbdf202d089a540c2cdfc273ea99a643c1f792b99d8b1ac3a01d2598a4f"
+    },
+    "sl": {
+     "source_id": "7692061360221457686",
+     "video_identity": "sha256:274dccbdf202d089a540c2cdfc273ea99a643c1f792b99d8b1ac3a01d2598a4f"
+    }
+   },
+   "key": "4dc8c83502b965adc32e806014294e2e76e20f445ba94ca4058102ba2116dcde",
+   "passed": false,
+   "reasons": [
+    "format_consistency sh: Beat 3 is incomplete. The cues only have the creator peel paper off the sold field. They never show the Memo AI logo being stuck onto it before the reveal ('Isprintan logo' only appears as an attachment when the brand is spoken). The logo is only shown glued on at the CTA. Add a cue to stick the logo on the field during 'rekla bih da je ovo dovoljno dobro'."
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "Beat 3 is incomplete. The cues only have the creator peel paper off the sold field. They never show the Memo AI logo being stuck onto it before the reveal ('Isprintan logo' only appears as an attachment when the brand is spoken). The logo is only shown glued on at the CTA. Add a cue to stick the logo on the field during 'rekla bih da je ovo dovoljno dobro'.",
+      "pass": false
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "Both translations follow the German original closely, with Studyflash replaced by Memo AI. Both swap the target grade and study plan for language choice and notes. Only the SH cues fall short: they skip sticking the Memo AI logo onto the sold field before the brand is revealed.",
+   "title_fixes": {},
+   "version": "group-2026-10-10.faithful-hook"
+  },
+  "A20261010130453": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791647869,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7694393004118854930",
+     "video_identity": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56"
+    },
+    "sl": {
+     "source_id": "7694393004118854930",
+     "video_identity": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56"
+    }
+   },
+   "key": "6463546d742ef4ce0bc3f0f538d8a75a2e13608cee2dd4532b5574947cfa4baa",
+   "passed": false,
+   "reasons": [
+    "format_consistency sl: The Memo AI cue comes before the last gossip question, so the app appears during beat 4. The reference shows it only in the final phone close-up after the dialogue (beat 5).",
+    "script_matches_example sl: The app cue sits in the middle of the tutor's gossip questions. In the example the dialogue runs to the end and the app reveal comes only after it.",
+    "faithful_translation sl: The opening line 'Vse v telefonu, ki ga držiš' means 'everything in the phone'. The original says everything, right down to the phone you are holding, is made of atoms. It should be e.g. 'Vse, celo telefon, ki ga držiš, je narejeno iz atomov.'"
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The opening line 'Vse v telefonu, ki ga držiš' means 'everything in the phone'. The original says everything, right down to the phone you are holding, is made of atoms. It should be e.g. 'Vse, celo telefon, ki ga držiš, je narejeno iz atomov.'",
+      "pass": false
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The Memo AI cue comes before the last gossip question, so the app appears during beat 4. The reference shows it only in the final phone close-up after the dialogue (beat 5).",
+      "pass": false
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The app cue sits in the middle of the tutor's gossip questions. In the example the dialogue runs to the end and the app reveal comes only after it.",
+      "pass": false
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "SH follows the format and the example closely and only needs a title aligned to the format. SL places the Memo AI cue before the last gossip line, which breaks the beat-5 reveal, and its opening line changes the meaning of the original.",
+   "title_fixes": {
+    "sh": "Gradivo kao sočan trač 🍿"
+   },
+   "version": "group-2026-10-10.faithful-hook"
   }
  },
+ "group_duplicates": [],
  "group_rejected": {
   "A20261008224450": [
    "7691843374638304519"
@@ -814,6 +967,7 @@
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/0704a1dc-0341-4f0f-9eb3-42bfb53281b6/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/160678ef-32dd-44af-bb6f-7a66f1b10436/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/202e841a-77a0-402c-8bae-35611033dfeb/video-notion.mp4": "sha256:2863a59e5df5fb158d39b04ccad651e449a674c01d28b27611cd5b291504cb87",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/23baa518-4640-4556-8e8e-4aa3c4331160/video-notion.mp4": "sha256:61696db2bb051d7382dd8e4bb6ddf26b57583264a2d8913b15aea64c2b749b94",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/2c7d9ce4-ec78-4471-9516-94292f3e1227/video-notion.mp4": "sha256:9c02af67e47bd9ac17022fe8d832f4478e998428889e6141ed3779cabab38af7",
@@ -833,10 +987,13 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/7ac6cf49-8965-4e31-bf34-2ef929edc8ab/video.mp4": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9be007a3-73e8-4039-8ca1-2bbd3e875287/video.mp4": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9f1396bc-73e4-473d-9aec-ac88d25d3cba/video-notion.mp4": "sha256:d3f2a1475e9c417b9ea3df8e1dba8f19445423cd8a088b1a6f9494a872a49aa7",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/aae379ab-089c-41ee-9ad3-c6632897453e/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/b724117d-0c36-4e93-972f-055d7c412d9d/video-notion.mp4": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/bc335721-f9ea-426a-a184-1dc49df91c0a/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d7a785da-5e23-40f6-9646-04afe72c6f2d/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/dd9ebb60-8ddb-4a86-a657-f317fcdea81f/video.mp4": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/df86fa94-9d8c-4cfe-b69a-cc024d1c5e79/video.mp4": "sha256:e513b4868ed887f7d0fd7d95c00b0d8f505555382b0a29f910e4500bab96995b",
-  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/f1862454-a6e1-4442-b139-1b9f803b769c/video-notion.mp4": "sha256:c885900fe56e7d31e3feb4705ce828c344025ae7ef682156992baed17396de77"
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/f1862454-a6e1-4442-b139-1b9f803b769c/video-notion.mp4": "sha256:c885900fe56e7d31e3feb4705ce828c344025ae7ef682156992baed17396de77",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/fd23fb00-7c58-473e-b4bc-404869c20add/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5"
  }
 }
