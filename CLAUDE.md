@@ -78,9 +78,8 @@ registry/export_cert.pem, to state/scripts_export.enc (repo and logs are public)
 `mode=verify` (read-only): every list (order, numbering, layout), live page (video, sections, links), held page
 (staging) and both hook labs against the state; also lists leftover staging pages (never deletes).
 
-## Status (10 Oct 2026, evening)
-40 Astra AI creators followed (+ @lern.mit.domi for Studyflash); @creatortipsbymonika blocked (Astra's recruiter account,
-registry/accounts_add.json "block"). 15 formats, all scripts near 1:1 with the short visual hook section: 7 live in both
-lists (verify clean), 8 in the quality check (decided by the next 6-hourly runs). Only views (100k+) decide.
-All scripts: mode=export + scripts/read_export.sh. Open: Discord server logo (user). The Claude subscription is shared
-with the JobStep watcher - heavy days can hit its limit.
+## Status (11 Oct 2026)
+Balkan list 14 formats, Slovenian list 18 (4 Slovenian-only from our own Memo AI creators), verify clean. Approved
+(locked) scripts: the oral-quiz format "Nisam stvorena za sestrinstvo" (sl + sh, memoai.eu/ugc/oral-quiz) and "Faze
+srednje šole" (sl). Archived after full retries: Mozak premium, Gradivo kao sočan trač. @studywithpija's video was
+unavailable (not added). Open: Discord server logo (user). The Claude subscription is shared with the JobStep watcher.
