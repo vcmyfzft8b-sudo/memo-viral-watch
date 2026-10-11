@@ -591,6 +591,32 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261010162928": {
+      "example": "https://www.tiktok.com/@smartishaangelisaa/video/7687680254495788308",
+      "voiceover": true,
+      "title": "1. Pravni fakultet 👩‍⚖️ 2. FON 👨‍💼 3. Ekonomski fakultet 💵 4. Medicinski fakultet ⚕️ 5. ETF 🏗️ 6. Filološki fakultet 🌍 7. Saobraćajni fakultet 🚦",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: sjediš za stolom ispred čaše vode, u nju iz roze flašice sipaš šumeći prah da voda postane žuta, dok pričaš gledaš u kameru, a na ekranu je spisak fakulteta.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ako ideš na neki od ovih fakulteta, čestitam ti, jer si upravo ubo jackpot. Nećete ni povjerovati koliki ste srećnici, zato što sam pronašla aplikaciju koja od svih predavanja za ove fakultete napravi bilješke.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "U pitanju je Memo AI: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. A poslije svake definicije dobiješ i brzi kviz da provjeriš jesi li dobro razumio.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Nemojte ovo otkrivati mnogo ljudi, neka ostane naša mala tajna. U komentarima mi napišite da li se vaš fakultet nalazi na ovom spisku.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -1106,6 +1132,32 @@
           "cue": null,
           "asset_name": "",
           "text": "Prosim, profesorica? Dali ste mi enko? Aha. Joj, naj uporabim tisto Garnierjevo olje za lase ali kakšno dražje francosko? Res se ne morem odločiti.",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261010162928": {
+      "example": "https://www.tiktok.com/@smartishaangelisaa/video/7687680254495788308",
+      "voiceover": true,
+      "title": "1. Pravna fakulteta 👩‍⚖️ 2. FOV 👨‍💼 3. Ekonomska fakulteta 💵 4. Medicinska fakulteta 🩺 5. Fakulteta za elektrotehniko ⚡ 6. Filozofska fakulteta 🌍 7. Fakulteta za pomorstvo in promet 🚦",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: sediš za mizo pred kozarcem vode, vanj iz roza plastenke stresaš šumeči prašek, da se voda obarva rumeno, med govorjenjem gledaš v kamero, na zaslonu pa je seznam fakultet.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Če hodiš na katero od teh fakultet, ti čestitam, ker si ravnokar zadel jackpot. Ne boste verjeli, kakšni srečneži ste, ker sem našla aplikacijo, ki ti iz vseh predavanj na teh fakultetah naredi zapiske.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Gre za Memo AI: vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. Po vsaki definiciji pa dobiš še hiter kviz, da preveriš, ali si res razumel.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tega ne razkrivajte preveč ljudem, naj ostane naša mala skrivnost. V komentarje mi napišite, ali je vaša fakulteta na tem seznamu.",
           "new_paragraph": true
         }
       ]
