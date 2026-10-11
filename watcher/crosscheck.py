@@ -360,6 +360,12 @@ def check_group(fmt, mkts, cfg, page_of, meta, dup_list=None, force=False):
         return res
     for m, issue in hard.items():  # a rejected source is a mismatch whatever the model says
         results.setdefault('format_consistency', {})[m] = {'pass': False, 'issue': issue}
+    for m, st in approval.items():  # a page the user approved completely (script + title + visual hook) is right as it is
+        full = align.approved_script(fmt['id'], {x['key']: x['lang'] for x in mkts}.get(m, m)) or {}
+        if st == 'locked_preserved' and m not in hard and full.get('hook') and full.get('title'):
+            for d in DIMENSIONS:
+                results.setdefault(d, {})[m] = {'pass': True, 'issue': ''}
+            titles.pop(m, None)
     complete = all(isinstance((results.get(d) or {}).get(m), dict) for d in DIMENSIONS for m in inputs)
     failed = [(d, m, results[d][m].get('issue', '')) for d in DIMENSIONS for m in inputs
               if complete and not results[d][m].get('pass')]
@@ -463,6 +469,8 @@ def fix_group(fmt, mkts, cfg, page_of, meta, res, put_example, links):
         pid = page_of(fmt, m)
         if m in TEXT and avoid_found(m, t):  # a fixed title must follow the page language's rules too
             continue
+        if (align.approved_script(fmt['id'], {x['key']: x['lang'] for x in mkts}.get(m, m)) or {}).get('title'):
+            continue  # the user approved this title
         if pid and set_title(pid, t):  # a title is not part of a script approval
             changed.append(f'{m}: title -> {t[:60]}')
     for mk in mkts:
@@ -567,6 +575,10 @@ def apply_approvals(fmts, mkts, cfg, page_of, meta, put_example=None):
             st, why = align.align_page(f, pid, lang, cfg, cfg['links'])
             if why != 'approved script unchanged':
                 out.append(f"{f['id']} {m}: {st} ({why})")
+            if ok.get('hook'):
+                hs, hwhy = reword.fix_directions(f, pid, lang, cfg['models']['classify'])
+                if hwhy != 'approved visual hook':
+                    out.append(f"{f['id']} {m}: visual hook {hs} ({hwhy[:60]})")
     for line in out:
         print(line, flush=True)
     return out

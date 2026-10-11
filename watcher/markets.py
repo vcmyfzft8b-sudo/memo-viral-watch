@@ -94,7 +94,7 @@ TEXT = {
                   '"a veš", "pač", "tipa", "zihr", "js"/"jaz" as spoken), short punchy sentences, ti-form; still easy to '
                   'read and not overdone - a natural translation, never stiff or formal - and never Croatian/Serbian '
                   'words or forms (the source videos are Serbo-Croatian: "što", "koji", "već", "gdje" must become '
-                  '"kaj", "ki", "že", "kje"); the speaker\'s own past-tense verbs in the FEMININE form (naučila sem, '
+                  '"kaj", "ki", "že", "kje"; follow on TikTok = "zafolovat" / "zafolovaš", never "zapratit"); the speaker\'s own past-tense verbs in the FEMININE form (naučila sem, '
                   'slikala sem) - most creators are women and a man simply switches the ending; artificial '
                   'intelligence is always just "AI", never "umetna inteligenca"'),
         'address': 'ti (informal singular; "vi" only if the original speaks to a group - then consistently)',
@@ -156,7 +156,7 @@ TEXT = {
         'foreign': 'ćđłąęńśźřůěťďňäöüßñ',
         'avoid_reason': 'words that do not belong on the Slovenian page (Croatian/Serbian forms; "umetna inteligenca" - say AI)',
         'avoid_words': 'što šta koji koja koje već ovo ovaj ova jer gdje gde nešto ništa uvijek uvek sutra trebaš '
-                       'možeš puno umetna umetne umetni umetno',
+                       'možeš puno umetna umetne umetni umetno zaprati zapratiš zapratite zapratit zapratiti zaprati',
     },
 }
 # Slovenian looks a lot like Serbo-Croatian in captions; it is only used to tell the two apart (Slovenia is not one of

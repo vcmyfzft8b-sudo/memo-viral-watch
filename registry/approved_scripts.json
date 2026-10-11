@@ -117,6 +117,44 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261008205804": {
+      "example": "https://www.tiktok.com/@kera.vas.uci/video/7692158324032163124",
+      "voiceover": true,
+      "title": "99% VAS NEĆE USPJETI DA ZAVRŠI OVU IGRU 😳",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: sjedi blizu kamere i energično govori pravo u nju, a u gornjem uglu neka bude numerisan spisak koji sa svakim uslovom poraste za jedan red (4. red = MEMO AI).",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ako ti prezime završava na „ić“, ispadaš. 99% vas neće uspjeti da završi ovu igru.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ako me ne pratiš, ispadaš, ali možeš da se vratiš u igru ako me sada odmah zapratiš. Ako više voliš zimu od ljeta, također ispadaš.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Ako koristiš Memo AI aplikaciju za učenje, ispadaš, jer je realno najbolja aplikacija za učenje i ti si ovu igru već pobijedio. Bukvalno ubaciš svoje bilješke i slike i za par minuta dobiješ sređene bilješke, kartice, kvizove i probne ispite. Meni su omiljene kartice: dobijem pitanje, a ako ne znam odgovor, samo kliknem na ekran.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Idemo dalje: ako ti telefon trenutno ima manje od 20% baterije, ispadaš. A sada klikni share dugme na Viber ili WhatsApp, i ako ti prva iskoči mama ili tata, ispadaš.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "U komentarima mi pišite do kojeg broja ste uspjeli doći.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -276,6 +314,44 @@
           "cue": null,
           "asset_name": "",
           "text": "Besedilo na zaslonu: Aplikacija se imenuje MEMO AI‼️",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261008205804": {
+      "example": "https://www.tiktok.com/@kera.vas.uci/video/7692158324032163124",
+      "voiceover": true,
+      "title": "99 % VAS TE IGRE NE BO USPELO KONČAT 😳",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: sedi čisto blizu kamere in energično govori naravnost vanjo, v zgornjem kotu pa imej oštevilčen seznam, ki se z vsakim pogojem podaljša za eno vrstico (4. vrstica = MEMO AI).",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Če se ti priimek konča na -ič, izpadeš. 99 % vas te igre itak ne bo uspelo končat.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Če mi ne slediš, izpadeš, ampak se lahko vrneš v igro, če me zdajle takoj zafolovaš. Če imaš raje zimo kot poletje, tudi izpadeš.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Če se učiš z Memo AI, izpadeš, ker je realno najboljša aplikacija za učenje in s tem itak že zmaguješ. Samo naložiš svoje zapiske in slike, pa ti v par minutah naredi urejene zapiske, kartice, kvize in probne teste. Meni so najljubše kartice: dobim vprašanje, in če ne vem odgovora, samo kliknem na zaslon.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Gremo naprej: če ima tvoj telefon zdajle manj kot 20 % baterije, izpadeš. Zdaj pa klikni Deli na Viber ali WhatsApp, in če ti kot prva skoči ven mami ali ati, izpadeš.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "V komentarje mi napišite, do katere številke vam je uspelo prit.",
           "new_paragraph": true
         }
       ]

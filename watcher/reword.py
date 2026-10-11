@@ -229,9 +229,15 @@ def fix_directions(fmt, page_id, lang, model, issues=''):
         lab = (state.load('notion.json', {}).get('markets', {}).get(next((k for k, m in cfg['markets'].items()
                                                                          if m['lang'] == lang), ''), {}) or {}).get('visual_hook_lab')
     lines = [b for b in section if _plain(b).strip()]
-    if (not issues and len(lines) == 2 and _plain(lines[0]).startswith(T['hook_start'].strip())
-            and 'Visual Hook Lab' in _plain(lines[1])):
+    from .align import approved_script
+    fixed = (approved_script(fmt['id'], lang) or {}).get('hook')  # a visual hook the user approved is used as it is
+    if fixed and len(lines) == 2 and _plain(lines[0]).strip() == fixed.strip() and 'Visual Hook Lab' in _plain(lines[1]):
+        return 'ok', 'approved visual hook'
+    if not fixed and (not issues and len(lines) == 2 and _plain(lines[0]).startswith(T['hook_start'].strip())
+                      and 'Visual Hook Lab' in _plain(lines[1])):
         return 'ok', 'already in the short layout'
+    if fixed:
+        return _put_hook(page_id, head, section, fixed, lab, T)
     old = '\n'.join(_plain(b) for b in lines)
     prompt = f"""This is the visual hook section ({T['lang_name']}) of a UGC creator page. The first line(s) describe
 what the creator of the example video does in the first seconds of the video.
@@ -248,6 +254,11 @@ Return JSON {{"hook": "<the sentence(s)>"}}"""
         return 'skipped', 'no hook sentence returned'
     if not hook.lower().startswith(T['hook_start'].strip().lower()[:20]):
         hook = T['hook_start'] + hook[0].lower() + hook[1:]
+    return _put_hook(page_id, head, section, hook, lab, T)
+
+
+def _put_hook(page_id, head, section, hook, lab, T):
+    """Replace the visual hook section with the hook sentence + the Visual Hook Lab line (old section backed up)."""
     with state.LOCK:  # old section kept, so a page can be restored
         backup = state.load('script_backup.json', {})
         backup.setdefault('hook:' + page_id, [b[b['type']].get('rich_text', []) for b in section if b.get(b['type'])])

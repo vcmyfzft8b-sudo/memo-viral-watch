@@ -173,9 +173,13 @@ Return JSON {{"example_same_format": true, "script_follows_example": true, "scri
     v['approval_locked'] = bool(locked)
     v['approved'] = bool(align.approved(fmt['id'], lang, url))
     v['approved_matches'] = bool(v['approved'] and links and align.matches_approved(page_id, lang, links, locked))
-    if v['approved_matches']:
+    if v['approved_matches']:  # the user approved this script (and its title / visual hook, if given): it is right
         v.update({'script_follows_example': True, 'script_faithful': True, 'script_ok': True})
         v['script_issues'] = []
+        if locked.get('hook'):
+            v['directions_ok'], v['direction_issues'] = True, []
+        if locked.get('title'):
+            v['title_ok'] = True
     base = align.source_script(example)
     spoken = reword.spoken_text(reword.script_blocks(page_id))
     v['length_ok'] = v['approved_matches'] or align._words(spoken) <= 1.10 * max(align._words(base), 1)
