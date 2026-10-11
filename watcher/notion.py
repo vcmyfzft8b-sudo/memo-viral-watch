@@ -131,7 +131,8 @@ def cue_links(links, lang=PRIMARY):
     return {CUE: (cue_label_for(links[CUE], lang), links[CUE])}
 
 
-def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, same_lang=False, note_override=None):
+def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, same_lang=False, note_override=None,
+                logo_upload_id=None):
     T = TEXT[lang]
     blocks = [block('heading_1', [rt(T['video_heading'])])]
     if file_upload_id:
@@ -161,7 +162,11 @@ def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, 
     res = [rt(cue_label_for(links[CUE], lang), link=links[CUE]), rt(' – ' + T['record_rule'])]
     for asset in spec.get('assets_needed', []):
         res.append(rt(f"\n📎 {asset['name']} – {T['asset_todo']}: {asset.get('description', '')}"))
+    if logo_upload_id:  # the official Memo AI logo (transparent, high quality) for creators who want it in the video
+        res.append(rt('\n' + T['logo_line']))
     blocks.append(block('callout', res, icon={'type': 'emoji', 'emoji': '💡'}, color='gray_background'))
+    if logo_upload_id:
+        blocks.append(block('image', type='file_upload', file_upload={'id': logo_upload_id}))
     return blocks
 
 

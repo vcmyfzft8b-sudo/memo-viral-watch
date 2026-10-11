@@ -535,9 +535,10 @@ def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, 
         if replace_page and problems:
             return None, spec, problems
         upload_id = notion.upload_video(media.for_notion(video_file, work))
+        logo_id = notion.upload_file(LOGO, 'image/png') if os.path.exists(LOGO) else None
         blocks = notion.page_blocks(spec, {**v, 'own': v.get('own') or M.own(fmt, mk['lang'])}, upload_id, links_for(cfg['links'], fmt), lang=mk['lang'], lab_url=mk['visual_hook_lab'],
                                     same_lang=(transcript.get('language') or '')[:2] == mk['lang'],
-                                    note_override=((fmt or {}).get('record_note') or {}).get(mk['lang']))
+                                    note_override=((fmt or {}).get('record_note') or {}).get(mk['lang']), logo_upload_id=logo_id)
     finally:
         if own:
             shutil.rmtree(work, ignore_errors=True)
@@ -1144,6 +1145,49 @@ def resolve_url(url):
 
 
 MATERIALS = os.path.join(ROOT, 'registry', 'materials')
+LOGO = os.path.join(MATERIALS, '_logo', 'memo_ai_logo_hq.png')  # official Memo AI logo, transparent, high quality
+
+
+def logo_all():
+    """Every live/waiting format page gets the official Memo AI logo (transparent, high quality) in its 🔧 materials
+    section with one line saying creators may use it; an older white-background logo there is removed. Once per page
+    (fmt['logo_hq'][market])."""
+    cfg, fmts = load_config(), load_formats()
+    n = 0
+    for f in [f for f in fmts if f.get('status') in ('active', 'pending')]:
+        for key, m in cfg['markets'].items():
+            pid = page_of(f, key)
+            if not pid or (f.get('logo_hq') or {}).get(key):
+                continue
+            T = M.TEXT[m['lang']]
+            blocks = notion.children(pid)
+            h = next((i for i, b in enumerate(blocks) if b['type'].startswith('heading') and '🔧' in reword._plain(b)), None)
+            if h is None:
+                continue
+            section = []
+            for b in blocks[h + 1:]:
+                if b['type'] == 'divider' or b['type'].startswith('heading'):
+                    break
+                section.append(b)
+            callout = next((b for b in section if b['type'] == 'callout'), None)
+            for b in section:  # an older logo with a white background goes
+                url = ((b.get('image') or {}).get('file') or {}).get('url', '')
+                if b['type'] == 'image' and 'memo_ai_logo.png' in url:
+                    notion.api('DELETE', f"/blocks/{b['id']}")
+            if callout and T['logo_line'] not in reword._plain(callout) and not re.search(r'logo', reword._plain(callout), re.I):
+                rich = [{'type': 'text', 'text': {'content': x['plain_text'], 'link': (x.get('text') or {}).get('link')},
+                         'annotations': x.get('annotations', {})} if x.get('type') == 'text' else
+                        {k: v for k, v in x.items() if k in ('type', 'mention', 'annotations')} for x in callout['callout']['rich_text']]
+                rich.append({'type': 'text', 'text': {'content': '\n' + T['logo_line']}})
+                notion.api('PATCH', f"/blocks/{callout['id']}", {'callout': {'rich_text': rich}})
+            after = [b for b in section if b['type'] != 'image' or 'memo_ai_logo.png' not in ((b.get('image') or {}).get('file') or {}).get('url', '')]
+            img = notion.block('image', type='file_upload', file_upload={'id': notion.upload_file(LOGO, 'image/png')})
+            notion.api('PATCH', f'/blocks/{pid}/children', {'children': [img], 'after': after[-1]['id']})
+            f.setdefault('logo_hq', {})[key] = True
+            state.save('formats.json', fmts)
+            n += 1
+            print(f"logo: {f['title']} {key}", flush=True)
+    print(f'logo-all: {n} pages')
 READY = {'sh': 'slike ispod', 'sl': 'slike spodaj'}
 
 
@@ -1339,6 +1383,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--logo-all', action='store_true', help='every page: the official Memo AI logo (transparent, HQ) in the materials')
     ap.add_argument('--transcribe', default='', help='read-only: TikTok link -> timed transcript (Soniox)')
     ap.add_argument('--restore-format', default='', help='format id: undo remove-format - pages back into the format folders and lists')
     ap.add_argument('--remove-format', default='', help='format id: the user removed it - every page goes to its market archive (never deleted), never brought back automatically')
@@ -1672,6 +1717,9 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.logo_all:
+        logo_all()
         return
     if a.transcribe:
         work = tempfile.mkdtemp(prefix='tr-')

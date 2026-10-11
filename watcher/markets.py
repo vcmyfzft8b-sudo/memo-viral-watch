@@ -46,6 +46,7 @@ TEXT = {
                         'PowerPoint ili snimak predavanja, pa pokažeš bilješke, flash kartice, kviz, probni test i druge funkcije koje aplikacija ima. Snimi to '
                         'isto kao u videu za inspiraciju.'),
         'cue_verb': 'Snimi',
+        'logo_line': '📎 Memo AI logo (prozirna pozadina, visoka kvaliteta) – slika ispod; koristi ga u videu ako želiš.',
         'record_rule': ('obavezno: na svakom mjestu označenom sa 🎥 samo otvori Memo AI na laptopu i snimaj kako prolaziš '
                         'kroz aplikaciju i pokazuješ šta sve može (PDF, PowerPoint ili snimak predavanja → bilješke, flash '
                         'kartice, kviz, probni test i druge funkcije), kao u videu za inspiraciju.'),
@@ -132,6 +133,7 @@ TEXT = {
                         'PowerPoint ali posnetek predavanja, nato pokažeš zapiske, učne kartice, kviz, poskusni test in druge funkcije, ki jih ima aplikacija. '
                         'Posnemi to enako kot v videu za navdih.'),
         'cue_verb': 'Posnemi',
+        'logo_line': '📎 Logotip Memo AI (prozorno ozadje, visoka kakovost) – slika spodaj; uporabi ga v videu, če želiš.',
         'record_rule': ('obvezno: na vsakem mestu, označenem z 🎥, samo odpri Memo AI na prenosniku in posnemi, kako greš '
                         'skozi aplikacijo in pokažeš, kaj vse zna (PDF, PowerPoint ali posnetek predavanja → zapiski, učne '
                         'kartice, kviz, poskusni test in druge funkcije), kot v videu za navdih.'),
