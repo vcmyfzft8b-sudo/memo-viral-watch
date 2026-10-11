@@ -1331,6 +1331,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--drop-market', default='', help="'<format id>:<market>': the format leaves that market (page moved to its archive, list updated)")
     ap.add_argument('--app-timing', action='store_true', help='read-only: for every live format, the seconds in its original where the app is shown/named')
     ap.add_argument('--add-materials', default='', help='format id: the images in registry/materials/<id>/<market>/ go into that market page\'s materials section')
     ap.add_argument('--realign', default='', help="'<format id>:<market>[:<what to fix>]': rewrite that one page's script against its example (then page check)")
@@ -1660,6 +1661,21 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.drop_market:
+        fid, key = a.drop_market.strip().split(':')
+        cfg, fmts = load_config(), load_formats()
+        mk = next(x for x in M.load(cfg) if x['key'] == key)
+        f = next(x for x in fmts if x['id'] == fid)
+        pid = page_of(f, key)
+        if pid:
+            notion.move_page(pid, mk['archive_page'])  # kept in the archive, never deleted
+            f.setdefault('dropped_pages', {})[key] = pid
+            set_page(f, key, None)
+            (f.get('pages') or {}).pop(key, None)
+        state.save('formats.json', fmts)
+        rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg, force=True)
+        print(f"drop-market: {f['title']} left {key} (page in the archive: {pid})")
         return
     if a.app_timing:
         from . import timing

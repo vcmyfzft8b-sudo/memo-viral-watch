@@ -52,5 +52,10 @@
     ],
     "own_brand": true,
     "brief": "Keep the script 1:1, with one change: the original creator's personal discount code (ŠPELA50) becomes '[TVOJA KODA]' - every creator says their own Memo AI code there."
+  },
+  "7693684473686150406": {
+    "only_markets": [
+      "sh"
+    ]
   }
 }

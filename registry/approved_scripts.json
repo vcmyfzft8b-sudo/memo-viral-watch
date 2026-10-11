@@ -205,6 +205,68 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261009001913": {
+      "example": "https://www.tiktok.com/@kera.vas.uci/video/7693684473686150406",
+      "voiceover": true,
+      "title": "PART 5",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: na ekranu se pojavi natpis PART 5, a ti energično gledaj pravo u kameru i reci da reaguješ na najsmješnije bilješke iz e-dnevnika.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Reagujem na najsmješnije bilješke iz e-dnevnika, part 5. Ovog puta počinjemo agresivno, sa bilješkom koju mi je neko od vas poslao.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "asset",
+          "asset_name": "Bilješka 3",
+          "text": "Kaže: „Učenik je dostavio fotografiju ljekarskog opravdanja, nakon provjere utvrđeno je da je opravdanje generisano pomoću vještačke inteligencije.” A vidiš ti, nije mu ova ni loša, ali nemojte pokušavati.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Ako već hoćete da koristite AI, bolje ga iskoristite na pravi način, kao što je Memo AI aplikacija za učenje: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa časa, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "A mi idemo dalje.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "asset",
+          "asset_name": "Bilješka 1",
+          "text": "Kaže: „Učenik se nakon opomene da ostavi mobitel tijekom sata proderao: Pusti me, stara, igram Clash Royale.” Pusti ga, ženo draga, možda mu je protivnik Mega Knighta stavio. Nećeš sve ti braniti, on će gubiti trofeje.",
+          "new_paragraph": false
+        },
+        {
+          "cue": "asset",
+          "asset_name": "Bilješka 2",
+          "text": "A slušaj ovog brata, kaže: „Učenik je tokom kontrolnog izvadio unaprijed riješen test i pokušao da ga preda kao svoj rad.” Čega se lik dosjetio? Čim ga tri dana nema u javnosti, smišlja neku prevaru.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "asset",
+          "asset_name": "Bilješka 4",
+          "text": "A sljedeća kaže: „Učenik je za vrijeme trajanja časa bacio petardu kroz prozor učionice te svojim ponašanjem ugrozio bezbjednost ostalih učenika.” A meni je fascinantno kako vi uopšte ostanete u ovim školama. Mene bi dosad tri puta izbacili, ja samo pričam na času.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "asset",
+          "asset_name": "Bilješka 5",
+          "text": "I za kraj, kaže: „Učenik je dobio jedinicu i pitao može li bez spojlera roditeljima.” A stvarno nije u redu, barem roditeljski neka sačekaju. Prije si mogao lijepo šutjeti, pa onda na roditeljskom tek saznaju. I onda ti majka dođe kući i kaže: „Je l' se ja svaki put moram crvenjeti na onom roditeljskom?” Ali barem si do roditeljskog živ. Ovako dođeš kući, odmah te s vrata dočeka kaiš.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "A vi mi u komentarima šaljite vaše najsmješnije bilješke.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
