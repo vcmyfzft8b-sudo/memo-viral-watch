@@ -1331,6 +1331,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--app-timing', action='store_true', help='read-only: for every live format, the seconds in its original where the app is shown/named')
     ap.add_argument('--add-materials', default='', help='format id: the images in registry/materials/<id>/<market>/ go into that market page\'s materials section')
     ap.add_argument('--realign', default='', help="'<format id>:<market>[:<what to fix>]': rewrite that one page's script against its example (then page check)")
     ap.add_argument('--reopen', default='', help='format id: an archived format gets fresh quality-check tries (e.g. after its script was approved by hand)')
@@ -1659,6 +1660,11 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.app_timing:
+        from . import timing
+        cfg, fmts = load_config(), load_formats()
+        timing.run(cfg, fmts, page_of, rank.order(state.load('history.json', {}), fmts, cfg)[0])
         return
     if a.add_materials:
         add_materials(a.add_materials.strip())
