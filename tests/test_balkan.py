@@ -250,3 +250,25 @@ def test_a_formats_own_source_video_always_counts_for_it():
     rank.pin_sources(history, [{'id': 'A', 'source_video': 'https://www.tiktok.com/@x/video/7'},
                                {'id': 'C', 'source_video': 'https://www.tiktok.com/@x/video/8'}])
     assert history['7']['format'] == 'A' and history['8']['format'] == 'B'
+
+
+def test_ties_this_week_are_decided_by_the_last_30_days():
+    import time as _t
+    from watcher import rank
+    now = _t.time()
+    cfg = json_cfg()
+    fmts = [{'id': 'A', 'status': 'active'}, {'id': 'B', 'status': 'active'}]
+    hist = {'1': {'format': 'A', 'views': 200000, 'created': now - 2 * 86400, 'handle': 'x'},
+            '2': {'format': 'B', 'views': 200000, 'created': now - 2 * 86400, 'handle': 'x'},
+            '3': {'format': 'B', 'views': 150000, 'created': now - 20 * 86400, 'handle': 'x'},
+            '4': {'format': 'B', 'views': 120000, 'created': now - 25 * 86400, 'handle': 'x'}}
+    assert rank.viral_30d(hist, fmts, cfg, now) == {'A': 1, 'B': 3}
+    with mock.patch.object(rank, 'own_stats', return_value={}):
+        ids, sc = rank.order(hist, fmts, cfg)
+    assert ids == ['B', 'A']
+
+
+def json_cfg():
+    import json, os
+    with open(os.path.join(os.path.dirname(__file__), '..', 'config.json')) as f:
+        return json.load(f)

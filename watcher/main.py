@@ -1141,6 +1141,41 @@ def resolve_url(url):
         return url
 
 
+MATERIALS = os.path.join(ROOT, 'registry', 'materials')
+READY = {'sh': 'slike ispod', 'sl': 'slike spodaj'}
+
+
+def add_materials(fid):
+    """Material images for a format (e.g. screenshots cut from the original video) go into each market page's 🔧
+    materials section, right under its callout; the '📎 … – still to prepare' line then points to them. Runs once
+    per page (fmt['materials'][market]); delete that mark to put them in again."""
+    cfg, fmts = load_config(), load_formats()
+    f = next(x for x in fmts if x['id'] == fid)
+    for key, m in cfg['markets'].items():
+        folder, pid = os.path.join(MATERIALS, fid, key), page_of(f, key)
+        if not pid or not os.path.isdir(folder) or (f.get('materials') or {}).get(key):
+            continue
+        T = M.TEXT[m['lang']]
+        blocks = notion.children(pid)
+        h = next(i for i, b in enumerate(blocks) if b['type'].startswith('heading') and '🔧' in reword._plain(b))
+        callout = next(b for b in blocks[h + 1:] if b['type'] == 'callout')
+        rich = []
+        for x in callout['callout']['rich_text']:
+            t = x.get('plain_text', '')
+            if x.get('type') == 'text' and T['asset_todo'] in t:
+                t = re.sub(r'–\s*' + re.escape(T['asset_todo']) + r'[^\n]*', '– ' + READY.get(m['lang'], 'ispod'), t)
+            rich.append({'type': 'text', 'text': {'content': t, 'link': (x.get('text') or {}).get('link')},
+                         'annotations': x.get('annotations', {})} if x.get('type') == 'text' else
+                        {k: v for k, v in x.items() if k in ('type', 'mention', 'annotations')})
+        notion.api('PATCH', f"/blocks/{callout['id']}", {'callout': {'rich_text': rich}})
+        images = [notion.block('image', type='file_upload', file_upload={'id': notion.upload_file(os.path.join(folder, n), 'image/png')})
+                  for n in sorted(os.listdir(folder)) if n.lower().endswith('.png')]
+        notion.api('PATCH', f'/blocks/{pid}/children', {'children': images, 'after': callout['id']})
+        f.setdefault('materials', {})[key] = True
+        state.save('formats.json', fmts)
+        print(f"materials: {f['title']} {key}: {len(images)} images", flush=True)
+
+
 HAND_FORMATS = os.path.join(ROOT, 'registry', 'hand_formats.json')
 
 
@@ -1296,6 +1331,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--add-materials', default='', help='format id: the images in registry/materials/<id>/<market>/ go into that market page\'s materials section')
     ap.add_argument('--realign', default='', help="'<format id>:<market>[:<what to fix>]': rewrite that one page's script against its example (then page check)")
     ap.add_argument('--reopen', default='', help='format id: an archived format gets fresh quality-check tries (e.g. after its script was approved by hand)')
     ap.add_argument('--renote', action='store_true', help='every page (live, waiting, archived): the note under the inspiration video gets the current text')
@@ -1623,6 +1659,9 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.add_materials:
+        add_materials(a.add_materials.strip())
         return
     if a.realign:
         fid, key, *why = a.realign.split(':', 2)

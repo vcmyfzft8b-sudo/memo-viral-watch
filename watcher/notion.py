@@ -84,6 +84,16 @@ def divider():
 
 # ---------- file upload ----------
 
+def upload_file(path, content_type):
+    up = api('POST', '/file_uploads', {'mode': 'single_part', 'filename': os.path.basename(path), 'content_type': content_type})
+    with open(path, 'rb') as f:
+        r = requests.post(f"{API}/file_uploads/{up['id']}/send", headers=_headers(json_body=False),
+                          files={'file': (os.path.basename(path), f, content_type)}, timeout=300)
+    if not r.ok:
+        raise RuntimeError(f'Notion upload: HTTP {r.status_code} {r.text[:300]}')
+    return up['id']
+
+
 def upload_video(path):
     up = api('POST', '/file_uploads', {'mode': 'single_part', 'filename': os.path.basename(path), 'content_type': 'video/mp4'})
     with open(path, 'rb') as f:

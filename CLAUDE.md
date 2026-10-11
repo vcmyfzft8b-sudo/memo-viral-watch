@@ -68,6 +68,14 @@ on memoai.eu that creators film, e.g. memoai.eu/ugc/oral-quiz), `brief` (note fr
 writer and every check), `own_brand` (example is already a Memo AI video → the note under it doesn't say "another
 brand"). Several formats in one run: separate them with `;` in the add_format input.
 
+## Ranking (user's rule, 11 Oct 2026)
+Hot formats (5+ viral in 7 days) first; then most viral videos (100k+) in the last 7 days; on a tie, most viral
+videos in the last 30 days; then current form (`rank.order`). A format's own source video always counts for it.
+
+## Materials
+Images for a format's 🔧 materials section (e.g. screenshots cut from the original video): put them in
+`registry/materials/<format id>/<market>/*.png` and run `mode=add-materials target=<format id>` (once per page).
+
 ## Note under the inspiration video (user's wording, 10 Oct 2026)
 The ⚠️ callout says: the inspiration video is from another brand and is NOT the video to make – copy only the overall
 vibe, camera angles, how it's filmed, editing and where the demos are (that's what inspiration videos are for); the

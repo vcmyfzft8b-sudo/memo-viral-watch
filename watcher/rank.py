@@ -2,7 +2,7 @@
 
 1. What is going viral RIGHT NOW: most confirmed viral videos (thresholds.viral_views+) posted in the last 7 days first.
    (Hot formats - 5+ Astra AI videos - always stay on top; our own creators' viral videos count here too.)
-2. Tie-breaker / formats without viral videos this week: current form (see form() - recent weeks count most).
+2. Tie-breaker: more viral videos in the last 30 days first; then current form (see form() - recent weeks count most).
    The older long-term score below is still computed for the weekly report: long-term score = smoothed share of viral
    videos + weight_20k * smoothed share of good videos (thresholds.good_views+). Smoothing pulls small samples towards the network average,
    and new formats (< 5 videos) are capped below the three strongest proven formats.
@@ -110,6 +110,17 @@ def pin_sources(history, formats):
             v['format'], v['judged'] = f['id'], True
 
 
+def viral_30d(history, formats, cfg, now=None):
+    """Viral videos (thresholds.viral_views+) of each format posted in the last 30 days - the tie-breaker when two
+    formats have the same number of viral videos this week (user's rule, 11 Oct 2026)."""
+    now = now or time.time()
+    out = {}
+    for v in history.values():
+        if v.get('format') and v.get('views', 0) >= cfg['thresholds']['viral_views'] and now - v.get('created', 0) <= 30 * 86400:
+            out[v['format']] = out.get(v['format'], 0) + 1
+    return out
+
+
 def order(history, formats, cfg, m=PRIMARY, local=()):
     from . import hot
     pin_sources(history, formats)
@@ -117,9 +128,12 @@ def order(history, formats, cfg, m=PRIMARY, local=()):
     s = scores(history, formats, cfg, m, local, o)
     fo = form(history, formats, cfg, o)
     recent = recent_viral(history, formats, cfg, m)
+    month = viral_30d(history, formats, cfg)
     for fid in s:
+        s[fid]['viral_30d'] = month.get(fid, 0)
         s[fid]['recent_viral'] = recent.get(fid, 0)
         s[fid]['recent_own'] = o.get(fid, {}).get('recent_viral', 0)
         s[fid]['form'] = fo[fid]['form']
     return sorted(s, key=lambda fid: (-(s[fid]['recent_viral'] >= hot.MIN_VIRAL),
-                                      -(s[fid]['recent_viral'] + s[fid]['recent_own']), -s[fid]['form'])), s
+                                      -(s[fid]['recent_viral'] + s[fid]['recent_own']), -s[fid]['viral_30d'],
+                                      -s[fid]['form'])), s
