@@ -399,6 +399,56 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261008231529": {
+      "example": "https://www.tiktok.com/@studywithvalentina/video/7692577375296507154",
+      "voiceover": true,
+      "title": "PRESTANI UČITI S CHATGPT-OM 🚫",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: gledaj pravo u kameru izbliza, širom otvori oči, podigni ruku i reci »Nemojte koristiti ChatGPT …«, bez teksta na ekranu.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Nemojte koristiti ChatGPT. Znam da ga vjerovatno svi koristite, i ja sam ga koristila, ali morate čuti ovo.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ljudi koriste ChatGPT jer ima „sve“ informacije, ali niko se ne pita koliko su te informacije zapravo tačne.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Za učenje ima mnogo bolje rješenje, to je Memo AI: u tu aplikaciju ubacite PDF-ove ili PowerPoint prezentacije sa predavanja, a možete i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobijete bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučite na jako jednostavan način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Sljedeći razlog: ChatGPT vam zapravo neće pomoći u učenju. Mnogi od nas ga koriste tako da uslikamo gradivo i da nam kaže šta da zaokružimo na testu, ali to je velika greška.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Treći razlog je preveliko oslanjanje na vještačku inteligenciju. Istraživanja pokazuju da ljudi danas slabije uče i sporije razvijaju kritičko mišljenje, logiku i kreativnost, baš zato što se previše oslanjaju na ChatGPT.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "I ono najbitnije – privatnost: niko zapravo ne zna gdje ChatGPT čuva vaše podatke i s kim ih dijeli.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "To bi bilo to za ovaj video. Pišite mi u komentarima kako vam se sviđa Memo AI i je li vas spasila kao i mene.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -722,6 +772,56 @@
           "cue": null,
           "asset_name": "",
           "text": "Besedilo na zaslonu: hvaležna, ker sem ta izpit res opravila 🍀",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261008231529": {
+      "example": "https://www.tiktok.com/@studywithvalentina/video/7692577375296507154",
+      "voiceover": true,
+      "title": "NEHAJ SE UČITI S CHATGPT-JEM 🚫",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: čisto od blizu glej naravnost v kamero, na široko odpri oči, dvigni roko in reci »Ne uporabljajte ChatGPT-ja …«, brez napisov na zaslonu.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ne uporabljajte ChatGPT-ja. Vem, da ga verjetno vsi uporabljate, tudi jaz sem ga, ampak to morate slišati.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ljudje uporabljajo ChatGPT, ker ima »vse« informacije, nihče pa se ne vpraša, koliko so te informacije sploh točne.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Za učenje obstaja veliko boljša rešitev, to je Memo AI: vanjo naložite PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnamete in zvočni posnetek naložite v Memo AI. Ven dobite zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučite na zelo preprost način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Drugi razlog: ChatGPT vam pri učenju v resnici ne pomaga. Veliko nas ga uporablja tako, da slikamo snov in nam pove, kaj naj obkrožimo na testu, ampak to je velika napaka.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tretji razlog je preveliko zanašanje na AI. Raziskave kažejo, da se ljudje danes slabše učijo ter počasneje razvijajo kritično mišljenje, logiko in ustvarjalnost, ravno zato, ker se preveč zanašajo na ChatGPT.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "In najpomembnejše – zasebnost: nihče v resnici ne ve, kje ChatGPT hrani vaše podatke in s kom jih deli.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "To je to za ta video. V komentarje mi napišite, kako vam je všeč Memo AI in ali vas je rešil tako kot mene.",
           "new_paragraph": true
         }
       ]
