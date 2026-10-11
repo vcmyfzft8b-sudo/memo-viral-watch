@@ -466,8 +466,9 @@ def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, labe
                 pos = list_position(mkts[0], page_of(known, mkts[0]['key']))
                 outcome = (f"✅ *Already in Notion* – in the lists{f' as #{pos}' if pos else ''}: *{known['title']}* "
                            f"({market_links(known, mkts)})" + (f"\n➕ added missing pages: {' '.join(added)}" if added else ''))
-            elif blocked:
-                outcome = f"📦 *Already in Notion* – in the archive: *{known['title']}* – not brought back ({blocked})"
+            elif blocked or known.get('removed_by_user'):
+                outcome = (f"📦 *Already in Notion* – in the archive: *{known['title']}* – not brought back "
+                           f"({blocked or 'removed by you'})")
             else:
                 ok, pos, reasons = revive_format(known, v, mkts, fmts, history, cfg, prepared=prepared)
                 outcome = (f"♻️ *Was in the archive → checked & brought back as #{pos}* in all lists: *{known['title']}* "
@@ -1336,6 +1337,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--remove-format', default='', help='format id: the user removed it - every page goes to its market archive (never deleted), never brought back automatically')
     ap.add_argument('--drop-market', default='', help="'<format id>:<market>': the format leaves that market (page moved to its archive, list updated)")
     ap.add_argument('--app-timing', action='store_true', help='read-only: for every live format, the seconds in its original where the app is shown/named')
     ap.add_argument('--add-materials', default='', help='format id: the images in registry/materials/<id>/<market>/ go into that market page\'s materials section')
@@ -1666,6 +1668,20 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.remove_format:
+        cfg, fmts = load_config(), load_formats()
+        f = next(x for x in fmts if x['id'] == a.remove_format.strip())
+        for mk in M.load(cfg):
+            pid = page_of(f, mk['key'])
+            if pid:
+                notion.move_page(pid, mk['archive_page'])  # kept in the archive, never deleted
+        f.update({'status': 'archived', 'removed_by_user': True,
+                  'archived_reason': 'removed by the user ' + time.strftime('%d.%m.%Y')})
+        f.pop('pending', None)
+        state.save('formats.json', fmts)
+        rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg, force=True)
+        print(f"remove-format: {f['title']} archived in every market")
         return
     if a.drop_market:
         fid, key = a.drop_market.strip().split(':')
