@@ -133,6 +133,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "materials": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f365e84-a3c2-819d-9066-dc90353d437e",
   "pages": {
    "sl": "3f365e84-a3c2-816c-89f2-f02737fabba1"
