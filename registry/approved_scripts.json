@@ -487,6 +487,74 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261008224450": {
+      "example": "https://www.tiktok.com/@studywithvalentina/video/7688930483304090898",
+      "voiceover": true,
+      "title": "KAD ZNAKOVI DOBIJU 1 U ŠKOLI… 📚",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: stani ispred zelenog ekrana s učionicom u pozadini i prvu rečenicu opušteno izgovori pravo u kameru.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ovako se horoskopski znakovi ponašaju kad dobiju jedinicu u školi.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tekst na ekranu: ♍ DJEVICA ♍",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Molim? Dali ste mi jedinicu, profesorice? Ne, niste mi dali jedinicu, jer to nije u mojoj kalkulaciji. Istražila sam sve rupe u vašem školskom sistemu.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Koristim Memo AI, da. Ne znate koja je to aplikacija? Pa svi u ovoj učionici znaju: u nju ubacim PDF-ove ili PowerPoint prezentacije sa predavanja, a mogu i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobijem bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučim na jako jednostavan način. Tako da, vjerujte mi, niste mi dali jedinicu. Provjerite još jednom. Hvala.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tekst na ekranu: ♏ ŠKORPIJA ♏",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Dobila sam jedinicu?! Hahaha. Drži mi ovo. Profesorice, ja se na vašem mjestu sa mnom ne bih igrala. Znam kako vam se zove muž, znam kako mu se zove pas, a znam i gdje živi vaš brat, onaj što je bio u zatvoru. Tako da bolje tu jedinicu promijenite u peticu. Eto, dogovorile smo se.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tekst na ekranu: ♌ LAV ♌",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Je… jedinicu ste mi dali? Joj, šta ću reći mami i tati? Ja sam zvijezda porodice, svi kažu da uvijek imam sve petice. Ne mogu da podnesem ovaj pritisak – moram zvati tatu, izvinite.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tekst na ekranu: ♎ VAGA ♎",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Molim, profesorice? Dali ste mi jedinicu? Aha. Joj, da li da koristim ono Garnierovo ulje za kosu ili neko skuplje francusko? Stvarno ne mogu da se odlučim.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -898,6 +966,74 @@
           "cue": null,
           "asset_name": "",
           "text": "Na primer učne kartice: tukaj je vprašanje, kartico obrnete in imate odgovor. Imate pa tudi poskusni test z oceno in glasovnega tutorja, ki vam snov razloži na glas.",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261008224450": {
+      "example": "https://www.tiktok.com/@studywithvalentina/video/7688930483304090898",
+      "voiceover": true,
+      "title": "TAKO SE ZNAMENJA OBNAŠAJO, KO DOBIJO 1 V ŠOLI 📚",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: stoj pred zelenim zaslonom z učilnico v ozadju in prvi stavek sproščeno povej naravnost v kamero.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tako se horoskopska znamenja obnašajo, ko dobijo enko v šoli.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: ♍ DEVICA ♍",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Prosim? Dali ste mi enko, profesorica? Ne, niste mi dali enke, ker tega ni v mojem izračunu. Raziskala sem vse luknje v vašem šolskem sistemu.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Uporabljam Memo AI, ja. Ne veste, katera aplikacija je to? Saj vsi v razredu vedo: vanjo naložim PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnamem in zvočni posnetek naložim v Memo AI. Ven dobim zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučim na zelo preprost način. Tako da, verjemite mi, niste mi dali enke. Še enkrat preverite. Hvala.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: ♏ ŠKORPIJON ♏",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Dobila sem enko?! Hahaha. Drži mi tole. Profesorica, jaz se na vašem mestu z mano ne bi igrala. Vem, kako je ime vašemu možu, vem, kako je ime njegovemu psu, in vem tudi, kje živi vaš brat, tisti, ki je bil v zaporu. Tako da to enko raje spremenite v petico. No, vidite, zmenili sva se.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: ♌ LEV ♌",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "En… enko ste mi dali? Joj, kaj bom rekla mami in očetu? Jaz sem zvezda družine, vsi pravijo, da imam vedno same petice. Tega pritiska ne prenesem – moram poklicati očeta, oprostite.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: ♎ TEHTNICA ♎",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Prosim, profesorica? Dali ste mi enko? Aha. Joj, naj uporabim tisto Garnierjevo olje za lase ali kakšno dražje francosko? Res se ne morem odločiti.",
           "new_paragraph": true
         }
       ]
