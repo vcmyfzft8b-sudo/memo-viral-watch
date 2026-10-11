@@ -297,10 +297,21 @@
    "sl": true
   },
   "id": "A20261009014121",
+  "inspo": {
+   "sl": {
+    "audit": true,
+    "strict": true,
+    "url": "https://www.tiktok.com/@school.hacks.byklara/video/7690627181776620822",
+    "views": 55100
+   }
+  },
   "listed_at": 1791555293,
   "localized": {
    "sh": "v2-teen",
    "sl": "v2-teen"
+  },
+  "own_brand": {
+   "sl": true
   },
   "page_id": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe",
   "pages": {
