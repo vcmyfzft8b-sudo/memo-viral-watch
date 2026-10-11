@@ -221,3 +221,24 @@ def test_scripts_have_no_stage_directions_only_link_and_material_cues():
         assert reword.strip_directions('p') == 1
     text = ''.join(x['text']['content'] for x in sent[0]['paragraph']['rich_text'])
     assert text == 'Živjo. (Memo AI · memoai.eu/creator) Tole je app. (📎 Posnetek – glej gradivo) Glej.'
+
+
+def test_link_check_opens_every_kind_of_link():
+    from watcher import linkcheck
+    def rt(t, url=None):
+        return {'type': 'text', 'plain_text': t, 'text': {'content': t, 'link': {'url': url} if url else None}}
+    blocks = [{'id': '1', 'type': 'paragraph', 'paragraph': {'rich_text': [
+                  rt('app', 'https://memoai.eu/creator'), rt('orig', 'https://www.tiktok.com/@a/video/1'),
+                  rt('gone', 'https://www.tiktok.com/@a/video/2'), rt('lab', 'https://app.notion.com/p/Lab-' + 'a' * 32)]}},
+              {'id': '2', 'type': 'video', 'video': {'type': 'file_upload', 'file_upload': {'id': 'x'}}},
+              {'id': '3', 'type': 'paragraph', 'paragraph': {'rich_text': [
+                  {'type': 'mention', 'plain_text': 'x', 'mention': {'type': 'page', 'page': {'id': 'b' * 32}}}]}}]
+    resp = mock.Mock(status_code=200)
+    pages = {'a' * 32: {}, 'b' * 32: {'in_trash': True}}
+    with mock.patch.object(linkcheck.notion, 'children', lambda pid: blocks if pid == 'P' else []), \
+            mock.patch.object(linkcheck.notion, 'api', lambda m, path: pages[path.split('/')[-1].replace('-', '')]), \
+            mock.patch.object(linkcheck.requests, 'get', return_value=resp) as get, \
+            mock.patch.object(linkcheck.tiktok, 'video_detail', lambda h, i: {'id': i} if i == '1' else None):
+        problems = linkcheck.Checker().page('P', 'page')
+    assert get.call_args[0][0] == 'https://memoai.eu/creator'
+    assert len(problems) == 2 and 'video/2' in problems[0] and 'trash' in problems[1]

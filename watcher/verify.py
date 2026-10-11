@@ -119,6 +119,11 @@ def run(cfg, fmts, page_of):
     leftovers = [b for b in notion.children(radar) if b['type'] == 'child_page' and b['id'].replace('-', '') not in known]
     for b in leftovers:  # e.g. a build that stopped halfway: private, invisible to creators - reported, never deleted
         problems.append(f"leftover page in the private staging area (no format uses it): {b['child_page']['title'][:60]} {b['id']}")
+    from . import linkcheck  # every link creators can click is opened
+    broken, opened = linkcheck.run(cfg, fmts, page_of, pages)
+    problems += broken
+    if not broken:
+        ok.append(f'links: {opened} different links opened – all work')
     print('\n'.join(['VERIFY OK:'] + ['  ' + x for x in ok] + ['VERIFY PROBLEMS:'] + ['  ' + x for x in problems or ['none']]))
     return problems
 
