@@ -59,9 +59,9 @@ def list_blocks(T, lab, holder, viral):
             notion.block('paragraph', []),
             notion.block('callout', rule, icon={'type': 'emoji', 'emoji': '🚨'}, color='red_background'),
             notion.block('paragraph', []),
-            notion.block('toggle', [notion.rt('📁 ' + T['holder'])],
-                         children=[{'object': 'block', 'type': 'link_to_page',
-                                    'link_to_page': {'type': 'page_id', 'page_id': holder}}])]
+            # the format pages are sub-pages of the list itself (user, 12 Oct 2026: "back" must lead to the list),
+            # Notion shows them right under this heading
+            notion.block('heading_3', [notion.rt('📁 ' + T['holder'])])]
 
 
 def relayout_list(cfg):

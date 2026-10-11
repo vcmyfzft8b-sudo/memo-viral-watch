@@ -77,8 +77,8 @@ def run(cfg, fmts, page_of):
         # the list
         blocks = notion.children(mp['list_page'])
         icons = [((b.get('callout') or {}).get('icon') or {}).get('emoji') for b in blocks]
-        if '🔥' not in icons or '🚨' not in icons or not any(b['type'] == 'toggle' for b in blocks):
-            problems.append(f'{flag} list layout incomplete (🔥 / 🚨 / 📁 toggle)')
+        if '🔥' not in icons or '🚨' not in icons or not any(b['type'] in ('toggle', 'heading_3') and '📁' in _plain(b) for b in blocks):
+            problems.append(f'{flag} list layout incomplete (🔥 / 🚨 / 📁)')
         entries, _ = notion.list_entries(mp['list_page'])
         listed = [p.replace('-', '') for _, p in entries]
         want = [page_of(by_id[i], key).replace('-', '') for i in ids if page_of(by_id[i], key)]

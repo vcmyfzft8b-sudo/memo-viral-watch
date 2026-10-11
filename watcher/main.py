@@ -1145,7 +1145,7 @@ def resolve_url(url):
 
 
 MATERIALS = os.path.join(ROOT, 'registry', 'materials')
-LOGO = os.path.join(MATERIALS, '_logo', 'memo_ai_logo_hq.png')  # official Memo AI logo, transparent, high quality
+LOGO = os.path.join(MATERIALS, '_logo', 'memo_ai_lockup_hq.png')  # Memo AI logo (brain + 'Memo AI'), transparent, HQ
 
 
 def logo_all():
@@ -1157,7 +1157,7 @@ def logo_all():
     for f in [f for f in fmts if f.get('status') in ('active', 'pending')]:
         for key, m in cfg['markets'].items():
             pid = page_of(f, key)
-            if not pid or (f.get('logo_hq') or {}).get(key):
+            if not pid or (f.get('logo_lockup') or {}).get(key):
                 continue
             T = M.TEXT[m['lang']]
             blocks = notion.children(pid)
@@ -1172,7 +1172,7 @@ def logo_all():
             callout = next((b for b in section if b['type'] == 'callout'), None)
             for b in section:  # an older logo with a white background goes
                 url = ((b.get('image') or {}).get('file') or {}).get('url', '')
-                if b['type'] == 'image' and 'memo_ai_logo.png' in url:
+                if b['type'] == 'image' and ('memo_ai_logo.png' in url or 'memo_ai_logo_hq.png' in url):
                     notion.api('DELETE', f"/blocks/{b['id']}")
             if callout and T['logo_line'] not in reword._plain(callout) and not re.search(r'logo', reword._plain(callout), re.I):
                 rich = [{'type': 'text', 'text': {'content': x['plain_text'], 'link': (x.get('text') or {}).get('link')},
@@ -1180,10 +1180,10 @@ def logo_all():
                         {k: v for k, v in x.items() if k in ('type', 'mention', 'annotations')} for x in callout['callout']['rich_text']]
                 rich.append({'type': 'text', 'text': {'content': '\n' + T['logo_line']}})
                 notion.api('PATCH', f"/blocks/{callout['id']}", {'callout': {'rich_text': rich}})
-            after = [b for b in section if b['type'] != 'image' or 'memo_ai_logo.png' not in ((b.get('image') or {}).get('file') or {}).get('url', '')]
+            after = [b for b in section if b['type'] != 'image' or not re.search(r'memo_ai_logo(_hq)?\.png', ((b.get('image') or {}).get('file') or {}).get('url', ''))]
             img = notion.block('image', type='file_upload', file_upload={'id': notion.upload_file(LOGO, 'image/png')})
             notion.api('PATCH', f'/blocks/{pid}/children', {'children': [img], 'after': after[-1]['id']})
-            f.setdefault('logo_hq', {})[key] = True
+            f.setdefault('logo_lockup', {})[key] = True
             state.save('formats.json', fmts)
             n += 1
             print(f"logo: {f['title']} {key}", flush=True)
@@ -1383,6 +1383,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--rehome', action='store_true', help='format pages become sub-pages of the list page (back leads to the list)')
     ap.add_argument('--logo-all', action='store_true', help='every page: the official Memo AI logo (transparent, HQ) in the materials')
     ap.add_argument('--transcribe', default='', help='read-only: TikTok link -> timed transcript (Soniox)')
     ap.add_argument('--restore-format', default='', help='format id: undo remove-format - pages back into the format folders and lists')
@@ -1717,6 +1718,32 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.rehome:
+        cfg, fmts = load_config(), load_formats()
+        pages = state.load('notion.json', {})
+        ids = rank.order(state.load('history.json', {}), fmts, cfg)[0]
+        by = {f['id']: f for f in fmts}
+        for key, m in cfg['markets'].items():
+            mp, T = pages['markets'][key], M.TEXT[m['lang']]
+            lst, old = mp['list_page'], mp['holder_page']
+            if old.replace('-', '') == lst.replace('-', ''):
+                continue
+            for b in notion.children(lst):  # the 📁 toggle (a link to the old folder) becomes a plain heading
+                if b['type'] == 'toggle' and '📁' in reword._plain(b):
+                    notion.api('PATCH', f"/blocks/{lst}/children", {'children': [notion.block('heading_3', [notion.rt('📁 ' + T['holder'])])], 'after': b['id']})
+                    notion.api('DELETE', f"/blocks/{b['id']}")
+            moved = 0
+            for fid in ids + [f['id'] for f in fmts if f['id'] not in ids]:  # ranking order first
+                f = by[fid]
+                pid = page_of(f, key)
+                if f.get('status') == 'active' and pid:
+                    notion.move_page(pid, lst)
+                    moved += 1
+            mp['old_holder_page'], mp['holder_page'] = old, lst
+            cfg['markets'][key]['holder_page'] = lst
+            state.save('notion.json', pages)
+            print(f'rehome {key}: {moved} pages are now sub-pages of the list')
         return
     if a.logo_all:
         logo_all()
