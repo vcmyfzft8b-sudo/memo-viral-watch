@@ -1286,6 +1286,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--realign', default='', help="'<format id>:<market>[:<what to fix>]': rewrite that one page's script against its example (then page check)")
     ap.add_argument('--reopen', default='', help='format id: an archived format gets fresh quality-check tries (e.g. after its script was approved by hand)')
     ap.add_argument('--renote', action='store_true', help='every page (live, waiting, archived): the note under the inspiration video gets the current text')
     ap.add_argument('--fix-cues', action='store_true', help="every page: the app shown as a '📎 material' cue becomes the app link cue")
@@ -1612,6 +1613,20 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.realign:
+        fid, key, *why = a.realign.split(':', 2)
+        cfg, fmts = load_config(), load_formats()
+        meta, accounts, history = state.load('meta.json', {}), state.load('accounts.json', {}), state.load('history.json', {})
+        f = next(x for x in fmts if x['id'] == fid)
+        mk = next(x for x in M.load(cfg) if x['key'] == key)
+        st, res = align.align_page(f, page_of(f, key), mk['lang'], cfg, cfg['links'], feedback=(why or [''])[0])
+        print('realign:', f['title'], key, st, res if isinstance(res, str) else '')
+        status, notes = audit.fix_page(f, mk, cfg, history, accounts, meta, page_of, rebuild=rebuild_page)
+        meta.setdefault('audit', {})[f"{fid}:{key}"] = status
+        state.save('formats.json', fmts)
+        state.save('meta.json', meta)
+        print('page check:', status, '; '.join(notes)[:300])
         return
     if a.reopen:
         fmts = load_formats()
