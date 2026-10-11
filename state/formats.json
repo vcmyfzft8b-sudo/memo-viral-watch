@@ -223,6 +223,9 @@
  {
   "created": 1791505153,
   "description": "Talking-head reaction series where the creator reads and jokes about funny e-diary teacher remarks shown as screenshot overlays, with a mid-video segue ('if you want to use AI, use it properly') into a quick app demo before returning to more remarks.",
+  "dropped_pages": {
+   "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -255,10 +258,11 @@
    "sh": true,
    "sl": true
   },
+  "only_markets": [
+   "sh"
+  ],
   "page_id": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
-  "pages": {
-   "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
-  },
+  "pages": {},
   "revived": {
    "at": 1791509180,
    "because": "https://www.tiktok.com/@kera.vas.uci/video/7691827966711581953",
