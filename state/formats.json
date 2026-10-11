@@ -34,6 +34,9 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "logo_hq": {
+   "sh": true
+  },
   "only_markets": [
    "sh"
   ],
@@ -70,6 +73,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f365e84-a3c2-81ed-a906-d5caef049749",
   "pages": {
    "sl": "3f365e84-a3c2-81b2-8c98-d419a8b912b6"
@@ -101,6 +108,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f365e84-a3c2-8158-a10f-d25c82347e03",
   "pages": {
    "sl": "3f365e84-a3c2-812c-8690-c4d957b2a619"
@@ -131,6 +142,10 @@
   "localized": {
    "sh": "v2-teen",
    "sl": "v2-teen"
+  },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
   },
   "materials": {
    "sh": true,
@@ -180,6 +195,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f365e84-a3c2-81b5-88b5-e2225ef1bc0b",
   "pages": {
    "sl": "3f365e84-a3c2-810e-8152-eeed9afe21db"
@@ -214,6 +233,10 @@
   "localized": {
    "sh": "v2-teen",
    "sl": "v2-teen"
+  },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
   },
   "page_id": "3f365e84-a3c2-8120-b838-fd3c99181a38",
   "pages": {
@@ -262,6 +285,9 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "logo_hq": {
+   "sh": true
+  },
   "materials": {
    "sh": true,
    "sl": true
@@ -309,6 +335,10 @@
   "localized": {
    "sh": "v2-teen",
    "sl": "v2-teen"
+  },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
   },
   "own_brand": {
    "sl": true
@@ -374,6 +404,10 @@
   "localized": {
    "sh": "v2-teen",
    "sl": "v2-teen"
+  },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
   },
   "materials": {
    "sh": true,
@@ -441,6 +475,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f565e84-a3c2-81e8-afd8-d8f29ac8cb48",
   "pages": {
    "sl": "3f565e84-a3c2-817e-9399-d8a7083c900f"
@@ -470,6 +508,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f565e84-a3c2-81dd-93d3-c4a95caeb49d",
   "pages": {
    "sl": "3f565e84-a3c2-81f3-a771-d05601b576fa"
@@ -495,6 +537,10 @@
   "localized": {
    "sh": "v2-teen",
    "sl": "v2-teen"
+  },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
   },
   "page_id": "3f565e84-a3c2-81d3-8e98-c731ff969e40",
   "pages": {
@@ -526,6 +572,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f565e84-a3c2-810a-8dc3-f502cc653ae8",
   "pages": {
    "sl": "3f565e84-a3c2-812f-88c5-c7a29c250a40"
@@ -545,6 +595,10 @@
   "description": "Creator films their own embarrassed, laughing reaction to an AI oral-quiz page playing an awkward double-entendre medical mnemonic dialogue, then turns the camera to the laptop screen showing the quiz.",
   "id": "A20261010214237",
   "listed_at": 1791673307,
+  "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f565e84-a3c2-81a7-a074-c1dff1489259",
   "pages": {
    "sl": "3f565e84-a3c2-8158-aa07-fd81fb00a741"
@@ -567,6 +621,9 @@
   "description": "Casual 'get ready with me' style talking-head video where the creator gives a numbered list of school study tips while doing makeup, with the study app shown briefly as the favourite tool in tip one.",
   "id": "A20261010215329",
   "listed_at": 1791669325,
+  "logo_hq": {
+   "sl": true
+  },
   "only_markets": [
    "sl"
   ],
@@ -584,6 +641,9 @@
   "description": "Talking-head before/after where the creator shows her messy handwritten university notes, says a friend showed her an app, then holds up a tablet with the AI-generated notes and ends with 'save this video'.",
   "id": "A20261010215543",
   "listed_at": 1791669437,
+  "logo_hq": {
+   "sl": true
+  },
   "only_markets": [
    "sl"
   ],
@@ -601,6 +661,9 @@
   "description": "Get-ready-with-me talking-head list of 'high school phases you need to skip' while doing makeup, with the study app slipped in as the advice for one phase and shown only as a logo sticker.",
   "id": "A20261010215744",
   "listed_at": 1791669667,
+  "logo_hq": {
+   "sl": true
+  },
   "only_markets": [
    "sl"
   ],
@@ -621,6 +684,9 @@
   "description": "Fortune-teller style talking video by candlelight where the creator 'reads the future' from handwritten paper cards held over a candle (grade 5, study method, app name), ending with a discount code.",
   "id": "A20261010220207",
   "listed_at": 1791670520,
+  "logo_hq": {
+   "sl": true
+  },
   "only_markets": [
    "sl"
   ],
