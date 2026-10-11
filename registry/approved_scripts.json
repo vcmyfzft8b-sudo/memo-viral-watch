@@ -668,6 +668,56 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261009014121": {
+      "example": "https://www.tiktok.com/@studywithvalentina/video/7691071802373623058",
+      "voiceover": true,
+      "title": "Stvari koje profesori kriju od Vas 😱‼️",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: od prve sekunde pričaj pravo u kameru i dok pričaš igraj se nečim u rukama, a na ekranu se riječi ispisuju dok govoriš.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ovo profesori ne žele da znate, tako da ću ovaj video vjerovatno obrisati za dva sata, prije nego što dođe do neke profesorice.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Drugarica od moje mame je profesorica u jednoj srednjoj školi i rekla mi je da ona sve testove pravi uz AI.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Rekla je i da većina profesorica pravi testove uz AI, jer im treba mnogo manje vremena, obviously.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tako da ću ti sad pokazati gdje one prave te testove.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "One koriste ovu aplikaciju, Memo AI, i ti ovdje samo ubaciš svoje bilješke – a ako ih nemaš, napravi ti ih i ova aplikacija.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Kad imaš bilješke, ovdje gore imaš opciju „Test“, i one ovdje dobiju sva pitanja.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tako da da, ovaj video brišem za dva sata, prije nego što dođe do neke profesorice.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -1260,6 +1310,56 @@
           "cue": null,
           "asset_name": "",
           "text": "Ostala dva posnamem v part 2.",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261009014121": {
+      "example": "https://www.tiktok.com/@school.hacks.byklara/video/7690627181776620822",
+      "voiceover": true,
+      "title": "Stvari, ki vam jih profesorji skrivajo 😱‼️",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: že od prve sekunde govori naravnost v kamero in se med govorjenjem igraj z nečim v rokah, kot to dela ustvarjalka v videu, na zaslonu pa se sproti izpisujejo besede.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "To profesorji nočejo, da izveste, tako da bom ta video po moje čez dve uri zbrisala, preden pride do kakšne profesorice.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Prijateljica od moje mame je profesorica na eni srednji šoli in mi je rekla, da ona vse teste naredi z AI-jem.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Rekla je tudi, da večina profesoric dela teste z AI-jem, ker jim pač vzame veliko manj časa, obviously.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tako da ti zdaj pokažem, kje one delajo te teste.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "One uporabljajo tole aplikacijo, Memo AI, in ti tukaj daš noter samo svoje zapiske – če jih nimaš, ti jih naredi tudi ta aplikacija.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ko imaš noter zapiske, imaš tukajle zgoraj možnost »Test«, in one tukaj dobijo vsa vprašanja.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tako da ja, ta video brišem čez dve uri, preden pride do kakšne profesorice.",
           "new_paragraph": true
         }
       ]

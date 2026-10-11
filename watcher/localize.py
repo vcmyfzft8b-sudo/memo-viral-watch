@@ -19,7 +19,7 @@ import time
 
 from . import discover, llm, media, notion, soniox, tiktok
 from .brand import SOURCE, TOPIC
-from .markets import TEXT, lang_matches, of
+from .markets import TEXT, lang_matches, of, own
 
 LANG_NAME = {k: t['lang_name'] for k, t in TEXT.items()}
 MIN_VIEWS = 10_000  # an inspiration video must be proven, not just in the right language
@@ -220,7 +220,7 @@ def set_note(page_id, lang, same_lang, own=False, link=None, override=None):
 def finish(f, m, pid, lang, url, cfg):
     """After a same-language example is on the page: note says so, script mirrors that example sentence by sentence."""
     from . import align
-    set_note(pid, lang, True, own=f.get('own_brand'), link=f.get('app_link'), override=(f.get('record_note') or {}).get(lang))
+    set_note(pid, lang, True, own=own(f, lang), link=f.get('app_link'), override=(f.get('record_note') or {}).get(lang))
     status, why = align.align_page(f, pid, lang, cfg, cfg['links'])
     if status == 'ok':
         f.setdefault('reworded', {})[m] = True

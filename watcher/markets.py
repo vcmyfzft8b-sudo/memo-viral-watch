@@ -222,6 +222,13 @@ def avoid_found(lang, text):
     return sorted({w for w in re.findall(r'\w+', (text or '').lower()) if w in bad})
 
 
+def own(fmt, lang):
+    """Is the example on this language's page already a Memo AI video? fmt['own_brand'] is True (every page) or a
+    {lang: True} map (e.g. only the Slovenian page shows one of our own creators' videos)."""
+    o = (fmt or {}).get('own_brand')
+    return bool(o.get(lang)) if isinstance(o, dict) else bool(o)
+
+
 def of(mkts, fmt):
     """The markets a format is made for: all, or only those in fmt['only_markets'] (e.g. a Slovenian-only format added
     by hand). Every per-format loop over the markets goes through this."""

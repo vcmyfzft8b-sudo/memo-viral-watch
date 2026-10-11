@@ -535,7 +535,7 @@ def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, 
         if replace_page and problems:
             return None, spec, problems
         upload_id = notion.upload_video(media.for_notion(video_file, work))
-        blocks = notion.page_blocks(spec, {**v, 'own': v.get('own') or (fmt or {}).get('own_brand')}, upload_id, links_for(cfg['links'], fmt), lang=mk['lang'], lab_url=mk['visual_hook_lab'],
+        blocks = notion.page_blocks(spec, {**v, 'own': v.get('own') or M.own(fmt, mk['lang'])}, upload_id, links_for(cfg['links'], fmt), lang=mk['lang'], lab_url=mk['visual_hook_lab'],
                                     same_lang=(transcript.get('language') or '')[:2] == mk['lang'],
                                     note_override=((fmt or {}).get('record_note') or {}).get(mk['lang']))
     finally:
@@ -1626,7 +1626,7 @@ def main():
                         note = next((reword._plain(b) for b in notion.children(pid) if b['type'] == 'callout'
                                      and '⚠' in str(b['callout'].get('icon'))), '')
                         localize.set_note(pid, m['lang'], note.replace('**', '')[:30] == T['inspo_note_same'].replace('**', '')[:30],
-                                          own=f.get('own_brand'), link=f.get('app_link'), override=(f.get('record_note') or {}).get(m['lang']))
+                                          own=M.own(f, m['lang']), link=f.get('app_link'), override=(f.get('record_note') or {}).get(m['lang']))
                         st, why = 'ok', 'note with the swap-the-names line'
                 except Exception as e:
                     st, why = 'error', str(e)[:200]
@@ -1770,9 +1770,9 @@ def main():
                     if not note:
                         continue
                     same = note.replace('**', '')[:30] == T['inspo_note_same'].replace('**', '')[:30]
-                    want = '\n'.join(notion.inspo_note(m['lang'], same, f.get('own_brand'), f.get('app_link'), (f.get('record_note') or {}).get(m['lang']))).replace('**', '')
+                    want = '\n'.join(notion.inspo_note(m['lang'], same, M.own(f, m['lang']), f.get('app_link'), (f.get('record_note') or {}).get(m['lang']))).replace('**', '')
                     if note.strip() != want.strip():
-                        localize.set_note(pid, m['lang'], same, own=f.get('own_brand'), link=f.get('app_link'), override=(f.get('record_note') or {}).get(m['lang']))
+                        localize.set_note(pid, m['lang'], same, own=M.own(f, m['lang']), link=f.get('app_link'), override=(f.get('record_note') or {}).get(m['lang']))
                         n += 1
                     blocks = notion.children(pid)  # materials: the 🎥 recording rule right after the app link
                     h = next((i for i, b in enumerate(blocks) if b['type'].startswith('heading') and '🔧' in reword._plain(b)), None)
