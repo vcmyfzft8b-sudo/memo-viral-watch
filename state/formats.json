@@ -312,6 +312,7 @@
   "title": "Tajne koje profesori kriju 😱"
  },
  {
+  "archived_reason": "removed by the user 11.10.2026",
   "created": 1791510925,
   "description": "Talking-to-camera study app recommendation where the creator holds up a laptop showing the app, then films the laptop screen while exploring one school subject (biology/cells) and ends back on camera pointing at the app.",
   "faithful": {
@@ -332,13 +333,14 @@
   "pages": {
    "sl": "3f465e84-a3c2-8170-9ec3-ee47d9934a43"
   },
+  "removed_by_user": true,
   "reworded": {
    "sh": true,
    "sl": true
   },
   "script": "Da sam ovo otkrila ranije, biologiju bih učila svaki dan, ozbiljno. Dobro, možda ne baš svaki dan, ali bar duplo brže. Samo uslikaš lekciju o ćeliji koju trenutno učiš. Onda otvoriš bilješke i mapu uma, pitaš chat za bilo koji dio ćelije i odmah ti ga objasni. A tutor ti sve ispriča naglas, dio po dio – iskreno, ćelija mi nikad nije bila ovako jasna, a u udžbeniku sigurno nije. Ovo je samo biologija, ali isto možeš za bilo koji predmet, samo ubaciš svoje gradivo. Ljudi, ja sam oduševljena. To je ova aplikacija ovdje, ona ista s kojom, znaš već, stalno učim.",
   "source_video": "https://www.tiktok.com/@learnwithandj/video/7692189117098003733",
-  "status": "active",
+  "status": "archived",
   "title": "Biologija duplo brže? 🧬"
  },
  {
