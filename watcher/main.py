@@ -1339,6 +1339,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--restore-format', default='', help='format id: undo remove-format - pages back into the format folders and lists')
     ap.add_argument('--remove-format', default='', help='format id: the user removed it - every page goes to its market archive (never deleted), never brought back automatically')
     ap.add_argument('--drop-market', default='', help="'<format id>:<market>': the format leaves that market (page moved to its archive, list updated)")
     ap.add_argument('--app-timing', action='store_true', help='read-only: for every live format, the seconds in its original where the app is shown/named')
@@ -1670,6 +1671,20 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.restore_format:
+        cfg, fmts = load_config(), load_formats()
+        f = next(x for x in fmts if x['id'] == a.restore_format.strip())
+        for mk in M.of(M.load(cfg), f):
+            pid = page_of(f, mk['key'])
+            if pid:
+                notion.move_page(pid, mk['holder_page'])
+        f['status'] = 'active'
+        for k in ('removed_by_user', 'archived_reason', 'pending'):
+            f.pop(k, None)
+        state.save('formats.json', fmts)
+        rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg, force=True)
+        print(f"restore-format: {f['title']} is back in the lists")
         return
     if a.remove_format:
         cfg, fmts = load_config(), load_formats()
