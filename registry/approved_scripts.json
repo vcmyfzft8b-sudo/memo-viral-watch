@@ -61,6 +61,62 @@
         }
       ],
       "title": "Nisam stvorena za sestrinstvo 😳"
+    },
+    "A20261008211912": {
+      "example": "https://www.tiktok.com/@studywithreveka/video/7691071853334498580",
+      "voiceover": false,
+      "title": "POV: Sjetiš se tog jednog slajda na testu ali nisi pretplaćen na mozak premium",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "POV: Sjetiš se tog jednog slajda na testu ali nisi pretplaćen na mozak premium",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Pa highkey nadogradiš mozak uz Memo AI",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261010130453": {
+      "example": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930",
+      "voiceover": true,
+      "title": "Pretvori gradivo za učenje u tračeve 📚😭😱🚨💻‼️",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Čak i telefon koji držiš napravljen je od atoma.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Čekaj, čekaj, čekaj. Čekaj, čekaj, jel' možeš da mi objasniš to kao neki sočni trač?",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Važi, slušaj ovo: jezgro je kao neka mega popularna zvijezda, svi su oko njega, a elektroni? Oni su k'o neki fanovi koji stalno oblijeću unaokolo, ali nikad ne mogu totalno da mu se približe. Ludilo, jel' da? Šta misliš, jesu li ovi elektroni vjerni fanovi?",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Memo AI: …kô da nekome pozajmiš bilješke. Prava sapunica, jel' da? Šta misliš, koji su atomi najgori u ovom trač klanu?",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tekst na ekranu: Aplikacija se zove MEMO AI‼️",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -167,6 +223,62 @@
         }
       ],
       "title": "Faze srednje šole, ki jih MORAŠ skipat ⚠️"
+    },
+    "A20261008211912": {
+      "example": "https://www.tiktok.com/@studywithreveka/video/7691071853334498580",
+      "voiceover": false,
+      "title": "POV: Na testu se spomniš tistega enega slajda, ampak nisi naročena na možgane premium",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "POV: Na testu se spomniš tistega enega slajda, ampak nisi naročena na možgane premium",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Pa si highkey nadgradiš možgane z Memo AI",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261010130453": {
+      "example": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930",
+      "voiceover": true,
+      "title": "Spremeni snov za učenje v trače 📚😭😱🚨💻‼️",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Celo telefon, ki ga držiš, je narejen iz atomov.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Čakaj, čakaj, čakaj. Čakaj, čakaj, a mi lahko to razložiš kot en sočen trač?",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Velja, poslušaj tole: jedro je kot ena mega popularna zvezda, vsi so okrog nje, elektroni pa? Ti so pa kot fani, ki kar naprej letajo naokrog, ampak se ji nikoli ne morejo čisto približat. Noro, a ne? Kaj misliš, a so ti elektroni zvesti fani?",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Memo AI: …kot da nekomu posodiš zapiske. Prava žajfnica, a ne? Kaj misliš, kateri atomi so najhujši v tem tračarskem klanu?",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: Aplikacija se imenuje MEMO AI‼️",
+          "new_paragraph": true
+        }
+      ]
     }
   }
 }
