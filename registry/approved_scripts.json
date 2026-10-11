@@ -74,8 +74,8 @@
       "title": "POV: Sjetiš se tog jednog slajda na testu ali nisi pretplaćen na mozak premium",
       "script": [
         {
-          "cue": null,
-          "asset_name": "",
+          "cue": "asset",
+          "asset_name": "Zamućeni slajd 1 i 2",
           "text": "POV: Sjetiš se tog jednog slajda na testu ali nisi pretplaćen na mozak premium",
           "new_paragraph": true
         },
@@ -743,8 +743,8 @@
       "title": "POV: Na testu se spomniš tistega enega slajda, ampak nisi naročena na možgane premium",
       "script": [
         {
-          "cue": null,
-          "asset_name": "",
+          "cue": "asset",
+          "asset_name": "Zabluran slajd 1 in 2",
           "text": "POV: Na testu se spomniš tistega enega slajda, ampak nisi naročena na možgane premium",
           "new_paragraph": true
         },
