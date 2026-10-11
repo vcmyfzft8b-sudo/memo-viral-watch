@@ -449,6 +449,44 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261010163838": {
+      "example": "https://www.tiktok.com/@learn.with.darija/video/7688802612111510805",
+      "voiceover": true,
+      "title": "Imamo samo 2 sata za učenje? ✂️",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: odmah na početku u jednoj ruci uz lice držiš dugačku papirnu traku sa svim satima u danu, u drugoj makaze, gledaš pravo u kameru i počneš da pričaš.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Svaki put kada dobijemo lošu ocjenu, nastavnici i roditelji kažu da smo imali dovoljno vremena da naučimo.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Spavamo od 10 do 7. U školi smo do 1. Odmor, ručak i večera – još 2 sata. Vannastavne aktivnosti – 2 sata. Porodica – još 2 sata.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "I ostaju nam samo 2 sata da naučimo sve.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Zato ću vam pokazati aplikaciju s kojom učite jako brzo, skoro kao kroz igricu – Memo AI: u nju ubacite PDF-ove ili PowerPoint prezentacije sa predavanja, a možete i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobijete bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučite na jako jednostavan način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na primjer flash kartice: ovdje je pitanje, okrenete karticu i imate odgovor. A imate i probni test s ocjenom i glasovnog tutora koji vam gradivo objasni naglas.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -822,6 +860,44 @@
           "cue": null,
           "asset_name": "",
           "text": "To je to za ta video. V komentarje mi napišite, kako vam je všeč Memo AI in ali vas je rešil tako kot mene.",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261010163838": {
+      "example": "https://www.tiktok.com/@learn.with.darija/video/7688802612111510805",
+      "voiceover": true,
+      "title": "Imamo samo 2 uri za učenje? ✂️",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: takoj na začetku v eni roki tik ob obrazu držiš dolg papirnat trak z vsemi urami dneva, v drugi pa škarje, gledaš naravnost v kamero in začneš govoriti.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Vsakič, ko dobimo slabo oceno, učitelji in starši rečejo, da smo imeli dovolj časa, da se naučimo.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Spimo od 10 do 7. V šoli smo do 1. Počitek, kosilo in večerja – še 2 uri. Obšolske dejavnosti – 2 uri. Družina – še 2 uri.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "In ostaneta nam samo 2 uri, da se naučimo vse.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Zato vam bom pokazala aplikacijo, s katero se učite zelo hitro, skoraj kot z igrico – Memo AI: vanjo naložite PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnamete in zvočni posnetek naložite v Memo AI. Ven dobite zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučite na zelo preprost način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na primer učne kartice: tukaj je vprašanje, kartico obrnete in imate odgovor. Imate pa tudi poskusni test z oceno in glasovnega tutorja, ki vam snov razloži na glas.",
           "new_paragraph": true
         }
       ]
