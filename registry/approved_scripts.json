@@ -155,6 +155,56 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261008210957": {
+      "example": "https://www.tiktok.com/@study.with.mili/video/7692478766852967686",
+      "voiceover": true,
+      "title": "Top 5 najlakših fakulteta 🎓",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: od prve sekunde pričaj u kameru dok makazama sječeš list papira.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ovo su top 5 najlakših fakulteta. Ako planiraš da upišeš fakultet, upiši jedan od ovih, zato što nećeš gubiti mnogo živaca.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na petom mjestu: Fakultet za turizam i hotelijerstvo, jer ima dosta praktičnih stvari.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na četvrtom mjestu: Fakultet za menadžment, jer nema teške matematike.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Prije nego što kažem prva tri mjesta, da se ogradim: svaki fakultet je težak, a kako da ga olakšaš, pokazaću ti sada. Preporučit ću ti jednu aplikaciju, u pitanju je Memo AI: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve to naučiš na jako jednostavan način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na trećem mjestu: Fakultet za poslovne studije. Gradivo je uglavnom razumljivo i povezano sa stvarnim situacijama, pa nema baš toliko klasičnog bubanja.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na drugom mjestu: Fakultet za medije i komunikacije. Gradivo je uglavnom povezano sa komunikacijom, medijima i kreativnim predmetima, pa nema toliko bubanja.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "I na prvom mjestu, šta drugo može biti, Fakultet za sport i fizičko vaspitanje. Na prvom mjestu je jer ima dosta praktične nastave, pa nemaš samo klasično učenje iz knjige.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -321,37 +371,87 @@
     "A20261008205804": {
       "example": "https://www.tiktok.com/@kera.vas.uci/video/7692158324032163124",
       "voiceover": true,
-      "title": "99 % VAS TE IGRE NE BO USPELO KONČAT 😳",
+      "title": "99 % VAS TE IGRE NE BO USPELO KONČATI 😳",
       "hook": "Naredi enak vizualni hook kot v videu za navdih: sedi čisto blizu kamere in energično govori naravnost vanjo, v zgornjem kotu pa imej oštevilčen seznam, ki se z vsakim pogojem podaljša za eno vrstico (4. vrstica = MEMO AI).",
       "script": [
         {
           "cue": null,
           "asset_name": "",
-          "text": "Če se ti priimek konča na -ič, izpadeš. 99 % vas te igre itak ne bo uspelo končat.",
+          "text": "Če se tvoj priimek konča na -ič, izpadeš. 99 % vas te igre ne bo uspelo končati.",
           "new_paragraph": true
         },
         {
           "cue": null,
           "asset_name": "",
-          "text": "Če mi ne slediš, izpadeš, ampak se lahko vrneš v igro, če me zdajle takoj zafolovaš. Če imaš raje zimo kot poletje, tudi izpadeš.",
+          "text": "Če mi ne slediš, izpadeš, ampak se lahko vrneš v igro, če me takoj zafolovaš. Če imaš raje zimo kot poletje, tudi izpadeš.",
           "new_paragraph": true
         },
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Če se učiš z Memo AI, izpadeš, ker je realno najboljša aplikacija za učenje in s tem itak že zmaguješ. Samo naložiš svoje zapiske in slike, pa ti v par minutah naredi urejene zapiske, kartice, kvize in probne teste. Meni so najljubše kartice: dobim vprašanje, in če ne vem odgovora, samo kliknem na zaslon.",
+          "text": "Če se učiš z Memo AI, izpadeš, ker je to res najboljša aplikacija za učenje in s tem že zmaguješ. Samo naložiš svoje zapiske in slike, pa ti v nekaj minutah pripravi urejene zapiske, kartice, kvize in poskusne teste. Meni so najljubše kartice: dobim vprašanje, in če ne vem odgovora, samo kliknem na zaslon.",
           "new_paragraph": true
         },
         {
           "cue": null,
           "asset_name": "",
-          "text": "Gremo naprej: če ima tvoj telefon zdajle manj kot 20 % baterije, izpadeš. Zdaj pa klikni Deli na Viber ali WhatsApp, in če ti kot prva skoči ven mami ali ati, izpadeš.",
+          "text": "Gremo naprej: če ima tvoj telefon zdaj manj kot 20 % baterije, izpadeš. Zdaj pa klikni Deli na Viber ali WhatsApp – če se ti kot prva prikaže mama ali oče, izpadeš.",
           "new_paragraph": true
         },
         {
           "cue": null,
           "asset_name": "",
-          "text": "V komentarje mi napišite, do katere številke vam je uspelo prit.",
+          "text": "V komentarje mi napišite, do katere številke vam je uspelo priti.",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261008210957": {
+      "example": "https://www.tiktok.com/@study.with.mili/video/7692478766852967686",
+      "voiceover": true,
+      "title": "TOP 5 najlažjih fakultet 🧑‍🎓🤩",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: že od prve sekunde govori v kamero in medtem s škarjami reži list papirja.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "To je top 5 najlažjih fakultet. Če se nameravaš vpisati na fakulteto, se vpiši na eno od teh, ker ti ne bo treba izgubljati toliko živcev.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na 5. mestu je Fakulteta za management v Kopru, ker je veliko praktičnih stvari.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na 4. mestu je Fakulteta za organizacijske vede v Kranju, ker nima zahtevne matematike.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Preden povem prva tri mesta, naj povem, da je vsaka fakulteta težka – kako si jo še bolj olajšaš, ti bom pokazala zdaj. Priporočam ti aplikacijo Memo AI: vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse to naučiš na zelo preprost način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na 3. mestu je Fakulteta za upravo. Snov je večinoma razumljiva in povezana z resničnimi situacijami, zato ni toliko učenja na pamet.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na 2. mestu je Fakulteta za družbene vede. Snov je večinoma povezana s komunikacijo, mediji in družbo, zato ni toliko učenja na pamet.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Na 1. mestu pa je – kaj pa drugega – Pedagoška fakulteta, smer predšolska vzgoja. Na prvem mestu je, ker ima veliko praktičnega dela, zato se ne učiš samo klasično iz knjig.",
           "new_paragraph": true
         }
       ]

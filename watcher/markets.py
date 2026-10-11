@@ -89,12 +89,13 @@ TEXT = {
     },
     'sl': {
         'flag': '🇸🇮', 'name': 'Slovenija', 'lang_name': 'Slovenian',
-        'style': ('casual spoken Slovenian the way Slovenian TEENAGERS talk on TikTok - relaxed and informal, not '
-                  'textbook language: everyday words and fillers teens really use (e.g. "ful", "itak", "res", "kul", '
-                  '"a veš", "pač", "tipa", "zihr", "js"/"jaz" as spoken), short punchy sentences, ti-form; still easy to '
-                  'read and not overdone - a natural translation, never stiff or formal - and never Croatian/Serbian '
-                  'words or forms (the source videos are Serbo-Croatian: "što", "koji", "već", "gdje" must become '
-                  '"kaj", "ki", "že", "kje"; follow on TikTok = "zafolovat" / "zafolovaš", never "zapratit"); the speaker\'s own past-tense verbs in the FEMININE form (naučila sem, '
+        'style': ('natural, casual spoken Slovenian as a young creator talks on TikTok, but always grammatically CORRECT '
+                  'standard Slovenian (user, 11 Oct 2026): no shortened colloquial spellings ("tko", "tok", "al", "blo", '
+                  '"enga", "okol", "zdajle", "js", infinitives like "končat"/"prit" -> "tako", "toliko", "ali", "bilo", '
+                  '"enega", "okoli", "zdaj", "jaz", "končati", "priti"); short clear sentences, ti-form; never stiff or '
+                  'formal, and never Croatian/Serbian words or forms (the source videos are Serbo-Croatian: "što", '
+                  '"koji", "već", "gdje" must become "kaj", "ki", "že", "kje"); follow on TikTok = "zafolovat" / '
+                  '"zafolovaš", never "zapratit"; the speaker\'s own past-tense verbs in the FEMININE form (naučila sem, '
                   'slikala sem) - most creators are women and a man simply switches the ending; artificial '
                   'intelligence is always just "AI", never "umetna inteligenca"'),
         'address': 'ti (informal singular; "vi" only if the original speaks to a group - then consistently)',
