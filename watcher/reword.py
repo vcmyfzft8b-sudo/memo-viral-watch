@@ -292,10 +292,11 @@ def in_resources(name, resources):
     return any(w in resources for w in words)
 
 
-def fix_app_material_cues(page_id, link):
+def fix_app_material_cues(page_id, link, lang=None):
     """'(📎 Memo AI · memoai.eu/creator – vidi materijale)' in a script is the app shown as a "material" - it becomes the
     normal app link cue '(Memo AI · memoai.eu/creator)'. Returns how many paragraphs changed."""
     from .brand import cue_label
+    label = notion.cue_label_for(link, lang) if lang else cue_label(link)
     pat = re.compile(r'\((?:📎\s*)+Memo AI[^()]*\)\s*')
     fixed = 0
     for b in script_blocks(page_id):
@@ -310,7 +311,7 @@ def fix_app_material_cues(page_id, link):
                 if t[pos:m.start()]:
                     out.append({'type': 'text', 'text': {'content': t[pos:m.start()]}, 'annotations': x.get('annotations', {})})
                 out += [{'type': 'text', 'text': {'content': '('}},
-                        {'type': 'text', 'text': {'content': cue_label(link), 'link': {'url': link}}},
+                        {'type': 'text', 'text': {'content': label, 'link': {'url': link}}},
                         {'type': 'text', 'text': {'content': ') '}}]
                 pos = m.end()
             if t[pos:]:

@@ -111,14 +111,19 @@ def inspo_note(lang, same_lang=False, own=False):
     otherwise 'film from our script, the video shows pacing/look'. The "app swap" line only for the other app's videos."""
     T = TEXT[lang]
     if own:  # the example is already a Memo AI video (our own creators): no "other brand / swap the app" lines
-        lines = [T['inspo_note_own_same'] if same_lang else T['inspo_note_own']]
+        lines = [T['inspo_note_own_same'] if same_lang else T['inspo_note_own'], T['record_note']]
     else:
         lines = [T['inspo_note_same'] if same_lang else T['inspo_note'][0], T['inspo_note'][1]]
     return lines + ([T['local_note']] if T.get('local_note') else [])  # Balkan: creators may use their own country's names
 
 
-def cue_links(links):
-    return {CUE: (cue_label(links[CUE]), links[CUE])}
+def cue_label_for(link, lang):
+    """The app link cue in a script: '🎥 Snimi Memo AI · memoai.eu/creator' - recording the app there is required."""
+    return f"🎥 {TEXT[lang]['cue_verb']} {cue_label(link)}"
+
+
+def cue_links(links, lang=PRIMARY):
+    return {CUE: (cue_label_for(links[CUE], lang), links[CUE])}
 
 
 def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, same_lang=False):
@@ -147,7 +152,7 @@ def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, 
     blocks.append(divider())
 
     blocks.append(block('heading_2', [rt('🔧'), rt(T['res_h'], bold=True)]))
-    res = [rt(cue_label(links[CUE]), link=links[CUE])]
+    res = [rt(cue_label_for(links[CUE], lang), link=links[CUE]), rt(' – ' + T['record_rule'])]
     for asset in spec.get('assets_needed', []):
         res.append(rt(f"\n📎 {asset['name']} – {T['asset_todo']}: {asset.get('description', '')}"))
     blocks.append(block('callout', res, icon={'type': 'emoji', 'emoji': '💡'}, color='gray_background'))
@@ -178,7 +183,7 @@ def strip_directions(text):
 def script_paragraphs(spec, links, lang=PRIMARY):
     """The script section's paragraphs (cue links in front of the line where the app/asset appears)."""
     T = TEXT[lang]
-    cues = cue_links(links)
+    cues = cue_links(links, lang)
     paragraphs, current = [], []
     silent = not spec.get('voiceover', True)
     if silent:

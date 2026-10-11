@@ -1167,6 +1167,11 @@ def add_materials(fid):
             rich.append({'type': 'text', 'text': {'content': t, 'link': (x.get('text') or {}).get('link')},
                          'annotations': x.get('annotations', {})} if x.get('type') == 'text' else
                         {k: v for k, v in x.items() if k in ('type', 'mention', 'annotations')})
+        line = os.path.join(folder, '_line.txt')  # a material the callout does not list yet
+        if os.path.exists(line):
+            text = open(line).read().strip()
+            if text not in ''.join(x.get('text', {}).get('content', '') for x in rich):
+                rich.append({'type': 'text', 'text': {'content': '\n' + text}})
         notion.api('PATCH', f"/blocks/{callout['id']}", {'callout': {'rich_text': rich}})
         images = [notion.block('image', type='file_upload', file_upload={'id': notion.upload_file(os.path.join(folder, n), 'image/png')})
                   for n in sorted(os.listdir(folder)) if n.lower().endswith('.png')]
@@ -1272,7 +1277,7 @@ def group_report(fmts, mkts, cfg, meta, fix=False, force=False):
             for mk in mkts:
                 pid = page_of(f, mk['key'])
                 if pid and not align.approved_script(f['id'], mk['lang']) and (
-                        reword.fix_app_material_cues(pid, links_for(cfg['links'], f)['memo']) + reword.fix_asset_cues(pid)):
+                        reword.fix_app_material_cues(pid, links_for(cfg['links'], f)['memo'], mk['lang']) + reword.fix_asset_cues(pid)):
                     notes.append(f"{f['title']}: {mk['key']}: script cues cleaned (resources)")
     results, dups = crosscheck.run(fmts, mkts, cfg, page_of, meta, force=force)
     if fix:
@@ -1728,6 +1733,19 @@ def main():
                     if note.strip() != want.strip():
                         localize.set_note(pid, m['lang'], same, own=f.get('own_brand'))
                         n += 1
+                    blocks = notion.children(pid)  # materials: the 🎥 recording rule right after the app link
+                    h = next((i for i, b in enumerate(blocks) if b['type'].startswith('heading') and '🔧' in reword._plain(b)), None)
+                    callout = next((b for b in blocks[h + 1:] if b['type'] == 'callout'), None) if h is not None else None
+                    if callout and T['record_rule'] not in reword._plain(callout):
+                        rich = callout['callout']['rich_text']
+                        k = next((i for i, x in enumerate(rich) if ((x.get('text') or {}).get('link') or {}).get('url', '').find('memoai.eu') >= 0), None)
+                        if k is not None:
+                            out = [{'type': 'text', 'text': {'content': x['plain_text'], 'link': (x.get('text') or {}).get('link')},
+                                    'annotations': x.get('annotations', {})} if x.get('type') == 'text' else
+                                   {kk: v for kk, v in x.items() if kk in ('type', 'mention', 'annotations')} for x in rich]
+                            out.insert(k + 1, {'type': 'text', 'text': {'content': ' – ' + T['record_rule']}})
+                            notion.api('PATCH', f"/blocks/{callout['id']}", {'callout': {'rich_text': out}})
+                            n += 1
                 except Exception as e:
                     print('renote failed:', f['title'], key, str(e)[:150])
         print(f'renote: {n} notes updated')
@@ -1737,7 +1755,7 @@ def main():
         for f in [f for f in load_formats() if f.get('status') in ('active', 'pending')]:
             for key in cfg['markets']:
                 if page_of(f, key):
-                    n += reword.fix_app_material_cues(page_of(f, key), links_for(cfg['links'], f)['memo'])
+                    n += reword.fix_app_material_cues(page_of(f, key), links_for(cfg['links'], f)['memo'], cfg['markets'][key]['lang'])
         print(f'fix-cues: {n} paragraphs now use the app link cue')
         return
     if a.trash_staging:

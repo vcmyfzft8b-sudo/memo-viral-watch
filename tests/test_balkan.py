@@ -206,7 +206,7 @@ def test_scripts_have_no_stage_directions_only_link_and_material_cues():
         {'cue': 'asset', 'asset_name': 'Posnetek', 'text': 'Glej to.', 'new_paragraph': False}]}
     paras = [''.join(x['text']['content'] for x in b['paragraph']['rich_text'])
              for b in notion.script_paragraphs(spec, {'memo': 'https://memoai.eu/creator'}, 'sl')]
-    assert paras == ['Prvi stavek. ', '(Memo AI · memoai.eu/creator) Tole je Memo AI. (📎 Posnetek – glej gradivo) Glej to. ']
+    assert paras == ['Prvi stavek. ', '(🎥 Posnemi Memo AI · memoai.eu/creator) Tole je Memo AI. (📎 Posnetek – glej gradivo) Glej to. ']
 
     def blk(*parts):
         rich = [{'type': 'text', 'plain_text': t, 'text': {'content': t, 'link': {'url': u} if u else None}} for t, u in parts]
