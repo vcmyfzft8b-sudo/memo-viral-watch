@@ -372,6 +372,7 @@
   "title": "Prodajem mjesto na laptopu za reklamu 🤑"
  },
  {
+  "archived_reason": "removed by the user 11.10.2026",
   "created": 1791637493,
   "description": "Satisfying ASMR-style prop action (squeezing ketchup into a glass of water) while the audio is a live conversation with the app's voice tutor explaining a school topic as juicy gossip, ending with a close-up of the phone showing the voice tutor and an 'the app is called X' text overlay.",
   "faithful": {
@@ -392,13 +393,14 @@
   "pages": {
    "sl": "3f565e84-a3c2-8128-b4dc-e7924264635c"
   },
+  "removed_by_user": true,
   "reworded": {
    "sh": true,
    "sl": true
   },
   "script": "Čak je i telefon u tvojoj ruci sastavljen od atoma. Stani, stani, stani. Stani malo, a možeš li mi to ispričati kao neki sočan trač? Može, slušaj ovo: jezgro ti je glavna zvijezda koju svi prate, a elektroni? E, oni su kao fanovi koji se stalno motaju okolo, a nikad mu ne uspiju prići skroz blizu. Ludo, zar ne? Jesu li ti elektroni, po tebi, vjerni fanovi? Kao kad nekome posudiš bilješke – čista sapunica, jel' da? A koji su atomi, po tebi, najgori u ovoj trač ekipi?",
   "source_video": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930",
-  "status": "active",
+  "status": "archived",
   "title": "Gradivo kao sočan trač 🍿"
  },
  {
