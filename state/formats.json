@@ -37,6 +37,9 @@
   "logo_hq": {
    "sh": true
   },
+  "logo_lockup": {
+   "sh": true
+  },
   "only_markets": [
    "sh"
   ],
@@ -77,6 +80,10 @@
    "sh": true,
    "sl": true
   },
+  "logo_lockup": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f365e84-a3c2-81ed-a906-d5caef049749",
   "pages": {
    "sl": "3f365e84-a3c2-81b2-8c98-d419a8b912b6"
@@ -112,6 +119,10 @@
    "sh": true,
    "sl": true
   },
+  "logo_lockup": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f365e84-a3c2-8158-a10f-d25c82347e03",
   "pages": {
    "sl": "3f365e84-a3c2-812c-8690-c4d957b2a619"
@@ -144,6 +155,10 @@
    "sl": "v2-teen"
   },
   "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
+  "logo_lockup": {
    "sh": true,
    "sl": true
   },
@@ -199,6 +214,10 @@
    "sh": true,
    "sl": true
   },
+  "logo_lockup": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f365e84-a3c2-81b5-88b5-e2225ef1bc0b",
   "pages": {
    "sl": "3f365e84-a3c2-810e-8152-eeed9afe21db"
@@ -235,6 +254,10 @@
    "sl": "v2-teen"
   },
   "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
+  "logo_lockup": {
    "sh": true,
    "sl": true
   },
@@ -288,6 +311,9 @@
   "logo_hq": {
    "sh": true
   },
+  "logo_lockup": {
+   "sh": true
+  },
   "materials": {
    "sh": true,
    "sl": true
@@ -337,6 +363,10 @@
    "sl": "v2-teen"
   },
   "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
+  "logo_lockup": {
    "sh": true,
    "sl": true
   },
@@ -406,6 +436,10 @@
    "sl": "v2-teen"
   },
   "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
+  "logo_lockup": {
    "sh": true,
    "sl": true
   },
@@ -479,6 +513,10 @@
    "sh": true,
    "sl": true
   },
+  "logo_lockup": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f565e84-a3c2-81e8-afd8-d8f29ac8cb48",
   "pages": {
    "sl": "3f565e84-a3c2-817e-9399-d8a7083c900f"
@@ -512,6 +550,10 @@
    "sh": true,
    "sl": true
   },
+  "logo_lockup": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f565e84-a3c2-81dd-93d3-c4a95caeb49d",
   "pages": {
    "sl": "3f565e84-a3c2-81f3-a771-d05601b576fa"
@@ -539,6 +581,10 @@
    "sl": "v2-teen"
   },
   "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
+  "logo_lockup": {
    "sh": true,
    "sl": true
   },
@@ -576,6 +622,10 @@
    "sh": true,
    "sl": true
   },
+  "logo_lockup": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f565e84-a3c2-810a-8dc3-f502cc653ae8",
   "pages": {
    "sl": "3f565e84-a3c2-812f-88c5-c7a29c250a40"
@@ -596,6 +646,10 @@
   "id": "A20261010214237",
   "listed_at": 1791673307,
   "logo_hq": {
+   "sh": true,
+   "sl": true
+  },
+  "logo_lockup": {
    "sh": true,
    "sl": true
   },
@@ -624,6 +678,9 @@
   "logo_hq": {
    "sl": true
   },
+  "logo_lockup": {
+   "sl": true
+  },
   "only_markets": [
    "sl"
   ],
@@ -644,6 +701,9 @@
   "logo_hq": {
    "sl": true
   },
+  "logo_lockup": {
+   "sl": true
+  },
   "only_markets": [
    "sl"
   ],
@@ -662,6 +722,9 @@
   "id": "A20261010215744",
   "listed_at": 1791669667,
   "logo_hq": {
+   "sl": true
+  },
+  "logo_lockup": {
    "sl": true
   },
   "only_markets": [
@@ -685,6 +748,9 @@
   "id": "A20261010220207",
   "listed_at": 1791670520,
   "logo_hq": {
+   "sl": true
+  },
+  "logo_lockup": {
    "sl": true
   },
   "only_markets": [
