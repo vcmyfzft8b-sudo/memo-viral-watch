@@ -112,7 +112,6 @@
   "title": "Top 5 najlakših fakulteta 🎓"
  },
  {
-  "archived_reason": "did not pass the page check: 🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 23 words, it must have 24-37 / script corrected towards the original: Line 2 says 'uz ovu aplikaciju' where the original on-scre; 🇸🇮 rewrite refused: the scrip",
   "created": 1791494352,
   "description": "No-voiceover POV meme with trending audio: creator looks stressed during a test because she can't remember a slide, then a handheld shot of a laptop screen showing the study app as the 'brain upgrade'.",
   "faithful": {
@@ -132,22 +131,13 @@
   "pages": {
    "sl": "3f365e84-a3c2-816c-89f2-f02737fabba1"
   },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 23 words, it must have 24-37 / script corrected towards the original: Line 2 says 'uz ovu aplikaciju' where the original on-scre",
-    "🇸🇮 rewrite refused: the script has 19 words, it must have 24-37 / script corrected towards the original: The script drops the brand from line 2. The original says "
-   ],
-   "since": 1791664288,
-   "tries": 4
-  },
   "reworded": {
    "sh": true,
    "sl": true
   },
   "script": "POV: Sjetiš se baš tog jednog slajda na testu, a mozak ti nema premium paket 😭 Pa highkey nadogradiš mozak uz Memo AI 🧠",
   "source_video": "https://www.tiktok.com/@studywithreveka/video/7691071853334498580",
-  "status": "archived",
+  "status": "pending",
   "title": "Mozak premium uz Memo AI 🧠"
  },
  {
