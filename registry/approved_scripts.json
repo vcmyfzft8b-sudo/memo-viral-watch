@@ -337,6 +337,68 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261008204718": {
+      "example": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
+      "voiceover": true,
+      "title": "Popusti za učenike i studente za koje sigurno niste znali ‼️",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: od prve sekunde gledaj pravo u kameru i pričaj, a na ekranu sve vrijeme piše »Popusti za učenike i studente za koje sigurno niste znali ‼️«.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Popusti za studente u Srbiji, 99% njih ne zna. I prije nego što pogledate ovaj video, spremite ga, jer će vam trebati.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tekst na ekranu: 1/4 Prevoz ✈️",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Kao prvo, imate 10% popusta u Air Serbiji za letove.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tekst na ekranu: 2/4 Microsoft Office 📝 BESPLATNO",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Kao drugo, besplatan Microsoft Office – PowerPoint, Excel i Word – samo se prijavite sa školskom ili studentskom poštom.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Tekst na ekranu: 3/4 Memo AI 🧠 BESPLATAN TRIAL + 50% SA KODOM MEMO50",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Kao treće, na Memo AI imate besplatan trial i 50% popusta sa kodom MEMO50: u tu aplikaciju ubacite PDF-ove ili PowerPoint prezentacije sa predavanja, a možete i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobijete bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučite na jako jednostavan način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tekst na ekranu: 4/4 Kino i pozorište 🍿 -15% / -50%",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "I kao četvrto, u Cineplexx kinima imate popust na ulaznice, a u većini pozorišta popust ide i do 50%.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
