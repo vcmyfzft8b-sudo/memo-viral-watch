@@ -39,16 +39,16 @@ TEXT = {
             'i trenutke u kojima se pokazuje aplikacija (demo) – za to služe videi za inspiraciju.',
             f'**OBAVEZNO:** kad pričaš o {OURS}, samo otvori aplikaciju na laptopu preko linka memoai.eu/creator i snimaj '
             'kako prolaziš kroz nju i pokazuješ šta sve može – ubaciš PDF, PowerPoint ili snimak predavanja, pa pokažeš '
-            'bilješke, flash kartice, kviz i probni test. Snimi to isto kao u videu za inspiraciju. Druga aplikacija iz videa '
+            'bilješke, flash kartice, kviz, probni test i druge funkcije koje aplikacija ima. Snimi to isto kao u videu za inspiraciju. Druga aplikacija iz videa '
             'se u tvom videu nigdje ne smije vidjeti ni čuti.'],
         'record_note': (f'**OBAVEZNO:** kad pričaš o {OURS}, samo otvori aplikaciju na laptopu preko linka '
                         'memoai.eu/creator i snimaj kako prolaziš kroz nju i pokazuješ šta sve može – ubaciš PDF, '
-                        'PowerPoint ili snimak predavanja, pa pokažeš bilješke, flash kartice, kviz i probni test. Snimi to '
+                        'PowerPoint ili snimak predavanja, pa pokažeš bilješke, flash kartice, kviz, probni test i druge funkcije koje aplikacija ima. Snimi to '
                         'isto kao u videu za inspiraciju.'),
         'cue_verb': 'Snimi',
         'record_rule': ('obavezno: na svakom mjestu označenom sa 🎥 samo otvori Memo AI na laptopu i snimaj kako prolaziš '
                         'kroz aplikaciju i pokazuješ šta sve može (PDF, PowerPoint ili snimak predavanja → bilješke, flash '
-                        'kartice, kviz, probni test), kao u videu za inspiraciju.'),
+                        'kartice, kviz, probni test i druge funkcije), kao u videu za inspiraciju.'),
         'inspo_note_same': '**Važno:** Video za inspiraciju je na našem jeziku i pokazuje upravo ovaj format, ali je od '
                            'drugog brenda i nije video koji trebaš napraviti. Od njega što vjernije kopiraj ukupnu atmosferu (vibe), '
                            'uglove kamere, način snimanja, montažu i trenutke u kojima se pokazuje aplikacija (demo) – za to '
@@ -125,16 +125,16 @@ TEXT = {
             'ko se pokaže aplikacija (demo) – za to so videi za navdih.',
             f'**OBVEZNO:** ko govoriš o {OURS}, samo odpri aplikacijo na prenosniku prek povezave memoai.eu/creator in '
             'posnemi, kako greš skozi njo in pokažeš, kaj vse zna – naložiš PDF, PowerPoint ali posnetek predavanja, nato '
-            'pokažeš zapiske, učne kartice, kviz in poskusni test. Posnemi to enako kot v videu za navdih. Druga aplikacija '
+            'pokažeš zapiske, učne kartice, kviz, poskusni test in druge funkcije, ki jih ima aplikacija. Posnemi to enako kot v videu za navdih. Druga aplikacija '
             'iz videa se v tvojem videu ne sme nikjer videti ali slišati.'],
         'record_note': (f'**OBVEZNO:** ko govoriš o {OURS}, samo odpri aplikacijo na prenosniku prek povezave '
                         'memoai.eu/creator in posnemi, kako greš skozi njo in pokažeš, kaj vse zna – naložiš PDF, '
-                        'PowerPoint ali posnetek predavanja, nato pokažeš zapiske, učne kartice, kviz in poskusni test. '
+                        'PowerPoint ali posnetek predavanja, nato pokažeš zapiske, učne kartice, kviz, poskusni test in druge funkcije, ki jih ima aplikacija. '
                         'Posnemi to enako kot v videu za navdih.'),
         'cue_verb': 'Posnemi',
         'record_rule': ('obvezno: na vsakem mestu, označenem z 🎥, samo odpri Memo AI na prenosniku in posnemi, kako greš '
                         'skozi aplikacijo in pokažeš, kaj vse zna (PDF, PowerPoint ali posnetek predavanja → zapiski, učne '
-                        'kartice, kviz, poskusni test), kot v videu za navdih.'),
+                        'kartice, kviz, poskusni test in druge funkcije), kot v videu za navdih.'),
         'inspo_note_same': '**Pomembno:** Video za navdih je v slovenščini in prikazuje točno ta format, ampak je od druge '
                            'znamke in ni video, ki ga moraš posneti. Od njega čim bolj natančno kopiraj splošno vzdušje (vibe), kote '
                            'kamere, način snemanja, montažo in trenutke, ko se pokaže aplikacija (demo) – za to so videi za '
