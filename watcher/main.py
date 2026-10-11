@@ -1383,6 +1383,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--fix-labs', action='store_true', help="every page: the Visual Hook Lab link points to its own market's lab")
     ap.add_argument('--api-probe', action='store_true', help='test only (private radar page): can a page be moved into a callout?')
     ap.add_argument('--rehome', action='store_true', help='format pages become sub-pages of the list page (back leads to the list)')
     ap.add_argument('--logo-all', action='store_true', help='every page: the official Memo AI logo (transparent, HQ) in the materials')
@@ -1719,6 +1720,34 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.fix_labs:
+        cfg, n = load_config(), 0
+        for f in [f for f in load_formats() if f.get('status') in ('active', 'pending')]:
+            for key, m in cfg['markets'].items():
+                pid = page_of(f, key)
+                if not pid:
+                    continue
+                want = m['visual_hook_lab']
+                want_id = want.rstrip('/').split('/')[-1].split('-')[-1]
+                for b in notion.children(pid):
+                    rich = (b.get(b['type']) or {}).get('rich_text') or []
+                    bad = [x for x in rich if 'Visual Hook Lab' in x.get('plain_text', '') and want_id not in
+                           (((x.get('text') or {}).get('link') or {}).get('url') or '').replace('-', '')]
+                    if not bad:
+                        continue
+                    out = []
+                    for x in rich:
+                        link = ((x.get('text') or {}).get('link') or {}).get('url')
+                        if 'Visual Hook Lab' in x.get('plain_text', '') and link:
+                            link = want
+                        out.append({'type': 'text', 'text': {'content': x['plain_text'], 'link': {'url': link} if link else None},
+                                    'annotations': x.get('annotations', {})} if x.get('type') == 'text' else
+                                   {k: v for k, v in x.items() if k in ('type', 'mention', 'annotations')})
+                    notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': out}})
+                    n += 1
+                    print('lab link fixed:', f['title'], key, flush=True)
+        print(f'fix-labs: {n} links fixed')
         return
     if a.api_probe:
         import requests as _rq
