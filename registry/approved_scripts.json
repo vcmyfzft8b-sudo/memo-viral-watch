@@ -624,6 +624,50 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261010161437": {
+      "example": "https://www.tiktok.com/@smartishaangelisaa/video/7693291236744121620",
+      "voiceover": true,
+      "title": "koje svi 🧑🏼‍🎓5 UČENIKA👩🏼‍🎓 OBOŽAVAMO",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: sjediš za stolom, u jednoj ruci držiš praznu staklenu kriglu, drugom u nju iz flašice sipaš karamel sirup, sve vrijeme gledaš u kameru, a na ekranu je naslov.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Pet učenika u razredu koje svi obožavamo.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ona osoba koja uvijek, ali uvijek ima da ti pozajmi hemijsku. Ja mislim da ima bukvalno infinity hemijskih u rancu.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ona osoba koja ti bukvalno 2 minuta pred test sve objasni. Moja drugarica je baš takva i otkrila mi je kako sve to tako brzo skapira.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Rekla mi je: „Otvori Memo AI.“ U nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "I ona osoba koja kaže nastavniku ono što cijelo odjeljenje misli, a niko se ne usudi da kaže. Skidam kapu.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ostala dva snimam u part 2.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -1172,6 +1216,50 @@
           "cue": null,
           "asset_name": "",
           "text": "Tega ne razkrivajte preveč ljudem, naj ostane naša mala skrivnost. V komentarje mi napišite, ali je vaša fakulteta na tem seznamu.",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261010161437": {
+      "example": "https://www.tiktok.com/@smartishaangelisaa/video/7693291236744121620",
+      "voiceover": true,
+      "title": "🧑🏼‍🎓5 UČENCEV👩🏼‍🎓, ki jih vsi OBOŽUJEMO",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: sediš za mizo, v eni roki držiš prazen steklen vrček, z drugo pa vanj iz plastenke naliješ karamelni sirup, ves čas gledaš v kamero, na zaslonu pa je naslov.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Pet učencev v razredu, ki jih vsi obožujemo.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tista oseba, ki ti vedno, ampak res vedno posodi kuli. Mislim, da ima v torbi neskončno kulijev.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tista oseba, ki ti dve minuti pred testom vse razloži. Moja prijateljica je točno taka in mi je razkrila, kako to sama tako hitro razume.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Rekla mi je: »Odpri Memo AI.« Vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "In tista oseba, ki učitelju pove tisto, kar si misli cel razred, pa si nihče ne upa reči. Kapo dol.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ostala dva posnamem v part 2.",
           "new_paragraph": true
         }
       ]
