@@ -2,11 +2,11 @@
  "audit": {
   "A20261008204718:sh": "fixed",
   "A20261008204718:sl": "fixed",
-  "A20261008211912:sh": "failed",
-  "A20261008211912:sl": "failed",
+  "A20261008211912:sh": "fixed",
+  "A20261008211912:sl": "fixed",
   "A20261009001913:sh": "fixed",
   "A20261009001913:sl": "fixed",
-  "A20261010130453:sh": "ok",
+  "A20261010130453:sh": "fixed",
   "A20261010130453:sl": "fixed",
   "A20261010161437:sh": "ok",
   "A20261010161437:sl": "fixed",
@@ -26,10 +26,12 @@
  "audit_fingerprints": {
   "A20261008204718:sh": "88369e6451f1c19c82ee59e33a628847609fb9f598abd93b957410be4c23380b",
   "A20261008204718:sl": "7c45582e8ec223c42f9bb56533015b3790fdb32feaaa6e5663f10a2f5a869862",
+  "A20261008211912:sh": "f9e0e9072358c71a76701d9853c2a44f64623e1e02ea9fce795b01dfa3e59ed7",
+  "A20261008211912:sl": "d0f75a768189f5c218e8339057016aab0a523d7dc01606c0b573f77d45a72413",
   "A20261009001913:sh": "92afbce4ce49727c6493b5fda6408a0551d96e526e0f54ec058a95f6c757246b",
   "A20261009001913:sl": "95149ad48a59d30f7ab597310f8d00f6c9108fddbea056c6ff801639b71860eb",
-  "A20261010130453:sh": "a143c7b9c404feff80f05c01cfeb1dd54bab37fe74df25490d63dabe59468be7",
-  "A20261010130453:sl": "76767a81beaf4b9dfcac6666a9eb8ac29b61c7527a094ca6ddbe6b690295cda8",
+  "A20261010130453:sh": "80424f4ccf25fce0271184c580f15b0f5030aca433d18ddcd637808752dbe296",
+  "A20261010130453:sl": "007e3b4f8c0d7c8de8f56bcabbf3db4309459449d1b5a4b6a7fd15618ca93363",
   "A20261010161437:sh": "9ae2c0d0f0c414cfe7ded9b4181d5bf5a915b933346548ac7b8db74b25022d40",
   "A20261010161437:sl": "4193ced0e6304ef54fece6999fd0eb0d8292d51cb423c217177f03e30a0e7760",
   "A20261010162026:sh": "3669f37e4cc79afb0e7066ef4ac5e4df32bb4cdf9c1d7b489ff99e8cc274342d",
@@ -288,10 +290,10 @@
   },
   "A20261008211912": {
    "approval": {
-    "sh": "not_locked",
-    "sl": "not_locked"
+    "sh": "locked_preserved",
+    "sl": "locked_preserved"
    },
-   "checked_at": 1791647148,
+   "checked_at": 1791679830,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -304,15 +306,9 @@
      "video_identity": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5"
     }
    },
-   "key": "bff95239e02696d085411a79bc790745c19cf2ebefbd7b6ac387e7be011f4964",
-   "passed": false,
-   "reasons": [
-    "format_consistency sh: The beat 2 payoff no longer names the brand. 'uz Memo AI' becomes 'uz ovu aplikaciju koju vidiš ovdje', but the reference requires 'uz Memo AI' in the on-screen text.",
-    "format_consistency sl: The beat 2 payoff drops the brand. 'Pa si highkey nadgradiš možgane' leaves out 'z Memo AI', but the reference requires the brand in the on-screen text.",
-    "faithful_translation sh: Line 2 is reworded. The original 'uz Astra AI' should become 'uz Memo AI', not 'uz ovu aplikaciju koju vidiš ovdje'. The emojis are also additions.",
-    "faithful_translation sl: Line 2 leaves out the app name. It should read 'Pa si highkey nadgradiš možgane z Memo AI'. The emojis are also additions.",
-    "directions_match sl: The quoted on-screen text («ampak tvoji možgani nimajo premium naročnine») differs from the script and title («ampak nisi naročena na možgane premium»)."
-   ],
+   "key": "29107f5792306f1ae5edd0df41768ee2ab25f42dcf52def6f162184445f8e950",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
@@ -320,18 +316,18 @@
       "pass": true
      },
      "sl": {
-      "issue": "The quoted on-screen text («ampak tvoji možgani nimajo premium naročnine») differs from the script and title («ampak nisi naročena na možgane premium»).",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "faithful_translation": {
      "sh": {
-      "issue": "Line 2 is reworded. The original 'uz Astra AI' should become 'uz Memo AI', not 'uz ovu aplikaciju koju vidiš ovdje'. The emojis are also additions.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
-      "issue": "Line 2 leaves out the app name. It should read 'Pa si highkey nadgradiš možgane z Memo AI'. The emojis are also additions.",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "features_claims": {
@@ -346,12 +342,12 @@
     },
     "format_consistency": {
      "sh": {
-      "issue": "The beat 2 payoff no longer names the brand. 'uz Memo AI' becomes 'uz ovu aplikaciju koju vidiš ovdje', but the reference requires 'uz Memo AI' in the on-screen text.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
-      "issue": "The beat 2 payoff drops the brand. 'Pa si highkey nadgradiš možgane' leaves out 'z Memo AI', but the reference requires the brand in the on-screen text.",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "script_matches_example": {
@@ -360,15 +356,15 @@
       "pass": true
      },
      "sl": {
-      "issue": "The beats and order match. The beat 1 stage direction appears twice, which is minor.",
+      "issue": "",
       "pass": true
      }
     }
    },
-   "status": "fail",
-   "summary": "Both countries keep the two-beat silent POV structure, but each drops 'Memo AI' from the payoff line ('upgrade your brain'): SH replaces it with a vague phrase and SL omits it. SL's filming directions also quote hook text that differs from its script.",
+   "status": "pass",
+   "summary": "Both pages keep the two-card silent POV meme almost word for word, with Astra AI swapped for Memo AI at the payoff and no other changes; the SH 'Sjetiš' is just ijekavian spelling and the SL feminine 'naročena' is a gender adaptation, so both pass every dimension.",
    "title_fixes": {},
-   "version": "group-2026-10-10.faithful-hook"
+   "version": "group-2026-10-11.no-directions"
   },
   "A20261008224450": {
    "approval": {
@@ -852,10 +848,10 @@
   },
   "A20261010130453": {
    "approval": {
-    "sh": "not_locked",
-    "sl": "not_locked"
+    "sh": "locked_preserved",
+    "sl": "locked_preserved"
    },
-   "checked_at": 1791665420,
+   "checked_at": 1791679828,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -868,13 +864,9 @@
      "video_identity": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56"
     }
    },
-   "key": "9a09e75dfcfa4dae0a734417dc17a9a57af30e84e2c78c50a37bcec49701725f",
-   "passed": false,
-   "reasons": [
-    "format_consistency sh: The Memo AI cue [CUE: Memo AI · memoai.eu/creator] sits in the middle of beat 4, before the last gossip question. That shows the app before the final phone close-up, which the format forbids. The script also has no ending shot of the phone close-up with the voice tutor screen and the closing overlay. Move the cue to the end as its own phone close-up shot.",
-    "script_matches_example sh: The spoken lines match the example line by line, but the app reveal comes too early. The cue is placed before 'Šta misliš, koji su atomi najgori u ovom trač klanu?' instead of after the dialogue as the closing phone close-up.",
-    "faithful_translation sl: The opening line 'Cel telefon, ki ga držiš' means 'the whole phone you're holding', not 'even the phone you're holding' (original 'Čak i telefon koji držiš'). Use 'Celo telefon, ki ga držiš, je narejen iz atomov.'"
-   ],
+   "key": "8c2375f3d17e5ffdbb4bdbdeea6246952f6c80bb761d8abed93299005185bde0",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
@@ -892,8 +884,8 @@
       "pass": true
      },
      "sl": {
-      "issue": "The opening line 'Cel telefon, ki ga držiš' means 'the whole phone you're holding', not 'even the phone you're holding' (original 'Čak i telefon koji držiš'). Use 'Celo telefon, ki ga držiš, je narejen iz atomov.'",
-      "pass": false
+      "issue": "",
+      "pass": true
      }
     },
     "features_claims": {
@@ -908,8 +900,8 @@
     },
     "format_consistency": {
      "sh": {
-      "issue": "The Memo AI cue [CUE: Memo AI · memoai.eu/creator] sits in the middle of beat 4, before the last gossip question. That shows the app before the final phone close-up, which the format forbids. The script also has no ending shot of the phone close-up with the voice tutor screen and the closing overlay. Move the cue to the end as its own phone close-up shot.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -918,8 +910,8 @@
     },
     "script_matches_example": {
      "sh": {
-      "issue": "The spoken lines match the example line by line, but the app reveal comes too early. The cue is placed before 'Šta misliš, koji su atomi najgori u ovom trač klanu?' instead of after the dialogue as the closing phone close-up.",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -927,10 +919,10 @@
      }
     }
    },
-   "status": "fail",
-   "summary": "Both pages copy the ketchup ASMR hook and the gossip dialogue faithfully, but SH shows the Memo AI cue mid-dialogue instead of in the final phone close-up, and SL mistranslates 'even' in the opening line as 'Cel' instead of 'Celo'.",
+   "status": "pass",
+   "summary": "Both pages pass every check. Each follows the reference: ketchup ASMR opener, the student cuts in to ask for gossip, the star-and-fans explanation, the tutor's playful questions, and the on-screen Memo AI name reveal. Both fix the transcription errors (allowed) and translate the rest closely, claim only real features, and give a one-sentence ketchup close-up direction.",
    "title_fixes": {},
-   "version": "group-2026-10-10.localized-sl"
+   "version": "group-2026-10-11.no-directions"
   },
   "A20261010161437": {
    "approval": {
