@@ -1383,6 +1383,7 @@ def main():
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
+    ap.add_argument('--api-probe', action='store_true', help='test only (private radar page): can a page be moved into a callout?')
     ap.add_argument('--rehome', action='store_true', help='format pages become sub-pages of the list page (back leads to the list)')
     ap.add_argument('--logo-all', action='store_true', help='every page: the official Memo AI logo (transparent, HQ) in the materials')
     ap.add_argument('--transcribe', default='', help='read-only: TikTok link -> timed transcript (Soniox)')
@@ -1718,6 +1719,23 @@ def main():
                 except Exception as e:
                     print('strip failed:', f['title'], key, str(e)[:150])
         print(f'strip-directions: {n} paragraphs cleaned')
+        return
+    if a.api_probe:
+        import requests as _rq
+        radar = load_config()['notion']['radar_page']
+        box = notion.api('PATCH', f'/blocks/{radar}/children', {'children': [notion.block('callout', [notion.rt('probe box')])]})['results'][0]['id']
+        pg = notion.create_page(radar, 'probe page', '🧪', [])['id']
+        h = notion._headers(); h['Notion-Version'] = '2025-09-03'
+        for parent in ({'type': 'block_id', 'block_id': box}, {'type': 'page_id', 'page_id': box}):
+            r = _rq.post(f'{notion.API}/pages/{pg}/move', headers=h, timeout=60, json={'parent': parent})
+            print('PROBE move', parent['type'], r.status_code, r.text[:200])
+            if r.ok:
+                print('PROBE parent now', notion.api('GET', f'/pages/{pg}').get('parent'))
+                print('PROBE box children', [b['type'] for b in notion.children(box)])
+                break
+        r = _rq.post(f'{notion.API}/pages', headers=notion._headers(), timeout=60,
+                     json={'parent': {'type': 'block_id', 'block_id': box}, 'properties': {'title': {'title': [notion.rt('probe 2')]}}})
+        print('PROBE create under block', r.status_code, r.text[:200])
         return
     if a.rehome:
         cfg, fmts = load_config(), load_formats()
