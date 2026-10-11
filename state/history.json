@@ -5339,11 +5339,12 @@
   "views_7d": 4628
  },
  "7695153972046253364": {
+  "bootstrap_tries": 1,
   "created": 1791667713,
-  "format": null,
+  "format": "A20261008205804",
   "handle": "kera.vas.uci",
   "hook": "",
-  "judged": false,
+  "judged": true,
   "local": true,
   "mature": false,
   "views": 96200,
