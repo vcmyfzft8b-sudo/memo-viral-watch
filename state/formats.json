@@ -2,6 +2,9 @@
  {
   "created": 1791492438,
   "description": "Talking-head listicle of little-known student discounts (transport, free Microsoft Office, cinema/theatre) with numbered on-screen stickers, where the last item is the study app shown as a screen recording before a like-and-follow outro.",
+  "dropped_pages": {
+   "sl": "3f365e84-a3c2-81fb-b984-fbf04f3851f5"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -35,9 +38,7 @@
    "sh"
   ],
   "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
-  "pages": {
-   "sl": "3f365e84-a3c2-81fb-b984-fbf04f3851f5"
-  },
+  "pages": {},
   "revived": {
    "at": 1791648523,
    "because": "https://www.tiktok.com/@lern.mit.domi/video/7691324800123342102",
