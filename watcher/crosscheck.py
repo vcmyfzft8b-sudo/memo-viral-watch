@@ -30,10 +30,10 @@ from urllib.parse import urlsplit
 
 from . import align, audit, llm, localize, notion, reword
 from .brand import FACTS, NO_DIRECTIONS, OURS, SOURCE, TOPIC, links_for
-from .markets import PRIMARY, TEXT, of
+from .markets import PRIMARY, TEXT, conversion_rules, of
 
-AUDIT_VERSION = 'group-2026-10-11.no-directions'
-REF_RULES = 'no-directions-2026-10-11'  # scripts without stage directions (brand.NO_DIRECTIONS)
+AUDIT_VERSION = 'group-2026-10-12.early-memo'
+REF_RULES = 'early-memo-2026-10-12'  # scripts without stage directions (brand.NO_DIRECTIONS)
 REFERENCES = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'format_references.json')
 DIMENSIONS = ('format_consistency', 'script_matches_example', 'faithful_translation', 'features_claims',
               'directions_match')
@@ -78,6 +78,8 @@ VIDEO ({url}):
 {FACTS}
 {('NOTE FROM THE CAMPAIGN TEAM for this format (the reference must follow it): ' + fmt['brief']) if fmt.get('brief') else ''}
 {NO_DIRECTIONS} (So the reference never requires stage directions in the script.)
+Our scripts bring {OURS} in early (about 15 s, with what it does) - the reference's product moment is "early", never
+"only at the end".
 
 Write the format's reference definition that every country's page must follow. Return JSON {{"title_en": "", "hook": "",
 "premise": "", "beats": ["<beat 1>", "..."], "filming": "<length, shots, demo sequence>",
@@ -270,15 +272,12 @@ def judge(fmt, ref, evidence, model):
 Below are the countries' pages of this format. Compare them TOGETHER against the reference and against each
 other. Be strict:
 - format_consistency: does this country's example video AND script follow the reference - same hook idea and premise,
-  the same beats in the same order, the same filming/demonstration sequence, the product introduced at the same beat,
-  the brand/URL spoken only where the reference says so, the same CTA? Only the listed allowed localisation
-  differences may differ. A similar topic ({TOPIC}) alone is NOT the same format.
+  the same beats in the same order, the same CTA? By OUR RULES {OURS} is brought in EARLY (about 15 s, with what it
+  does) and the rest is tightened - that is correct, not a mismatch, even if the original shows its app later. Only the
+  listed allowed localisation differences may differ. A similar topic ({TOPIC}) alone is NOT the same format.
 - script_matches_example: does the script tell what this country's example shows (beats, order, product timing)?
-- faithful_translation: is the script this country's example transcribed / translated almost one to one - the same
-  sentences in the same order, same meaning, words, jokes, numbers and claims, nothing added, left out or
-  reworded? Allowed differences only: the app ({SOURCE} or another study app) -> {OURS} at the same spots, its
-  website -> memoai.eu, an app feature {OURS} lacks -> the closest real one, the language's spelling rules, and for
-  COUNTRY SL only: country-specific names localized to REAL Slovenian ones (that is required there: a Slovenian page
+- faithful_translation: does the script follow OUR RULES ({conversion_rules(PRIMARY)}) - the example's hook kept,
+  {OURS} early with what it does, the rest of the example's beats/jokes/CTA tightened - and for COUNTRY SL only: country-specific names localized to REAL Slovenian ones (that is required there: a Slovenian page
   that keeps foreign faculties, cities or discounts FAILS). COUNTRY SH keeps the original's names.
 - features_claims (script AND on-screen title): only real {OURS} app features. All other claims, numbers and jokes
   stay exactly as in the original (that is correct, not a problem).

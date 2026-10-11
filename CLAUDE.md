@@ -17,7 +17,18 @@ Claude, every 3 days) and turns their viral formats into Memo AI creator pages i
 - Alerts go to Discord `#astra-alerts` (DISCORD_ALERTS_WEBHOOK_URL), not Slack.
 - Approved scripts (registry/approved_scripts.json) are locked – only change with the user's OK.
 
-## Script rules (user's decision, 10 Oct 2026)
+## Script rules (user's decision, 12 Oct 2026 – replaces the 1:1 rule below for new scripts)
+Every script is built from the original by `markets.conversion_rules(lang)` (used by builder, align, reword, audit,
+crosscheck): keep the original's viral hook; Memo AI comes in EARLY (~15 s, at most `EARLY_WORDS` = 50 spoken words
+before the first app cue, checked) at a logical point (secret / solution / next tip / list item), with the pitch
+`TEXT[lang]['pitch']` (PDF/PowerPoint or recorded lecture -> notes, flashcards, tests, quizzes, other features); then
+the rest of the beats tightened (~60 s max); only real Memo AI features, never another app's company facts; sticker
+lines "Tekst na ekranu:" / "Besedilo na zaslonu:", app-voice dialogues "Memo AI:" / "Ti:". Memo AI must be named
+(spoken) at least once. Our own creators' videos (`own_brand`, per format or per language) stay 1:1.
+Every page's materials hold the official Memo AI logo (registry/materials/_logo, = Memo_AI/public/memo-lockup.png).
+Format pages are sub-pages of the creator list page (holder_page = list_page; `mode=rehome`).
+
+## Old script rules (10 Oct 2026)
 - A script is the ORIGINAL video transcribed and translated (if needed) almost one to one – same sentences, order,
   words, jokes, numbers, claims. Only these change: the app (Astra AI, Studyflash, …) -> Memo AI at the same spots,
   its website -> memoai.eu, an app feature Memo AI lacks -> the closest real one, the page language's spelling

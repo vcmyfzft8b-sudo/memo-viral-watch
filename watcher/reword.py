@@ -12,7 +12,7 @@ import re
 
 from . import llm, notion, state
 from .brand import CATEGORY, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, says_source
-from .markets import TEXT, of
+from .markets import TEXT, conversion_rules, of, own
 
 TOKEN = re.compile(r'⟦(\d+)⟧(.*?)⟦/\1⟧', re.S)
 
@@ -84,15 +84,13 @@ def reword_page(fmt, page_id, lang, model, original='', feedback=''):
     T = TEXT[lang]
     numbered = '\n'.join(f'{i}: {t}' for i, (_, t, _) in enumerate(enc))
     prompt = f"""This is the {T['lang_name']} script of a UGC video format ("{fmt['title']}") for {OURS}, an
-{CATEGORY}. It must be the original {SOURCE} video, transcribed and translated (if needed) almost one to one.
+{CATEGORY}. It is built from the original video by our rules:
+{conversion_rules(lang, own(fmt, lang))}
 {('The original video on the page: ' + original[:2500]) if original else ''}
 {('Note from the campaign team for this format (follow it): ' + fmt['brief']) if fmt.get('brief') else ''}
 
-Make EVERY paragraph a faithful translation/transcription of the matching part of the original: the same sentences in
-the same order, the same meaning, words, jokes, numbers, places and claims; nothing added, nothing left out, nothing
-reworded. Natural {T['lang_name']} ({T['style']}). Only these differ from the original: {SOURCE} (or another study
-app it promotes) becomes {OURS} and its website {OURS_SITE} - exactly where and as often as the original names it,
-zero times if the original never names it -, and an app feature {OURS} does not have becomes the closest real one.
+Correct the paragraphs so the script follows those rules. Natural {T['lang_name']} ({T['style']}). {SOURCE} (or
+another study app) never appears; an app feature {OURS} does not have becomes the closest real one.
 Rules:
 - Keep every token ⟦n⟧...⟦/n⟧ exactly as it is (same number, same text inside) and in the same order and paragraph.
 - Keep **bold** lines bold (they are on-screen texts). No backticks. Never mention {SOURCE}.
@@ -136,8 +134,8 @@ def _validate(enc, new, original=''):
         if align._words(spoken) > 1.10 * align._words(base):
             return 'script exceeds 110% of the original word count', []
         want, have = count_app(base), count_ours(spoken)
-        if have != want:
-            return f'spoken brand count is {have}; source requires {want}; cue labels do not count', []
+        if have < 1:  # our rules: Memo AI is named where it comes in (cue labels do not count)
+            return f'spoken brand count is {have}; Memo AI must be named where it comes in; cue labels do not count', []
     return '', changes
 
 

@@ -8,7 +8,7 @@ from .brand import CATEGORY, CUE, FACTS, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE,
 HERE = os.path.dirname(os.path.abspath(__file__))
 EXAMPLES = os.path.join(HERE, '..', 'registry', 'examples')
 
-from .markets import PRIMARY, TEXT, avoid_found
+from .markets import EARLY_WORDS, PRIMARY, TEXT, avoid_found, conversion_rules, words_before_app
 
 REQUIRED_LINE = TEXT[next(iter(TEXT))]['required_line']
 
@@ -17,13 +17,9 @@ viral videos made by creators of {SOURCE_DESC}, a competing app, into the same f
 language. Reply with JSON only."""
 
 RULES = """RULES
-- The script is the ORIGINAL video, transcribed and - if needed - translated into {lang}, almost one to one: the same
-  sentences in the same order with the same meaning, words, jokes, numbers, places and claims; nothing added, nothing
-  left out, nothing reworded. Only these change: "{source}" (and any other study app the video promotes) becomes
-  "{ours}" - exactly where and as often as the original names it -, its website becomes {site}, and an app feature
-  {ours} does not have becomes the closest real {ours} feature (only those words). If the original only shows the
-  app ("this app here"), only show it too. Language: {style}. If the original is already in {lang}, the script is its
-  transcript with only those changes (and the spelling rules of the language).
+- The script is built from the ORIGINAL video (translated into {lang} if needed) by these rules:
+{conversion}
+  "{source}" (and any other study app the video promotes) becomes "{ours}", its website {site}. Language: {style}.
 - {localize}
 - Copy the STYLE and STRUCTURE of the example pages below (layout, cues), never their content.
 - {no_directions}
@@ -66,11 +62,12 @@ def _examples():
     return '\n'.join(out)
 
 
-def build_spec(video, transcript, frames, model, lang=PRIMARY, feedback='', brief=''):
+def build_spec(video, transcript, frames, model, lang=PRIMARY, feedback='', brief='', own_example=False):
     """video: tiktok.video_detail dict; transcript: soniox result; frames: [(seconds, path)]; lang: a markets.TEXT key."""
     T = TEXT[lang]
     rules = RULES.format(lang=T['lang_name'], style=T['style'], country=COUNTRY[lang], ours=OURS, source=SOURCE,
-                         site=OURS_SITE, cue=CUE, no_directions=NO_DIRECTIONS, localize=T.get('localize') or
+                         site=OURS_SITE, cue=CUE, no_directions=NO_DIRECTIONS,
+                         conversion=conversion_rules(lang, own_example), localize=T.get('localize') or
                          'Names of universities, schools, cities, shops etc. stay exactly as in the original.')
     timed = '\n'.join(f"[{s['start']:.1f}-{s['end']:.1f}s] {s['text']}" for s in transcript.get('segments', [])) or '(no speech)'
     content = [{'type': 'text', 'text': f"""Example pages in our layout (follow this style and structure, write in {T['lang_name']}):
@@ -148,8 +145,11 @@ def validate(spec, transcript, lang=PRIMARY):
     new_words = sum(len(s.get('text', '').split()) for s in spec.get('script', []))
     if spec.get('voiceover', True) and orig_words >= 20:
         ratio = new_words / orig_words
-        if not 0.8 <= ratio <= 1.12:
-            problems.append(f'script length is {ratio:.0%} of the original (allowed 80–110%)')
+        if not 0.35 <= ratio <= 1.12:
+            problems.append(f'script length is {ratio:.0%} of the original (allowed 35–110%: tightened, never longer)')
+        early = words_before_app(spec.get('script'), CUE)
+        if early is not None and early > EARLY_WORDS and orig_words >= 60:
+            problems.append(f'{OURS} comes in after {early} words - it must come at about 15 s (at most {EARLY_WORDS} words)')
     if not any(s.get('cue') == CUE for s in spec.get('script', [])):
         problems.append(f'no {OURS} moment in the script')
     return problems

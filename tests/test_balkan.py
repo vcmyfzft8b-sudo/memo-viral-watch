@@ -272,3 +272,16 @@ def json_cfg():
     import json, os
     with open(os.path.join(os.path.dirname(__file__), '..', 'config.json')) as f:
         return json.load(f)
+
+
+def test_new_scripts_follow_our_rules_memo_ai_early_with_the_pitch():
+    from watcher import markets
+    r = markets.conversion_rules('sl')
+    assert 'about 15 seconds' in r and markets.TEXT['sl']['pitch'] in r and 'HOOK' in r
+    assert 'one to one' in markets.conversion_rules('sl', own_example=True)
+    script = [{'cue': None, 'text': 'beseda ' * 30}, {'cue': 'memo', 'text': 'Memo AI'}]
+    assert markets.words_before_app(script, 'memo') == 30
+    late = {'page_title': 'Naslov 📚', 'title_hook': 'Naslov', 'visual_hook_first': 'Sediš.', 'voiceover': True,
+            'script': [{'cue': None, 'text': 'in je da se na za ne so to od ' * 8}, {'cue': 'memo', 'text': 'Memo AI je super in to.'}]}
+    problems = builder.validate(late, {'text': 'in je da se na za ne so to od ' * 10}, lang='sl')
+    assert any('15 s' in p for p in problems)

@@ -15,6 +15,7 @@ import json
 import re
 
 from . import llm, localize, notion, reword, state
+from .markets import EARLY_WORDS, conversion_rules, own as own_example, words_before_app
 from .brand import CUE, FACTS, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, SOURCE_RE, count_app, count_ours, count_source, links_for
 from .markets import TEXT
 
@@ -96,6 +97,7 @@ def align_page(fmt, page_id, lang, cfg, links, feedback='', draft_url=None):
     base = speech if _words(speech) >= 15 else screen  # text-only videos: the on-screen texts are the script
     voiceover = _words(speech) >= 15
     n_orig = _words(base)
+    own_ex = own_example(fmt, lang)
     from . import crosscheck
     ref = crosscheck.reference(fmt['id'])
     prompt = f"""ORIGINAL {SOURCE} video ({'speech' if voiceover else 'on-screen texts, no speech'}):
@@ -112,15 +114,11 @@ recording is shown, and the asset names):
 
 {('REFERENCE DEFINITION of this format (beats, product moment, brand/CTA rules): ' + json.dumps(ref, ensure_ascii=False)) if ref else ''}
 
-Write our {T['lang_name']} script for this video: the ORIGINAL, transcribed and translated (if needed) almost one to
-one - {T['style']}:
-1. The same sentences in the same order with the same meaning, words, jokes, numbers, places and claims. Nothing
-   added, nothing left out, nothing reworded. The whole script has {int(n_orig * 0.8)}-{max_words(n_orig)} words (the
-   original has {n_orig}). If the original is already in {T['lang_name']}, keep its wording (only the spelling rules
-   of the language and the changes below).
-2. Only these change: where the original says or writes {SOURCE} (or another study app it promotes) / its website,
-   write "{OURS}" / {OURS_SITE} - exactly as often and at the same spots. Where the original only shows the app
-   without naming it (e.g. "this app here"), do the same: do NOT name it. Never mention {SOURCE}.
+Write our {T['lang_name']} script for this video ({T['style']}):
+1. {conversion_rules(lang, own_ex)}
+2. The whole script has {int(n_orig * (0.8 if own_ex else 0.35))}-{max_words(n_orig)} words (the original has {n_orig}).
+   {SOURCE} (or another study app the original promotes) / its website become "{OURS}" / {OURS_SITE}; never
+   mention {SOURCE}.
 3. An app feature {OURS} does not have becomes the closest real {OURS} feature (only those words, see above).
 4. Address the viewer exactly as the original does ({T['address']}).
 5. Keep the original's on-screen texts and call to action exactly where they are.
@@ -135,7 +133,7 @@ Return JSON {{"source_mentions_in_original": <number>, "voiceover": {str(voiceov
         extra = f'\n\nA reviewer rejected the current/previous version: {why}. Fix exactly that.' if why else ''
         spec = llm.chat_json(cfg['models']['build'], 'You are a senior UGC script writer. Reply with JSON only.',
                              prompt + extra, timeout=1200)
-        why = _validate(spec, n_orig, base, lang)
+        why = _validate(spec, n_orig, base, lang, own_ex)
         if not why:
             break
     else:
@@ -185,20 +183,25 @@ def max_words(n_orig):
     return int(n_orig * 1.1) if n_orig >= 60 else max(int(n_orig * 1.1), n_orig + 8)
 
 
-def _validate(spec, n_orig, source=None, lang=None):
+def _validate(spec, n_orig, source=None, lang=None, own_ex=True):
     script = spec.get('script') or []
     if not script:
         return 'empty script'
     text = ' '.join(s.get('text', '') for s in script)
     n = _words(text)
-    if not 0.8 * n_orig <= n <= max_words(n_orig):
-        return f'the script has {n} words, it must have {int(n_orig * 0.85)}-{max_words(n_orig)}'
+    lo = 0.8 if own_ex else 0.35  # our rules tighten the original (never longer); our own creators' videos stay 1:1
+    if not lo * n_orig <= n <= max_words(n_orig):
+        return f'the script has {n} words, it must have {int(n_orig * lo)}-{max_words(n_orig)}'
+    early = words_before_app(script, CUE)
+    if not own_ex and n_orig >= 60 and early is not None and early > EARLY_WORDS:
+        return f'{OURS} comes in after {early} words - it must come at about 15 s (at most {EARLY_WORDS} words before it)'
     if count_source(text):
         return f'{SOURCE} is mentioned'
     want = count_app(source) if source is not None else int(spec.get('source_mentions_in_original') or 0)
     have = count_ours(text)
-    if have != want:
-        return f'"{OURS}"/the website appears {have} times, but the original names {SOURCE} {want} times'
+    if (have != want) if own_ex else (have < 1):  # our rules: Memo AI is named where it comes in (with the pitch)
+        return (f'"{OURS}"/the website appears {have} times, but the original names {SOURCE} {want} times' if own_ex
+                else f'"{OURS}" is never named - say it where the app comes in, with what it does')
     if not any(s.get('cue') == CUE for s in script):
         return f'no sentence shows the app (cue "{CUE}")'
     from .markets import avoid_found

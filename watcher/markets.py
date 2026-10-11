@@ -46,6 +46,10 @@ TEXT = {
                         'PowerPoint ili snimak predavanja, pa pokažeš bilješke, flash kartice, kviz, probni test i druge funkcije koje aplikacija ima. Snimi to '
                         'isto kao u videu za inspiraciju.'),
         'cue_verb': 'Snimi',
+        'pitch': ('u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio '
+                  'snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, '
+                  's kojima sve naučiš na jako jednostavan način.'),
+        'screen_label': 'Tekst na ekranu:',
         'logo_line': '📎 Memo AI logo (prozirna pozadina, visoka kvaliteta) – slika ispod; koristi ga u videu ako želiš.',
         'record_rule': ('obavezno: na svakom mjestu označenom sa 🎥 samo otvori Memo AI na laptopu i snimaj kako prolaziš '
                         'kroz aplikaciju i pokazuješ šta sve može (PDF, PowerPoint ili snimak predavanja → bilješke, flash '
@@ -133,6 +137,10 @@ TEXT = {
                         'PowerPoint ali posnetek predavanja, nato pokažeš zapiske, učne kartice, kviz, poskusni test in druge funkcije, ki jih ima aplikacija. '
                         'Posnemi to enako kot v videu za navdih.'),
         'cue_verb': 'Posnemi',
+        'pitch': ('vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek '
+                  'naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi '
+                  'se vse naučiš na zelo preprost način.'),
+        'screen_label': 'Besedilo na zaslonu:',
         'logo_line': '📎 Logotip Memo AI (prozorno ozadje, visoka kakovost) – slika spodaj; uporabi ga v videu, če želiš.',
         'record_rule': ('obvezno: na vsakem mestu, označenem z 🎥, samo odpri Memo AI na prenosniku in posnemi, kako greš '
                         'skozi aplikacijo in pokažeš, kaj vse zna (PDF, PowerPoint ali posnetek predavanja → zapiski, učne '
@@ -222,6 +230,43 @@ def avoid_found(lang, text):
     """Words that do not belong on this market's pages (ekavian forms on ijekavian pages, Serbo-Croatian on Slovenian)."""
     bad = set(TEXT[lang].get('avoid_words', '').split())
     return sorted({w for w in re.findall(r'\w+', (text or '').lower()) if w in bad})
+
+
+EARLY_WORDS = 50  # Memo AI comes in at about 15 s: at most this many spoken words before the first app cue
+
+
+def conversion_rules(lang, own_example=False):
+    """How every script is built (user's rules, 12 Oct 2026, from the scripts reworked together): the original's viral
+    hook, Memo AI early (~15 s) with the standard pitch, then the rest tightened. Our own creators' videos (already
+    built this way) stay word for word."""
+    T = TEXT[lang]
+    if own_example:
+        return ('The example is already a Memo AI video of our own creators: keep its words almost one to one (same '
+                'sentences, order, jokes); only spelling/grammar and the language rules may change.')
+    return f"""HOW OUR SCRIPTS ARE BUILT (user's rules - every script follows them):
+1. HOOK: keep the original's hook (first sentence(s), on-screen title, premise) almost word for word - that is what
+   made it go viral.
+2. MEMO AI EARLY: Memo AI comes in at about 15 seconds - after at most about 40 spoken words (never more than
+   {EARLY_WORDS}) - at a point that makes sense in the story: as the secret, the solution, the next tip or list item,
+   the thing the creator uses instead, the friend's trick. Never only at the end. In list formats put one or two real
+   items before it and keep the best item (e.g. no. 1) for after it.
+3. PITCH: where Memo AI comes in, say what it does in these words (adapted slightly to the sentence): "{T['pitch']}"
+4. REST: then the rest of the original's beats, jokes, payoff and call to action in the same order, tightened (cut
+   filler and app click-walkthroughs - the creator records the app instead). Aim for under about 60 seconds.
+5. TRUTH: only real Memo AI features; never another app's features or company facts (founding year, prices, codes):
+   leave such parts out instead of inventing.
+6. FORM: on-screen sticker texts as their own lines ("{T['screen_label']} ..."); a dialogue with the app's voice as
+   "Memo AI: ..." / "Ti: ..." lines."""
+
+
+def words_before_app(script, cue):
+    """Spoken words before the first segment with the app cue (None if there is none)."""
+    n = 0
+    for seg in script or []:
+        if seg.get('cue') == cue:
+            return n
+        n += len(re.findall(r'\w+', seg.get('text') or ''))
+    return None
 
 
 def own(fmt, lang):

@@ -16,7 +16,7 @@ LINKS = {'memo': 'https://memoai.eu'}
 CFG = {'models': {'build': 'test', 'classify': 'test'}, 'links': LINKS, 'notion': {'radar_page': 'staging'}}
 MK = {'key': 'sh', 'lang': 'sh', 'holder_page': 'holder', 'T': {'flag': 'SH'}}
 SPEC = {'example': URL, 'voiceover': True, 'script': [
-    {'text': 'Das ist der genehmigte Text.', 'cue': 'memo', 'new_paragraph': False, 'asset_name': ''}]}
+    {'text': 'Das ist der genehmigte Text von Memo AI.', 'cue': 'memo', 'new_paragraph': False, 'asset_name': ''}]}
 
 
 def live(blocks):
@@ -447,14 +447,15 @@ class QualityGateTests(unittest.TestCase):
         spec['source_mentions_in_original'] = 1  # an LLM cannot invent its own target count
         self.assertIn('original names Astra AI 0 times', align._validate(spec, 100, source))
 
-    def test_audit_excludes_linked_cues_but_rejects_extra_spoken_brand(self):
+    def test_audit_excludes_linked_cues_but_requires_the_spoken_brand(self):
+        # our rules (12 Oct 2026): Memo AI is named where it comes in - a linked cue label alone does not count
         blocks = page()
         self.readable_example(blocks)
         passed, verdict, _ = audit.check({**self.fmt, 'id': 'UNLOCKED'}, 'page', 'sh', 'test', LINKS)
         self.assertTrue(passed)
         self.assertTrue(verdict['brand_count_ok'])
         rt = blocks[1]['paragraph']['rich_text'][-1]
-        rt['text']['content'] = rt['plain_text'] = 'Memo AI ist hier.'
+        rt['text']['content'] = rt['plain_text'] = 'Das ist hier.'
         passed, verdict, _ = audit.check({**self.fmt, 'id': 'UNLOCKED'}, 'page', 'sh', 'test', LINKS)
         self.assertFalse(passed)
         self.assertFalse(verdict['brand_count_ok'])
@@ -465,7 +466,7 @@ class QualityGateTests(unittest.TestCase):
         original = 'ON-SCREEN:\nSPEECH: ' + 'Wort ' * 30
         why, _ = reword._validate(enc, [enc[0][1]], original)
         self.assertEqual(why, '')
-        changed = enc[0][1].replace('genehmigte Text', 'Memo AI Text')
+        changed = enc[0][1].replace(' von Memo AI', '')
         why, _ = reword._validate(enc, [changed], original)
         self.assertIn('spoken brand count', why)
 

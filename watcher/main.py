@@ -527,7 +527,7 @@ def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, 
         feedback = ''
         for _ in range(attempts):  # rebuilds may retry with the reason the last attempt was rejected
             spec = builder.build_spec(v, transcript, frames, cfg['models']['build'], lang=mk['lang'], feedback=feedback,
-                                      brief=(fmt or {}).get('brief', ''))
+                                      brief=(fmt or {}).get('brief', ''), own_example=M.own(fmt, mk['lang']))
             problems = builder.validate(spec, transcript, lang=mk['lang'])
             if not problems:
                 break

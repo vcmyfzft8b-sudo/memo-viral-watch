@@ -20,7 +20,7 @@ from urllib.parse import urlsplit
 
 from . import align, llm, localize, notion, reword, state, tiktok
 from .brand import FACTS, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, links_for, says_source
-from .markets import TEXT, avoid_found, lang_matches, of, own as own_example
+from .markets import TEXT, avoid_found, conversion_rules, lang_matches, of, own as own_example
 
 ORIGINALS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'originals.json')
 
@@ -125,21 +125,18 @@ Check strictly:
 1. example_same_format: is the example video really THIS format (same premise, hook idea and structure - same topic
    alone is not enough)? false if there is no example video.
 2. script_follows_example: does the script tell the same story with the same beats in the same order as the example?
-3. script_faithful: is the script the example transcribed / translated almost one to one - the same sentences in
-   the same order with the same meaning, words, jokes, numbers and claims, nothing added, nothing left out, nothing
-   reworded? The only allowed differences: {SOURCE} (or another study app it promotes) -> {OURS} at the same spots,
-   its website -> {OURS_SITE}, an app feature {OURS} lacks -> the closest real {OURS} feature, the page language's
-   spelling rules{(' and this localization: ' + TEXT[lang]['localize']) if TEXT[lang].get('localize') else ' (names of universities, schools, cities etc. stay as in the original)'}.
-   false if sentences are paraphrased, merged, added or dropped.
+3. script_faithful: does the script follow OUR RULES for this page (below) - built from the example, the example's
+   hook kept, and (unless the example is already ours) {OURS} brought in early with what it does, the rest tightened?
+   Language/localization: {(TEXT[lang]['localize']) if TEXT[lang].get('localize') else 'names of universities, schools, cities etc. stay as in the original'}.
+   OUR RULES: {conversion_rules(lang, own_example(fmt, lang))}
 5. directions_ok: is the VISUAL HOOK section only one sentence (two at most) telling the creator to copy what the
    example video does in its first seconds (followed by one line offering the Visual Hook Lab instead) - concrete,
    matching the example's opening, and no other filming tips?
 6. example_language: the language of the example video (English name).
 4. script_ok: natural {lang_name} ({TEXT[lang]['style']}), never mentions {SOURCE}; one consistent form of address
    as in the original; no stray formatting characters (backticks, asterisks) in what is said or shown.
-   Mirror the original's spoken brand mentions in count and story position: {OURS} only where the original says
-   {SOURCE}, and {OURS_SITE} only where it says the {SOURCE} website. If the original never names the brand, our
-   spoken script must not name it either. Parenthesized linked cue labels are filming instructions, not spoken words.
+   {OURS} is named where it comes in (with what it does); never {SOURCE}. Parenthesized linked cue labels are filming
+   instructions, not spoken words.
    For silent videos compare on-screen text instead.
 7. title_ok: the on-screen TITLE ({title!r}) is the example's on-screen title/hook translated almost one to one (only
    the app swapped) and follows the page's language rules ({TEXT[lang]['style']}).
@@ -184,7 +181,7 @@ Return JSON {{"example_same_format": true, "script_follows_example": true, "scri
     spoken = reword.spoken_text(reword.script_blocks(page_id))
     v['length_ok'] = v['approved_matches'] or align._words(spoken) <= 1.10 * max(align._words(base), 1)
     want, have = count_app(base), count_ours(spoken)
-    v['brand_count_ok'] = v['approved_matches'] or have == want
+    v['brand_count_ok'] = v['approved_matches'] or (have == want if own_example(fmt, lang) else have >= 1)
     if not v['brand_count_ok']:
         v['script_issues'].append(f'spoken brand count is {have}; source requires {want}; linked filming cues do not count')
     if not title_block:
