@@ -84,8 +84,15 @@
           "asset_name": "",
           "text": "Pa highkey nadogradiš mozak uz Memo AI",
           "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "PDF, PowerPoint ili snimak predavanja → bilješke, kartice i kvizovi 🧠",
+          "new_paragraph": true
         }
-      ]
+      ],
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: sjedi za stolom s testom ispred sebe, piši olovkom i zabrinuto gledaj u test dok je POV tekst na ekranu, pa pogledaj u stranu i stavi ruku u kosu."
     },
     "A20261010130453": {
       "example": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930",
@@ -746,8 +753,15 @@
           "asset_name": "",
           "text": "Pa si highkey nadgradiš možgane z Memo AI",
           "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "PDF, PowerPoint ali posnetek predavanja → zapiski, kartice in kvizi 🧠",
+          "new_paragraph": true
         }
-      ]
+      ],
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: sedi za mizo pred listom s testom, s stisnjenim obrazom stresno glej v list in grizi kemični svinčnik, na zaslonu pa naj bo napis POV."
     },
     "A20261010130453": {
       "example": "https://www.tiktok.com/@learnwithtamara/video/7694393004118854930",
