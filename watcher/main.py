@@ -1743,6 +1743,8 @@ def main():
                             out = [{'type': 'text', 'text': {'content': x['plain_text'], 'link': (x.get('text') or {}).get('link')},
                                     'annotations': x.get('annotations', {})} if x.get('type') == 'text' else
                                    {kk: v for kk, v in x.items() if kk in ('type', 'mention', 'annotations')} for x in rich]
+                            out = [o for o in out if not re.match(r'\s*–\s*obv?ezno:', (o.get('text') or {}).get('content', ''))]
+                            k = next(i for i, o in enumerate(out) if 'memoai.eu' in (((o.get('text') or {}).get('link') or {}).get('url') or ''))
                             out.insert(k + 1, {'type': 'text', 'text': {'content': ' – ' + T['record_rule']}})
                             notion.api('PATCH', f"/blocks/{callout['id']}", {'callout': {'rich_text': out}})
                             n += 1
