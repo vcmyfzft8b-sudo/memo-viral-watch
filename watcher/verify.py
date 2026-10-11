@@ -25,7 +25,7 @@ def _title(page_id):
     return ''.join(x['plain_text'] for x in next(v for v in p['properties'].values() if v['type'] == 'title')['title'])
 
 
-def check_page(pid, T, links, lang=None, own=False):
+def check_page(pid, T, links, lang=None, own=False, link=None, override=None):
     """Problems of one format page in our layout."""
     blocks = notion.children(pid)
     text = ' '.join(_plain(b) for b in blocks)
@@ -57,7 +57,7 @@ def check_page(pid, T, links, lang=None, own=False):
     if left:
         out.append(f'stage directions in the script: {left[0][:60]}' + (f' (+{len(left) - 1})' if len(left) > 1 else ''))
     note = next((_plain(b) for b in blocks if b['type'] == 'callout' and '⚠' in str(b['callout'].get('icon'))), '')
-    if lang and note.strip() not in ['\n'.join(notion.inspo_note(lang, same, own)).replace('**', '').strip() for same in (False, True)]:
+    if lang and note.strip() not in ['\n'.join(notion.inspo_note(lang, same, own, link, override)).replace('**', '').strip() for same in (False, True)]:
         out.append('note under the inspiration video is not the current text')
     if re.search(r'astra', ' '.join(_plain(b) for b in blocks if b['type'] != 'callout'), re.I):
         out.append('Astra mentioned outside the note')
@@ -106,7 +106,7 @@ def run(cfg, fmts, page_of):
             if f.get('status') == 'pending' and where != radar:
                 problems.append(f"{flag} {f['title']}: held page not in the staging area")
             if f.get('status') == 'active':
-                bad = check_page(pid, T, links_for(cfg['links'], f), m['lang'], f.get('own_brand'))
+                bad = check_page(pid, T, links_for(cfg['links'], f), m['lang'], f.get('own_brand'), f.get('app_link'), (f.get('record_note') or {}).get(m['lang']))
                 problems += [f"{flag} {f['title']}: {x}" for x in bad]
                 if not bad:
                     ok.append(f"{flag} {f['title']}: page complete")

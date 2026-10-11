@@ -536,7 +536,8 @@ def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, 
             return None, spec, problems
         upload_id = notion.upload_video(media.for_notion(video_file, work))
         blocks = notion.page_blocks(spec, {**v, 'own': v.get('own') or (fmt or {}).get('own_brand')}, upload_id, links_for(cfg['links'], fmt), lang=mk['lang'], lab_url=mk['visual_hook_lab'],
-                                    same_lang=(transcript.get('language') or '')[:2] == mk['lang'])
+                                    same_lang=(transcript.get('language') or '')[:2] == mk['lang'],
+                                    note_override=((fmt or {}).get('record_note') or {}).get(mk['lang']))
     finally:
         if own:
             shutil.rmtree(work, ignore_errors=True)
@@ -1176,7 +1177,8 @@ def add_materials(fid):
         notion.api('PATCH', f"/blocks/{callout['id']}", {'callout': {'rich_text': rich}})
         images = [notion.block('image', type='file_upload', file_upload={'id': notion.upload_file(os.path.join(folder, n), 'image/png')})
                   for n in sorted(os.listdir(folder)) if n.lower().endswith('.png')]
-        notion.api('PATCH', f'/blocks/{pid}/children', {'children': images, 'after': callout['id']})
+        if images:
+            notion.api('PATCH', f'/blocks/{pid}/children', {'children': images, 'after': callout['id']})
         f.setdefault('materials', {})[key] = True
         state.save('formats.json', fmts)
         print(f"materials: {f['title']} {key}: {len(images)} images", flush=True)
@@ -1195,7 +1197,7 @@ def hand_options(video_id):
             opts = json.load(f).get(str(video_id)) or {}
     except FileNotFoundError:
         return {}
-    return {k: opts[k] for k in ('only_markets', 'app_link', 'brief', 'own_brand') if opts.get(k)}
+    return {k: opts[k] for k in ('only_markets', 'app_link', 'brief', 'own_brand', 'record_note') if opts.get(k)}
 
 
 def add_formats(arg):
@@ -1622,7 +1624,7 @@ def main():
                         note = next((reword._plain(b) for b in notion.children(pid) if b['type'] == 'callout'
                                      and '⚠' in str(b['callout'].get('icon'))), '')
                         localize.set_note(pid, m['lang'], note.replace('**', '')[:30] == T['inspo_note_same'].replace('**', '')[:30],
-                                          own=f.get('own_brand'))
+                                          own=f.get('own_brand'), link=f.get('app_link'), override=(f.get('record_note') or {}).get(m['lang']))
                         st, why = 'ok', 'note with the swap-the-names line'
                 except Exception as e:
                     st, why = 'error', str(e)[:200]
@@ -1745,9 +1747,9 @@ def main():
                     if not note:
                         continue
                     same = note.replace('**', '')[:30] == T['inspo_note_same'].replace('**', '')[:30]
-                    want = '\n'.join(notion.inspo_note(m['lang'], same, f.get('own_brand'))).replace('**', '')
+                    want = '\n'.join(notion.inspo_note(m['lang'], same, f.get('own_brand'), f.get('app_link'), (f.get('record_note') or {}).get(m['lang']))).replace('**', '')
                     if note.strip() != want.strip():
-                        localize.set_note(pid, m['lang'], same, own=f.get('own_brand'))
+                        localize.set_note(pid, m['lang'], same, own=f.get('own_brand'), link=f.get('app_link'), override=(f.get('record_note') or {}).get(m['lang']))
                         n += 1
                     blocks = notion.children(pid)  # materials: the 🎥 recording rule right after the app link
                     h = next((i for i, b in enumerate(blocks) if b['type'].startswith('heading') and '🔧' in reword._plain(b)), None)

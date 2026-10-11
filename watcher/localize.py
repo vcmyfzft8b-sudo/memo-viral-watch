@@ -201,7 +201,7 @@ def example_text(url, page_id=None):
     return f"ON-SCREEN: {d.get('sticker', '')}\nSPEECH: {text}"
 
 
-def set_note(page_id, lang, same_lang, own=False):
+def set_note(page_id, lang, same_lang, own=False, link=None, override=None):
     """The ⚠️ note under the inspiration video, matching the video (same language = 'use it as the model')."""
     blocks = notion.children(page_id)
     i = next((k for k, b in enumerate(blocks) if b['type'] == 'video'), None)
@@ -213,14 +213,14 @@ def set_note(page_id, lang, same_lang, own=False):
                 for c in notion.children(b['id']):
                     notion.api('DELETE', f"/blocks/{c['id']}")
             notion.api('PATCH', f"/blocks/{b['id']}", {'callout': {'rich_text': notion.md('\n'.join(
-                notion.inspo_note(lang, same_lang, own)))}})
+                notion.inspo_note(lang, same_lang, own, link, override)))}})
             return
 
 
 def finish(f, m, pid, lang, url, cfg):
     """After a same-language example is on the page: note says so, script mirrors that example sentence by sentence."""
     from . import align
-    set_note(pid, lang, True, own=f.get('own_brand'))
+    set_note(pid, lang, True, own=f.get('own_brand'), link=f.get('app_link'), override=(f.get('record_note') or {}).get(lang))
     status, why = align.align_page(f, pid, lang, cfg, cfg['links'])
     if status == 'ok':
         f.setdefault('reworded', {})[m] = True

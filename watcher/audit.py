@@ -231,7 +231,7 @@ def _put_example(fmt, m, page_id, lang, url, same_lang):
         localize.replace_video(page_id, src, d, lang)
     else:
         localize.add_section(page_id, d, lang)
-    localize.set_note(page_id, lang, same_lang, own=fmt.get('own_brand'))
+    localize.set_note(page_id, lang, same_lang, own=fmt.get('own_brand'), link=fmt.get('app_link'), override=(fmt.get('record_note') or {}).get(lang))
     fmt.setdefault('inspo', {})[m] = {'url': url, 'views': d['views'], 'strict': True, 'audit': True}
     return True
 
@@ -273,7 +273,7 @@ def fix_page(fmt, mk, cfg, history, accounts, meta, page_of, rounds=5, rebuild=N
                 fmt.get('reworded', {}).pop(m, None)
             continue
         if not v.get('note_ok') and v.get('example_same_format'):
-            localize.set_note(pid, lang, v['same_lang'], own=fmt.get('own_brand'))
+            localize.set_note(pid, lang, v['same_lang'], own=fmt.get('own_brand'), link=fmt.get('app_link'), override=(fmt.get('record_note') or {}).get(lang))
             notes.append('note under the video corrected')
             continue
         if v.get('example_same_format') and (not v.get('length_ok') or not v.get('script_faithful')

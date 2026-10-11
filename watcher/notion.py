@@ -106,7 +106,7 @@ def upload_video(path):
 
 # ---------- page content (same layout as our existing format pages) ----------
 
-def inspo_note(lang, same_lang=False, own=False):
+def inspo_note(lang, same_lang=False, own=False, link=None, override=None):
     """The note under the inspiration video: same-language example = 'use it as the model, say our script';
     otherwise 'film from our script, the video shows pacing/look'. The "app swap" line only for the other app's videos."""
     T = TEXT[lang]
@@ -114,6 +114,11 @@ def inspo_note(lang, same_lang=False, own=False):
         lines = [T['inspo_note_own_same'] if same_lang else T['inspo_note_own'], T['record_note']]
     else:
         lines = [T['inspo_note_same'] if same_lang else T['inspo_note'][0], T['inspo_note'][1]]
+    if link:  # a format with its own app page (e.g. memoai.eu/ugc/oral-quiz): the note names that link
+        short = re.sub(r'^https?://(www\.)?', '', link).rstrip('/')
+        lines = [x.replace('memoai.eu/creator', short) for x in lines]
+    if override:  # the format's own recording instruction (e.g. the oral quiz: open the quiz page, pick the language)
+        lines[1] = override
     return lines + ([T['local_note']] if T.get('local_note') else [])  # Balkan: creators may use their own country's names
 
 
@@ -126,13 +131,14 @@ def cue_links(links, lang=PRIMARY):
     return {CUE: (cue_label_for(links[CUE], lang), links[CUE])}
 
 
-def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, same_lang=False):
+def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, same_lang=False, note_override=None):
     T = TEXT[lang]
     blocks = [block('heading_1', [rt(T['video_heading'])])]
     if file_upload_id:
         blocks.append(block('video', type='file_upload', file_upload={'id': file_upload_id}))
     blocks.append(para([rt(T['source'], link=video['url'])]))
-    note = inspo_note(lang, same_lang, own=video.get('own'))
+    note = inspo_note(lang, same_lang, own=video.get('own'), link=links.get(CUE) if links.get(CUE) != 'https://memoai.eu/creator' else None,
+                       override=note_override)
     blocks.append(block('callout', md('\n'.join(note)),
                         icon={'type': 'emoji', 'emoji': '⚠️'}, color='gray_background'))
 

@@ -58,6 +58,12 @@
           "asset_name": "",
           "text": "Memo AI: Moraš ih dati tim redoslijedom, i to ovako.",
           "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Tekst na ekranu: Memo AI te iz tvog gradiva ispituje naglas kao na usmenom ispitu 🎧 Ubaciš PDF, PowerPoint ili snimak predavanja – memoai.eu",
+          "new_paragraph": true
         }
       ],
       "title": "Nisam stvorena za sestrinstvo 😳"
@@ -454,7 +460,7 @@
       "example": "https://www.tiktok.com/@learn.with.darija/video/7688802612111510805",
       "voiceover": true,
       "title": "Imamo samo 2 sata za učenje? ✂️",
-      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: odmah na početku u jednoj ruci uz lice držiš dugačku papirnu traku sa svim satima u danu, u drugoj makaze, gledaš pravo u kameru i počneš da pričaš.",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: odmah na početku u jednoj ruci uz lice držiš dugačku papirnu traku sa svim satima u danu, u drugoj makaze, gledaš pravo u kameru i pričaš, a kod svake stvari koju nabrojiš makazama odsiječeš komad trake, dok ne ostane samo mali komadić za 2 sata.",
       "script": [
         {
           "cue": null,
@@ -465,13 +471,43 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "Spavamo od 10 do 7. U školi smo do 1. Odmor, ručak i večera – još 2 sata. Vannastavne aktivnosti – 2 sata. Porodica – još 2 sata.",
+          "text": "Recimo da spavamo od 10 do 7 – to odsiječemo.",
           "new_paragraph": true
         },
         {
           "cue": null,
           "asset_name": "",
-          "text": "I ostaju nam samo 2 sata da naučimo sve.",
+          "text": "U školi smo do 1 – i to odsiječemo.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Kad dođemo kući, naravno želimo malo da se odmorimo – još sat vremena.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Doručak, ručak i večera – još sat vremena.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Vannastavne aktivnosti – dva sata.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Vrijeme sa porodicom – još dva sata.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "I ostaje nam samo ovo – 2 sata da naučimo sve.",
           "new_paragraph": true
         },
         {
@@ -614,6 +650,12 @@
           "cue": "memo",
           "asset_name": "",
           "text": "Memo AI: Dati jih moraš v tem vrstnem redu, in sicer takole.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: Memo AI te iz tvoje snovi sprašuje na glas kot na ustnem izpitu 🎧 Naložiš PDF, PowerPoint ali posnetek predavanja – memoai.eu",
           "new_paragraph": true
         }
       ],
@@ -936,7 +978,7 @@
       "example": "https://www.tiktok.com/@learn.with.darija/video/7688802612111510805",
       "voiceover": true,
       "title": "Imamo samo 2 uri za učenje? ✂️",
-      "hook": "Naredi enak vizualni hook kot v videu za navdih: takoj na začetku v eni roki tik ob obrazu držiš dolg papirnat trak z vsemi urami dneva, v drugi pa škarje, gledaš naravnost v kamero in začneš govoriti.",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: takoj na začetku v eni roki tik ob obrazu držiš dolg papirnat trak z vsemi urami dneva, v drugi pa škarje, gledaš naravnost v kamero in govoriš, pri vsaki stvari, ki jo našteješ, pa s škarjami odrežeš kos traku, dokler ne ostane le majhen košček za 2 uri.",
       "script": [
         {
           "cue": null,
@@ -947,13 +989,43 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "Spimo od 10 do 7. V šoli smo do 1. Počitek, kosilo in večerja – še 2 uri. Obšolske dejavnosti – 2 uri. Družina – še 2 uri.",
+          "text": "Recimo, da spimo od 10 do 7 – to odrežemo.",
           "new_paragraph": true
         },
         {
           "cue": null,
           "asset_name": "",
-          "text": "In ostaneta nam samo 2 uri, da se naučimo vse.",
+          "text": "V šoli smo do 1 – tudi to odrežemo.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ko pridemo domov, se hočemo malo spočiti – še ena ura stran.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Zajtrk, kosilo in večerja – še ena ura.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Obšolske dejavnosti – dve uri.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Čas z družino – še dve uri.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "In ostane nam samo tole – 2 uri, da se naučimo vse.",
           "new_paragraph": true
         },
         {
