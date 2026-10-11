@@ -29,10 +29,11 @@ import time
 from urllib.parse import urlsplit
 
 from . import align, audit, llm, localize, notion, reword
-from .brand import FACTS, OURS, SOURCE, TOPIC, links_for
+from .brand import FACTS, NO_DIRECTIONS, OURS, SOURCE, TOPIC, links_for
 from .markets import PRIMARY, TEXT, of
 
-AUDIT_VERSION = 'group-2026-10-10.localized-sl'
+AUDIT_VERSION = 'group-2026-10-11.no-directions'
+REF_RULES = 'no-directions-2026-10-11'  # scripts without stage directions (brand.NO_DIRECTIONS)
 REFERENCES = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'format_references.json')
 DIMENSIONS = ('format_consistency', 'script_matches_example', 'faithful_translation', 'features_claims',
               'directions_match')
@@ -55,8 +56,9 @@ def ensure_reference(fmt, page_of, cfg):
     from its source video. Returns the reference or None (then the group stays unverified and is tried again)."""
     from . import state
     ref = reference(fmt['id'])
-    if ref and (ref.get('brief') or '') == (fmt.get('brief') or '') or ref and 'generated' not in ref:
-        return ref  # a generated definition is rebuilt when the format's campaign note changed (reviewed ones never)
+    if ref and ('generated' not in ref or ((ref.get('brief') or '') == (fmt.get('brief') or '')
+                                           and ref.get('rules') == REF_RULES)):
+        return ref  # a generated definition is rebuilt when the campaign note or the script rules changed (reviewed: never)
     url = fmt.get('source_video') or (fmt.get('revived') or {}).get('because')
     pid = page_of(fmt, PRIMARY)
     if not url and pid:
@@ -75,6 +77,7 @@ VIDEO ({url}):
 
 {FACTS}
 {('NOTE FROM THE CAMPAIGN TEAM for this format (the reference must follow it): ' + fmt['brief']) if fmt.get('brief') else ''}
+{NO_DIRECTIONS} (So the reference never requires stage directions in the script.)
 
 Write the format's reference definition that every country's page must follow. Return JSON {{"title_en": "", "hook": "",
 "premise": "", "beats": ["<beat 1>", "..."], "filming": "<length, shots, demo sequence>",
@@ -91,7 +94,7 @@ and numbers stay; never list them as not allowed.)"""
     if not (isinstance(r.get('beats'), list) and r['beats'] and r.get('hook') and isinstance(r.get('product'), dict)):
         return None
     ref = {**r, 'canonical_source': vid, 'accepted_sources': [vid], 'rejected_sources': {}, 'source_urls': {vid: url},
-           'generated': int(time.time()), **({'brief': fmt['brief']} if fmt.get('brief') else {})}
+           'generated': int(time.time()), 'rules': REF_RULES, **({'brief': fmt['brief']} if fmt.get('brief') else {})}
     with state.LOCK:
         generated = state.load('format_references.json', {})
         generated[fmt['id']] = ref
@@ -253,7 +256,7 @@ def judge(fmt, ref, evidence, model):
                       f"EXAMPLE VIDEO {ev['source_id']}:\n{ev['example'][:3500]}\n\n"
                       f"OUR SCRIPT (spoken/on-screen text only):\n{ev['script'][:3500]}\n\n"
                       f"THE SAME SCRIPT WITH ITS FILMING CUES ([CUE: ...] = a link marker telling the creator to show "
-                      f"the app/asset there, NOT spoken; (...) = stage direction):\n{ev.get('marked', '')[:4000]}\n\n"
+                      f"the app/asset there, NOT spoken):\n{ev.get('marked', '')[:4000]}\n\n"
                       f"OUR FILMING DIRECTIONS:\n{ev['directions'][:4000]}\n\n"
                       f"OUR ON-SCREEN TITLE: {ev.get('title', '')}")
     prompt = f"""REFERENCE DEFINITION of format {fmt['id']} ("{fmt.get('title', '')}"):
@@ -261,6 +264,8 @@ def judge(fmt, ref, evidence, model):
 
 {FACTS}
 {('NOTE FROM THE CAMPAIGN TEAM for this format (pages that follow it are right): ' + fmt['brief']) if fmt.get('brief') else ''}
+
+{NO_DIRECTIONS}
 
 Below are the countries' pages of this format. Compare them TOGETHER against the reference and against each
 other. Be strict:

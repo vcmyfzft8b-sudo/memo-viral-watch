@@ -11,7 +11,7 @@ import json
 import re
 
 from . import llm, notion, state
-from .brand import CATEGORY, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, says_source
+from .brand import CATEGORY, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, says_source
 from .markets import TEXT, of
 
 TOKEN = re.compile(r'⟦(\d+)⟧(.*?)⟦/\1⟧', re.S)
@@ -96,7 +96,8 @@ zero times if the original never names it -, and an app feature {OURS} does not 
 Rules:
 - Keep every token ⟦n⟧...⟦/n⟧ exactly as it is (same number, same text inside) and in the same order and paragraph.
 - Keep **bold** lines bold (they are on-screen texts). No backticks. Never mention {SOURCE}.
-- Linked cue labels are filming directions, not spoken words.
+- Linked cue labels mark where the app/material is shown, they are not spoken words.
+- {NO_DIRECTIONS}
 - {T.get('localize') or 'Names of universities, schools, cities, shops etc. stay exactly as in the original.'}
 
 {('A reviewer found these problems - fix them: ' + feedback) if feedback else ''}
@@ -311,7 +312,7 @@ def fix_app_material_cues(page_id, link):
 
 def fix_asset_cues(page_id):
     """Repairs script cues: decorated more than once ('📎 📎 📎 … – vidi materijale – vidi materijale'), or pointing to
-    the resources section for something that is not there (then it is a plain stage direction '(eDnevnik)')."""
+    the resources section for something that is not there (then the cue is removed)."""
     suffixes = {l: TEXT[l]['asset_cue'].split('{name}')[1].strip(' )') for l in TEXT}
     resources = None
     fixed = 0
@@ -330,12 +331,12 @@ def fix_asset_cues(page_id):
                 if resources is None:
                     resources = resources_text(page_id)
                 if not in_resources(name, resources):
-                    clean = f'({name})'
+                    clean = ''  # nothing in the resources to point to -> no cue (scripts have no stage directions)
                 elif m.group(1).count('📎') > 1:
                     clean = TEXT[lang]['asset_cue'].format(name=name).strip()
                 else:
                     continue
-                t = t.replace(m.group(0), clean)
+                t = re.sub(r' {2,}', ' ', t.replace(m.group(0), clean))
                 changed = True
             x['text']['content'] = t
         if changed:
@@ -359,3 +360,48 @@ def spoken_text(blocks):
             continue
         out.append(t)
     return '\n'.join(out)
+
+
+def directions_left(page_id):
+    """Bracketed stage directions / acting tips still in the script (not the app link cue, not a 📎 material cue)."""
+    found = []
+    for b in script_blocks(page_id):
+        for x in b[b['type']].get('rich_text', []):
+            if x.get('type') == 'text' and not ((x.get('text') or {}).get('link') or {}).get('url'):
+                found += [m.group(0).strip() for m in notion.DIRECTION_RE.finditer(x.get('plain_text', ''))]
+    return found
+
+
+def strip_directions(page_id):
+    """Removes bracketed stage directions / acting tips from the script (user's decision, 11 Oct 2026): only the app
+    link cues and 📎 material cues stay in brackets. The old text is backed up first. Returns how many paragraphs changed."""
+    changed = 0
+    for b in script_blocks(page_id):
+        rich, out, touched = b[b['type']].get('rich_text', []), [], False
+        for x in rich:
+            if x.get('type') == 'text' and not ((x.get('text') or {}).get('link') or {}).get('url'):
+                t = x.get('plain_text', '')
+                new = re.sub(r' {2,}', ' ', notion.DIRECTION_RE.sub('', t))
+                if new != t:
+                    touched = True
+                if new:
+                    out.append({'type': 'text', 'text': {'content': new}, 'annotations': x.get('annotations', {})})
+            elif x.get('type') == 'text':
+                out.append({'type': 'text', 'text': {'content': x['plain_text'], 'link': x['text']['link']},
+                            'annotations': x.get('annotations', {})})
+            else:
+                out.append({k: v for k, v in x.items() if k in ('type', 'mention', 'equation', 'annotations')})
+        if not touched:
+            continue
+        with state.LOCK:
+            backup = state.load('script_backup.json', {})
+            backup.setdefault('directions:' + b['id'], rich)
+            state.save('script_backup.json', backup)
+        if out and out[0]['type'] == 'text':
+            out[0]['text']['content'] = out[0]['text']['content'].lstrip()
+        if not ''.join(o.get('text', {}).get('content', '') for o in out).strip():
+            notion.api('DELETE', f"/blocks/{b['id']}")  # the paragraph was only a direction
+        else:
+            notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': out}})
+        changed += 1
+    return changed

@@ -6,57 +6,57 @@
       "voiceover": true,
       "script": [
         {
-          "cue": "direction",
-          "asset_name": "Na laptopu otvori memoai.eu/ugc/oral-quiz, izaberi svoj jezik i pritisni play. Snimaš svoje lice izbliza selfie kamerom, naslov je na ekranu",
-          "text": "(Memo AI govori) Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?",
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Memo AI: Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "ti, samouvjereno",
-          "text": "Pa naravno, samo uz pristanak.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Pa naravno, samo uz pristanak.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "Memo AI govori",
-          "text": "Pacijentica je bez svijesti. Ne može dati pristanak.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Pacijentica je bez svijesti. Ne može dati pristanak.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "ti, zbunjeno",
-          "text": "Oh.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Oh.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "Memo AI govori",
-          "text": "Onda joj DICK moraš dati svejedno.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Onda joj DICK moraš dati svejedno.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "ti, šokirano, ruka na usta",
-          "text": "Bez pristanka?",
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Bez pristanka?",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "Memo AI govori",
-          "text": "Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "ti, s olakšanjem",
-          "text": "Oh.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Oh.",
           "new_paragraph": true
         },
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "(okreneš kameru na laptop, Memo AI govori) Moraš ih dati tim redoslijedom, i to ovako.",
+          "text": "Memo AI: Moraš ih dati tim redoslijedom, i to ovako.",
           "new_paragraph": true
         }
       ],
@@ -69,57 +69,57 @@
       "voiceover": true,
       "script": [
         {
-          "cue": "direction",
-          "asset_name": "Na laptopu odpri memoai.eu/ugc/oral-quiz, izberi slovenščino in pritisni play. Snemaš svoj obraz v selfie close-upu, naslov je na ekranu",
-          "text": "(Memo AI govori) Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?",
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Memo AI: Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "ti, samozavestno",
-          "text": "Seveda samo s privolitvijo.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Seveda samo s privolitvijo.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "Memo AI govori",
-          "text": "Pacientka je nezavestna. Privolitve ne more dati.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Pacientka je nezavestna. Privolitve ne more dati.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "ti, zmedeno",
-          "text": "Oh.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Oh.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "Memo AI govori",
-          "text": "Potem ji moraš DICK vseeno dati.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Potem ji moraš DICK vseeno dati.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "ti, šokirano, roka na usta",
-          "text": "Brez privolitve?",
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Brez privolitve?",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "Memo AI govori",
-          "text": "Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Memo AI: Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.",
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "ti, z olajšanjem",
-          "text": "Oh.",
+          "cue": null,
+          "asset_name": "",
+          "text": "Ti: Oh.",
           "new_paragraph": true
         },
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "(obrneš kamero na laptop, Memo AI govori) Dati jih moraš v tem vrstnem redu, in sicer takole.",
+          "text": "Memo AI: Dati jih moraš v tem vrstnem redu, in sicer takole.",
           "new_paragraph": true
         }
       ],
@@ -130,8 +130,8 @@
       "voiceover": true,
       "script": [
         {
-          "cue": "direction",
-          "asset_name": "GRWM pred ogledalom: ličiš se in govoriš v kamero, naslov 'Faze srednje šole, ki jih MORAŠ skipat ⚠️' je na ekranu ves video",
+          "cue": null,
+          "asset_name": "",
           "text": "To so faze srednje šole, ki jih morate skipat, tako, nujno.",
           "new_paragraph": true
         },
@@ -160,8 +160,8 @@
           "new_paragraph": true
         },
         {
-          "cue": "direction",
-          "asset_name": "končaš make-up in se nasmeješ v kamero",
+          "cue": null,
+          "asset_name": "",
           "text": "Tako da ja, to so faze srednje šole, ki jih rabite nujno skipat.",
           "new_paragraph": true
         }

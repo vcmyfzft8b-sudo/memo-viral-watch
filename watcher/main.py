@@ -1285,6 +1285,7 @@ def main():
     ap.add_argument('--faithful-rewrite', action='store_true', help='once: every page script becomes the original transcribed/translated almost 1:1 (only the app swapped)')
     ap.add_argument('--relocalize', action='store_true', help='once: localized markets (Slovenia) get their scripts rewritten with real local names; the other notes get the "swap the names" line')
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
+    ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
     ap.add_argument('--reopen', default='', help='format id: an archived format gets fresh quality-check tries (e.g. after its script was approved by hand)')
     ap.add_argument('--renote', action='store_true', help='every page (live, waiting, archived): the note under the inspiration video gets the current text')
     ap.add_argument('--fix-cues', action='store_true', help="every page: the app shown as a '📎 material' cue becomes the app link cue")
@@ -1595,6 +1596,22 @@ def main():
         for f in fmts:
             if f.get('status') in ('pending', 'active') or (f.get('archived_reason') or '').startswith('did not pass'):
                 print(f"gate-now: {f.get('status'):8} | {f['title']}", flush=True)
+        return
+    if a.strip_directions:
+        cfg, n = load_config(), 0
+        for f in load_formats():
+            for key, m in cfg['markets'].items():
+                pid = page_of(f, key)
+                if not pid or align.approved_script(f['id'], m['lang']):
+                    continue
+                try:
+                    k = reword.strip_directions(pid)
+                    n += k
+                    if k:
+                        print(f"{f['title'][:45]} | {key} | {k} paragraphs cleaned", flush=True)
+                except Exception as e:
+                    print('strip failed:', f['title'], key, str(e)[:150])
+        print(f'strip-directions: {n} paragraphs cleaned')
         return
     if a.reopen:
         fmts = load_formats()

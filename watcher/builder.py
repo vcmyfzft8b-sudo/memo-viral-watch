@@ -3,7 +3,7 @@ import os
 import re
 
 from . import llm
-from .brand import CATEGORY, CUE, FACTS, OURS, OURS_SITE, SOURCE, SOURCE_DESC, says_source
+from .brand import CATEGORY, CUE, FACTS, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, SOURCE_DESC, says_source
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 EXAMPLES = os.path.join(HERE, '..', 'registry', 'examples')
@@ -25,14 +25,13 @@ RULES = """RULES
   app ("this app here"), only show it too. Language: {style}. If the original is already in {lang}, the script is its
   transcript with only those changes (and the spelling rules of the language).
 - {localize}
-- Copy the STYLE and STRUCTURE of the example pages below (layout, cues, directions), never their content.
+- Copy the STYLE and STRUCTURE of the example pages below (layout, cues), never their content.
+- {no_directions}
 - The word "{source}" (or "Astra") must not appear anywhere in your output.
-- Every moment where the original video SHOWS the study app on screen gets cue "{cue}". Plain stage directions
-  (e.g. surprised reaction, music, showing a notebook) use cue "direction" with the direction as text in asset_name.
-  Otherwise cue null. Put the cue on the segment where that screen starts.
+- Every moment where the original video SHOWS the study app on screen gets cue "{cue}". Otherwise cue null. Put the
+  cue on the segment where that screen starts. No stage directions, no brackets in the text.
 - Notebooks, textbooks, worksheets and the creator's own study material are NEVER assets: creators show their own.
-- Public websites/apps the creator can simply open and film are NOT assets: use cue "direction" with a short
-  direction.
+- Public websites/apps the creator can simply open and film are NOT assets: cue null (the example video shows them).
 - Only things a creator cannot make or open themselves count as assets (cue "asset", e.g. a recording of a full
   class group chat).
 - Address creators neutrally (informal "you"), never with a gendered word for "creator".
@@ -52,7 +51,7 @@ COUNTRY = {'sh': 'the whole region (Croatia, Bosnia and Herzegovina, Serbia, Mon
 
 SCHEMA = """Return JSON:
 {"page_title": "...", "icon": "<one emoji>", "title_hook": "...", "voiceover": true,
- "script": [{"cue": "%s|asset|direction|null", "asset_name": "", "text": "...", "new_paragraph": false}],
+ "script": [{"cue": "%s|asset|null", "asset_name": "", "text": "...", "new_paragraph": false}],
  "visual_hook_first": "...", "return_to_camera": true, "extra_hook_lines": [],
  "has_scores": false, "assets_needed": [{"name": "...", "description": "<what it must show>"}],
  "registry_description": "<one English sentence describing the format, for matching future videos>",
@@ -71,7 +70,7 @@ def build_spec(video, transcript, frames, model, lang=PRIMARY, feedback='', brie
     """video: tiktok.video_detail dict; transcript: soniox result; frames: [(seconds, path)]; lang: a markets.TEXT key."""
     T = TEXT[lang]
     rules = RULES.format(lang=T['lang_name'], style=T['style'], country=COUNTRY[lang], ours=OURS, source=SOURCE,
-                         site=OURS_SITE, cue=CUE, localize=T.get('localize') or
+                         site=OURS_SITE, cue=CUE, no_directions=NO_DIRECTIONS, localize=T.get('localize') or
                          'Names of universities, schools, cities, shops etc. stay exactly as in the original.')
     timed = '\n'.join(f"[{s['start']:.1f}-{s['end']:.1f}s] {s['text']}" for s in transcript.get('segments', [])) or '(no speech)'
     content = [{'type': 'text', 'text': f"""Example pages in our layout (follow this style and structure, write in {T['lang_name']}):
@@ -97,8 +96,8 @@ seconds (red). Use them to see the visual hook, what is shown on screen and when
         content.append(llm.image_part(path))
     spec = llm.chat_json(model, SYSTEM, content, max_tokens=8000, temperature=0.4)
     for seg in spec.get('script', []):
-        if seg.get('cue') in ('null', 'None', ''):
-            seg['cue'] = None
+        if seg.get('cue') in ('null', 'None', '', 'direction'):
+            seg['cue'], seg['asset_name'] = None, '' if seg.get('cue') == 'direction' else seg.get('asset_name', '')
         if seg.get('cue') == 'asset' and re.search(r'memo\s*ai', seg.get('asset_name') or '', re.I):
             seg['cue'], seg['asset_name'] = CUE, ''  # the app itself is never a "material" - it is the app link cue
     return spec

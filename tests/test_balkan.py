@@ -196,3 +196,28 @@ def test_hand_format_options_follow_the_registry():
             mock.patch.object(main, 'hand_options', side_effect=lambda vid: {'brief': 'new', 'only_markets': ['sl']} if vid == '42' else {}):
         f = main.load_formats()[0]
     assert f['brief'] == 'new' and f['only_markets'] == ['sl']
+
+
+def test_scripts_have_no_stage_directions_only_link_and_material_cues():
+    from watcher import notion, reword
+    spec = {'voiceover': True, 'script': [
+        {'cue': 'direction', 'asset_name': 'smeješ se', 'text': '(pokažeš v kamero) Prvi stavek.', 'new_paragraph': True},
+        {'cue': 'memo', 'asset_name': '', 'text': 'Tole je Memo AI.', 'new_paragraph': True},
+        {'cue': 'asset', 'asset_name': 'Posnetek', 'text': 'Glej to.', 'new_paragraph': False}]}
+    paras = [''.join(x['text']['content'] for x in b['paragraph']['rich_text'])
+             for b in notion.script_paragraphs(spec, {'memo': 'https://memoai.eu/creator'}, 'sl')]
+    assert paras == ['Prvi stavek. ', '(Memo AI · memoai.eu/creator) Tole je Memo AI. (📎 Posnetek – glej gradivo) Glej to. ']
+
+    def blk(*parts):
+        rich = [{'type': 'text', 'plain_text': t, 'text': {'content': t, 'link': {'url': u} if u else None}} for t, u in parts]
+        return {'id': 'b', 'type': 'paragraph', 'paragraph': {'rich_text': rich}}
+    page = [blk(('(nasmeh v kamero) Živjo. (', None), ('Memo AI · memoai.eu/creator', 'https://memoai.eu/creator'),
+                (') Tole je app. (📎 Posnetek – glej gradivo) Glej.', None))]
+    sent = []
+    with mock.patch.object(reword, 'script_blocks', lambda pid: page), \
+            mock.patch.object(notion, 'api', lambda method, path, body=None: sent.append(body)), \
+            mock.patch.object(reword.state, 'save'), mock.patch.object(reword.state, 'load', return_value={}):
+        assert reword.directions_left('p') == ['(nasmeh v kamero)']
+        assert reword.strip_directions('p') == 1
+    text = ''.join(x['text']['content'] for x in sent[0]['paragraph']['rich_text'])
+    assert text == 'Živjo. (Memo AI · memoai.eu/creator) Tole je app. (📎 Posnetek – glej gradivo) Glej.'

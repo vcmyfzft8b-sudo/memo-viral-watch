@@ -29,6 +29,11 @@ Claude, every 3 days) and turns their viral formats into Memo AI creator pages i
   discounts) into REAL Slovenian ones with correct names (markets.TEXT['sl']['localize']); 🇧🇦🇭🇷🇷🇸🇲🇪 Balkan
   scripts keep the original's names and the note under the video says creators may swap them for their own
   country's (TEXT['sh']['local_note']).
+- No stage directions (user's decision, 11 Oct 2026): a script holds only what is said (or the on-screen texts of a
+  silent video). The only brackets are the app link cue "(Memo AI · memoai.eu/…)" and 📎 material cues. Filming, acting
+  and editing come from the example video (the note says: copy it as closely as possible) and the visual hook
+  section (`brand.NO_DIRECTIONS` is in every writer/checker prompt; `mode=strip-directions` cleans pages; `verify`
+  flags leftovers). Dialogue formats label speakers ("Memo AI:" / "Ti:").
 - Visual hook section = ONE sentence (two at most): "Napravi isti vizuelni hook kao u videu za inspiraciju: …" (what
   the example does in its first seconds) + one line "Želiš drugi vizuelni hook? Izaberi jedan iz Visual Hook Lab."
   Nothing else (`reword.fix_directions` enforces it, `verify` checks it).

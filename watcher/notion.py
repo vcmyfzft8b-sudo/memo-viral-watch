@@ -157,6 +157,14 @@ def asset_label(name):
         t = new
 
 
+DIRECTION_RE = re.compile(r'\((?!\s*📎)[^()]*\)\s*')
+
+
+def strip_directions(text):
+    """Script text without bracketed stage directions / acting tips (the 📎 material cues stay)."""
+    return re.sub(r'\s{2,}', ' ', DIRECTION_RE.sub('', text or '')).strip()
+
+
 def script_paragraphs(spec, links, lang=PRIMARY):
     """The script section's paragraphs (cue links in front of the line where the app/asset appears)."""
     T = TEXT[lang]
@@ -173,9 +181,11 @@ def script_paragraphs(spec, links, lang=PRIMARY):
             parts += [rt('('), rt(label, link=url), rt(') ')]
         elif cue == 'asset':
             parts.append(rt(T['asset_cue'].format(name=asset_label(seg.get('asset_name')) or '📎')))
-        elif cue == 'direction' and seg.get('asset_name'):
-            parts.append(rt(f"({re.sub(r'[()]', '', seg['asset_name']).strip()}) "))  # brackets inside would cut it
-        parts.append(rt(seg['text'].strip() + ' ', bold=silent))
+        # cue 'direction' (stage directions) is never rendered: scripts have no acting tips (brand.NO_DIRECTIONS)
+        text = strip_directions(seg.get('text'))
+        if not text and not parts:
+            continue
+        parts.append(rt(text + ' ', bold=silent))
         if silent:
             paragraphs.append(parts)
             continue

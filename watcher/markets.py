@@ -35,21 +35,21 @@ TEXT = {
         # language" apart (audit._note_is_same) - keep those starts as they are.
         'inspo_note': [
             '**Važno:** Snimi svoj video po scenariju ispod. Video za inspiraciju je od drugog brenda i nije video koji '
-            'trebaš napraviti. Od njega kopiraj samo ukupnu atmosferu (vibe), uglove kamere, način snimanja, montažu i '
-            'trenutke u kojima se pokazuje aplikacija (demo) – za to služe videi za inspiraciju.',
+            'trebaš napraviti. Od njega što vjernije kopiraj ukupnu atmosferu (vibe), uglove kamere, način snimanja, montažu '
+            'i trenutke u kojima se pokazuje aplikacija (demo) – za to služe videi za inspiraciju.',
             f'U videu se koristi druga aplikacija. Napravi sve isto, samo s aplikacijom {OURS}: otvori {OURS} u trenucima '
             'kad se u videu otvara ta aplikacija i pokaži ga na isti način. Ta aplikacija se u tvom videu nigdje ne smije '
             'vidjeti ni čuti.'],
         'inspo_note_same': '**Važno:** Video za inspiraciju je na našem jeziku i pokazuje upravo ovaj format, ali je od '
-                           'drugog brenda i nije video koji trebaš napraviti. Od njega kopiraj samo ukupnu atmosferu (vibe), '
+                           'drugog brenda i nije video koji trebaš napraviti. Od njega što vjernije kopiraj ukupnu atmosferu (vibe), '
                            'uglove kamere, način snimanja, montažu i trenutke u kojima se pokazuje aplikacija (demo) – za to '
                            'služe videi za inspiraciju. Izgovori naš scenarij ispod, ne tekst iz videa.',
         # inspiration video that is already a Memo AI video (our own creators' videos, added by hand)
         'inspo_note_own': f'**Važno:** Snimi svoj video po scenariju ispod. Video za inspiraciju je već {OURS} video. Od '
-                          'njega kopiraj ukupnu atmosferu (vibe), uglove kamere, način snimanja, montažu i trenutke u '
+                          'njega što vjernije kopiraj ukupnu atmosferu (vibe), uglove kamere, način snimanja, montažu i trenutke u '
                           'kojima se pokazuje aplikacija (demo).',
         'inspo_note_own_same': f'**Važno:** Video za inspiraciju je na našem jeziku, pokazuje upravo ovaj format i već je '
-                               f'{OURS} video. Uzmi ga kao uzor za ukupnu atmosferu (vibe), uglove kamere, način snimanja, '
+                               f'{OURS} video. Kopiraj ga što vjernije: ukupnu atmosferu (vibe), uglove kamere, način snimanja, '
                                'montažu i trenutke u kojima se pokazuje aplikacija (demo). Izgovori naš scenarij ispod.',
         'title_h': 'NASLOV', 'script_h': '💬SCENARIJ', 'hook_h': '🎬 VIZUELNI HOOK', 'res_h': 'MATERIJALI',
         'sub_voice': 'Automatski titlovi', 'sub_silent': 'Muzika iz biblioteke platforme, bez glasa',
@@ -111,20 +111,20 @@ TEXT = {
         'video_heading': 'Video za navdih', 'source': 'Original na TikToku',
         'inspo_note': [
             '**Pomembno:** Posnemi svoj video po scenariju spodaj. Video za navdih je od druge znamke in ni video, ki ga '
-            'moraš posneti. Od njega kopiraj le splošno vzdušje (vibe), kote kamere, način snemanja, montažo in trenutke, '
+            'moraš posneti. Od njega čim bolj natančno kopiraj splošno vzdušje (vibe), kote kamere, način snemanja, montažo in trenutke, '
             'ko se pokaže aplikacija (demo) – za to so videi za navdih.',
             f'V videu je uporabljena druga aplikacija. Naredi vse enako, le z aplikacijo {OURS}: odpri {OURS} v trenutkih, '
             'ko se v videu odpre ta aplikacija, in ga pokaži na enak način. Te aplikacije se v tvojem videu ne sme nikjer '
             'videti ali slišati.'],
         'inspo_note_same': '**Pomembno:** Video za navdih je v slovenščini in prikazuje točno ta format, ampak je od druge '
-                           'znamke in ni video, ki ga moraš posneti. Od njega kopiraj le splošno vzdušje (vibe), kote '
+                           'znamke in ni video, ki ga moraš posneti. Od njega čim bolj natančno kopiraj splošno vzdušje (vibe), kote '
                            'kamere, način snemanja, montažo in trenutke, ko se pokaže aplikacija (demo) – za to so videi za '
                            'navdih. Povej naš scenarij spodaj, ne besedila iz videa.',
         'inspo_note_own': f'**Pomembno:** Posnemi svoj video po scenariju spodaj. Video za navdih je že {OURS} video. Od '
-                          'njega kopiraj splošno vzdušje (vibe), kote kamere, način snemanja, montažo in trenutke, ko se '
+                          'njega čim bolj natančno kopiraj splošno vzdušje (vibe), kote kamere, način snemanja, montažo in trenutke, ko se '
                           'pokaže aplikacija (demo).',
         'inspo_note_own_same': f'**Pomembno:** Video za navdih je v slovenščini, prikazuje točno ta format in je že {OURS} '
-                               'video. Vzemi ga za zgled za splošno vzdušje (vibe), kote kamere, način snemanja, montažo in '
+                               'video. Čim bolj natančno ga posnemi: splošno vzdušje (vibe), kote kamere, način snemanja, montažo in '
                                'trenutke, ko se pokaže aplikacija (demo). Povej naš scenarij spodaj.',
         'title_h': 'NASLOV', 'script_h': '💬SCENARIJ', 'hook_h': '🎬 VIZUALNI HOOK', 'res_h': 'GRADIVO',
         'sub_voice': 'Samodejni podnapisi', 'sub_silent': 'Glasba iz knjižnice platforme, brez glasu',

@@ -15,7 +15,7 @@ import json
 import re
 
 from . import llm, localize, notion, reword, state
-from .brand import CUE, FACTS, OURS, OURS_SITE, SOURCE, SOURCE_RE, count_app, count_ours, count_source, links_for
+from .brand import CUE, FACTS, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, SOURCE_RE, count_app, count_ours, count_source, links_for
 from .markets import TEXT
 
 SOURCE_MENTION = SOURCE_RE  # spoken/written mentions of the watched app (incl. speech-to-text mishearings)
@@ -126,10 +126,9 @@ one - {T['style']}:
 5. Keep the original's on-screen texts and call to action exactly where they are.
 6. {T.get('localize') or 'Names of universities, schools, cities, shops etc. stay exactly as in the original.'}
 7. Cues: put cue "{CUE}" on the sentence where the original shows the app/site, "asset" (with asset_name exactly as
-   in our current script) where it shows something like a screen recording, "direction" (asset_name = short stage
-   direction) for important acting moments, else null.
+   in our current script) where it shows something like a screen recording, else null. {NO_DIRECTIONS}
 Return JSON {{"source_mentions_in_original": <number>, "voiceover": {str(voiceover).lower()},
-"script": [{{"cue": "{CUE}|asset|direction|null", "asset_name": "", "text": "<one sentence>",
+"script": [{{"cue": "{CUE}|asset|null", "asset_name": "", "text": "<one sentence>",
 "new_paragraph": false}}]}}"""
     why = feedback
     for attempt in range(5):
@@ -163,13 +162,12 @@ def _write(fmt, page_id, lang, cfg, links, spec, info):
             break
     resources = None if locked else reword.resources_text(page_id)  # approved scripts are rendered exactly as approved
     for seg in spec['script']:
-        if seg.get('cue') in ('null', 'None', ''):
+        if seg.get('cue') in ('null', 'None', '', 'direction'):  # no stage directions (brand.NO_DIRECTIONS)
             seg['cue'] = None
         if seg.get('cue') == 'asset' and count_ours(seg.get('asset_name') or ''):
             seg['cue'], seg['asset_name'] = CUE, ''  # the app itself is never a "material" - it is the app link cue
         if resources is not None and seg.get('cue') == 'asset' and not reword.in_resources(notion.asset_label(seg.get('asset_name')), resources):
-            seg['cue'] = 'direction'  # nothing in the resources to point to -> a plain stage direction
-            seg['asset_name'] = notion.asset_label(seg.get('asset_name'))
+            seg['cue'], seg['asset_name'] = None, ''  # nothing in the resources to point to -> no cue
     new_blocks = notion.script_paragraphs(spec, links, lang)
     with state.LOCK:
         backup = state.load('script_backup.json', {})

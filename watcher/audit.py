@@ -19,7 +19,7 @@ import re
 from urllib.parse import urlsplit
 
 from . import align, llm, localize, notion, reword, state, tiktok
-from .brand import FACTS, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, links_for, says_source
+from .brand import FACTS, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, links_for, says_source
 from .markets import TEXT, avoid_found, lang_matches, of
 
 ORIGINALS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'originals.json')
@@ -145,6 +145,7 @@ Check strictly:
    the app swapped) and follows the page's language rules ({TEXT[lang]['style']}).
 {FACTS}
 script_ok is false if the script or directions show/mention an app feature {OURS} does not have.
+{NO_DIRECTIONS}
 Return JSON {{"example_same_format": true, "script_follows_example": true, "script_faithful": true, "script_ok": true,
 "directions_ok": true, "title_ok": true, "example_language": "<language>", "example_issue": "<short, if any>",
 "title_suggestion": "<if title_ok is false: a fixed title in the same style, else empty>",

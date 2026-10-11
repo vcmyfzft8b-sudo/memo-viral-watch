@@ -52,6 +52,10 @@ def check_page(pid, T, links, lang=None, own=False):
             section.append(b)
     if len(section) != 2 or not _plain(section[0]).startswith(T['hook_start'].strip()) or 'Visual Hook Lab' not in _plain(section[1]):
         out.append(f'visual hook section is not "one sentence + Visual Hook Lab line" ({len(section)} lines)')
+    from . import reword
+    left = reword.directions_left(pid)
+    if left:
+        out.append(f'stage directions in the script: {left[0][:60]}' + (f' (+{len(left) - 1})' if len(left) > 1 else ''))
     note = next((_plain(b) for b in blocks if b['type'] == 'callout' and '⚠' in str(b['callout'].get('icon'))), '')
     if lang and note.strip() not in ['\n'.join(notion.inspo_note(lang, same, own)).replace('**', '').strip() for same in (False, True)]:
         out.append('note under the inspiration video is not the current text')

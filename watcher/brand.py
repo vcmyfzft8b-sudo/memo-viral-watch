@@ -47,6 +47,13 @@ word for word.""" + (
     "Astra AI - Memo AI replaces it at the same spots and as often, and it must never appear." if OTHER_APPS else '')
 
 
+# User's decision (11 Oct 2026): a script has NO stage directions / acting tips in brackets.
+NO_DIRECTIONS = ("Scripts have NO stage directions or acting/filming tips in brackets (by design): only the spoken words "
+                 "(or the on-screen texts of a silent video) plus the link cues where the app or a material is shown. How "
+                 "to film, act and edit comes from the example video, which creators copy as closely as possible, and from "
+                 "the visual hook section. Never ask for stage directions and never fail a page because it has none.")
+
+
 def says_source(text):
     return bool(SOURCE_RE.search(text or ''))
 
