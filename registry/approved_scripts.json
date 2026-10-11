@@ -299,6 +299,44 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261010162026": {
+      "example": "https://www.tiktok.com/@studywithandja/video/7693614549269810450",
+      "voiceover": true,
+      "title": "SESTRA ME JE ZAKLJUČALA U STANU!!",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: počni s crvenom posudom u rukama, gledaj pravo u kameru i pričaj, na ekranu je naslov, pa izbliza pokaži ključeve zaleđene u ledu u toj posudi.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Sestra mi je zaledila ključeve od stana, jer ništa ne učim, a ispitni rok se bliži. Kad se ovo malo odledi, otključaću svoj stan.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ali umjesto knjige, uzimam ovo.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Ubacim PDF-ove i PowerPoint prezentacije sa predavanja, a mogu i snimiti predavanje i taj audio snimak ubaciti u Memo AI – dobijem bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučim na jako jednostavan način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Muzika: ista ljubavna pjesma kao u videu za inspiraciju, tekst na ekranu: učim uz Memo AI 📚",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Moji ključevi su dovoljno istopljeni, tako da mogu da izađem iz stana. Ne znam šta bih rekla za ovaj način učenja.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -578,6 +616,50 @@
           "cue": null,
           "asset_name": "",
           "text": "Kar poglejte in v komentarje napišite, kdo bo po vašem kupil naslednje polje.",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261010162026": {
+      "example": "https://www.tiktok.com/@studywithandja/video/7693614549269810450",
+      "voiceover": true,
+      "title": "SESTRA ME JE ZAKLENILA V STANOVANJE!!",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: začni z rdečo posodo v rokah, glej naravnost v kamero in govori, na zaslonu naj bo naslov, potem pa od blizu pokaži ključe, zamrznjene v ledu v tej posodi.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Sestra mi je zamrznila ključe od stanovanja, ker se nič ne učim, izpitno obdobje pa se bliža. Ko se led malo stopi, bom lahko odklenila stanovanje.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Ampak namesto knjige vzamem tole.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Naložim PDF-je in PowerPointe s predavanj, lahko pa predavanje tudi posnamem in posnetek naložim v Memo AI – ven dobim zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučim na zelo preprost način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Glasba: ista ljubezenska pesem kot v videu za navdih, besedilo na zaslonu: učim se z Memo AI 📚",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Moji ključi so dovolj odtajani, da lahko grem ven iz stanovanja. Ne vem, kaj naj rečem na tak način učenja.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: hvaležna, ker sem ta izpit res opravila 🍀",
           "new_paragraph": true
         }
       ]
