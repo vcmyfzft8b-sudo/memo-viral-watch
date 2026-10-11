@@ -31,6 +31,9 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "only_markets": [
+   "sh"
+  ],
   "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
   "pages": {
    "sl": "3f365e84-a3c2-81fb-b984-fbf04f3851f5"
