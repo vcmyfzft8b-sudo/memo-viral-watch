@@ -251,6 +251,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
+  "materials": {
+   "sh": true,
+   "sl": true
+  },
   "page_id": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
   "pages": {
    "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
