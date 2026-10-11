@@ -242,3 +242,11 @@ def test_link_check_opens_every_kind_of_link():
         problems = linkcheck.Checker().page('P', 'page')
     assert get.call_args[0][0] == 'https://memoai.eu/creator'
     assert len(problems) == 2 and 'video/2' in problems[0] and 'trash' in problems[1]
+
+
+def test_a_formats_own_source_video_always_counts_for_it():
+    from watcher import rank
+    history = {'7': {'format': None, 'judged': True}, '8': {'format': 'B'}}
+    rank.pin_sources(history, [{'id': 'A', 'source_video': 'https://www.tiktok.com/@x/video/7'},
+                               {'id': 'C', 'source_video': 'https://www.tiktok.com/@x/video/8'}])
+    assert history['7']['format'] == 'A' and history['8']['format'] == 'B'

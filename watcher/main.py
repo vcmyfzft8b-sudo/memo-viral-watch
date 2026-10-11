@@ -371,6 +371,16 @@ def run(dry_run=False, only_detect=False):
         state.save('accounts.json', account_info)
         meta['last_run'] = int(now)
         state.save('meta.json', meta)
+    # 7. older viral videos (up to 30 days) no run judged yet - e.g. of a creator followed later, outside the 7-day watch
+    #    window: judged like any viral video (known format -> counts; new -> built), a few per run
+    if not dry_run and not only_detect:
+        late = [k for k, v in history.items() if v.get('views', 0) >= cfg['thresholds']['viral_views']
+                and not v.get('judged') and now - v.get('created', 0) <= 30 * 86400]
+        if late:
+            try:
+                bootstrap(2)
+            except Exception as e:
+                print('older viral videos failed:', str(e)[:200])
     print('actions:', json.dumps(actions, ensure_ascii=False))
 
 

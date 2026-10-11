@@ -11,6 +11,7 @@
    median). A format that reliably gets our creators 2x their usual moves towards x2; with only a few videos of ours
    the factor stays close to 1 (Astra AI decides), and a format that keeps flopping for us sinks.
 """
+import re
 import time
 
 from .markets import PRIMARY, fkey
@@ -99,8 +100,19 @@ def own_stats(formats, cfg=None):
                      viral_views=(cfg or {}).get('thresholds', {}).get('viral_views', 100_000))
 
 
+def pin_sources(history, formats):
+    """A format's own source video always counts for it (an unassigned one is assigned; never taken from another
+    format). Without this a viral original that a later check left without a format would not count in the ranking."""
+    for f in formats:
+        m = re.search(r'/video/(\d+)', f.get('source_video') or '')
+        v = history.get(m.group(1)) if m else None
+        if v is not None and not v.get('format'):
+            v['format'], v['judged'] = f['id'], True
+
+
 def order(history, formats, cfg, m=PRIMARY, local=()):
     from . import hot
+    pin_sources(history, formats)
     o = own_stats(formats, cfg)
     s = scores(history, formats, cfg, m, local, o)
     fo = form(history, formats, cfg, o)
