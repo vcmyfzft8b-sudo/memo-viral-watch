@@ -267,6 +267,38 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261009210824": {
+      "example": "https://www.tiktok.com/@lern.mit.domi/video/7692061360221457686",
+      "voiceover": true,
+      "title": "Prodajem mjesto na laptopu za reklamu 🤑",
+      "hook": "Napravi isti vizuelni hook kao u videu za inspiraciju: drži zatvoren laptop pred kamerom, poklopac je isprekidanim linijama podijeljen na polja sa cijenama (5 €, 10 €, 20 €, 50 €), jedno polje je jasno označeno kao prodano, i pričaj pravo u kameru.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Prodajem mjesto na poleđini svog MacBooka za reklame i već imam svog prvog kupca. Ovdje vidite puno različitih cijena, a baš ovo polje je kupljeno. Sad ću to probati skinuti, nadam se da će stvarno otići. Pa, rekla bih da je ovo dovoljno dobro.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "asset",
+          "asset_name": "Isprintan logo Memo AI",
+          "text": "A ovo polje je kupio Memo AI, odmah ću vam reći više o tome.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Memo AI je aplikacija koja pomaže studentima i učenicima u učenju: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Zato slobodno svratite tamo i napišite u komentarima ko mislite da će kupiti sljedeće mjesto.",
+          "new_paragraph": true
+        }
+      ]
     }
   },
   "sl": {
@@ -514,6 +546,38 @@
           "cue": null,
           "asset_name": "",
           "text": "Na 1. mestu pa je – kaj pa drugega – Pedagoška fakulteta, smer predšolska vzgoja. Na prvem mestu je, ker ima veliko praktičnega dela, zato se ne učiš samo klasično iz knjig.",
+          "new_paragraph": true
+        }
+      ]
+    },
+    "A20261009210824": {
+      "example": "https://www.tiktok.com/@lern.mit.domi/video/7692061360221457686",
+      "voiceover": true,
+      "title": "Prodajam prostor na prenosniku za oglase 🤑",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: pred kamero drži zaprt prenosnik, katerega pokrov je s črtkanimi črtami razdeljen na polja s cenami (5 €, 10 €, 20 €, 50 €), eno polje naj bo jasno označeno kot prodano, in govori naravnost v kamero.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Prostor na hrbtni strani svojega MacBooka prodajam za oglase in že imam prvega kupca. Tukaj vidite veliko različnih cen, točno to polje pa je bilo kupljeno. Zdaj ga bom poskusila odstraniti, upam, da res gre dol. No, rekla bi, da je to dovolj dobro.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "asset",
+          "asset_name": "Natisnjen logotip Memo AI",
+          "text": "To polje je kupil Memo AI, več vam povem čez sekundo.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Memo AI je aplikacija, ki dijakom in študentom pomaga pri učenju: vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Kar poglejte in v komentarje napišite, kdo bo po vašem kupil naslednje polje.",
           "new_paragraph": true
         }
       ]
