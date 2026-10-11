@@ -91,8 +91,11 @@ registry/export_cert.pem, to state/scripts_export.enc (repo and logs are public)
 `mode=verify` (read-only): every list (order, numbering, layout), live page (video, sections, links), held page
 (staging) and both hook labs against the state; also lists leftover staging pages (never deletes).
 
-## Status (11 Oct 2026)
-Balkan list 14 formats, Slovenian list 18 (4 Slovenian-only from our own Memo AI creators), verify clean. Approved
-(locked) scripts: the oral-quiz format "Nisam stvorena za sestrinstvo" (sl + sh, memoai.eu/ugc/oral-quiz) and "Faze
-srednje šole" (sl). Archived after full retries: Mozak premium, Gradivo kao sočan trač. @studywithpija's video was
-unavailable (not added). Open: Discord server logo (user). The Claude subscription is shared with the JobStep watcher.
+## Status (12 Oct 2026)
+Balkan list 14 formats, Slovenian list 16 (4 Slovenian-only from our own creators: near 1:1 transcripts). Every Balkan
+format was reworked with the user, script by script, and is locked in registry/approved_scripts.json (sh + sl):
+Memo AI comes as early as possible (~15 s, user's rule), with the app pitch "PDF/PowerPoint or recorded lecture ->
+notes, flashcards, tests, quizzes, other features", correct Slovenian (follow = "zafolovat"), the 🎥 recording rule
+(open Memo AI via the format's link, go through it and show the features, like in the example). Removed by the user:
+Gradivo kao sočan trač, Biologija (archived, never revived); Balkan only: e-dnevnik, Popusti (MEMO50 code). Slovenian
+page of "Tajne" shows Klara's Memo AI video as the example (own_brand per language). Open: Discord server logo (user).
