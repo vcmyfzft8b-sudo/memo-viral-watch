@@ -1065,11 +1065,12 @@
   "views_7d": 3465
  },
  "7690045687639100686": {
+  "bootstrap_tries": 1,
   "created": 1790478298,
-  "format": null,
+  "format": "A20261010214237",
   "handle": "nicole.lockedin",
   "hook": "",
-  "judged": false,
+  "judged": true,
   "local": false,
   "mature": true,
   "views": 1000000
@@ -3621,8 +3622,9 @@
   "views_7d": 440
  },
  "7693291236744121620": {
+  "bootstrap_tries": 1,
   "created": 1791233962,
-  "format": null,
+  "format": "A20261010161437",
   "handle": "smartishaangelisaa",
   "hook": "The 5 students we all love (class types ranking)",
   "judged": true,
