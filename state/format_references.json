@@ -1086,5 +1086,57 @@
    "7688806667072474391": "https://www.tiktok.com/@spelcaa41/video/7688806667072474391"
   },
   "title_en": "Diva, I see only straight A's for you 🔮: candlelit fortune-teller card reading"
+ },
+ "A20261012160842": {
+  "accepted_sources": [
+   "7695475255841656084"
+  ],
+  "allowed_localisation": [
+   "Spoken language and on-screen texts in the country's language (Slovenian, Croatian, Bosnian or Serbian), translated almost one-to-one, including 'TEST ZA PRIJATELJE' and the 'what a nice car' line",
+   "Which car photo is used as the background",
+   "The creator (any student-age creator), their look and their room",
+   "The subject and language of the material shown on the flashcards in the demo",
+   "Slang and wording of the pivot line, as long as the meaning stays the same",
+   "Slight timing differences (±5 s overall)",
+   "Whether the CTA is said on camera or as a voice-over on the demo"
+  ],
+  "beats": [
+   "1. HOOK (0-3 s): Talking head over the car background. On-screen 'TEST ZA PRIJATELJE😤' (localised). Spoken: if you've ever wondered whether your friends watch the videos you send them.",
+   "2. THE TRICK (3-9 s): Spoken: I swapped the background of this video for a picture of a good car, so if they reply with one of these emojis they're not watching you and they're fake friends. The on-screen texts 😍 / 🔥 / 🤩 / 'U KAKO DOBAR AUTO' (localised) and 🚗🚗🚗 appear one after another.",
+   "3. PIVOT (9-14 s): Spoken: and since we're talking about phones, why do people use their phones for the wrong things? Instead of learning and getting smarter they just dumb themselves down with games.",
+   "4. PRODUCT (about 14-15 s): Spoken: me, for example, for almost half a year now I've been going into an app called Memo AI every day and learning something new, so let me show you how I do it. Cut to a screen recording of Memo AI (memoai.eu) flipping through flashcards made from a note.",
+   "5. CTA (last 3-4 s): Back to the talking head, or a voice-over on the demo. Spoken: write in the comments what your friends replied and whether they're fake friends or real ones."
+  ],
+  "canonical_source": "7695475255841656084",
+  "filming": "About 25-35 s, vertical 9:16, one creator speaking straight to the selfie camera. The background behind the creator is a still image of a nice or luxury car (green screen or background-swap effect), and it stays for the whole talking-head part. Bold on-screen texts: the 'TEST ZA PRIJATELJE😤' title, then the bait emojis 😍, 🔥, 🤩, the 'U KAKO DOBAR AUTO' line and 🚗🚗🚗, popping in as they're mentioned. Fast, casual, slightly indignant delivery with jump cuts. Demo sequence, starting at about 15 s when Memo AI is named: phone screen recording of memoai.eu → open an existing note (made from photos or a PDF of school material) → Flashcards → tap or flip through several cards showing question and answer. Cut out any waiting. Optionally return to the talking head for the comment CTA.",
+  "generated": 1791821617,
+  "hook": "Talking-head selfie shot over a background of a nice car, with the on-screen title 'TEST ZA PRIJATELJE😤' (localised). The first line is 'If you've ever wondered whether your friends actually watch the videos you send them…', then the reveal: the background has been swapped for a picture of a good car. If a friend replies with 😍 / 🔥 / 🤩 or 'wow, what a nice car' 🚗🚗🚗, they didn't watch the video and they're fake friends.",
+  "not_allowed": [
+   "Dropping the friend-test hook or the swapped car background trick",
+   "Changing the bait emojis/reaction mechanic or the 'fake friends' payoff",
+   "Removing the phone pivot (wasting the phone on games vs learning) that bridges to the app",
+   "Introducing Memo AI only at the end instead of at about 15 s, or not naming it in speech",
+   "Mentioning or showing Astra AI, Studyflash, Turbo AI or any other study app",
+   "Showing or claiming features Memo AI doesn't have (snap-and-solve answers, homework checking, photos in chat, PDF export, pasting text, an Android store app)",
+   "Replacing the comment-bait CTA with a download/link-in-bio CTA",
+   "Turning it into a multi-person skit, a silent text-only video, or a feature tutorial without the friend test",
+   "Adding stage directions or filming notes to the script"
+  ],
+  "premise": "The creator posts a video that is meant to be forwarded to friends as a loyalty test. Viewers who only glance at it see the car and react to it. Viewers who listen hear that reacting to the car proves they didn't watch. Using 'phone' as a bridge, the creator turns to how people waste their phones on games instead of learning, then says they open Memo AI every day and learn something new. A screen recording of Memo AI flashcards follows. The video ends by asking viewers to comment what their friends replied, which keeps the test and the comments going.",
+  "product": {
+   "cta": "Comment-bait: write in the comments what your friends replied and whether they're fake friends or real ones (no download/link CTA).",
+   "features_used": [
+    "Flashcards generated from a note",
+    "Note created from uploaded material (photos of notes/textbook pages, or a PDF/Word/PowerPoint file)"
+   ],
+   "introduced_at_beat": 4,
+   "spoken_brand": "Beat 4, said once by name as 'an app called Memo AI' in the line where the creator says they open it every day and learn something new. The URL memoai.eu is shown on screen in the demo, not spoken."
+  },
+  "rejected_sources": {},
+  "rules": "early-memo-2026-10-12",
+  "source_urls": {
+   "7695475255841656084": "https://www.tiktok.com/@learnwithmateja/video/7695475255841656084"
+  },
+  "title_en": "Friend test: do they actually watch your videos? 😤"
  }
 }

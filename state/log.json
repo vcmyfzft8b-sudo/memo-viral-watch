@@ -3141,5 +3141,118 @@
   "ts": 1791787914,
   "type": "weekly",
   "week": "2026-W42"
+ },
+ {
+  "format": "A20261008210957",
+  "level": "viral",
+  "ts": 1791821299,
+  "type": "alert",
+  "video": "7695455431728106785",
+  "views": 112300
+ },
+ {
+  "format": "A20261012160842",
+  "reasons": [
+   "cross-country check fail: format_consistency sh: The beats are out of order. The phone pivot (phones wasted on games instead of learning) now comes after the Memo AI pitch as 'Zašto telefon samo za igrice, kad možeš biti pametniji?'. In the reference, the pivot comes before the product and is the bridge to it.; script_matche"
+  ],
+  "tries": 1,
+  "ts": 1791822531,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261012160842",
+  "page_de": "3f765e84-a3c2-810e-a701-fd3e743575bc",
+  "pages": {
+   "sl": "3f765e84-a3c2-81e1-9635-c7467da40cf0"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sh: The beats are out of order. The phone pivot (phones wasted on games instead of learning) now comes after the Memo AI pitch as 'Zašto telefon samo za igrice, kad možeš biti pametniji?'. In the reference, the pivot comes before the product and is the bridge to it.; script_matche"
+  ],
+  "ts": 1791822531,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261012160842",
+  "format": "A20261012160842",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: format_consistency sh: The beats are out of order. The phone pivot (phones wasted on games instead of learning) now comes after the Memo AI pitch as 'Zašto telefon samo za igrice, kad možeš biti pametniji?'. In the reference, the pivot comes before the product and is the bridge to it.; script_matche"
+  ],
+  "ts": 1791822533,
+  "type": "alert",
+  "video": "7695475255841656084",
+  "views": 111600
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791822539,
+  "type": "alert",
+  "video": "7695533180484406580",
+  "views": 80800
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791822544,
+  "type": "alert",
+  "video": "7695788141625576710",
+  "views": 8857
+ },
+ {
+  "format": "A20261012160842",
+  "reasons": [
+   "cross-country check fail: faithful_translation sl: The bridge line from the original («Govoreći o telefonima» / 'speaking of phones') is missing. Without it the script jumps from 'lažni prijatelji' straight to 'Zakaj ljudje telefon uporabljajo za igrice…', so the pivot loses its hinge. Restore it, e.g. «Ko smo že pri telefon"
+  ],
+  "tries": 2,
+  "ts": 1791823166,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261010162026",
+   "A20261010161437",
+   "A20261008204718",
+   "A20261009210824",
+   "A20261008224450",
+   "A20261010214237",
+   "A20261008231529",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008211912",
+   "A20261009014121",
+   "A20261010215329",
+   "A20261010220207",
+   "A20261010215744",
+   "A20261010215543"
+  ],
+  "ts": 1791823205,
+  "type": "rerank"
+ },
+ {
+  "added": [
+   "learnwithnika",
+   "studytips_tea",
+   "studytipsbyem",
+   "studywith_petradaria",
+   "tea_tips_"
+  ],
+  "paused": [],
+  "revived": [],
+  "ts": 1791823924,
+  "type": "discovery"
+ },
+ {
+  "added": [
+   "study.with.heldzi",
+   "studywithanea"
+  ],
+  "paused": [],
+  "revived": [],
+  "ts": 1791824130,
+  "type": "own_discovery"
  }
 ]

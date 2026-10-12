@@ -33,7 +33,9 @@
   "A20261010215329:sl": "failed",
   "A20261010215543:sl": "failed",
   "A20261010215744:sl": "ok",
-  "A20261010220207:sl": "ok"
+  "A20261010220207:sl": "ok",
+  "A20261012160842:sh": "fixed",
+  "A20261012160842:sl": "ok"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "554231d90c87dfa29584fb8b10cd1ba8428450b221746b4dee2eb018191dcc1d",
@@ -67,9 +69,11 @@
   "A20261010214237:sh": "9787c34205e03e3e93a668d1e3f92f0fb65cac27c6c9e5536eb6eb3bf7af1264",
   "A20261010214237:sl": "02bc0277b088f1a424f225cd8a122e90fc719ddd8ace7aa906982a685f8631ff",
   "A20261010215744:sl": "78b535a610a2d73da620327d34ace63aed8316ac0d70b52619c73a77ab2ced9d",
-  "A20261010220207:sl": "f963b4eded6c4bffeb3ad0a3df492722ecafcdaca2744cb3c4ab4fd6a5f874ca"
+  "A20261010220207:sl": "f963b4eded6c4bffeb3ad0a3df492722ecafcdaca2744cb3c4ab4fd6a5f874ca",
+  "A20261012160842:sh": "790cc5ced8c8a94316d4cdf778621aab60e8ffe6311872c21339e8b96c5bcb90",
+  "A20261012160842:sl": "3910ffcbc27c7fa7f0d65cdfdbac2024ecfb52756461650307d4199bc7dac0d5"
  },
- "discovered_at": 1791527938,
+ "discovered_at": 1791820965,
  "faithful_rewrite_started": 1791643120,
  "group_audit": {
   "A20261008204718": {
@@ -1495,6 +1499,86 @@
    "summary": "The SL page passes on every dimension: the script follows the example almost word for word, keeps the grade, method, app and code order, and brings in Memo AI early with its real features (notes, flashcards, tests); the code is localized to [TVOJE IME]50, the title matches the example, and the directions copy the candlelit card hook in one sentence.",
    "title_fixes": {},
    "version": "group-2026-10-12.early-memo"
+  },
+  "A20261012160842": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791823145,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7695475255841656084",
+     "video_identity": "sha256:2ecf269ca351f63ff2b666a85b10a82ef24d129041f66bb08d885b76048cd423"
+    },
+    "sl": {
+     "source_id": "7695475255841656084",
+     "video_identity": "sha256:2ecf269ca351f63ff2b666a85b10a82ef24d129041f66bb08d885b76048cd423"
+    }
+   },
+   "key": "8d81a70358ca55b25f23f5809593400885e15d3d1b0b75cdd05cc8822363a9a4",
+   "passed": false,
+   "reasons": [
+    "faithful_translation sl: The bridge line from the original («Govoreći o telefonima» / 'speaking of phones') is missing. Without it the script jumps from 'lažni prijatelji' straight to 'Zakaj ljudje telefon uporabljajo za igrice…', so the pivot loses its hinge. Restore it, e.g. «Ko smo že pri telefonih, zakaj ljudje telefon uporabljajo za igrice namesto za učenje?»"
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The bridge line from the original («Govoreći o telefonima» / 'speaking of phones') is missing. Without it the script jumps from 'lažni prijatelji' straight to 'Zakaj ljudje telefon uporabljajo za igrice…', so the pivot loses its hinge. Restore it, e.g. «Ko smo že pri telefonih, zakaj ljudje telefon uporabljajo za igrice namesto za učenje?»",
+      "pass": false
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "Both pages follow the friend-test format with Memo AI early, the standard pitch and the comment CTA. SH passes everything; SL fails faithful_translation because the 'speaking of phones' bridge into the pivot was dropped. Separately, SH directions say arms crossed and SL directions say hands clasped for the same example video, so one of the two needs checking against the video.",
+   "title_fixes": {},
+   "version": "group-2026-10-12.early-memo"
   }
  },
  "group_duplicates": [],
@@ -1561,7 +1645,7 @@
    "since": 1791725547
   }
  },
- "last_run": 1791786508,
+ "last_run": 1791820965,
  "lineup": "2026-W42",
  "top3": [
   "A20261008205804",
@@ -1607,12 +1691,14 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/b724117d-0c36-4e93-972f-055d7c412d9d/video-notion.mp4": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/bc335721-f9ea-426a-a184-1dc49df91c0a/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/c1c7ab27-88f0-4039-903f-543c18ee8185/video.mp4": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/c20a1a0b-be88-49f3-8125-39b92ed703fb/video.mp4": "sha256:2ecf269ca351f63ff2b666a85b10a82ef24d129041f66bb08d885b76048cd423",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d7a785da-5e23-40f6-9646-04afe72c6f2d/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d8652e47-9cec-4e2c-873c-20c8d5d7d2ec/video.mp4": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/dac31acc-a23e-4449-94a0-efa52cf634f2/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/dd9ebb60-8ddb-4a86-a657-f317fcdea81f/video.mp4": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/df86fa94-9d8c-4cfe-b69a-cc024d1c5e79/video.mp4": "sha256:e513b4868ed887f7d0fd7d95c00b0d8f505555382b0a29f910e4500bab96995b",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/e56fd24b-0c18-4ddb-ab5b-2e7d499efb85/video.mp4": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/e5ff72b6-47ec-48f2-a4a3-77be902b99b4/video.mp4": "sha256:2ecf269ca351f63ff2b666a85b10a82ef24d129041f66bb08d885b76048cd423",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/ecc280bd-0268-4b97-9760-64a4cd595138/video.mp4": "sha256:8c47ffe4d80533045109936b0de0f8121ee7c9b7fc4ea9c5aee611394c837370",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/f1862454-a6e1-4442-b139-1b9f803b769c/video-notion.mp4": "sha256:c885900fe56e7d31e3feb4705ce828c344025ae7ef682156992baed17396de77",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/fd23fb00-7c58-473e-b4bc-404869c20add/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5"

@@ -1,1 +1,14 @@
-{}
+{
+ "study.with.heldzi": {
+  "market": "sh",
+  "since": 1791824128,
+  "source": "lightreel",
+  "status": "active"
+ },
+ "studywithanea": {
+  "market": "",
+  "since": 1791824129,
+  "source": "lightreel",
+  "status": "active"
+ }
+}

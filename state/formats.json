@@ -770,5 +770,30 @@
   "source_video": "https://www.tiktok.com/@spelcaa41/video/7688806667072474391",
   "status": "active",
   "title": "Diva, vidim same petke zate 🔮"
+ },
+ {
+  "created": 1791821322,
+  "description": "Talking-head 'friend test' hook (swapped video background to a nice car to expose fake friends via emoji replies), followed by a pivot to using your phone for learning and a screen recording of the study app's flashcards, ending with a comment-bait CTA.",
+  "id": "A20261012160842",
+  "page_id": "3f765e84-a3c2-810e-a701-fd3e743575bc",
+  "pages": {
+   "sl": "3f765e84-a3c2-81e1-9635-c7467da40cf0"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: faithful_translation sl: The bridge line from the original («Govoreći o telefonima» / 'speaking of phones') is missing. Without it the script jumps from 'lažni prijatelji' straight to 'Zakaj ljudje telefon uporabljajo za igrice…', so the pivot loses its hinge. Restore it, e.g. «Ko smo že pri telefon"
+   ],
+   "since": 1791822531,
+   "tries": 2
+  },
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Ako te ikad zanimalo gledaju li ti prijatelji videe koje im šalješ, zamijenila sam pozadinu videa slikom dobrog auta. Ako ti odgovore ovim emodžijima ili napišu „U, kako dobar auto“, to su fejk prijatelji. Tekst na ekranu: 😍🔥🤩 U KAKO DOBAR AUTO 🚗🚗🚗 Ja telefon koristim pametnije: svaki dan uđem u aplikaciju Memo AI i naučim nešto novo. U nju ubaciš PDF-ove ili PowerPoint prezentacije s predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. Jer zašto koristiti telefon samo za igrice, umjesto da učiš i budeš pametniji? Ajde da ti pokažem kako ja to radim. Možeš ga nešto pitati i u chatu, ali ja najviše idem na testove. Na primjer, ubacila sam gradivo iz biologije i sad biram kako ću učiti. Ja, naravno, uvijek izaberem flash kartice, jer su jak",
+  "source_video": "https://www.tiktok.com/@learnwithmateja/video/7695475255841656084",
+  "status": "pending",
+  "title": "Test za prijatelje: gledaju li ti videe? 😤"
  }
 ]
