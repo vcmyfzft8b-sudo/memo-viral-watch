@@ -11295,6 +11295,25 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-813d-8105-ea7f23862068": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Vsi vemo, da je 8. razred eden izmed najtežjih razredov. Zdaj ti povem par nasvetov, kako se boš letos učil, da boš imel dobre ocene. ",
+   "text": {
+    "content": "Vsi vemo, da je 8. razred eden izmed najtežjih razredov. Zdaj ti povem par nasvetov, kako se boš letos učil, da boš imel dobre ocene. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-8144-a3eb-dfc5ca8e3d94": [
   {
    "annotations": {
@@ -11445,6 +11464,25 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-814a-86ad-eb6d4950863d": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Potem mi je pa moja frendica pokazala metodo, kako ona dela zapiske, in so pač res perfektni, pa še zraven lahko lepo posluša pri pouku. ",
+   "text": {
+    "content": "Potem mi je pa moja frendica pokazala metodo, kako ona dela zapiske, in so pač res perfektni, pa še zraven lahko lepo posluša pri pouku. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-8150-a37f-c1f4da5d52a3": [
   {
    "annotations": {
@@ -11497,6 +11535,61 @@
    "plain_text": "(Skupiš se od neugode, smiješ se i gledaš u stranu) Pacijentica je bez svijesti. Ne može dati pristanak. (Ti kažeš) Oh. (Najjača reakcija: pokriješ lice, smiješ se i u nevjerici odmahuješ glavom) Onda joj DICK moraš dati svejedno. (Ti kažeš, približiš lice kameri, zbunjen i šokiran izraz lica) Znači, bez njenog pristanka? ",
    "text": {
     "content": "(Skupiš se od neugode, smiješ se i gledaš u stranu) Pacijentica je bez svijesti. Ne može dati pristanak. (Ti kažeš) Oh. (Najjača reakcija: pokriješ lice, smiješ se i u nevjerici odmahuješ glavom) Onda joj DICK moraš dati svejedno. (Ti kažeš, približiš lice kameri, zbunjen i šokiran izraz lica) Znači, bez njenog pristanka? ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f565e84-a3c2-8158-87ea-dd7a17301d5c": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Prvi nasvet je: pozabi na branje svojih zapiskov. Zaradi tega, ker imaš zdaj toliko aplikacij, ki te same berejo. (",
+   "text": {
+    "content": "Prvi nasvet je: pozabi na branje svojih zapiskov. Zaradi tega, ker imaš zdaj toliko aplikacij, ki te same berejo. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "🎥 Posnemi Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "🎥 Posnemi Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Tale je moja najljubša, ker ti sama prebere zapiske, potem ti iz teh zapiskov naredi flashcarde, teste, kvize. Na tak način se res lahko ful v easy naučiš snov, pa tudi ne vzame ti toliko veliko časa, kot bi ti, če bi samo bral zapiske. ",
+   "text": {
+    "content": ") Tale je moja najljubša, ker ti sama prebere zapiske, potem ti iz teh zapiskov naredi flashcarde, teste, kvize. Na tak način se res lahko ful v easy naučiš snov, pa tudi ne vzame ti toliko veliko časa, kot bi ti, če bi samo bral zapiske. ",
     "link": null
    },
    "type": "text"
@@ -11559,6 +11652,97 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-815f-aa0b-d523fb59c5f4": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "(",
+   "text": {
+    "content": "(",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "🎥 Posnemi Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "🎥 Posnemi Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Ona uporablja tole aplikacijo, ki ti basically naredi tako perfektne zapiske, pač, glejte to. (",
+   "text": {
+    "content": ") Ona uporablja tole aplikacijo, ki ti basically naredi tako perfektne zapiske, pač, glejte to. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "🎥 Posnemi Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "🎥 Posnemi Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") In samo, tako da daš slike, vse, ti poudari pomembne stvari. ",
+   "text": {
+    "content": ") In samo, tako da daš slike, vse, ti poudari pomembne stvari. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-8161-ae0a-edd009eb1d1d": [
   {
    "annotations": {
@@ -11592,6 +11776,25 @@
    "plain_text": "(Zabrinuto gledaš u test i pišeš, pa pogled u stranu i ruka u kosu, uz trending zvuk) POV: Sjetiš se tog jednog slajda na testu, ali nisi pretplaćen na mozak premium. ",
    "text": {
     "content": "(Zabrinuto gledaš u test i pišeš, pa pogled u stranu i ruka u kosu, uz trending zvuk) POV: Sjetiš se tog jednog slajda na testu, ali nisi pretplaćen na mozak premium. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f565e84-a3c2-8163-91a7-f262ec2cd711": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Drugi nasvet je, da medtem ko se učiš, delaš z eno roko osmice na list papirja. To sem že rekla v drugih videih, ker se mi pač res zdi, da deluje. ",
+   "text": {
+    "content": "Drugi nasvet je, da medtem ko se učiš, delaš z eno roko osmice na list papirja. To sem že rekla v drugih videih, ker se mi pač res zdi, da deluje. ",
     "link": null
    },
    "type": "text"
@@ -12699,6 +12902,25 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-8188-b6bf-edbe7ef5a01a": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Takole so zgledali moji zapiski: 1. letnik faksa. Zgledajo grozno. Površni so, pa tako pol stvari manjka. ",
+   "text": {
+    "content": "Takole so zgledali moji zapiski: 1. letnik faksa. Zgledajo grozno. Površni so, pa tako pol stvari manjka. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-8189-9cda-c9525e9bb4f7": [
   {
    "annotations": {
@@ -12718,6 +12940,25 @@
    "type": "text"
   }
  ],
+ "3f565e84-a3c2-818d-acab-d7ae6c616585": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Potem tretji nasvet je pa, da v šoli, ko si delaš na primer zapiske pa to, da si že tam podčrtaš te stavke, ki jih je učiteljica še posebej poudarila. ",
+   "text": {
+    "content": "Potem tretji nasvet je pa, da v šoli, ko si delaš na primer zapiske pa to, da si že tam podčrtaš te stavke, ki jih je učiteljica še posebej poudarila. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f565e84-a3c2-8190-9a84-fcf448fb94c4": [
   {
    "annotations": {
@@ -12732,6 +12973,25 @@
    "plain_text": "(Nalepka '1/4 Prevoz 🚆 ✈️ -20% / -10%') Imate tudi 10 % popusta pri Air Serbia in na letih. ",
    "text": {
     "content": "(Nalepka '1/4 Prevoz 🚆 ✈️ -20% / -10%') Imate tudi 10 % popusta pri Air Serbia in na letih. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f565e84-a3c2-8199-a1d6-f6d53a3dc52d": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Tako da ja, pač, zdaj so moji zapiski perfektni. Zraven pa lahko pač sledim še bolj zbrano pri pouku, zaradi tega, ker mi ni treba se zraven ubadati še s pisanjem. Tako da, shranite si nujno tale video. ",
+   "text": {
+    "content": "Tako da ja, pač, zdaj so moji zapiski perfektni. Zraven pa lahko pač sledim še bolj zbrano pri pouku, zaradi tega, ker mi ni treba se zraven ubadati še s pisanjem. Tako da, shranite si nujno tale video. ",
     "link": null
    },
    "type": "text"
@@ -12789,6 +13049,25 @@
    "plain_text": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
    "text": {
     "content": "Čim se pojavi Memo AI, snimaj sebe kako koristiš aplikaciju na telefonu – na svakom mjestu s linkom u scenariju. Izreži vrijeme učitavanja.",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f565e84-a3c2-81a6-8fc2-d54ac6013210": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Shranite si nujno tale video in upam, da si kaj pomagate s tem. ",
+   "text": {
+    "content": "Shranite si nujno tale video in upam, da si kaj pomagate s tem. ",
     "link": null
    },
    "type": "text"
@@ -20560,6 +20839,82 @@
    }
   ]
  ],
+ "hook:3f565e84-a3c2-81ed-97db-f512256a519e": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Naredi enak vizualni hook kot v videu za navdih: sediš na postelji, govoriš v kamero in od začetka pred kamero držiš svoje stare ročno pisane zapiske, ki jih listaš enega za drugim, medtem ko se na ekranu po besedah izpisujejo titlovi.",
+    "text": {
+     "content": "Naredi enak vizualni hook kot v videu za navdih: sediš na postelji, govoriš v kamero in od začetka pred kamero držiš svoje stare ročno pisane zapiske, ki jih listaš enega za drugim, medtem ko se na ekranu po besedah izpisujejo titlovi.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Želiš drugačen vizualni hook? Izberi ga v ",
+    "text": {
+     "content": "Želiš drugačen vizualni hook? Izberi ga v ",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ".",
+    "text": {
+     "content": ".",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
  "hook:3f565e84-a3c2-81f3-a771-d05601b576fa": [
   [
    {
@@ -28072,6 +28427,156 @@
     "plain_text": "(Opet u kameru, pokažeš dva prsta, pa probaš piće taste test) Ostalo ćemo snimati u part 2. ",
     "text": {
      "content": "(Opet u kameru, pokažeš dva prsta, pa probaš piće taste test) Ostalo ćemo snimati u part 2. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "page:3f565e84-a3c2-81ed-97db-f512256a519e": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Takole zgledajo moji zapiski iz 1. letnika faksa. Zgledajo grozno. Površni so, pa tako polovica stvari manjka. ",
+    "text": {
+     "content": "Takole zgledajo moji zapiski iz 1. letnika faksa. Zgledajo grozno. Površni so, pa tako polovica stvari manjka. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Potem mi je pa moja frendica pokazala metodo, kako ona dela zapiske, in so pač res perfektni, pa še zraven lahko lepo posluša pri pouku. ",
+    "text": {
+     "content": "Potem mi je pa moja frendica pokazala metodo, kako ona dela zapiske, in so pač res perfektni, pa še zraven lahko lepo posluša pri pouku. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "(",
+    "text": {
+     "content": "(",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "🎥 Posnemi Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "🎥 Posnemi Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Ona uporablja tole aplikacijo, Memo AI, ki ti basically naredi tako perfektne zapiske, pač, glejte to. Insane. (",
+    "text": {
+     "content": ") Ona uporablja tole aplikacijo, Memo AI, ki ti basically naredi tako perfektne zapiske, pač, glejte to. Insane. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://memoai.eu/creator",
+    "plain_text": "🎥 Posnemi Memo AI · memoai.eu/creator",
+    "text": {
+     "content": "🎥 Posnemi Memo AI · memoai.eu/creator",
+     "link": {
+      "url": "https://memoai.eu/creator"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") Tako da daš slike in ti poudari vse pomembne stvari. ",
+    "text": {
+     "content": ") Tako da daš slike in ti poudari vse pomembne stvari. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Tako da ja, pač, zdaj so moji zapiski perfektni. Zraven pa lahko pač sledim še bolj zbrano pri pouku, zaradi tega, ker se mi ni treba zraven ubadati še s pisanjem. Tako da, shranite si nujno tale video. ",
+    "text": {
+     "content": "Tako da ja, pač, zdaj so moji zapiski perfektni. Zraven pa lahko pač sledim še bolj zbrano pri pouku, zaradi tega, ker se mi ni treba zraven ubadati še s pisanjem. Tako da, shranite si nujno tale video. ",
      "link": null
     },
     "type": "text"
