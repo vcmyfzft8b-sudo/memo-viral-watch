@@ -10,8 +10,8 @@
   "ours": true,
   "sticker": "",
   "subtitles": "",
-  "updated": 1791853048,
-  "views": 840
+  "updated": 1791901962,
+  "views": 843
  },
  "7693570013990587670": {
   "checked": true,
@@ -24,7 +24,7 @@
   "ours": true,
   "sticker": "Kako da zapamtiš 10 definicija u 10 minuta?",
   "subtitles": "",
-  "updated": 1791853048,
+  "updated": 1791901962,
   "views": 1013
  },
  "7694705188493446422": {
@@ -38,39 +38,63 @@
   "ours": true,
   "sticker": "",
   "subtitles": "",
-  "updated": 1791853048,
-  "views": 717
+  "updated": 1791901962,
+  "views": 718
  },
  "7695329141742210356": {
+  "checked": true,
   "created": 1791708437,
   "desc": "#studytiktok #viral #memoai #foryoupage #",
+  "format": null,
   "handle": "study.with.heldzi",
+  "hook_en": "Three most important things to know in the grades that count for high school admission (1. Grades)",
   "market": "sh",
-  "updated": 1791853048,
-  "views": 6088
+  "ours": true,
+  "sticker": "Tri najbitnije stvari koje treba da znate u razredima koji se računaju za upis srednje škole / 1. OCENE / 3:",
+  "subtitles": "",
+  "updated": 1791901962,
+  "views": 6257
  },
  "7695353019226950964": {
+  "checked": true,
   "created": 1791713996,
   "desc": "Tvoja 24h u danu#studytiktok #viral #foryoupage #viral #studytiktok ",
   "handle": "study.with.heldzi",
   "market": "sh",
-  "updated": 1791853048,
-  "views": 19200
+  "ours": false,
+  "sticker": "TVOJIH 24H U DANU:",
+  "subtitles": "",
+  "updated": 1791901962,
+  "views": 19400
  },
  "7695386534400347398": {
+  "checked": true,
   "created": 1791721799,
   "desc": "#studytiktok #viral #foryoupage #memoai ",
+  "format": "A20261010215744",
   "handle": "study.with.heldzi",
+  "hook_en": "High school phases you need to skip (1. Relationship with a classmate, 2. ChatGPT and Gemini)",
   "market": "sh",
-  "updated": 1791853048,
-  "views": 12200
+  "ours": true,
+  "sticker": "FAZE KOJE TREBA DA PRESKOČITE DOK IDETE U SREDNJU ŠKOLU: / 1. Veza sa osobom iz razreda / 2: CHAT GPT I GEMINI",
+  "subtitles": "",
+  "updated": 1791901962,
+  "views": 12400
  },
  "7695740938227911988": {
   "created": 1791804316,
   "desc": "Markerima kraj 📚#studytiktok #memoai #ucenje #studyserbia #viral ",
   "handle": "study.with.heldzi",
   "market": "sh",
-  "updated": 1791853048,
-  "views": 4982
+  "updated": 1791901962,
+  "views": 5695
+ },
+ "7696112762442878214": {
+  "created": 1791890888,
+  "desc": "Do kog broja ste stigli?🫡#studytiktok #ucenje #foryoupage #viral #fyp ",
+  "handle": "study.with.heldzi",
+  "market": "sh",
+  "updated": 1791901962,
+  "views": 1999
  }
 }

@@ -34,8 +34,8 @@
   "A20261010215543:sl": "failed",
   "A20261010215744:sl": "ok",
   "A20261010220207:sl": "ok",
-  "A20261012160842:sh": "ok",
-  "A20261012160842:sl": "failed"
+  "A20261012160842:sh": "fixed",
+  "A20261012160842:sl": "fixed"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "554231d90c87dfa29584fb8b10cd1ba8428450b221746b4dee2eb018191dcc1d",
@@ -70,8 +70,8 @@
   "A20261010214237:sl": "02bc0277b088f1a424f225cd8a122e90fc719ddd8ace7aa906982a685f8631ff",
   "A20261010215744:sl": "78b535a610a2d73da620327d34ace63aed8316ac0d70b52619c73a77ab2ced9d",
   "A20261010220207:sl": "f963b4eded6c4bffeb3ad0a3df492722ecafcdaca2744cb3c4ab4fd6a5f874ca",
-  "A20261012160842:sh": "9355c839f0e7d95e6e0a97142641227a6b5158b66d8093739e864b69ac125e99",
-  "A20261012160842:sl": "3910ffcbc27c7fa7f0d65cdfdbac2024ecfb52756461650307d4199bc7dac0d5"
+  "A20261012160842:sh": "35e18c46fedfea9e081e4d3c757fb79678e7530e88047546c002dea5c11323d4",
+  "A20261012160842:sl": "56a0e7fb6e5fa85495ad2b1f0e69e10a2ca8e7b10c4cf662a8dcd365056f2277"
  },
  "discovered_at": 1791820965,
  "faithful_rewrite_started": 1791643120,
@@ -1505,7 +1505,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791823145,
+   "checked_at": 1791902880,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1518,11 +1518,9 @@
      "video_identity": "sha256:2ecf269ca351f63ff2b666a85b10a82ef24d129041f66bb08d885b76048cd423"
     }
    },
-   "key": "8d81a70358ca55b25f23f5809593400885e15d3d1b0b75cdd05cc8822363a9a4",
-   "passed": false,
-   "reasons": [
-    "faithful_translation sl: The bridge line from the original («Govoreći o telefonima» / 'speaking of phones') is missing. Without it the script jumps from 'lažni prijatelji' straight to 'Zakaj ljudje telefon uporabljajo za igrice…', so the pivot loses its hinge. Restore it, e.g. «Ko smo že pri telefonih, zakaj ljudje telefon uporabljajo za igrice namesto za učenje?»"
-   ],
+   "key": "afb5ba1a088a3b4a7e0bae6fdd92b81be9479227d7148ffe3212a2562da1bbce",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
@@ -1530,18 +1528,18 @@
       "pass": true
      },
      "sl": {
-      "issue": "",
+      "issue": "Arm pose differs from SH: SL says 'roke sklenjene pred seboj' (hands clasped in front), SH says arms crossed. Check against the video and align both.",
       "pass": true
      }
     },
     "faithful_translation": {
      "sh": {
-      "issue": "",
+      "issue": "Minor: the 'govoreći o telefonima' bridge is cut, but the phone pivot still carries the same meaning. Memo AI comes in at about 44 words.",
       "pass": true
      },
      "sl": {
-      "issue": "The bridge line from the original («Govoreći o telefonima» / 'speaking of phones') is missing. Without it the script jumps from 'lažni prijatelji' straight to 'Zakaj ljudje telefon uporabljajo za igrice…', so the pivot loses its hinge. Restore it, e.g. «Ko smo že pri telefonih, zakaj ljudje telefon uporabljajo za igrice namesto za učenje?»",
-      "pass": false
+      "issue": "Minor: 'ne gledajo te' is cut from the payoff, but the fake-friends meaning stays. There are no foreign names to localise.",
+      "pass": true
      }
     },
     "features_claims": {
@@ -1575,8 +1573,8 @@
      }
     }
    },
-   "status": "fail",
-   "summary": "Both pages follow the friend-test format with Memo AI early, the standard pitch and the comment CTA. SH passes everything; SL fails faithful_translation because the 'speaking of phones' bridge into the pivot was dropped. Separately, SH directions say arms crossed and SL directions say hands clasped for the same example video, so one of the two needs checking against the video.",
+   "status": "pass",
+   "summary": "Both pages keep the friend-test hook with the car-background trick, the phone pivot, Memo AI named early (about 44 words in) with the required pitch, and the comment-bait CTA. Feature claims are accurate, and the only flag is that the two filming directions describe the creator's arm pose differently.",
    "title_fixes": {},
    "version": "group-2026-10-12.early-memo"
   }
@@ -1639,13 +1637,13 @@
  "hot": {
   "A20261008205804": {
    "announced": {},
-   "count": 7,
+   "count": 6,
    "creators": {},
    "messages": {},
    "since": 1791725547
   }
  },
- "last_run": 1791853048,
+ "last_run": 1791901962,
  "lineup": "2026-W42",
  "top3": [
   "A20261008205804",

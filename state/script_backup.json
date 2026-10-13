@@ -14263,6 +14263,25 @@
    "type": "text"
   }
  ],
+ "3f765e84-a3c2-8109-a841-f4f364254f19": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Tekst na ekranu: TEST ZA PRIJATELJE😤 Pitaš li se gledaju li ti prijatelji videe koje šalješ? Zamijenila sam pozadinu slikom dobrog auta. Tekst na ekranu: 😍🔥🤩 U KAKO DOBAR AUTO🚗🚗🚗 Odgovore li ovim, fejk su. ",
+   "text": {
+    "content": "Tekst na ekranu: TEST ZA PRIJATELJE😤 Pitaš li se gledaju li ti prijatelji videe koje šalješ? Zamijenila sam pozadinu slikom dobrog auta. Tekst na ekranu: 😍🔥🤩 U KAKO DOBAR AUTO🚗🚗🚗 Odgovore li ovim, fejk su. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "3f765e84-a3c2-8115-bc6f-ec658618a806": [
   {
    "annotations": {
@@ -14385,6 +14404,133 @@
    "plain_text": ") Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. ",
    "text": {
     "content": ") Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f765e84-a3c2-8153-ad2e-e6694f2a1c7d": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Kad smo kod telefona, zašto ga ljudi troše na igrice umjesto učenja? (",
+   "text": {
+    "content": "Kad smo kod telefona, zašto ga ljudi troše na igrice umjesto učenja? (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "🎥 Snimi Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "🎥 Snimi Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Ja u Memo AI već pola godine svaki dan učim nešto novo. (",
+   "text": {
+    "content": ") Ja u Memo AI već pola godine svaki dan učim nešto novo. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "🎥 Snimi Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "🎥 Snimi Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") U nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. (",
+   "text": {
+    "content": ") U nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://memoai.eu/creator",
+   "plain_text": "🎥 Snimi Memo AI · memoai.eu/creator",
+   "text": {
+    "content": "🎥 Snimi Memo AI · memoai.eu/creator",
+    "link": {
+     "url": "https://memoai.eu/creator"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. ",
+   "text": {
+    "content": ") Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. ",
     "link": null
    },
    "type": "text"
@@ -14531,6 +14677,25 @@
    "plain_text": ") Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. Zašto telefon samo za igrice, kad možeš biti pametniji? ",
    "text": {
     "content": ") Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. Zašto telefon samo za igrice, kad možeš biti pametniji? ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "3f765e84-a3c2-81e0-a5e9-c52fff72b20b": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Napiši u komentarima šta su ti odgovorili, fejk ili pravi prijatelji. ",
+   "text": {
+    "content": "Napiši u komentarima šta su ti odgovorili, fejk ili pravi prijatelji. ",
     "link": null
    },
    "type": "text"
