@@ -3386,5 +3386,140 @@
   ],
   "ts": 1791902955,
   "type": "rerank"
+ },
+ {
+  "format": "A20261013231033",
+  "reasons": [
+   "cross-country check fail: faithful_translation sh: Memo AI is first named after about 52 spoken words (the hook, promises, 'tehnika' line and the full CTA come first), which is over the 50-word limit. Tighten before the reveal, e.g. merge 'Ovo je tehnika za sve petice' into the reveal ('Tehnika za sve petice je Memo AI') or "
+  ],
+  "tries": 1,
+  "ts": 1791933837,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261013231033",
+  "page_de": "3f865e84-a3c2-8130-aa0a-d6aea79cc620",
+  "pages": {
+   "sl": "3f865e84-a3c2-81ac-a6f9-ecaaad571976"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: faithful_translation sh: Memo AI is first named after about 52 spoken words (the hook, promises, 'tehnika' line and the full CTA come first), which is over the 50-word limit. Tighten before the reveal, e.g. merge 'Ovo je tehnika za sve petice' into the reveal ('Tehnika za sve petice je Memo AI') or "
+  ],
+  "ts": 1791933837,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261013231033",
+  "format": "A20261013231033",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: faithful_translation sh: Memo AI is first named after about 52 spoken words (the hook, promises, 'tehnika' line and the full CTA come first), which is over the 50-word limit. Tighten before the reveal, e.g. merge 'Ovo je tehnika za sve petice' into the reveal ('Tehnika za sve petice je Memo AI') or "
+  ],
+  "ts": 1791933838,
+  "type": "alert",
+  "video": "7693980090752879924",
+  "views": 100300
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791933842,
+  "type": "alert",
+  "video": "7696251707814071572",
+  "views": 21800
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791933846,
+  "type": "alert",
+  "video": "7696223095987703061",
+  "views": 16500
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791933850,
+  "type": "alert",
+  "video": "7696210155720985889",
+  "views": 15200
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791933855,
+  "type": "alert",
+  "video": "7696202117349903649",
+  "views": 11300
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791933858,
+  "type": "alert",
+  "video": "7696208150554266900",
+  "views": 8261
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791933862,
+  "type": "alert",
+  "video": "7696204620556717345",
+  "views": 5964
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261013231033",
+   "A20261012160842",
+   "A20261008204718",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261008224450",
+   "A20261010214237",
+   "A20261008231529",
+   "A20261010163838",
+   "A20261010162026",
+   "A20261008211912",
+   "A20261010161437",
+   "A20261010162928",
+   "A20261009014121",
+   "A20261010215329",
+   "A20261010220207",
+   "A20261010215744",
+   "A20261010215543"
+  ],
+  "ts": 1791934065,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261013231033",
+  "position": 3,
+  "ts": 1791934065,
+  "type": "format_published"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261013231033",
+   "A20261012160842",
+   "A20261008204718",
+   "A20261009001913",
+   "A20261009210824",
+   "A20261008224450",
+   "A20261010214237",
+   "A20261008231529",
+   "A20261010163838",
+   "A20261010162026",
+   "A20261008211912",
+   "A20261010161437",
+   "A20261010162928",
+   "A20261009014121",
+   "A20261010215329",
+   "A20261010220207",
+   "A20261010215744",
+   "A20261010215543"
+  ],
+  "ts": 1791934068,
+  "type": "rerank"
  }
 ]

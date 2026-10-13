@@ -1138,5 +1138,57 @@
    "7695475255841656084": "https://www.tiktok.com/@learnwithmateja/video/7695475255841656084"
   },
   "title_en": "Friend test: do they actually watch your videos? 😤"
+ },
+ "A20261013231033": {
+  "accepted_sources": [
+   "7693980090752879924"
+  ],
+  "allowed_localisation": [
+   "Language and dialect of the spoken script (Slovenian, Croatian, Bosnian, Serbian), translated almost word for word",
+   "The local word for the top grade (petica / 5 / odlično) and grading-system wording",
+   "The specific emoji used for the comment CTA",
+   "Which file or subject is uploaded in the demo (local curriculum material in the local language)",
+   "Creator appearance, room, desk setup and the type of stress toy",
+   "Whether the upload is a PDF, Word, PowerPoint or worksheet photos, and whether it comes from phone or computer",
+   "Natural phrasing adjustments needed for fluency without changing the claims, jokes or numbers"
+  ],
+  "beats": [
+   "1. Hook (talking head with stress toy): 'I'll help you get grades so good that even your teachers will think you're cheating.'",
+   "2. Promise stack: 'You'll study little, you'll have too much free time, and everyone will ask how you do it. And this is the technique that will take you from bad grades to all A's (5s).'",
+   "3. Comment-emoji CTA: 'Make sure you put this emoji in the comments so you'll have great grades, and now I'll show you how to get them.'",
+   "4. Product reveal, around 15 s (cut to the screen recording on the monitor): 'The first thing you'll do is go into the app called Memo AI, upload a file from your phone or your computer…'",
+   "5. Result: '…then tell it to help you with it, and you'll get the tasks explained in detail, all step by step.' Memo AI's notes explain the method step by step with worked examples.",
+   "6. Second feature, a more fun way to learn: 'There's also an option in the app, and there you literally have study tools, so literally a more interesting way of learning.' The demo shows the material as a mind map (replacing the original's interactive solar system), with the topic's branches explored on screen."
+  ],
+  "canonical_source": "7693980090752879924",
+  "filming": "About 35–45 s, vertical 9:16. Part 1, about 0–15 s: a medium close-up talking head at a desk, filmed selfie-style or on a tripod. The creator speaks directly to camera while squeezing or fidgeting with a stress toy the whole time, in one continuous take or a few jump cuts. Part 2, about 15 s to the end: the phone films a computer monitor showing Memo AI (memoai.eu) in the browser, with the creator's voice-over continuing. Demo sequence: open Memo AI → upload a file (PDF, Word or photo of a worksheet) from the computer or phone → cut the waiting → scroll the finished note showing the method explained step by step with worked examples, with formulas displayed properly → open a second, more fun tool (the mind map), click through its branches and pan around the result. Captions are optional, and the emoji is shown or said at the CTA.",
+  "generated": 1791933161,
+  "hook": "Talking-head promise on camera, while fidgeting with a stress toy: 'I'll help you get grades so good that even your teachers will think you're cheating.'",
+  "not_allowed": [
+   "Dropping the 'teachers will think you're cheating' promise hook or replacing it with a different hook",
+   "Removing the comment-emoji CTA or moving it after the demo",
+   "Bringing Memo AI in only at the end instead of around 15 s (beat 4)",
+   "Replacing the talking-head-plus-monitor screen recording with a silent text-on-screen video, a phone-only screen recording, or a skit",
+   "Saying or showing Astra AI, Studyflash, Turbo AI or any other app",
+   "Showing or claiming features Memo AI lacks: snap-and-solve instant answers to a single task, grading the user's own homework, photos in the chat, PDF export, pasting text, an Android store app, or an interactive solar-system/simulation app",
+   "Adding a different demo flow (for example, starting with a recorded lecture or a podcast) in place of the upload → step-by-step results → fun-learning-tool sequence"
+  ],
+  "premise": "A student creator promises a technique that takes you from bad grades to straight A's (all 5s) with little studying and lots of free time, so that everyone asks how you do it. The creator asks viewers to comment an emoji, then reveals that the technique is Memo AI. A screen recording on a computer monitor shows a file being uploaded and Memo AI's step-by-step results, followed by a second, more fun way of learning.",
+  "product": {
+   "cta": "Comment the emoji in the comments 'so you'll have great grades' (engagement CTA before the demo)",
+   "features_used": [
+    "upload a PDF/Word/PowerPoint file or photos of a worksheet from phone or computer",
+    "notes that explain the method step by step with worked examples",
+    "mind map"
+   ],
+   "introduced_at_beat": 4,
+   "spoken_brand": "Beat 4: 'go into the app called Memo AI' (said once at the reveal; memoai.eu may appear on the monitor or in the caption)"
+  },
+  "rejected_sources": {},
+  "rules": "early-memo-2026-10-12",
+  "source_urls": {
+   "7693980090752879924": "https://www.tiktok.com/@study.with.mili/video/7693980090752879924"
+  },
+  "title_en": "Grades so good your teachers think you're cheating 😱"
  }
 }

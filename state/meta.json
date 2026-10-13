@@ -35,7 +35,9 @@
   "A20261010215744:sl": "ok",
   "A20261010220207:sl": "ok",
   "A20261012160842:sh": "fixed",
-  "A20261012160842:sl": "fixed"
+  "A20261012160842:sl": "fixed",
+  "A20261013231033:sh": "fixed",
+  "A20261013231033:sl": "ok"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "554231d90c87dfa29584fb8b10cd1ba8428450b221746b4dee2eb018191dcc1d",
@@ -71,7 +73,9 @@
   "A20261010215744:sl": "78b535a610a2d73da620327d34ace63aed8316ac0d70b52619c73a77ab2ced9d",
   "A20261010220207:sl": "f963b4eded6c4bffeb3ad0a3df492722ecafcdaca2744cb3c4ab4fd6a5f874ca",
   "A20261012160842:sh": "35e18c46fedfea9e081e4d3c757fb79678e7530e88047546c002dea5c11323d4",
-  "A20261012160842:sl": "56a0e7fb6e5fa85495ad2b1f0e69e10a2ca8e7b10c4cf662a8dcd365056f2277"
+  "A20261012160842:sl": "56a0e7fb6e5fa85495ad2b1f0e69e10a2ca8e7b10c4cf662a8dcd365056f2277",
+  "A20261013231033:sh": "edd4bd195b1295bd0899d2bddadfe21b3ebf164d87c52f50844d55987d21d656",
+  "A20261013231033:sl": "53ee7b85f5cd3bf3479673114d5f12a472a09ec0eb1dcb44dc45c77df9be5d04"
  },
  "discovered_at": 1791820965,
  "faithful_rewrite_started": 1791643120,
@@ -1577,6 +1581,84 @@
    "summary": "Both pages keep the friend-test hook with the car-background trick, the phone pivot, Memo AI named early (about 44 words in) with the required pitch, and the comment-bait CTA. Feature claims are accurate, and the only flag is that the two filming directions describe the creator's arm pose differently.",
    "title_fixes": {},
    "version": "group-2026-10-12.early-memo"
+  },
+  "A20261013231033": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1791934003,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7693980090752879924",
+     "video_identity": "sha256:d6d22406cffb5efc900e7c0f9728436eb10192c6fcc415b55fee09e39025af9a"
+    },
+    "sl": {
+     "source_id": "7693980090752879924",
+     "video_identity": "sha256:d6d22406cffb5efc900e7c0f9728436eb10192c6fcc415b55fee09e39025af9a"
+    }
+   },
+   "key": "a179bc8e7f2d70cc5b9e86de4969ff8ef405a9c6f68b7176f1d74704e046c9a3",
+   "passed": true,
+   "reasons": [],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "pass",
+   "summary": "Both pages pass every check. Each keeps the cheating hook, puts the emoji comment request before the demo, brings in Memo AI with the required description after about 50 spoken words, then shows step-by-step explanations and the mind map. The visual hook directions copy the stress-toy opening, and neither title needs a fix. SL moves the bad-grades-to-straight-A's line to the Memo AI reveal and makes its mind map about the solar system, which is still a real Memo AI feature.",
+   "title_fixes": {},
+   "version": "group-2026-10-12.early-memo"
   }
  },
  "group_duplicates": [],
@@ -1637,18 +1719,18 @@
  "hot": {
   "A20261008205804": {
    "announced": {},
-   "count": 6,
+   "count": 7,
    "creators": {},
    "messages": {},
    "since": 1791725547
   }
  },
- "last_run": 1791901962,
+ "last_run": 1791932783,
  "lineup": "2026-W42",
  "top3": [
   "A20261008205804",
   "A20261008210957",
-  "A20261009001913"
+  "A20261013231033"
  ],
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
@@ -1656,9 +1738,11 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/14ab7617-867b-440b-ba89-9076b4231496/video.mp4": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/160678ef-32dd-44af-bb6f-7a66f1b10436/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/176f192d-8c8a-47d0-911a-9c25aa4be9d2/video.mp4": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/1a247c61-7c12-4271-a298-daad8a13696c/video.mp4": "sha256:d6d22406cffb5efc900e7c0f9728436eb10192c6fcc415b55fee09e39025af9a",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/202e841a-77a0-402c-8bae-35611033dfeb/video-notion.mp4": "sha256:2863a59e5df5fb158d39b04ccad651e449a674c01d28b27611cd5b291504cb87",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/23baa518-4640-4556-8e8e-4aa3c4331160/video-notion.mp4": "sha256:61696db2bb051d7382dd8e4bb6ddf26b57583264a2d8913b15aea64c2b749b94",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/25821af1-372a-453f-91e1-03e7b2fecca7/video.mp4": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/26c74d1b-9b87-48df-b8b9-ccfc990f917d/video.mp4": "sha256:d6d22406cffb5efc900e7c0f9728436eb10192c6fcc415b55fee09e39025af9a",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/2c7d9ce4-ec78-4471-9516-94292f3e1227/video-notion.mp4": "sha256:9c02af67e47bd9ac17022fe8d832f4478e998428889e6141ed3779cabab38af7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/31a27f31-6d7a-492b-9a2f-5e21683e902a/video.mp4": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/337a99d9-13da-42a6-894a-f679e2935f94/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
