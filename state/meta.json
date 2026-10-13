@@ -34,8 +34,8 @@
   "A20261010215543:sl": "failed",
   "A20261010215744:sl": "ok",
   "A20261010220207:sl": "ok",
-  "A20261012160842:sh": "fixed",
-  "A20261012160842:sl": "ok"
+  "A20261012160842:sh": "ok",
+  "A20261012160842:sl": "failed"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "554231d90c87dfa29584fb8b10cd1ba8428450b221746b4dee2eb018191dcc1d",
@@ -70,7 +70,7 @@
   "A20261010214237:sl": "02bc0277b088f1a424f225cd8a122e90fc719ddd8ace7aa906982a685f8631ff",
   "A20261010215744:sl": "78b535a610a2d73da620327d34ace63aed8316ac0d70b52619c73a77ab2ced9d",
   "A20261010220207:sl": "f963b4eded6c4bffeb3ad0a3df492722ecafcdaca2744cb3c4ab4fd6a5f874ca",
-  "A20261012160842:sh": "790cc5ced8c8a94316d4cdf778621aab60e8ffe6311872c21339e8b96c5bcb90",
+  "A20261012160842:sh": "9355c839f0e7d95e6e0a97142641227a6b5158b66d8093739e864b69ac125e99",
   "A20261012160842:sl": "3910ffcbc27c7fa7f0d65cdfdbac2024ecfb52756461650307d4199bc7dac0d5"
  },
  "discovered_at": 1791820965,
@@ -1639,13 +1639,13 @@
  "hot": {
   "A20261008205804": {
    "announced": {},
-   "count": 6,
+   "count": 7,
    "creators": {},
    "messages": {},
    "since": 1791725547
   }
  },
- "last_run": 1791820965,
+ "last_run": 1791853048,
  "lineup": "2026-W42",
  "top3": [
   "A20261008205804",

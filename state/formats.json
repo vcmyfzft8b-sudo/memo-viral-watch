@@ -782,10 +782,10 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: faithful_translation sl: The bridge line from the original («Govoreći o telefonima» / 'speaking of phones') is missing. Without it the script jumps from 'lažni prijatelji' straight to 'Zakaj ljudje telefon uporabljajo za igrice…', so the pivot loses its hinge. Restore it, e.g. «Ko smo že pri telefon"
+    "🇸🇮 script rewritten sentence by sentence (103 words (original 101)) / script corrected towards the original: The hook is cut down too much. The original 'Ako ste s"
    ],
    "since": 1791822531,
-   "tries": 2
+   "tries": 3
   },
   "reworded": {
    "sh": true,

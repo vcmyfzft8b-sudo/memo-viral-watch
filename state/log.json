@@ -3254,5 +3254,53 @@
   "revived": [],
   "ts": 1791824130,
   "type": "own_discovery"
+ },
+ {
+  "format": "A20261008205804",
+  "level": "viral",
+  "ts": 1791853338,
+  "type": "alert",
+  "video": "7695533180484406580",
+  "views": 113400
+ },
+ {
+  "level": "taking_off",
+  "ts": 1791853342,
+  "type": "alert",
+  "video": "7695804121600822550",
+  "views": 20600
+ },
+ {
+  "format": "A20261012160842",
+  "reasons": [
+   "🇸🇮 script rewritten sentence by sentence (103 words (original 101)) / script corrected towards the original: The hook is cut down too much. The original 'Ako ste s"
+  ],
+  "tries": 3,
+  "ts": 1791853799,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008205804",
+   "A20261008210957",
+   "A20261009001913",
+   "A20261010162026",
+   "A20261008204718",
+   "A20261009210824",
+   "A20261008224450",
+   "A20261010214237",
+   "A20261008231529",
+   "A20261010163838",
+   "A20261010162928",
+   "A20261008211912",
+   "A20261010161437",
+   "A20261009014121",
+   "A20261010215329",
+   "A20261010220207",
+   "A20261010215744",
+   "A20261010215543"
+  ],
+  "ts": 1791853840,
+  "type": "rerank"
  }
 ]
