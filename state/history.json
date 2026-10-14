@@ -3891,7 +3891,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 1711,
+  "views": 1733,
   "views_7d": 1708
  },
  "7693590120347258120": {
@@ -3902,7 +3902,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 674,
+  "views": 681,
   "views_7d": 673
  },
  "7693593309402483988": {
@@ -3912,7 +3912,7 @@
   "hook": "Is your faculty on the list?",
   "judged": false,
   "local": true,
-  "mature": false,
+  "mature": true,
   "views": 287,
   "views_7d": 287
  },
@@ -3924,7 +3924,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 852,
+  "views": 861,
   "views_7d": 849
  },
  "7693603076590046496": {
@@ -3935,7 +3935,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 4343,
+  "views": 4348,
   "views_7d": 4343
  },
  "7693608538337185046": {
@@ -3968,7 +3968,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 5570,
+  "views": 5576,
   "views_7d": 5570
  },
  "7693623863720103176": {
@@ -3978,7 +3978,7 @@
   "hook": "Med students, this is a lifesaver",
   "judged": false,
   "local": true,
-  "mature": false,
+  "mature": true,
   "views": 487,
   "views_7d": 487
  },
@@ -3989,7 +3989,7 @@
   "hook": "Comment 'JA' if you need help with a subject",
   "judged": false,
   "local": true,
-  "mature": false,
+  "mature": true,
   "views": 321,
   "views_7d": 321
  },
@@ -4001,7 +4001,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 2918,
+  "views": 2922,
   "views_7d": 2918
  },
  "7693631795740282132": {
@@ -4022,8 +4022,8 @@
   "hook": "Do you forget everything when the teacher calls on you?",
   "judged": false,
   "local": true,
-  "mature": false,
-  "views": 1950,
+  "mature": true,
+  "views": 1951,
   "views_7d": 1950
  },
  "7693633927709265185": {
@@ -4034,7 +4034,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 2900,
+  "views": 2901,
   "views_7d": 2900
  },
  "7693638353685581074": {
@@ -4045,7 +4045,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 2085,
+  "views": 2088,
   "views_7d": 2085
  },
  "7693644473397480725": {
@@ -4067,7 +4067,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 3925,
+  "views": 3966,
   "views_7d": 3925
  },
  "7693653993653849365": {
@@ -4078,7 +4078,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 1224,
+  "views": 1239,
   "views_7d": 1224
  },
  "7693654832082652446": {
@@ -4089,7 +4089,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 1496,
+  "views": 1501,
   "views_7d": 1496
  },
  "7693657868733517077": {
@@ -4100,7 +4100,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 5655,
+  "views": 5665,
   "views_7d": 5655
  },
  "7693661908070599956": {
@@ -4110,7 +4110,7 @@
   "hook": "Do you have these people in your class?",
   "judged": false,
   "local": true,
-  "mature": false,
+  "mature": true,
   "views": 263,
   "views_7d": 263
  },
@@ -4122,7 +4122,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 7476,
+  "views": 7505,
   "views_7d": 7476
  },
  "7693676423516523784": {
@@ -4144,7 +4144,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 1677,
+  "views": 1688,
   "views_7d": 1677
  },
  "7693676971666033941": {
@@ -4155,7 +4155,7 @@
   "judged": false,
   "local": true,
   "mature": true,
-  "views": 6376,
+  "views": 6378,
   "views_7d": 6376
  },
  "7693684473686150406": {
@@ -4176,7 +4176,7 @@
   "hook": "Medicine study motivation clip with no text or speech",
   "judged": false,
   "local": true,
-  "mature": false,
+  "mature": true,
   "views": 883,
   "views_7d": 883
  },
@@ -4187,9 +4187,9 @@
   "hook": "Study video with no text or speech",
   "judged": false,
   "local": true,
-  "mature": false,
-  "views": 1389,
-  "views_7d": 1389
+  "mature": true,
+  "views": 1395,
+  "views_7d": 1395
  },
  "7693869002799549716": {
   "created": 1791368480,
@@ -4198,9 +4198,9 @@
   "hook": "If you're lazy like me, this study method really helps",
   "judged": false,
   "local": true,
-  "mature": false,
-  "views": 1607,
-  "views_7d": 1607
+  "mature": true,
+  "views": 1608,
+  "views_7d": 1608
  },
  "7693892837590584609": {
   "created": 1791374026,
@@ -4209,7 +4209,7 @@
   "hook": "Who is really the best in class? Time to find out (biology)",
   "judged": false,
   "local": true,
-  "mature": false,
+  "mature": true,
   "views": 303,
   "views_7d": 303
  },
@@ -4221,8 +4221,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2641,
-  "views_7d": 2641
+  "views": 2656,
+  "views_7d": 2656
  },
  "7693914411005725984": {
   "created": 1791379049,
@@ -4232,8 +4232,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7410,
-  "views_7d": 7410
+  "views": 7413,
+  "views_7d": 7413
  },
  "7693926613863501078": {
   "created": 1791381895,
@@ -4254,8 +4254,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 824,
-  "views_7d": 824
+  "views": 844,
+  "views_7d": 844
  },
  "7693939339843144961": {
   "created": 1791384853,
@@ -4265,8 +4265,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6731,
-  "views_7d": 6731
+  "views": 6740,
+  "views_7d": 6740
  },
  "7693948611582840082": {
   "created": 1791387015,
@@ -4276,8 +4276,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1422,
-  "views_7d": 1422
+  "views": 1480,
+  "views_7d": 1480
  },
  "7693955179850435860": {
   "created": 1791388541,
@@ -4298,8 +4298,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 975,
-  "views_7d": 975
+  "views": 982,
+  "views_7d": 982
  },
  "7693979744295013638": {
   "created": 1791394265,
@@ -4320,8 +4320,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 100300,
-  "views_7d": 100300
+  "views": 100600,
+  "views_7d": 100600
  },
  "7693984751857847604": {
   "created": 1791395430,
@@ -4342,8 +4342,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 905,
-  "views_7d": 905
+  "views": 907,
+  "views_7d": 907
  },
  "7693990159091617046": {
   "created": 1791396687,
@@ -4353,8 +4353,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 601,
-  "views_7d": 601
+  "views": 602,
+  "views_7d": 602
  },
  "7693993217406094624": {
   "created": 1791397397,
@@ -4364,8 +4364,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3292,
-  "views_7d": 3292
+  "views": 3297,
+  "views_7d": 3297
  },
  "7693997841781476628": {
   "created": 1791398482,
@@ -4375,8 +4375,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6959,
-  "views_7d": 6959
+  "views": 6976,
+  "views_7d": 6976
  },
  "7694002832734686497": {
   "created": 1791399635,
@@ -4386,8 +4386,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3071,
-  "views_7d": 3071
+  "views": 3077,
+  "views_7d": 3077
  },
  "7694015236390554901": {
   "created": 1791402525,
@@ -4397,8 +4397,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 60400,
-  "views_7d": 60400
+  "views": 60700,
+  "views_7d": 60700
  },
  "7694017344863046945": {
   "created": 1791403014,
@@ -4408,8 +4408,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1501,
-  "views_7d": 1501
+  "views": 1509,
+  "views_7d": 1509
  },
  "7694023804967832852": {
   "created": 1791404525,
@@ -4419,8 +4419,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 653,
-  "views_7d": 653
+  "views": 657,
+  "views_7d": 657
  },
  "7694026386398366983": {
   "created": 1791405128,
@@ -4430,8 +4430,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3641,
-  "views_7d": 3641
+  "views": 3652,
+  "views_7d": 3652
  },
  "7694026494271704321": {
   "created": 1791405221,
@@ -4441,8 +4441,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 8820,
-  "views_7d": 8820
+  "views": 8892,
+  "views_7d": 8892
  },
  "7694027197060959495": {
   "created": 1791405312,
@@ -4452,8 +4452,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 826,
-  "views_7d": 826
+  "views": 831,
+  "views_7d": 831
  },
  "7694029525889355029": {
   "created": 1791405858,
@@ -4474,8 +4474,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 792,
-  "views_7d": 792
+  "views": 793,
+  "views_7d": 793
  },
  "7694038130260806944": {
   "created": 1791407859,
@@ -4485,8 +4485,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6723,
-  "views_7d": 6723
+  "views": 6732,
+  "views_7d": 6732
  },
  "7694038782693199125": {
   "created": 1791408009,
@@ -4496,8 +4496,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2716,
-  "views_7d": 2716
+  "views": 2725,
+  "views_7d": 2725
  },
  "7694042335914642709": {
   "created": 1791408841,
@@ -4507,8 +4507,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2570,
-  "views_7d": 2570
+  "views": 2580,
+  "views_7d": 2580
  },
  "7694047809275776277": {
   "created": 1791410116,
@@ -4518,8 +4518,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2683,
-  "views_7d": 2683
+  "views": 2693,
+  "views_7d": 2693
  },
  "7694048926395059486": {
   "bootstrap_tries": 1,
@@ -4551,8 +4551,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 859,
-  "views_7d": 859
+  "views": 861,
+  "views_7d": 861
  },
  "7694220674855882002": {
   "created": 1791450362,
@@ -4562,8 +4562,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 313,
-  "views_7d": 313
+  "views": 324,
+  "views_7d": 324
  },
  "7694232525132074260": {
   "created": 1791453120,
@@ -4584,8 +4584,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 137600,
-  "views_7d": 137600
+  "views": 138200,
+  "views_7d": 138200
  },
  "7694274598363335957": {
   "created": 1791462913,
@@ -4606,8 +4606,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 8112,
-  "views_7d": 8112
+  "views": 8124,
+  "views_7d": 8124
  },
  "7694290405809982752": {
   "created": 1791466593,
@@ -4617,8 +4617,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2998,
-  "views_7d": 2998
+  "views": 3002,
+  "views_7d": 3002
  },
  "7694296712805879062": {
   "created": 1791468064,
@@ -4628,8 +4628,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 3401,
-  "views_7d": 3401
+  "views": 3418,
+  "views_7d": 3418
  },
  "7694301661703064852": {
   "created": 1791469218,
@@ -4639,8 +4639,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5623,
-  "views_7d": 5623
+  "views": 5631,
+  "views_7d": 5631
  },
  "7694315631931346194": {
   "created": 1791472467,
@@ -4650,8 +4650,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 543,
-  "views_7d": 543
+  "views": 544,
+  "views_7d": 544
  },
  "7694317792979455239": {
   "created": 1791472970,
@@ -4661,8 +4661,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2391,
-  "views_7d": 2391
+  "views": 2406,
+  "views_7d": 2406
  },
  "7694339411772771591": {
   "created": 1791478006,
@@ -4672,8 +4672,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5928,
-  "views_7d": 5928
+  "views": 5933,
+  "views_7d": 5933
  },
  "7694343596991958294": {
   "created": 1791478979,
@@ -4683,8 +4683,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 595,
-  "views_7d": 595
+  "views": 598,
+  "views_7d": 598
  },
  "7694346236983266592": {
   "created": 1791479591,
@@ -4705,8 +4705,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 707,
-  "views_7d": 707
+  "views": 708,
+  "views_7d": 708
  },
  "7694360559491304712": {
   "created": 1791482929,
@@ -4716,8 +4716,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 81800,
-  "views_7d": 81800
+  "views": 82300,
+  "views_7d": 82300
  },
  "7694360730086247712": {
   "created": 1791482966,
@@ -4727,8 +4727,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1684,
-  "views_7d": 1684
+  "views": 1690,
+  "views_7d": 1690
  },
  "7694368402290248992": {
   "created": 1791484750,
@@ -4738,8 +4738,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6538,
-  "views_7d": 6538
+  "views": 6559,
+  "views_7d": 6559
  },
  "7694371283529698593": {
   "created": 1791485423,
@@ -4749,8 +4749,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2002,
-  "views_7d": 2002
+  "views": 2006,
+  "views_7d": 2006
  },
  "7694377557285686542": {
   "created": 1791486904,
@@ -4760,8 +4760,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 1503,
-  "views_7d": 1503
+  "views": 1506,
+  "views_7d": 1506
  },
  "7694379279764835602": {
   "created": 1791487287,
@@ -4771,8 +4771,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2319,
-  "views_7d": 2319
+  "views": 2326,
+  "views_7d": 2326
  },
  "7694386565300194561": {
   "created": 1791488995,
@@ -4793,8 +4793,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 110300,
-  "views_7d": 110300
+  "views": 110400,
+  "views_7d": 110400
  },
  "7694400286906961173": {
   "created": 1791492180,
@@ -4804,8 +4804,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5423,
-  "views_7d": 5423
+  "views": 5443,
+  "views_7d": 5443
  },
  "7694403597358026005": {
   "created": 1791492954,
@@ -4815,8 +4815,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 21100,
-  "views_7d": 21100
+  "views": 21200,
+  "views_7d": 21200
  },
  "7694411217401646356": {
   "created": 1791494725,
@@ -4826,8 +4826,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3804,
-  "views_7d": 3804
+  "views": 3808,
+  "views_7d": 3808
  },
  "7694415560993508609": {
   "created": 1791495742,
@@ -4837,8 +4837,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 165800,
-  "views_7d": 165800
+  "views": 166300,
+  "views_7d": 166300
  },
  "7694416412391066900": {
   "created": 1791495940,
@@ -4859,8 +4859,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4674,
-  "views_7d": 4674
+  "views": 4707,
+  "views_7d": 4707
  },
  "7694418332405026078": {
   "created": 1791496391,
@@ -4870,8 +4870,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 493,
-  "views_7d": 493
+  "views": 494,
+  "views_7d": 494
  },
  "7694419034376375572": {
   "created": 1791496549,
@@ -4881,8 +4881,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 59700,
-  "views_7d": 59700
+  "views": 59800,
+  "views_7d": 59800
  },
  "7694608829270494516": {
   "created": 1791540732,
@@ -4903,8 +4903,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5246,
-  "views_7d": 5246
+  "views": 5252,
+  "views_7d": 5252
  },
  "7694634420304612640": {
   "created": 1791546689,
@@ -4914,8 +4914,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7428,
-  "views_7d": 7428
+  "views": 7447,
+  "views_7d": 7447
  },
  "7694637898045426966": {
   "created": 1791547504,
@@ -4936,8 +4936,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 338900,
-  "views_7d": 338900
+  "views": 339500,
+  "views_7d": 339500
  },
  "7694659464502185248": {
   "created": 1791552519,
@@ -4958,8 +4958,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3007,
-  "views_7d": 3007
+  "views": 3012,
+  "views_7d": 3012
  },
  "7694698390881324308": {
   "created": 1791561583,
@@ -5002,8 +5002,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 245,
-  "views_7d": 245
+  "views": 246,
+  "views_7d": 246
  },
  "7694740351424154898": {
   "created": 1791571355,
@@ -5013,8 +5013,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6408,
-  "views_7d": 6408
+  "views": 6417,
+  "views_7d": 6417
  },
  "7694744612740582663": {
   "created": 1791572348,
@@ -5024,8 +5024,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 535,
-  "views_7d": 535
+  "views": 545,
+  "views_7d": 545
  },
  "7694745835527064852": {
   "created": 1791572632,
@@ -5035,8 +5035,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 706,
-  "views_7d": 706
+  "views": 707,
+  "views_7d": 707
  },
  "7694746465016581409": {
   "created": 1791572776,
@@ -5046,8 +5046,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5961,
-  "views_7d": 5961
+  "views": 5979,
+  "views_7d": 5979
  },
  "7694747075157691668": {
   "created": 1791572921,
@@ -5057,8 +5057,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 12600,
-  "views_7d": 12600
+  "views": 12700,
+  "views_7d": 12700
  },
  "7694747415961963797": {
   "created": 1791573003,
@@ -5068,8 +5068,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1660,
-  "views_7d": 1660
+  "views": 1663,
+  "views_7d": 1663
  },
  "7694749062603623713": {
   "created": 1791573381,
@@ -5090,8 +5090,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3498,
-  "views_7d": 3498
+  "views": 3510,
+  "views_7d": 3510
  },
  "7694752902853823745": {
   "created": 1791574283,
@@ -5101,8 +5101,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 45800,
-  "views_7d": 45800
+  "views": 46200,
+  "views_7d": 46200
  },
  "7694754797324438802": {
   "created": 1791574720,
@@ -5112,8 +5112,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 8278,
-  "views_7d": 8278
+  "views": 8294,
+  "views_7d": 8294
  },
  "7694757057957858566": {
   "created": 1791575247,
@@ -5134,8 +5134,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 9424,
-  "views_7d": 9424
+  "views": 9450,
+  "views_7d": 9450
  },
  "7694766667355770134": {
   "created": 1791577482,
@@ -5145,8 +5145,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 174100,
-  "views_7d": 174100
+  "views": 175900,
+  "views_7d": 175900
  },
  "7694769065109507361": {
   "created": 1791578039,
@@ -5156,8 +5156,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 30000,
-  "views_7d": 30000
+  "views": 30300,
+  "views_7d": 30300
  },
  "7694772429494816020": {
   "created": 1791578829,
@@ -5167,8 +5167,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 8693,
-  "views_7d": 8693
+  "views": 8825,
+  "views_7d": 8825
  },
  "7694775366581292320": {
   "created": 1791579507,
@@ -5178,8 +5178,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1135,
-  "views_7d": 1135
+  "views": 1137,
+  "views_7d": 1137
  },
  "7694781153961708801": {
   "created": 1791580859,
@@ -5189,8 +5189,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1505,
-  "views_7d": 1505
+  "views": 1513,
+  "views_7d": 1513
  },
  "7694788903487753473": {
   "created": 1791582664,
@@ -5200,8 +5200,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1114,
-  "views_7d": 1114
+  "views": 1124,
+  "views_7d": 1124
  },
  "7694789457416850694": {
   "created": 1791582877,
@@ -5211,8 +5211,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 91200,
-  "views_7d": 91200
+  "views": 91700,
+  "views_7d": 91700
  },
  "7694790351969717535": {
   "created": 1791583008,
@@ -5222,8 +5222,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5741,
-  "views_7d": 5741
+  "views": 5761,
+  "views_7d": 5761
  },
  "7694810980722674965": {
   "created": 1791587802,
@@ -5233,8 +5233,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 846,
-  "views_7d": 846
+  "views": 847,
+  "views_7d": 847
  },
  "7694862277115235598": {
   "created": 1791599765,
@@ -5244,8 +5244,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 2746,
-  "views_7d": 2746
+  "views": 2752,
+  "views_7d": 2752
  },
  "7694969070319439122": {
   "created": 1791624609,
@@ -5255,8 +5255,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2971,
-  "views_7d": 2971
+  "views": 2980,
+  "views_7d": 2980
  },
  "7694982899422039304": {
   "created": 1791627829,
@@ -5266,8 +5266,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1707,
-  "views_7d": 1707
+  "views": 1708,
+  "views_7d": 1708
  },
  "7694985625602215201": {
   "created": 1791628459,
@@ -5277,8 +5277,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 864,
-  "views_7d": 864
+  "views": 867,
+  "views_7d": 867
  },
  "7694992133832445204": {
   "created": 1791629986,
@@ -5288,8 +5288,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1765,
-  "views_7d": 1765
+  "views": 1799,
+  "views_7d": 1799
  },
  "7694997452256070920": {
   "created": 1791631219,
@@ -5310,8 +5310,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 36300,
-  "views_7d": 36300
+  "views": 36400,
+  "views_7d": 36400
  },
  "7695018039569304852": {
   "created": 1791636007,
@@ -5332,8 +5332,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 141900,
-  "views_7d": 141900
+  "views": 142800,
+  "views_7d": 142800
  },
  "7695060392975895841": {
   "created": 1791645869,
@@ -5343,8 +5343,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6101,
-  "views_7d": 6101
+  "views": 6109,
+  "views_7d": 6109
  },
  "7695061900094229781": {
   "created": 1791646221,
@@ -5354,8 +5354,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2576,
-  "views_7d": 2576
+  "views": 2587,
+  "views_7d": 2587
  },
  "7695067636668976417": {
   "created": 1791647556,
@@ -5365,8 +5365,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4076,
-  "views_7d": 4076
+  "views": 4083,
+  "views_7d": 4083
  },
  "7695075978351103265": {
   "created": 1791649497,
@@ -5387,8 +5387,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2951,
-  "views_7d": 2951
+  "views": 2981,
+  "views_7d": 2981
  },
  "7695095686668340502": {
   "created": 1791654087,
@@ -5398,8 +5398,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 4262,
-  "views_7d": 4262
+  "views": 4286,
+  "views_7d": 4286
  },
  "7695101234688101650": {
   "created": 1791655382,
@@ -5409,8 +5409,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2130,
-  "views_7d": 2130
+  "views": 2133,
+  "views_7d": 2133
  },
  "7695103700808813842": {
   "created": 1791655955,
@@ -5442,8 +5442,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7669,
-  "views_7d": 7669
+  "views": 7771,
+  "views_7d": 7771
  },
  "7695121061607705877": {
   "created": 1791659999,
@@ -5453,8 +5453,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 19800,
-  "views_7d": 19800
+  "views": 20000,
+  "views_7d": 20000
  },
  "7695127525202103573": {
   "created": 1791661503,
@@ -5464,8 +5464,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5977,
-  "views_7d": 5977
+  "views": 5993,
+  "views_7d": 5993
  },
  "7695138205875604758": {
   "created": 1791663989,
@@ -5486,8 +5486,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3371,
-  "views_7d": 3371
+  "views": 3394,
+  "views_7d": 3394
  },
  "7695143320200252704": {
   "created": 1791665174,
@@ -5497,8 +5497,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 47200,
-  "views_7d": 47200
+  "views": 47400,
+  "views_7d": 47400
  },
  "7695143933633940756": {
   "created": 1791665322,
@@ -5508,8 +5508,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 47700,
-  "views_7d": 47700
+  "views": 48400,
+  "views_7d": 48400
  },
  "7695149095731662101": {
   "created": 1791666527,
@@ -5519,8 +5519,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7764,
-  "views_7d": 7764
+  "views": 7892,
+  "views_7d": 7892
  },
  "7695150549896924436": {
   "created": 1791666867,
@@ -5530,8 +5530,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5250,
-  "views_7d": 5250
+  "views": 5281,
+  "views_7d": 5281
  },
  "7695153972046253364": {
   "created": 1791667713,
@@ -5541,8 +5541,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 175300,
-  "views_7d": 175300
+  "views": 177000,
+  "views_7d": 177000
  },
  "7695156568865770773": {
   "created": 1791668268,
@@ -5552,8 +5552,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1865,
-  "views_7d": 1865
+  "views": 1870,
+  "views_7d": 1870
  },
  "7695157463628123399": {
   "created": 1791668470,
@@ -5563,8 +5563,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1846,
-  "views_7d": 1846
+  "views": 1862,
+  "views_7d": 1862
  },
  "7695159396111764769": {
   "created": 1791668920,
@@ -5574,8 +5574,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 870,
-  "views_7d": 870
+  "views": 871,
+  "views_7d": 871
  },
  "7695159472309669151": {
   "created": 1791668946,
@@ -5585,8 +5585,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 552,
-  "views_7d": 552
+  "views": 554,
+  "views_7d": 554
  },
  "7695162006311128327": {
   "created": 1791669535,
@@ -5596,8 +5596,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 983,
-  "views_7d": 983
+  "views": 987,
+  "views_7d": 987
  },
  "7695162529441434913": {
   "created": 1791669648,
@@ -5607,8 +5607,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 650,
-  "views_7d": 650
+  "views": 656,
+  "views_7d": 656
  },
  "7695241123765161230": {
   "created": 1791687960,
@@ -5618,8 +5618,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 686,
-  "views_7d": 686
+  "views": 689,
+  "views_7d": 689
  },
  "7695283097679547649": {
   "created": 1791697726,
@@ -5629,8 +5629,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2135,
-  "views_7d": 2135
+  "views": 2158,
+  "views_7d": 2158
  },
  "7695310393379425569": {
   "created": 1791704080,
@@ -5673,8 +5673,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 482,
-  "views_7d": 482
+  "views": 489,
+  "views_7d": 489
  },
  "7695373156680224022": {
   "created": 1791718692,
@@ -5684,8 +5684,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 32000,
-  "views_7d": 32000
+  "views": 32200,
+  "views_7d": 32200
  },
  "7695380997185080583": {
   "created": 1791720517,
@@ -5695,8 +5695,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 227,
-  "views_7d": 227
+  "views": 228,
+  "views_7d": 228
  },
  "7695391440037268769": {
   "created": 1791722947,
@@ -5706,8 +5706,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 48400,
-  "views_7d": 48400
+  "views": 48800,
+  "views_7d": 48800
  },
  "7695399259209878792": {
   "created": 1791724770,
@@ -5717,8 +5717,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 935,
-  "views_7d": 935
+  "views": 958,
+  "views_7d": 958
  },
  "7695416381109718280": {
   "created": 1791728757,
@@ -5728,8 +5728,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7014,
-  "views_7d": 7014
+  "views": 7047,
+  "views_7d": 7047
  },
  "7695423573338377492": {
   "created": 1791730428,
@@ -5739,8 +5739,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2827,
-  "views_7d": 2827
+  "views": 2850,
+  "views_7d": 2850
  },
  "7695432455234309398": {
   "created": 1791732498,
@@ -5761,8 +5761,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1855,
-  "views_7d": 1855
+  "views": 1866,
+  "views_7d": 1866
  },
  "7695436504813817108": {
   "created": 1791733444,
@@ -5772,8 +5772,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 49900,
-  "views_7d": 49900
+  "views": 50200,
+  "views_7d": 50200
  },
  "7695440053622934806": {
   "created": 1791734269,
@@ -5783,8 +5783,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 5594,
-  "views_7d": 5594
+  "views": 5641,
+  "views_7d": 5641
  },
  "7695442054398102817": {
   "created": 1791734729,
@@ -5794,8 +5794,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4402,
-  "views_7d": 4402
+  "views": 4403,
+  "views_7d": 4403
  },
  "7695455431728106785": {
   "created": 1791737844,
@@ -5805,8 +5805,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 164800,
-  "views_7d": 164800
+  "views": 167600,
+  "views_7d": 167600
  },
  "7695458569415675156": {
   "created": 1791738578,
@@ -5827,8 +5827,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 626,
-  "views_7d": 626
+  "views": 636,
+  "views_7d": 636
  },
  "7695468485194878240": {
   "created": 1791740884,
@@ -5838,8 +5838,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 3046,
-  "views_7d": 3046
+  "views": 3104,
+  "views_7d": 3104
  },
  "7695475255841656084": {
   "created": 1791742464,
@@ -5849,8 +5849,8 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 227500,
-  "views_7d": 227500
+  "views": 235800,
+  "views_7d": 235800
  },
  "7695480472427679008": {
   "created": 1791743676,
@@ -5860,8 +5860,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1355,
-  "views_7d": 1355
+  "views": 1362,
+  "views_7d": 1362
  },
  "7695488892006305032": {
   "created": 1791745638,
@@ -5871,8 +5871,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5102,
-  "views_7d": 5102
+  "views": 5156,
+  "views_7d": 5156
  },
  "7695503205521788162": {
   "created": 1791748971,
@@ -5882,8 +5882,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1061,
-  "views_7d": 1061
+  "views": 1078,
+  "views_7d": 1078
  },
  "7695503911930629397": {
   "created": 1791749136,
@@ -5893,8 +5893,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 11800,
-  "views_7d": 11800
+  "views": 12100,
+  "views_7d": 12100
  },
  "7695513564886453525": {
   "created": 1791751393,
@@ -5904,8 +5904,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1263,
-  "views_7d": 1263
+  "views": 1275,
+  "views_7d": 1275
  },
  "7695521263393082645": {
   "created": 1791753178,
@@ -5915,8 +5915,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 14000,
-  "views_7d": 14000
+  "views": 14300,
+  "views_7d": 14300
  },
  "7695524615283592468": {
   "created": 1791753960,
@@ -5926,8 +5926,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 903,
-  "views_7d": 903
+  "views": 915,
+  "views_7d": 915
  },
  "7695526720115330336": {
   "created": 1791754445,
@@ -5937,8 +5937,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 305,
-  "views_7d": 305
+  "views": 307,
+  "views_7d": 307
  },
  "7695527928414620960": {
   "created": 1791754726,
@@ -5948,8 +5948,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1070,
-  "views_7d": 1070
+  "views": 1087,
+  "views_7d": 1087
  },
  "7695530352458206470": {
   "created": 1791755296,
@@ -5959,8 +5959,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1056,
-  "views_7d": 1056
+  "views": 1078,
+  "views_7d": 1078
  },
  "7695531674557369608": {
   "created": 1791755607,
@@ -5970,8 +5970,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1584,
-  "views_7d": 1584
+  "views": 1596,
+  "views_7d": 1596
  },
  "7695533180484406580": {
   "created": 1791755994,
@@ -5981,30 +5981,30 @@
   "judged": true,
   "local": true,
   "mature": false,
-  "views": 160700,
-  "views_7d": 160700
+  "views": 168500,
+  "views_7d": 168500
  },
  "7695626445770591496": {
   "created": 1791777670,
   "format": null,
   "handle": "studywithvalentina",
-  "hook": "",
+  "hook": "I love this app (no speech or on-screen text, caption only)",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1737,
-  "views_7d": 1737
+  "views": 1757,
+  "views_7d": 1757
  },
  "7695635537952099592": {
   "created": 1791779783,
   "format": null,
   "handle": "ucisaprofom",
-  "hook": "",
+  "hook": "What grade do you have in chemistry?",
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 284,
-  "views_7d": 284
+  "views": 287,
+  "views_7d": 287
  },
  "7695685290928737557": {
   "created": 1791791365,
@@ -6014,8 +6014,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1502,
-  "views_7d": 1502
+  "views": 1509,
+  "views_7d": 1509
  },
  "7695724245401324832": {
   "created": 1791800441,
@@ -6025,8 +6025,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1559,
-  "views_7d": 1559
+  "views": 1574,
+  "views_7d": 1574
  },
  "7695726647340813589": {
   "created": 1791800994,
@@ -6047,8 +6047,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 583,
-  "views_7d": 583
+  "views": 588,
+  "views_7d": 588
  },
  "7695769547487464725": {
   "created": 1791810986,
@@ -6058,8 +6058,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1397,
-  "views_7d": 1397
+  "views": 1422,
+  "views_7d": 1422
  },
  "7695788141625576710": {
   "created": 1791815352,
@@ -6069,8 +6069,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 53700,
-  "views_7d": 53700
+  "views": 55000,
+  "views_7d": 55000
  },
  "7695790406209932545": {
   "created": 1791815839,
@@ -6080,8 +6080,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 882,
-  "views_7d": 882
+  "views": 890,
+  "views_7d": 890
  },
  "7695794733162990870": {
   "created": 1791816850,
@@ -6091,8 +6091,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 32300,
-  "views_7d": 32300
+  "views": 33500,
+  "views_7d": 33500
  },
  "7695804121600822550": {
   "created": 1791819035,
@@ -6102,8 +6102,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 32200,
-  "views_7d": 32200
+  "views": 33400,
+  "views_7d": 33400
  },
  "7695804542453157152": {
   "created": 1791819130,
@@ -6113,8 +6113,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 838,
-  "views_7d": 838
+  "views": 841,
+  "views_7d": 841
  },
  "7695807122390388000": {
   "created": 1791819731,
@@ -6124,8 +6124,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1670,
-  "views_7d": 1670
+  "views": 1687,
+  "views_7d": 1687
  },
  "7695807589338172704": {
   "created": 1791819840,
@@ -6135,8 +6135,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7263,
-  "views_7d": 7263
+  "views": 7308,
+  "views_7d": 7308
  },
  "7695819587668938017": {
   "created": 1791822633,
@@ -6146,8 +6146,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7317,
-  "views_7d": 7317
+  "views": 8007,
+  "views_7d": 8007
  },
  "7695823889451994375": {
   "created": 1791823636,
@@ -6157,8 +6157,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 797,
-  "views_7d": 797
+  "views": 814,
+  "views_7d": 814
  },
  "7695832905150467361": {
   "created": 1791825734,
@@ -6168,8 +6168,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5271,
-  "views_7d": 5271
+  "views": 5302,
+  "views_7d": 5302
  },
  "7695844951632006418": {
   "created": 1791828542,
@@ -6190,8 +6190,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 5153,
-  "views_7d": 5153
+  "views": 5253,
+  "views_7d": 5253
  },
  "7695849687370272022": {
   "created": 1791829643,
@@ -6201,8 +6201,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 1354,
-  "views_7d": 1354
+  "views": 1357,
+  "views_7d": 1357
  },
  "7695850099347311879": {
   "created": 1791829745,
@@ -6212,8 +6212,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 837,
-  "views_7d": 837
+  "views": 856,
+  "views_7d": 856
  },
  "7695852411235224840": {
   "created": 1791830284,
@@ -6223,8 +6223,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 432,
-  "views_7d": 432
+  "views": 433,
+  "views_7d": 433
  },
  "7695855531122035976": {
   "created": 1791831012,
@@ -6234,8 +6234,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 382,
-  "views_7d": 382
+  "views": 411,
+  "views_7d": 411
  },
  "7695856376567860501": {
   "created": 1791831203,
@@ -6256,8 +6256,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 4957,
-  "views_7d": 4957
+  "views": 5430,
+  "views_7d": 5430
  },
  "7695860640967134485": {
   "created": 1791832194,
@@ -6267,8 +6267,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1392,
-  "views_7d": 1392
+  "views": 1426,
+  "views_7d": 1426
  },
  "7695863399992790293": {
   "created": 1791832836,
@@ -6278,8 +6278,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1692,
-  "views_7d": 1692
+  "views": 1713,
+  "views_7d": 1713
  },
  "7695867061720976673": {
   "created": 1791833686,
@@ -6289,8 +6289,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 958,
-  "views_7d": 958
+  "views": 976,
+  "views_7d": 976
  },
  "7695872585208204564": {
   "created": 1791834976,
@@ -6300,8 +6300,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 55900,
-  "views_7d": 55900
+  "views": 64100,
+  "views_7d": 64100
  },
  "7695880888642555168": {
   "created": 1791836905,
@@ -6311,8 +6311,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1394,
-  "views_7d": 1394
+  "views": 1464,
+  "views_7d": 1464
  },
  "7695884871943720212": {
   "created": 1791837833,
@@ -6322,8 +6322,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 542,
-  "views_7d": 542
+  "views": 555,
+  "views_7d": 555
  },
  "7695886544241954069": {
   "created": 1791838222,
@@ -6333,8 +6333,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 14300,
-  "views_7d": 14300
+  "views": 14600,
+  "views_7d": 14600
  },
  "7695890321678290197": {
   "created": 1791839104,
@@ -6344,8 +6344,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 402,
-  "views_7d": 402
+  "views": 405,
+  "views_7d": 405
  },
  "7695897826030521620": {
   "created": 1791840851,
@@ -6355,8 +6355,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 7502,
-  "views_7d": 7502
+  "views": 7625,
+  "views_7d": 7625
  },
  "7695901834728197396": {
   "created": 1791841783,
@@ -6366,8 +6366,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 2386,
-  "views_7d": 2386
+  "views": 2415,
+  "views_7d": 2415
  },
  "7695902367979425045": {
   "created": 1791841907,
@@ -6377,8 +6377,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1808,
-  "views_7d": 1808
+  "views": 1816,
+  "views_7d": 1816
  },
  "7695902473273363744": {
   "created": 1791841932,
@@ -6388,8 +6388,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1869,
-  "views_7d": 1869
+  "views": 1876,
+  "views_7d": 1876
  },
  "7695904167080037633": {
   "created": 1791842340,
@@ -6399,8 +6399,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 27600,
-  "views_7d": 27600
+  "views": 29600,
+  "views_7d": 29600
  },
  "7695904312383327519": {
   "created": 1791842367,
@@ -6410,8 +6410,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 568,
-  "views_7d": 568
+  "views": 728,
+  "views_7d": 728
  },
  "7695907169115327765": {
   "created": 1791843026,
@@ -6421,8 +6421,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 39200,
-  "views_7d": 39200
+  "views": 41500,
+  "views_7d": 41500
  },
  "7696017033636465928": {
   "created": 1791868607,
@@ -6432,8 +6432,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 247,
-  "views_7d": 247
+  "views": 248,
+  "views_7d": 248
  },
  "7696063377767927073": {
   "created": 1791879397,
@@ -6443,8 +6443,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1110,
-  "views_7d": 1110
+  "views": 1136,
+  "views_7d": 1136
  },
  "7696083951412055316": {
   "created": 1791884193,
@@ -6454,8 +6454,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 236,
-  "views_7d": 236
+  "views": 238,
+  "views_7d": 238
  },
  "7696127061395737879": {
   "created": 1791894228,
@@ -6465,8 +6465,8 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 91600,
-  "views_7d": 91600
+  "views": 95600,
+  "views_7d": 95600
  },
  "7696151154476059911": {
   "created": 1791899831,
@@ -6476,8 +6476,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1519,
-  "views_7d": 1519
+  "views": 1623,
+  "views_7d": 1623
  },
  "7696174247470796064": {
   "created": 1791905207,
@@ -6487,8 +6487,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 469,
-  "views_7d": 469
+  "views": 487,
+  "views_7d": 487
  },
  "7696180399424163092": {
   "created": 1791906640,
@@ -6498,8 +6498,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 327,
-  "views_7d": 327
+  "views": 365,
+  "views_7d": 365
  },
  "7696188711347752193": {
   "created": 1791908586,
@@ -6509,8 +6509,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6839,
-  "views_7d": 6839
+  "views": 7641,
+  "views_7d": 7641
  },
  "7696199235494071585": {
   "created": 1791911026,
@@ -6520,8 +6520,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1451,
-  "views_7d": 1451
+  "views": 1872,
+  "views_7d": 1872
  },
  "7696202117349903649": {
   "created": 1791911695,
@@ -6531,8 +6531,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 12100,
-  "views_7d": 12100
+  "views": 12200,
+  "views_7d": 12200
  },
  "7696204620556717345": {
   "created": 1791912278,
@@ -6542,8 +6542,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 6050,
-  "views_7d": 6050
+  "views": 6421,
+  "views_7d": 6421
  },
  "7696207782223056150": {
   "created": 1791913016,
@@ -6553,8 +6553,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1234,
-  "views_7d": 1234
+  "views": 1352,
+  "views_7d": 1352
  },
  "7696208150554266900": {
   "created": 1791913104,
@@ -6564,8 +6564,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 9804,
-  "views_7d": 9804
+  "views": 19100,
+  "views_7d": 19100
  },
  "7696209261361188116": {
   "created": 1791913367,
@@ -6575,8 +6575,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1347,
-  "views_7d": 1347
+  "views": 1593,
+  "views_7d": 1593
  },
  "7696210155720985889": {
   "created": 1791913567,
@@ -6586,8 +6586,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 15500,
-  "views_7d": 15500
+  "views": 15600,
+  "views_7d": 15600
  },
  "7696213363591826721": {
   "created": 1791914314,
@@ -6597,8 +6597,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1683,
-  "views_7d": 1683
+  "views": 1902,
+  "views_7d": 1902
  },
  "7696217920111709492": {
   "created": 1791915379,
@@ -6608,8 +6608,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 297,
-  "views_7d": 297
+  "views": 309,
+  "views_7d": 309
  },
  "7696223095987703061": {
   "created": 1791916583,
@@ -6619,8 +6619,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 18400,
-  "views_7d": 18400
+  "views": 31400,
+  "views_7d": 31400
  },
  "7696229924042296597": {
   "created": 1791918174,
@@ -6630,8 +6630,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 623,
-  "views_7d": 623
+  "views": 761,
+  "views_7d": 761
  },
  "7696235361822936340": {
   "created": 1791919440,
@@ -6641,8 +6641,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 261,
-  "views_7d": 261
+  "views": 266,
+  "views_7d": 266
  },
  "7696242305593789704": {
   "created": 1791921061,
@@ -6652,8 +6652,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 322,
-  "views_7d": 322
+  "views": 354,
+  "views_7d": 354
  },
  "7696247742825352455": {
   "created": 1791922322,
@@ -6663,8 +6663,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1413,
-  "views_7d": 1413
+  "views": 4808,
+  "views_7d": 4808
  },
  "7696251707814071572": {
   "created": 1791923245,
@@ -6674,8 +6674,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 29000,
-  "views_7d": 29000
+  "views": 56100,
+  "views_7d": 56100
  },
  "7696259202540490002": {
   "created": 1791924993,
@@ -6685,8 +6685,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 660,
-  "views_7d": 660
+  "views": 947,
+  "views_7d": 947
  },
  "7696260799777606933": {
   "created": 1791925366,
@@ -6696,8 +6696,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 560,
-  "views_7d": 560
+  "views": 805,
+  "views_7d": 805
  },
  "7696265652742409502": {
   "created": 1791926495,
@@ -6707,8 +6707,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 241,
-  "views_7d": 241
+  "views": 325,
+  "views_7d": 325
  },
  "7696267950638058773": {
   "created": 1791927029,
@@ -6718,8 +6718,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 339,
-  "views_7d": 339
+  "views": 401,
+  "views_7d": 401
  },
  "7696268548410330389": {
   "created": 1791927168,
@@ -6729,8 +6729,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1648,
-  "views_7d": 1648
+  "views": 6056,
+  "views_7d": 6056
  },
  "7696268937780055302": {
   "created": 1791927266,
@@ -6740,8 +6740,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 1534,
-  "views_7d": 1534
+  "views": 2072,
+  "views_7d": 2072
  },
  "7696269169947315463": {
   "created": 1791927309,
@@ -6751,8 +6751,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 528,
-  "views_7d": 528
+  "views": 762,
+  "views_7d": 762
  },
  "7696276432498117908": {
   "created": 1791929001,
@@ -6762,8 +6762,8 @@
   "judged": false,
   "local": true,
   "mature": false,
-  "views": 652,
-  "views_7d": 652
+  "views": 1197,
+  "views_7d": 1197
  },
  "7696342588835548430": {
   "created": 1791944407,
@@ -6773,7 +6773,29 @@
   "judged": false,
   "local": false,
   "mature": false,
-  "views": 645,
-  "views_7d": 645
+  "views": 883,
+  "views_7d": 883
+ },
+ "7696424591052328199": {
+  "created": 1791963499,
+  "format": null,
+  "handle": "ucisaprofom",
+  "hook": "",
+  "judged": false,
+  "local": true,
+  "mature": false,
+  "views": 660,
+  "views_7d": 660
+ },
+ "7696491861975797006": {
+  "created": 1791979164,
+  "format": null,
+  "handle": "nicole.lockedin",
+  "hook": "",
+  "judged": false,
+  "local": false,
+  "mature": false,
+  "views": 140,
+  "views_7d": 140
  }
 }
