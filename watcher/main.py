@@ -154,7 +154,7 @@ def add_cta(fmts, mkts, only=None):
     return out
 
 
-def age_boxes(fmts, mkts, cfg, limit=None, only=None):
+def age_boxes(fmts, mkts, cfg, limit=None, only=None, redo=False):
     """🎓 box under every script tied to one school level (ages.py). Each page is checked once (f['age'][market] =
     page id + result); a rebuilt page (new id) is checked again. Returns {result: [labels]}."""
     out, done = {}, 0
@@ -165,13 +165,13 @@ def age_boxes(fmts, mkts, cfg, limit=None, only=None):
             pid = page_of(f, mk['key'])
             seen = (f.get('age') or {}).get(mk['key']) or {}
             retry = seen.get('status', '').startswith(('held', 'error')) and seen.get('tries', 0) < 3
-            if not pid or (seen.get('page') == pid and not retry):
+            if not pid or (seen.get('page') == pid and not retry and not redo):
                 continue
             if limit is not None and done >= limit:
                 return out
             done += 1
             try:
-                status = ages.add_to_page(pid, mk['lang'], cfg['models']['build'])
+                status = ages.add_to_page(pid, mk['lang'], cfg['models']['build'], redo=redo)
             except Exception as e:
                 status = 'error: ' + str(e)[:120]
             tries = seen.get('tries', 0) + 1 if seen.get('page') == pid else 1
@@ -2195,7 +2195,9 @@ def main():
         return
     if a.age_variants:
         cfg, fmts = load_config(), load_formats()
-        r = age_boxes(fmts, M.load(cfg), cfg, only=[x for x in a.age_variants.split(',') if x and x != '-'])
+        arg = a.age_variants.strip()  # "!ID,ID": write those boxes again
+        r = age_boxes(fmts, M.load(cfg), cfg, only=[x for x in arg.lstrip('!').split(',') if x and x != '-'],
+                      redo=arg.startswith('!'))
         for k, v in r.items():
             print(f'{k}: {len(v)}', *('  ' + x for x in v), sep='\n')
         return

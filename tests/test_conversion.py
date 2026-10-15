@@ -420,7 +420,8 @@ class AgeBoxes(StateDir):
 
     def test_box_goes_after_the_cta_and_only_once(self):
         from watcher import ages
-        found = [{'line': self.LINES[1], 'versions': {'srednja': 'Torej, prišla sem do četrtega letnika srednje ...'}}]
+        found = [{'line': '(🎥 Posnemi Memo AI · memoai.eu/creator) ' + self.LINES[1],
+                  'versions': {'srednja': 'Torej, prišla sem do četrtega letnika srednje ...'}}]
         with mock.patch.object(ages.notion, 'children', return_value=self.blocks()), \
                 mock.patch.object(ages, 'variants', return_value=found), mock.patch.object(ages.notion, 'api') as api:
             r = ages.add_to_page('P', 'sl', script_blocks=lambda pid: self.blocks(), plain=lambda b: b['text'])
@@ -430,10 +431,22 @@ class AgeBoxes(StateDir):
         text = ''.join(x['text']['content'] for x in body['children'][0]['callout']['rich_text'])
         self.assertIn('Prilagodi svoji starosti', text)
         self.assertIn('Srednja šola: Torej, prišla sem do četrtega letnika srednje', text)
+        self.assertNotIn('🎥', text)
         with_box = self.blocks() + [{'type': 'callout', 'callout': {'icon': {'emoji': '🎓'}}}]
         with mock.patch.object(ages.notion, 'children', return_value=with_box), mock.patch.object(ages, 'variants') as v:
             self.assertEqual(ages.add_to_page('P', 'sl'), 'had')
         v.assert_not_called()
+
+    def test_redo_replaces_the_old_box_after_the_new_one_is_in(self):
+        from watcher import ages
+        old = {'id': 'old', 'type': 'callout', 'callout': {'icon': {'emoji': '🎓'}}}
+        found = [{'line': self.LINES[1], 'versions': {'srednja': 'Torej, prišla sem do četrtega letnika srednje ...'}}]
+        with mock.patch.object(ages.notion, 'children', return_value=self.blocks() + [old]), \
+                mock.patch.object(ages, 'variants', return_value=found) as v, mock.patch.object(ages.notion, 'api') as api:
+            r = ages.add_to_page('P', 'sl', script_blocks=lambda pid: self.blocks(), plain=lambda b: b['text'], redo=True)
+        self.assertEqual(r, 'added')
+        self.assertEqual([c.args[0] for c in api.call_args_list], ['PATCH', 'DELETE'])
+        self.assertTrue(all('🎥' not in line for line in v.call_args.args[0]))
 
     def test_scripts_that_fit_every_age_get_no_box_and_bad_text_is_held(self):
         from watcher import ages

@@ -18,8 +18,11 @@ MARK = '🎓'
 SYSTEM = 'You adapt TikTok creator scripts to the creator\'s school level. Reply with JSON only.'
 
 
+CUE_RE = re.compile(r'\((?:🎥|📎)[^)]*\)\s*')  # recording / material cues: the creator sees them in the script above
+
+
 def _norm(t):
-    return re.sub(r'\s+', ' ', (t or '').strip())
+    return re.sub(r'\s+', ' ', CUE_RE.sub('', t or '').strip())
 
 
 def variants(lines, lang, model='opus'):
@@ -78,7 +81,7 @@ def box(found, lang):
     names = T['age_levels']
     rich = [notion.rt(T['age_h'], bold=True), notion.rt('\n' + T['age_intro'])]
     for x in found:
-        rich.append(notion.rt('\n\n„' + _norm(x['line'])[:300] + '“', bold=False))
+        rich.append(notion.rt('\n\n„' + _norm(x['line'])[:1900] + '“', bold=False))
         for lv in LEVELS:
             if lv in x['versions']:
                 rich += [notion.rt(f'\n→ {names[lv]}: ', bold=True), notion.rt(x['versions'][lv])]
@@ -89,15 +92,17 @@ def has_box(blocks):
     return any(b['type'] == 'callout' and ((b['callout'].get('icon') or {}).get('emoji')) == MARK for b in blocks)
 
 
-def add_to_page(pid, lang, model='opus', script_blocks=None, plain=None):
-    """Adds the box to one page. Returns 'had' | 'none' (script fits every level) | 'added' | 'held: <why>'."""
+def add_to_page(pid, lang, model='opus', script_blocks=None, plain=None, redo=False):
+    """Adds the box to one page. Returns 'had' | 'none' (script fits every level) | 'added' | 'held: <why>'.
+    redo: an existing box is replaced."""
     from . import reword
     blocks = notion.children(pid)
-    if has_box(blocks):
+    if has_box(blocks) and not redo:
         return 'had'
+    old = [b for b in blocks if b['type'] == 'callout' and ((b['callout'].get('icon') or {}).get('emoji')) == MARK]
     script = (script_blocks or reword.script_blocks)(pid)
     plain = plain or reword._plain
-    lines = [plain(b).strip() for b in script if plain(b).strip()]
+    lines = [_norm(plain(b)) for b in script if _norm(plain(b))]
     silent = lines and lines[0] == TEXT[lang]['silent_label']
     if silent:
         lines = lines[1:]
@@ -110,6 +115,8 @@ def add_to_page(pid, lang, model='opus', script_blocks=None, plain=None):
     if why:
         return 'held: ' + '; '.join(why)
     notion.api('PATCH', f'/blocks/{pid}/children', {'children': [box(found, lang)], 'after': script[-1]['id']})
+    for b in old:  # the new box is in: the old one goes (never before - a page is never left without one)
+        notion.api('DELETE', f"/blocks/{b['id']}")
     return 'added'
 
 
