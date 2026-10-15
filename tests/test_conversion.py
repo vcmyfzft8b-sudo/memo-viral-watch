@@ -516,3 +516,17 @@ class PageUpkeep(StateDir):
             r = main.add_cta(fmts, mkts)
         self.assertEqual(len(r['had']), 2)
         api.assert_not_called()
+
+
+class CtaLength(unittest.TestCase):
+    def test_the_cta_never_counts_against_the_originals_length(self):
+        from watcher import align, markets
+        line = 'Komentiraj »POPUST« in pošljem ti link do aplikacije.'
+        self.assertEqual(align._words(markets.strip_cta('Prvi stavek. ' + line)), 2)
+        self.assertEqual(markets.strip_cta('Brez CTA.').strip(), 'Brez CTA.')
+        body = 'beseda ' * 90
+        spec = {'script': [{'cue': 'memo', 'text': 'Memo AI ' + body}, {'cue': None, 'text': line}]}
+        why = align._validate(spec, 90, source='', lang='sl', own_ex=False)
+        self.assertNotIn('words', why or '')                  # 92 + 8 CTA words: still within 110% of 90
+        spec['script'][0]['text'] = 'Memo AI ' + 'beseda ' * 99
+        self.assertIn('words', align._validate(spec, 90, source='', lang='sl', own_ex=False))

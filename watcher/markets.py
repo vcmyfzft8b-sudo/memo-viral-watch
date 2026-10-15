@@ -261,6 +261,11 @@ def has_cta(text):
     return bool(CTA_RE.search(text or ''))
 
 
+def strip_cta(text):
+    """The text without the comment CTA sentence: the CTA is ours, never counted against the original's length."""
+    return re.sub(CTA_RE.pattern + r'[^.!?\n]*[.!?]?', ' ', text or '', flags=re.I | re.S)
+
+
 def cta_word(fid, lang):
     """The comment word picked for this format and language (registry/cta_words.json), None if there is none."""
     import json

@@ -20,7 +20,7 @@ from urllib.parse import urlsplit
 
 from . import align, llm, localize, notion, reword, state, tiktok
 from .brand import FACTS, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, links_for, says_source
-from .markets import TEXT, avoid_found, conversion_rules, lang_matches, of, own as own_example
+from .markets import TEXT, avoid_found, conversion_rules, lang_matches, of, own as own_example, strip_cta
 
 ORIGINALS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'originals.json')
 
@@ -179,7 +179,7 @@ Return JSON {{"example_same_format": true, "script_follows_example": true, "scri
             v['title_ok'] = True
     base = align.source_script(example)
     spoken = reword.spoken_text(reword.script_blocks(page_id))
-    v['length_ok'] = v['approved_matches'] or align._words(spoken) <= 1.10 * max(align._words(base), 1)
+    v['length_ok'] = v['approved_matches'] or align._words(strip_cta(spoken)) <= 1.10 * max(align._words(base), 1)
     want, have = count_app(base), count_ours(spoken)
     v['brand_count_ok'] = v['approved_matches'] or (have == want if own_example(fmt, lang) else have >= 1)
     if not v['brand_count_ok']:

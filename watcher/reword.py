@@ -12,7 +12,7 @@ import re
 
 from . import llm, notion, state
 from .brand import CATEGORY, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, count_app, count_ours, count_source, says_source
-from .markets import TEXT, conversion_rules, of, own
+from .markets import TEXT, conversion_rules, of, own, strip_cta
 
 TOKEN = re.compile(r'⟦(\d+)⟧(.*?)⟦/\1⟧', re.S)
 
@@ -131,7 +131,7 @@ def _validate(enc, new, original=''):
         base = align.source_script(original)
         rendered = [{'type': b['type'], b['type']: {'rich_text': decode(text, links)}} for b, _, text, links in changes]
         spoken = spoken_text(rendered)
-        if align._words(spoken) > 1.10 * align._words(base):
+        if align._words(strip_cta(spoken)) > 1.10 * align._words(base):
             return 'script exceeds 110% of the original word count', []
         want, have = count_app(base), count_ours(spoken)
         if have < 1:  # our rules: Memo AI is named where it comes in (cue labels do not count)
