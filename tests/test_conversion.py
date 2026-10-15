@@ -481,3 +481,38 @@ class AgeBoxes(StateDir):
             fmts.append({'id': 'G', 'status': 'active', 'title': 'g', 'page_id': 'q1', 'pages': {'sl': 'q2'}})
             main.age_boxes(fmts, mkts, CFG, limit=1)
             self.assertEqual(add.call_count, 1)                # a few pages per run
+
+
+class PageUpkeep(StateDir):
+    def test_a_rewritten_page_gets_its_age_box_back(self):
+        fmts = [{'id': 'F', 'status': 'active', 'title': 't', 'page_id': 'p1', 'only_markets': ['sh'],
+                 'age': {'sh': {'page': 'p1', 'status': 'added', 'tries': 1}}}]
+        mkts = [{'key': 'sh', 'lang': 'sh'}]
+        box = [{'type': 'callout', 'callout': {'icon': {'emoji': '🎓'}}}]
+        with mock.patch.object(main.notion, 'children', return_value=box), \
+                mock.patch.object(main.ages, 'add_to_page') as add:
+            main.age_boxes(fmts, mkts, CFG)
+        add.assert_not_called()                                 # box still there: nothing to do
+        with mock.patch.object(main.notion, 'children', return_value=[]), \
+                mock.patch.object(main.ages, 'add_to_page', return_value='added') as add:
+            main.age_boxes(fmts, mkts, CFG)
+        add.assert_called_once()                                # box gone after a rebuild: written again
+
+    def test_cta_is_added_once_and_pages_without_a_word_are_reported(self):
+        fmts = [{'id': 'A20261008204718', 'status': 'active', 'title': 'Popusti', 'page_id': 'p1', 'only_markets': ['sh']},
+                {'id': 'NOWORD', 'status': 'active', 'title': 'new', 'page_id': 'p2', 'only_markets': ['sh']}]
+        mkts = [{'key': 'sh', 'lang': 'sh', 'T': {'silent_label': 'Tekst na ekranu – ne izgovaraj:'}}]
+        script = [{'id': 'b1', 'type': 'paragraph', 'paragraph': {'rich_text': [{'plain_text': 'Popusti za studente.'}]}}]
+        with mock.patch.object(main.reword, 'script_blocks', return_value=script), \
+                mock.patch.object(main.notion, 'api') as api:
+            r = main.add_cta(fmts, mkts)
+        self.assertEqual(len(r['added']), 1)
+        self.assertIn('»POPUST«', r['added'][0])
+        self.assertEqual(api.call_args.args[2]['after'], 'b1')
+        self.assertEqual(r['missing_word'], ['sh new (no word)'])
+        done = script + [{'id': 'b2', 'type': 'paragraph', 'paragraph': {'rich_text': [
+            {'plain_text': 'Komentariši »POPUST« i poslaću ti link do aplikacije.'}]}}]
+        with mock.patch.object(main.reword, 'script_blocks', return_value=done), mock.patch.object(main.notion, 'api') as api:
+            r = main.add_cta(fmts, mkts)
+        self.assertEqual(len(r['had']), 2)
+        api.assert_not_called()

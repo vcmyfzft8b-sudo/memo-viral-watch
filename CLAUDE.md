@@ -119,11 +119,14 @@ registry/export_cert.pem, to state/scripts_export.enc (repo and logs are public)
 `mode=verify` (read-only): every list (order, numbering, layout), live page (video, sections, links), held page
 (staging) and both hook labs against the state; also lists leftover staging pages (never deletes).
 
-## Status (12 Oct 2026)
-Balkan list 14 formats, Slovenian list 16 (4 Slovenian-only from our own creators: near 1:1 transcripts). Every Balkan
-format was reworked with the user, script by script, and is locked in registry/approved_scripts.json (sh + sl):
-Memo AI comes as early as possible (~15 s, user's rule), with the app pitch "PDF/PowerPoint or recorded lecture ->
-notes, flashcards, tests, quizzes, other features", correct Slovenian (follow = "zafolovat"), the 🎥 recording rule
-(open Memo AI via the format's link, go through it and show the features, like in the example). Removed by the user:
-Gradivo kao sočan trač, Biologija (archived, never revived); Balkan only: e-dnevnik, Popusti (MEMO50 code). Slovenian
-page of "Tajne" shows Klara's Memo AI video as the example (own_brand per language). Open: Discord server logo (user).
+## Status (16 Oct 2026)
+Lists follow the conversion rules (saves first, views second). Balkan list: only the highest-converting formats
+(Studentski popusti, 3 apps "Prosjek 5.0 i 9.6", Ispitna pitanja unaprijed, Tajne, Ocjene, Prodajem mjesto,
+e-dnevnik, Top 5 fakulteta, Mozak premium); the 9 formats taken out by hand (16 Oct) stay on the Slovenian list.
+Slovenian list: every format (they convert there) + the best Balkan converters (Studentski popusti and e-dnevnik with
+Slovenian pages - their old Balkan-only pin in registry/hand_formats.json was removed with the user's OK). Every
+page: comment CTA + 🎓 age box where the script depends on the school level (checked again every run).
+Earlier (12 Oct): every Balkan format was reworked with the user, script by script, and is locked in
+registry/approved_scripts.json (sh + sl) - now with the CTA as the last line. Removed by the user: Gradivo kao sočan
+trač, Biologija (archived, never revived). Slovenian page of "Tajne" shows Klara's Memo AI video as the example
+(own_brand per language). Open: Discord server logo (user).

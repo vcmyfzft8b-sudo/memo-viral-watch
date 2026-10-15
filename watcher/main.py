@@ -165,6 +165,13 @@ def age_boxes(fmts, mkts, cfg, limit=None, only=None, redo=False):
             pid = page_of(f, mk['key'])
             seen = (f.get('age') or {}).get(mk['key']) or {}
             retry = seen.get('status', '').startswith(('held', 'error')) and seen.get('tries', 0) < 3
+            if seen.get('page') == pid and seen.get('status') == 'added' and not redo:
+                try:  # a page rewritten in place (rebuild, apply-approved) loses its box: checked every run
+                    if ages.has_box(notion.children(pid)):
+                        continue
+                    retry, seen = True, {}
+                except Exception:
+                    continue
             if not pid or (seen.get('page') == pid and not retry and not redo):
                 continue
             if limit is not None and done >= limit:
@@ -358,8 +365,20 @@ def run(dry_run=False, only_detect=False):
         except Exception as e:
             print('gate retry failed:', str(e)[:200])
 
-    # 4a2. new / rebuilt pages: 🎓 box for scripts tied to one school level (a few pages per run)
+    # 4a2. every live page keeps its comment CTA (user's rule, 16 Oct 2026) and new / rewritten pages get the 🎓 box
+    #      for scripts tied to one school level (a few pages per run)
     if not dry_run and not only_detect:
+        try:
+            r = add_cta(fmts, mkts)
+            if r['added'] or r['missing_word'] or r['failed']:
+                print('comment CTA:', {k: v for k, v in r.items() if k != 'had'})
+            new = [x for x in r['missing_word'] if x not in meta.get('cta_missing', [])]  # alert once per page
+            meta['cta_missing'] = r['missing_word']
+            if new:
+                notify.push('⚠️ Pages without a comment CTA word', '\n'.join(new) +
+                            '\nAdd the word to registry/cta_words.json, then run mode=add-cta.')
+        except Exception as e:
+            print('comment CTA failed:', str(e)[:200])
         try:
             r = age_boxes(fmts, mkts, cfg, limit=4)
             if r:
@@ -2064,6 +2083,10 @@ def main():
                 f['only_markets'] = sorted(only)
             f['cleaned_from'] = [k for k in f.get('cleaned_from', []) if k != key]
             (f.get('dropped_pages') or {}).pop(key, None)  # a fresh page in today's rules (the old one stays archived)
+            m = re.search(r'/video/(\d+)', f.get('source_video') or '')
+            pin = (hand_options(m.group(1)) if m else {}).get('only_markets')
+            if pin and key not in pin:  # registry/hand_formats.json wins on every load: change it there first
+                raise SystemExit(f"add-market: {f['title']} is pinned to {pin} in registry/hand_formats.json")
             build = True
             print('add-market:', f['title'], '->', lineup.markets_of(f, cfg))
         state.save('formats.json', fmts)
