@@ -1,15 +1,15 @@
-"""Order of the formats on a market's list.
+"""Order of the formats on a market's list (user's rule, 15 Oct 2026 - replaces the views-only order of 11 Oct).
 
-1. What is going viral RIGHT NOW: most confirmed viral videos (thresholds.viral_views+) posted in the last 7 days first.
-   (Hot formats - 5+ Astra AI videos - always stay on top; our own creators' viral videos count here too.)
-2. Tie-breaker: more viral videos in the last 30 days first; then current form (see form() - recent weeks count most).
-   The older long-term score below is still computed for the weekly report: long-term score = smoothed share of viral
-   videos + weight_20k * smoothed share of good videos (thresholds.good_views+). Smoothing pulls small samples towards the network average,
-   and new formats (< 5 videos) are capped below the three strongest proven formats.
-3. Our own creators (own.py): the Astra AI score is multiplied by how the format does for OUR creators compared with
-   their usual views: factor = 2 ** (sum of lifts / (our videos + own_prior_weight)), lift = log2(views / creator's
-   median). A format that reliably gets our creators 2x their usual moves towards x2; with only a few videos of ours
-   the factor stays close to 1 (Astra AI decides), and a format that keeps flopping for us sinks.
+The list holds formats that CONVERT best and still go viral (conversion.py):
+1. Hot formats first: 5+ confirmed viral videos in the last 7 days AND their viewers save them at least like an
+   average format (conversion.hot_min_conv). A format that only goes viral is not hot.
+2. Then by conversion score = conv x reach ** reach_weight: conv = how many viewers save its videos compared with an
+   average format (recent weeks count most, few videos -> pulled towards average), reach = current form (form() below:
+   how likely one video of it goes viral right now, Astra AI + our own creators). Conversion decides, views still count.
+3. Tie-breakers: viral videos in the last 7 days, then in the last 30 days.
+
+scores() below (smoothed share of viral / good videos, x our own creators' factor) is still computed for the weekly
+report: our creators (own.py) move a format by how it does for US compared with their usual views.
 """
 import re
 import time
@@ -122,18 +122,22 @@ def viral_30d(history, formats, cfg, now=None):
 
 
 def order(history, formats, cfg, m=PRIMARY, local=()):
-    from . import hot
+    from . import conversion, hot
     pin_sources(history, formats)
     o = own_stats(formats, cfg)
     s = scores(history, formats, cfg, m, local, o)
     fo = form(history, formats, cfg, o)
+    conv, _ = conversion.board(history, formats, cfg, reach=fo)
     recent = recent_viral(history, formats, cfg, m)
     month = viral_30d(history, formats, cfg)
+    hot_min = conversion.conf(cfg)['hot_min_conv']
     for fid in s:
         s[fid]['viral_30d'] = month.get(fid, 0)
         s[fid]['recent_viral'] = recent.get(fid, 0)
         s[fid]['recent_own'] = o.get(fid, {}).get('recent_viral', 0)
         s[fid]['form'] = fo[fid]['form']
-    return sorted(s, key=lambda fid: (-(s[fid]['recent_viral'] >= hot.MIN_VIRAL),
-                                      -(s[fid]['recent_viral'] + s[fid]['recent_own']), -s[fid]['viral_30d'],
-                                      -s[fid]['form'])), s
+        s[fid].update({k: conv[fid][k] for k in ('rate', 'conv', 'score', 'raw_rate')})
+        s[fid]['saved_videos'] = conv[fid]['videos']
+        s[fid]['hot'] = s[fid]['recent_viral'] >= hot.MIN_VIRAL and conv[fid]['conv'] >= hot_min
+    return sorted(s, key=lambda fid: (-s[fid]['hot'], -s[fid]['score'],
+                                      -(s[fid]['recent_viral'] + s[fid]['recent_own']), -s[fid]['viral_30d'])), s

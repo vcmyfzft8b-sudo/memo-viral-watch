@@ -18,7 +18,7 @@ import tempfile
 import time
 import traceback
 
-from . import align, audit, builder, classify, crosscheck, detect, discover, gate, hot, lineup, llm, localize, markets as M, media, notify, notion, own, rank, reword, soniox, state, tiktok, weekly
+from . import align, audit, builder, classify, conversion, crosscheck, detect, discover, gate, hot, lineup, llm, localize, markets as M, media, notify, notion, own, rank, reword, soniox, state, tiktok, weekly
 from .brand import OURS, SOURCE, links_for
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
@@ -99,7 +99,41 @@ def to_history(history, v, local, now):
         entry['views_7d'] = v['views']
     elif 'views_7d' in old:
         entry['views_7d'] = old['views_7d']
-    history[v['id']] = entry
+    conversion.record(entry, v, old)  # likes/saves/shares: the ranking is about saves (15 Oct 2026)
+    history[v['id']] = {**old, **entry}
+
+
+def read_saves(history, fmts, cfg, now, limit=None, sort_limit=None):
+    """Saves of older videos (stored before saves were kept), then the ones no check has put into a format yet are
+    sorted: the ranking needs every format's save rate (user's rule, 15 Oct 2026)."""
+    cc = conversion.conf(cfg)
+    details = conversion.backfill(history, limit or cc['backfill_per_run'], now, min_views=cc['min_views'],
+                                  days=cc['window_days'])
+    sort = conversion.to_sort(history, details)[:sort_limit or cc['classify_per_run']]
+    results = classify.classify_many(sort, fmts, cfg['models']['classify']) if sort else {}
+    for d in sort:
+        c = results.get(d['id'])
+        if c:
+            history[d['id']].update({'format': c['match'], 'sorted': True,
+                                     'hook': history[d['id']].get('hook') or c['hook_en']})
+    if details:
+        print(f'saves read for {len(details)} older videos, {len(results)} sorted into formats')
+    return details, results
+
+
+def conversion_report(cfg, fmts, history):
+    """The list order with every format's save rate (read-only; printed in the run log)."""
+    ids, s = rank.order(history, fmts, cfg)
+    by = {f['id']: f for f in fmts}
+    p0 = conversion.baseline(history, conversion.conf(cfg))
+    print(f'typical save rate (all measured videos): {conversion.pct(p0)}')
+    print('LIST ORDER  score | saved by (videos) | conv x reach | viral 7d/30d')
+    for n, fid in enumerate(ids, 1):
+        x = s[fid]
+        print(f"  {n:>2}. {x['score']:5.2f} | {conversion.pct(x['raw_rate']):>5} ({x['saved_videos']:>2}) | "
+              f"{x['conv']:.2f} x {x['form']:.2f} | {x['recent_viral']}/{x['viral_30d']}"
+              f"{' | HOT' if x['hot'] else ''}  {by[fid]['title'][:50]}")
+    return ids, s
 
 
 def set_format(v, history, fid, judged=None):
@@ -191,7 +225,7 @@ def run(dry_run=False, only_detect=False):
     for vid, v in sorted(videos.items(), key=lambda x: -x[1].get('views', 0)):
         if 'created' not in v:
             continue
-        lvl = detect.level(v, now, detect.creator_baseline(history, v['handle']), th)
+        lvl = detect.level(v, now, detect.creator_baseline(history, v['handle']), th, cfg)
         if not lvl or 'viral' in v['notified'] or (lvl == 'taking_off' and 'taking_off' in v['notified']):
             continue
         quiet = lvl == 'taking_off' and v.get('first_seen') == int(now) and now - v['created'] > 48 * 3600
@@ -231,6 +265,11 @@ def run(dry_run=False, only_detect=False):
                     v['format_checked'] = True
                     v.setdefault('hook_en', c['hook_en'])
             print(f'sorted {len(todo)} videos')
+
+        try:
+            read_saves(history, fmts, cfg, now)
+        except Exception as e:
+            print('saves backfill failed:', str(e)[:200])
 
         # Viral videos not yet confirmed by the strict Claude check (e.g. older tags): re-check quietly (max 5 per run).
         for v in [v for v in videos.values() if v.get('views', 0) >= th['viral_views'] and not v.get('judged')
@@ -325,9 +364,11 @@ def run(dry_run=False, only_detect=False):
                 meta['top3'] = ids[:3]
                 if before_top and ids[:3] != before_top:
                     by = {f['id']: f for f in fmts}
-                    recent = rank.recent_viral(history, fmts, cfg)
+                    _, sc = rank.order(history, fmts, cfg)
                     notify.push('🔁 New top of the format list', '\n'.join(
-                        f"{n}. {by[i]['title']} – {recent.get(i, 0)} viral in 7 days" for n, i in enumerate(ids[:5], 1)))
+                        f"{n}. {by[i]['title']} – saved by {conversion.pct(sc[i]['rate'])} of viewers "
+                        f"({sc[i]['saved_videos']} videos) · {sc[i]['recent_viral']} viral in 7 days"
+                        for n, i in enumerate(ids[:5], 1)))
             except Exception as e:
                 print('re-sort failed:', str(e)[:200])
 
@@ -374,7 +415,7 @@ def run(dry_run=False, only_detect=False):
     # 7. older viral videos (up to 30 days) no run judged yet - e.g. of a creator followed later, outside the 7-day watch
     #    window: judged like any viral video (known format -> counts; new -> built), a few per run
     if not dry_run and not only_detect:
-        late = [k for k, v in history.items() if v.get('views', 0) >= cfg['thresholds']['viral_views']
+        late = [k for k, v in history.items() if conversion.worth_building(v, cfg)
                 and not v.get('judged') and now - v.get('created', 0) <= 30 * 86400]
         if late:
             try:
@@ -389,10 +430,17 @@ def handle_alert(v, lvl, mkts, fmts, history, cfg, now, dry_run, only_detect, qu
     if now - v['created'] > cfg['watch_days'] * 86400:  # never alert on old videos
         return {'video': v['id'], 'level': lvl, 'skipped': 'older than watch window'}
     if dry_run:
-        print('DRY', lvl, v['handle'], v['views'], v.get('url'))
+        print('DRY', lvl, v['handle'], v['views'], f"saves {conversion.pct(conversion.save_rate(v))}", v.get('url'))
         return {'video': v['id'], 'level': lvl, 'views': v['views']}
+    if lvl == 'viral' and conversion.save_rate(v) is None and now - v['created'] < 6 * 86400:
+        # saves not readable this run (views-only check): wait for a full check - the saves decide whether a viral
+        # video may build a format (a later run reads them; after 6 days it goes ahead without them)
+        return {'video': v['id'], 'level': lvl, 'views': v['views'], 'deferred': 'saves unknown'}
     if lvl == 'viral':
         return handle_viral(v, mkts, fmts, history, cfg, now, only_detect)
+    if lvl == 'converting':
+        return handle_viral(v, mkts, fmts, history, cfg, now, only_detect,
+                            label=f'💾 CONVERTING: {SOURCE} video saved by {conversion.pct(conversion.save_rate(v))} of viewers')
     if not v.get('format_checked'):
         c = classify.classify(v, fmts, cfg['models']['classify'])
         set_format(v, history, c.get('match'))
@@ -401,7 +449,7 @@ def handle_alert(v, lvl, mkts, fmts, history, cfg, now, dry_run, only_detect, qu
     age_h = (now - v['created']) / 3600
     fmt_text = (f"Probably format: {known['title']}" + ('' if known.get('status') == 'active' else ' (archive)')
                 if known else f"Possibly new format: {v.get('hook_en') or '?'}")
-    msg = (f"@{v['handle']} – {fmt_views(v['views'])} views after {age_h:.0f} h · shares+saves {detect.engagement(v):.1%}\n"
+    msg = (f"@{v['handle']} – {fmt_views(v['views'])} views after {age_h:.0f} h · saved by {conversion.pct(conversion.save_rate(v))}\n"
            f"{fmt_text}\n(Full check with script follows if it goes viral.)")
     if not quiet:
         notify.push(f'🟡 Taking off: {SOURCE} video', msg, click=v['url'])
@@ -422,6 +470,16 @@ def market_links(fmt, mkts):
     return ' · '.join(f"<{page_url(page_of(fmt, mk['key']))}|{mk['T']['flag']}>" for mk in mkts if page_of(fmt, mk['key']))
 
 
+def below_typical(v, history, cfg, force=False):
+    """An archived format comes back only when the new video is saved at least like a typical video (else it would
+    come back for views alone and leave again on Monday). Returns the reason, '' when it may come back."""
+    r = conversion.save_rate(v)
+    p0 = conversion.baseline(history, conversion.conf(cfg))
+    if force or r is None or r >= p0:
+        return ''
+    return f'saved by {conversion.pct(r)}, less than a typical video ({conversion.pct(p0)})'
+
+
 def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, label=None, force=False, extra=None):
     """Every viral video (creators from ALL markets): download + Soniox transcript, Claude (Opus) judges it against
     ALL our formats (list + archive) and translates the script to English. Then for every market:
@@ -429,11 +487,12 @@ def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, labe
     new -> built in every market's language and added to every list. One Slack message with link, verdict, English
     script. If Claude fails, a basic message still goes out and the full check is retried next run."""
     age_h = (now - v['created']) / 3600
-    eng = detect.engagement(v)
-    eng_unknown = v.get('detail_missing') and not v.get('shares') and not v.get('saves')
-    weak = (not eng_unknown) and eng < cfg['thresholds']['min_engagement'] and not force  # force: added by hand
-    stats = (f"@{v['handle']} – *{fmt_views(v['views'])} views* after {age_h:.0f} h · shares+saves {eng:.1%}"
-             f"{' (weak)' if weak else ''}{' (unknown)' if eng_unknown else ''}")
+    rate = conversion.save_rate(v)
+    # too few saves (user's rule, 15 Oct 2026): still alerts and counts for a known format, never builds or brings back
+    weak = conversion.too_few_saves(v, cfg) and not force  # force: added by hand
+    stats = (f"@{v['handle']} – *{fmt_views(v['views'])} views* after {age_h:.0f} h · saved by {conversion.pct(rate)}"
+             f" · likes {conversion.pct(v.get('likes', 0) / v['views'] if rate is not None and v.get('views') else None)}"
+             f"{' (too few saves)' if weak else ''}")
     title = ('🧪 TEST – ' if test else '') + (label or f'🟢 VIRAL: {SOURCE} video')
     result = {'video': v['id'], 'level': 'viral', 'views': v['views']}
     work = tempfile.mkdtemp(prefix='viral-')
@@ -457,7 +516,8 @@ def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, labe
             return result
 
         prepared = {'work': work, 'video_file': video_file, 'transcript': transcript} if video_file else None
-        blocked = 'weak engagement' if weak else 'only-detect mode' if only_detect else None if prepared else 'video unavailable'
+        blocked = (f"too few saves: {conversion.pct(rate)} < {conversion.pct(conversion.conf(cfg)['min_save_rate'])}"
+                   if weak else 'only-detect mode' if only_detect else None if prepared else 'video unavailable')
         known = resolve(fmts, verdict.get('duplicate_of')) if verdict.get('duplicate_of') else None
         if known:
             set_format(v, history, known['id'], judged=True)
@@ -466,9 +526,9 @@ def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, labe
                 pos = list_position(mkts[0], page_of(known, mkts[0]['key']))
                 outcome = (f"✅ *Already in Notion* – in the lists{f' as #{pos}' if pos else ''}: *{known['title']}* "
                            f"({market_links(known, mkts)})" + (f"\n➕ added missing pages: {' '.join(added)}" if added else ''))
-            elif blocked or known.get('removed_by_user'):
+            elif blocked or known.get('removed_by_user') or below_typical(v, history, cfg, force):
                 outcome = (f"📦 *Already in Notion* – in the archive: *{known['title']}* – not brought back "
-                           f"({blocked or 'removed by you'})")
+                           f"({blocked or ('removed by you' if known.get('removed_by_user') else below_typical(v, history, cfg, force))})")
             else:
                 ok, pos, reasons = revive_format(known, v, mkts, fmts, history, cfg, prepared=prepared)
                 outcome = (f"♻️ *Was in the archive → checked & brought back as #{pos}* in all lists: *{known['title']}* "
@@ -647,10 +707,11 @@ def revive_format(fmt, v, mkts, fmts, history, cfg, prepared=None):
 
 def rerank(mkts, fmts, history, cfg, force=False):
     """One order for all markets (creators of all markets count the same); applied to every market's list.
-    Hot formats (5+ confirmed viral videos in 7 days) come first, inside the "going viral" section."""
+    Hot formats (5+ confirmed viral videos in 7 days that viewers also save) come first, inside the "going viral"
+    section; then by conversion score (rank.order)."""
     ids, scores = rank.order(history, fmts, cfg)
     by_id = {f['id']: f for f in fmts}
-    hot_ids = [i for i in ids if scores[i].get('recent_viral', 0) >= hot.MIN_VIRAL]
+    hot_ids = [i for i in ids if scores[i].get('hot')]  # 5+ viral in 7 days AND saved at least like an average format
     for mk in mkts:
         page_ids = [page_of(by_id[i], mk['key']) for i in ids if page_of(by_id[i], mk['key'])]
         hot_count = sum(1 for i in hot_ids if page_of(by_id[i], mk['key']))
@@ -1098,17 +1159,23 @@ def bootstrap(limit, days=30):
     for h in active:  # the embed's latest ~10 videos per account (views included, free)
         for item in tiktok.latest_videos(h):
             created = int(item['id']) >> 32
-            if item['id'] in seen or now - created > days * 86400 or item['views'] < cfg['thresholds']['viral_views']:
+            if (item['id'] in seen or now - created > days * 86400
+                    or item['views'] < min(cfg['thresholds']['viral_views'], conversion.conf(cfg)['convert_views'])):
                 continue
             seen.add(item['id'])
             h_ = history.get(item['id'], {})
             if h_.get('judged') and (h_.get('format') or h_.get('bootstrap_tries', 0) >= 2):
                 continue  # judged into a format already, or tried twice without one
+            if 'saves' in h_ and not conversion.worth_building(h_, cfg):
+                continue  # saves known: neither viral with enough saves nor converting
             cands.append((item['views'], h, item['id']))
     cands.sort(reverse=True)
-    print(f'bootstrap: {len(cands)} viral videos not judged yet in the last {days} days; doing {min(limit, len(cands))}')
-    done = []
-    for views, h, vid in cands[:limit]:
+    print(f'bootstrap: {len(cands)} viral/converting candidates not judged yet in the last {days} days; doing up to {limit}')
+    done, looked = [], 0
+    for views, h, vid in cands:
+        if len(done) >= limit or looked >= limit * 5:  # saves are read first: a few extra looks per handled video
+            break
+        looked += 1
         v = tiktok.video_detail(h, vid)
         if not v:
             print('unavailable', h, vid)
@@ -1116,6 +1183,11 @@ def bootstrap(limit, days=30):
         v.update({'notified': [], 'first_seen': int(now)})
         history.setdefault(vid, {'handle': h, 'created': v['created'], 'views': v['views'], 'hook': '', 'local': True,
                                  'mature': now - v['created'] >= 7 * 86400, 'judged': False})
+        conversion.record(history[vid], v)
+        if not conversion.worth_building(v, cfg):  # saves decide (user's rule, 15 Oct 2026)
+            print('bootstrap: skipped (too few saves)', h, vid, v['views'], conversion.pct(conversion.save_rate(v)))
+            state.save('history.json', history)
+            continue
         try:
             r = handle_viral(v, mkts, fmts, history, cfg, now, only_detect=False,
                              label=f'📚 Starter format from a viral {SOURCE} video')
@@ -1384,6 +1456,9 @@ def main():
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
     ap.add_argument('--fix-labs', action='store_true', help="every page: the Visual Hook Lab link points to its own market's lab")
+    ap.add_argument('--list-text', action='store_true', help='write the current 🔥 list instructions into every list')
+    ap.add_argument('--conversion', type=int, nargs='?', const=500, default=0,
+                    help='read saves of up to N older videos, sort them into formats, print the list by conversion')
     ap.add_argument('--api-probe', action='store_true', help='test only (private radar page): can a page be moved into a callout?')
     ap.add_argument('--rehome', action='store_true', help='format pages become sub-pages of the list page (back leads to the list)')
     ap.add_argument('--logo-all', action='store_true', help='every page: the official Memo AI logo (transparent, HQ) in the materials')
@@ -1482,18 +1557,24 @@ def main():
             print(f"  {by.get(fid, fid)[:50]:50} ours: {x['n']} videos, {2 ** x['lift']:.2f}x usual, {x['hits_100k']} >=100k")
         rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg)
         return
+    if a.conversion:  # read the saves of older videos now (instead of 60 per run), sort them, print the board
+        cfg, fmts, history = load_config(), load_formats(), state.load('history.json', {})
+        read_saves(history, fmts, cfg, time.time(), limit=a.conversion, sort_limit=a.conversion)
+        state.save('history.json', history)
+        conversion_report(cfg, fmts, history)
+        return
     if a.lineup or a.lineup_apply:
         cfg, fmts, history = load_config(), load_formats(), state.load('history.json', {})
         _, own_videos = own.load()
         p = (lineup.apply(history, fmts, cfg, own_videos, M.load(cfg)) if a.lineup_apply
              else lineup.plan(history, fmts, cfg, own_videos))
         b = p['board']
-        print('IN THE LIST (weakest last):')
+        print(f"IN THE LIST (weakest last) - typical save rate {conversion.pct(p['typical_rate'])}:")
         for f in sorted([f for f in fmts if f.get('status') == 'active' or f in [x[0] for x in p['out']]],
-                        key=lambda f: -b[f['id']]['form']):
+                        key=lambda f: -b[f['id']]['score']):
             x = b[f['id']]
-            print(f"  {x['form']:.2f}  {f['title'][:50]:50} {SOURCE} {x['js_form']:.2f} ({x['all_videos']} videos) "
-                  f"x ours {x['own_factor']:.2f} ({x['own_videos']}) {'| protected: ' + p['protected'][f['id']] if p['protected'].get(f['id']) else ''}")
+            print(f"  {x['score']:.2f}  {f['title'][:50]:50} saved by {conversion.pct(x['raw_rate'])} ({x['videos']} videos) "
+                  f"conv {x['conv']:.2f} x reach {x['form']:.2f} {'| protected: ' + p['protected'][f['id']] if p['protected'].get(f['id']) else ''}")
         print('OUT:', [(f['title'], round(sc, 2), r) for f, sc, r in p['out']])
         if a.lineup_apply:
             state.save('formats.json', fmts)
@@ -1967,6 +2048,10 @@ def main():
     if a.relink:
         from . import setup
         setup.relink(load_config(), load_formats(), page_of)
+        return
+    if a.list_text:
+        from . import setup
+        setup.list_text(load_config())
         return
     if a.relayout:
         from . import setup

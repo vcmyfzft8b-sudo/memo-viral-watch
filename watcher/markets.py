@@ -79,10 +79,12 @@ TEXT = {
         'draft_prefix': 'NACRT – ',
         'list_title': 'Koje videe snimaš (OBAVEZNO)', 'list_h1': 'Kako snimaš svoje videe',
         'list_heading': 'SNIMAJ SADA: ovi formati',
-        'list_fire': ['Snimaj formate redom, od vrha prema dnu, i prođi cijelu listu. Drži se scenarija, vizuelnog hooka '
-                      'i materijala na svakoj stranici.',
-                      '**Samo ako neki video pređe {views} pregleda**, snimaj taj format iznova – dokle god je viralan. '
-                      'Nakon toga nastavi s listom.'],
+        # user's rule (15 Oct 2026): the list is sorted by how many viewers SAVE a format's videos, views still count
+        'list_fire': ['Snimaj formate redom, od vrha prema dnu, i prođi cijelu listu. Na vrhu su formati čije videe ljudi '
+                      'najviše spremaju (to donosi nove korisnike), a koji i dalje dobivaju puno pregleda. Drži se '
+                      'scenarija, vizuelnog hooka i materijala na svakoj stranici.',
+                      '**Ako neki tvoj video pređe {views} pregleda ili ga ljudi puno spremaju**, snimaj taj format '
+                      'iznova – dokle god tako ide. Nakon toga nastavi s listom.'],
         'visual_rule': '**Vizuelni hook je obavezan u svakom videu!** Ideje imaš u ',
         'hot_suffix': '  ({n} videa s više od {views} pregleda u zadnjih 7 dana)',
         'holder': 'Svi formati', 'archive': 'Arhiva formata', 'guide': 'Memo AI – upute za kreatore',
@@ -169,10 +171,11 @@ TEXT = {
         'draft_prefix': 'OSNUTEK – ',
         'list_title': 'Kakšne videe snemaš (OBVEZNO)', 'list_h1': 'Kako snemaš svoje videe',
         'list_heading': 'SNEMAJ ZDAJ: ti formati',
-        'list_fire': ['Snemaj formate po vrsti, od zgoraj navzdol, in pojdi čez cel seznam. Drži se scenarija, vizualnega '
-                      'hooka in gradiva na vsaki strani.',
-                      '**Samo če kateri video preseže {views} ogledov**, ta format snemaj vedno znova – dokler je viralen. '
-                      'Potem nadaljuj s seznamom.'],
+        'list_fire': ['Snemaj formate po vrsti, od zgoraj navzdol, in pojdi čez cel seznam. Na vrhu so formati, katerih '
+                      'videe ljudje največkrat shranijo (to prinese nove uporabnike) in ki še vedno dobijo veliko '
+                      'ogledov. Drži se scenarija, vizualnega hooka in gradiva na vsaki strani.',
+                      '**Če kateri tvoj video preseže {views} ogledov ali ga veliko ljudi shrani**, ta format snemaj vedno '
+                      'znova – dokler tako gre. Potem nadaljuj s seznamom.'],
         'visual_rule': '**Vizualni hook je obvezen v vsakem videu!** Ideje najdeš v ',
         'hot_suffix': '  ({n} videov z več kot {views} ogledi v zadnjih 7 dneh)',
         'holder': 'Vsi formati', 'archive': 'Arhiv formatov', 'guide': 'Memo AI – navodila za ustvarjalce',

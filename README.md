@@ -14,16 +14,24 @@ Every 6 hours (GitHub Actions) it:
    optional phone push via ntfy, + a log line on the private Notion page *Viral-Radar (interno)*:
    - 🟡 **taking off** – 5k views within 6 h, 20k within 24 h, 50k within 48 h, or 10× the creator's usual views
    - 🟢 **viral** – 100k+ views within 7 days (20 of 269 recent Balkan Astra AI videos got there, 8 Oct 2026)
-   - only views count (user's decision, 10 Oct 2026): every viral video can become a format, shares/saves don't matter
-4. **Builds a new format page** when a viral video (good engagement) uses a format that is not in the list yet:
+   - 💾 **converting** – 30k+ views, 300+ saves and 2%+ of viewers saved it (below the viral bar)
+   - saves decide (user's rule, 15 Oct 2026, replaces "only views" of 10 Oct): the list holds formats that convert best
+     AND still go viral. A viral video saved by fewer than 0.5% of viewers still alerts and counts for its format, but
+     never builds or brings back one (`watcher/conversion.py`, settings in `config.json` → `conversion`)
+4. **Builds a new format page** when a viral video with enough saves, or a converting one, uses a format that is not in
+   the list yet:
    download → Soniox transcription → frames → Claude writes the page (Astra AI → Memo AI, a Memo AI link at every app
    moment, title, visual hook, materials) → automatic checks (no "Astra", Latin script only, ijekavian, length within
    80–110 %, only real Memo AI features – `watcher/brand.py`) → Notion page → added to the list at its ranked position.
-5. **Hot formats**: 5+ viral videos of one format in 7 days → red "Upravo postaje viralno" card at the top of the list.
+5. **Order of the list**: hot formats first (5+ viral in 7 days AND saved at least like an average format), then by
+   conversion score = how many viewers save the format's videos (vs an average format) × how well it goes viral
+   (square root). `mode=conversion` prints the board (and reads saves of older videos right away); every run reads 60.
 6. **Every 3 days – complete account list**: Lightreel is asked for every Astra AI account per country; each new handle
    is checked on TikTok (posted in the last 30 days + Astra AI in captions or videos) and by Claude (really Astra AI
    UGC, and Serbo-Croatian – Slovenian accounts are skipped). Accounts without Astra AI posts for 30 days are paused.
-7. **Weekly (Monday)**: re-ranks the list, takes weak formats out (archive, nothing deleted), Slack report.
+7. **Weekly (Monday)**: re-ranks the list, takes formats out that do not convert (score below 0.9 once 2+ videos have
+   saves – going viral does not protect them; archive, nothing deleted; `mode=lineup` shows the plan), Slack report.
+   An archived format comes back only when a new video of it goes viral/converts AND is saved like a typical video.
 
 Our own Memo AI creators (to see how each format does for us) are read from Megasheet once a Memo AI campaign exists –
 put its name in `config.json` → `"megasheet": {"campaigns": {"<name>": "sh"}}` and run `./scripts/save_megasheet_login.sh`.

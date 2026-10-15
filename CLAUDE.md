@@ -56,7 +56,8 @@ Format pages are sub-pages of the creator list page (holder_page = list_page; `m
   formati", one guide page per market (list "👉 … (OBAVEZNO/OBVEZNO)" laid out 1:1 like the Parakeet list, all formats,
   archive, Visual Hook Lab = copy of Parakeet's, translated). Page ids: `state/notion.json`.
 - App links on pages → https://memoai.eu/creator (user's choice); creators SAY memoai.eu.
-- No shares/saves bar (user's choice, 10 Oct 2026): only views (100k+) decide what becomes a format.
+- Saves decide (user's rule, 15 Oct 2026 - replaces the 10 Oct "only views" choice): the list holds formats that
+  CONVERT best (viewers save the videos) and still go viral. `watcher/conversion.py` + `config.json` → `conversion`.
 - Brand matching knows declined forms (Astri, Astru, Astro …): `brand.SOURCE_RE`.
 - Own Memo AI creators: off until there is a Memo AI campaign in Megasheet (`config.json` → "megasheet").
 
@@ -79,9 +80,15 @@ on memoai.eu that creators film, e.g. memoai.eu/ugc/oral-quiz), `brief` (note fr
 writer and every check), `own_brand` (example is already a Memo AI video → the note under it doesn't say "another
 brand"). Several formats in one run: separate them with `;` in the add_format input.
 
-## Ranking (user's rule, 11 Oct 2026)
-Hot formats (5+ viral in 7 days) first; then most viral videos (100k+) in the last 7 days; on a tie, most viral
-videos in the last 30 days; then current form (`rank.order`). A format's own source video always counts for it.
+## Ranking and clean-up (user's rule, 15 Oct 2026 - replaces the views-only order of 11 Oct)
+Hot formats (5+ viral in 7 days AND saved at least like an average format) first; then by conversion score = conv ×
+reach^0.5 (conv = save rate vs the typical video, smoothed; reach = current form); ties: viral in 7 / 30 days
+(`rank.order`). New formats: a viral video saved by 0.5%+ of viewers, or a "converting" one (30k+ views, 300+ saves,
+2%+ saved, e.g. @studytipsbyem's "3 apps" video: 46k, 4.3%). Monday clean-up (`lineup.py`): a format with 2+ videos with
+saves and score < 0.9 leaves (archive), also when it goes viral or is new. History keeps likes/saves/shares; older
+videos get their saves read 60 per run (`mode=conversion` does it at once and prints the board). List instructions
+(🔥 box) say the order: `mode=list-text` writes them in place (never `relayout` – format pages are sub-pages of the
+list). A format's own source video always counts for it.
 
 ## Materials
 Images for a format's 🔧 materials section (e.g. screenshots cut from the original video): put them in

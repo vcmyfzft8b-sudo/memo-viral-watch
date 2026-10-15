@@ -3,8 +3,9 @@
 Taking off (early warning): within its first 6 / 24 / 48 hours a video has 5k / 20k / 50k views,
 or (within 72h) at least 10x its creator's usual views and 5k+.
 Viral (confirmed): 100k+ views within the watch window (7 days).
-Quality: (shares + saves) / views >= 1.5%. Weak-engagement videos still alert, but are flagged and
-never trigger a new format page.
+Converting: below the viral bar, but many viewers save it (conversion.converting, e.g. 30k+ views and 2%+ saved).
+Saves (user's rule, 15 Oct 2026): a viral video that too few viewers save (conversion.min_save_rate) still alerts and
+counts for its format, but never builds or brings back a format.
 """
 import statistics
 
@@ -19,12 +20,15 @@ def engagement(video):
     return (video['shares'] + video['saves']) / max(video['views'], 1)
 
 
-def level(video, now, baseline, th):
-    """Returns 'viral', 'taking_off' or None."""
+def level(video, now, baseline, th, cfg=None):
+    """Returns 'viral', 'converting', 'taking_off' or None (cfg: the whole config, for the conversion settings)."""
+    from . import conversion
     age_h = (now - video['created']) / 3600
     views = video['views']
     if views >= th['viral_views']:
         return 'viral'
+    if cfg is not None and conversion.converting(video, cfg):
+        return 'converting'
     for hours, min_views in th['early']:
         if age_h <= hours and views >= min_views:
             return 'taking_off'

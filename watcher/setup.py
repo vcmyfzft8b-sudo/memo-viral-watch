@@ -64,6 +64,25 @@ def list_blocks(T, lab, holder, viral):
             notion.block('heading_3', [notion.rt('📁 ' + T['holder'])])]
 
 
+def list_text(cfg):
+    """Writes the current 🔥 instructions (T['list_fire']) into every list's red box in place - nothing else on the
+    page moves (the format pages are sub-pages of the list, a full relayout would put them above the boxes)."""
+    pages = state.load('notion.json', {})
+    viral = hot.views_text(cfg['thresholds']['viral_views'])
+    done = []
+    for key, m in cfg['markets'].items():
+        T, mp = TEXT[m['lang']], pages['markets'][key]
+        fire = [notion.rt(T['list_fire'][0]), notion.rt('\n')] + notion.md(T['list_fire'][1].format(views=viral))
+        box = next((b for b in notion.children(mp['list_page']) if b['type'] == 'callout'
+                    and ((b['callout'].get('icon') or {}).get('emoji')) == '🔥'), None)
+        if not box:
+            raise SystemExit(f'{key}: no 🔥 box on the list page {mp["list_page"]} - run mode=relayout')
+        notion.api('PATCH', f"/blocks/{box['id']}", {'callout': {'rich_text': fire}})
+        done.append(key)
+        print('list instructions updated:', key, mp['list_page'])
+    return done
+
+
 def relayout_list(cfg):
     """Rebuild an existing list page in the current layout (title, headings, boxes, 📁 toggle); the ▶️ formats are
     written again by the re-sort afterwards."""
