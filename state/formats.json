@@ -62,6 +62,9 @@
  {
   "created": 1791493084,
   "description": "Talking-head 'elimination game' video where the creator lists playful 'you're out if…' conditions on a growing on-screen numbered list, with the last item being the study app, followed by a quick screen-recorded app demo and a comment call-to-action.",
+  "dropped_pages": {
+   "sh": "3f365e84-a3c2-81ed-a906-d5caef049749"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -84,7 +87,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f365e84-a3c2-81ed-a906-d5caef049749",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f365e84-a3c2-81b2-8c98-d419a8b912b6"
   },
@@ -182,6 +188,9 @@
  {
   "created": 1791499490,
   "description": "Comedy skit where one creator acts out how different zodiac signs react to getting a failing grade from an off-screen teacher, with one sign bragging about the study app as a mid-video product mention over a green-screen classroom.",
+  "dropped_pages": {
+   "sh": "3f365e84-a3c2-81b5-88b5-e2225ef1bc0b"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -218,7 +227,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f365e84-a3c2-81b5-88b5-e2225ef1bc0b",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f365e84-a3c2-810e-8152-eeed9afe21db"
   },
@@ -239,6 +251,9 @@
  {
   "created": 1791501329,
   "description": "Talking-head warning rant listing reasons not to use ChatGPT for studying (accuracy, no real learning, over-reliance, privacy), with the study app pitched mid-video as the better alternative via logo and screen-recording overlays.",
+  "dropped_pages": {
+   "sh": "3f365e84-a3c2-8120-b838-fd3c99181a38"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -261,7 +276,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f365e84-a3c2-8120-b838-fd3c99181a38",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f365e84-a3c2-81fa-af2c-f4bcacc9beac"
   },
@@ -495,6 +513,9 @@
  {
   "created": 1791648877,
   "description": "Talking-head 'ranking/list of student types' video while making a drink on camera, where the last type leads into a friend's study-app recommendation with a screen recording of the app on a laptop and a 'part 2' teaser.",
+  "dropped_pages": {
+   "sh": "3f565e84-a3c2-81e8-afd8-d8f29ac8cb48"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -517,7 +538,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f565e84-a3c2-81e8-afd8-d8f29ac8cb48",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f565e84-a3c2-817e-9399-d8a7083c900f"
   },
@@ -532,6 +556,9 @@
  {
   "created": 1791649226,
   "description": "Funny talking-head study vlog where the creator's sister froze her apartment keys in ice so she has to study until it melts, with a study montage set to a love song whose 'only you I need' line lands on the study app on screen.",
+  "dropped_pages": {
+   "sh": "3f565e84-a3c2-81dd-93d3-c4a95caeb49d"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -554,7 +581,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f565e84-a3c2-81dd-93d3-c4a95caeb49d",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f565e84-a3c2-81f3-a771-d05601b576fa"
   },
@@ -566,6 +596,9 @@
  {
   "created": 1791649768,
   "description": "Talking-head 'secret app' reveal where the creator does a casual drink-making activity with an on-screen list of university faculties, then films a laptop screen showing the app's lessons and quizzes, naming the app at the end and asking viewers to comment if their faculty is on the list.",
+  "dropped_pages": {
+   "sh": "3f565e84-a3c2-81d3-8e98-c731ff969e40"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -588,7 +621,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f565e84-a3c2-81d3-8e98-c731ff969e40",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f565e84-a3c2-81f9-b33c-fc4551d00ce7"
   },
@@ -604,6 +640,9 @@
  {
   "created": 1791650318,
   "description": "Talking-head creator cuts a paper strip of the day's 24 hours with scissors to show how little study time is left, then demos the study app's features on a tablet.",
+  "dropped_pages": {
+   "sh": "3f565e84-a3c2-810a-8dc3-f502cc653ae8"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -626,7 +665,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f565e84-a3c2-810a-8dc3-f502cc653ae8",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f565e84-a3c2-812f-88c5-c7a29c250a40"
   },
@@ -643,6 +685,9 @@
   "brief": "The original promotes another app's oral quiz (Turbo AI). Our version uses Memo AI's oral quiz page https://www.memoai.eu/ugc/oral-quiz: the creator opens it on a laptop, picks their language and presses play. It is a dialogue between the app's voice tutor (TUTOR - these lines play as audio from the page, the creator does NOT say them) and the creator (CREATOR - the creator says these short answers out loud themselves, live, in the pauses). Exactly like the original: the creator films their own face reacting (embarrassed / laughing) while the quiz runs and answers, then turns the camera to the laptop screen with the quiz. The script is this dialogue with the page's own wording for the page language (Slovenian page: the Slovenian version; Serbo-Croatian page: the Croatian version - creators can also pick Bosnian or Serbian on the page), for the same lines the original plays (if the original stops mid-way, stop at the same point). Start every TUTOR line with 'Memo AI:' and every CREATOR line with 'Ti:' (no brackets, no stage directions), and put cue 'memo' on the first line and where the laptop with the oral quiz is shown. The dialogue names no app, so no line names Memo AI. 'DICK' is the medical mnemonic (dextrose, insulin, calcium, Kayexalate) and the joke of the format - keep it. SLOVENIAN: TUTOR 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' / CREATOR 'Seveda samo s privolitvijo.' / TUTOR 'Pacientka je nezavestna. Privolitve ne more dati.' / CREATOR 'Oh.' / TUTOR 'Potem ji moraš DICK vseeno dati.' / CREATOR 'Brez privolitve?' / TUTOR 'Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.' / CREATOR 'Oh.' / TUTOR 'Dati jih moraš v tem vrstnem redu, in sicer takole. Dekstroza gre najprej kot IV bolus, da insulin ne zniža preveč krvnega sladkorja. Insulin gre IV takoj za njo in v približno petnajstih minutah potisne kalij v celice. Kalcijev glukonat daš IV v nekaj minutah, da zaščitiš srce pred aritmijo, medtem ko kalij pada. Kayexalate pride zadnji, skozi usta ali rektalno, da odvečni kalij za vedno odstrani iz telesa.' CROATIAN: TUTOR 'Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?' / CREATOR 'Pa naravno, samo uz pristanak.' / TUTOR 'Pacijentica je bez svijesti. Ne može dati pristanak.' / CREATOR 'Oh.' / TUTOR 'Onda joj DICK moraš dati svejedno.' / CREATOR 'Bez pristanka?' / TUTOR 'Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.' / CREATOR 'Oh.' / TUTOR 'Moraš ih dati tim redoslijedom, i to ovako. Dekstroza ide prva kao IV bolus, da inzulin ne sruši šećer u krvi. Inzulin ide IV odmah za njom i za otprilike petnaest minuta potiskuje kalij u stanice. Kalcijev glukonat daješ IV kroz nekoliko minuta da zaštitiš srce od aritmije dok kalij pada. Kayexalate ide zadnji, na usta ili rektalno, da zauvijek izbaci višak kalija iz tijela.'",
   "created": 1791668557,
   "description": "Creator films their own embarrassed, laughing reaction to an AI oral-quiz page playing an awkward double-entendre medical mnemonic dialogue, then turns the camera to the laptop screen showing the quiz.",
+  "dropped_pages": {
+   "sh": "3f565e84-a3c2-81a7-a074-c1dff1489259"
+  },
   "id": "A20261010214237",
   "listed_at": 1791673307,
   "logo_hq": {
@@ -653,7 +698,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f565e84-a3c2-81a7-a074-c1dff1489259",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f565e84-a3c2-8158-aa07-fd81fb00a741"
   },
@@ -774,9 +822,15 @@
  {
   "created": 1791821322,
   "description": "Talking-head 'friend test' hook (swapped video background to a nice car to expose fake friends via emoji replies), followed by a pivot to using your phone for learning and a screen recording of the study app's flashcards, ending with a comment-bait CTA.",
+  "dropped_pages": {
+   "sh": "3f765e84-a3c2-810e-a701-fd3e743575bc"
+  },
   "id": "A20261012160842",
   "listed_at": 1791902944,
-  "page_id": "3f765e84-a3c2-810e-a701-fd3e743575bc",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f765e84-a3c2-81e1-9635-c7467da40cf0"
   },
