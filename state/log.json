@@ -3840,5 +3840,135 @@
   "type": "alert",
   "video": "7685878008338582791",
   "views": 46100
+ },
+ {
+  "format": "A20261009014121",
+  "level": "viral",
+  "ts": 1792101013,
+  "type": "alert",
+  "video": "7696639824685583637",
+  "views": 103300
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792101017,
+  "type": "alert",
+  "video": "7696939854185254147",
+  "views": 8063
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792101021,
+  "type": "alert",
+  "video": "7696986111029054740",
+  "views": 6327
+ },
+ {
+  "order": [
+   "A20261008204718",
+   "A20261015213945",
+   "A20261009014121",
+   "A20261013231033",
+   "A20261009210824",
+   "A20261009001913",
+   "A20261010220207",
+   "A20261008210957",
+   "A20261010215329",
+   "A20261008211912",
+   "A20261010215744",
+   "A20261010214237",
+   "A20261008224450",
+   "A20261010163838",
+   "A20261010215543",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261010162928",
+   "A20261010162026",
+   "A20261012160842",
+   "A20261008205804"
+  ],
+  "ts": 1792101215,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261015213945",
+  "position": 2,
+  "ts": 1792101216,
+  "type": "format_published"
+ },
+ {
+  "format": "A20261008205804",
+  "ts": 1792101217,
+  "type": "hot_cooled"
+ },
+ {
+  "order": [
+   "A20261008204718",
+   "A20261015213945",
+   "A20261009014121",
+   "A20261013231033",
+   "A20261009210824",
+   "A20261009001913",
+   "A20261010220207",
+   "A20261008210957",
+   "A20261010215329",
+   "A20261008211912",
+   "A20261010215744",
+   "A20261010214237",
+   "A20261008224450",
+   "A20261010163838",
+   "A20261010215543",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261010162928",
+   "A20261010162026",
+   "A20261012160842",
+   "A20261008205804"
+  ],
+  "ts": 1792101218,
+  "type": "rerank"
+ },
+ {
+  "format": "A20261008204718",
+  "level": "viral",
+  "ts": 1792101279,
+  "type": "alert",
+  "video": "7694360559491304712",
+  "views": 84400
+ },
+ {
+  "format": "A20261015215502",
+  "reasons": [
+   "cross-country check fail: faithful_translation sh: Beat order and form are off. The line 'Tako da ću vam pokazati, u nadi da će vam olakšati' (here 'Nadam se da će i vama ovo olakšati kao meni') is moved to after the closer, so 'A najbolje od svega je to što joj je zanimljivo dok uči' is no longer the last line. It should co"
+  ],
+  "tries": 1,
+  "ts": 1792101704,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261015215502",
+  "page_de": "3fa65e84-a3c2-8199-99d3-cc9843906460",
+  "pages": {
+   "sl": "3fa65e84-a3c2-817c-a076-d0ddd15bcbb9"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: faithful_translation sh: Beat order and form are off. The line 'Tako da ću vam pokazati, u nadi da će vam olakšati' (here 'Nadam se da će i vama ovo olakšati kao meni') is moved to after the closer, so 'A najbolje od svega je to što joj je zanimljivo dok uči' is no longer the last line. It should co"
+  ],
+  "ts": 1792101704,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261015215502",
+  "format": "A20261015215502",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: faithful_translation sh: Beat order and form are off. The line 'Tako da ću vam pokazati, u nadi da će vam olakšati' (here 'Nadam se da će i vama ovo olakšati kao meni') is moved to after the closer, so 'A najbolje od svega je to što joj je zanimljivo dok uči' is no longer the last line. It should co"
+  ],
+  "ts": 1792101705,
+  "type": "alert",
+  "video": "7692489776338832658",
+  "views": 35400
  }
 ]

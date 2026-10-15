@@ -38,8 +38,10 @@
   "A20261012160842:sl": "fixed",
   "A20261013231033:sh": "fixed",
   "A20261013231033:sl": "ok",
-  "A20261015213945:sh": "fixed",
-  "A20261015213945:sl": "ok"
+  "A20261015213945:sh": "ok",
+  "A20261015213945:sl": "ok",
+  "A20261015215502:sh": "fixed",
+  "A20261015215502:sl": "fixed"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "554231d90c87dfa29584fb8b10cd1ba8428450b221746b4dee2eb018191dcc1d",
@@ -79,7 +81,9 @@
   "A20261013231033:sh": "edd4bd195b1295bd0899d2bddadfe21b3ebf164d87c52f50844d55987d21d656",
   "A20261013231033:sl": "53ee7b85f5cd3bf3479673114d5f12a472a09ec0eb1dcb44dc45c77df9be5d04",
   "A20261015213945:sh": "1c2f92230a5ba3b03fbaf79aae9f818f04d2902a7d18aa1458c24ea0456a0e4b",
-  "A20261015213945:sl": "66b9d9913317cac88c47be47bb7c66f7a43a156610f103cf3d9071eafb12d4b9"
+  "A20261015213945:sl": "cc0268b235cec2853b9bfde255bb633a0bb942fdce298403aee4c5e66fd82beb",
+  "A20261015215502:sh": "d0ed0b78f3fb8b35515e6014b9e8f96f8f5371df5f2e51fa1ac992d592e9b8b0",
+  "A20261015215502:sl": "ba58bfada92ffa7e755a6ec469947dc66d75657444d48134ff69202934a46c6d"
  },
  "discovered_at": 1792084788,
  "faithful_rewrite_started": 1791643120,
@@ -1669,7 +1673,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1792100674,
+   "checked_at": 1792101120,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1682,11 +1686,9 @@
      "video_identity": "sha256:493fb9e87897163cac08220747d2812e1fccafe9fff9beae5df0346c1057f875"
     }
    },
-   "key": "651e8145da293eb4ce20a685f4dec7018058b1bb2e70cea64285deb5c9cca3b8",
-   "passed": false,
-   "reasons": [
-    "faithful_translation sl: The CTA changes the original meaning. The original asks whether viewers have tried any of the apps; 'katero od teh aplikacij že uporabljaš' assumes they already use one. Use e.g. 'Obvezno mi napišite, ali ste že preizkusili katero od teh aplikacij.'"
-   ],
+   "key": "ae959c1085dd4235408017cfd2ba00922b2ef8f30eb354066614e071d7c5523f",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
@@ -1704,8 +1706,88 @@
       "pass": true
      },
      "sl": {
-      "issue": "The CTA changes the original meaning. The original asks whether viewers have tried any of the apps; 'katero od teh aplikacij že uporabljaš' assumes they already use one. Use e.g. 'Obvezno mi napišite, ali ste že preizkusili katero od teh aplikacij.'",
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "pass",
+   "summary": "Both pages pass. Each keeps the grade-average hook, brings Memo AI in as app #2 and the most-used one after about 40 words with the required pitch, keeps NotebookLM and Google Calendar in place, ends with the CTA, and claims only real features; the Slovenian page names no foreign faculties, cities or discounts that would need localising.",
+   "title_fixes": {},
+   "version": "group-2026-10-12.early-memo"
+  },
+  "A20261015215502": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1792101669,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7692489776338832658",
+     "video_identity": "sha256:39af2a38ddf1d532cce0f9c5f6512f5ce008b9faea8e0c9abd7f6d021fa8a910"
+    },
+    "sl": {
+     "source_id": "7692489776338832658",
+     "video_identity": "sha256:39af2a38ddf1d532cce0f9c5f6512f5ce008b9faea8e0c9abd7f6d021fa8a910"
+    }
+   },
+   "key": "3820ee132726aa32333c8ccd656e6f0a15306d3e7533d0840a4b5a85a6f3734b",
+   "passed": false,
+   "reasons": [
+    "faithful_translation sh: Beat order and form are off. The line 'Tako da ću vam pokazati, u nadi da će vam olakšati' (here 'Nadam se da će i vama ovo olakšati kao meni') is moved to after the closer, so 'A najbolje od svega je to što joj je zanimljivo dok uči' is no longer the last line. It should come right after the Memo AI reveal, as in the original and in SL. The hook also drops 'Da.', and the script has no 'Tekst na ekranu: Ispitna pitanja unaprijed? 😳' line (SL has its own)."
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "Beat order and form are off. The line 'Tako da ću vam pokazati, u nadi da će vam olakšati' (here 'Nadam se da će i vama ovo olakšati kao meni') is moved to after the closer, so 'A najbolje od svega je to što joj je zanimljivo dok uči' is no longer the last line. It should come right after the Memo AI reveal, as in the original and in SL. The hook also drops 'Da.', and the script has no 'Tekst na ekranu: Ispitna pitanja unaprijed? 😳' line (SL has its own).",
       "pass": false
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
      }
     },
     "features_claims": {
@@ -1740,7 +1822,7 @@
     }
    },
    "status": "fail",
-   "summary": "Both pages keep the 5.0/9.6 hook, the three-app order with Memo AI second and early (about 40 words in) with the required pitch and real features. SH passes everywhere; SL fails only faithful_translation because its CTA asks which app viewers already use instead of whether they have tried any.",
+   "summary": "Both pages follow the late-discovery friend's-trick storytime with Memo AI brought in early, real features only, and matching visual-hook directions; SL is clean, while SH moves the 'hope it helps you' line to after the closer, drops 'Da.' and lacks the on-screen title line.",
    "title_fixes": {},
    "version": "group-2026-10-12.early-memo"
   }
@@ -1800,25 +1882,18 @@
   "ucisamilicom": "sh",
   "ucisaprofom": "sh"
  },
- "hot": {
-  "A20261008205804": {
-   "announced": {},
-   "count": 6,
-   "creators": {},
-   "messages": {},
-   "since": 1791725547
-  }
- },
- "last_run": 1792084788,
+ "hot": {},
+ "last_run": 1792100774,
  "lineup": "2026-W42",
  "top3": [
-  "A20261008205804",
-  "A20261008210957",
-  "A20261010162026"
+  "A20261008204718",
+  "A20261015213945",
+  "A20261009014121"
  ],
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/0704a1dc-0341-4f0f-9eb3-42bfb53281b6/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/0b8d4f9b-c9e2-4dff-92a4-368469463b96/video.mp4": "sha256:39af2a38ddf1d532cce0f9c5f6512f5ce008b9faea8e0c9abd7f6d021fa8a910",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/14ab7617-867b-440b-ba89-9076b4231496/video.mp4": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/160678ef-32dd-44af-bb6f-7a66f1b10436/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/176f192d-8c8a-47d0-911a-9c25aa4be9d2/video.mp4": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e",
@@ -1860,6 +1935,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/bc335721-f9ea-426a-a184-1dc49df91c0a/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/c1c7ab27-88f0-4039-903f-543c18ee8185/video.mp4": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/c20a1a0b-be88-49f3-8125-39b92ed703fb/video.mp4": "sha256:2ecf269ca351f63ff2b666a85b10a82ef24d129041f66bb08d885b76048cd423",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/c9e8f384-2565-4991-9d02-8bb2bab2938a/video.mp4": "sha256:39af2a38ddf1d532cce0f9c5f6512f5ce008b9faea8e0c9abd7f6d021fa8a910",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d7a785da-5e23-40f6-9646-04afe72c6f2d/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/d8652e47-9cec-4e2c-873c-20c8d5d7d2ec/video.mp4": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/dac31acc-a23e-4449-94a0-efa52cf634f2/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",

@@ -811,21 +811,39 @@
   "created": 1792100385,
   "description": "Talking-head student at a desk opens with her top grade averages as proof, then lists three study apps she used, with the study app as the second, most-used item shown via screen recording.",
   "id": "A20261015213945",
+  "listed_at": 1792101215,
   "page_id": "3fa65e84-a3c2-81f9-8073-f670e8f6b5f3",
   "pages": {
    "sl": "3fa65e84-a3c2-81c9-9507-c930393625d9"
   },
+  "script": "Završila sam srednju školu s prosjekom 5.0 i prvu godinu studija s prosjekom 9.6, i ovo su tri aplikacije koje sam koristila. Prva: NotebookLM, spas za prezentaciju u zadnji čas – pošalješ materijale i sam napravi prezentaciju. Druga, koju sam najviše koristila, je Memo AI. U nju ubaciš PDF-ove ili PowerPoint prezentacije s predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Možeš ubaciti i uslikane bilješke ili stranice iz knjige. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. Na primjer klikneš na kviz, bukvalno rješavaš pitanja i ne primijetiš da učiš, a uvijek imaš i objašnjenje da vidiš zašto nešto nije dobro i zašto je nešto zapravo tačno. I treća aplikacija je Google Kalendar, bez koje ne bih znala gdje mi je glava. Tu sam upisivala sve testove, sva odgovaranja i sve obaveze, ",
+  "source_video": "https://www.tiktok.com/@studytipsbyem/video/7685878008338582791",
+  "status": "active",
+  "title": "Prosjek 5.0 i 9.6 – tri aplikacije koje sam koristila 📱"
+ },
+ {
+  "created": 1792101302,
+  "description": "Talking-head storytime where the creator, casually doing a chore on camera, reveals a late discovery ('4 years of uni and only now I learn...') about a high-achieving friend's secret study trick, then screen-records the study app as the reveal.",
+  "id": "A20261015215502",
+  "page_id": "3fa65e84-a3c2-8199-99d3-cc9843906460",
+  "pages": {
+   "sl": "3fa65e84-a3c2-817c-a076-d0ddd15bcbb9"
+  },
   "pending": {
    "kind": "new",
    "reasons": [
-    "cross-country check fail: faithful_translation sl: The CTA changes the original meaning. The original asks whether viewers have tried any of the apps; 'katero od teh aplikacij že uporabljaš' assumes they already use one. Use e.g. 'Obvezno mi napišite, ali ste že preizkusili katero od teh aplikacij.'"
+    "cross-country check fail: faithful_translation sh: Beat order and form are off. The line 'Tako da ću vam pokazati, u nadi da će vam olakšati' (here 'Nadam se da će i vama ovo olakšati kao meni') is moved to after the closer, so 'A najbolje od svega je to što joj je zanimljivo dok uči' is no longer the last line. It should co"
    ],
-   "since": 1792100707,
+   "since": 1792101704,
    "tries": 1
   },
-  "script": "Završila sam srednju školu s prosjekom 5.0 i prvu godinu studija s prosjekom 9.6, i ovo su tri aplikacije koje sam koristila. Prva: NotebookLM, spas za prezentaciju u zadnji čas – pošalješ materijale i sam napravi prezentaciju. Druga, koju sam najviše koristila, je Memo AI. U nju ubaciš PDF-ove ili PowerPoint prezentacije s predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Možeš ubaciti i uslikane bilješke ili stranice iz knjige. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. Na primjer klikneš na kviz, bukvalno rješavaš pitanja i ne primijetiš da učiš, a uvijek imaš i objašnjenje da vidiš zašto nešto nije dobro i zašto je nešto zapravo tačno. I treća aplikacija je Google Kalendar, bez koje ne bih znala gdje mi je glava. Tu sam upisivala sve testove, sva odgovaranja i sve obaveze, ",
-  "source_video": "https://www.tiktok.com/@studytipsbyem/video/7685878008338582791",
+  "reworded": {
+   "sh": true,
+   "sl": true
+  },
+  "script": "Znači, ja sam stigla do četvrte godine fakulteta da bih sada saznala da sam bukvalno, ali bukvalno, sve vrijeme mogla znati ispitna pitanja unaprijed. Da. Imala sam drugaricu koja je uvijek imala odlične ocjene, a nikad se nije ubijala od učenja. I konačno mi je otkrila svoj trik: Memo AI. U nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. Tako se ona sprema i za pismene i za usmene ispite: riješi probni test, posluša podkast, a tutor joj naglas objasni gradivo tema po temu. Zato uvijek tako brzo spremi svaki ispit, koliko god bio obiman ili težak. A najbolje od svega je to što joj je zanimljivo dok uči. Nadam se da će i vama ovo olakšati kao meni.",
+  "source_video": "https://www.tiktok.com/@learnwithtika/video/7692489776338832658",
   "status": "pending",
-  "title": "Prosjek 5.0 i 9.6 – tri aplikacije koje sam koristila 📱"
+  "title": "Ispitna pitanja unaprijed? 😳"
  }
 ]

@@ -1244,5 +1244,66 @@
    "7685878008338582791": "https://www.tiktok.com/@studytipsbyem/video/7685878008338582791"
   },
   "title_en": "5.0 and 9.6 GPA – the three apps I used 📱"
+ },
+ "A20261015215502": {
+  "accepted_sources": [
+   "7692489776338832658"
+  ],
+  "allowed_localisation": [
+   "Language and script: Slovenian, Croatian, Bosnian or Serbian (ijekavica/ekavica, e.g. 'unaprijed'/'unapred'), with the on-screen title translated to match",
+   "Natural local filler words and slang ('bukvalno', 'kao', 'ono') and local terms for uni/exam ('faks', 'kolokvij', 'izpit')",
+   "Which chore the creator does on camera",
+   "The creator's gender and the friend's gender, with matching grammar",
+   "Which materials are uploaded in the demo (PDF, PPT, lecture recording, Scan photos) and the subject shown",
+   "Order of the generated features shown in the demo, and phone vs laptop screen recording",
+   "Feature wording swaps required by Memo AI: Astra's 'choose the exam date and target grade → personalised study plan' becomes 'upload your materials → Memo AI makes notes, quizzes, questions, a practice test and podcasts'. The rest of the sentence stays word for word.",
+   "Caption/hashtags and an optional memoai.eu on-screen pointer"
+  ],
+  "beats": [
+   "1. Hook (0–4 s): talking head doing a chore. 'I got to my 4th year of uni only to find out now that I literally, but literally, could have known the exam questions in advance the whole time. Yes.'",
+   "2. Setup (4–10 s): 'Basically, I had a friend who literally always got amazing grades and, like, never killed herself studying.'",
+   "3. Fascination and payoff of the trick (10–15 s): 'What fascinates me most is that she always managed to prepare every exam fast, however big or hard it was, and she finally shared her trick with me. So I'll show you now, hoping it makes it easier for you, because it really did for me when I found out.'",
+   "4. Reveal, Memo AI named (about 15 s): 'Literally all she does is use Memo AI, the study app…' The video cuts to a screen recording of memoai.eu.",
+   "5. Demo of the steps (15–30 s): she uploads her materials (a PDF/PowerPoint of the lectures, a recorded lecture, or Scan photos of her notes). Memo AI makes notes, a quiz, flashcards, a practice test and a podcast from them. 'That's how she prepares for both written and oral exams.' The voice tutor or podcast covers oral exams, the quiz and graded practice test cover written ones. The waiting while the note is made is cut.",
+   "6. Closer (30–35 s): back to the talking head or still on the screen recording. 'And the best part of all is that studying is actually fun for her.'"
+  ],
+  "canonical_source": "7692489776338832658",
+  "filming": "About 30–40 s, vertical 9:16, selfie talking head at home. The creator does a casual chore the whole time (laundry, tidying, skincare, coffee) and talks to camera in a chatty storytime tone, with no cuts to a studio setting. On-screen title: 'Ispitna pitanja unaprijed? 😳'. At the reveal (about 15 s), cut to a phone or laptop screen recording of memoai.eu, optionally with the creator's face in a corner. Demo sequence: open Memo AI → upload a PDF/PPT of the lecture material (or Scan photos of notes) → the waiting is cut → the finished notes appear → open the quiz with explanations → flashcards → the graded practice test with percentage and feedback → the podcast or voice tutor playing (for oral exams). Optional final cut back to the talking head for the last line. Copy the example video's framing, pacing and editing as closely as possible.",
+  "generated": 1792101411,
+  "hook": "While casually doing a chore on camera (folding laundry, cleaning, making coffee), the creator says straight to camera, with disbelief: 'So I got all the way to my 4th year of uni only to find out now that I literally, but literally, could have known the exam questions in advance the whole time. Yes.' The title on screen is 'Ispitna pitanja unaprijed? 😳' (localised spelling).",
+  "not_allowed": [
+   "Dropping the talking-head chore storytime (e.g. turning it into a voiceover-only tutorial, a skit or a silent text video)",
+   "Removing the 'late discovery' hook ('4th year of uni and only now I find out…') or the high-achieving-friend's-secret-trick framing",
+   "Presenting Memo AI as the creator's own find instead of the friend's shared trick",
+   "Introducing Memo AI only at the end; it must be named and shown at about 15 s, with what it does",
+   "Talking about or showing the app without a screen recording of the real app",
+   "Mentioning or showing Astra AI, Studyflash, Turbo AI or any other study app",
+   "Showing or claiming features Memo AI lacks: exam-date/target-grade study planner, snap-and-solve answers, grading the user's own homework, photos in chat, PDF export, pasting text, an Android store app",
+   "Adding a hard-sell ad CTA, discount pitch or comparison with other apps that the original doesn't have"
+  ],
+  "premise": "A relatable late-discovery storytime. A friend always got great grades without killing herself studying and prepared every exam fast, however big or hard it was. She finally shared her trick, and it turns out to be Memo AI. The creator passes it on 'hoping it makes things easier for you, because it really did for me', then screen-records the app as the reveal. The claim of 'knowing the exam questions in advance' pays off as the quiz and practice-test questions Memo AI generates from your own materials.",
+  "product": {
+   "cta": "none (implicit: 'I'm showing you in the hope it makes it easier for you'). An optional soft caption or comment pointer to memoai.eu is allowed.",
+   "features_used": [
+    "upload of PDF / Word / PowerPoint lecture materials",
+    "recorded or uploaded lecture",
+    "Scan camera / gallery photos of notes (up to 10)",
+    "notes",
+    "quiz with explanations",
+    "graded practice test (percentage + feedback per answer)",
+    "flashcards",
+    "podcast",
+    "voice tutor that explains the material out loud topic by topic (for oral exams)",
+    "app speaks Slovenian, Croatian, Bosnian and Serbian"
+   ],
+   "introduced_at_beat": 4,
+   "spoken_brand": "Spoken once at the reveal, about 15 s in ('koristi Memo AI, aplikaciju za učenje'), at the same spot where the original says Astra. The URL memoai.eu is visible in the screen recording and may also be shown as on-screen text or in the caption."
+  },
+  "rejected_sources": {},
+  "rules": "early-memo-2026-10-12",
+  "source_urls": {
+   "7692489776338832658": "https://www.tiktok.com/@learnwithtika/video/7692489776338832658"
+  },
+  "title_en": "Exam questions in advance? 😳 – 'only now, in my 4th year, I find out' storytime about a top-student friend's secret study trick, with Memo AI revealed by screen recording"
  }
 }
