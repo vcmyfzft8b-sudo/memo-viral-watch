@@ -7,11 +7,10 @@
     "tries": 1
    }
   },
+  "cleaned_from": [],
   "created": 1791492438,
   "description": "Talking-head listicle of little-known student discounts (transport, free Microsoft Office, cinema/theatre) with numbered on-screen stickers, where the last item is the study app shown as a screen recording before a like-and-follow outro.",
-  "dropped_pages": {
-   "sl": "3f365e84-a3c2-81fb-b984-fbf04f3851f5"
-  },
+  "dropped_pages": {},
   "faithful": {
    "sh": true,
    "sl": true
@@ -352,11 +351,10 @@
     "tries": 1
    }
   },
+  "cleaned_from": [],
   "created": 1791505153,
   "description": "Talking-head reaction series where the creator reads and jokes about funny e-diary teacher remarks shown as screenshot overlays, with a mid-video segue ('if you want to use AI, use it properly') into a quick app demo before returning to more remarks.",
-  "dropped_pages": {
-   "sl": "3f465e84-a3c2-8147-b6fe-d7abf605d2a6"
-  },
+  "dropped_pages": {},
   "faithful": {
    "sh": true,
    "sl": true
