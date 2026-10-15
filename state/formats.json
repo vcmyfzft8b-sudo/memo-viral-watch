@@ -825,17 +825,10 @@
   "created": 1792101302,
   "description": "Talking-head storytime where the creator, casually doing a chore on camera, reveals a late discovery ('4 years of uni and only now I learn...') about a high-achieving friend's secret study trick, then screen-records the study app as the reveal.",
   "id": "A20261015215502",
+  "listed_at": 1792101925,
   "page_id": "3fa65e84-a3c2-8199-99d3-cc9843906460",
   "pages": {
    "sl": "3fa65e84-a3c2-817c-a076-d0ddd15bcbb9"
-  },
-  "pending": {
-   "kind": "new",
-   "reasons": [
-    "cross-country check fail: faithful_translation sh: Beat order and form are off. The line 'Tako da ću vam pokazati, u nadi da će vam olakšati' (here 'Nadam se da će i vama ovo olakšati kao meni') is moved to after the closer, so 'A najbolje od svega je to što joj je zanimljivo dok uči' is no longer the last line. It should co"
-   ],
-   "since": 1792101704,
-   "tries": 1
   },
   "reworded": {
    "sh": true,
@@ -843,7 +836,7 @@
   },
   "script": "Znači, ja sam stigla do četvrte godine fakulteta da bih sada saznala da sam bukvalno, ali bukvalno, sve vrijeme mogla znati ispitna pitanja unaprijed. Da. Imala sam drugaricu koja je uvijek imala odlične ocjene, a nikad se nije ubijala od učenja. I konačno mi je otkrila svoj trik: Memo AI. U nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. Tako se ona sprema i za pismene i za usmene ispite: riješi probni test, posluša podkast, a tutor joj naglas objasni gradivo tema po temu. Zato uvijek tako brzo spremi svaki ispit, koliko god bio obiman ili težak. A najbolje od svega je to što joj je zanimljivo dok uči. Nadam se da će i vama ovo olakšati kao meni.",
   "source_video": "https://www.tiktok.com/@learnwithtika/video/7692489776338832658",
-  "status": "pending",
+  "status": "active",
   "title": "Ispitna pitanja unaprijed? 😳"
  }
 ]

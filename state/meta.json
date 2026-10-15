@@ -40,8 +40,8 @@
   "A20261013231033:sl": "ok",
   "A20261015213945:sh": "ok",
   "A20261015213945:sl": "ok",
-  "A20261015215502:sh": "fixed",
-  "A20261015215502:sl": "fixed"
+  "A20261015215502:sh": "ok",
+  "A20261015215502:sl": "ok"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "554231d90c87dfa29584fb8b10cd1ba8428450b221746b4dee2eb018191dcc1d",
@@ -82,8 +82,8 @@
   "A20261013231033:sl": "53ee7b85f5cd3bf3479673114d5f12a472a09ec0eb1dcb44dc45c77df9be5d04",
   "A20261015213945:sh": "1c2f92230a5ba3b03fbaf79aae9f818f04d2902a7d18aa1458c24ea0456a0e4b",
   "A20261015213945:sl": "cc0268b235cec2853b9bfde255bb633a0bb942fdce298403aee4c5e66fd82beb",
-  "A20261015215502:sh": "d0ed0b78f3fb8b35515e6014b9e8f96f8f5371df5f2e51fa1ac992d592e9b8b0",
-  "A20261015215502:sl": "ba58bfada92ffa7e755a6ec469947dc66d75657444d48134ff69202934a46c6d"
+  "A20261015215502:sh": "cc4024425623199a80d14678564816f7b662780e87e3e7f2a2dd7760dcf8d4b9",
+  "A20261015215502:sl": "ae500f4138c2b23c0481bd56494fb086a7514ea342f26e66e36f08600d183e9b"
  },
  "discovered_at": 1792084788,
  "faithful_rewrite_started": 1791643120,
@@ -1751,7 +1751,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1792101669,
+   "checked_at": 1792101853,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1764,11 +1764,9 @@
      "video_identity": "sha256:39af2a38ddf1d532cce0f9c5f6512f5ce008b9faea8e0c9abd7f6d021fa8a910"
     }
    },
-   "key": "3820ee132726aa32333c8ccd656e6f0a15306d3e7533d0840a4b5a85a6f3734b",
-   "passed": false,
-   "reasons": [
-    "faithful_translation sh: Beat order and form are off. The line 'Tako da ću vam pokazati, u nadi da će vam olakšati' (here 'Nadam se da će i vama ovo olakšati kao meni') is moved to after the closer, so 'A najbolje od svega je to što joj je zanimljivo dok uči' is no longer the last line. It should come right after the Memo AI reveal, as in the original and in SL. The hook also drops 'Da.', and the script has no 'Tekst na ekranu: Ispitna pitanja unaprijed? 😳' line (SL has its own)."
-   ],
+   "key": "a0415d24520eb6f1ee67634c1601de38b0bdd34ad43e7a823e6c58ee2b280339",
+   "passed": true,
+   "reasons": [],
    "results": {
     "directions_match": {
      "sh": {
@@ -1782,8 +1780,8 @@
     },
     "faithful_translation": {
      "sh": {
-      "issue": "Beat order and form are off. The line 'Tako da ću vam pokazati, u nadi da će vam olakšati' (here 'Nadam se da će i vama ovo olakšati kao meni') is moved to after the closer, so 'A najbolje od svega je to što joj je zanimljivo dok uči' is no longer the last line. It should come right after the Memo AI reveal, as in the original and in SL. The hook also drops 'Da.', and the script has no 'Tekst na ekranu: Ispitna pitanja unaprijed? 😳' line (SL has its own).",
-      "pass": false
+      "issue": "",
+      "pass": true
      },
      "sl": {
       "issue": "",
@@ -1821,8 +1819,8 @@
      }
     }
    },
-   "status": "fail",
-   "summary": "Both pages follow the late-discovery friend's-trick storytime with Memo AI brought in early, real features only, and matching visual-hook directions; SL is clean, while SH moves the 'hope it helps you' line to after the closer, drops 'Da.' and lacks the on-screen title line.",
+   "status": "pass",
+   "summary": "Both pages pass every check: each keeps the late-discovery hook almost word for word, names Memo AI as the friend's trick within about 50 words with the required pitch, keeps the friend's fast-prep claim, the written and oral exams payoff and the closer (SH moves the fast-prep line after the demo, which is acceptable tightening), and uses only real features. The visual hook directions are concrete one-sentence copies of the chopping-board opening, though SH says black armchair and knife while SL says leather sofa and crumbling or grating.",
    "title_fixes": {},
    "version": "group-2026-10-12.early-memo"
   }
