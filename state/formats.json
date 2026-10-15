@@ -1,5 +1,12 @@
 [
  {
+  "age": {
+   "sh": {
+    "page": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791492438,
   "description": "Talking-head listicle of little-known student discounts (transport, free Microsoft Office, cinema/theatre) with numbered on-screen stickers, where the last item is the study app shown as a screen recording before a like-and-follow outro.",
   "dropped_pages": {
@@ -60,6 +67,13 @@
   "title": "Studentski popusti koje svi propuštaju 🎟️"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f365e84-a3c2-81b2-8c98-d419a8b912b6",
+    "status": "none",
+    "tries": 1
+   }
+  },
   "created": 1791493084,
   "description": "Talking-head 'elimination game' video where the creator lists playful 'you're out if…' conditions on a growing on-screen numbered list, with the last item being the study app, followed by a quick screen-recorded app demo and a comment call-to-action.",
   "dropped_pages": {
@@ -105,6 +119,18 @@
   "title": "Igra eliminacije: dokle ćeš izdržati? 🎮"
  },
  {
+  "age": {
+   "sh": {
+    "page": "3f365e84-a3c2-8158-a10f-d25c82347e03",
+    "status": "added",
+    "tries": 1
+   },
+   "sl": {
+    "page": "3f365e84-a3c2-812c-8690-c4d957b2a619",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791493797,
   "description": "Talking-head countdown listicle (top 5 easiest faculties) filmed while cutting paper with scissors as a visual hook, with a mid-list app demo filmed on a phone over a book before revealing places 2 and 1.",
   "faithful": {
@@ -144,6 +170,18 @@
   "title": "Top 5 najlakših fakulteta 🎓"
  },
  {
+  "age": {
+   "sh": {
+    "page": "3f365e84-a3c2-819d-9066-dc90353d437e",
+    "status": "none",
+    "tries": 1
+   },
+   "sl": {
+    "page": "3f365e84-a3c2-816c-89f2-f02737fabba1",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791494352,
   "description": "No-voiceover POV meme with trending audio: creator looks stressed during a test because she can't remember a slide, then a handheld shot of a laptop screen showing the study app as the 'brain upgrade'.",
   "faithful": {
@@ -186,6 +224,13 @@
   "title": "Mozak premium uz Memo AI 🧠"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f365e84-a3c2-810e-8152-eeed9afe21db",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791499490,
   "description": "Comedy skit where one creator acts out how different zodiac signs react to getting a failing grade from an off-screen teacher, with one sign bragging about the study app as a mid-video product mention over a green-screen classroom.",
   "dropped_pages": {
@@ -249,6 +294,13 @@
   "title": "Horoskopski znakovi kad dobiju 1 ♈"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f365e84-a3c2-81fa-af2c-f4bcacc9beac",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791501329,
   "description": "Talking-head warning rant listing reasons not to use ChatGPT for studying (accuracy, no real learning, over-reliance, privacy), with the study app pitched mid-video as the better alternative via logo and screen-recording overlays.",
   "dropped_pages": {
@@ -293,6 +345,13 @@
   "title": "Prestani učiti s ChatGPT-jem 🚫"
  },
  {
+  "age": {
+   "sh": {
+    "page": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791505153,
   "description": "Talking-head reaction series where the creator reads and jokes about funny e-diary teacher remarks shown as screenshot overlays, with a mid-video segue ('if you want to use AI, use it properly') into a quick app demo before returning to more remarks.",
   "dropped_pages": {
@@ -356,6 +415,18 @@
   "title": "Najsmješnije bilješke iz e-dnevnika 😂"
  },
  {
+  "age": {
+   "sh": {
+    "page": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe",
+    "status": "added",
+    "tries": 1
+   },
+   "sl": {
+    "page": "3f465e84-a3c2-81c1-b18f-e757875dad14",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791510081,
   "description": "Talking-head 'secrets teachers hide from you' video with satisfying slime-cutting hook and a fake 'deleting in 2 hours' urgency line, then a close-up laptop screen walkthrough of the study app's features.",
   "faithful": {
@@ -437,6 +508,18 @@
   "title": "Biologija duplo brže? 🧬"
  },
  {
+  "age": {
+   "sh": {
+    "page": "3f465e84-a3c2-815f-9cd7-d9b447463dd2",
+    "status": "added",
+    "tries": 1
+   },
+   "sl": {
+    "page": "3f465e84-a3c2-8189-b47d-f03858456d14",
+    "status": "none",
+    "tries": 1
+   }
+  },
   "created": 1791580104,
   "description": "Talking-head video where the creator 'sells' ad spots drawn as priced fields on the back of their laptop, reveals the study app as the first buyer by cutting out and sticking on its logo, then demos its features on the laptop screen.",
   "faithful": {
@@ -511,6 +594,13 @@
   "title": "Gradivo kao sočan trač 🍿"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f565e84-a3c2-817e-9399-d8a7083c900f",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791648877,
   "description": "Talking-head 'ranking/list of student types' video while making a drink on camera, where the last type leads into a friend's study-app recommendation with a screen recording of the app on a laptop and a 'part 2' teaser.",
   "dropped_pages": {
@@ -554,6 +644,13 @@
   "title": "5 učenika koje svi obožavamo 🧑‍🎓"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f565e84-a3c2-81f3-a771-d05601b576fa",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791649226,
   "description": "Funny talking-head study vlog where the creator's sister froze her apartment keys in ice so she has to study until it melts, with a study montage set to a love song whose 'only you I need' line lands on the study app on screen.",
   "dropped_pages": {
@@ -594,6 +691,13 @@
   "title": "Sestra mi je zaledila ključeve 🧊"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f565e84-a3c2-81f9-b33c-fc4551d00ce7",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791649768,
   "description": "Talking-head 'secret app' reveal where the creator does a casual drink-making activity with an on-screen list of university faculties, then films a laptop screen showing the app's lessons and quizzes, naming the app at the end and asking viewers to comment if their faculty is on the list.",
   "dropped_pages": {
@@ -638,6 +742,13 @@
   "title": "Jackpot za sve brucoše 🎰"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f565e84-a3c2-812f-88c5-c7a29c250a40",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791650318,
   "description": "Talking-head creator cuts a paper strip of the day's 24 hours with scissors to show how little study time is left, then demos the study app's features on a tablet.",
   "dropped_pages": {
@@ -681,6 +792,13 @@
   "title": "Imamo samo 2 sata za učenje? ✂️"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f565e84-a3c2-8158-aa07-fd81fb00a741",
+    "status": "none",
+    "tries": 1
+   }
+  },
   "app_link": "https://www.memoai.eu/ugc/oral-quiz",
   "brief": "The original promotes another app's oral quiz (Turbo AI). Our version uses Memo AI's oral quiz page https://www.memoai.eu/ugc/oral-quiz: the creator opens it on a laptop, picks their language and presses play. It is a dialogue between the app's voice tutor (TUTOR - these lines play as audio from the page, the creator does NOT say them) and the creator (CREATOR - the creator says these short answers out loud themselves, live, in the pauses). Exactly like the original: the creator films their own face reacting (embarrassed / laughing) while the quiz runs and answers, then turns the camera to the laptop screen with the quiz. The script is this dialogue with the page's own wording for the page language (Slovenian page: the Slovenian version; Serbo-Croatian page: the Croatian version - creators can also pick Bosnian or Serbian on the page), for the same lines the original plays (if the original stops mid-way, stop at the same point). Start every TUTOR line with 'Memo AI:' and every CREATOR line with 'Ti:' (no brackets, no stage directions), and put cue 'memo' on the first line and where the laptop with the oral quiz is shown. The dialogue names no app, so no line names Memo AI. 'DICK' is the medical mnemonic (dextrose, insulin, calcium, Kayexalate) and the joke of the format - keep it. SLOVENIAN: TUTOR 'Tvoja pacientka potrebuje malo DICK-a. Kako ji ga daš?' / CREATOR 'Seveda samo s privolitvijo.' / TUTOR 'Pacientka je nezavestna. Privolitve ne more dati.' / CREATOR 'Oh.' / TUTOR 'Potem ji moraš DICK vseeno dati.' / CREATOR 'Brez privolitve?' / TUTOR 'Zapomni si: DICK pomeni dekstroza, insulin, kalcij in Kayexalate.' / CREATOR 'Oh.' / TUTOR 'Dati jih moraš v tem vrstnem redu, in sicer takole. Dekstroza gre najprej kot IV bolus, da insulin ne zniža preveč krvnega sladkorja. Insulin gre IV takoj za njo in v približno petnajstih minutah potisne kalij v celice. Kalcijev glukonat daš IV v nekaj minutah, da zaščitiš srce pred aritmijo, medtem ko kalij pada. Kayexalate pride zadnji, skozi usta ali rektalno, da odvečni kalij za vedno odstrani iz telesa.' CROATIAN: TUTOR 'Tvojoj pacijentici treba malo DICK-a. Kako ćeš joj ga dati?' / CREATOR 'Pa naravno, samo uz pristanak.' / TUTOR 'Pacijentica je bez svijesti. Ne može dati pristanak.' / CREATOR 'Oh.' / TUTOR 'Onda joj DICK moraš dati svejedno.' / CREATOR 'Bez pristanka?' / TUTOR 'Zapamti: DICK znači dekstroza, inzulin, kalcij i Kayexalate.' / CREATOR 'Oh.' / TUTOR 'Moraš ih dati tim redoslijedom, i to ovako. Dekstroza ide prva kao IV bolus, da inzulin ne sruši šećer u krvi. Inzulin ide IV odmah za njom i za otprilike petnaest minuta potiskuje kalij u stanice. Kalcijev glukonat daješ IV kroz nekoliko minuta da zaštitiš srce od aritmije dok kalij pada. Kayexalate ide zadnji, na usta ili rektalno, da zauvijek izbaci višak kalija iz tijela.'",
   "created": 1791668557,
@@ -719,6 +837,13 @@
   "title": "Nisam stvorena za sestrinstvo 😳"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f565e84-a3c2-819d-b4f4-c5221cf35b40",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791669209,
   "description": "Casual 'get ready with me' style talking-head video where the creator gives a numbered list of school study tips while doing makeup, with the study app shown briefly as the favourite tool in tip one.",
   "id": "A20261010215329",
@@ -745,6 +870,13 @@
   "title": "3 nasveti za dobre ocene v 8. razredu 📚"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f565e84-a3c2-81ed-97db-f512256a519e",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791669343,
   "description": "Talking-head before/after where the creator shows her messy handwritten university notes, says a friend showed her an app, then holds up a tablet with the AI-generated notes and ends with 'save this video'.",
   "id": "A20261010215543",
@@ -771,6 +903,13 @@
   "title": "Moji zapiski so zdaj perfektni ✨"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f565e84-a3c2-817f-af1e-dbcc97fe5d10",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791669464,
   "description": "Get-ready-with-me talking-head list of 'high school phases you need to skip' while doing makeup, with the study app slipped in as the advice for one phase and shown only as a logo sticker.",
   "id": "A20261010215744",
@@ -797,6 +936,13 @@
   "title": "Faze srednje šole, ki jih MORAŠ skipat ⚠️"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f565e84-a3c2-8163-886b-cbc5d4c74674",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791669727,
   "description": "Fortune-teller style talking video by candlelight where the creator 'reads the future' from handwritten paper cards held over a candle (grade 5, study method, app name), ending with a discount code.",
   "id": "A20261010220207",
@@ -820,6 +966,13 @@
   "title": "Diva, vidim same petke zate 🔮"
  },
  {
+  "age": {
+   "sl": {
+    "page": "3f765e84-a3c2-81e1-9635-c7467da40cf0",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791821322,
   "description": "Talking-head 'friend test' hook (swapped video background to a nice car to expose fake friends via emoji replies), followed by a pivot to using your phone for learning and a screen recording of the study app's flashcards, ending with a comment-bait CTA.",
   "dropped_pages": {
@@ -844,6 +997,18 @@
   "title": "Test za prijatelje: gledaju li ti videe? 😤"
  },
  {
+  "age": {
+   "sh": {
+    "page": "3f865e84-a3c2-8130-aa0a-d6aea79cc620",
+    "status": "added",
+    "tries": 1
+   },
+   "sl": {
+    "page": "3f865e84-a3c2-81ac-a6f9-ecaaad571976",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1791933033,
   "description": "Talking-head promise hook ('grades so good your teacher thinks you cheat') while fidgeting with a stress toy, comment-emoji CTA, then a screen recording of the study app on a computer monitor showing upload and results.",
   "id": "A20261013231033",
@@ -862,6 +1027,18 @@
   "title": "Ocjene zbog kojih profesori misle da varaš 😱"
  },
  {
+  "age": {
+   "sh": {
+    "page": "3fa65e84-a3c2-81f9-8073-f670e8f6b5f3",
+    "status": "added",
+    "tries": 1
+   },
+   "sl": {
+    "page": "3fa65e84-a3c2-81c9-9507-c930393625d9",
+    "status": "added",
+    "tries": 1
+   }
+  },
   "created": 1792100385,
   "description": "Talking-head student at a desk opens with her top grade averages as proof, then lists three study apps she used, with the study app as the second, most-used item shown via screen recording.",
   "id": "A20261015213945",
