@@ -28,6 +28,9 @@ lines "Tekst na ekranu:" / "Besedilo na zaslonu:", app-voice dialogues "Memo AI:
 CTA (user's rule, 16 Oct 2026): every script ends with "Komentariši »WORD« i poslaću ti link do aplikacije." /
 "Komentiraj »WORD« in pošljem ti link do aplikacije." - WORD fits the script (registry/cta_words.json, picked with the
 user; new formats: the writer picks it, `builder.validate` and `verify` check it; `mode=add-cta` adds it to live pages).
+🎓 Age box (user's request, 16 Oct 2026): under a script tied to one school level (faks / srednja / osnovna) the page
+shows those lines for the other levels (gray 🎓 callout after the CTA, `watcher/ages.py`; the script itself never
+changes). Every run checks up to 4 new/rebuilt pages; `mode=age-variants` does all.
 Every page's materials hold the official Memo AI logo (registry/materials/_logo, = Memo_AI/public/memo-lockup.png).
 Format pages are sub-pages of the creator list page (holder_page = list_page; `mode=rehome`).
 

@@ -18,7 +18,7 @@ import tempfile
 import time
 import traceback
 
-from . import align, audit, builder, classify, conversion, crosscheck, detect, discover, gate, hot, lineup, llm, localize, markets as M, media, notify, notion, own, rank, reword, soniox, state, tiktok, weekly
+from . import ages, align, audit, builder, classify, conversion, crosscheck, detect, discover, gate, hot, lineup, llm, localize, markets as M, media, notify, notion, own, rank, reword, soniox, state, tiktok, weekly
 from .brand import OURS, SOURCE, links_for
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
@@ -151,6 +151,34 @@ def add_cta(fmts, mkts, only=None):
                 out['added'].append(f'{label}: {line}')
             except Exception as e:
                 out['failed'].append(f'{label}: {str(e)[:120]}')
+    return out
+
+
+def age_boxes(fmts, mkts, cfg, limit=None, only=None):
+    """🎓 box under every script tied to one school level (ages.py). Each page is checked once (f['age'][market] =
+    page id + result); a rebuilt page (new id) is checked again. Returns {result: [labels]}."""
+    out, done = {}, 0
+    for f in fmts:
+        if f.get('status') != 'active' or (only and f['id'] not in only):
+            continue
+        for mk in M.of(mkts, f):
+            pid = page_of(f, mk['key'])
+            seen = (f.get('age') or {}).get(mk['key']) or {}
+            retry = seen.get('status', '').startswith(('held', 'error')) and seen.get('tries', 0) < 3
+            if not pid or (seen.get('page') == pid and not retry):
+                continue
+            if limit is not None and done >= limit:
+                return out
+            done += 1
+            try:
+                status = ages.add_to_page(pid, mk['lang'], cfg['models']['build'])
+            except Exception as e:
+                status = 'error: ' + str(e)[:120]
+            tries = seen.get('tries', 0) + 1 if seen.get('page') == pid else 1
+            f.setdefault('age', {})[mk['key']] = {'page': pid, 'status': status, 'tries': tries}
+            out.setdefault(status.split(':')[0], []).append(f"{mk['key']} {f['title'][:40]}" +
+                                                             (f' ({status})' if ':' in status else ''))
+            state.save('formats.json', fmts)
     return out
 
 
@@ -329,6 +357,16 @@ def run(dry_run=False, only_detect=False):
             state.save('formats.json', fmts)
         except Exception as e:
             print('gate retry failed:', str(e)[:200])
+
+    # 4a2. new / rebuilt pages: 🎓 box for scripts tied to one school level (a few pages per run)
+    if not dry_run and not only_detect:
+        try:
+            r = age_boxes(fmts, mkts, cfg, limit=4)
+            if r:
+                print('age boxes:', r)
+            state.save('formats.json', fmts)
+        except Exception as e:
+            print('age boxes failed:', str(e)[:200])
 
     # 4b. our own creators: new videos, views, formats (feeds the ranking: how each format does for US)
     own_accounts, own_videos = own.load()
@@ -1536,6 +1574,8 @@ def main():
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
     ap.add_argument('--fix-labs', action='store_true', help="every page: the Visual Hook Lab link points to its own market's lab")
     ap.add_argument('--add-market', help='FORMAT_ID[,FORMAT_ID...]:market - add formats to that market\'s list (a page is built)')
+    ap.add_argument('--age-variants', nargs='?', const='-', default='',
+                    help='every live page (or these format ids): the 🎓 box with the script lines for other school levels')
     ap.add_argument('--add-cta', nargs='?', const='-', default='',
                     help='every live page (or only these format ids, comma-separated): the comment CTA at the end of the script')
     ap.add_argument('--list-text', action='store_true', help='write the current 🔥 list instructions into every list')
@@ -2152,6 +2192,12 @@ def main():
     if a.relink:
         from . import setup
         setup.relink(load_config(), load_formats(), page_of)
+        return
+    if a.age_variants:
+        cfg, fmts = load_config(), load_formats()
+        r = age_boxes(fmts, M.load(cfg), cfg, only=[x for x in a.age_variants.split(',') if x and x != '-'])
+        for k, v in r.items():
+            print(f'{k}: {len(v)}', *('  ' + x for x in v), sep='\n')
         return
     if a.add_cta:
         cfg, fmts = load_config(), load_formats()

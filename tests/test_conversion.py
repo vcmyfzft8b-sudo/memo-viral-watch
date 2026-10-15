@@ -396,3 +396,75 @@ class ListText(StateDir):
         with mock.patch.object(setup.notion, 'children', return_value=[]), mock.patch.object(setup.notion, 'api'):
             with self.assertRaises(SystemExit):
                 setup.list_text({**CFG, 'markets': {'sh': CFG['markets']['sh']}})
+
+
+class AgeBoxes(StateDir):
+    LINES = ['Besedilo na zaslonu: Izpitna vprašanja vnaprej? 😳',
+             'Torej, prišla sem do četrtega letnika faksa, da sem šele zdaj izvedela, da bi lahko vnaprej poznala izpitna vprašanja.',
+             'Najboljše pa je, da ji je med učenjem celo zanimivo.',
+             'Komentiraj »VPRAŠANJA« in pošljem ti link do aplikacije.']
+
+    def blocks(self):
+        return [{'id': f'b{i}', 'type': 'paragraph', 'text': t} for i, t in enumerate(self.LINES)]
+
+    def test_variants_keep_only_real_changes_and_never_touch_the_cta(self):
+        from watcher import ages
+        reply = {'lines': [{'n': 2, 'osnovna': '', 'srednja': 'Torej, prišla sem do četrtega letnika srednje, da sem šele zdaj izvedela ...',
+                            'faks': self.LINES[1]},                         # same as the original: dropped
+                           {'n': 4, 'srednja': 'Komentiraj »X«'},           # the CTA: never changed
+                           {'n': 99, 'srednja': 'x'}, {'n': 'a'}]}         # bad numbers: ignored
+        with mock.patch.object(ages.llm, 'chat_json', return_value=reply):
+            found = ages.variants(self.LINES, 'sl')
+        self.assertEqual(len(found), 1)
+        self.assertEqual(list(found[0]['versions']), ['srednja'])
+
+    def test_box_goes_after_the_cta_and_only_once(self):
+        from watcher import ages
+        found = [{'line': self.LINES[1], 'versions': {'srednja': 'Torej, prišla sem do četrtega letnika srednje ...'}}]
+        with mock.patch.object(ages.notion, 'children', return_value=self.blocks()), \
+                mock.patch.object(ages, 'variants', return_value=found), mock.patch.object(ages.notion, 'api') as api:
+            r = ages.add_to_page('P', 'sl', script_blocks=lambda pid: self.blocks(), plain=lambda b: b['text'])
+        self.assertEqual(r, 'added')
+        body = api.call_args.args[2]
+        self.assertEqual(body['after'], 'b3')  # after the CTA line
+        text = ''.join(x['text']['content'] for x in body['children'][0]['callout']['rich_text'])
+        self.assertIn('Prilagodi svoji starosti', text)
+        self.assertIn('Srednja šola: Torej, prišla sem do četrtega letnika srednje', text)
+        with_box = self.blocks() + [{'type': 'callout', 'callout': {'icon': {'emoji': '🎓'}}}]
+        with mock.patch.object(ages.notion, 'children', return_value=with_box), mock.patch.object(ages, 'variants') as v:
+            self.assertEqual(ages.add_to_page('P', 'sl'), 'had')
+        v.assert_not_called()
+
+    def test_scripts_that_fit_every_age_get_no_box_and_bad_text_is_held(self):
+        from watcher import ages
+        kw = dict(script_blocks=lambda pid: self.blocks(), plain=lambda b: b['text'])
+        with mock.patch.object(ages.notion, 'children', return_value=self.blocks()), \
+                mock.patch.object(ages, 'variants', return_value=[]), mock.patch.object(ages.notion, 'api') as api:
+            self.assertEqual(ages.add_to_page('P', 'sl', **kw), 'none')
+        api.assert_not_called()
+        bad = [{'line': 'x', 'versions': {'srednja': 'Uvek imam vreme sa Astra AI'}}]
+        with mock.patch.object(ages.notion, 'children', return_value=self.blocks()), \
+                mock.patch.object(ages, 'variants', return_value=bad), mock.patch.object(ages.notion, 'api') as api:
+            r = ages.add_to_page('P', 'sh', **kw)
+        self.assertTrue(r.startswith('held') and 'other app' in r and 'ekavian' in r)
+        api.assert_not_called()
+
+    def test_each_page_is_checked_once_and_again_after_a_rebuild(self):
+        fmts = [{'id': 'F', 'status': 'active', 'title': 't', 'page_id': 'p1', 'pages': {'sl': 'p2'}}]
+        mkts = [{'key': 'sh', 'lang': 'sh'}, {'key': 'sl', 'lang': 'sl'}]
+        with mock.patch.object(main.ages, 'add_to_page', return_value='none') as add:
+            main.age_boxes(fmts, mkts, CFG)
+            main.age_boxes(fmts, mkts, CFG)
+            self.assertEqual(add.call_count, 2)
+            fmts[0]['pages']['sl'] = 'p3'                      # rebuilt page
+            main.age_boxes(fmts, mkts, CFG)
+            self.assertEqual(add.call_count, 3)
+        with mock.patch.object(main.ages, 'add_to_page', return_value='held: x') as add:
+            fmts[0]['page_id'] = 'p9'
+            for _ in range(5):
+                main.age_boxes(fmts, mkts, CFG)
+            self.assertEqual(add.call_count, 3)                # held pages: 3 tries, then left alone
+        with mock.patch.object(main.ages, 'add_to_page', return_value='none') as add:
+            fmts.append({'id': 'G', 'status': 'active', 'title': 'g', 'page_id': 'q1', 'pages': {'sl': 'q2'}})
+            main.age_boxes(fmts, mkts, CFG, limit=1)
+            self.assertEqual(add.call_count, 1)                # a few pages per run

@@ -48,6 +48,10 @@ TEXT = {
         'cue_verb': 'Snimi',
         # comment CTA at the end of every script (user's rule, 16 Oct 2026); {word} fits the script
         'cta': 'Komentariši »{word}« i poslaću ti link do aplikacije.',
+        # 🎓 box under scripts tied to one school level (ages.py, user's request 16 Oct 2026)
+        'age_h': 'Prilagodi svom uzrastu',
+        'age_intro': 'Ako ne ideš u istu školu kao u scenariju, ove rečenice izgovori ovako:',
+        'age_levels': {'osnovna': 'Osnovna škola', 'srednja': 'Srednja škola', 'faks': 'Faks'},
         'pitch': ('u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio '
                   'snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, '
                   's kojima sve naučiš na jako jednostavan način.'),
@@ -142,6 +146,9 @@ TEXT = {
                         'Posnemi to enako kot v videu za navdih.'),
         'cue_verb': 'Posnemi',
         'cta': 'Komentiraj »{word}« in pošljem ti link do aplikacije.',
+        'age_h': 'Prilagodi svoji starosti',
+        'age_intro': 'Če ne hodiš v isto šolo kot v scenariju, te stavke povej tako:',
+        'age_levels': {'osnovna': 'Osnovna šola', 'srednja': 'Srednja šola', 'faks': 'Faks'},
         'pitch': ('vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek '
                   'naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi '
                   'se vse naučiš na zelo preprost način.'),

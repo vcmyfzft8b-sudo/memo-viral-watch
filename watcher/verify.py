@@ -64,7 +64,7 @@ def check_page(pid, T, links, lang=None, own=False, link=None, override=None):
     for b in blocks[h + 1:] if h is not None else []:
         if b['type'] == 'divider' or b['type'].startswith('heading'):
             break
-        if _plain(b).strip():
+        if _plain(b).strip() and b['type'] != 'callout':  # the 🎓 age box (ages.py) sits after the CTA
             script.append(b)
     if script and not has_cta(_plain(script[-1])):  # user's rule, 16 Oct 2026
         out.append('script does not end with the comment CTA (mode=add-cta)')
