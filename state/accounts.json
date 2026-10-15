@@ -1,6 +1,6 @@
 {
  "astra_ai_hr": {
-  "checked": 1791823532,
+  "checked": 1792085237,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -8,7 +8,7 @@
   "status": "active"
  },
  "astra_ai_rs": {
-  "checked": 1791823532,
+  "checked": 1792085237,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -16,7 +16,7 @@
   "status": "active"
  },
  "come_study_with_s": {
-  "checked": 1791823533,
+  "checked": 1792085238,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -34,7 +34,7 @@
   "status": "inactive"
  },
  "foxara.vas.uci": {
-  "checked": 1791823534,
+  "checked": 1792085238,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -42,7 +42,7 @@
   "status": "active"
  },
  "helenci_study": {
-  "checked": 1791823567,
+  "checked": 1792085261,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -50,7 +50,7 @@
   "status": "active"
  },
  "karla_studytok": {
-  "checked": 1791823569,
+  "checked": 1792085263,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -58,7 +58,7 @@
   "status": "active"
  },
  "kera.vas.uci": {
-  "checked": 1791823591,
+  "checked": 1792085284,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -66,7 +66,7 @@
   "status": "active"
  },
  "learn.with.darija": {
-  "checked": 1791823614,
+  "checked": 1792085304,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791491762,
@@ -74,7 +74,7 @@
   "status": "active"
  },
  "learnwith___lea": {
-  "checked": 1791823614,
+  "checked": 1792085305,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -82,7 +82,7 @@
   "status": "active"
  },
  "learnwithandj": {
-  "checked": 1791823615,
+  "checked": 1792085305,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -90,15 +90,22 @@
   "status": "active"
  },
  "learnwithanja": {
-  "checked": 1791823657,
+  "checked": 1792085343,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791491762,
   "source": "lightreel-2026-10-08",
   "status": "active"
  },
+ "learnwithdina6": {
+  "checked_ugc": true,
+  "lang": "sh",
+  "since": 1792085236,
+  "source": "lightreel",
+  "status": "active"
+ },
  "learnwithhanna": {
-  "checked": 1791823659,
+  "checked": 1792085343,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -106,7 +113,7 @@
   "status": "active"
  },
  "learnwithmateja": {
-  "checked": 1791823660,
+  "checked": 1792085347,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -114,7 +121,7 @@
   "status": "active"
  },
  "learnwithmina": {
-  "checked": 1791823665,
+  "checked": 1792085355,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -122,6 +129,7 @@
   "status": "active"
  },
  "learnwithnika": {
+  "checked": 1792085356,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791823532,
@@ -129,7 +137,7 @@
   "status": "active"
  },
  "learnwithniksi": {
-  "checked": 1791823686,
+  "checked": 1792085373,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -137,7 +145,7 @@
   "status": "active"
  },
  "learnwithpaola": {
-  "checked": 1791823686,
+  "checked": 1792085373,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -145,7 +153,7 @@
   "status": "active"
  },
  "learnwithsaraa": {
-  "checked": 1791823689,
+  "checked": 1792085380,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -153,7 +161,7 @@
   "status": "active"
  },
  "learnwithsaralara": {
-  "checked": 1791823716,
+  "checked": 1792085407,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -161,7 +169,7 @@
   "status": "active"
  },
  "learnwithtamara": {
-  "checked": 1791823717,
+  "checked": 1792085407,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -169,7 +177,7 @@
   "status": "active"
  },
  "learnwithtamy": {
-  "checked": 1791823751,
+  "checked": 1792085435,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -177,7 +185,7 @@
   "status": "active"
  },
  "learnwithtika": {
-  "checked": 1791823768,
+  "checked": 1792085452,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -207,7 +215,7 @@
  },
  "smartishaangelisaa": {
   "blocked_reason": "not_ugc: Serbian General viral/engagement content; no mention of Astra AI or any promoted app.",
-  "checked": 1791823773,
+  "checked": 1792085482,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -222,7 +230,7 @@
   "status": "manual"
  },
  "study.with.mili": {
-  "checked": 1791823776,
+  "checked": 1792085488,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -230,7 +238,7 @@
   "status": "active"
  },
  "study.with.nataliaa": {
-  "checked": 1791823795,
+  "checked": 1792085508,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -238,7 +246,7 @@
   "status": "active"
  },
  "study_with_hexi": {
-  "checked": 1791823800,
+  "checked": 1792085513,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -246,7 +254,7 @@
   "status": "active"
  },
  "study_with_zo": {
-  "checked": 1791823801,
+  "checked": 1792085514,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -262,6 +270,7 @@
   "status": "active"
  },
  "studytips_tea": {
+  "checked": 1792085533,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791823532,
@@ -269,6 +278,7 @@
   "status": "active"
  },
  "studytipsbyem": {
+  "checked": 1792085535,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791823532,
@@ -276,7 +286,7 @@
   "status": "active"
  },
  "studytipsbytara": {
-  "checked": 1791823840,
+  "checked": 1792085570,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -284,6 +294,7 @@
   "status": "active"
  },
  "studywith_petradaria": {
+  "checked": 1792085571,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791823532,
@@ -291,7 +302,7 @@
   "status": "active"
  },
  "studywithanamarija": {
-  "checked": 1791823863,
+  "checked": 1792085574,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490995,
@@ -299,7 +310,7 @@
   "status": "active"
  },
  "studywithandja": {
-  "checked": 1791823903,
+  "checked": 1792085609,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791491762,
@@ -307,7 +318,7 @@
   "status": "active"
  },
  "studywithandjela": {
-  "checked": 1791823903,
+  "checked": 1792085610,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -315,7 +326,7 @@
   "status": "active"
  },
  "studywithkarllo": {
-  "checked": 1791823904,
+  "checked": 1792085610,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -323,7 +334,7 @@
   "status": "active"
  },
  "studywithkarmen": {
-  "checked": 1791823904,
+  "checked": 1792085611,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791491762,
@@ -331,7 +342,7 @@
   "status": "active"
  },
  "studywithreveka": {
-  "checked": 1791823913,
+  "checked": 1792085617,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791491762,
@@ -339,7 +350,7 @@
   "status": "active"
  },
  "studywithvalentina": {
-  "checked": 1791823913,
+  "checked": 1792085617,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -347,7 +358,7 @@
   "status": "active"
  },
  "tea_studytok": {
-  "checked": 1791823919,
+  "checked": 1792085625,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -355,6 +366,7 @@
   "status": "active"
  },
  "tea_tips_": {
+  "checked": 1792085626,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791823532,
@@ -362,7 +374,7 @@
   "status": "active"
  },
  "ucenje.sa.lili": {
-  "checked": 1791823919,
+  "checked": 1792085626,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -370,7 +382,7 @@
   "status": "active"
  },
  "ucisamilicom": {
-  "checked": 1791823920,
+  "checked": 1792085627,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
@@ -378,7 +390,7 @@
   "status": "active"
  },
  "ucisaprofom": {
-  "checked": 1791823920,
+  "checked": 1792085627,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791490439,
