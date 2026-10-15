@@ -1,0 +1,83 @@
+{
+  "_about": "The comment word of each format's CTA, per page language (user's rule, 16 Oct 2026: every script ends with 'Komentariši »WORD« i poslaću ti link do aplikacije.' / 'Komentiraj »WORD« in pošljem ti link do aplikacije.'). Words picked with the user. New formats: the writer picks one (markets.conversion_rules).",
+  "A20261008204718": {
+    "sh": "POPUST",
+    "sl": "POPUST"
+  },
+  "A20261008205804": {
+    "sh": "IGRA",
+    "sl": "IGRA"
+  },
+  "A20261008210957": {
+    "sh": "FAKS",
+    "sl": "FAKS"
+  },
+  "A20261008211912": {
+    "sh": "PREMIUM",
+    "sl": "PREMIUM"
+  },
+  "A20261008224450": {
+    "sh": "HOROSKOP",
+    "sl": "HOROSKOP"
+  },
+  "A20261008231529": {
+    "sh": "CHATGPT",
+    "sl": "CHATGPT"
+  },
+  "A20261009001913": {
+    "sh": "BILJEŠKE",
+    "sl": "OPOMBE"
+  },
+  "A20261009014121": {
+    "sh": "TAJNA",
+    "sl": "SKRIVNOST"
+  },
+  "A20261009210824": {
+    "sh": "LAPTOP",
+    "sl": "LAPTOP"
+  },
+  "A20261010161437": {
+    "sh": "RAZRED",
+    "sl": "RAZRED"
+  },
+  "A20261010162026": {
+    "sh": "KLJUČEVI",
+    "sl": "KLJUČI"
+  },
+  "A20261010162928": {
+    "sh": "JACKPOT",
+    "sl": "JACKPOT"
+  },
+  "A20261010163838": {
+    "sh": "UČENJE",
+    "sl": "UČENJE"
+  },
+  "A20261010214237": {
+    "sh": "ISPIT",
+    "sl": "IZPIT"
+  },
+  "A20261010215329": {
+    "sl": "NASVETI"
+  },
+  "A20261010215543": {
+    "sl": "ZAPISKI"
+  },
+  "A20261010215744": {
+    "sl": "SREDNJA"
+  },
+  "A20261010220207": {
+    "sl": "PETKE"
+  },
+  "A20261012160842": {
+    "sh": "TEST",
+    "sl": "TEST"
+  },
+  "A20261013231033": {
+    "sh": "PETICA",
+    "sl": "PETKA"
+  },
+  "A20261015213945": {
+    "sh": "APLIKACIJE",
+    "sl": "APLIKACIJE"
+  }
+}

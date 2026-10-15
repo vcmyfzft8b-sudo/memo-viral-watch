@@ -32,6 +32,9 @@ Every 6 hours (GitHub Actions) it:
 7. **Weekly (Monday)**: re-ranks the list, takes formats out that do not convert (score below 0.9 once 2+ videos have
    saves – going viral does not protect them; archive, nothing deleted; `mode=lineup` shows the plan), Slack report.
    An archived format comes back only when a new video of it goes viral/converts AND is saved like a typical video.
+   Only markets with `"cleanup": true` are cleaned (Balkan); Slovenia keeps every format (`"cleanup": false`).
+8. **Every script ends with a comment CTA** ("Komentariši »WORD« i poslaću ti link do aplikacije.",
+   `registry/cta_words.json`; `mode=add-cta` puts it on live pages, `verify` checks it).
 
 Our own Memo AI creators (to see how each format does for us) are read from Megasheet once a Memo AI campaign exists –
 put its name in `config.json` → `"megasheet": {"campaigns": {"<name>": "sh"}}` and run `./scripts/save_megasheet_login.sh`.

@@ -204,17 +204,47 @@ class CleanUp(StateDir):
         p = self.plan(h, fmts, min_formats=2)
         self.assertEqual([f['id'] for f, _, _ in p['out']], ['F0', 'F1'])
 
-    def test_removed_formats_go_to_the_archive(self):
-        fmts = [{'id': 'GAME', 'status': 'active', 'title': 'Igra', 'page_id': 'p1', 'listed_at': 1},
+    def test_removed_formats_leave_only_the_cleaned_market(self):
+        # Balkan ("cleanup": true) loses the format, Slovenia ("cleanup": false) keeps it (user's rule, 16 Oct 2026)
+        fmts = [{'id': 'GAME', 'status': 'active', 'title': 'Igra', 'page_id': 'p1', 'pages': {'sl': 'p2'}, 'listed_at': 1},
                 {'id': 'K', 'status': 'active', 'title': 'k', 'listed_at': 1}]
         h = history_of(*background(), *[vid('GAME', 300_000, 300, days=10) for _ in range(4)])
-        mk = {'key': 'sh', 'archive_page': 'arch'}
-        with mock.patch.object(lineup.notion, 'move_page') as move, mock.patch.object(lineup.notify, 'push') as push:
-            lineup.apply(h, fmts, {**CFG, 'lineup': {**CFG['lineup'], 'min_formats': 1}}, {}, [mk], NOW)
-        move.assert_called_once_with('p1', 'arch')
+        mkts = [{'key': 'sh', 'archive_page': 'arch-sh', 'holder_page': 'list-sh', 'T': {'flag': 'BA'}},
+                {'key': 'sl', 'archive_page': 'arch-sl', 'holder_page': 'list-sl', 'T': {'flag': 'SI'}}]
+        cfg = {**CFG, 'lineup': {**CFG['lineup'], 'min_formats': 1}}
+        with mock.patch.object(lineup.notion, 'move_page') as move, mock.patch.object(lineup.notify, 'push') as push, \
+                mock.patch.object(main, 'load_config', return_value=cfg):
+            lineup.apply(h, fmts, cfg, {}, mkts, NOW)
+        move.assert_called_once_with('p1', 'arch-sh')
+        g = fmts[0]
+        self.assertEqual((g['status'], g['only_markets'], g['cleaned_from'], g['dropped_pages']),
+                         ('active', ['sl'], ['sh'], {'sh': 'p1'}))
+        self.assertIsNone(main.page_of(g, 'sh'))
+        self.assertEqual(main.page_of(g, 'sl'), 'p2')
+        self.assertIn('stays in SI', push.call_args[0][1])
+        # the next clean-up does not judge it again (no cleaned market left), Slovenia keeps it
+        self.assertEqual(lineup.plan(h, fmts, cfg, {}, NOW)['out'], [])
+        # a viral + saved video brings it back into the Balkan list
+        with mock.patch.object(main.notion, 'move_page') as move, mock.patch.object(main, 'load_config', return_value=cfg):
+            self.assertEqual(main.restore_market_page(g, mkts[0]), 'p1')
+        move.assert_called_once_with('p1', 'list-sh')
+        self.assertEqual((main.page_of(g, 'sh'), g.get('only_markets'), g['cleaned_from']), ('p1', None, []))
+
+    def test_slovenian_only_formats_are_never_cleaned(self):
+        fmts = [{'id': 'SLO', 'status': 'active', 'only_markets': ['sl'], 'listed_at': 1}]
+        h = history_of(*background(), *[vid('SLO', 50_000, 20, days=10) for _ in range(4)])
+        self.assertEqual(self.plan(h, fmts, min_formats=0)['out'], [])
+
+    def test_a_format_only_in_the_cleaned_market_is_archived(self):
+        fmts = [{'id': 'BA', 'status': 'active', 'only_markets': ['sh'], 'page_id': 'p1', 'title': 'b', 'listed_at': 1}]
+        h = history_of(*background(), *[vid('BA', 300_000, 300, days=10) for _ in range(4)])
+        cfg = {**CFG, 'lineup': {**CFG['lineup'], 'min_formats': 0}}
+        mkts = [{'key': 'sh', 'archive_page': 'arch-sh', 'T': {'flag': 'BA'}}]
+        with mock.patch.object(lineup.notion, 'move_page'), mock.patch.object(lineup.notify, 'push'), \
+                mock.patch.object(main, 'load_config', return_value=cfg):
+            lineup.apply(h, fmts, cfg, {}, mkts, NOW)
         self.assertEqual(fmts[0]['status'], 'archived')
         self.assertIn('saved by', fmts[0]['archived_reason'])
-        self.assertIn('Igra', push.call_args[0][1])
 
 
 class Alerts(StateDir):
@@ -266,6 +296,41 @@ class Alerts(StateDir):
         _, _, revive, push = self.run_viral(dict(low), [arch], {'duplicate_of': 'A'}, h2)
         revive.assert_not_called()                               # 0.55% < typical 1%
         self.assertIn('less than a typical video', push.call_args[0][1])
+
+
+class ComesBack(StateDir):
+    def test_a_format_cleaned_out_of_the_balkans_comes_back_with_a_saved_viral_video(self):
+        f = {'id': 'G', 'status': 'active', 'title': 'g', 'only_markets': ['sl'], 'cleaned_from': ['sh'],
+             'dropped_pages': {'sh': 'p1'}, 'pages': {'sl': 'p2'}}
+        h = history_of(*background())
+        v = {'id': '1', 'handle': 'a', 'created': NOW - DAY, 'views': 200_000, 'saves': 2000, 'likes': 1, 'url': 'u',
+             'notified': []}
+        mkts = [{'key': 'sh', 'holder_page': 'list-sh', 'T': {'flag': 'BA'}}, {'key': 'sl', 'T': {'flag': 'SI'}}]
+        with mock.patch.object(main.media, 'download', return_value='f'), mock.patch.object(main.media, 'audio'), \
+                mock.patch.object(main.soniox, 'transcribe', return_value={'text': 'x'}), \
+                mock.patch.object(main.classify, 'judge', return_value={'duplicate_of': 'G'}), \
+                mock.patch.object(main.notion, 'move_page') as move, mock.patch.object(main, 'rerank'), \
+                mock.patch.object(main, 'ensure_market_pages', return_value=[]), \
+                mock.patch.object(main, 'list_position', return_value=3), mock.patch.object(main, 'load_config', return_value=CFG), \
+                mock.patch.object(main.notify, 'push') as push, mock.patch.object(main.notify, 'radar'):
+            main.handle_viral(v, mkts, [f], h, CFG, NOW, False)
+        move.assert_called_once_with('p1', 'list-sh')
+        self.assertEqual((main.page_of(f, 'sh'), f.get('only_markets')), ('p1', None))
+        self.assertIn('BA', push.call_args[0][1])
+
+    def test_a_viral_video_nobody_saves_does_not_bring_it_back(self):
+        f = {'id': 'G', 'status': 'active', 'title': 'g', 'only_markets': ['sl'], 'cleaned_from': ['sh'],
+             'dropped_pages': {'sh': 'p1'}, 'pages': {'sl': 'p2'}}
+        v = {'id': '1', 'handle': 'a', 'created': NOW - DAY, 'views': 900_000, 'saves': 300, 'likes': 1, 'url': 'u',
+             'notified': []}
+        with mock.patch.object(main.media, 'download', return_value='f'), mock.patch.object(main.media, 'audio'), \
+                mock.patch.object(main.soniox, 'transcribe', return_value={'text': 'x'}), \
+                mock.patch.object(main.classify, 'judge', return_value={'duplicate_of': 'G'}), \
+                mock.patch.object(main.notion, 'move_page') as move, mock.patch.object(main, 'list_position', return_value=None), \
+                mock.patch.object(main.notify, 'push'), mock.patch.object(main.notify, 'radar'):
+            main.handle_viral(v, [{'key': 'sh', 'T': {'flag': 'BA'}}], [f], history_of(*background()), CFG, NOW, False)
+        move.assert_not_called()
+        self.assertEqual(f['cleaned_from'], ['sh'])
 
 
 class Backfill(unittest.TestCase):

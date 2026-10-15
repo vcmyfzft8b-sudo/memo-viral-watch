@@ -13,8 +13,12 @@ A format leaves the list when it is not protected and
 Formats removed by the user never come back on their own.
 The list never shrinks below lineup.min_formats (the weakest leave first).
 
-Leaving = every market's page moves to that market's archive (nothing is deleted). Formats come INTO the list when a
-video goes viral with enough saves or converts (main.handle_viral): new ones are built, archived ones come back.
+Per market (user's rule, 16 Oct 2026): only markets with "cleanup": true in config.json are cleaned (the Balkan list
+keeps only the highest-converting formats); the others keep every format (Slovenia: its formats convert there).
+Leaving = the format's page in each cleaned market moves to that market's archive (nothing is deleted); it stays in
+the other markets' lists (only_markets) - or is archived when no list keeps it. Formats come INTO the lists when a
+video goes viral with enough saves or converts (main.handle_viral): new ones are built, archived ones come back, and
+a format the clean-up took out of a market comes back into that market the same way.
 """
 import datetime
 import re
@@ -35,6 +39,17 @@ def listed_at(f):
     if m:
         return int(datetime.datetime.strptime(m.group(1), '%Y%m%d%H%M%S').replace(tzinfo=datetime.timezone.utc).timestamp())
     return 0
+
+
+def markets_of(f, cfg):
+    """The enabled markets a format is made for (config order)."""
+    only = f.get('only_markets')
+    return [k for k, m in cfg['markets'].items() if m.get('enabled', True) and (not only or k in only)]
+
+
+def cleaned(cfg):
+    """Markets the weekly clean-up works on ("cleanup": false keeps every format in that market's list)."""
+    return [k for k, m in cfg['markets'].items() if m.get('enabled', True) and m.get('cleanup', True)]
 
 
 def plan(history, formats, cfg, own_videos, now=None):
@@ -78,7 +93,7 @@ def plan(history, formats, cfg, own_videos, now=None):
                     f"{conversion.pct(p0)}) - score {c['score']:.2f}, below {cc['remove_below']}")
         return f"current form {reach[f['id']]['form']:.2f} (below average) and no viral video in the last 21 days"
 
-    active = [f for f in formats if f.get('status') == 'active']
+    active = [f for f in formats if f.get('status') == 'active' and set(markets_of(f, cfg)) & set(cleaned(cfg))]
     bad = sorted([f for f in active if not protected(f) and value(f) < limit(f)], key=value)
     room = max(0, len(active) - lc['min_formats'])
     out = [(f, value(f), reason(f)) for f in bad[:room]]
@@ -86,26 +101,35 @@ def plan(history, formats, cfg, own_videos, now=None):
 
 
 def apply(history, formats, cfg, own_videos, mkts, now=None):
-    """Moves the badly performing formats out of the list in every market. Returns the plan."""
+    """Takes the badly converting formats out of the cleaned markets' lists (see the module doc). Returns the plan."""
     from . import main as watcher  # page helpers live in main
     p = plan(history, formats, cfg, own_videos, now)
     today = time.strftime('%d.%m.%Y')
+    gone = []
     for f, score, reason in p['out']:
-        for mk in mkts:
-            pid = watcher.page_of(f, mk['key'])
-            if pid:
-                try:
-                    notion.move_page(pid, mk['archive_page'])
-                except Exception as e:
-                    print('clean-up: move to archive failed', mk['key'], f['title'], str(e)[:150])
-        f['status'] = 'archived'
-        f['archived_reason'] = f'clean-up {today}: {reason}'
-        state.log({'type': 'lineup_out', 'format': f['id'], 'form': round(score, 2), 'reason': reason})
-    if p['out']:
-        notify.push('🧹 Formats taken out of the list', '\n'.join(
-            f"➖ *{f['title']}* – {r}" for f, _, r in p['out']) +
-            '\n\n_Score 1.0 = an average format (how many viewers save it x how well it goes viral). Nothing is deleted '
-            '– they sit in the archive and come back on their own if a new video of theirs goes viral AND gets saved._')
+        drop = [k for k in markets_of(f, cfg) if k in cleaned(cfg)]
+        keep = [k for k in markets_of(f, cfg) if k not in cleaned(cfg)]
+        for mk in [mk for mk in mkts if mk['key'] in drop]:
+            try:
+                watcher.drop_market_page(f, mk)
+            except Exception as e:
+                print('clean-up: move to archive failed', mk['key'], f['title'], str(e)[:150])
+        if keep:
+            f['only_markets'] = keep
+            f['cleaned_from'] = sorted(set(f.get('cleaned_from', [])) | set(drop))
+            f.setdefault('cleanup_reason', {}).update({k: f'clean-up {today}: {reason}' for k in drop})
+        else:
+            f['status'] = 'archived'
+            f['archived_reason'] = f'clean-up {today}: {reason}'
+        flags = ' '.join(mk['T']['flag'] for mk in mkts if mk['key'] in drop)
+        stays = ' '.join(mk['T']['flag'] for mk in mkts if mk['key'] in keep)
+        gone.append(f"➖ *{f['title']}* – out of {flags or 'the list'}" + (f' (stays in {stays})' if stays else '') + f' – {reason}')
+        state.log({'type': 'lineup_out', 'format': f['id'], 'form': round(score, 2), 'reason': reason, 'markets': drop})
+    if gone:
+        notify.push('🧹 Formats taken out of the list', '\n'.join(gone) +
+                    '\n\n_Score 1.0 = an average format (how many viewers save it x how well it goes viral). Nothing is '
+                    'deleted – they sit in the archive and come back on their own if a new video of theirs goes viral AND '
+                    'gets saved._')
     return p
 
 

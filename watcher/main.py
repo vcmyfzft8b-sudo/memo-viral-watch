@@ -121,6 +121,39 @@ def read_saves(history, fmts, cfg, now, limit=None, sort_limit=None):
     return details, results
 
 
+def add_cta(fmts, mkts, only=None):
+    """Every live page gets the comment CTA as the last line of its script (user's rule, 16 Oct 2026), in place:
+    'Komentariši »WORD« i poslaću ti link do aplikacije.' with the format's word from registry/cta_words.json. A page
+    that already has a CTA is left alone; a format without a word is reported, never guessed. Returns
+    {'added': [...], 'had': [...], 'missing_word': [...], 'failed': [...]}."""
+    out = {'added': [], 'had': [], 'missing_word': [], 'failed': []}
+    for f in fmts:
+        if f.get('status') not in ('active', 'pending') or (only and f['id'] not in only):
+            continue
+        for mk in M.of(mkts, f):
+            pid = page_of(f, mk['key'])
+            if not pid:
+                continue
+            label = f"{mk['key']} {f['title'][:40]}"
+            try:
+                blocks = reword.script_blocks(pid)
+                if any(M.has_cta(reword._plain(b)) for b in blocks):
+                    out['had'].append(label)
+                    continue
+                word = M.cta_word(f['id'], mk['lang'])
+                if not word or not blocks:
+                    out['missing_word' if not word else 'failed'].append(label + ('' if word else ' (no word)'))
+                    continue
+                silent = reword._plain(blocks[0]).strip() == mk['T']['silent_label']  # on-screen texts only
+                line = M.cta(mk['lang'], word)
+                notion.api('PATCH', f'/blocks/{pid}/children', {
+                    'children': [notion.para([notion.rt(line + ' ', bold=silent)])], 'after': blocks[-1]['id']})
+                out['added'].append(f'{label}: {line}')
+            except Exception as e:
+                out['failed'].append(f'{label}: {str(e)[:120]}')
+    return out
+
+
 def conversion_report(cfg, fmts, history):
     """The list order with every format's save rate (read-only; printed in the run log)."""
     ids, s = rank.order(history, fmts, cfg)
@@ -522,7 +555,18 @@ def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, labe
         if known:
             set_format(v, history, known['id'], judged=True)
             if known.get('status') == 'active':
+                back = []
+                if known.get('cleaned_from') and not blocked and not below_typical(v, history, cfg, force):
+                    for mk in [mk for mk in mkts if mk['key'] in known['cleaned_from']]:
+                        try:  # taken out of this market by the clean-up: a viral + saved video brings it back
+                            if restore_market_page(known, mk):
+                                back.append(mk['T']['flag'])
+                        except Exception as e:
+                            print('restore failed', mk['key'], known['title'], str(e)[:150])
+                    if back:
+                        rerank(mkts, fmts, history, cfg)
                 added = [] if blocked else ensure_market_pages(known, v, mkts, fmts, history, cfg, prepared)
+                added = back + added
                 pos = list_position(mkts[0], page_of(known, mkts[0]['key']))
                 outcome = (f"✅ *Already in Notion* – in the lists{f' as #{pos}' if pos else ''}: *{known['title']}* "
                            f"({market_links(known, mkts)})" + (f"\n➕ added missing pages: {' '.join(added)}" if added else ''))
@@ -610,6 +654,41 @@ def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, 
     else:
         page = notion.create_page(parent or mk['holder_page'], title or spec['page_title'], spec.get('icon') or '🎬', blocks)
     return page['id'], spec, problems
+
+
+def drop_market_page(f, mk):
+    """The format leaves one market's list: its page moves to that market's archive (never deleted), and it is no
+    longer made for that market (only_markets), so no run builds the page again."""
+    pid = page_of(f, mk['key'])
+    if pid:
+        notion.move_page(pid, mk['archive_page'])
+        f.setdefault('dropped_pages', {})[mk['key']] = pid
+        set_page(f, mk['key'], None)
+        (f.get('pages') or {}).pop(mk['key'], None)
+    cfg = load_config()
+    left = [k for k in lineup.markets_of(f, cfg) if k != mk['key']]
+    if left:
+        f['only_markets'] = left
+    return pid, left
+
+
+def restore_market_page(f, mk):
+    """The format comes back into a market's list: the page it had there moves back from the archive."""
+    pid = (f.get('dropped_pages') or {}).get(mk['key'])
+    if not pid:
+        return None
+    notion.move_page(pid, mk['holder_page'])
+    set_page(f, mk['key'], pid)
+    f['dropped_pages'].pop(mk['key'], None)
+    only = set(f.get('only_markets') or []) | {mk['key']}
+    cfg = load_config()
+    if set(lineup.markets_of({}, cfg)) <= only:
+        f.pop('only_markets', None)
+    else:
+        f['only_markets'] = sorted(only)
+    f['cleaned_from'] = [k for k in f.get('cleaned_from', []) if k != mk['key']]
+    (f.get('cleanup_reason') or {}).pop(mk['key'], None)
+    return pid
 
 
 def set_page(fmt, m, page_id):
@@ -1456,6 +1535,9 @@ def main():
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
     ap.add_argument('--fix-labs', action='store_true', help="every page: the Visual Hook Lab link points to its own market's lab")
+    ap.add_argument('--add-market', help='FORMAT_ID[,FORMAT_ID...]:market - add formats to that market\'s list (a page is built)')
+    ap.add_argument('--add-cta', nargs='?', const='-', default='',
+                    help='every live page (or only these format ids, comma-separated): the comment CTA at the end of the script')
     ap.add_argument('--list-text', action='store_true', help='write the current 🔥 list instructions into every list')
     ap.add_argument('--conversion', type=int, nargs='?', const=500, default=0,
                     help='read saves of up to N older videos, sort them into formats, print the list by conversion')
@@ -1911,20 +1993,42 @@ def main():
         rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg, force=True)
         print(f"remove-format: {f['title']} archived in every market")
         return
-    if a.drop_market:
-        fid, key = a.drop_market.strip().split(':')
+    if a.drop_market:  # "FID[,FID...]:market" - out of that market's list only (page to its archive)
+        ids, key = a.drop_market.strip().rsplit(':', 1)
         cfg, fmts = load_config(), load_formats()
         mk = next(x for x in M.load(cfg) if x['key'] == key)
-        f = next(x for x in fmts if x['id'] == fid)
-        pid = page_of(f, key)
-        if pid:
-            notion.move_page(pid, mk['archive_page'])  # kept in the archive, never deleted
-            f.setdefault('dropped_pages', {})[key] = pid
-            set_page(f, key, None)
-            (f.get('pages') or {}).pop(key, None)
-        state.save('formats.json', fmts)
+        for fid in [x.strip() for x in ids.split(',') if x.strip()]:
+            f = next(x for x in fmts if x['id'] == fid)
+            pid, left = drop_market_page(f, mk)
+            if not left:  # no list keeps it: archived
+                f['status'] = 'archived'
+                f['archived_reason'] = f'dropped from {key} by hand'
+            state.save('formats.json', fmts)
+            print(f"drop-market: {f['title']} left {key} (page in the archive: {pid}); lists now: {lineup.markets_of(f, cfg)}")
         rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg, force=True)
-        print(f"drop-market: {f['title']} left {key} (page in the archive: {pid})")
+        return
+    if a.add_market:  # "FID[,FID...]:market" - into that market's list too (its old page back, or a new one is built)
+        ids, key = a.add_market.strip().rsplit(':', 1)
+        cfg, fmts = load_config(), load_formats()
+        mk = next(x for x in M.load(cfg) if x['key'] == key)
+        build = False
+        for fid in [x.strip() for x in ids.split(',') if x.strip()]:
+            f = next(x for x in fmts if x['id'] == fid)
+            if page_of(f, key):
+                print('add-market: already in', key, f['title'])
+                continue
+            only = set(f.get('only_markets') or lineup.markets_of(f, cfg)) | {key}
+            if set(lineup.markets_of({}, cfg)) <= only:
+                f.pop('only_markets', None)
+            else:
+                f['only_markets'] = sorted(only)
+            f['cleaned_from'] = [k for k in f.get('cleaned_from', []) if k != key]
+            (f.get('dropped_pages') or {}).pop(key, None)  # a fresh page in today's rules (the old one stays archived)
+            build = True
+            print('add-market:', f['title'], '->', lineup.markets_of(f, cfg))
+        state.save('formats.json', fmts)
+        if build:
+            fill_market(key)
         return
     if a.app_timing:
         from . import timing
@@ -2048,6 +2152,14 @@ def main():
     if a.relink:
         from . import setup
         setup.relink(load_config(), load_formats(), page_of)
+        return
+    if a.add_cta:
+        cfg, fmts = load_config(), load_formats()
+        r = add_cta(fmts, M.load(cfg), only=[x for x in a.add_cta.split(',') if x and x != '-'])
+        for k, v in r.items():
+            print(f'{k}: {len(v)}', *('  ' + x for x in v), sep='\n')
+        if r['failed'] or r['missing_word']:
+            raise SystemExit('add-cta: some pages have no CTA yet (see above)')
         return
     if a.list_text:
         from . import setup

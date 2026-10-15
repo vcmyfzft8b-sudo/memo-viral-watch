@@ -25,6 +25,9 @@ before the first app cue, checked) at a logical point (secret / solution / next 
 the rest of the beats tightened (~60 s max); only real Memo AI features, never another app's company facts; sticker
 lines "Tekst na ekranu:" / "Besedilo na zaslonu:", app-voice dialogues "Memo AI:" / "Ti:". Memo AI must be named
 (spoken) at least once. Our own creators' videos (`own_brand`, per format or per language) stay 1:1.
+CTA (user's rule, 16 Oct 2026): every script ends with "Komentariši »WORD« i poslaću ti link do aplikacije." /
+"Komentiraj »WORD« in pošljem ti link do aplikacije." - WORD fits the script (registry/cta_words.json, picked with the
+user; new formats: the writer picks it, `builder.validate` and `verify` check it; `mode=add-cta` adds it to live pages).
 Every page's materials hold the official Memo AI logo (registry/materials/_logo, = Memo_AI/public/memo-lockup.png).
 Format pages are sub-pages of the creator list page (holder_page = list_page; `mode=rehome`).
 
@@ -86,7 +89,11 @@ reach^0.5 (conv = save rate vs the typical video, smoothed; reach = current form
 (`rank.order`). New formats: a viral video saved by 0.5%+ of viewers, or a "converting" one (30k+ views, 300+ saves,
 2%+ saved, e.g. @studytipsbyem's "3 apps" video: 46k, 4.3%). Monday clean-up (`lineup.py`): a format with 2+ videos with
 saves and score < 0.9 leaves (archive), also when it goes viral or is new. History keeps likes/saves/shares; older
-videos get their saves read 60 per run (`mode=conversion` does it at once and prints the board). List instructions
+videos get their saves read 60 per run (`mode=conversion` does it at once and prints the board). Per market (16 Oct 2026): only markets with
+`"cleanup": true` are cleaned - Balkan keeps only the highest-converting formats, Slovenia (`"cleanup": false`) keeps
+every format (they convert there); a format taken out of the Balkans stays on the Slovenian list (`only_markets`,
+`cleaned_from`) and comes back by itself when a new video of it goes viral/converts with saves. By hand:
+`mode=drop-market target=ID[,ID]:sh`, `mode=add-market target=ID[,ID]:sl` (builds the page). List instructions
 (🔥 box) say the order: `mode=list-text` writes them in place (never `relayout` – format pages are sub-pages of the
 list). A format's own source video always counts for it.
 
