@@ -1190,5 +1190,59 @@
    "7693980090752879924": "https://www.tiktok.com/@study.with.mili/video/7693980090752879924"
   },
   "title_en": "Grades so good your teachers think you're cheating 😱"
+ },
+ "A20261015213945": {
+  "accepted_sources": [
+   "7685878008338582791"
+  ],
+  "allowed_localisation": [
+   "Language and wording adapted to Slovenian, Croatian, Bosnian or Serbian (ekavian/ijekavian, local school vocabulary such as test/kontrolna/odgovaranje)",
+   "Grading-scale wording, as long as the original numbers 5.0 and 9.6 stay",
+   "Natural idioms for 'lifesaver' and 'wouldn't know where my head is'",
+   "Creator's look, desk setting and on-screen text styling",
+   "Interface language of the Memo AI screen recording (SL/HR/BS/SR)",
+   "Small timing differences within about 50–65 s"
+  ],
+  "beats": [
+   "1. Hook / proof (0–6 s): talking head at the desk. She says she finished high school with a 5.0 average and her first university year with a 9.6, and that these are the three apps she used.",
+   "2. App #1 (about 6–14 s): 'First app: a lifesaver if you have a last-minute presentation, NotebookLM, you literally send it your materials and it makes the presentation itself.' Kept word for word. It is a third-party app, not Memo AI.",
+   "3. App #2 = Memo AI (about 14–45 s): 'Second app, definitely the one I used the most, is Memo AI.' She explains the flow: you upload all your notes or photographed pages (up to 10 photos with the in-app Scan camera or from the gallery), even a presentation (PowerPoint/PDF). Memo AI literally makes your study material by itself: notes, flashcards and a quiz. The original's study plan that looks like game levels (with test, subject, time and target grade) maps to the closest real features: notes, flashcards, quiz and a practice test. You practise in different ways, e.g. you click through quiz questions and literally answer them without noticing you are studying. You always get explanations of why something was wrong and why something is actually right. Screen recording of Memo AI throughout. memoai.eu is said or shown when the brand comes in.",
+   "4. App #3 (about 45–55 s): 'And the third app is Google Calendar, without which I wouldn't know where my head is.' She entered all tests, oral exams and obligations there, so she always knew how to organise her time. Kept word for word.",
+   "5. CTA (about 55–60 s): 'Be sure to write to me whether you've tried any of these apps.'"
+  ],
+  "canonical_source": "7685878008338582791",
+  "filming": "About 50–65 s, vertical 9:16, selfie talking head of one female student sitting at a desk (study setting, natural light). She talks straight to camera, fast and friendly, with jump cuts. Optional text overlay of the numbered app name ('1. NotebookLM', '2. Memo AI', '3. Google Kalendar') as each one comes up. For Memo AI the video cuts to a full-screen or picture-in-picture phone screen recording in this order: memoai.eu open → new note → upload notes/PDF/PowerPoint or Scan photos of pages → (waiting cut) → generated notes → flashcards → quiz: tap an answer, see the explanation for wrong/right → optionally a practice test with percentage and feedback. Short b-roll or screenshots are allowed for NotebookLM and Google Calendar. She ends on the talking head for the CTA. Copy the example video's framing, pace and editing as closely as possible.",
+  "generated": 1792100561,
+  "hook": "A talking-head student at her desk opens with her grades as proof: 'I finished high school with a 5.0 average and my first year of university with a 9.6, and these are the three apps I used.' The grading scales and numbers stay exactly as in the original.",
+  "not_allowed": [
+   "Mentioning or showing Astra AI (or Studyflash/Turbo AI) anywhere",
+   "Making Memo AI app #1 or #3, or not calling it the most-used app",
+   "Changing to a different number of apps or swapping NotebookLM / Google Calendar for other apps",
+   "Dropping the grade-average proof hook at the opening",
+   "Bringing Memo AI in only at the end (it must come in at about 15 s with what it does)",
+   "Claiming features Memo AI lacks: game-level study plans with test date/target grade, snap-and-solve for a single task, grading the user's own homework, PDF export, pasting text, photos in chat, an Android store app",
+   "Turning it into a skit, voiceover-only or faceless video instead of a talking-head list",
+   "No screen recording of Memo AI"
+  ],
+  "premise": "A top student shares the three apps behind her grades, like a list of recommendations. The study app (Memo AI, in place of Astra AI) is the second item. She calls it the one she used most and it gets the longest explanation and a screen recording. A presentation tool comes before it and a calendar app comes after it, so the recommendation feels honest and not sponsored.",
+  "product": {
+   "cta": "Comment prompt: 'Obavezno mi pišite da li ste probali neku od ovih aplikacija' (write to me whether you tried any of these apps); a link cue to memoai.eu on the screen recording",
+   "features_used": [
+    "upload notes, PDF, Word or PowerPoint presentation",
+    "Scan camera / up to 10 photos of notes or textbook pages",
+    "notes",
+    "flashcards",
+    "quiz with explanations",
+    "graded practice test (percentage + feedback per answer)"
+   ],
+   "introduced_at_beat": 3,
+   "spoken_brand": "Spoken at beat 3 ('Druga aplikacija, definitivno ona koju sam najviše koristila, je Memo AI'), about 14–15 s in, with memoai.eu shown or said on the screen recording; Memo AI is named only there, in the same place and as often as Astra AI in the original"
+  },
+  "rejected_sources": {},
+  "rules": "early-memo-2026-10-12",
+  "source_urls": {
+   "7685878008338582791": "https://www.tiktok.com/@studytipsbyem/video/7685878008338582791"
+  },
+  "title_en": "5.0 and 9.6 GPA – the three apps I used 📱"
  }
 }

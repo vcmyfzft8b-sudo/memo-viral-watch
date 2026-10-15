@@ -806,5 +806,26 @@
   "source_video": "https://www.tiktok.com/@study.with.mili/video/7693980090752879924",
   "status": "active",
   "title": "Ocjene zbog kojih profesori misle da varaš 😱"
+ },
+ {
+  "created": 1792100385,
+  "description": "Talking-head student at a desk opens with her top grade averages as proof, then lists three study apps she used, with the study app as the second, most-used item shown via screen recording.",
+  "id": "A20261015213945",
+  "page_id": "3fa65e84-a3c2-81f9-8073-f670e8f6b5f3",
+  "pages": {
+   "sl": "3fa65e84-a3c2-81c9-9507-c930393625d9"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "cross-country check fail: faithful_translation sl: The CTA changes the original meaning. The original asks whether viewers have tried any of the apps; 'katero od teh aplikacij že uporabljaš' assumes they already use one. Use e.g. 'Obvezno mi napišite, ali ste že preizkusili katero od teh aplikacij.'"
+   ],
+   "since": 1792100707,
+   "tries": 1
+  },
+  "script": "Završila sam srednju školu s prosjekom 5.0 i prvu godinu studija s prosjekom 9.6, i ovo su tri aplikacije koje sam koristila. Prva: NotebookLM, spas za prezentaciju u zadnji čas – pošalješ materijale i sam napravi prezentaciju. Druga, koju sam najviše koristila, je Memo AI. U nju ubaciš PDF-ove ili PowerPoint prezentacije s predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Možeš ubaciti i uslikane bilješke ili stranice iz knjige. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način. Na primjer klikneš na kviz, bukvalno rješavaš pitanja i ne primijetiš da učiš, a uvijek imaš i objašnjenje da vidiš zašto nešto nije dobro i zašto je nešto zapravo tačno. I treća aplikacija je Google Kalendar, bez koje ne bih znala gdje mi je glava. Tu sam upisivala sve testove, sva odgovaranja i sve obaveze, ",
+  "source_video": "https://www.tiktok.com/@studytipsbyem/video/7685878008338582791",
+  "status": "pending",
+  "title": "Prosjek 5.0 i 9.6 – tri aplikacije koje sam koristila 📱"
  }
 ]

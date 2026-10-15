@@ -278,12 +278,13 @@
   "status": "active"
  },
  "studytipsbyem": {
+  "added_format": true,
   "checked": 1792085535,
   "checked_ugc": true,
   "lang": "sh",
   "since": 1791823532,
   "source": "lightreel",
-  "status": "active"
+  "status": "manual"
  },
  "studytipsbytara": {
   "checked": 1792085570,

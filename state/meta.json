@@ -37,7 +37,9 @@
   "A20261012160842:sh": "fixed",
   "A20261012160842:sl": "fixed",
   "A20261013231033:sh": "fixed",
-  "A20261013231033:sl": "ok"
+  "A20261013231033:sl": "ok",
+  "A20261015213945:sh": "fixed",
+  "A20261015213945:sl": "ok"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "554231d90c87dfa29584fb8b10cd1ba8428450b221746b4dee2eb018191dcc1d",
@@ -75,7 +77,9 @@
   "A20261012160842:sh": "35e18c46fedfea9e081e4d3c757fb79678e7530e88047546c002dea5c11323d4",
   "A20261012160842:sl": "56a0e7fb6e5fa85495ad2b1f0e69e10a2ca8e7b10c4cf662a8dcd365056f2277",
   "A20261013231033:sh": "edd4bd195b1295bd0899d2bddadfe21b3ebf164d87c52f50844d55987d21d656",
-  "A20261013231033:sl": "53ee7b85f5cd3bf3479673114d5f12a472a09ec0eb1dcb44dc45c77df9be5d04"
+  "A20261013231033:sl": "53ee7b85f5cd3bf3479673114d5f12a472a09ec0eb1dcb44dc45c77df9be5d04",
+  "A20261015213945:sh": "1c2f92230a5ba3b03fbaf79aae9f818f04d2902a7d18aa1458c24ea0456a0e4b",
+  "A20261015213945:sl": "66b9d9913317cac88c47be47bb7c66f7a43a156610f103cf3d9071eafb12d4b9"
  },
  "discovered_at": 1792084788,
  "faithful_rewrite_started": 1791643120,
@@ -1659,6 +1663,86 @@
    "summary": "Both pages pass every check. Each keeps the cheating hook, puts the emoji comment request before the demo, brings in Memo AI with the required description after about 50 spoken words, then shows step-by-step explanations and the mind map. The visual hook directions copy the stress-toy opening, and neither title needs a fix. SL moves the bad-grades-to-straight-A's line to the Memo AI reveal and makes its mind map about the solar system, which is still a real Memo AI feature.",
    "title_fixes": {},
    "version": "group-2026-10-12.early-memo"
+  },
+  "A20261015213945": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1792100674,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7685878008338582791",
+     "video_identity": "sha256:493fb9e87897163cac08220747d2812e1fccafe9fff9beae5df0346c1057f875"
+    },
+    "sl": {
+     "source_id": "7685878008338582791",
+     "video_identity": "sha256:493fb9e87897163cac08220747d2812e1fccafe9fff9beae5df0346c1057f875"
+    }
+   },
+   "key": "651e8145da293eb4ce20a685f4dec7018058b1bb2e70cea64285deb5c9cca3b8",
+   "passed": false,
+   "reasons": [
+    "faithful_translation sl: The CTA changes the original meaning. The original asks whether viewers have tried any of the apps; 'katero od teh aplikacij že uporabljaš' assumes they already use one. Use e.g. 'Obvezno mi napišite, ali ste že preizkusili katero od teh aplikacij.'"
+   ],
+   "results": {
+    "directions_match": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "The CTA changes the original meaning. The original asks whether viewers have tried any of the apps; 'katero od teh aplikacij že uporabljaš' assumes they already use one. Use e.g. 'Obvezno mi napišite, ali ste že preizkusili katero od teh aplikacij.'",
+      "pass": false
+     }
+    },
+    "features_claims": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sh": {
+      "issue": "",
+      "pass": true
+     },
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "fail",
+   "summary": "Both pages keep the 5.0/9.6 hook, the three-app order with Memo AI second and early (about 40 words in) with the required pitch and real features. SH passes everywhere; SL fails only faithful_translation because its CTA asks which app viewers already use instead of whether they have tried any.",
+   "title_fixes": {},
+   "version": "group-2026-10-12.early-memo"
   }
  },
  "group_duplicates": [],
@@ -1761,6 +1845,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6b3809ad-cf04-4426-8f8d-da0a3d675711/video-notion.mp4": "sha256:728cf7db67b5988163b4b35079212302d7be123337b97b582d506266b1fa9fea",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6d47f5ca-5e1e-4884-9c4f-bfb5a68d3c0b/video.mp4": "sha256:525e62b8a2fad76941212d4fe044020de6bf63e88bbd42958cfd9edfd6d6bd1a",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6f1028c2-5e96-411c-853d-a6021f5a9fc3/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/73add759-56a3-42c5-b8ac-6fbefa439c82/video.mp4": "sha256:493fb9e87897163cac08220747d2812e1fccafe9fff9beae5df0346c1057f875",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/7ac6cf49-8965-4e31-bf34-2ef929edc8ab/video.mp4": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/83fef604-0475-4c30-9549-24afb86f18f6/video-notion.mp4": "sha256:6d9255e331dd7c8b64670323d9e94b21e8bf3cd63b64b07868444d8fb949ced5",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/8b381c7b-99d6-492f-820d-d8e098d7b61f/video.mp4": "sha256:8c47ffe4d80533045109936b0de0f8121ee7c9b7fc4ea9c5aee611394c837370",
@@ -1768,6 +1853,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9be007a3-73e8-4039-8ca1-2bbd3e875287/video.mp4": "sha256:cbe3639d4010252fd6943cd545c4afe7dd7feb73f5eb6efc911c3117f77a7b56",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9edb0d45-eb1b-40c2-a197-2c07e66f3d39/video-notion.mp4": "sha256:d0add6744924765d53bae9e7eded48d334e2b647ee2e543f2423c30ac2369ddd",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/9f1396bc-73e4-473d-9aec-ac88d25d3cba/video-notion.mp4": "sha256:d3f2a1475e9c417b9ea3df8e1dba8f19445423cd8a088b1a6f9494a872a49aa7",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/a4bbf5e2-c896-4dd6-98e0-7d3c6e153316/video.mp4": "sha256:493fb9e87897163cac08220747d2812e1fccafe9fff9beae5df0346c1057f875",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/a53c0f68-f1ec-4bab-ada0-27f112dc1bf4/video-notion.mp4": "sha256:94c0657877b8e8e6e8c50d4cc90c7d1637c22ea51223bb5806359329eccdc13f",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/aae379ab-089c-41ee-9ad3-c6632897453e/video.mp4": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/b724117d-0c36-4e93-972f-055d7c412d9d/video-notion.mp4": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a",

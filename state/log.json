@@ -3805,5 +3805,40 @@
   "revived": [],
   "ts": 1792085842,
   "type": "own_discovery"
+ },
+ {
+  "format": "A20261015213945",
+  "reasons": [
+   "cross-country check fail: faithful_translation sl: The CTA changes the original meaning. The original asks whether viewers have tried any of the apps; 'katero od teh aplikacij že uporabljaš' assumes they already use one. Use e.g. 'Obvezno mi napišite, ali ste že preizkusili katero od teh aplikacij.'"
+  ],
+  "tries": 1,
+  "ts": 1792100707,
+  "type": "format_held"
+ },
+ {
+  "format": "A20261015213945",
+  "page_de": "3fa65e84-a3c2-81f9-8073-f670e8f6b5f3",
+  "pages": {
+   "sl": "3fa65e84-a3c2-81c9-9507-c930393625d9"
+  },
+  "position": null,
+  "problems": [
+   "cross-country check fail: faithful_translation sl: The CTA changes the original meaning. The original asks whether viewers have tried any of the apps; 'katero od teh aplikacij že uporabljaš' assumes they already use one. Use e.g. 'Obvezno mi napišite, ali ste že preizkusili katero od teh aplikacij.'"
+  ],
+  "ts": 1792100707,
+  "type": "format_built"
+ },
+ {
+  "built": "A20261015213945",
+  "format": "A20261015213945",
+  "level": "viral",
+  "position": null,
+  "problems": [
+   "cross-country check fail: faithful_translation sl: The CTA changes the original meaning. The original asks whether viewers have tried any of the apps; 'katero od teh aplikacij že uporabljaš' assumes they already use one. Use e.g. 'Obvezno mi napišite, ali ste že preizkusili katero od teh aplikacij.'"
+  ],
+  "ts": 1792100708,
+  "type": "alert",
+  "video": "7685878008338582791",
+  "views": 46100
  }
 ]
