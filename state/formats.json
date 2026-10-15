@@ -46,11 +46,9 @@
   "logo_lockup": {
    "sh": true
   },
-  "only_markets": [
-   "sh"
-  ],
   "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
   "pages": {},
+  "pending_pages": {},
   "revived": {
    "at": 1791648523,
    "because": "https://www.tiktok.com/@lern.mit.domi/video/7691324800123342102",
@@ -393,11 +391,11 @@
    "sh": true,
    "sl": true
   },
-  "only_markets": [
-   "sh"
-  ],
   "page_id": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
-  "pages": {},
+  "pages": {
+   "sl": "3fa65e84-a3c2-812f-be71-f0b4cda944a8"
+  },
+  "pending_pages": {},
   "revived": {
    "at": 1791509180,
    "because": "https://www.tiktok.com/@kera.vas.uci/video/7691827966711581953",
