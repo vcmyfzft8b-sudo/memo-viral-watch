@@ -4,12 +4,12 @@
    "sh": {
     "page": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
     "status": "added",
-    "tries": 1
+    "tries": 2
    },
    "sl": {
     "page": "3fa65e84-a3c2-8125-83b5-ea3f46ba06cf",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "cleaned_from": [],
@@ -75,7 +75,7 @@
    "sl": {
     "page": "3f365e84-a3c2-81b2-8c98-d419a8b912b6",
     "status": "none",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791493084,
@@ -127,12 +127,12 @@
    "sh": {
     "page": "3f365e84-a3c2-8158-a10f-d25c82347e03",
     "status": "added",
-    "tries": 1
+    "tries": 2
    },
    "sl": {
     "page": "3f365e84-a3c2-812c-8690-c4d957b2a619",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791493797,
@@ -177,13 +177,13 @@
   "age": {
    "sh": {
     "page": "3f365e84-a3c2-819d-9066-dc90353d437e",
-    "status": "none",
-    "tries": 1
+    "status": "added",
+    "tries": 2
    },
    "sl": {
     "page": "3f365e84-a3c2-816c-89f2-f02737fabba1",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791494352,
@@ -232,7 +232,7 @@
    "sl": {
     "page": "3f365e84-a3c2-810e-8152-eeed9afe21db",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791499490,
@@ -302,7 +302,7 @@
    "sl": {
     "page": "3f365e84-a3c2-81fa-af2c-f4bcacc9beac",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791501329,
@@ -353,12 +353,12 @@
    "sh": {
     "page": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
     "status": "added",
-    "tries": 1
+    "tries": 2
    },
    "sl": {
     "page": "3fa65e84-a3c2-812f-be71-f0b4cda944a8",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "cleaned_from": [],
@@ -427,12 +427,12 @@
    "sh": {
     "page": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe",
     "status": "added",
-    "tries": 1
+    "tries": 2
    },
    "sl": {
     "page": "3f465e84-a3c2-81c1-b18f-e757875dad14",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791510081,
@@ -520,12 +520,12 @@
    "sh": {
     "page": "3f465e84-a3c2-815f-9cd7-d9b447463dd2",
     "status": "added",
-    "tries": 1
+    "tries": 2
    },
    "sl": {
     "page": "3f465e84-a3c2-8189-b47d-f03858456d14",
-    "status": "none",
-    "tries": 1
+    "status": "added",
+    "tries": 2
    }
   },
   "created": 1791580104,
@@ -606,7 +606,7 @@
    "sl": {
     "page": "3f565e84-a3c2-817e-9399-d8a7083c900f",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791648877,
@@ -656,7 +656,7 @@
    "sl": {
     "page": "3f565e84-a3c2-81f3-a771-d05601b576fa",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791649226,
@@ -703,7 +703,7 @@
    "sl": {
     "page": "3f565e84-a3c2-81f9-b33c-fc4551d00ce7",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791649768,
@@ -754,7 +754,7 @@
    "sl": {
     "page": "3f565e84-a3c2-812f-88c5-c7a29c250a40",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791650318,
@@ -804,12 +804,12 @@
    "sh": {
     "page": "3fb65e84-a3c2-81d2-9285-cfecdfecc306",
     "status": "added",
-    "tries": 1
+    "tries": 2
    },
    "sl": {
     "page": "3f565e84-a3c2-8158-aa07-fd81fb00a741",
-    "status": "none",
-    "tries": 1
+    "status": "added",
+    "tries": 2
    }
   },
   "app_link": "https://www.memoai.eu/ugc/oral-quiz",
@@ -851,7 +851,7 @@
    "sl": {
     "page": "3f565e84-a3c2-819d-b4f4-c5221cf35b40",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791669209,
@@ -884,7 +884,7 @@
    "sl": {
     "page": "3f565e84-a3c2-81ed-97db-f512256a519e",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791669343,
@@ -917,7 +917,7 @@
    "sl": {
     "page": "3f565e84-a3c2-817f-af1e-dbcc97fe5d10",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791669464,
@@ -950,7 +950,7 @@
    "sl": {
     "page": "3f565e84-a3c2-8163-886b-cbc5d4c74674",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791669727,
@@ -980,7 +980,7 @@
    "sl": {
     "page": "3f765e84-a3c2-81e1-9635-c7467da40cf0",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791821322,
@@ -1011,12 +1011,12 @@
    "sh": {
     "page": "3f865e84-a3c2-8130-aa0a-d6aea79cc620",
     "status": "added",
-    "tries": 1
+    "tries": 2
    },
    "sl": {
     "page": "3f865e84-a3c2-81ac-a6f9-ecaaad571976",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1791933033,
@@ -1041,12 +1041,12 @@
    "sh": {
     "page": "3fa65e84-a3c2-81f9-8073-f670e8f6b5f3",
     "status": "added",
-    "tries": 1
+    "tries": 2
    },
    "sl": {
     "page": "3fa65e84-a3c2-81c9-9507-c930393625d9",
     "status": "added",
-    "tries": 1
+    "tries": 2
    }
   },
   "created": 1792100385,
@@ -1067,12 +1067,12 @@
    "sh": {
     "page": "3fa65e84-a3c2-8199-99d3-cc9843906460",
     "status": "added",
-    "tries": 2
+    "tries": 3
    },
    "sl": {
     "page": "3fa65e84-a3c2-817c-a076-d0ddd15bcbb9",
     "status": "added",
-    "tries": 2
+    "tries": 3
    }
   },
   "created": 1792101302,
