@@ -118,6 +118,10 @@ registry/export_cert.pem, to state/scripts_export.enc (repo and logs are public)
 ## Check everything
 `mode=verify` (read-only): every list (order, numbering, layout), live page (video, sections, links), held page
 (staging) and both hook labs against the state; also lists leftover staging pages (never deletes).
+Automatic (user's request, 16 Oct 2026: auto runs must work with no problems): once a day the normal run builds
+missing language pages again and runs verify (`main.daily_check`); problems go to Discord (new ones at once, the open
+list every 3 days), a held page shows why (`held_why`). A step that fails inside a run sends one "steps failed" alert.
+A page held again and again usually needs its script locked with the user (approved_scripts.json), then add-market.
 
 ## Status (16 Oct 2026)
 Lists follow the conversion rules (saves first, views second). Balkan list: only the highest-converting formats

@@ -111,7 +111,8 @@ def run(cfg, fmts, page_of):
             pid = page_of(f, key)
             if not pid:
                 if f.get('status') in ('active', 'pending') and key in (f.get('only_markets') or [key]):
-                    problems.append(f"{flag} {f['title']}: no page")
+                    why = (f.get('held_why') or {}).get(key)
+                    problems.append(f"{flag} {f['title']}: no page" + (f" (held: {why[:200]})" if why else ''))
                 continue
             where = _parent(pid)
             if f.get('status') == 'active' and where != holder:

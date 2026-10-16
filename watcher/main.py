@@ -241,6 +241,11 @@ def run(dry_run=False, only_detect=False):
     radar_page = cfg['notion']['radar_page']
 
     CTX.update({'meta': meta, 'accounts': account_info})
+    errors = []  # steps that failed in this run: one Discord alert at the end (a green run never hides a failed step)
+
+    def failed(step, e):
+        print(f'{step} failed:', str(e)[:200])
+        errors.append(f'{step}: {str(e)[:150]}')
 
     # 1. new videos
     fresh, embed_views = 0, {}
@@ -337,7 +342,7 @@ def run(dry_run=False, only_detect=False):
         try:
             read_saves(history, fmts, cfg, now)
         except Exception as e:
-            print('saves backfill failed:', str(e)[:200])
+            failed('saves backfill', e)
 
         # Viral videos not yet confirmed by the strict Claude check (e.g. older tags): re-check quietly (max 5 per run).
         for v in [v for v in videos.values() if v.get('views', 0) >= th['viral_views'] and not v.get('judged')
@@ -363,7 +368,7 @@ def run(dry_run=False, only_detect=False):
             gate.retry_pending(fmts, mkts, cfg, history, account_info, meta, page_of, set_page, make_page, rebuild_page, rerank)
             state.save('formats.json', fmts)
         except Exception as e:
-            print('gate retry failed:', str(e)[:200])
+            failed('gate retry', e)
 
     # 4a2. every live page keeps its comment CTA (user's rule, 16 Oct 2026) and new / rewritten pages get the 🎓 box
     #      for scripts tied to one school level (a few pages per run)
@@ -378,14 +383,14 @@ def run(dry_run=False, only_detect=False):
                 notify.push('⚠️ Pages without a comment CTA word', '\n'.join(new) +
                             '\nAdd the word to registry/cta_words.json, then run mode=add-cta.')
         except Exception as e:
-            print('comment CTA failed:', str(e)[:200])
+            failed('comment CTA', e)
         try:
             r = age_boxes(fmts, mkts, cfg, limit=4)
             if r:
                 print('age boxes:', r)
             state.save('formats.json', fmts)
         except Exception as e:
-            print('age boxes failed:', str(e)[:200])
+            failed('age boxes', e)
 
     # 4b. our own creators: new videos, views, formats (feeds the ranking: how each format does for US)
     own_accounts, own_videos = own.load()
@@ -396,7 +401,7 @@ def run(dry_run=False, only_detect=False):
             state.save('own.json', own_videos)
             state.save('own_accounts.json', own_accounts)
         except Exception as e:
-            print('own creators failed:', str(e)[:200])
+            failed('own creators', e)
 
     # 4c. Monday: weekly clean-up - formats that perform badly leave the list
     if not dry_run and not only_detect:
@@ -421,32 +426,38 @@ def run(dry_run=False, only_detect=False):
                         fill_market(mk['key'])
                         fmts[:] = load_formats()
             except Exception as e:
-                print('fill pages failed:', str(e)[:200])
+                failed('fill pages', e)
         if is_due:
             try:  # Monday: inspiration videos in each market's language for formats that still miss one
                 localize_report(localize.run(fmts, mkts, history, account_info, meta, cfg, page_of, now), only_changes=True)
                 state.save('formats.json', fmts)
             except Exception as e:
-                print('localize failed:', str(e)[:200])
+                failed('localize', e)
             try:  # Monday: every page must check out (example video = format, script follows it, reworded)
                 bad = [r for r in audit.run(fmts, mkts, cfg, history, account_info, meta, page_of, rebuild=rebuild_page, only_failed=True) if r[2] not in ('ok', 'fixed')]
                 state.save('formats.json', fmts)
                 if bad:
                     notify.push('⚠️ Page audit: pages that need a look', '\n'.join(f"{m} {t} – {' / '.join(n)[:150]}" for t, m, _, n in bad))
             except Exception as e:
-                print('audit failed:', str(e)[:200])
+                failed('audit', e)
             try:  # Monday: every format's three countries TOGETHER against its reference (cached unless anything changed)
                 group_report(fmts, mkts, cfg, meta, fix=True)
                 state.save('formats.json', fmts)
             except Exception as e:
-                print('cross-country check failed:', str(e)[:200])
+                failed('cross-country check', e)
+
+        # 4d. once a day: missing language pages built again, then the read-only verify; what is wrong goes to Discord
+        try:
+            daily_check(fmts, mkts, cfg, meta, now, fill=not is_due)
+        except Exception as e:
+            failed('daily check', e)
 
     # 5. going-viral card + Discord (every market), then sort all lists in the same order (what goes viral right now first)
     if not only_detect:
         try:
             hot.update(history, videos, fmts, cfg, meta, mkts, dry_run=dry_run)
         except Exception as e:
-            print('hot update failed:', str(e)[:200])
+            failed('hot update', e)
         if not dry_run:
             try:
                 before_top = meta.get('top3', [])
@@ -460,14 +471,14 @@ def run(dry_run=False, only_detect=False):
                         f"({sc[i]['saved_videos']} videos) · {sc[i]['recent_viral']} viral in 7 days"
                         for n, i in enumerate(ids[:5], 1)))
             except Exception as e:
-                print('re-sort failed:', str(e)[:200])
+                failed('re-sort', e)
 
     # 5b. Monday: weekly report in Slack
     if not dry_run:
         try:
             weekly.maybe_send(meta, history, own_videos, own_accounts, fmts, cfg, now)
         except Exception as e:
-            print('weekly report failed:', str(e)[:200])
+            failed('weekly report', e)
 
     # 6. every few days: complete the Astra AI account list (Lightreel) and pause/revive accounts
     today = datetime.datetime.now(datetime.timezone.utc)
@@ -493,7 +504,7 @@ def run(dry_run=False, only_detect=False):
                             ', '.join(f"@{h} ({own_accounts[h].get('market') or '?'})" for h in o_added))
             state.log({'type': 'own_discovery', 'added': o_added, 'paused': o_paused, 'revived': o_revived})
         except Exception as e:
-            print('own discovery failed:', str(e)[:200])
+            failed('own discovery', e)
 
     if not dry_run:
         state.save('videos.json', videos)
@@ -511,8 +522,45 @@ def run(dry_run=False, only_detect=False):
             try:
                 bootstrap(2)
             except Exception as e:
-                print('older viral videos failed:', str(e)[:200])
+                failed('older viral videos', e)
+    if errors and not dry_run:
+        notify.push('⚠️ Automatic run: steps failed', '\n'.join(errors)[:3500] +
+                    '\n\nThe run went on with the other steps. The run log on GitHub has the details.')
     print('actions:', json.dumps(actions, ensure_ascii=False))
+
+
+def daily_check(fmts, mkts, cfg, meta, now, fill=True):
+    """Once a day (user's request, 16 Oct 2026: every automatic run must work with no problems): language pages a
+    listed format still misses are built again (before only on Mondays - a held page waited unseen), then the
+    read-only verify checks every list and page. What is still wrong goes to Discord: new problems at once, the whole
+    open list again every 3 days."""
+    from . import verify
+    day = time.strftime('%Y-%m-%d', time.gmtime(now))
+    if meta.get('daily_check') == day:
+        return None
+    meta['daily_check'] = day
+    state.save('meta.json', meta)  # marked first: a step that fails or times out never repeats in every run
+    if fill:
+        for mk in mkts:
+            if any(f.get('status') == 'active' and not page_of(f, mk['key']) and M.of([mk], f) for f in fmts):
+                state.save('formats.json', fmts)
+                fill_market(mk['key'])
+                fmts[:] = load_formats()
+    problems = verify.run(cfg, fmts, page_of)
+    key = lambda p: p.split(' (held:')[0]  # the held reason changes from try to try - the problem stays the same
+    seen = set(meta.get('open_problems', []))
+    new = [p for p in problems if key(p) not in seen]
+    remind = bool(problems) and now - meta.get('problems_alerted', 0) >= 3 * 86400
+    meta['open_problems'] = [key(p) for p in problems]
+    if new or remind:
+        meta['problems_alerted'] = int(now)
+        old = [p for p in problems if p not in new]
+        notify.push('⚠️ Daily check: things to fix', (
+            ('New:\n' + '\n'.join(new) + '\n\n' if new else '') + ('Still open:\n' + '\n'.join(old) + '\n\n' if old else '')
+            )[:3300] + 'A page held again and again: lock its script with the user (registry/approved_scripts.json), '
+                       'then mode=add-market target=ID:market. Full list: mode=verify.')
+    state.save('meta.json', meta)
+    return problems
 
 
 def handle_alert(v, lvl, mkts, fmts, history, cfg, now, dry_run, only_detect, quiet=False):
@@ -769,6 +817,7 @@ def ensure_market_pages(fmt, v, mkts, fmts, history, cfg, prepared):
             pid, spec, problems = make_page(v, mk, cfg, prepared, parent=cfg['notion']['radar_page'], attempts=3, fmt=fmt)
             if problems:
                 print('page not built:', mk['key'], fmt['title'][:40], '-', '; '.join(problems)[:300])
+                fmt.setdefault('held_why', {})[mk['key']] = 'not built: ' + '; '.join(problems)[:300]
                 continue
             pending_pages[mk['key']] = pid
             state.save('formats.json', fmts)
@@ -777,10 +826,12 @@ def ensure_market_pages(fmt, v, mkts, fmts, history, cfg, prepared):
         meta.setdefault('audit', {})[f"{fmt['id']}:{mk['key']}"] = status
         if status not in ('ok', 'fixed'):
             print('page held by the check:', mk['key'], fmt['title'][:40], status, '-', ' / '.join(notes or [])[:300])
+            fmt.setdefault('held_why', {})[mk['key']] = f"{status}: {' / '.join(notes or [])[:300]}"
         if status in ('ok', 'fixed'):
             notion.move_page(pid, mk['holder_page'])
             set_page(fmt, mk['key'], pid)
             pending_pages.pop(mk['key'], None)
+            (fmt.get('held_why') or {}).pop(mk['key'], None)
             added.append(mk['T']['flag'])
         state.save('formats.json', fmts)
     if added:
