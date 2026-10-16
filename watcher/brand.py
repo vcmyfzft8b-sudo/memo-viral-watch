@@ -33,20 +33,24 @@ DEMO_LABEL = 'Memo AI demo'
 CATEGORY = 'AI study app'           # what both apps are, in a few words
 TOPIC = 'school, studying and exams'  # what the videos are about ("same topic alone is not the same format")
 
-# Checked against the Memo AI code on 8 Oct 2026 (repo M-AI). Scripts, reviews and directions may only use these.
+# Checked against the Memo AI code on 8 Oct 2026 (repo M-AI), again on 16 Oct 2026 (~/dev/Memo_AI). Scripts, reviews and directions may only use these.
 FACTS = """What Memo AI (memoai.eu, web app on any phone or laptop) can do (only show/mention these): turn a recorded
 or uploaded lecture, a PDF, Word or PowerPoint file, a web link, or up to 10 photos (taken with the in-app Scan camera
 or from the gallery) of notes, textbook pages, worksheets or the board into: notes (formulas shown properly),
 transcript, flashcards, a quiz with explanations, a graded practice test (percentage + feedback per answer), a mind
 map, a podcast, read-aloud, a voice tutor that explains the material out loud topic by topic (you can interrupt it),
-and an AI chat about the note. From a photo of a worksheet/exercises it writes notes that explain the method step by
-step with worked examples. Making a note takes a few minutes (cut the waiting). The app speaks Slovenian, Croatian,
+and an AI chat about the note. The quiz and the practice test are made from one note (no picking of lessons); the voice
+tutor ends a topic with one short check question. Key terms in the notes are in bold / highlighted. Making a note
+takes a few minutes (cut the waiting). The app speaks Slovenian, Croatian,
 Bosnian and Serbian. Free start: one free note, then a 3-day free trial.
-It does NOT have: an instant answer to a single photographed task ("snap and solve"), checking/grading the user's own
-homework, photos in the chat, PDF export, pasting text, an Android app from the store. If the original names an app
-feature Memo AI does not have, change only the words of that feature to the closest real Memo AI feature (e.g. snap and
-solve -> scan the worksheet and Memo AI explains how to solve it step by step); the rest of the sentence stays
-word for word.""" + (
+It does NOT have (user, 16 Oct 2026: never promise Astra's features): solving or explaining the user's own tasks /
+worksheets / homework ("snap and solve", "it explains how to solve your tasks step by step"), checking/grading the
+user's own homework, a quiz after every definition, an oral exam that questions you out loud, choosing lessons for a
+test, photos in the chat, PDF export, pasting text, an Android app from the store. A script never names example
+content as if it were in the app (e.g. "here I showed you the Solar System"): the app works on the user's own material.
+If the original names an app feature Memo AI does not have, change only the words of that feature to the closest real
+Memo AI feature (e.g. snap and solve -> scan the worksheet and get notes, flashcards and a quiz from it, and the AI tutor
+explains it out loud); the rest of the sentence stays word for word.""" + (
     f" Some originals promote another app instead of Astra AI ({', '.join(OTHER_APPS)}): treat that app exactly like "
     "Astra AI - Memo AI replaces it at the same spots and as often, and it must never appear." if OTHER_APPS else '')
 

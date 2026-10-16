@@ -62,7 +62,7 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "Tekst na ekranu: Memo AI te iz tvog gradiva ispituje naglas kao na usmenom ispitu 🎧 Ubaciš PDF, PowerPoint ili snimak predavanja – memoai.eu",
+          "text": "Tekst na ekranu: Memo AI ti tvoje gradivo objasni naglas i provjeri da li sve razumiješ 🎧 Ubaciš PDF, PowerPoint ili snimak predavanja – memoai.eu",
           "new_paragraph": true
         },
         {
@@ -938,7 +938,7 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "Besedilo na zaslonu: Memo AI te iz tvoje snovi sprašuje na glas kot na ustnem izpitu 🎧 Naložiš PDF, PowerPoint ali posnetek predavanja – memoai.eu",
+          "text": "Besedilo na zaslonu: Memo AI ti tvojo snov razloži na glas in preveri, ali vse razumeš 🎧 Naložiš PDF, PowerPoint ali posnetek predavanja – memoai.eu",
           "new_paragraph": true
         },
         {
@@ -1529,7 +1529,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. Po vsaki definiciji pa dobiš še hiter kviz, da preveriš, ali si res razumel.",
+          "text": "vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. Za vsako predavanje pa dobiš še kviz, da preveriš, ali si res razumel.",
           "new_paragraph": false
         },
         {
