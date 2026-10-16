@@ -530,3 +530,30 @@ class CtaLength(unittest.TestCase):
         self.assertNotIn('words', why or '')                  # 92 + 8 CTA words: still within 110% of 90
         spec['script'][0]['text'] = 'Memo AI ' + 'beseda ' * 99
         self.assertIn('words', align._validate(spec, 90, source='', lang='sl', own_ex=False))
+
+
+class AppLink(unittest.TestCase):
+    def test_missing_app_link_goes_to_the_memo_line_and_the_materials_box(self):
+        from watcher import reword
+        para = lambda i, t, link=None: {'id': i, 'type': 'paragraph', 'paragraph': {'rich_text': [
+            {'type': 'text', 'plain_text': t, 'text': {'content': t, **({'link': {'url': link}} if link else {})}}]}}
+        script = [para('s1', 'Diva, vidim same petke.'), para('s2', 'Memo AI ti sam dela zapiske.')]
+        box = {'id': 'm', 'type': 'callout', 'callout': {'icon': {'emoji': '💡'}, 'rich_text': [
+            {'type': 'text', 'plain_text': '📎 Logotip', 'text': {'content': '📎 Logotip'}}]}}
+        link = 'https://memoai.eu/creator'
+        with mock.patch.object(reword, 'script_blocks', return_value=script), \
+                mock.patch.object(reword.notion, 'children', return_value=script + [box]), \
+                mock.patch.object(reword.notion, 'api') as api:
+            self.assertEqual(reword.ensure_app_link('P', link, 'sl'), ['script', 'materials'])
+        (_, p1, b1), (_, p2, b2) = [c.args for c in api.call_args_list]
+        self.assertEqual(p1, '/blocks/s2')                                   # the line that names Memo AI
+        self.assertEqual(b1['paragraph']['rich_text'][1]['text']['link']['url'], link)
+        self.assertEqual(b2['callout']['rich_text'][0]['text']['link']['url'], link)
+        self.assertEqual(b2['callout']['rich_text'][-1]['text']['content'], '📎 Logotip')
+        linked = [script[0], para('s2', '🎥 Posnemi Memo AI', link)]
+        box['callout']['rich_text'].append({'type': 'text', 'plain_text': 'x', 'text': {'content': 'x', 'link': {'url': link}}})
+        with mock.patch.object(reword, 'script_blocks', return_value=linked), \
+                mock.patch.object(reword.notion, 'children', return_value=linked + [box]), \
+                mock.patch.object(reword.notion, 'api') as api:
+            self.assertEqual(reword.ensure_app_link('P', link, 'sl'), [])     # already there: untouched
+        api.assert_not_called()

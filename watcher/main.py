@@ -1596,6 +1596,7 @@ def main():
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
     ap.add_argument('--fix-labs', action='store_true', help="every page: the Visual Hook Lab link points to its own market's lab")
     ap.add_argument('--add-market', help='FORMAT_ID[,FORMAT_ID...]:market - add formats to that market\'s list (a page is built)')
+    ap.add_argument('--fix-app-link', help='FORMAT_ID[,FORMAT_ID]: stage directions out, the app link cue in (script + materials)')
     ap.add_argument('--age-variants', nargs='?', const='-', default='',
                     help='every live page (or these format ids): the 🎓 box with the script lines for other school levels')
     ap.add_argument('--add-cta', nargs='?', const='-', default='',
@@ -2218,6 +2219,20 @@ def main():
     if a.relink:
         from . import setup
         setup.relink(load_config(), load_formats(), page_of)
+        return
+    if a.fix_app_link:  # "ID[,ID]": stage directions out + the app link cue in (script line and materials box)
+        cfg, fmts = load_config(), load_formats()
+        for f in [f for f in fmts if f['id'] in a.fix_app_link.split(',')]:
+            for mk in M.of(M.load(cfg), f):
+                pid = page_of(f, mk['key'])
+                if not pid:
+                    continue
+                if align.approved_script(f['id'], mk['lang']):
+                    print('fix-app-link: approved script, change it in registry/approved_scripts.json:', f['title'])
+                    continue
+                n = reword.strip_directions(pid)
+                added = reword.ensure_app_link(pid, links_for(cfg['links'], f)['memo'], mk['lang'])
+                print(f"fix-app-link: {mk['key']} {f['title']} - {n} directions removed, link added to: {added or 'nothing'}")
         return
     if a.age_variants:
         cfg, fmts = load_config(), load_formats()

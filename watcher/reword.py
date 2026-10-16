@@ -372,6 +372,36 @@ def spoken_text(blocks):
     return '\n'.join(out)
 
 
+def ensure_app_link(page_id, link, lang):
+    """A page without the app link cue gets it (verify: "no app link"): '(🎥 Posnemi Memo AI · memoai.eu/creator) '
+    in front of the first script line that names Memo AI (else the first line), and the same link with the recording
+    rule at the top of the 🔧 materials box. Lines that already have it are left alone. Returns what was added."""
+    label = notion.cue_label_for(link, lang)
+    has_link = lambda b: any(((x.get('text') or {}).get('link') or {}).get('url') == link
+                             for x in b[b['type']].get('rich_text', []))
+    done = []
+    script = script_blocks(page_id)
+    if script and not any(has_link(b) for b in script):
+        b = next((b for b in script if 'memo ai' in _plain(b).lower()), script[0])
+        rich = [{k: v for k, v in x.items() if k in ('type', 'text', 'mention', 'annotations')}
+                for x in b[b['type']].get('rich_text', [])]
+        cue = [{'type': 'text', 'text': {'content': '('}},
+               {'type': 'text', 'text': {'content': label, 'link': {'url': link}}},
+               {'type': 'text', 'text': {'content': ') '}}]
+        notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': cue + rich}})
+        done.append('script')
+    box = next((b for b in notion.children(page_id) if b['type'] == 'callout'
+                and ((b['callout'].get('icon') or {}).get('emoji')) == '💡'), None)
+    if box and not has_link(box):
+        rich = [{k: v for k, v in x.items() if k in ('type', 'text', 'mention', 'annotations')}
+                for x in box['callout'].get('rich_text', [])]
+        head = [{'type': 'text', 'text': {'content': label, 'link': {'url': link}}},
+                {'type': 'text', 'text': {'content': ' – ' + TEXT[lang]['record_rule'] + ('\n' if rich else '')}}]
+        notion.api('PATCH', f"/blocks/{box['id']}", {'callout': {'rich_text': head + rich}})
+        done.append('materials')
+    return done
+
+
 def directions_left(page_id):
     """Bracketed stage directions / acting tips still in the script (not the app link cue, not a 📎 material cue)."""
     found = []
