@@ -4,7 +4,7 @@
 //   node record.mjs --device mac|windows|phone|short --lang sl|hr|sr|bs [--app http://localhost:3555] [--debug]
 //        --beats upload,record,cards,test,quiz,more [--name top5]   (see BEATS)
 import { chromium } from "playwright";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -88,6 +88,22 @@ function initScript({ cursorSvg, laptop }) {
     html{scrollbar-width:none} ::-webkit-scrollbar{display:none}
     /* laptops: the flashcard may use the free height under it (the app caps it at 22rem) */
     @media (min-width: 1100px){.memo-note-screen[data-note-tab="flashcards"] .lecture-flashcard-stage{max-height:27rem!important}}`;
+  // Log every sound the page plays (the voice tutor's recordings), so the video gets the same audio track.
+  if (!window.__demoAudio) {
+    window.__demoAudio = [];
+    const play = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function (...args) {
+      const el = this;
+      if (!el.__demoId) {
+        el.__demoId = Math.random().toString(36).slice(2);
+        for (const ev of ["pause", "ended"])
+          el.addEventListener(ev, () => window.__demoAudio.push({ type: "stop", id: el.__demoId, t: Date.now() }));
+      }
+      (window.__demoEls ??= {})[el.__demoId] = el;
+      window.__demoAudio.push({ type: "play", id: el.__demoId, src: el.src, t: Date.now(), offset: el.currentTime, muted: el.muted, volume: el.volume });
+      return play.apply(this, args);
+    };
+  }
   const mount = () => {
     document.head.appendChild(style);
     if (!laptop || document.getElementById("demo-cursor")) return;
@@ -292,6 +308,13 @@ async function type(text, perChar = 38) {
   }
 }
 
+/** The last breath pause in a recording between `from` and `to` seconds – a clean place for the voice to end. */
+function pauseBetween(file, from, to) {
+  const r = spawnSync("ffmpeg", ["-v", "info", "-i", file, "-af", "silencedetect=n=-35dB:d=0.18", "-f", "null", "-"], { encoding: "utf8" });
+  const starts = [...(r.stderr ?? "").matchAll(/silence_start: ([\d.]+)/g)].map((m) => Number(m[1]));
+  return starts.filter((t) => t >= from && t <= to).pop() ?? null;
+}
+
 /** Grabs an element and flicks it to the right (a flashcard swipe: "knew it"): a short press, a quick
  *  accelerating throw with a slight lift, released while still moving. */
 async function dragRight(loc) {
@@ -415,7 +438,11 @@ async function openAnatomy({ title = /^Anatomija|^Anatomy/, keepChat = false } =
     await sleep(150);
   }
   await click(link, { pause: 100 });
-  await page.waitForURL(/\/lectures\//, { timeout: 15000, waitUntil: "commit" });
+  // the note's loading skeleton plays fast, like every other waiting screen
+  await fast(async () => {
+    await page.waitForURL(/\/lectures\//, { timeout: 15000, waitUntil: "commit" });
+    await vis(page.locator(".memo-note-screen h1, .memo-note-screen h2, main h1")).waitFor({ timeout: 15000 });
+  }, 4);
   onNote = true;
   await hold(450);
   if (!keepChat) await closeSideChat();
@@ -429,7 +456,7 @@ const BEATS = {
    *  the AI tutor explaining. */
   async tour() {
     // library, ~1 s
-    await idle(PHONE ? 800 : 600);
+    await idle(PHONE ? 700 : 450);
     // open the first note, close the side chat, scroll down to its graph, ~4.5 s
     await openAnatomy({ title: /^Mikroekonomija|^Microeconomics/ });
     await idle(300);
@@ -443,7 +470,7 @@ const BEATS = {
     await soft("cards", async () => {
       const card = vis(page.locator(".lecture-flashcard"));
       await click(card, { dy: -20, pause: 90 });
-      await idle(PHONE ? 900 : 750);
+      await idle(PHONE ? 800 : 600);
       await dragRight(card);
       await idle(PHONE ? 700 : 450);
     });
@@ -452,20 +479,63 @@ const BEATS = {
     await sleep(600);
     await soft("quiz", async () => {
       await click(byText(QUIZ.get(await findQuizPrompt()).correct), { pause: 120 });
-      await idle(900);
+      await idle(700);
     });
     // mind map, ~2 s
     await click(iconButton("account_tree"), { pause: 80 });
     await sleep(700);
-    if (!PHONE) await soft("zoom", () => click(iconButton("add"), { pause: 80 }));
-    await idle(600);
+    await idle(PHONE ? 250 : 350);
+    // open a branch: its points fan out
+    await soft("open branch", async () => {
+      const badge = page.locator("g.memo-mm-badge").nth(1);
+      await badge.waitFor({ state: "attached", timeout: 4000 });
+      const bb = await badge.boundingBox();
+      const x = bb.x + bb.width / 2, y = bb.y + bb.height / 2;
+      if (PHONE) {
+        await sleep(rand(200, 350));
+        await page.touchscreen.tap(x, y);
+        await sleep(500);
+        // two fingers spread: zoom in toward the opened branch
+        await page.mouse.move(x - 40, y);
+        await page.keyboard.down("Control");
+        for (let i = 0; i < 7; i++) {
+          await page.mouse.wheel(0, -7);
+          await sleep(40);
+        }
+        await page.keyboard.up("Control");
+        await sleep(900);
+      } else {
+        await cursorTo(x, y, 450);
+        await sleep(rand(120, 200));
+        await page.mouse.click(x, y);
+        await idle(1000);
+      }
+    });
     // the voice tutor explains the note out loud, ~5 s
     await soft("voice tutor", async () => {
       await click(iconButton("graphic_eq"), { pause: 80 });
-      await sleep(700);
+      await sleep(500);
       await click(vis(page.locator(".memo-tutor button").filter({ hasText: M["tutor.start"] ?? "§" }).or(page.locator(".memo-tutor button.memo-tutor-start, .memo-tutor .memo-btn-primary"))), { pause: 100 });
-      await fast(() => sleep(1300), 2.5); // "getting ready…"
-      await idle(PHONE ? 2400 : 2000);
+      // "getting ready…" plays fast; the voice starts when it starts speaking
+      await fast(() => page.locator(".memo-tutor.phase-speaking").first().waitFor({ timeout: 10000 }), 2.5);
+      // let it talk to the end of a sentence (~4 s), then the voice stops there
+      const clip = path.join(MEMO, "public/tutor-demo", LANG, "grace-tutor.mp3");
+      // (the demo tutor speaks ~5.5 s before it "listens", so the cut is before that)
+      const endAt = (fs.existsSync(clip) && pauseBetween(clip, 2, 4.6)) || 4;
+      const t0 = Date.now();
+      while (Date.now() - t0 < 9000) {
+        const at = await page.evaluate(() => {
+          const last = [...(window.__demoAudio ?? [])].reverse().find((e) => e.type === "play");
+          const el = last && window.__demoEls?.[last.id];
+          return el ? el.currentTime : -1;
+        });
+        if (at >= endAt + 0.1 || (at < 0 && Date.now() - t0 > 6000)) break;
+        await sleep(40);
+      }
+      await page.evaluate(() => {
+        const last = [...(window.__demoAudio ?? [])].reverse().find((e) => e.type === "play");
+        if (last) window.__demoAudio.push({ type: "stop", id: last.id, t: Date.now() });
+      });
     });
   },
 
@@ -762,7 +832,7 @@ async function scenes() {
     await BEATS[b]();
     await snap(b);
   }
-  await idle(700);
+  await idle(400);
 }
 
 // What the test answer reads like in each language (written by a student, not the app).
@@ -843,12 +913,13 @@ async function run({ capture }) {
   const t0 = Date.now();
   if (capture) chapterClock = t0;
   await scenes();
-  await hold(1200);
+  await hold(500);
   const seconds = (Date.now() - t0) / 1000;
+  const audioLog = capture ? await page.evaluate(() => window.__demoAudio ?? []).catch(() => []) : [];
   if (capture) await cdp.send("Page.stopScreencast");
   await sleep(500);
   await browser.close();
-  return { frames, seconds };
+  return { frames, seconds, audioLog };
 }
 
 function browserBars() {
@@ -947,7 +1018,26 @@ function phoneBarsHtml() {
   </div></body></html>`;
 }
 
-function encode(frames, seconds) {
+/** The page's sounds as segments on the video's timeline: [{file, at, from, dur}] (seconds). */
+async function audioTrack(log, seconds) {
+  const base = chapterClock;
+  const segs = [];
+  for (const [i, e] of log.entries()) {
+    if (e.type !== "play" || e.muted || !e.src) continue;
+    const stop = log.slice(i + 1).find((x) => x.id === e.id && x.type === "stop");
+    const a = (e.t - base) / 1000, b = Math.min(seconds, ((stop?.t ?? base + seconds * 1000) - base) / 1000);
+    if (b <= a) continue;
+    const file = path.join(FRAMES, `audio-${segs.length}${path.extname(new URL(e.src).pathname) || ".mp3"}`);
+    const res = await fetch(new URL(e.src, APP));
+    if (!res.ok) continue;
+    fs.writeFileSync(file, Buffer.from(await res.arrayBuffer()));
+    segs.push({ file, at: videoTime(a), from: e.offset ?? 0, dur: videoTime(b) - videoTime(a), volume: e.volume ?? 1 });
+  }
+  if (segs.length) console.log(`  audio: ${segs.map((x) => `${path.basename(x.file)} @${x.at.toFixed(1)}s ${x.dur.toFixed(1)}s`).join(", ")}`);
+  return segs;
+}
+
+function encode(frames, seconds, audio = []) {
   fs.mkdirSync(OUT, { recursive: true });
   // Screencast timestamps are wall-clock seconds; chapterClock started at the same moment as the scenes.
   const base = chapterClock / 1000;
@@ -966,11 +1056,28 @@ function encode(frames, seconds) {
   const filter =
     `[0:v]format=rgb24,scale=${W}:${VIEW.height * SCREEN.dsf}:flags=lanczos,format=rgb24,pad=${W}:${H}:0:${SCREEN.top * SCREEN.dsf}:white,fps=60[page];` +
     `[page][1:v]overlay=0:0,scale=${SCREEN.outW}:-2:flags=lanczos,format=yuv420p[v]`;
+  // the page's sounds, each placed where it played and cut where it stopped
+  const audioIn = audio.flatMap((a) => ["-i", a.file]);
+  let audioFilter = "", audioMap = [];
+  if (audio.length) {
+    audioFilter =
+      ";" +
+      audio
+        .map((a, k) =>
+          `[${k + 2}:a]atrim=start=${a.from.toFixed(3)}:duration=${a.dur.toFixed(3)},asetpts=PTS-STARTPTS,` +
+          `afade=t=out:st=${Math.max(0, a.dur - 0.12).toFixed(3)}:d=0.12,volume=${a.volume.toFixed(2)},` +
+          `adelay=${Math.round(a.at * 1000)}:all=1[a${k}]`,
+        )
+        .join(";") +
+      ";" + audio.map((_, k) => `[a${k}]`).join("") + `amix=inputs=${audio.length}:normalize=0,apad[aout]`;
+    audioMap = ["-map", "[aout]", "-c:a", "aac", "-b:a", "160k"];
+  }
   execFileSync("ffmpeg", [
     "-v", "error", "-y",
     "-f", "concat", "-safe", "0", "-i", list,
     "-loop", "1", "-i", browserBars(),
-    "-filter_complex", filter, "-map", "[v]",
+    ...audioIn,
+    "-filter_complex", filter + audioFilter, "-map", "[v]", ...audioMap,
     "-t", String(videoTime(seconds)),
     "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-profile:v", "high", "-movflags", "+faststart",
     outFile,
@@ -983,8 +1090,8 @@ if (!process.argv.includes("--no-warm")) {
   await run({ capture: false });
 }
 console.log(`recording ${DEVICE} ${LANG}…`);
-const { frames, seconds } = await run({ capture: true });
+const { frames, seconds, audioLog } = await run({ capture: true });
 console.log(`${frames.length} frames in ${seconds.toFixed(1)} s (${(frames.length / seconds).toFixed(1)} fps)`);
 await drawBars();
-const video = encode(frames, seconds);
+const video = encode(frames, seconds, await audioTrack(audioLog, seconds));
 console.log(`wrote ${video} (${videoTime(seconds).toFixed(1)} s)`);

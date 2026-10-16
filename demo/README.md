@@ -5,15 +5,19 @@ while they talk about Memo AI, and films the screen (finger pointing), the way K
 in her Memo AI videos. One demo for every format.
 
 
-It is ~20 s (phones ~18 s, laptops ~24 s) and moves like a person: a real-size cursor on curved, uneven paths
+It is ~20 s (phones ~20 s, laptops ~25 s), with sound, and moves like a person: a real-size cursor on curved, uneven paths
 with a small overshoot, trackpad/thumb flicks when scrolling, varied pauses, the card flicked away in ~0.25 s.
 
 1. the library (~1 s)
 2. open a note and scroll down to its graph (~4 s)
 3. flashcards: flip one, then flick it away to the right ("knew it") (~3.5 s)
 4. quiz: answer one, it turns green (~2.5 s)
-5. the mind map (~2 s)
-6. the voice tutor ("Inštruktor" / "Objašnjenje"): start → it talks through the note (~5 s)
+5. the mind map: a branch is opened and its points fan out (on phones a pinch-zoom toward it) (~3 s)
+6. the voice tutor ("Inštruktor" / "Objašnjenje"): start → it talks through the note, out loud (~5 s)
+
+The sound is the tutor's own recorded voice: the recorder logs every clip the page plays (when it starts and
+stops) and mixes the same file into the video at that moment. The voice ends on the clip's breath pause around
+4 s, so it never stops mid-word.
 
 It is a screen recording of the app's offline demo (`/creator/college`): the real app UI with fixed demo notes,
 no account, no AI. The live demo hides the voice tutor tab (it needs a microphone and the AI), so the recordings
