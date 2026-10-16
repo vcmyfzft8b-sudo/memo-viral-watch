@@ -25,7 +25,11 @@ OURS_RE = re.compile(r'\bmemo\s*-?\s*a\.?\s*i\b', re.I)  # "Memo AI", "MemoAI", 
 OURS_SITE = 'memoai.eu'  # what creators say / show as the website
 OURS_TAGS = '#memoai, #memo_ai'
 CUE = 'memo'                        # script cue: the moment the app is on screen
-CUE_LABEL = 'Memo AI · memoai.eu/creator'  # label of the cue link (opens the app's filming version)
+CUE_LABEL = 'Memo AI · memoai.eu/creator'  # label of an app page cue (a format's own page, e.g. the oral quiz)
+# User's decision (16 Oct 2026): creators no longer film the app themselves - they play a ready-made Memo AI demo
+# recording (demo/ in this repo; Mac, Windows, iPhone, Android, in the page's language) and film the screen. The app
+# link (config links.memo) is the Drive folder with the recordings; config demo_videos holds each device's file.
+DEMO_LABEL = 'Memo AI demo' 
 CATEGORY = 'AI study app'           # what both apps are, in a few words
 TOPIC = 'school, studying and exams'  # what the videos are about ("same topic alone is not the same format")
 
@@ -77,12 +81,32 @@ def count_app(text):
     return count_source(text) + count_ours(text)
 
 
-def links_for(links, fmt):
-    """The page links of one format: a format can have its own app link (fmt['app_link'], e.g. a page on memoai.eu
-    with the exact thing creators film for this format) instead of the general one."""
-    return {**links, CUE: fmt['app_link']} if (fmt or {}).get('app_link') else links
+def links_for(links, fmt, lang=None):
+    """The page links of one format in one page language: a format can have its own app link (fmt['app_link'], e.g.
+    a page on memoai.eu with the exact thing creators film for this format); otherwise the app link is that
+    language's folder of demo recordings (config demo_videos[lang].folder), else the general one (links.memo)."""
+    if (fmt or {}).get('app_link'):
+        return {**links, CUE: fmt['app_link']}
+    folder = demo_videos(lang).get('folder') if lang else None
+    return {**links, CUE: folder} if folder else links
+
+
+def is_demo_link(link):
+    """Is the app link the demo recordings (Drive), not a page on memoai.eu that creators open themselves?"""
+    return bool(link) and 'memoai.eu' not in link
+
+
+def demo_videos(lang):
+    """The demo recordings in one page language: {'mac': url, 'windows': url, 'iphone': url, 'android': url}."""
+    import json
+    import os
+    with open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'config.json')) as f:
+        return (json.load(f).get('demo_videos') or {}).get(lang) or {}
 
 
 def cue_label(link):
-    """Label of the app link cue: 'Memo AI · memoai.eu/creator' (or the format's own page)."""
+    """Label of the app link cue: 'Memo AI demo' (the demo recordings), or 'Memo AI · memoai.eu/…' for a format's own
+    app page."""
+    if is_demo_link(link):
+        return DEMO_LABEL
     return f"{OURS} · {re.sub(r'^https?://(www\.)?', '', link or '').rstrip('/')}" if link else CUE_LABEL

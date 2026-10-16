@@ -122,7 +122,7 @@ def run(cfg, fmts, page_of):
             if f.get('status') == 'pending' and where != radar:
                 problems.append(f"{flag} {f['title']}: held page not in the staging area")
             if f.get('status') == 'active':
-                bad = check_page(pid, T, {**links_for(cfg['links'], f), '_lab': m.get('visual_hook_lab', '')}, m['lang'], own(f, m['lang']), f.get('app_link'), (f.get('record_note') or {}).get(m['lang']))
+                bad = check_page(pid, T, {**links_for(cfg['links'], f, m['lang']), '_lab': m.get('visual_hook_lab', '')}, m['lang'], own(f, m['lang']), f.get('app_link'), (f.get('record_note') or {}).get(m['lang']))
                 problems += [f"{flag} {f['title']}: {x}" for x in bad]
                 if not bad:
                     ok.append(f"{flag} {f['title']}: page complete")

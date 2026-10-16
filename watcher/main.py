@@ -745,7 +745,7 @@ def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, 
             return None, spec, problems
         upload_id = notion.upload_video(media.for_notion(video_file, work))
         logo_id = notion.upload_file(LOGO, 'image/png') if os.path.exists(LOGO) else None
-        blocks = notion.page_blocks(spec, {**v, 'own': v.get('own') or M.own(fmt, mk['lang'])}, upload_id, links_for(cfg['links'], fmt), lang=mk['lang'], lab_url=mk['visual_hook_lab'],
+        blocks = notion.page_blocks(spec, {**v, 'own': v.get('own') or M.own(fmt, mk['lang'])}, upload_id, links_for(cfg['links'], fmt, mk['lang']), lang=mk['lang'], lab_url=mk['visual_hook_lab'],
                                     same_lang=(transcript.get('language') or '')[:2] == mk['lang'],
                                     note_override=((fmt or {}).get('record_note') or {}).get(mk['lang']), logo_upload_id=logo_id)
     finally:
@@ -1586,7 +1586,7 @@ def group_report(fmts, mkts, cfg, meta, fix=False, force=False):
             for mk in mkts:
                 pid = page_of(f, mk['key'])
                 if pid and not align.approved_script(f['id'], mk['lang']) and (
-                        reword.fix_app_material_cues(pid, links_for(cfg['links'], f)['memo'], mk['lang']) + reword.fix_asset_cues(pid)):
+                        reword.fix_app_material_cues(pid, links_for(cfg['links'], f, mk['lang'])['memo'], mk['lang']) + reword.fix_asset_cues(pid)):
                     notes.append(f"{f['title']}: {mk['key']}: script cues cleaned (resources)")
     results, dups = crosscheck.run(fmts, mkts, cfg, page_of, meta, force=force)
     if fix:
@@ -2199,19 +2199,32 @@ def main():
                     if note.strip() != want.strip():
                         localize.set_note(pid, m['lang'], same, own=M.own(f, m['lang']), link=f.get('app_link'), override=(f.get('record_note') or {}).get(m['lang']))
                         n += 1
-                    blocks = notion.children(pid)  # materials: the 🎥 recording rule right after the app link
+                    blocks = notion.children(pid)  # materials: the 🎥 link and right after it the current rule
                     h = next((i for i, b in enumerate(blocks) if b['type'].startswith('heading') and '🔧' in reword._plain(b)), None)
                     callout = next((b for b in blocks[h + 1:] if b['type'] == 'callout'), None) if h is not None else None
-                    if callout and T['record_rule'] not in reword._plain(callout):
+                    target = links_for(cfg['links'], f, m['lang'])['memo']
+                    label = notion.cue_label_for(target, m['lang'])
+                    if callout and not (notion.record_rule_text(m['lang'], target) in reword._plain(callout)
+                                        and label in reword._plain(callout)):
                         rich = callout['callout']['rich_text']
-                        k = next((i for i, x in enumerate(rich) if ((x.get('text') or {}).get('link') or {}).get('url', '').find('memoai.eu') >= 0), None)
+                        url = lambda x: ((x.get('text') or {}).get('link') or {}).get('url') or ''
+                        k = next((i for i, x in enumerate(rich) if url(x) == target or 'memoai.eu' in url(x)), None)
                         if k is not None:
-                            out = [{'type': 'text', 'text': {'content': x['plain_text'], 'link': (x.get('text') or {}).get('link')},
-                                    'annotations': x.get('annotations', {})} if x.get('type') == 'text' else
-                                   {kk: v for kk, v in x.items() if kk in ('type', 'mention', 'annotations')} for x in rich]
-                            out = [o for o in out if not re.match(r'\s*–\s*obv?ezno:', (o.get('text') or {}).get('content', ''))]
-                            k = next(i for i, o in enumerate(out) if 'memoai.eu' in (((o.get('text') or {}).get('link') or {}).get('url') or ''))
-                            out.insert(k + 1, {'type': 'text', 'text': {'content': ' – ' + T['record_rule']}})
+                            keep = lambda x: ({'type': 'text', 'text': {'content': x['plain_text'], 'link': (x.get('text') or {}).get('link')},
+                                               'annotations': x.get('annotations', {})} if x.get('type') == 'text' else
+                                              {kk: v for kk, v in x.items() if kk in ('type', 'mention', 'annotations')})
+                            # the old rule runs from the link to the first line break (materials lines start with "\n")
+                            j, rest = k + 1, []
+                            while j < len(rich):
+                                text = rich[j].get('plain_text', '')
+                                if '\n' in text:
+                                    rest = [{'type': 'text', 'text': {'content': text[text.index('\n'):], 'link': (rich[j].get('text') or {}).get('link')},
+                                             'annotations': rich[j].get('annotations', {})}] + [keep(x) for x in rich[j + 1:]]
+                                    break
+                                j += 1
+                            out = ([keep(x) for x in rich[:k]]
+                                   + [{'type': 'text', 'text': {'content': label, 'link': {'url': target}}, 'annotations': rich[k].get('annotations', {})}]
+                                   + notion.record_rule_rich(m['lang'], target) + rest)
                             notion.api('PATCH', f"/blocks/{callout['id']}", {'callout': {'rich_text': out}})
                             n += 1
                 except Exception as e:
@@ -2223,7 +2236,7 @@ def main():
         for f in [f for f in load_formats() if f.get('status') in ('active', 'pending')]:
             for key in cfg['markets']:
                 if page_of(f, key):
-                    n += reword.fix_app_material_cues(page_of(f, key), links_for(cfg['links'], f)['memo'], cfg['markets'][key]['lang'])
+                    n += reword.fix_app_material_cues(page_of(f, key), links_for(cfg['links'], f, cfg['markets'][key]['lang'])['memo'], cfg['markets'][key]['lang'])
         print(f'fix-cues: {n} paragraphs now use the app link cue')
         return
     if a.trash_staging:
@@ -2282,7 +2295,7 @@ def main():
                     print('fix-app-link: approved script, change it in registry/approved_scripts.json:', f['title'])
                     continue
                 n = reword.strip_directions(pid)
-                added = reword.ensure_app_link(pid, links_for(cfg['links'], f)['memo'], mk['lang'])
+                added = reword.ensure_app_link(pid, links_for(cfg['links'], f, mk['lang'])['memo'], mk['lang'])
                 print(f"fix-app-link: {mk['key']} {f['title']} - {n} directions removed, link added to: {added or 'nothing'}")
         return
     if a.age_variants:

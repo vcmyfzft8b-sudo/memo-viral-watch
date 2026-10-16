@@ -29,8 +29,9 @@ CTA (user's rule, 16 Oct 2026): every script ends with "Komentariši »WORD« i 
 "Komentiraj »WORD« in pošljem ti link do aplikacije." - WORD fits the script (registry/cta_words.json, picked with the
 user; new formats: the writer picks it, `builder.validate` and `verify` check it; `mode=add-cta` adds it to live pages).
 🎓 Age box (user's request, 16 Oct 2026): under a script tied to one school level (faks / srednja / osnovna) the page
-shows those lines for the other levels (gray 🎓 callout after the CTA, `watcher/ages.py`; the script itself never
-changes). Every run checks up to 4 new/rebuilt pages; `mode=age-variants` does all.
+shows, per other level, only the few words to swap (»…« → »…«, max 3 per level - user: short, just the main point,
+never whole sentences; gray 🎓 callout after the CTA, `watcher/ages.py`; the script itself never changes). Every run
+checks up to 4 new/rebuilt pages; `mode=age-variants` does all, target `!` writes every box again.
 Every page's materials hold the official Memo AI logo (registry/materials/_logo, = Memo_AI/public/memo-lockup.png).
 Format pages are sub-pages of the creator list page (holder_page = list_page; `mode=rehome`).
 
@@ -61,7 +62,14 @@ Format pages are sub-pages of the creator list page (holder_page = list_page; `m
 - Notion (separate workspace, free plan → uploads ≤ 5 MiB, `watcher/media.py` compresses): root "Memo AI – TikTok
   formati", one guide page per market (list "👉 … (OBAVEZNO/OBVEZNO)" laid out 1:1 like the Parakeet list, all formats,
   archive, Visual Hook Lab = copy of Parakeet's, translated). Page ids: `state/notion.json`.
-- App links on pages → https://memoai.eu/creator (user's choice); creators SAY memoai.eu.
+- App demo (user's decision, 16 Oct 2026): creators do NOT film the app themselves - they play a ready-made ~20 s Memo AI
+  demo recording (demo/ in this repo) and film the screen: Mac or Windows laptop recording, else iPhone or Android.
+  Pages: the 🎥 cue "🎥 Pusti/Predvajaj Memo AI demo" links the market's Drive folder, the ⚠️ note says which recording
+  to play, the 💡 materials box links each device's file (config `demo_videos` per page language; Drive
+  nace.valencic@gmail.com "Memo AI demo posnetki/Balkan|Slovenija", anyone with the link; rclone remote `memo-gmail`).
+  `mode=relink` then `mode=renote` put them on live pages. memoai.eu/creator is no longer linked anywhere. Exception:
+  a format with its own app page (`app_link`, the DICK oral-quiz format → memoai.eu/ugc/oral-quiz) keeps its page,
+  note and materials text. Creators still SAY memoai.eu.
 - Saves decide (user's rule, 15 Oct 2026 - replaces the 10 Oct "only views" choice): the list holds formats that
   CONVERT best (viewers save the videos) and still go viral. `watcher/conversion.py` + `config.json` → `conversion`.
 - Brand matching knows declined forms (Astri, Astru, Astro …): `brand.SOURCE_RE`.

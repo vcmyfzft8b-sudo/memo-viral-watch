@@ -440,12 +440,14 @@ def hook_lab(cfg, market=None, page=None):
 
 def relink(cfg, fmts, page_of):
     """Every format page (live, held or archived): app links and their labels point to the current app link
-    (config links.memo). Only links change - no text, no layout."""
+    (config links.memo - the demo recordings folder; a format's own app page stays). Only links change - no text,
+    no layout. The materials box's device links (one per recording) are not touched: `renote` writes them."""
     from .brand import OURS_SITE, links_for
     changed = 0
     for f in fmts:
-        target = links_for(cfg['links'], f)['memo']  # a format can have its own app page
         for key in cfg['markets']:
+            # a format can have its own app page; otherwise the page language's demo recordings
+            target = links_for(cfg['links'], f, cfg['markets'][key]['lang'])['memo']
             pid = page_of(f, key)
             want = notion.cue_label_for(target, cfg['markets'][key]['lang'])
             for b in _walk(pid) if pid else []:
@@ -457,7 +459,8 @@ def relink(cfg, fmts, page_of):
                     link = ((x.get('text') or {}).get('link') or {}).get('url', '')
                     label = x.get('plain_text', '')
                     cue = label.startswith('Memo AI ·') or label.startswith('🎥')
-                    if x.get('type') == 'text' and OURS_SITE in link and (link != target or (cue and label != want)):
+                    # the old app links (memoai.eu/creator) move to the target; a cue already on it gets the current label
+                    if x.get('type') == 'text' and (OURS_SITE in link or (link == target and cue)) and (link != target or (cue and label != want)):
                         if cue:
                             label = want
                         x = {'type': 'text', 'text': {'content': label, 'link': {'url': target}},

@@ -1,8 +1,8 @@
 """🎓 "Fit it to your age" box under a script (user's request, 16 Oct 2026).
 
 Many scripts are tied to one school level ("4th year of uni", "matura", "8th grade"). Our creators are of different
-ages, so under such a script the page shows the same lines rewritten for the other levels (primary school / high
-school / university) - the creator says the version that fits them. Scripts that do not depend on the school level
+ages, so under such a script the page shows, per other level (primary school / high school / university), the few
+words to swap - short, just the main point (user's rule: never whole sentences again). Scripts that do not depend on the school level
 get no box. The script itself never changes (approved scripts stay locked); the box is a gray callout after the
 script's last line (after the comment CTA).
 """
@@ -26,44 +26,50 @@ def _norm(t):
 
 
 def variants(lines, lang, model='opus'):
-    """[{'line', 'versions': {level: text}}] for the script lines that depend on the school level ([] = none)."""
+    """The few words to swap per school level, short (user's rule, 16 Oct 2026: just the main point, a few
+    sentences - never whole lines again): [{'level': 'osnovna', 'swaps': [{'from': '…', 'to': '…'}]}] ([] = the script
+    fits every level). 'from' is a short phrase exactly as it is in the script; at most 3 swaps per level."""
     T = TEXT[lang]
     numbered = '\n'.join(f'{i}. {t}' for i, t in enumerate(lines, 1))
     prompt = f"""Script of a TikTok video for creators to record ({T['lang_name']}, the page language):
 {numbered}
 
-Our creators are of different ages: primary school (upper grades), high school, or university. Find the lines whose
-words only fit ONE school level (e.g. "4th year of uni", "faks", "matura", "8th grade", "professor" vs "teacher",
-"exam period", "colloquium", "class teacher", a specific faculty or school). For each such line write how a creator at
-each OTHER level says the same thing, keeping the same meaning, joke, length and tone - only the school-level details
-change (year, school type, exam names, teacher/professor). Use real names of that country's school system
-({'Slovenia: osnovna šola, srednja šola/gimnazija, splošna matura, faks/fakulteta, profesor' if lang == 'sl' else 'Serbia/Croatia/Bosnia: osnovna škola, srednja škola/gimnazija, matura, faks/fakultet, profesor'}).
+Our creators are of different ages: primary school (upper grades), high school, or university. Some words in the
+script only fit ONE school level (e.g. "4th year of uni", "faks", "matura", "8th grade", "professor" vs "teacher",
+"exam period", "lecture" vs "class", a specific faculty or school, a grade average that only exists at one level).
+For each OTHER level, list ONLY the few words a creator at that level must swap so the script fits them - the main
+point, not whole sentences: each swap is a short phrase copied exactly from the script (2-8 words) and its
+replacement (as short). At most 3 swaps per level; same meaning, joke and tone. Use real names of that country's
+school system ({'Slovenia: osnovna šola, srednja šola/gimnazija, splošna matura, faks/fakulteta, profesor' if lang == 'sl' else 'Serbia/Croatia/Bosnia: osnovna škola, srednja škola/gimnazija, matura, faks/fakultet, profesor'}).
 Rules: write in {T['lang_name']} ({T.get('style') or 'as spoken by young creators'}); never name any app except Memo AI;
-keep any "Memo AI" mention as it is; never change the comment line at the end; leave out lines that already fit every
-level. If no line depends on the school level, return an empty list.
+never touch "Memo AI" or the comment line at the end. Leave out a level whose wording already fits (e.g. the script's
+own level). If nothing depends on the school level, return empty lists.
 
-Return JSON {{"lines": [{{"n": <line number>, "osnovna": "<primary-school version or empty if the original already is
-primary school or it makes no sense>", "srednja": "<high-school version or empty>", "faks": "<university version or
-empty>"}}]}}"""
+Return JSON {{"osnovna": [{{"from": "<phrase from the script>", "to": "<primary-school wording>"}}], "srednja": [...],
+"faks": [...]}}"""
     r = llm.chat_json(model, SYSTEM, prompt, timeout=900)
+    script = _norm(' '.join(l for l in lines if not has_cta(l))).lower()
     out = []
-    for x in r.get('lines', []):
-        try:
-            line = lines[int(x['n']) - 1]
-        except (KeyError, ValueError, IndexError, TypeError):
-            continue
-        if has_cta(line):
-            continue
-        vs = {lv: _norm(x.get(lv)) for lv in LEVELS if _norm(x.get(lv)) and _norm(x.get(lv)) != _norm(line)}
-        if vs:
-            out.append({'line': line, 'versions': vs})
+    for lv in LEVELS:
+        swaps, seen = [], set()
+        for x in (r.get(lv) or [])[:3]:
+            try:
+                a, b = _norm(x.get('from')), _norm(x.get('to'))
+            except AttributeError:
+                continue
+            if not a or not b or a.lower() == b.lower() or len(a) > 90 or len(b) > 90 or a.lower() not in script or a in seen:
+                continue
+            seen.add(a)
+            swaps.append({'from': a, 'to': b})
+        if swaps:
+            out.append({'level': lv, 'swaps': swaps})
     return out
 
 
 def problems(found, lang):
     """Reasons not to publish a box (same checks as the scripts: no other app, page language)."""
     T = TEXT[lang]
-    text = ' '.join(v for x in found for v in x['versions'].values())
+    text = ' '.join(w['to'] for x in found for w in x['swaps'])
     out = []
     if says_source(text):
         out.append('names the other app')
@@ -76,16 +82,14 @@ def problems(found, lang):
 
 
 def box(found, lang):
-    """The gray 🎓 callout: heading line, then per line the original and its versions."""
+    """The gray 🎓 callout: heading, one intro line, then one short line per school level with its swaps."""
     T = TEXT[lang]
     names = T['age_levels']
     rich = [notion.rt(T['age_h'], bold=True), notion.rt('\n' + T['age_intro'])]
     for x in found:
-        rich.append(notion.rt('\n\n„' + _norm(x['line'])[:1900] + '“', bold=False))
-        for lv in LEVELS:
-            if lv in x['versions']:
-                rich += [notion.rt(f'\n→ {names[lv]}: ', bold=True), notion.rt(x['versions'][lv])]
-    return notion.block('callout', rich[:95], icon={'type': 'emoji', 'emoji': MARK}, color='gray_background')
+        rich.append(notion.rt(f"\n→ {names[x['level']]}: ", bold=True))
+        rich.append(notion.rt('; '.join(f"»{w['from']}« → »{w['to']}«" for w in x['swaps']) + '.'))
+    return notion.block('callout', rich, icon={'type': 'emoji', 'emoji': MARK}, color='gray_background')
 
 
 def has_box(blocks):

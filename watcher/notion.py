@@ -6,7 +6,7 @@ import time
 import requests
 
 from . import builder
-from .brand import CUE, cue_label
+from .brand import CUE, cue_label, demo_videos, is_demo_link
 from .markets import PRIMARY, TEXT
 
 API = 'https://api.notion.com/v1'
@@ -123,8 +123,34 @@ def inspo_note(lang, same_lang=False, own=False, link=None, override=None):
 
 
 def cue_label_for(link, lang):
-    """The app link cue in a script: '🎥 Snimi Memo AI · memoai.eu/creator' - recording the app there is required."""
-    return f"🎥 {TEXT[lang]['cue_verb']} {cue_label(link)}"
+    """The app link cue in a script: '🎥 Pusti Memo AI demo' (play the demo recording and film it), or for a format with
+    its own app page '🎥 Snimi Memo AI · memoai.eu/ugc/oral-quiz'."""
+    verb = TEXT[lang]['demo_verb'] if is_demo_link(link) else TEXT[lang]['cue_verb']
+    return f"🎥 {verb} {cue_label(link)}"
+
+
+def record_rule_text(lang, link):
+    """What the 💡 materials box says after the 🎥 link, as plain text (the rule with the four device names)."""
+    T = TEXT[lang]
+    if not is_demo_link(link):
+        return T['record_rule_app']
+    names = T['device_names']
+    return T['record_rule'].format(devices=' · '.join(names[k] for k in ('mac', 'windows', 'iphone', 'android')))
+
+
+def record_rule_rich(lang, link):
+    """The same as rich text: ' – <rule>' with each device name linked to its demo recording (config demo_videos)."""
+    T = TEXT[lang]
+    if not is_demo_link(link):
+        return [rt(' – ' + T['record_rule_app'])]
+    videos, names = demo_videos(lang), T['device_names']
+    head, tail = T['record_rule'].split('{devices}')
+    out = [rt(' – ' + head)]
+    for n, k in enumerate(('mac', 'windows', 'iphone', 'android')):
+        if n:
+            out.append(rt(' · '))
+        out.append(rt(names[k], link=videos.get(k) or link))
+    return out + [rt(tail)]
 
 
 def cue_links(links, lang=PRIMARY):
@@ -138,7 +164,7 @@ def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, 
     if file_upload_id:
         blocks.append(block('video', type='file_upload', file_upload={'id': file_upload_id}))
     blocks.append(para([rt(T['source'], link=video['url'])]))
-    note = inspo_note(lang, same_lang, own=video.get('own'), link=links.get(CUE) if links.get(CUE) != 'https://memoai.eu/creator' else None,
+    note = inspo_note(lang, same_lang, own=video.get('own'), link=None if is_demo_link(links.get(CUE)) or links.get(CUE) == 'https://memoai.eu/creator' else links.get(CUE),
                        override=note_override)
     blocks.append(block('callout', md('\n'.join(note)),
                         icon={'type': 'emoji', 'emoji': '⚠️'}, color='gray_background'))
@@ -159,7 +185,7 @@ def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, 
     blocks.append(divider())
 
     blocks.append(block('heading_2', [rt('🔧'), rt(T['res_h'], bold=True)]))
-    res = [rt(cue_label_for(links[CUE], lang), link=links[CUE]), rt(' – ' + T['record_rule'])]
+    res = [rt(cue_label_for(links[CUE], lang), link=links[CUE])] + record_rule_rich(lang, links[CUE])
     for asset in spec.get('assets_needed', []):
         res.append(rt(f"\n📎 {asset['name']} – {T['asset_todo']}: {asset.get('description', '')}"))
     if logo_upload_id:  # the official Memo AI logo (transparent, high quality) for creators who want it in the video

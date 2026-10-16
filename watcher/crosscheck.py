@@ -186,14 +186,14 @@ def duplicates(groups):
 
 def approval_status(fmt, mkts, page_of, links):
     """Separate from quality: is approved wording locked, and is it preserved on the live page?"""
-    mkts, links = of(mkts, fmt), links_for(links, fmt)
+    mkts = of(mkts, fmt)
     out = {}
     for mk in mkts:
         locked = align.approved_script(fmt['id'], mk['lang'])
         pid = page_of(fmt, mk['key'])
         if not locked:
             out[mk['key']] = 'not_locked'
-        elif pid and align.matches_approved(pid, mk['lang'], links, locked):
+        elif pid and align.matches_approved(pid, mk['lang'], links_for(links, fmt, mk['lang']), locked):
             out[mk['key']] = 'locked_preserved'
         else:
             out[mk['key']] = 'locked_changed'

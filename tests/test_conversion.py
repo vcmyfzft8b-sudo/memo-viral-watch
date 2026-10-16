@@ -407,21 +407,25 @@ class AgeBoxes(StateDir):
     def blocks(self):
         return [{'id': f'b{i}', 'type': 'paragraph', 'text': t} for i, t in enumerate(self.LINES)]
 
-    def test_variants_keep_only_real_changes_and_never_touch_the_cta(self):
+    def test_variants_are_short_swaps_of_words_in_the_script(self):
         from watcher import ages
-        reply = {'lines': [{'n': 2, 'osnovna': '', 'srednja': 'Torej, prišla sem do četrtega letnika srednje, da sem šele zdaj izvedela ...',
-                            'faks': self.LINES[1]},                         # same as the original: dropped
-                           {'n': 4, 'srednja': 'Komentiraj »X«'},           # the CTA: never changed
-                           {'n': 99, 'srednja': 'x'}, {'n': 'a'}]}         # bad numbers: ignored
+        reply = {'osnovna': [{'from': 'četrtega letnika faksa', 'to': 'devetega razreda'},
+                             {'from': 'izpitna vprašanja', 'to': 'vprašanja za teste'},
+                             {'from': 'ni v scenariju', 'to': 'x'},                     # not in the script: dropped
+                             {'from': 'Komentiraj', 'to': 'y'}],                        # the CTA / 4th swap: dropped
+                 'srednja': [{'from': 'četrtega letnika faksa', 'to': 'četrtega letnika gimnazije'}],
+                 'faks': [{'from': 'četrtega letnika faksa', 'to': 'četrtega letnika faksa'}]}  # unchanged: dropped
         with mock.patch.object(ages.llm, 'chat_json', return_value=reply):
             found = ages.variants(self.LINES, 'sl')
-        self.assertEqual(len(found), 1)
-        self.assertEqual(list(found[0]['versions']), ['srednja'])
+        self.assertEqual([x['level'] for x in found], ['osnovna', 'srednja'])
+        self.assertEqual([w['to'] for w in found[0]['swaps']], ['devetega razreda', 'vprašanja za teste'])
+        text = ''.join(x['text']['content'] for x in ages.box(found, 'sl')['callout']['rich_text'])
+        self.assertIn('Osnovna šola: »četrtega letnika faksa« → »devetega razreda«; »izpitna vprašanja« → »vprašanja za teste«.', text)
+        self.assertLess(len(text), 400)  # short: just the main point
 
     def test_box_goes_after_the_cta_and_only_once(self):
         from watcher import ages
-        found = [{'line': '(🎥 Posnemi Memo AI · memoai.eu/creator) ' + self.LINES[1],
-                  'versions': {'srednja': 'Torej, prišla sem do četrtega letnika srednje ...'}}]
+        found = [{'level': 'srednja', 'swaps': [{'from': 'četrtega letnika faksa', 'to': 'četrtega letnika srednje'}]}]
         with mock.patch.object(ages.notion, 'children', return_value=self.blocks()), \
                 mock.patch.object(ages, 'variants', return_value=found), mock.patch.object(ages.notion, 'api') as api:
             r = ages.add_to_page('P', 'sl', script_blocks=lambda pid: self.blocks(), plain=lambda b: b['text'])
@@ -430,7 +434,7 @@ class AgeBoxes(StateDir):
         self.assertEqual(body['after'], 'b3')  # after the CTA line
         text = ''.join(x['text']['content'] for x in body['children'][0]['callout']['rich_text'])
         self.assertIn('Prilagodi svoji starosti', text)
-        self.assertIn('Srednja šola: Torej, prišla sem do četrtega letnika srednje', text)
+        self.assertIn('Srednja šola: »četrtega letnika faksa« → »četrtega letnika srednje«.', text)
         self.assertNotIn('🎥', text)
         with_box = self.blocks() + [{'type': 'callout', 'callout': {'icon': {'emoji': '🎓'}}}]
         with mock.patch.object(ages.notion, 'children', return_value=with_box), mock.patch.object(ages, 'variants') as v:
@@ -440,7 +444,7 @@ class AgeBoxes(StateDir):
     def test_redo_replaces_the_old_box_after_the_new_one_is_in(self):
         from watcher import ages
         old = {'id': 'old', 'type': 'callout', 'callout': {'icon': {'emoji': '🎓'}}}
-        found = [{'line': self.LINES[1], 'versions': {'srednja': 'Torej, prišla sem do četrtega letnika srednje ...'}}]
+        found = [{'level': 'srednja', 'swaps': [{'from': 'četrtega letnika faksa', 'to': 'četrtega letnika srednje'}]}]
         with mock.patch.object(ages.notion, 'children', return_value=self.blocks() + [old]), \
                 mock.patch.object(ages, 'variants', return_value=found) as v, mock.patch.object(ages.notion, 'api') as api:
             r = ages.add_to_page('P', 'sl', script_blocks=lambda pid: self.blocks(), plain=lambda b: b['text'], redo=True)
@@ -455,7 +459,7 @@ class AgeBoxes(StateDir):
                 mock.patch.object(ages, 'variants', return_value=[]), mock.patch.object(ages.notion, 'api') as api:
             self.assertEqual(ages.add_to_page('P', 'sl', **kw), 'none')
         api.assert_not_called()
-        bad = [{'line': 'x', 'versions': {'srednja': 'Uvek imam vreme sa Astra AI'}}]
+        bad = [{'level': 'srednja', 'swaps': [{'from': 'x', 'to': 'Uvek imam vreme sa Astra AI'}]}]
         with mock.patch.object(ages.notion, 'children', return_value=self.blocks()), \
                 mock.patch.object(ages, 'variants', return_value=bad), mock.patch.object(ages.notion, 'api') as api:
             r = ages.add_to_page('P', 'sh', **kw)

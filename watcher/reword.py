@@ -373,7 +373,7 @@ def spoken_text(blocks):
 
 
 def ensure_app_link(page_id, link, lang):
-    """A page without the app link cue gets it (verify: "no app link"): '(🎥 Posnemi Memo AI · memoai.eu/creator) '
+    """A page without the app link cue gets it (verify: "no app link"): '(🎥 Predvajaj Memo AI demo) '
     in front of the first script line that names Memo AI (else the first line), and the same link with the recording
     rule at the top of the 🔧 materials box. Lines that already have it are left alone. Returns what was added."""
     label = notion.cue_label_for(link, lang)
@@ -395,8 +395,9 @@ def ensure_app_link(page_id, link, lang):
     if box and not has_link(box):
         rich = [{k: v for k, v in x.items() if k in ('type', 'text', 'mention', 'annotations')}
                 for x in box['callout'].get('rich_text', [])]
-        head = [{'type': 'text', 'text': {'content': label, 'link': {'url': link}}},
-                {'type': 'text', 'text': {'content': ' – ' + TEXT[lang]['record_rule'] + ('\n' if rich else '')}}]
+        head = [{'type': 'text', 'text': {'content': label, 'link': {'url': link}}}] + notion.record_rule_rich(lang, link)
+        if rich:
+            head.append({'type': 'text', 'text': {'content': '\n'}})
         notion.api('PATCH', f"/blocks/{box['id']}", {'callout': {'rich_text': head + rich}})
         done.append('materials')
     return done

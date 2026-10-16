@@ -38,7 +38,24 @@
     "build": "opus"
   },
   "links": {
-    "memo": "https://memoai.eu/creator"
+    "memo": "https://drive.google.com/drive/folders/1Gj6h2sm80ZAMuuFucbi0dShcZS7PiOCS"
+  },
+  "demo_videos": {
+    "_about": "Memo AI demo recordings creators play and film (demo/README.md), in each page language; folder = the cue link, the rest = the materials box's device links. Drive: nace.valencic@gmail.com, 'Memo AI demo posnetki', anyone with the link can view.",
+    "sh": {
+      "folder": "https://drive.google.com/drive/folders/1bm0uPXlfrJ3vmtgOhtg1TY7dyHfBM7TJ",
+      "mac": "https://drive.google.com/file/d/1OBXR0MTgvMPS3j5BoPQKat7S7A1z9o-3/view",
+      "windows": "https://drive.google.com/file/d/1CUIuJ2VW4qwcSFro57mkrLxgFP0Jw8ja/view",
+      "iphone": "https://drive.google.com/file/d/1uNQL3khnnrfiA_5qjlhplNfiF0sVwKp8/view",
+      "android": "https://drive.google.com/file/d/1wQnAoa7_XKrVpQY9aNuntvESRxsxUamW/view"
+    },
+    "sl": {
+      "folder": "https://drive.google.com/drive/folders/186Fl4cXl7OjCgoENpqM9ZtmlyzN_rEmQ",
+      "mac": "https://drive.google.com/file/d/1iZ_L6teVmmRxDpi66zlHbyKg6HhG7byQ/view",
+      "windows": "https://drive.google.com/file/d/102PcJ_SK1tY0mxDEM58Eo3gcCsJ7gOsT/view",
+      "iphone": "https://drive.google.com/file/d/1oAgUBWao-IQqRkWAUhbNaVFf4zj32lEv/view",
+      "android": "https://drive.google.com/file/d/1nZ6SIdQD8585Pi4C4OVVyXJDEAB1bcYp/view"
+    }
   },
   "notion": {
     "radar_page": ""

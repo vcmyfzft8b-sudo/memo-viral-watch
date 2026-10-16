@@ -75,7 +75,7 @@ def align_page(fmt, page_id, lang, cfg, links, feedback='', draft_url=None):
     """Returns (status, why). With draft_url: writes NOTHING - returns ('draft', spec) for a replacement script that
     follows that example (used to prepare replacements of approval-locked scripts for the user's approval)."""
     T = TEXT[lang]
-    links = links_for(links, fmt)
+    links = links_for(links, fmt, lang)
     src = localize.current_source(page_id)
     url = draft_url or (src['url'] if src else None)
     ok = None if draft_url else approved(fmt['id'], lang, url)

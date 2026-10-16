@@ -81,7 +81,7 @@ def nested_instructions(blocks):
 
 def check(fmt, page_id, lang, model, links=None):
     """Returns (passed, verdict dict, example url)."""
-    links = links_for(links, fmt) if links is not None else None
+    links = links_for(links, fmt, lang) if links is not None else None
     observed_fingerprint = fingerprint(page_id)
     src = localize.current_source(page_id)
     url = src['url'] if src else None
