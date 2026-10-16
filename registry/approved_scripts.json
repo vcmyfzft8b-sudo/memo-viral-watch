@@ -1525,6 +1525,74 @@
           "new_paragraph": true
         }
       ]
+    },
+    "A20261008204718": {
+      "example": "https://www.tiktok.com/@study_with_hexi/video/7691776401896131861",
+      "voiceover": true,
+      "title": "Popusti za dijake in študente, za katere zagotovo niste vedeli ‼️",
+      "hook": "Naredi enak vizualni hook kot v videu za navdih: od prve sekunde glej naravnost v kamero in govori, na zaslonu pa ves čas piše »Popusti za dijake in študente, za katere zagotovo niste vedeli ‼️«.",
+      "script": [
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Popusti za dijake in študente v Sloveniji, za katere 99 % vas ne ve. In preden pogledate ta video, si ga shranite, ker vam bo prišel prav.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: 1/4 Prevoz 🚆",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Kot prvo, kot dijak ali študent imaš subvencionirano mesečno vozovnico za vlak in avtobus.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: 2/4 Microsoft Office 📝 ZASTONJ",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Kot drugo, zastonj Microsoft Office – PowerPoint, Excel in Word – samo prijaviš se s šolskim ali študentskim e-naslovom.",
+          "new_paragraph": true
+        },
+        {
+          "cue": "memo",
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: 3/4 Memo AI 🧠 BREZPLAČEN TRIAL + 50 % S KODO MEMO50",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Kot tretje, na Memo AI imaš brezplačen trial in 50 % popusta s kodo MEMO50: v aplikacijo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in ta posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Besedilo na zaslonu: 4/4 Kino in gledališče 🍿 CENEJŠE VSTOPNICE",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "In kot četrto, v Kinodvoru in v večini gledališč imajo dijaki in študenti cenejše vstopnice.",
+          "new_paragraph": true
+        },
+        {
+          "cue": null,
+          "asset_name": "",
+          "text": "Komentiraj »POPUST« in pošljem ti link do aplikacije.",
+          "new_paragraph": true
+        }
+      ]
     }
   }
 }

@@ -122,7 +122,10 @@ registry/export_cert.pem, to state/scripts_export.enc (repo and logs are public)
 ## Status (16 Oct 2026)
 Lists follow the conversion rules (saves first, views second). Balkan list: only the highest-converting formats
 (Studentski popusti, 3 apps "Prosjek 5.0 i 9.6", Ispitna pitanja unaprijed, Tajne, Ocjene, Prodajem mjesto,
-e-dnevnik, Top 5 fakulteta, Mozak premium); the 9 formats taken out by hand (16 Oct) stay on the Slovenian list.
+e-dnevnik, Top 5 fakulteta, Mozak premium, Prodajem mjesto na laptopu, and "Nisam stvorena za sestrinstvo" (the
+DICK oral-quiz format, put back by the user's request 16 Oct)); the other formats taken out by hand (16 Oct) stay on
+the Slovenian list. Studentski popusti's Slovenian script is locked too (user's OK 16 Oct) - unlocked, its page kept
+failing the check and stayed in staging.
 Slovenian list: every format (they convert there) + the best Balkan converters (Studentski popusti and e-dnevnik with
 Slovenian pages - their old Balkan-only pin in registry/hand_formats.json was removed with the user's OK). Every
 page: comment CTA + 🎓 age box where the script depends on the school level (checked again every run).
