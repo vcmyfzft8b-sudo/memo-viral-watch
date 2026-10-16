@@ -2193,18 +2193,19 @@ def main():
         for f in [f for f in fmts if f.get('status') in ('active', 'pending')]:
             for key, mk in cfg['markets'].items():
                 pairs, pid = (changes.get(mk['lang']) or {}).get(f['id']), page_of(f, key)
+                anywhere = (changes.get(mk['lang']) or {}).get('*') or []  # small fixes for every page, when found
                 if not pid:
                     continue
                 try:
                     blocks, done = reword.script_blocks(pid), set()
-                    for b in blocks if pairs else []:
+                    for b in blocks if pairs or anywhere else []:
                         out, touched = [], False
                         for x in b[b['type']].get('rich_text', []):
                             if x.get('type') != 'text':
                                 out.append({k: v for k, v in x.items() if k in ('type', 'mention', 'annotations')})
                                 continue
                             t = x['plain_text']
-                            for old, new in pairs:
+                            for old, new in (pairs or []) + anywhere:
                                 if old in t:
                                     t, touched = t.replace(old, new), True
                                     done.add(old)

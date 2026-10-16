@@ -1,5 +1,5 @@
 {
- "_about": "User's decision 16 Oct 2026: the app part of every script follows the Memo AI demo recording (notes -> flashcards -> quiz -> mind map -> AI tutor out loud), so creators play it and talk over it. [old, new] text replacements per page language and format; mode=repitch applies them to the live pages, the same change is in registry/approved_scripts.json.",
+ "_about": "User's decision 16 Oct 2026: the app part of every script follows the Memo AI demo recording (notes -> flashcards -> quiz -> mind map -> AI tutor out loud), so creators play it and talk over it. [old, new] text replacements per page language and format; mode=repitch applies them to the live pages, the same change is in registry/approved_scripts.json. '*' = changes for every page of that language (applied when found).",
  "sh": {
   "A20261008204718": [
    [
@@ -89,6 +89,16 @@
    [
     "riješi test, prođe kvizove i flash kartice i preslušava podkast, tema po temu.",
     "prođe flash kartice i kvizove, pogleda mentalnu mapu i pusti AI instruktora da joj objasni gradivo, tema po temu."
+   ]
+  ],
+  "*": [
+   [
+    "sa predavanja, ili snimiš",
+    "sa predavanja ili snimiš"
+   ],
+   [
+    "sa časa, ili snimiš",
+    "sa časa ili snimiš"
    ]
   ]
  },
@@ -267,6 +277,20 @@
    [
     "S kvizi, testi in podkasti se pripravi na pisne in ustne izpite.",
     "Z učnimi karticami, kvizi in AI inštruktorjem se pripravi na pisne in ustne izpite."
+   ]
+  ],
+  "*": [
+   [
+    "s predavanj, ali posnameš",
+    "s predavanj ali posnameš"
+   ],
+   [
+    "s predavanj, ali posnamem",
+    "s predavanj ali posnamem"
+   ],
+   [
+    "s predavanj, ali posnamete",
+    "s predavanj ali posnamete"
    ]
   ]
  }
