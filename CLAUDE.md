@@ -70,6 +70,11 @@ Format pages are sub-pages of the creator list page (holder_page = list_page; `m
   `mode=relink` then `mode=renote` put them on live pages. memoai.eu/creator is no longer linked anywhere. Exception:
   a format with its own app page (`app_link`, the DICK oral-quiz format → memoai.eu/ugc/oral-quiz) keeps its page,
   note and materials text. Creators still SAY memoai.eu.
+  Scripts follow the demo (user, 16 Oct 2026): the app part says what is on screen, in its order - PDF / PowerPoint /
+  recorded lecture → notes, flashcards, quizzes, mind map → the AI tutor explains out loud (TEXT[lang]['pitch'];
+  registry/demo_pitch.json = the changes made to every live script, `mode=repitch`; locked scripts changed the same).
+  The note/materials rules: download the clip first (never play it in Google Drive), laptop full screen without player
+  controls, phone clip as an overlay in the edit, talk over it.
 - Saves decide (user's rule, 15 Oct 2026 - replaces the 10 Oct "only views" choice): the list holds formats that
   CONVERT best (viewers save the videos) and still go viral. `watcher/conversion.py` + `config.json` → `conversion`.
 - Brand matching knows declined forms (Astri, Astru, Astro …): `brand.SOURCE_RE`.

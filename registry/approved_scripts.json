@@ -94,7 +94,7 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "PDF, PowerPoint ili snimak predavanja → bilješke, kartice i kvizovi 🧠",
+          "text": "PDF, PowerPoint ili snimak predavanja → bilješke, kartice, kvizovi, mentalna mapa i AI instruktor 🧠",
           "new_paragraph": true
         },
         {
@@ -214,7 +214,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Prije nego što kažem prva tri mjesta, da se ogradim: svaki fakultet je težak, a kako da ga olakšaš, pokazaću ti sada. Preporučit ću ti jednu aplikaciju, u pitanju je Memo AI: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve to naučiš na jako jednostavan način.",
+          "text": "Prije nego što kažem prva tri mjesta, da se ogradim: svaki fakultet je težak, a kako da ga olakšaš, pokazaću ti sada. Preporučit ću ti jednu aplikaciju, u pitanju je Memo AI: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, ili snimiš predavanje, i dobiješ sređene bilješke, flash kartice, kvizove i mentalnu mapu, a AI instruktor ti sve objasni naglas.",
           "new_paragraph": true
         },
         {
@@ -264,7 +264,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Ako već hoćete da koristite AI, bolje ga iskoristite na pravi način, kao što je Memo AI aplikacija za učenje: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa časa, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način.",
+          "text": "Ako već hoćete da koristite AI, bolje ga iskoristite na pravi način, kao što je Memo AI aplikacija za učenje: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa časa, ili snimiš predavanje, i dobiješ sređene bilješke, flash kartice, kvizove i mentalnu mapu, a AI instruktor ti sve objasni naglas.",
           "new_paragraph": true
         },
         {
@@ -332,7 +332,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Memo AI je aplikacija koja pomaže studentima i učenicima u učenju: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način.",
+          "text": "Memo AI je aplikacija koja pomaže studentima i učenicima u učenju: u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, ili snimiš predavanje, i dobiješ sređene bilješke, flash kartice, kvizove i mentalnu mapu, a AI instruktor ti sve objasni naglas.",
           "new_paragraph": true
         },
         {
@@ -438,7 +438,7 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "Kao treće, na Memo AI imate besplatan trial i 50% popusta sa kodom MEMO50: u tu aplikaciju ubacite PDF-ove ili PowerPoint prezentacije sa predavanja, a možete i snimiti predavanje i taj audio snimak ubaciti u Memo AI. Dobijete bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučite na jako jednostavan način.",
+          "text": "Kao treće, na Memo AI imate besplatan trial i 50% popusta sa kodom MEMO50: u tu aplikaciju ubacite PDF-ove ili PowerPoint prezentacije sa predavanja ili snimite predavanje, i dobijete sređene bilješke, flash kartice, kvizove i mentalnu mapu, a AI instruktor vam sve objasni naglas.",
           "new_paragraph": true
         },
         {
@@ -786,7 +786,7 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "Kad imaš bilješke, ovdje gore imaš opciju „Test“, i one ovdje dobiju sva pitanja.",
+          "text": "Kad imaš bilješke, ovdje gore imaš opciju „Kviz“, i one ovdje dobiju sva pitanja.",
           "new_paragraph": true
         },
         {
@@ -903,7 +903,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Bolj bi vam priporočala tale app, ker te v bistvu dejansko dobro nauči snov; noter imaš tudi inštruktorja, znaš narediti flashcarde, teste, kvize, potem lahko noter rešuješ kvize z razlagami, pač na tak način, da se pač zraven še učiš, kar je crazy, dela ti v bistvu tudi miselne vzorce, bere ti zapiske, imaš podcaste, pač dobesedno imaš vse.",
+          "text": "Bolj bi vam priporočala tale app, ker te v bistvu dejansko dobro nauči snov; ti naredi zapiske, flashcarde in kvize, potem lahko noter rešuješ kvize z razlagami, pač na tak način, da se pač zraven še učiš, kar je crazy, dela ti v bistvu tudi miselne vzorce, noter imaš pa še inštruktorja, ki ti vse razloži na glas, pač dobesedno imaš vse.",
           "new_paragraph": false
         },
         {
@@ -947,7 +947,7 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "PDF, PowerPoint ali posnetek predavanja → zapiski, kartice in kvizi 🧠",
+          "text": "PDF, PowerPoint ali posnetek predavanja → zapiski, kartice, kvizi, miselni vzorec in AI inštruktor 🧠",
           "new_paragraph": true
         },
         {
@@ -1017,7 +1017,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Če se učiš z Memo AI, izpadeš, ker je to res najboljša aplikacija za učenje in s tem že zmaguješ. Samo naložiš svoje zapiske in slike, pa ti v nekaj minutah pripravi urejene zapiske, kartice, kvize in poskusne teste. Meni so najljubše kartice: dobim vprašanje, in če ne vem odgovora, samo kliknem na zaslon.",
+          "text": "Če se učiš z Memo AI, izpadeš, ker je to res najboljša aplikacija za učenje in s tem že zmaguješ. Samo naložiš svoje zapiske in slike, pa ti v nekaj minutah pripravi urejene zapiske, kartice, kvize in miselni vzorec, AI inštruktor pa ti vse razloži na glas. Meni so najljubše kartice: dobim vprašanje, in če ne vem odgovora, samo kliknem na zaslon.",
           "new_paragraph": true
         },
         {
@@ -1067,7 +1067,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Preden povem prva tri mesta, naj povem, da je vsaka fakulteta težka – kako si jo še bolj olajšaš, ti bom pokazala zdaj. Priporočam ti aplikacijo Memo AI: vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse to naučiš na zelo preprost način.",
+          "text": "Preden povem prva tri mesta, naj povem, da je vsaka fakulteta težka – kako si jo še bolj olajšaš, ti bom pokazala zdaj. Priporočam ti aplikacijo Memo AI: vanjo naložiš PDF-je ali PowerPointe s predavanj, ali posnameš predavanje in dobiš urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa ti vse razloži na glas.",
           "new_paragraph": true
         },
         {
@@ -1117,7 +1117,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Memo AI je aplikacija, ki dijakom in študentom pomaga pri učenju: vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način.",
+          "text": "Memo AI je aplikacija, ki dijakom in študentom pomaga pri učenju: vanjo naložiš PDF-je ali PowerPointe s predavanj, ali posnameš predavanje in dobiš urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa ti vse razloži na glas.",
           "new_paragraph": true
         },
         {
@@ -1155,7 +1155,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Naložim PDF-je in PowerPointe s predavanj, lahko pa predavanje tudi posnamem in posnetek naložim v Memo AI – ven dobim zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučim na zelo preprost način.",
+          "text": "Naložim PDF-je in PowerPointe s predavanj, ali posnamem predavanje in dobim urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa mi vse razloži na glas.",
           "new_paragraph": true
         },
         {
@@ -1205,7 +1205,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Za učenje obstaja veliko boljša rešitev, to je Memo AI: vanjo naložite PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnamete in zvočni posnetek naložite v Memo AI. Ven dobite zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučite na zelo preprost način.",
+          "text": "Za učenje obstaja veliko boljša rešitev, to je Memo AI: vanjo naložite PDF-je ali PowerPointe s predavanj, ali posnamete predavanje in dobite urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa vam vse razloži na glas.",
           "new_paragraph": true
         },
         {
@@ -1297,13 +1297,13 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Zato vam bom pokazala aplikacijo, s katero se učite zelo hitro, skoraj kot z igrico – Memo AI: vanjo naložite PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnamete in zvočni posnetek naložite v Memo AI. Ven dobite zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučite na zelo preprost način.",
+          "text": "Zato vam bom pokazala aplikacijo, s katero se učite zelo hitro, skoraj kot z igrico – Memo AI: vanjo naložite PDF-je ali PowerPointe s predavanj, ali posnamete predavanje in dobite urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa vam vse razloži na glas.",
           "new_paragraph": true
         },
         {
           "cue": null,
           "asset_name": "",
-          "text": "Na primer učne kartice: tukaj je vprašanje, kartico obrnete in imate odgovor. Imate pa tudi poskusni test z oceno in glasovnega tutorja, ki vam snov razloži na glas.",
+          "text": "Na primer učne kartice: tukaj je vprašanje, kartico obrnete in imate odgovor. Potem pa še kviz, miselni vzorec in glasovni tutor, ki vam snov razloži na glas.",
           "new_paragraph": true
         },
         {
@@ -1341,7 +1341,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Uporabljam Memo AI, ja. Ne veste, katera aplikacija je to? Saj vsi v razredu vedo: vanjo naložim PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnamem in zvočni posnetek naložim v Memo AI. Ven dobim zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučim na zelo preprost način. Tako da, verjemite mi, niste mi dali enke. Še enkrat preverite. Hvala.",
+          "text": "Uporabljam Memo AI, ja. Ne veste, katera aplikacija je to? Saj vsi v razredu vedo: vanjo naložim PDF-je ali PowerPointe s predavanj, ali posnamem predavanje in dobim urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa mi vse razloži na glas. Tako da, verjemite mi, niste mi dali enke. Še enkrat preverite. Hvala.",
           "new_paragraph": true
         },
         {
@@ -1403,7 +1403,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Gre za Memo AI: vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. Po vsaki definiciji pa dobiš še hiter kviz, da preveriš, ali si res razumel.",
+          "text": "Gre za Memo AI: vanjo naložiš PDF-je ali PowerPointe s predavanj, ali posnameš predavanje in dobiš urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa ti vse razloži na glas. Po vsaki definiciji pa dobiš še hiter kviz, da preveriš, ali si res razumel.",
           "new_paragraph": true
         },
         {
@@ -1447,7 +1447,7 @@
         {
           "cue": "memo",
           "asset_name": "",
-          "text": "Rekla mi je: »Odpri Memo AI.« Vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način.",
+          "text": "Rekla mi je: »Odpri Memo AI.« Vanjo naložiš PDF-je ali PowerPointe s predavanj, ali posnameš predavanje in dobiš urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa ti vse razloži na glas.",
           "new_paragraph": true
         },
         {
@@ -1509,7 +1509,7 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "Ko imaš noter zapiske, imaš tukajle zgoraj možnost »Test«, in one tukaj dobijo vsa vprašanja.",
+          "text": "Ko imaš noter zapiske, imaš tukajle zgoraj možnost »Kviz«, in one tukaj dobijo vsa vprašanja.",
           "new_paragraph": true
         },
         {
@@ -1571,7 +1571,7 @@
         {
           "cue": null,
           "asset_name": "",
-          "text": "Kot tretje, na Memo AI imaš brezplačen trial in 50 % popusta s kodo MEMO50: v aplikacijo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in ta posnetek naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način.",
+          "text": "Kot tretje, na Memo AI imaš brezplačen trial in 50 % popusta s kodo MEMO50: v aplikacijo naložiš PDF-je ali PowerPointe s predavanj, ali posnameš predavanje in dobiš urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa ti vse razloži na glas.",
           "new_paragraph": true
         },
         {

@@ -55,9 +55,8 @@ TEXT = {
         'age_h': 'Savjet za tvoj uzrast:',
         'age_intro': 'Ako ne ideš u istu školu kao u scenariju, promijeni samo ovo:',
         'age_levels': {'osnovna': 'Osnovna škola', 'srednja': 'Srednja škola', 'faks': 'Faks'},
-        'pitch': ('u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio '
-                  'snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, '
-                  's kojima sve naučiš na jako jednostavan način.'),
+        'pitch': ('u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja ili snimiš predavanje, i dobiješ sređene '
+                  'bilješke, flash kartice, kvizove i mentalnu mapu, a AI instruktor ti sve objasni naglas.'),
         'screen_label': 'Tekst na ekranu:',
         'logo_line': '📎 Memo AI logo (prozirna pozadina, visoka kvaliteta) – slika ispod; koristi ga u videu ako želiš.',
         # the 💡 materials box after the 🎥 demo link; {devices} = the four recordings, each linked (notion.record_rule_rich)
@@ -159,9 +158,8 @@ TEXT = {
         'age_h': 'Nasvet za tvojo starost:',
         'age_intro': 'Če ne hodiš v isto šolo kot v scenariju, spremeni samo tole:',
         'age_levels': {'osnovna': 'Osnovna šola', 'srednja': 'Srednja šola', 'faks': 'Faks'},
-        'pitch': ('vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek '
-                  'naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi '
-                  'se vse naučiš na zelo preprost način.'),
+        'pitch': ('vanjo naložiš PDF-je ali PowerPointe s predavanj ali posnameš predavanje in dobiš urejene zapiske, učne '
+                  'kartice, kvize in miselni vzorec, AI inštruktor pa ti vse razloži na glas.'),
         'screen_label': 'Besedilo na zaslonu:',
         'logo_line': '📎 Logotip Memo AI (prozorno ozadje, visoka kakovost) – slika spodaj; uporabi ga v videu, če želiš.',
         'record_rule': ('obvezno: prenesi posnetek za svojo napravo – {devices} – in ga predvajaj pri oznaki »🎥 Tukaj '

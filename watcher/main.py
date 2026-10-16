@@ -1666,6 +1666,8 @@ def main():
     ap.add_argument('--add-materials', default='', help='format id: the images in registry/materials/<id>/<market>/ go into that market page\'s materials section')
     ap.add_argument('--realign', default='', help="'<format id>:<market>[:<what to fix>]': rewrite that one page's script against its example (then page check)")
     ap.add_argument('--reopen', default='', help='format id: an archived format gets fresh quality-check tries (e.g. after its script was approved by hand)')
+    ap.add_argument('--repitch', action='store_true', help='scripts follow the Memo AI demo: the text changes in '
+                    'registry/demo_pitch.json go onto the live pages (in place - cues, CTA and layout stay)')
     ap.add_argument('--renote', action='store_true', help='every page (live, waiting, archived): the note under the inspiration video gets the current text')
     ap.add_argument('--fix-cues', action='store_true', help="every page: the app shown as a '📎 material' cue becomes the app link cue")
     ap.add_argument('--trash-staging', default='', help='page ids (comma-separated): move these leftover staging pages to the Notion trash - only if no format uses them')
@@ -2181,6 +2183,42 @@ def main():
             f.pop('archived_reason', None)
         state.save('formats.json', fmts)
         print('reopened:', f['title'], '->', f['status'])
+        return
+    if a.repitch:
+        cfg, fmts, n, missing = load_config(), load_formats(), 0, []
+        with open(os.path.join(ROOT, 'registry', 'demo_pitch.json')) as fh:
+            changes = json.load(fh)
+        for f in [f for f in fmts if f.get('status') in ('active', 'pending')]:
+            for key, mk in cfg['markets'].items():
+                pairs, pid = (changes.get(mk['lang']) or {}).get(f['id']), page_of(f, key)
+                if not pairs or not pid:
+                    continue
+                try:
+                    blocks, done = reword.script_blocks(pid), set()
+                    text = ' '.join(reword._plain(b) for b in blocks)
+                    for b in blocks:
+                        out, touched = [], False
+                        for x in b[b['type']].get('rich_text', []):
+                            if x.get('type') != 'text':
+                                out.append({k: v for k, v in x.items() if k in ('type', 'mention', 'annotations')})
+                                continue
+                            t = x['plain_text']
+                            for old, new in pairs:
+                                if old in t:
+                                    t, touched = t.replace(old, new), True
+                                    done.add(old)
+                            out.append({'type': 'text', 'text': {'content': t, 'link': (x.get('text') or {}).get('link')},
+                                        'annotations': x.get('annotations', {})})
+                        if touched:
+                            notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': out}})
+                            n += 1
+                    missing += [f"{key} {f['title'][:40]}: {old[:50]}" for old, new in pairs
+                                if old not in done and new not in text]
+                except Exception as e:
+                    missing.append(f"{key} {f['title'][:40]}: {str(e)[:100]}")
+        print(f'repitch: {n} script paragraphs changed', *(['not found:'] + ['  ' + x for x in missing] if missing else []), sep='\n')
+        if missing:
+            raise SystemExit('repitch: some changes were not found (see above)')
         return
     if a.renote:
         cfg, n = load_config(), 0
