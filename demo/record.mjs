@@ -135,23 +135,45 @@ async function snap(name) {
   if (DEBUG) await page.screenshot({ path: path.join(OUT, `debug-${DEVICE}-${LANG}-${String(step++).padStart(2, "0")}-${name}.png`) });
 }
 
+const rand = (a, b) => a + Math.random() * (b - a);
+
+/** Moves the drawn cursor like a hand on a trackpad: a slightly curved path (bending either way), fast in the
+ *  middle and slow at the ends, a small overshoot on longer moves that settles back onto the target. */
 async function cursorTo(x, y, ms) {
+  const [x0, y0] = await cursorPos();
+  const dist = Math.hypot(x - x0, y - y0);
+  ms = Math.round(ms * rand(0.85, 1.15));
+  const over = dist > 160 ? Math.min(16, dist * 0.035) : 0;
+  const ux = dist ? (x - x0) / dist : 0, uy = dist ? (y - y0) / dist : 0;
   await page.evaluate(
-    ([x, y, ms]) =>
+    ([x, y, ms, over, ux, uy, bend, skew]) =>
       new Promise((resolve) => {
         const c = document.getElementById("demo-cursor");
         if (!c) return resolve();
         const x0 = Number(c.dataset.x), y0 = Number(c.dataset.y);
         const t0 = performance.now();
-        const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
-        // a slight arc, like a hand moving a trackpad
-        const bend = Math.min(60, Math.hypot(x - x0, y - y0) * 0.12);
+        // asymmetric ease: quick start, long soft landing
+        const ease = (t) => 1 - Math.pow(1 - Math.pow(t, skew), 3);
+        const tx = x + ux * over, ty = y + uy * over;
+        const settle = over ? 140 : 0;
         const frame = (now) => {
-          const t = Math.min(1, (now - t0) / ms), e = ease(t);
-          const cx = x0 + (x - x0) * e, cy = y0 + (y - y0) * e - Math.sin(Math.PI * e) * bend;
+          const el = now - t0;
+          let cx, cy;
+          if (el < ms) {
+            const e = ease(el / ms);
+            const arc = Math.sin(Math.PI * e) * bend;
+            cx = x0 + (tx - x0) * e - uy * arc;
+            cy = y0 + (ty - y0) * e + ux * arc;
+          } else {
+            const k = Math.min(1, (el - ms) / Math.max(1, settle));
+            const e = 1 - Math.pow(1 - k, 2);
+            cx = tx + (x - tx) * e;
+            cy = ty + (y - ty) * e;
+          }
           c.style.transform = `translate(${cx}px,${cy}px)`;
-          if (t < 1) requestAnimationFrame(frame);
+          if (el < ms + settle) requestAnimationFrame(frame);
           else {
+            c.style.transform = `translate(${x}px,${y}px)`;
             c.dataset.x = x;
             c.dataset.y = y;
             sessionStorage.setItem("demo-cursor", JSON.stringify([x, y]));
@@ -160,7 +182,7 @@ async function cursorTo(x, y, ms) {
         };
         requestAnimationFrame(frame);
       }),
-    [x, y, ms],
+    [x, y, ms, over, ux, uy, (Math.random() < 0.5 ? -1 : 1) * Math.min(55, dist * rand(0.05, 0.12)), rand(0.75, 0.95)],
   );
   await page.mouse.move(x, y);
 }
@@ -178,19 +200,20 @@ async function click(loc, { dx = 0, dy = 0, pause = 160, move, timeout = waitLim
   await loc.waitFor({ state: "visible", timeout });
   await loc.scrollIntoViewIfNeeded();
   const b = await loc.boundingBox();
-  const x = Math.round(b.x + b.width / 2 + dx), y = Math.round(b.y + b.height / 2 + dy);
+  const x = Math.round(b.x + b.width / 2 + dx + rand(-0.12, 0.12) * Math.min(b.width, 60)),
+    y = Math.round(b.y + b.height / 2 + dy + rand(-0.12, 0.12) * Math.min(b.height, 24));
   if (PHONE) {
-    await sleep(pause);
+    await sleep(pause * rand(0.8, 1.6));
     await page.touchscreen.tap(x, y);
     return;
   }
   const [x0, y0] = await cursorPos();
   const dist = Math.hypot(x - x0, y - y0);
   await cursorTo(x, y, move ?? Math.round(Math.min(620, Math.max(280, dist * 0.55))));
-  await sleep(pause);
+  await sleep(pause * rand(0.8, 1.5));
   await page.evaluate(() => document.getElementById("demo-cursor")?.classList.add("down"));
   await page.mouse.down();
-  await sleep(70);
+  await sleep(rand(55, 110));
   await page.mouse.up();
   await page.evaluate(() => document.getElementById("demo-cursor")?.classList.remove("down"));
 }
@@ -224,20 +247,31 @@ async function idle(ms) {
 
 /** Smooth scroll of whatever is under (x, y), eased like a trackpad flick (on a phone it reads as a swipe). */
 async function scroll(dy, ms = 1200, at) {
-  const [x, y] = at ?? [Math.round(VIEW.width * (PHONE ? 0.5 : 0.6)), Math.round(VIEW.height * 0.6)];
+  const [x, y] = at ?? [Math.round(VIEW.width * (PHONE ? 0.5 : 0.6) + rand(-30, 30)), Math.round(VIEW.height * rand(0.5, 0.65))];
   if (!PHONE) {
     const [cx, cy] = await cursorPos();
-    if (Math.hypot(cx - x, cy - y) > 200) await cursorTo(x, y, 450);
+    if (Math.hypot(cx - x, cy - y) > 200) await cursorTo(x, y, 420);
   }
   await page.mouse.move(x, y);
-  const steps = Math.max(10, Math.round(ms / 16));
-  let done = 0;
-  for (let i = 1; i <= steps; i++) {
-    const t = i / steps;
-    const target = Math.round(dy * (1 - Math.pow(1 - t, 2.4))); // ease-out, like a flick
-    await page.mouse.wheel(0, target - done);
-    done = target;
-    await sleep(ms / steps);
+  // big moves come as a few flicks: e.g. 55 % + 30 % + 15 %, with tiny pauses between
+  const parts = Math.abs(dy) > 350 ? (Math.abs(dy) > 900 ? [0.5, 0.32, 0.18] : [0.62, 0.38]) : [1];
+  let left = dy;
+  for (let p = 0; p < parts.length; p++) {
+    const amount = p === parts.length - 1 ? left : Math.round(dy * parts[p]);
+    left -= amount;
+    const flickMs = (ms / parts.length) * rand(0.8, 1.2);
+    // time-based, so a slow wheel event never stretches the flick
+    const t0 = Date.now();
+    let done = 0;
+    while (done !== amount) {
+      const t = Math.min(1, (Date.now() - t0) / flickMs);
+      const target = Math.round(amount * (1 - Math.pow(1 - t, 2.6))); // ease-out, like a flick
+      if (target !== done) await page.mouse.wheel(0, target - done);
+      done = target;
+      if (t >= 1) break;
+      await sleep(12);
+    }
+    if (p < parts.length - 1) await sleep(rand(90, 220));
   }
 }
 
@@ -254,6 +288,34 @@ async function type(text, perChar = 38) {
     await page.keyboard.type(ch);
     await sleep(perChar + (/[ ,.]/.test(ch) ? 40 : Math.random() * 25));
   }
+}
+
+/** Grabs an element and throws it to the right (a flashcard swipe: "knew it"). */
+async function dragRight(loc) {
+  await loc.waitFor({ state: "visible", timeout: waitLimit });
+  const b = await loc.boundingBox();
+  const x0 = Math.round(b.x + b.width * rand(0.45, 0.6)), y0 = Math.round(b.y + b.height * rand(0.45, 0.6));
+  if (!PHONE) await cursorTo(x0, y0, 380);
+  await page.mouse.move(x0, y0);
+  await sleep(rand(120, 200));
+  await page.evaluate(() => document.getElementById("demo-cursor")?.classList.add("down"));
+  await page.mouse.down();
+  const dist = Math.min(VIEW.width * 0.55, 420), ms = rand(420, 560), steps = Math.round(ms / 16);
+  for (let i = 1; i <= steps; i++) {
+    const t = i / steps, e = t * t * (3 - 2 * t);
+    const x = x0 + dist * e, y = y0 - 18 * Math.sin(Math.PI * t) + 6 * t;
+    await page.mouse.move(x, y);
+    await page.evaluate(([x, y]) => {
+      const c = document.getElementById("demo-cursor");
+      if (!c) return;
+      c.style.transform = `translate(${x}px,${y}px)`;
+      c.dataset.x = x;
+      c.dataset.y = y;
+    }, [x, y]);
+    await sleep(ms / steps);
+  }
+  await page.mouse.up();
+  await page.evaluate(() => document.getElementById("demo-cursor")?.classList.remove("down"));
 }
 
 /** A step that may be missing on some screen size/language: log and go on instead of failing the take. */
@@ -341,7 +403,7 @@ async function openAnatomy({ title = /^Anatomija|^Anatomy/, keepChat = false } =
   await link.waitFor({ state: "visible", timeout: 15000 });
   // on shorter screens the note sits under the floating chat bar: scroll it up first
   const b = await link.boundingBox();
-  if (b && b.y + b.height > VIEW.height * 0.62) {
+  if (b && b.y + b.height > VIEW.height * (PHONE ? 0.62 : 0.8)) {
     await scroll(Math.round(b.y - VIEW.height * 0.35), 550);
     await sleep(150);
   }
@@ -360,41 +422,43 @@ const BEATS = {
    *  the AI tutor explaining. */
   async tour() {
     // library, ~1 s
-    await idle(700);
-    // open the first note (on a laptop it opens next to the tutor chat, which stays for the end), ~4 s
-    await openAnatomy({ title: /^Mikroekonomija|^Microeconomics/, keepChat: true });
+    await idle(PHONE ? 800 : 600);
+    // open the first note, close the side chat, scroll down to its graph, ~4.5 s
+    await openAnatomy({ title: /^Mikroekonomija|^Microeconomics/ });
     await idle(300);
-    await soft("diagram", () => scrollTo(page.locator("main img").first(), 800));
-    await idle(600);
-    await scroll(-4000, 500); // back up to the tabs
-    await sleep(200);
-    // flashcards: flip one, ~3 s
+    await soft("graph", () => scrollTo(page.locator("main img").first(), 1000));
+    await idle(PHONE ? 800 : 600);
+    await scroll(-4000, 550); // back up to the tabs
+    await sleep(rand(150, 300));
+    // flashcards: flip one, then drag it away to the right, ~4 s
     await click(iconButton("style"), { pause: 80 });
-    await sleep(600);
-    await soft("flip", () => click(vis(page.locator(".lecture-flashcard")), { dy: -20, pause: 80 }));
-    await idle(1100);
-    // quiz: answer one, ~3 s
+    await sleep(650);
+    await soft("cards", async () => {
+      const card = vis(page.locator(".lecture-flashcard"));
+      await click(card, { dy: -20, pause: 90 });
+      await idle(PHONE ? 900 : 750);
+      await dragRight(card);
+      await idle(PHONE ? 700 : 450);
+    });
+    // quiz: answer one, ~2.5 s
     await click(iconButton("quiz"), { pause: 80 });
     await sleep(600);
     await soft("quiz", async () => {
-      await click(byText(QUIZ.get(await findQuizPrompt()).correct), { pause: 100 });
+      await click(byText(QUIZ.get(await findQuizPrompt()).correct), { pause: 120 });
       await idle(900);
     });
-    // mind map, ~2.5 s
+    // mind map, ~2 s
     await click(iconButton("account_tree"), { pause: 80 });
-    await sleep(800);
+    await sleep(700);
     if (!PHONE) await soft("zoom", () => click(iconButton("add"), { pause: 80 }));
-    await idle(700);
-    // the AI tutor explains, ~4 s
-    await soft("tutor", async () => {
-      if (PHONE) {
-        await click(iconButton("description"), { pause: 80 }); // the phone's chat bar sits under the notes tab
-        await sleep(350);
-        await click(vis(page.locator(".memo-m-chatbar")), { pause: 80 });
-        await sleep(600);
-      }
-      await click(byText(M["chat.suggestion.explain"]), { pause: 100 });
-      await idle(2000);
+    await idle(600);
+    // the voice tutor explains the note out loud, ~5 s
+    await soft("voice tutor", async () => {
+      await click(iconButton("graphic_eq"), { pause: 80 });
+      await sleep(700);
+      await click(vis(page.locator(".memo-tutor button").filter({ hasText: M["tutor.start"] ?? "§" }).or(page.locator(".memo-tutor button.memo-tutor-start, .memo-tutor .memo-btn-primary"))), { pause: 100 });
+      await fast(() => sleep(1300), 2.5); // "getting ready…"
+      await idle(PHONE ? 2400 : 2000);
     });
   },
 
@@ -508,7 +572,7 @@ const BEATS = {
     await link.waitFor({ state: "visible", timeout: 15000 });
     // on shorter screens the note sits under the floating chat bar: scroll it up first
     const b = await link.boundingBox();
-    if (b && b.y + b.height > VIEW.height * 0.62) {
+    if (b && b.y + b.height > VIEW.height * (PHONE ? 0.62 : 0.8)) {
       await scroll(Math.round(b.y - VIEW.height * 0.35), 900);
       await idle(500);
     }

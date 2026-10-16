@@ -6,6 +6,10 @@ import path from "node:path";
 
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const RAW = path.join(HERE, "out", "demos");
+// The demo server runs a local Memo AI copy whose creator demo also shows the voice tutor tab (scripted, like the
+// landing page): see README.
+const APP = process.env.DEMO_APP ?? "http://localhost:3556";
+const MEMO = process.env.DEMO_MEMO ?? path.join(process.env.HOME, "dev/Memo_AI-demo-tutor");
 const LANGS = { hr: "Balkan", sl: "Slovenija" }; // Balkan pages use the Croatian (ijekavian) app
 const DEVICES = { mac: "Mac", windows: "Windows", phone: "telefon" };
 const pick = process.argv.slice(2).find((a) => !a.startsWith("--"));
@@ -20,7 +24,7 @@ for (const lang of Object.keys(LANGS)) {
     try {
       execFileSync(
         process.execPath,
-        ["record.mjs", "--device", device, "--lang", lang, "--name", "tour", "--beats", "tour", "--out", RAW, "--no-warm"],
+        ["record.mjs", "--device", device, "--lang", lang, "--name", "tour", "--beats", "tour", "--out", RAW, "--no-warm", "--app", APP, "--memo", MEMO],
         { cwd: HERE, stdio: "inherit" },
       );
     } catch {
