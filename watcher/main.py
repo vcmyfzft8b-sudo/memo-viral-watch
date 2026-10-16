@@ -18,7 +18,7 @@ import tempfile
 import time
 import traceback
 
-from . import align, audit, builder, classify, crosscheck, detect, discover, gate, hot, lineup, llm, localize, markets as M, media, notify, notion, own, rank, reword, soniox, state, tiktok, weekly
+from . import ages, align, audit, builder, classify, conversion, crosscheck, detect, discover, gate, hot, lineup, llm, localize, markets as M, media, notify, notion, own, rank, reword, soniox, state, tiktok, weekly
 from .brand import OURS, SOURCE, links_for
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
@@ -99,7 +99,109 @@ def to_history(history, v, local, now):
         entry['views_7d'] = v['views']
     elif 'views_7d' in old:
         entry['views_7d'] = old['views_7d']
-    history[v['id']] = entry
+    conversion.record(entry, v, old)  # likes/saves/shares: the ranking is about saves (15 Oct 2026)
+    history[v['id']] = {**old, **entry}
+
+
+def read_saves(history, fmts, cfg, now, limit=None, sort_limit=None):
+    """Saves of older videos (stored before saves were kept), then the ones no check has put into a format yet are
+    sorted: the ranking needs every format's save rate (user's rule, 15 Oct 2026)."""
+    cc = conversion.conf(cfg)
+    details = conversion.backfill(history, limit or cc['backfill_per_run'], now, min_views=cc['min_views'],
+                                  days=cc['window_days'])
+    sort = conversion.to_sort(history, details)[:sort_limit or cc['classify_per_run']]
+    results = classify.classify_many(sort, fmts, cfg['models']['classify']) if sort else {}
+    for d in sort:
+        c = results.get(d['id'])
+        if c:
+            history[d['id']].update({'format': c['match'], 'sorted': True,
+                                     'hook': history[d['id']].get('hook') or c['hook_en']})
+    if details:
+        print(f'saves read for {len(details)} older videos, {len(results)} sorted into formats')
+    return details, results
+
+
+def add_cta(fmts, mkts, only=None):
+    """Every live page gets the comment CTA as the last line of its script (user's rule, 16 Oct 2026), in place:
+    'Komentariši »WORD« i poslaću ti link do aplikacije.' with the format's word from registry/cta_words.json. A page
+    that already has a CTA is left alone; a format without a word is reported, never guessed. Returns
+    {'added': [...], 'had': [...], 'missing_word': [...], 'failed': [...]}."""
+    out = {'added': [], 'had': [], 'missing_word': [], 'failed': []}
+    for f in fmts:
+        if f.get('status') not in ('active', 'pending') or (only and f['id'] not in only):
+            continue
+        for mk in M.of(mkts, f):
+            pid = page_of(f, mk['key'])
+            if not pid:
+                continue
+            label = f"{mk['key']} {f['title'][:40]}"
+            try:
+                blocks = reword.script_blocks(pid)
+                if any(M.has_cta(reword._plain(b)) for b in blocks):
+                    out['had'].append(label)
+                    continue
+                word = M.cta_word(f['id'], mk['lang'])
+                if not word or not blocks:
+                    out['missing_word' if not word else 'failed'].append(label + ('' if word else ' (no word)'))
+                    continue
+                silent = reword._plain(blocks[0]).strip() == mk['T']['silent_label']  # on-screen texts only
+                line = M.cta(mk['lang'], word)
+                notion.api('PATCH', f'/blocks/{pid}/children', {
+                    'children': [notion.para([notion.rt(line + ' ', bold=silent)])], 'after': blocks[-1]['id']})
+                out['added'].append(f'{label}: {line}')
+            except Exception as e:
+                out['failed'].append(f'{label}: {str(e)[:120]}')
+    return out
+
+
+def age_boxes(fmts, mkts, cfg, limit=None, only=None, redo=False):
+    """🎓 box under every script tied to one school level (ages.py). Each page is checked once (f['age'][market] =
+    page id + result); a rebuilt page (new id) is checked again. Returns {result: [labels]}."""
+    out, done = {}, 0
+    for f in fmts:
+        if f.get('status') != 'active' or (only and f['id'] not in only):
+            continue
+        for mk in M.of(mkts, f):
+            pid = page_of(f, mk['key'])
+            seen = (f.get('age') or {}).get(mk['key']) or {}
+            retry = seen.get('status', '').startswith(('held', 'error')) and seen.get('tries', 0) < 3
+            if seen.get('page') == pid and seen.get('status') == 'added' and not redo:
+                try:  # a page rewritten in place (rebuild, apply-approved) loses its box: checked every run
+                    if ages.has_box(notion.children(pid)):
+                        continue
+                    retry, seen = True, {}
+                except Exception:
+                    continue
+            if not pid or (seen.get('page') == pid and not retry and not redo):
+                continue
+            if limit is not None and done >= limit:
+                return out
+            done += 1
+            try:
+                status = ages.add_to_page(pid, mk['lang'], cfg['models']['build'], redo=redo)
+            except Exception as e:
+                status = 'error: ' + str(e)[:120]
+            tries = seen.get('tries', 0) + 1 if seen.get('page') == pid else 1
+            f.setdefault('age', {})[mk['key']] = {'page': pid, 'status': status, 'tries': tries}
+            out.setdefault(status.split(':')[0], []).append(f"{mk['key']} {f['title'][:40]}" +
+                                                             (f' ({status})' if ':' in status else ''))
+            state.save('formats.json', fmts)
+    return out
+
+
+def conversion_report(cfg, fmts, history):
+    """The list order with every format's save rate (read-only; printed in the run log)."""
+    ids, s = rank.order(history, fmts, cfg)
+    by = {f['id']: f for f in fmts}
+    p0 = conversion.baseline(history, conversion.conf(cfg))
+    print(f'typical save rate (all measured videos): {conversion.pct(p0)}')
+    print('LIST ORDER  score | saved by (videos) | conv x reach | viral 7d/30d')
+    for n, fid in enumerate(ids, 1):
+        x = s[fid]
+        print(f"  {n:>2}. {x['score']:5.2f} | {conversion.pct(x['raw_rate']):>5} ({x['saved_videos']:>2}) | "
+              f"{x['conv']:.2f} x {x['form']:.2f} | {x['recent_viral']}/{x['viral_30d']}"
+              f"{' | HOT' if x['hot'] else ''}  {by[fid]['title'][:50]}")
+    return ids, s
 
 
 def set_format(v, history, fid, judged=None):
@@ -139,6 +241,11 @@ def run(dry_run=False, only_detect=False):
     radar_page = cfg['notion']['radar_page']
 
     CTX.update({'meta': meta, 'accounts': account_info})
+    errors = []  # steps that failed in this run: one Discord alert at the end (a green run never hides a failed step)
+
+    def failed(step, e):
+        print(f'{step} failed:', str(e)[:200])
+        errors.append(f'{step}: {str(e)[:150]}')
 
     # 1. new videos
     fresh, embed_views = 0, {}
@@ -191,7 +298,7 @@ def run(dry_run=False, only_detect=False):
     for vid, v in sorted(videos.items(), key=lambda x: -x[1].get('views', 0)):
         if 'created' not in v:
             continue
-        lvl = detect.level(v, now, detect.creator_baseline(history, v['handle']), th)
+        lvl = detect.level(v, now, detect.creator_baseline(history, v['handle']), th, cfg)
         if not lvl or 'viral' in v['notified'] or (lvl == 'taking_off' and 'taking_off' in v['notified']):
             continue
         quiet = lvl == 'taking_off' and v.get('first_seen') == int(now) and now - v['created'] > 48 * 3600
@@ -232,6 +339,11 @@ def run(dry_run=False, only_detect=False):
                     v.setdefault('hook_en', c['hook_en'])
             print(f'sorted {len(todo)} videos')
 
+        try:
+            read_saves(history, fmts, cfg, now)
+        except Exception as e:
+            failed('saves backfill', e)
+
         # Viral videos not yet confirmed by the strict Claude check (e.g. older tags): re-check quietly (max 5 per run).
         for v in [v for v in videos.values() if v.get('views', 0) >= th['viral_views'] and not v.get('judged')
                   and 'created' in v and now - v['created'] <= cfg['watch_days'] * 86400][:5]:
@@ -256,7 +368,29 @@ def run(dry_run=False, only_detect=False):
             gate.retry_pending(fmts, mkts, cfg, history, account_info, meta, page_of, set_page, make_page, rebuild_page, rerank)
             state.save('formats.json', fmts)
         except Exception as e:
-            print('gate retry failed:', str(e)[:200])
+            failed('gate retry', e)
+
+    # 4a2. every live page keeps its comment CTA (user's rule, 16 Oct 2026) and new / rewritten pages get the 🎓 box
+    #      for scripts tied to one school level (a few pages per run)
+    if not dry_run and not only_detect:
+        try:
+            r = add_cta(fmts, mkts)
+            if r['added'] or r['missing_word'] or r['failed']:
+                print('comment CTA:', {k: v for k, v in r.items() if k != 'had'})
+            new = [x for x in r['missing_word'] if x not in meta.get('cta_missing', [])]  # alert once per page
+            meta['cta_missing'] = r['missing_word']
+            if new:
+                notify.push('⚠️ Pages without a comment CTA word', '\n'.join(new) +
+                            '\nAdd the word to registry/cta_words.json, then run mode=add-cta.')
+        except Exception as e:
+            failed('comment CTA', e)
+        try:
+            r = age_boxes(fmts, mkts, cfg, limit=4)
+            if r:
+                print('age boxes:', r)
+            state.save('formats.json', fmts)
+        except Exception as e:
+            failed('age boxes', e)
 
     # 4b. our own creators: new videos, views, formats (feeds the ranking: how each format does for US)
     own_accounts, own_videos = own.load()
@@ -267,7 +401,7 @@ def run(dry_run=False, only_detect=False):
             state.save('own.json', own_videos)
             state.save('own_accounts.json', own_accounts)
         except Exception as e:
-            print('own creators failed:', str(e)[:200])
+            failed('own creators', e)
 
     # 4c. Monday: weekly clean-up - formats that perform badly leave the list
     if not dry_run and not only_detect:
@@ -292,32 +426,38 @@ def run(dry_run=False, only_detect=False):
                         fill_market(mk['key'])
                         fmts[:] = load_formats()
             except Exception as e:
-                print('fill pages failed:', str(e)[:200])
+                failed('fill pages', e)
         if is_due:
             try:  # Monday: inspiration videos in each market's language for formats that still miss one
                 localize_report(localize.run(fmts, mkts, history, account_info, meta, cfg, page_of, now), only_changes=True)
                 state.save('formats.json', fmts)
             except Exception as e:
-                print('localize failed:', str(e)[:200])
+                failed('localize', e)
             try:  # Monday: every page must check out (example video = format, script follows it, reworded)
                 bad = [r for r in audit.run(fmts, mkts, cfg, history, account_info, meta, page_of, rebuild=rebuild_page, only_failed=True) if r[2] not in ('ok', 'fixed')]
                 state.save('formats.json', fmts)
                 if bad:
                     notify.push('⚠️ Page audit: pages that need a look', '\n'.join(f"{m} {t} – {' / '.join(n)[:150]}" for t, m, _, n in bad))
             except Exception as e:
-                print('audit failed:', str(e)[:200])
+                failed('audit', e)
             try:  # Monday: every format's three countries TOGETHER against its reference (cached unless anything changed)
                 group_report(fmts, mkts, cfg, meta, fix=True)
                 state.save('formats.json', fmts)
             except Exception as e:
-                print('cross-country check failed:', str(e)[:200])
+                failed('cross-country check', e)
+
+        # 4d. once a day: missing language pages built again, then the read-only verify; what is wrong goes to Discord
+        try:
+            daily_check(fmts, mkts, cfg, meta, now, fill=not is_due)
+        except Exception as e:
+            failed('daily check', e)
 
     # 5. going-viral card + Discord (every market), then sort all lists in the same order (what goes viral right now first)
     if not only_detect:
         try:
             hot.update(history, videos, fmts, cfg, meta, mkts, dry_run=dry_run)
         except Exception as e:
-            print('hot update failed:', str(e)[:200])
+            failed('hot update', e)
         if not dry_run:
             try:
                 before_top = meta.get('top3', [])
@@ -325,18 +465,20 @@ def run(dry_run=False, only_detect=False):
                 meta['top3'] = ids[:3]
                 if before_top and ids[:3] != before_top:
                     by = {f['id']: f for f in fmts}
-                    recent = rank.recent_viral(history, fmts, cfg)
+                    _, sc = rank.order(history, fmts, cfg)
                     notify.push('🔁 New top of the format list', '\n'.join(
-                        f"{n}. {by[i]['title']} – {recent.get(i, 0)} viral in 7 days" for n, i in enumerate(ids[:5], 1)))
+                        f"{n}. {by[i]['title']} – saved by {conversion.pct(sc[i]['rate'])} of viewers "
+                        f"({sc[i]['saved_videos']} videos) · {sc[i]['recent_viral']} viral in 7 days"
+                        for n, i in enumerate(ids[:5], 1)))
             except Exception as e:
-                print('re-sort failed:', str(e)[:200])
+                failed('re-sort', e)
 
     # 5b. Monday: weekly report in Slack
     if not dry_run:
         try:
             weekly.maybe_send(meta, history, own_videos, own_accounts, fmts, cfg, now)
         except Exception as e:
-            print('weekly report failed:', str(e)[:200])
+            failed('weekly report', e)
 
     # 6. every few days: complete the Astra AI account list (Lightreel) and pause/revive accounts
     today = datetime.datetime.now(datetime.timezone.utc)
@@ -362,7 +504,7 @@ def run(dry_run=False, only_detect=False):
                             ', '.join(f"@{h} ({own_accounts[h].get('market') or '?'})" for h in o_added))
             state.log({'type': 'own_discovery', 'added': o_added, 'paused': o_paused, 'revived': o_revived})
         except Exception as e:
-            print('own discovery failed:', str(e)[:200])
+            failed('own discovery', e)
 
     if not dry_run:
         state.save('videos.json', videos)
@@ -374,14 +516,51 @@ def run(dry_run=False, only_detect=False):
     # 7. older viral videos (up to 30 days) no run judged yet - e.g. of a creator followed later, outside the 7-day watch
     #    window: judged like any viral video (known format -> counts; new -> built), a few per run
     if not dry_run and not only_detect:
-        late = [k for k, v in history.items() if v.get('views', 0) >= cfg['thresholds']['viral_views']
+        late = [k for k, v in history.items() if conversion.worth_building(v, cfg)
                 and not v.get('judged') and now - v.get('created', 0) <= 30 * 86400]
         if late:
             try:
                 bootstrap(2)
             except Exception as e:
-                print('older viral videos failed:', str(e)[:200])
+                failed('older viral videos', e)
+    if errors and not dry_run:
+        notify.push('⚠️ Automatic run: steps failed', '\n'.join(errors)[:3500] +
+                    '\n\nThe run went on with the other steps. The run log on GitHub has the details.')
     print('actions:', json.dumps(actions, ensure_ascii=False))
+
+
+def daily_check(fmts, mkts, cfg, meta, now, fill=True):
+    """Once a day (user's request, 16 Oct 2026: every automatic run must work with no problems): language pages a
+    listed format still misses are built again (before only on Mondays - a held page waited unseen), then the
+    read-only verify checks every list and page. What is still wrong goes to Discord: new problems at once, the whole
+    open list again every 3 days."""
+    from . import verify
+    day = time.strftime('%Y-%m-%d', time.gmtime(now))
+    if meta.get('daily_check') == day:
+        return None
+    meta['daily_check'] = day
+    state.save('meta.json', meta)  # marked first: a step that fails or times out never repeats in every run
+    if fill:
+        for mk in mkts:
+            if any(f.get('status') == 'active' and not page_of(f, mk['key']) and M.of([mk], f) for f in fmts):
+                state.save('formats.json', fmts)
+                fill_market(mk['key'])
+                fmts[:] = load_formats()
+    problems = verify.run(cfg, fmts, page_of)
+    key = lambda p: p.split(' (held:')[0]  # the held reason changes from try to try - the problem stays the same
+    seen = set(meta.get('open_problems', []))
+    new = [p for p in problems if key(p) not in seen]
+    remind = bool(problems) and now - meta.get('problems_alerted', 0) >= 3 * 86400
+    meta['open_problems'] = [key(p) for p in problems]
+    if new or remind:
+        meta['problems_alerted'] = int(now)
+        old = [p for p in problems if p not in new]
+        notify.push('⚠️ Daily check: things to fix', (
+            ('New:\n' + '\n'.join(new) + '\n\n' if new else '') + ('Still open:\n' + '\n'.join(old) + '\n\n' if old else '')
+            )[:3300] + 'A page held again and again: lock its script with the user (registry/approved_scripts.json), '
+                       'then mode=add-market target=ID:market. Full list: mode=verify.')
+    state.save('meta.json', meta)
+    return problems
 
 
 def handle_alert(v, lvl, mkts, fmts, history, cfg, now, dry_run, only_detect, quiet=False):
@@ -389,10 +568,17 @@ def handle_alert(v, lvl, mkts, fmts, history, cfg, now, dry_run, only_detect, qu
     if now - v['created'] > cfg['watch_days'] * 86400:  # never alert on old videos
         return {'video': v['id'], 'level': lvl, 'skipped': 'older than watch window'}
     if dry_run:
-        print('DRY', lvl, v['handle'], v['views'], v.get('url'))
+        print('DRY', lvl, v['handle'], v['views'], f"saves {conversion.pct(conversion.save_rate(v))}", v.get('url'))
         return {'video': v['id'], 'level': lvl, 'views': v['views']}
+    if lvl == 'viral' and conversion.save_rate(v) is None and now - v['created'] < 6 * 86400:
+        # saves not readable this run (views-only check): wait for a full check - the saves decide whether a viral
+        # video may build a format (a later run reads them; after 6 days it goes ahead without them)
+        return {'video': v['id'], 'level': lvl, 'views': v['views'], 'deferred': 'saves unknown'}
     if lvl == 'viral':
         return handle_viral(v, mkts, fmts, history, cfg, now, only_detect)
+    if lvl == 'converting':
+        return handle_viral(v, mkts, fmts, history, cfg, now, only_detect,
+                            label=f'💾 CONVERTING: {SOURCE} video saved by {conversion.pct(conversion.save_rate(v))} of viewers')
     if not v.get('format_checked'):
         c = classify.classify(v, fmts, cfg['models']['classify'])
         set_format(v, history, c.get('match'))
@@ -401,7 +587,7 @@ def handle_alert(v, lvl, mkts, fmts, history, cfg, now, dry_run, only_detect, qu
     age_h = (now - v['created']) / 3600
     fmt_text = (f"Probably format: {known['title']}" + ('' if known.get('status') == 'active' else ' (archive)')
                 if known else f"Possibly new format: {v.get('hook_en') or '?'}")
-    msg = (f"@{v['handle']} – {fmt_views(v['views'])} views after {age_h:.0f} h · shares+saves {detect.engagement(v):.1%}\n"
+    msg = (f"@{v['handle']} – {fmt_views(v['views'])} views after {age_h:.0f} h · saved by {conversion.pct(conversion.save_rate(v))}\n"
            f"{fmt_text}\n(Full check with script follows if it goes viral.)")
     if not quiet:
         notify.push(f'🟡 Taking off: {SOURCE} video', msg, click=v['url'])
@@ -422,6 +608,16 @@ def market_links(fmt, mkts):
     return ' · '.join(f"<{page_url(page_of(fmt, mk['key']))}|{mk['T']['flag']}>" for mk in mkts if page_of(fmt, mk['key']))
 
 
+def below_typical(v, history, cfg, force=False):
+    """An archived format comes back only when the new video is saved at least like a typical video (else it would
+    come back for views alone and leave again on Monday). Returns the reason, '' when it may come back."""
+    r = conversion.save_rate(v)
+    p0 = conversion.baseline(history, conversion.conf(cfg))
+    if force or r is None or r >= p0:
+        return ''
+    return f'saved by {conversion.pct(r)}, less than a typical video ({conversion.pct(p0)})'
+
+
 def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, label=None, force=False, extra=None):
     """Every viral video (creators from ALL markets): download + Soniox transcript, Claude (Opus) judges it against
     ALL our formats (list + archive) and translates the script to English. Then for every market:
@@ -429,11 +625,12 @@ def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, labe
     new -> built in every market's language and added to every list. One Slack message with link, verdict, English
     script. If Claude fails, a basic message still goes out and the full check is retried next run."""
     age_h = (now - v['created']) / 3600
-    eng = detect.engagement(v)
-    eng_unknown = v.get('detail_missing') and not v.get('shares') and not v.get('saves')
-    weak = (not eng_unknown) and eng < cfg['thresholds']['min_engagement'] and not force  # force: added by hand
-    stats = (f"@{v['handle']} – *{fmt_views(v['views'])} views* after {age_h:.0f} h · shares+saves {eng:.1%}"
-             f"{' (weak)' if weak else ''}{' (unknown)' if eng_unknown else ''}")
+    rate = conversion.save_rate(v)
+    # too few saves (user's rule, 15 Oct 2026): still alerts and counts for a known format, never builds or brings back
+    weak = conversion.too_few_saves(v, cfg) and not force  # force: added by hand
+    stats = (f"@{v['handle']} – *{fmt_views(v['views'])} views* after {age_h:.0f} h · saved by {conversion.pct(rate)}"
+             f" · likes {conversion.pct(v.get('likes', 0) / v['views'] if rate is not None and v.get('views') else None)}"
+             f"{' (too few saves)' if weak else ''}")
     title = ('🧪 TEST – ' if test else '') + (label or f'🟢 VIRAL: {SOURCE} video')
     result = {'video': v['id'], 'level': 'viral', 'views': v['views']}
     work = tempfile.mkdtemp(prefix='viral-')
@@ -457,18 +654,30 @@ def handle_viral(v, mkts, fmts, history, cfg, now, only_detect, test=False, labe
             return result
 
         prepared = {'work': work, 'video_file': video_file, 'transcript': transcript} if video_file else None
-        blocked = 'weak engagement' if weak else 'only-detect mode' if only_detect else None if prepared else 'video unavailable'
+        blocked = (f"too few saves: {conversion.pct(rate)} < {conversion.pct(conversion.conf(cfg)['min_save_rate'])}"
+                   if weak else 'only-detect mode' if only_detect else None if prepared else 'video unavailable')
         known = resolve(fmts, verdict.get('duplicate_of')) if verdict.get('duplicate_of') else None
         if known:
             set_format(v, history, known['id'], judged=True)
             if known.get('status') == 'active':
+                back = []
+                if known.get('cleaned_from') and not blocked and not below_typical(v, history, cfg, force):
+                    for mk in [mk for mk in mkts if mk['key'] in known['cleaned_from']]:
+                        try:  # taken out of this market by the clean-up: a viral + saved video brings it back
+                            if restore_market_page(known, mk):
+                                back.append(mk['T']['flag'])
+                        except Exception as e:
+                            print('restore failed', mk['key'], known['title'], str(e)[:150])
+                    if back:
+                        rerank(mkts, fmts, history, cfg)
                 added = [] if blocked else ensure_market_pages(known, v, mkts, fmts, history, cfg, prepared)
+                added = back + added
                 pos = list_position(mkts[0], page_of(known, mkts[0]['key']))
                 outcome = (f"✅ *Already in Notion* – in the lists{f' as #{pos}' if pos else ''}: *{known['title']}* "
                            f"({market_links(known, mkts)})" + (f"\n➕ added missing pages: {' '.join(added)}" if added else ''))
-            elif blocked or known.get('removed_by_user'):
+            elif blocked or known.get('removed_by_user') or below_typical(v, history, cfg, force):
                 outcome = (f"📦 *Already in Notion* – in the archive: *{known['title']}* – not brought back "
-                           f"({blocked or 'removed by you'})")
+                           f"({blocked or ('removed by you' if known.get('removed_by_user') else below_typical(v, history, cfg, force))})")
             else:
                 ok, pos, reasons = revive_format(known, v, mkts, fmts, history, cfg, prepared=prepared)
                 outcome = (f"♻️ *Was in the archive → checked & brought back as #{pos}* in all lists: *{known['title']}* "
@@ -552,6 +761,41 @@ def make_page(v, mk, cfg, prepared, parent=None, title=None, replace_page=None, 
     return page['id'], spec, problems
 
 
+def drop_market_page(f, mk):
+    """The format leaves one market's list: its page moves to that market's archive (never deleted), and it is no
+    longer made for that market (only_markets), so no run builds the page again."""
+    pid = page_of(f, mk['key'])
+    if pid:
+        notion.move_page(pid, mk['archive_page'])
+        f.setdefault('dropped_pages', {})[mk['key']] = pid
+        set_page(f, mk['key'], None)
+        (f.get('pages') or {}).pop(mk['key'], None)
+    cfg = load_config()
+    left = [k for k in lineup.markets_of(f, cfg) if k != mk['key']]
+    if left:
+        f['only_markets'] = left
+    return pid, left
+
+
+def restore_market_page(f, mk):
+    """The format comes back into a market's list: the page it had there moves back from the archive."""
+    pid = (f.get('dropped_pages') or {}).get(mk['key'])
+    if not pid:
+        return None
+    notion.move_page(pid, mk['holder_page'])
+    set_page(f, mk['key'], pid)
+    f['dropped_pages'].pop(mk['key'], None)
+    only = set(f.get('only_markets') or []) | {mk['key']}
+    cfg = load_config()
+    if set(lineup.markets_of({}, cfg)) <= only:
+        f.pop('only_markets', None)
+    else:
+        f['only_markets'] = sorted(only)
+    f['cleaned_from'] = [k for k in f.get('cleaned_from', []) if k != mk['key']]
+    (f.get('cleanup_reason') or {}).pop(mk['key'], None)
+    return pid
+
+
 def set_page(fmt, m, page_id):
     if m == PRIMARY:
         fmt['page_id'] = page_id
@@ -572,16 +816,22 @@ def ensure_market_pages(fmt, v, mkts, fmts, history, cfg, prepared):
         if not pid:
             pid, spec, problems = make_page(v, mk, cfg, prepared, parent=cfg['notion']['radar_page'], attempts=3, fmt=fmt)
             if problems:
+                print('page not built:', mk['key'], fmt['title'][:40], '-', '; '.join(problems)[:300])
+                fmt.setdefault('held_why', {})[mk['key']] = 'not built: ' + '; '.join(problems)[:300]
                 continue
             pending_pages[mk['key']] = pid
             state.save('formats.json', fmts)
         staged_page_of = lambda f, m: pid if f['id'] == fmt['id'] and m == mk['key'] else page_of(f, m)
         status, notes = audit.fix_page(fmt, mk, cfg, history, accounts, meta, staged_page_of)
         meta.setdefault('audit', {})[f"{fmt['id']}:{mk['key']}"] = status
+        if status not in ('ok', 'fixed'):
+            print('page held by the check:', mk['key'], fmt['title'][:40], status, '-', ' / '.join(notes or [])[:300])
+            fmt.setdefault('held_why', {})[mk['key']] = f"{status}: {' / '.join(notes or [])[:300]}"
         if status in ('ok', 'fixed'):
             notion.move_page(pid, mk['holder_page'])
             set_page(fmt, mk['key'], pid)
             pending_pages.pop(mk['key'], None)
+            (fmt.get('held_why') or {}).pop(mk['key'], None)
             added.append(mk['T']['flag'])
         state.save('formats.json', fmts)
     if added:
@@ -647,10 +897,11 @@ def revive_format(fmt, v, mkts, fmts, history, cfg, prepared=None):
 
 def rerank(mkts, fmts, history, cfg, force=False):
     """One order for all markets (creators of all markets count the same); applied to every market's list.
-    Hot formats (5+ confirmed viral videos in 7 days) come first, inside the "going viral" section."""
+    Hot formats (5+ confirmed viral videos in 7 days that viewers also save) come first, inside the "going viral"
+    section; then by conversion score (rank.order)."""
     ids, scores = rank.order(history, fmts, cfg)
     by_id = {f['id']: f for f in fmts}
-    hot_ids = [i for i in ids if scores[i].get('recent_viral', 0) >= hot.MIN_VIRAL]
+    hot_ids = [i for i in ids if scores[i].get('hot')]  # 5+ viral in 7 days AND saved at least like an average format
     for mk in mkts:
         page_ids = [page_of(by_id[i], mk['key']) for i in ids if page_of(by_id[i], mk['key'])]
         hot_count = sum(1 for i in hot_ids if page_of(by_id[i], mk['key']))
@@ -1098,17 +1349,23 @@ def bootstrap(limit, days=30):
     for h in active:  # the embed's latest ~10 videos per account (views included, free)
         for item in tiktok.latest_videos(h):
             created = int(item['id']) >> 32
-            if item['id'] in seen or now - created > days * 86400 or item['views'] < cfg['thresholds']['viral_views']:
+            if (item['id'] in seen or now - created > days * 86400
+                    or item['views'] < min(cfg['thresholds']['viral_views'], conversion.conf(cfg)['convert_views'])):
                 continue
             seen.add(item['id'])
             h_ = history.get(item['id'], {})
             if h_.get('judged') and (h_.get('format') or h_.get('bootstrap_tries', 0) >= 2):
                 continue  # judged into a format already, or tried twice without one
+            if 'saves' in h_ and not conversion.worth_building(h_, cfg):
+                continue  # saves known: neither viral with enough saves nor converting
             cands.append((item['views'], h, item['id']))
     cands.sort(reverse=True)
-    print(f'bootstrap: {len(cands)} viral videos not judged yet in the last {days} days; doing {min(limit, len(cands))}')
-    done = []
-    for views, h, vid in cands[:limit]:
+    print(f'bootstrap: {len(cands)} viral/converting candidates not judged yet in the last {days} days; doing up to {limit}')
+    done, looked = [], 0
+    for views, h, vid in cands:
+        if len(done) >= limit or looked >= limit * 5:  # saves are read first: a few extra looks per handled video
+            break
+        looked += 1
         v = tiktok.video_detail(h, vid)
         if not v:
             print('unavailable', h, vid)
@@ -1116,6 +1373,11 @@ def bootstrap(limit, days=30):
         v.update({'notified': [], 'first_seen': int(now)})
         history.setdefault(vid, {'handle': h, 'created': v['created'], 'views': v['views'], 'hook': '', 'local': True,
                                  'mature': now - v['created'] >= 7 * 86400, 'judged': False})
+        conversion.record(history[vid], v)
+        if not conversion.worth_building(v, cfg):  # saves decide (user's rule, 15 Oct 2026)
+            print('bootstrap: skipped (too few saves)', h, vid, v['views'], conversion.pct(conversion.save_rate(v)))
+            state.save('history.json', history)
+            continue
         try:
             r = handle_viral(v, mkts, fmts, history, cfg, now, only_detect=False,
                              label=f'📚 Starter format from a viral {SOURCE} video')
@@ -1384,6 +1646,15 @@ def main():
     ap.add_argument('--gate-now', action='store_true', help='check -> fix -> check the waiting formats again and again right now (up to 4 rounds) instead of one round per 6-hour run')
     ap.add_argument('--strip-directions', action='store_true', help='every page: bracketed stage directions / acting tips leave the scripts (approved scripts: via apply-approved)')
     ap.add_argument('--fix-labs', action='store_true', help="every page: the Visual Hook Lab link points to its own market's lab")
+    ap.add_argument('--add-market', help='FORMAT_ID[,FORMAT_ID...]:market - add formats to that market\'s list (a page is built)')
+    ap.add_argument('--fix-app-link', help='FORMAT_ID[,FORMAT_ID]: stage directions out, the app link cue in (script + materials)')
+    ap.add_argument('--age-variants', nargs='?', const='-', default='',
+                    help='every live page (or these format ids): the 🎓 box with the script lines for other school levels')
+    ap.add_argument('--add-cta', nargs='?', const='-', default='',
+                    help='every live page (or only these format ids, comma-separated): the comment CTA at the end of the script')
+    ap.add_argument('--list-text', action='store_true', help='write the current 🔥 list instructions into every list')
+    ap.add_argument('--conversion', type=int, nargs='?', const=500, default=0,
+                    help='read saves of up to N older videos, sort them into formats, print the list by conversion')
     ap.add_argument('--api-probe', action='store_true', help='test only (private radar page): can a page be moved into a callout?')
     ap.add_argument('--rehome', action='store_true', help='format pages become sub-pages of the list page (back leads to the list)')
     ap.add_argument('--logo-all', action='store_true', help='every page: the official Memo AI logo (transparent, HQ) in the materials')
@@ -1482,18 +1753,24 @@ def main():
             print(f"  {by.get(fid, fid)[:50]:50} ours: {x['n']} videos, {2 ** x['lift']:.2f}x usual, {x['hits_100k']} >=100k")
         rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg)
         return
+    if a.conversion:  # read the saves of older videos now (instead of 60 per run), sort them, print the board
+        cfg, fmts, history = load_config(), load_formats(), state.load('history.json', {})
+        read_saves(history, fmts, cfg, time.time(), limit=a.conversion, sort_limit=a.conversion)
+        state.save('history.json', history)
+        conversion_report(cfg, fmts, history)
+        return
     if a.lineup or a.lineup_apply:
         cfg, fmts, history = load_config(), load_formats(), state.load('history.json', {})
         _, own_videos = own.load()
         p = (lineup.apply(history, fmts, cfg, own_videos, M.load(cfg)) if a.lineup_apply
              else lineup.plan(history, fmts, cfg, own_videos))
         b = p['board']
-        print('IN THE LIST (weakest last):')
+        print(f"IN THE LIST (weakest last) - typical save rate {conversion.pct(p['typical_rate'])}:")
         for f in sorted([f for f in fmts if f.get('status') == 'active' or f in [x[0] for x in p['out']]],
-                        key=lambda f: -b[f['id']]['form']):
+                        key=lambda f: -b[f['id']]['score']):
             x = b[f['id']]
-            print(f"  {x['form']:.2f}  {f['title'][:50]:50} {SOURCE} {x['js_form']:.2f} ({x['all_videos']} videos) "
-                  f"x ours {x['own_factor']:.2f} ({x['own_videos']}) {'| protected: ' + p['protected'][f['id']] if p['protected'].get(f['id']) else ''}")
+            print(f"  {x['score']:.2f}  {f['title'][:50]:50} saved by {conversion.pct(x['raw_rate'])} ({x['videos']} videos) "
+                  f"conv {x['conv']:.2f} x reach {x['form']:.2f} {'| protected: ' + p['protected'][f['id']] if p['protected'].get(f['id']) else ''}")
         print('OUT:', [(f['title'], round(sc, 2), r) for f, sc, r in p['out']])
         if a.lineup_apply:
             state.save('formats.json', fmts)
@@ -1830,20 +2107,46 @@ def main():
         rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg, force=True)
         print(f"remove-format: {f['title']} archived in every market")
         return
-    if a.drop_market:
-        fid, key = a.drop_market.strip().split(':')
+    if a.drop_market:  # "FID[,FID...]:market" - out of that market's list only (page to its archive)
+        ids, key = a.drop_market.strip().rsplit(':', 1)
         cfg, fmts = load_config(), load_formats()
         mk = next(x for x in M.load(cfg) if x['key'] == key)
-        f = next(x for x in fmts if x['id'] == fid)
-        pid = page_of(f, key)
-        if pid:
-            notion.move_page(pid, mk['archive_page'])  # kept in the archive, never deleted
-            f.setdefault('dropped_pages', {})[key] = pid
-            set_page(f, key, None)
-            (f.get('pages') or {}).pop(key, None)
-        state.save('formats.json', fmts)
+        for fid in [x.strip() for x in ids.split(',') if x.strip()]:
+            f = next(x for x in fmts if x['id'] == fid)
+            pid, left = drop_market_page(f, mk)
+            if not left:  # no list keeps it: archived
+                f['status'] = 'archived'
+                f['archived_reason'] = f'dropped from {key} by hand'
+            state.save('formats.json', fmts)
+            print(f"drop-market: {f['title']} left {key} (page in the archive: {pid}); lists now: {lineup.markets_of(f, cfg)}")
         rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg, force=True)
-        print(f"drop-market: {f['title']} left {key} (page in the archive: {pid})")
+        return
+    if a.add_market:  # "FID[,FID...]:market" - into that market's list too (its old page back, or a new one is built)
+        ids, key = a.add_market.strip().rsplit(':', 1)
+        cfg, fmts = load_config(), load_formats()
+        mk = next(x for x in M.load(cfg) if x['key'] == key)
+        build = False
+        for fid in [x.strip() for x in ids.split(',') if x.strip()]:
+            f = next(x for x in fmts if x['id'] == fid)
+            if page_of(f, key):
+                print('add-market: already in', key, f['title'])
+                continue
+            only = set(f.get('only_markets') or lineup.markets_of(f, cfg)) | {key}
+            if set(lineup.markets_of({}, cfg)) <= only:
+                f.pop('only_markets', None)
+            else:
+                f['only_markets'] = sorted(only)
+            f['cleaned_from'] = [k for k in f.get('cleaned_from', []) if k != key]
+            (f.get('dropped_pages') or {}).pop(key, None)  # a fresh page in today's rules (the old one stays archived)
+            m = re.search(r'/video/(\d+)', f.get('source_video') or '')
+            pin = (hand_options(m.group(1)) if m else {}).get('only_markets')
+            if pin and key not in pin:  # registry/hand_formats.json wins on every load: change it there first
+                raise SystemExit(f"add-market: {f['title']} is pinned to {pin} in registry/hand_formats.json")
+            build = True
+            print('add-market:', f['title'], '->', lineup.markets_of(f, cfg))
+        state.save('formats.json', fmts)
+        if build:
+            fill_market(key)
         return
     if a.app_timing:
         from . import timing
@@ -1967,6 +2270,40 @@ def main():
     if a.relink:
         from . import setup
         setup.relink(load_config(), load_formats(), page_of)
+        return
+    if a.fix_app_link:  # "ID[,ID]": stage directions out + the app link cue in (script line and materials box)
+        cfg, fmts = load_config(), load_formats()
+        for f in [f for f in fmts if f['id'] in a.fix_app_link.split(',')]:
+            for mk in M.of(M.load(cfg), f):
+                pid = page_of(f, mk['key'])
+                if not pid:
+                    continue
+                if align.approved_script(f['id'], mk['lang']):
+                    print('fix-app-link: approved script, change it in registry/approved_scripts.json:', f['title'])
+                    continue
+                n = reword.strip_directions(pid)
+                added = reword.ensure_app_link(pid, links_for(cfg['links'], f)['memo'], mk['lang'])
+                print(f"fix-app-link: {mk['key']} {f['title']} - {n} directions removed, link added to: {added or 'nothing'}")
+        return
+    if a.age_variants:
+        cfg, fmts = load_config(), load_formats()
+        arg = a.age_variants.strip()  # "!ID,ID": write those boxes again
+        r = age_boxes(fmts, M.load(cfg), cfg, only=[x for x in arg.lstrip('!').split(',') if x and x != '-'],
+                      redo=arg.startswith('!'))
+        for k, v in r.items():
+            print(f'{k}: {len(v)}', *('  ' + x for x in v), sep='\n')
+        return
+    if a.add_cta:
+        cfg, fmts = load_config(), load_formats()
+        r = add_cta(fmts, M.load(cfg), only=[x for x in a.add_cta.split(',') if x and x != '-'])
+        for k, v in r.items():
+            print(f'{k}: {len(v)}', *('  ' + x for x in v), sep='\n')
+        if r['failed'] or r['missing_word']:
+            raise SystemExit('add-cta: some pages have no CTA yet (see above)')
+        return
+    if a.list_text:
+        from . import setup
+        setup.list_text(load_config())
         return
     if a.relayout:
         from . import setup

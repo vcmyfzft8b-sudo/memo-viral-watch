@@ -46,6 +46,12 @@ TEXT = {
                         'PowerPoint ili snimak predavanja, pa pokažeš bilješke, flash kartice, kviz, probni test i druge funkcije koje aplikacija ima. Snimi to '
                         'isto kao u videu za inspiraciju.'),
         'cue_verb': 'Snimi',
+        # comment CTA at the end of every script (user's rule, 16 Oct 2026); {word} fits the script
+        'cta': 'Komentariši »{word}« i poslaću ti link do aplikacije.',
+        # 🎓 box under scripts tied to one school level (ages.py, user's request 16 Oct 2026)
+        'age_h': 'Prilagodi svom uzrastu',
+        'age_intro': 'Ako ne ideš u istu školu kao u scenariju, ove rečenice izgovori ovako:',
+        'age_levels': {'osnovna': 'Osnovna škola', 'srednja': 'Srednja škola', 'faks': 'Faks'},
         'pitch': ('u nju ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio '
                   'snimak ubaciti u Memo AI. Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, '
                   's kojima sve naučiš na jako jednostavan način.'),
@@ -79,10 +85,12 @@ TEXT = {
         'draft_prefix': 'NACRT – ',
         'list_title': 'Koje videe snimaš (OBAVEZNO)', 'list_h1': 'Kako snimaš svoje videe',
         'list_heading': 'SNIMAJ SADA: ovi formati',
-        'list_fire': ['Snimaj formate redom, od vrha prema dnu, i prođi cijelu listu. Drži se scenarija, vizuelnog hooka '
-                      'i materijala na svakoj stranici.',
-                      '**Samo ako neki video pređe {views} pregleda**, snimaj taj format iznova – dokle god je viralan. '
-                      'Nakon toga nastavi s listom.'],
+        # user's rule (15 Oct 2026): the list is sorted by how many viewers SAVE a format's videos, views still count
+        'list_fire': ['Snimaj formate redom, od vrha prema dnu, i prođi cijelu listu. Na vrhu su formati čije videe ljudi '
+                      'najviše spremaju (to donosi nove korisnike), a koji i dalje dobivaju puno pregleda. Drži se '
+                      'scenarija, vizuelnog hooka i materijala na svakoj stranici.',
+                      '**Ako neki tvoj video pređe {views} pregleda ili ga ljudi puno spremaju**, snimaj taj format '
+                      'iznova – dokle god tako ide. Nakon toga nastavi s listom.'],
         'visual_rule': '**Vizuelni hook je obavezan u svakom videu!** Ideje imaš u ',
         'hot_suffix': '  ({n} videa s više od {views} pregleda u zadnjih 7 dana)',
         'holder': 'Svi formati', 'archive': 'Arhiva formata', 'guide': 'Memo AI – upute za kreatore',
@@ -137,6 +145,10 @@ TEXT = {
                         'PowerPoint ali posnetek predavanja, nato pokažeš zapiske, učne kartice, kviz, poskusni test in druge funkcije, ki jih ima aplikacija. '
                         'Posnemi to enako kot v videu za navdih.'),
         'cue_verb': 'Posnemi',
+        'cta': 'Komentiraj »{word}« in pošljem ti link do aplikacije.',
+        'age_h': 'Prilagodi svoji starosti',
+        'age_intro': 'Če ne hodiš v isto šolo kot v scenariju, te stavke povej tako:',
+        'age_levels': {'osnovna': 'Osnovna šola', 'srednja': 'Srednja šola', 'faks': 'Faks'},
         'pitch': ('vanjo naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in zvočni posnetek '
                   'naložiš v Memo AI. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi '
                   'se vse naučiš na zelo preprost način.'),
@@ -169,10 +181,11 @@ TEXT = {
         'draft_prefix': 'OSNUTEK – ',
         'list_title': 'Kakšne videe snemaš (OBVEZNO)', 'list_h1': 'Kako snemaš svoje videe',
         'list_heading': 'SNEMAJ ZDAJ: ti formati',
-        'list_fire': ['Snemaj formate po vrsti, od zgoraj navzdol, in pojdi čez cel seznam. Drži se scenarija, vizualnega '
-                      'hooka in gradiva na vsaki strani.',
-                      '**Samo če kateri video preseže {views} ogledov**, ta format snemaj vedno znova – dokler je viralen. '
-                      'Potem nadaljuj s seznamom.'],
+        'list_fire': ['Snemaj formate po vrsti, od zgoraj navzdol, in pojdi čez cel seznam. Na vrhu so formati, katerih '
+                      'videe ljudje največkrat shranijo (to prinese nove uporabnike) in ki še vedno dobijo veliko '
+                      'ogledov. Drži se scenarija, vizualnega hooka in gradiva na vsaki strani.',
+                      '**Če kateri tvoj video preseže {views} ogledov ali ga veliko ljudi shrani**, ta format snemaj vedno '
+                      'znova – dokler tako gre. Potem nadaljuj s seznamom.'],
         'visual_rule': '**Vizualni hook je obvezen v vsakem videu!** Ideje najdeš v ',
         'hot_suffix': '  ({n} videov z več kot {views} ogledi v zadnjih 7 dneh)',
         'holder': 'Vsi formati', 'archive': 'Arhiv formatov', 'guide': 'Memo AI – navodila za ustvarjalce',
@@ -234,15 +247,46 @@ def avoid_found(lang, text):
 
 EARLY_WORDS = 50  # Memo AI comes in at about 15 s: at most this many spoken words before the first app cue
 
+# The comment CTA that ends every script (user's rule, 16 Oct 2026): "comment »WORD« and I'll send you the link".
+CTA_RE = re.compile(r'\bkoment\w*\s*[»«"„“]\s*[^»«"„“”]{1,30}?\s*[«»"“”].{0,80}?\blink', re.I | re.S)
+CTA_WORDS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'registry', 'cta_words.json')
+
+
+def cta(lang, word):
+    """The CTA line in the page language: 'Komentariši »POPUST« i poslaću ti link do aplikacije.'"""
+    return TEXT[lang]['cta'].format(word=word.strip().strip('»«"').upper())
+
+
+def has_cta(text):
+    return bool(CTA_RE.search(text or ''))
+
+
+def strip_cta(text):
+    """The text without the comment CTA sentence: the CTA is ours, never counted against the original's length."""
+    return re.sub(CTA_RE.pattern + r'[^.!?\n]*[.!?]?', ' ', text or '', flags=re.I | re.S)
+
+
+def cta_word(fid, lang):
+    """The comment word picked for this format and language (registry/cta_words.json), None if there is none."""
+    import json
+    try:
+        with open(CTA_WORDS) as f:
+            return (json.load(f).get(fid) or {}).get(lang)
+    except FileNotFoundError:
+        return None
+
 
 def conversion_rules(lang, own_example=False):
     """How every script is built (user's rules, 12 Oct 2026, from the scripts reworked together): the original's viral
     hook, Memo AI early (~15 s) with the standard pitch, then the rest tightened. Our own creators' videos (already
     built this way) stay word for word."""
     T = TEXT[lang]
+    end = (f'END: the very last line of every script is the comment CTA, exactly in this form: "{T["cta"]}" - {{word}} = '
+           'ONE short word in capitals that fits this script (e.g. the topic: POPUST, TAJNA, FAKS, ZAPISKI), in the page '
+           'language. It replaces the original\'s own ending call to action (follow / like); nothing comes after it.')
     if own_example:
         return ('The example is already a Memo AI video of our own creators: keep its words almost one to one (same '
-                'sentences, order, jokes); only spelling/grammar and the language rules may change.')
+                'sentences, order, jokes); only spelling/grammar and the language rules may change.\n' + end)
     return f"""HOW OUR SCRIPTS ARE BUILT (user's rules - every script follows them):
 1. HOOK: keep the original's hook (first sentence(s), on-screen title, premise) almost word for word - that is what
    made it go viral.
@@ -256,7 +300,8 @@ def conversion_rules(lang, own_example=False):
 5. TRUTH: only real Memo AI features; never another app's features or company facts (founding year, prices, codes):
    leave such parts out instead of inventing.
 6. FORM: on-screen sticker texts as their own lines ("{T['screen_label']} ..."); a dialogue with the app's voice as
-   "Memo AI: ..." / "Ti: ..." lines."""
+   "Memo AI: ..." / "Ti: ..." lines.
+7. {end}"""
 
 
 def words_before_app(script, cue):

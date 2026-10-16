@@ -25,6 +25,12 @@ before the first app cue, checked) at a logical point (secret / solution / next 
 the rest of the beats tightened (~60 s max); only real Memo AI features, never another app's company facts; sticker
 lines "Tekst na ekranu:" / "Besedilo na zaslonu:", app-voice dialogues "Memo AI:" / "Ti:". Memo AI must be named
 (spoken) at least once. Our own creators' videos (`own_brand`, per format or per language) stay 1:1.
+CTA (user's rule, 16 Oct 2026): every script ends with "Komentariši »WORD« i poslaću ti link do aplikacije." /
+"Komentiraj »WORD« in pošljem ti link do aplikacije." - WORD fits the script (registry/cta_words.json, picked with the
+user; new formats: the writer picks it, `builder.validate` and `verify` check it; `mode=add-cta` adds it to live pages).
+🎓 Age box (user's request, 16 Oct 2026): under a script tied to one school level (faks / srednja / osnovna) the page
+shows those lines for the other levels (gray 🎓 callout after the CTA, `watcher/ages.py`; the script itself never
+changes). Every run checks up to 4 new/rebuilt pages; `mode=age-variants` does all.
 Every page's materials hold the official Memo AI logo (registry/materials/_logo, = Memo_AI/public/memo-lockup.png).
 Format pages are sub-pages of the creator list page (holder_page = list_page; `mode=rehome`).
 
@@ -56,7 +62,8 @@ Format pages are sub-pages of the creator list page (holder_page = list_page; `m
   formati", one guide page per market (list "👉 … (OBAVEZNO/OBVEZNO)" laid out 1:1 like the Parakeet list, all formats,
   archive, Visual Hook Lab = copy of Parakeet's, translated). Page ids: `state/notion.json`.
 - App links on pages → https://memoai.eu/creator (user's choice); creators SAY memoai.eu.
-- No shares/saves bar (user's choice, 10 Oct 2026): only views (100k+) decide what becomes a format.
+- Saves decide (user's rule, 15 Oct 2026 - replaces the 10 Oct "only views" choice): the list holds formats that
+  CONVERT best (viewers save the videos) and still go viral. `watcher/conversion.py` + `config.json` → `conversion`.
 - Brand matching knows declined forms (Astri, Astru, Astro …): `brand.SOURCE_RE`.
 - Own Memo AI creators: off until there is a Memo AI campaign in Megasheet (`config.json` → "megasheet").
 
@@ -79,9 +86,19 @@ on memoai.eu that creators film, e.g. memoai.eu/ugc/oral-quiz), `brief` (note fr
 writer and every check), `own_brand` (example is already a Memo AI video → the note under it doesn't say "another
 brand"). Several formats in one run: separate them with `;` in the add_format input.
 
-## Ranking (user's rule, 11 Oct 2026)
-Hot formats (5+ viral in 7 days) first; then most viral videos (100k+) in the last 7 days; on a tie, most viral
-videos in the last 30 days; then current form (`rank.order`). A format's own source video always counts for it.
+## Ranking and clean-up (user's rule, 15 Oct 2026 - replaces the views-only order of 11 Oct)
+Hot formats (5+ viral in 7 days AND saved at least like an average format) first; then by conversion score = conv ×
+reach^0.5 (conv = save rate vs the typical video, smoothed; reach = current form); ties: viral in 7 / 30 days
+(`rank.order`). New formats: a viral video saved by 0.5%+ of viewers, or a "converting" one (30k+ views, 300+ saves,
+2%+ saved, e.g. @studytipsbyem's "3 apps" video: 46k, 4.3%). Monday clean-up (`lineup.py`): a format with 2+ videos with
+saves and score < 0.9 leaves (archive), also when it goes viral or is new. History keeps likes/saves/shares; older
+videos get their saves read 60 per run (`mode=conversion` does it at once and prints the board). Per market (16 Oct 2026): only markets with
+`"cleanup": true` are cleaned - Balkan keeps only the highest-converting formats, Slovenia (`"cleanup": false`) keeps
+every format (they convert there); a format taken out of the Balkans stays on the Slovenian list (`only_markets`,
+`cleaned_from`) and comes back by itself when a new video of it goes viral/converts with saves. By hand:
+`mode=drop-market target=ID[,ID]:sh`, `mode=add-market target=ID[,ID]:sl` (builds the page). List instructions
+(🔥 box) say the order: `mode=list-text` writes them in place (never `relayout` – format pages are sub-pages of the
+list). A format's own source video always counts for it.
 
 ## Materials
 Images for a format's 🔧 materials section (e.g. screenshots cut from the original video): put them in
@@ -101,12 +118,22 @@ registry/export_cert.pem, to state/scripts_export.enc (repo and logs are public)
 ## Check everything
 `mode=verify` (read-only): every list (order, numbering, layout), live page (video, sections, links), held page
 (staging) and both hook labs against the state; also lists leftover staging pages (never deletes).
+Automatic (user's request, 16 Oct 2026: auto runs must work with no problems): once a day the normal run builds
+missing language pages again and runs verify (`main.daily_check`); problems go to Discord (new ones at once, the open
+list every 3 days), a held page shows why (`held_why`). A step that fails inside a run sends one "steps failed" alert.
+A page held again and again usually needs its script locked with the user (approved_scripts.json), then add-market.
 
-## Status (12 Oct 2026)
-Balkan list 14 formats, Slovenian list 16 (4 Slovenian-only from our own creators: near 1:1 transcripts). Every Balkan
-format was reworked with the user, script by script, and is locked in registry/approved_scripts.json (sh + sl):
-Memo AI comes as early as possible (~15 s, user's rule), with the app pitch "PDF/PowerPoint or recorded lecture ->
-notes, flashcards, tests, quizzes, other features", correct Slovenian (follow = "zafolovat"), the 🎥 recording rule
-(open Memo AI via the format's link, go through it and show the features, like in the example). Removed by the user:
-Gradivo kao sočan trač, Biologija (archived, never revived); Balkan only: e-dnevnik, Popusti (MEMO50 code). Slovenian
-page of "Tajne" shows Klara's Memo AI video as the example (own_brand per language). Open: Discord server logo (user).
+## Status (16 Oct 2026)
+Lists follow the conversion rules (saves first, views second). Balkan list: only the highest-converting formats
+(Studentski popusti, 3 apps "Prosjek 5.0 i 9.6", Ispitna pitanja unaprijed, Tajne, Ocjene, Prodajem mjesto,
+e-dnevnik, Top 5 fakulteta, Mozak premium, Prodajem mjesto na laptopu, and "Nisam stvorena za sestrinstvo" (the
+DICK oral-quiz format, put back by the user's request 16 Oct)); the other formats taken out by hand (16 Oct) stay on
+the Slovenian list. Studentski popusti's Slovenian script is locked too (user's OK 16 Oct) - unlocked, its page kept
+failing the check and stayed in staging.
+Slovenian list: every format (they convert there) + the best Balkan converters (Studentski popusti and e-dnevnik with
+Slovenian pages - their old Balkan-only pin in registry/hand_formats.json was removed with the user's OK). Every
+page: comment CTA + 🎓 age box where the script depends on the school level (checked again every run).
+Earlier (12 Oct): every Balkan format was reworked with the user, script by script, and is locked in
+registry/approved_scripts.json (sh + sl) - now with the CTA as the last line. Removed by the user: Gradivo kao sočan
+trač, Biologija (archived, never revived). Slovenian page of "Tajne" shows Klara's Memo AI video as the example
+(own_brand per language). Open: Discord server logo (user).

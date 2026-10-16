@@ -2,6 +2,7 @@
 import time
 
 from . import notify, rank, state
+from .conversion import pct
 from .brand import SOURCE
 
 WEEK = 7 * 86400
@@ -20,11 +21,12 @@ def report(history, own_videos, own_accounts, fmts, cfg, now):
     ours = {vid: v for vid, v in own_videos.items() if v.get('ours') and now - v['created'] <= WEEK}
 
     lines = [f"_{time.strftime('%d.%m.', time.gmtime(now - WEEK))}–{time.strftime('%d.%m.%Y', time.gmtime(now))}_", '',
-             '*Top 5 formats (current list order)*']
+             '*Top 5 formats (current list order: saves first, views second)*']
     for n, fid in enumerate(ids[:5], 1):
         js = [v for v in week.values() if v.get('format') == fid]
         us = [v for v in ours.values() if v.get('format') == fid]
-        lines.append(f"{n}. *{title(fid)}*\n      {SOURCE}: {len(js)} videos, {sum(v['views'] >= viral for v in js)} viral"
+        lines.append(f"{n}. *{title(fid)}* – saved by {pct(s[fid]['raw_rate'])} of viewers ({s[fid]['saved_videos']} videos)"
+                     f"\n      {SOURCE}: {len(js)} videos, {sum(v['views'] >= viral for v in js)} viral"
                      f" · Ours: {len(us)} videos, {_k(sum(v['views'] for v in us))} views"
                      + (f", best {_k(max(v['views'] for v in us))}" if us else '')
                      + (f" · for us so far: {2 ** s[fid]['own_lift']:.1f}x our creators' usual views"

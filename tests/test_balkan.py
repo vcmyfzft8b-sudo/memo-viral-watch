@@ -28,9 +28,22 @@ def test_ekavian_words_are_found_ijekavian_pass():
     assert markets.avoid_found('sh', 'Uvijek imam vremena gdje god da sam') == []
 
 
-def spec(text):
+def spec(text, cta='Komentariši »TEST« i poslaću ti link do aplikacije.'):
     return {'page_title': 'Naslov 📚', 'title_hook': 'Naslov', 'visual_hook_first': 'Govori u kameru.',
-            'voiceover': True, 'script': [{'cue': brand.CUE, 'text': text}]}
+            'voiceover': True, 'script': [{'cue': brand.CUE, 'text': text}] + ([{'cue': None, 'text': cta}] if cta else [])}
+
+
+def test_every_script_ends_with_the_comment_cta():  # user's rule, 16 Oct 2026
+    ok = 'Sutra je test i ja još nisam ništa naučila, ali Memo AI mi je sve objasnio da sam sve razumjela.'
+    assert any('comment CTA' in p for p in builder.validate(spec(ok, cta=None), {'text': ''}))
+    assert any('comment CTA' in p for p in builder.validate(spec(ok, cta='Zaprati me za još.'), {'text': ''}))
+    assert markets.cta('sh', 'popust') == 'Komentariši »POPUST« i poslaću ti link do aplikacije.'
+    assert markets.cta('sl', 'zapiski') == 'Komentiraj »ZAPISKI« in pošljem ti link do aplikacije.'
+    assert markets.has_cta(markets.cta('sl', 'x')) and not markets.has_cta('Komentirajte koju ste probali')
+    assert 'END' in markets.conversion_rules('sh') and 'Komentiraj' in markets.conversion_rules('sl', own_example=True)
+    # the CTA is not counted for the length against the original
+    long_cta = spec('Memo AI ' + 'je i da se na za ne su to ' * 4)
+    assert not any('length' in p for p in builder.validate(long_cta, {'text': 'je i da se na za ne su to ' * 4}))
 
 
 def test_validate_blocks_source_brand_cyrillic_and_ekavian():
@@ -122,9 +135,10 @@ def test_tracked_creator_is_only_dropped_when_a_second_look_agrees(tmp_path):
 def test_slovenian_pages_have_every_text_and_reject_serbo_croatian_leftovers():
     assert set(markets.TEXT['sl']) == set(markets.TEXT['sh'])
     ok = 'Jutri pišem test iz biologije in nisem še ničesar odprla, ampak Memo AI mi je vse lepo razložil.'
-    assert builder.validate(spec(ok), {'text': ''}, lang='sl') == []
-    assert any('Croatian/Serbian' in p for p in builder.validate(spec(ok + ' Što ćeš?'), {'text': ''}, lang='sl'))
-    assert any('characters' in p for p in builder.validate(spec(ok + ' Đak.'), {'text': ''}, lang='sl'))
+    sl = lambda t: spec(t, cta='Komentiraj »TEST« in pošljem ti link do aplikacije.')
+    assert builder.validate(sl(ok), {'text': ''}, lang='sl') == []
+    assert any('Croatian/Serbian' in p for p in builder.validate(sl(ok + ' Što ćeš?'), {'text': ''}, lang='sl'))
+    assert any('characters' in p for p in builder.validate(sl(ok + ' Đak.'), {'text': ''}, lang='sl'))
     assert markets.lang_matches('sl', 'Slovenian') and not markets.lang_matches('sl', 'Croatian')
 
 

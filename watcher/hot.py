@@ -1,5 +1,6 @@
 """Hot formats: 5+ viral videos of the same format posted within the last 7 days, from creators of all
-markets, each confirmed by the strict Claude check as that format.
+markets, each confirmed by the strict Claude check as that format - and viewers save the format at least like an
+average one (conversion.hot_min_conv, user's rule 15 Oct 2026: going viral alone is not enough).
 
 While a format is hot it moves into the "going viral" section at the top of every list (main.rerank); once per hot period an
 @everyone announcement in each market's language goes to its Discord #announcements (webhook from discord_env), the
@@ -74,9 +75,12 @@ def announcement(T, f, n, page_id, viral_views=100_000):
 def update(history, videos, formats, cfg, meta, mkts, dry_run=False):
     """Recompute hot formats (shared list, creators of all markets) and show them in every market:
     "going viral" section at the top of each list + one @everyone Discord post per market in its language."""
+    from . import conversion
     viral = cfg['thresholds']['viral_views']
     proof = viral_videos(history, videos, formats, viral)
-    hot_now = {fid: len(vs) for fid, vs in proof.items() if len(vs) >= MIN_VIRAL}
+    conv, _ = conversion.board(history, formats, cfg)  # a format that only goes viral is not hot (15 Oct 2026)
+    hot_now = {fid: len(vs) for fid, vs in proof.items()
+               if len(vs) >= MIN_VIRAL and conv.get(fid, {}).get('conv', 0) >= conversion.conf(cfg)['hot_min_conv']}
     before = meta.get('hot', {})
     by_id = {f['id']: f for f in formats}
     print('hot formats:', {by_id[f]['title'][:40]: n for f, n in hot_now.items()} or 'none')

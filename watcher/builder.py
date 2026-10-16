@@ -8,7 +8,7 @@ from .brand import CATEGORY, CUE, FACTS, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE,
 HERE = os.path.dirname(os.path.abspath(__file__))
 EXAMPLES = os.path.join(HERE, '..', 'registry', 'examples')
 
-from .markets import EARLY_WORDS, PRIMARY, TEXT, avoid_found, conversion_rules, words_before_app
+from .markets import EARLY_WORDS, PRIMARY, TEXT, avoid_found, conversion_rules, has_cta, words_before_app
 
 REQUIRED_LINE = TEXT[next(iter(TEXT))]['required_line']
 
@@ -141,8 +141,12 @@ def validate(spec, transcript, lang=PRIMARY):
     avoid = avoid_found(lang, blob)
     if avoid:
         problems.append(f"{T['avoid_reason']}: {', '.join(avoid[:6])}")
+    script = spec.get('script') or []
+    if script and not has_cta(script[-1].get('text', '')):  # user's rule, 16 Oct 2026
+        problems.append(f"the script does not end with the comment CTA (\"{T['cta']}\")")
     orig_words = len(transcript.get('text', '').split())
-    new_words = sum(len(s.get('text', '').split()) for s in spec.get('script', []))
+    # the CTA is ours, not the original's: it does not count for the length
+    new_words = sum(len(s.get('text', '').split()) for s in script if not has_cta(s.get('text', '')))
     if spec.get('voiceover', True) and orig_words >= 20:
         ratio = new_words / orig_words
         if not 0.35 <= ratio <= 1.12:

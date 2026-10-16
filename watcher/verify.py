@@ -58,6 +58,16 @@ def check_page(pid, T, links, lang=None, own=False, link=None, override=None):
     if len(section) != 2 or not _plain(section[0]).startswith(T['hook_start'].strip()) or 'Visual Hook Lab' not in _plain(section[1]):
         out.append(f'visual hook section is not "one sentence + Visual Hook Lab line" ({len(section)} lines)')
     from . import reword
+    from .markets import has_cta
+    h = next((n for n, b in enumerate(blocks) if b['type'].startswith('heading') and '💬' in _plain(b)), None)
+    script = []
+    for b in blocks[h + 1:] if h is not None else []:
+        if b['type'] == 'divider' or b['type'].startswith('heading'):
+            break
+        if _plain(b).strip() and b['type'] != 'callout':  # the 🎓 age box (ages.py) sits after the CTA
+            script.append(b)
+    if script and not has_cta(_plain(script[-1])):  # user's rule, 16 Oct 2026
+        out.append('script does not end with the comment CTA (mode=add-cta)')
     left = reword.directions_left(pid)
     if left:
         out.append(f'stage directions in the script: {left[0][:60]}' + (f' (+{len(left) - 1})' if len(left) > 1 else ''))
@@ -101,7 +111,8 @@ def run(cfg, fmts, page_of):
             pid = page_of(f, key)
             if not pid:
                 if f.get('status') in ('active', 'pending') and key in (f.get('only_markets') or [key]):
-                    problems.append(f"{flag} {f['title']}: no page")
+                    why = (f.get('held_why') or {}).get(key)
+                    problems.append(f"{flag} {f['title']}: no page" + (f" (held: {why[:200]})" if why else ''))
                 continue
             where = _parent(pid)
             if f.get('status') == 'active' and where != holder:

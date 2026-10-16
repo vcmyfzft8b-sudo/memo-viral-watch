@@ -17,7 +17,7 @@ import re
 from . import llm, localize, notion, reword, state
 from .markets import EARLY_WORDS, conversion_rules, own as own_example, words_before_app
 from .brand import CUE, FACTS, NO_DIRECTIONS, OURS, OURS_SITE, SOURCE, SOURCE_RE, count_app, count_ours, count_source, links_for
-from .markets import TEXT
+from .markets import TEXT, strip_cta
 
 SOURCE_MENTION = SOURCE_RE  # spoken/written mentions of the watched app (incl. speech-to-text mishearings)
 
@@ -116,7 +116,8 @@ recording is shown, and the asset names):
 
 Write our {T['lang_name']} script for this video ({T['style']}):
 1. {conversion_rules(lang, own_ex)}
-2. The whole script has {int(n_orig * (0.8 if own_ex else 0.35))}-{max_words(n_orig)} words (the original has {n_orig}).
+2. The whole script has {int(n_orig * (0.8 if own_ex else 0.35))}-{max_words(n_orig)} words (the original has {n_orig}),
+   not counting the comment CTA at the end.
    {SOURCE} (or another study app the original promotes) / its website become "{OURS}" / {OURS_SITE}; never
    mention {SOURCE}.
 3. An app feature {OURS} does not have becomes the closest real {OURS} feature (only those words, see above).
@@ -141,7 +142,7 @@ Return JSON {{"source_mentions_in_original": <number>, "voiceover": {str(voiceov
     if draft_url:
         return 'draft', {**spec, 'example': draft_url, 'n_orig': n_orig}
     return _write(fmt, page_id, lang, cfg, links, spec,
-                  f"{sum(_words(s['text']) for s in spec['script'])} words (original {n_orig})")
+                  f"{sum(_words(strip_cta(s['text'])) for s in spec['script'])} words (original {n_orig})")
 
 
 def _write(fmt, page_id, lang, cfg, links, spec, info):
@@ -188,7 +189,7 @@ def _validate(spec, n_orig, source=None, lang=None, own_ex=True):
     if not script:
         return 'empty script'
     text = ' '.join(s.get('text', '') for s in script)
-    n = _words(text)
+    n = _words(strip_cta(text))  # the comment CTA (user's rule, 16 Oct 2026) is not part of the original's length
     lo = 0.8 if own_ex else 0.35  # our rules tighten the original (never longer); our own creators' videos stay 1:1
     if not lo * n_orig <= n <= max_words(n_orig):
         return f'the script has {n} words, it must have {int(n_orig * lo)}-{max_words(n_orig)}'
