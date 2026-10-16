@@ -2184,7 +2184,7 @@ def main():
         state.save('formats.json', fmts)
         print('reopened:', f['title'], '->', f['status'])
         return
-    if a.repitch:  # old app wording back (registry/demo_pitch.json), then one demo cue after the app's name
+    if a.repitch:  # paragraph fixes (registry/demo_pitch.json), then one demo cue after the app's name
         cfg, fmts, n, missing = load_config(), load_formats(), 0, []
         with open(os.path.join(ROOT, 'registry', 'demo_pitch.json')) as fh:
             changes = json.load(fh)
@@ -2217,7 +2217,7 @@ def main():
                             cues += 1
                     except Exception as e:
                         missing.append(f"{key} {f['title'][:40]}: one cue: {str(e)[:100]}")
-        print(f'repitch: {n} script paragraphs back to the old wording, {cues} demo cue paragraphs fixed',
+        print(f'repitch: {n} script paragraphs changed (registry/demo_pitch.json), {cues} demo cue paragraphs fixed',
               *(['not found:'] + ['  ' + x for x in missing] if missing else []), sep='\n')
         if missing:
             raise SystemExit('repitch: some paragraphs were not found (see above)')
