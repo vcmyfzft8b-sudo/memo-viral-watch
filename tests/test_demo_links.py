@@ -44,7 +44,7 @@ def test_page_has_no_creator_link():
     assert 'memoai.eu/creator' not in text and not any(u and 'memoai.eu' in u for u in urls)
     assert FOLDER in urls and all(v in urls for v in VIDEOS.values())
     note = '\n'.join(notion.inspo_note('sh'))
-    assert 'Mac snimak' in note and 'Android snimak' in note and 'memoai.eu/creator' not in note
+    assert 'preuzmi' in note and 'overlay' in note and 'Android snimak' in note and 'memoai.eu/creator' not in note
 
 
 def test_only_the_first_cue_says_start_here():

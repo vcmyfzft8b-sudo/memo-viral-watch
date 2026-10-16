@@ -1,8 +1,8 @@
 """🎓 "Fit it to your age" box under a script (user's request, 16 Oct 2026).
 
 Many scripts are tied to one school level ("4th year of uni", "matura", "8th grade"). Our creators are of different
-ages, so under such a script the page shows, per other level (primary school / high school / university), the few
-words to swap - short, just the main point (user's rule: never whole sentences again). Scripts that do not depend on the school level
+ages, so under such a script the page shows ONE short tip: what a creator at another level swaps (user's rule: "just a
+tip" - one sentence). Scripts that do not depend on the school level
 get no box. The script itself never changes (approved scripts stay locked); the box is a gray callout after the
 script's last line (after the comment CTA).
 """
@@ -26,50 +26,35 @@ def _norm(t):
 
 
 def variants(lines, lang, model='opus'):
-    """The few words to swap per school level, short (user's rule, 16 Oct 2026: just the main point, a few
-    sentences - never whole lines again): [{'level': 'osnovna', 'swaps': [{'from': '…', 'to': '…'}]}] ([] = the script
-    fits every level). 'from' is a short phrase exactly as it is in the script; at most 3 swaps per level."""
+    """One short tip for creators at another school level (user's rule, 16 Oct 2026: "just a tip" - one sentence, never
+    lists or whole lines): [{'tip': '…'}], or [] when the script fits every level."""
     T = TEXT[lang]
     numbered = '\n'.join(f'{i}. {t}' for i, t in enumerate(lines, 1))
     prompt = f"""Script of a TikTok video for creators to record ({T['lang_name']}, the page language):
 {numbered}
 
-Our creators are of different ages: primary school (upper grades), high school, or university. Some words in the
-script only fit ONE school level (e.g. "4th year of uni", "faks", "matura", "8th grade", "professor" vs "teacher",
-"exam period", "lecture" vs "class", a specific faculty or school, a grade average that only exists at one level).
-For each OTHER level, list ONLY the few words a creator at that level must swap so the script fits them - the main
-point, not whole sentences: each swap is a short phrase copied exactly from the script (2-8 words) and its
-replacement (as short). At most 3 swaps per level; same meaning, joke and tone. Use real names of that country's
-school system ({'Slovenia: osnovna šola, srednja šola/gimnazija, splošna matura, faks/fakulteta, profesor' if lang == 'sl' else 'Serbia/Croatia/Bosnia: osnovna škola, srednja škola/gimnazija, matura, faks/fakultet, profesor'}).
-Rules: write in {T['lang_name']} ({T.get('style') or 'as spoken by young creators'}); never name any app except Memo AI;
-never touch "Memo AI" or the comment line at the end. Leave out a level whose wording already fits (e.g. the script's
-own level). If nothing depends on the school level, return empty lists.
+Our creators are of different ages: primary school (upper grades), high school, or university. Does the script's
+STORY depend on one school level (e.g. "4th year of uni", "8th grade", "matura", a grade average only one level has,
+a specific faculty or school)? If yes, write ONE short tip (one sentence, at most 140 characters) telling a creator at
+another level what to swap, quoting at most the one or two key words from the script, e.g. "Ako ne ideš na faks,
+umjesto »prvu godinu studija« reci svoj razred i svoj prosjek." Ignore everyday words that fit everyone well enough
+("predavanje"/"lecture" in the app pitch, "profesor", "test"). Use the country's school words
+({'Slovenia: osnovna šola, srednja šola/gimnazija, matura, faks' if lang == 'sl' else 'Serbia/Croatia/Bosnia: osnovna škola, srednja škola/gimnazija, matura, faks'}).
+Write in {T['lang_name']} ({T.get('style') or 'as spoken by young creators'}); never name any app.
+If the story fits every level, return an empty tip.
 
-Return JSON {{"osnovna": [{{"from": "<phrase from the script>", "to": "<primary-school wording>"}}], "srednja": [...],
-"faks": [...]}}"""
+Return JSON {{"tip": "<the one sentence, or empty>"}}"""
     r = llm.chat_json(model, SYSTEM, prompt, timeout=900)
-    script = _norm(' '.join(l for l in lines if not has_cta(l))).lower()
-    out = []
-    for lv in LEVELS:
-        swaps, seen = [], set()
-        for x in (r.get(lv) or [])[:3]:
-            try:
-                a, b = _norm(x.get('from')), _norm(x.get('to'))
-            except AttributeError:
-                continue
-            if not a or not b or a.lower() == b.lower() or len(a) > 90 or len(b) > 90 or a.lower() not in script or a in seen:
-                continue
-            seen.add(a)
-            swaps.append({'from': a, 'to': b})
-        if swaps:
-            out.append({'level': lv, 'swaps': swaps})
-    return out
+    tip = _norm(r.get('tip'))
+    if not tip or len(tip) > 220 or has_cta(tip):
+        return []
+    return [{'tip': tip}]
 
 
 def problems(found, lang):
     """Reasons not to publish a box (same checks as the scripts: no other app, page language)."""
     T = TEXT[lang]
-    text = ' '.join(w['to'] for x in found for w in x['swaps'])
+    text = ' '.join(x['tip'] for x in found)
     out = []
     if says_source(text):
         out.append('names the other app')
@@ -82,14 +67,10 @@ def problems(found, lang):
 
 
 def box(found, lang):
-    """The gray 🎓 callout: heading, one intro line, then one short line per school level with its swaps."""
+    """The gray 🎓 callout: one line - 'Savjet za tvoj uzrast: <tip>'."""
     T = TEXT[lang]
-    names = T['age_levels']
-    rich = [notion.rt(T['age_h'], bold=True), notion.rt('\n' + T['age_intro'])]
-    for x in found:
-        rich.append(notion.rt(f"\n→ {names[x['level']]}: ", bold=True))
-        rich.append(notion.rt('; '.join(f"»{w['from']}« → »{w['to']}«" for w in x['swaps']) + '.'))
-    return notion.block('callout', rich, icon={'type': 'emoji', 'emoji': MARK}, color='gray_background')
+    return notion.block('callout', [notion.rt(T['age_h'] + ' ', bold=True), notion.rt(found[0]['tip'])],
+                        icon={'type': 'emoji', 'emoji': MARK}, color='gray_background')
 
 
 def has_box(blocks):
