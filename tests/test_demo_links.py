@@ -69,3 +69,46 @@ def test_live_page_keeps_one_cue_after_the_name():
         'Druga, ki sem jo največ uporabljala, je Memo AI. (🎥 Tukaj predvajaj Memo AI demo) Vanjo naložiš PDF-je.'
     assert democue.fix_page([{'id': 'b', 'type': 'paragraph', 'paragraph': {'rich_text': out['a']}}], 'sl') == {}  # stable
     assert democue.anchor('Memo AI: Tvoja pacientka …') is None  # a speaker label is not the creator naming the app
+
+
+def test_cue_after_the_name_in_spoken_lines():
+    from watcher import democue
+    cut = lambda t: t[:democue.anchor(t, 'Tekst na ekranu:')]
+    assert cut('Ako koristiš Memo AI aplikaciju za učenje, ispadaš, jer je realno najbolja aplikacija za učenje i time već pobjeđuješ.') \
+        == 'Ako koristiš Memo AI aplikaciju za učenje,'
+    assert cut('One koriste ovu aplikaciju, Memo AI, i ti ovdje samo ubaciš svoje bilješke – a ako ih nemaš, uslikaš tuđe.') \
+        == 'One koriste ovu aplikaciju, Memo AI,'
+    assert cut('Ubacim PDF-ove, a mogu i snimiti predavanje i taj audio snimak ubaciti u Memo AI – dobijem bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija.') \
+        == 'Ubacim PDF-ove, a mogu i snimiti predavanje i taj audio snimak ubaciti u Memo AI'
+    assert democue.anchor('Tekst na ekranu: 3/4 Memo AI 🧠', 'Tekst na ekranu:') is None
+
+
+def test_cue_moves_from_an_on_screen_line_to_where_the_name_is_said():
+    from watcher import democue
+    seg = lambda text, cue=None, new=True: {'cue': cue, 'asset_name': '', 'text': text, 'new_paragraph': new}
+    popusti = [seg('Kao drugo, besplatan Microsoft Office.'), seg('Tekst na ekranu: 3/4 Memo AI 🧠', 'memo'),
+               seg('Kao treće, na Memo AI imate besplatan trial: u tu aplikaciju ubacite PDF-ove.'), seg('Komentariši »POPUST«.')]
+    out = democue.fix_spec(popusti, 'sh')
+    assert [(s['text'], s['cue']) for s in out[1:4]] == [
+        ('Tekst na ekranu: 3/4 Memo AI 🧠', None), ('Kao treće, na Memo AI imate besplatan trial:', None),
+        ('u tu aplikaciju ubacite PDF-ove.', 'memo')]
+    mozak = [seg('POV: nisi pretplaćen na mozak premium', 'asset'), seg('Pa highkey nadogradiš mozak uz Memo AI', 'memo'),
+             seg('PDF, PowerPoint ili snimak predavanja → bilješke, kartice i kvizovi 🧠')]
+    assert [s['cue'] for s in democue.fix_spec(mozak, 'sh')] == ['asset', None, 'memo']  # the name ends the line: next line
+
+
+def test_old_wording_comes_back_and_the_cue_stays_after_the_name():
+    from watcher import democue
+    it = lambda t, link=None: {'type': 'text', 'plain_text': t, 'text': {'content': t, 'link': {'url': link} if link else None}, 'annotations': {}}
+    rich = [it('Druga je Memo AI. ('), it('🎥 Tukaj predvajaj Memo AI demo', FOLDER),
+            it(') Vanjo naložiš PDF-je ali posnameš predavanje in dobiš urejene zapiske, kvize in miselni vzorec. '), it('Na primer kviz.')]
+    now = 'Druga je Memo AI. Vanjo naložiš PDF-je ali posnameš predavanje in dobiš urejene zapiske, kvize in miselni vzorec. Na primer kviz.'
+    old = 'Druga je Memo AI. Vanjo naložiš PDF-je, lahko pa predavanje tudi posnameš. Ven dobiš zapiske, teste in kvize. Na primer kviz.'
+    assert democue.restore(rich, 'nekaj drugega', old) is None
+    back = democue.restore(rich, now, old)
+    plain = lambda r: ''.join(x['text']['content'] for x in r)
+    assert plain(back) == '(🎥 Tukaj predvajaj Memo AI demo) ' + old
+    block = [{'id': 'a', 'type': 'paragraph', 'paragraph': {'rich_text': [dict(x, plain_text=x['text']['content']) for x in back]}}]
+    assert plain(democue.fix_page(block, 'sl')['a']) == \
+        'Druga je Memo AI. (🎥 Tukaj predvajaj Memo AI demo) Vanjo naložiš PDF-je, lahko pa predavanje tudi posnameš. Ven dobiš zapiske, teste in kvize. Na primer kviz.'
+    assert democue.reads('Druga je Memo AI. (🎥 Tukaj predvajaj Memo AI demo) Vanjo', 'Druga je Memo AI. Vanjo')
