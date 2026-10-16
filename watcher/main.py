@@ -2188,15 +2188,16 @@ def main():
         cfg, fmts, n, missing = load_config(), load_formats(), 0, []
         with open(os.path.join(ROOT, 'registry', 'demo_pitch.json')) as fh:
             changes = json.load(fh)
+        from . import democue
+        cues = 0
         for f in [f for f in fmts if f.get('status') in ('active', 'pending')]:
             for key, mk in cfg['markets'].items():
                 pairs, pid = (changes.get(mk['lang']) or {}).get(f['id']), page_of(f, key)
-                if not pairs or not pid:
+                if not pid:
                     continue
                 try:
                     blocks, done = reword.script_blocks(pid), set()
-                    text = ' '.join(reword._plain(b) for b in blocks)
-                    for b in blocks:
+                    for b in blocks if pairs else []:
                         out, touched = [], False
                         for x in b[b['type']].get('rich_text', []):
                             if x.get('type') != 'text':
@@ -2212,11 +2213,21 @@ def main():
                         if touched:
                             notion.api('PATCH', f"/blocks/{b['id']}", {b['type']: {'rich_text': out}})
                             n += 1
-                    missing += [f"{key} {f['title'][:40]}: {old[:50]}" for old, new in pairs
-                                if old not in done and new not in text]
+                    text = ' '.join(reword._plain(b) for b in reword.script_blocks(pid))  # after the changes
+                    missing += [f"{key} {f['title'][:40]}: {old[:50]}" for old, new in pairs or []
+                                if old not in done and new not in text and not any(new == o for o, _ in pairs)]
                 except Exception as e:
                     missing.append(f"{key} {f['title'][:40]}: {str(e)[:100]}")
-        print(f'repitch: {n} script paragraphs changed', *(['not found:'] + ['  ' + x for x in missing] if missing else []), sep='\n')
+                if not f.get('app_link'):  # then one demo cue, right after the app's name (democue.py)
+                    try:
+                        blocks = reword.script_blocks(pid)
+                        for bid, rich in democue.fix_page(blocks, mk['lang']).items():
+                            b = next(b for b in blocks if b['id'] == bid)
+                            notion.api('PATCH', f"/blocks/{bid}", {b['type']: {'rich_text': rich}})
+                            cues += 1
+                    except Exception as e:
+                        missing.append(f"{key} {f['title'][:40]}: one cue: {str(e)[:100]}")
+        print(f'repitch: {n} script paragraphs changed, {cues} demo cue paragraphs fixed', *(['not found:'] + ['  ' + x for x in missing] if missing else []), sep='\n')
         if missing:
             raise SystemExit('repitch: some changes were not found (see above)')
         return

@@ -47,9 +47,25 @@ def test_page_has_no_creator_link():
     assert 'preuzmi' in note and 'overlay' in note and 'Android snimak' in note and 'memoai.eu/creator' not in note
 
 
-def test_only_the_first_cue_says_start_here():
-    spec = {'script': [{'cue': 'memo', 'asset_name': '', 'text': 'Prvi.', 'new_paragraph': True},
-                       {'cue': 'memo', 'asset_name': '', 'text': 'Drugi.', 'new_paragraph': True}]}
-    labels = [x['text']['content'] for p in notion.script_paragraphs(spec, {'memo': FOLDER}, 'sl')
-              for x in p['paragraph']['rich_text'] if (x['text'].get('link') or {}).get('url') == FOLDER]
-    assert labels == ['🎥 Tukaj predvajaj Memo AI demo', '🎥 Memo AI demo']
+def test_one_demo_cue_right_after_the_app_is_named():
+    spec = {'script': [{'cue': None, 'asset_name': '', 'text': 'Prvi stavek.', 'new_paragraph': True},
+                       {'cue': 'memo', 'asset_name': '', 'text': 'Rekla mi je: »Odpri Memo AI.« Vanjo naložiš PDF-je.', 'new_paragraph': True},
+                       {'cue': 'memo', 'asset_name': '', 'text': 'In dobiš kartice.', 'new_paragraph': False}]}
+    paras = [''.join(x['text']['content'] for x in p['paragraph']['rich_text']) for p in notion.script_paragraphs(spec, {'memo': FOLDER}, 'sl')]
+    assert paras[1] == 'Rekla mi je: »Odpri Memo AI.« (🎥 Tukaj predvajaj Memo AI demo) Vanjo naložiš PDF-je. In dobiš kartice. '
+    # the oral quiz's own page keeps its cues
+    quiz = notion.script_paragraphs(spec, {'memo': QUIZ}, 'sl')
+    assert sum('🎥' in x['text']['content'] for p in quiz for x in p['paragraph']['rich_text']) == 2
+
+
+def test_live_page_keeps_one_cue_after_the_name():
+    from watcher import democue
+    it = lambda t, link=None: {'type': 'text', 'plain_text': t, 'text': {'content': t, 'link': {'url': link} if link else None}, 'annotations': {}}
+    blocks = [{'id': 'a', 'type': 'paragraph', 'paragraph': {'rich_text': [
+        it('('), it('🎥 Tukaj predvajaj Memo AI demo', FOLDER), it(') Druga, ki sem jo največ uporabljala, je Memo AI. ('),
+        it('🎥 Memo AI demo', FOLDER), it(') Vanjo naložiš PDF-je.')]}}]
+    out = democue.fix_page(blocks, 'sl')
+    assert ''.join(x['text']['content'] for x in out['a']) == \
+        'Druga, ki sem jo največ uporabljala, je Memo AI. (🎥 Tukaj predvajaj Memo AI demo) Vanjo naložiš PDF-je.'
+    assert democue.fix_page([{'id': 'b', 'type': 'paragraph', 'paragraph': {'rich_text': out['a']}}], 'sl') == {}  # stable
+    assert democue.anchor('Memo AI: Tvoja pacientka …') is None  # a speaker label is not the creator naming the app

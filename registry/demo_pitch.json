@@ -49,6 +49,18 @@
    [
     "A kad ubaciš fajl sa zadacima sa telefona ili kompjutera i kažeš da ti pomogne s tim, Memo AI ti detaljno objasni kako se rješavaju, sve korak po korak.",
     "A AI instruktor ti naglas objasni sve što ne razumiješ."
+   ],
+   [
+    "A AI instruktor ti naglas objasni sve što ne razumiješ.",
+    "A tu je i mentalna mapa, tako da je to bukvalno zanimljiviji način učenja."
+   ],
+   [
+    "Postoji i opcija mentalne mape, tako da je to bukvalno zanimljiviji način učenja.",
+    "Ovdje sam ti pokazala cijelo gradivo kao mentalnu mapu: otvoriš bilo koju temu i odmah vidiš sve što pod nju spada."
+   ],
+   [
+    "Ovdje sam ti pokazala cijelo gradivo kao mentalnu mapu, možeš otvoriti bilo koju temu i odmah vidiš sve što pod nju spada.",
+    "A na kraju ti AI instruktor sve objasni naglas."
    ]
   ],
   "A20261015213945": [
@@ -59,6 +71,10 @@
    [
     "Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način.",
     "i dobiješ sređene bilješke, flash kartice, kvizove i mentalnu mapu, a AI instruktor ti sve objasni naglas."
+   ],
+   [
+    ", a uvijek imaš i objašnjenje da vidiš zašto nešto nije dobro i zašto je nešto zapravo tačno.",
+    "."
    ]
   ],
   "A20261015215502": [
@@ -211,6 +227,18 @@
    [
     "Tukaj sem ti pokazala Osončje, kjer vidiš vsak planet v našem sistemu, na vejah pa vse podrobnosti o njem.",
     "Tukaj sem ti pokazala celo snov kot miselni vzorec: odpreš katerokoli vejo in takoj vidiš vse, kar spada pod njo."
+   ],
+   [
+    "AI inštruktor pa ti na glas razloži vse, česar ne razumeš.",
+    "Tu je pa še miselni vzorec, ki je res bolj zanimiv način učenja."
+   ],
+   [
+    "Obstaja pa še ena možnost, ki je res bolj zanimiv način učenja: miselni vzorec.",
+    "Tukaj vidiš celo snov kot miselni vzorec: odpreš katerokoli vejo in takoj vidiš vse, kar spada pod njo."
+   ],
+   [
+    "Tukaj sem ti pokazala celo snov kot miselni vzorec: odpreš katerokoli vejo in takoj vidiš vse, kar spada pod njo.",
+    "Na koncu ti pa AI inštruktor vse razloži na glas."
    ]
   ],
   "A20261015213945": [
@@ -221,6 +249,10 @@
    [
     "Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način.",
     "in dobiš urejene zapiske, učne kartice, kvize in miselni vzorec, AI inštruktor pa ti vse razloži na glas."
+   ],
+   [
+    " Vedno imaš tudi razlago, da vidiš, zakaj je bil tvoj odgovor napačen in kaj je v resnici pravilno.",
+    ""
    ]
   ],
   "A20261015215502": [

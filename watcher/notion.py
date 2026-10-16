@@ -227,8 +227,12 @@ def script_paragraphs(spec, links, lang=PRIMARY):
     silent = not spec.get('voiceover', True)
     if silent:
         paragraphs.append([rt(T['silent_label'], bold=True)])
-    started = False  # the first app cue says where the demo starts playing, the next ones only mark it
-    for seg in spec['script']:
+    started = False
+    script = spec['script']
+    if is_demo_link((cues.get(CUE) or (None, None))[1]):  # one demo cue, right after the app's name (democue.py)
+        from .democue import fix_spec
+        script = fix_spec(script, lang)
+    for seg in script:
         cue = seg.get('cue')
         parts = []
         if cue in cues:

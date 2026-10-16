@@ -64,7 +64,9 @@ Format pages are sub-pages of the creator list page (holder_page = list_page; `m
   archive, Visual Hook Lab = copy of Parakeet's, translated). Page ids: `state/notion.json`.
 - App demo (user's decision, 16 Oct 2026): creators do NOT film the app themselves - they play a ready-made ~20 s Memo AI
   demo recording (demo/ in this repo) and film the screen: Mac or Windows laptop recording, else iPhone or Android.
-  Pages: the 🎥 cue "🎥 Pusti/Predvajaj Memo AI demo" links the market's Drive folder, the ⚠️ note says which recording
+  ONE demo cue per script, right after the creator names the app ("Memo AI" / "this app"; `watcher/democue.py`,
+  "🎥 Ovdje pusti / Tukaj predvajaj Memo AI demo"): they play the recording from there to its end and talk over it.
+  Pages: the 🎥 cue links the market's Drive folder, the ⚠️ note says which recording
   to play, the 💡 materials box links each device's file (config `demo_videos` per page language; Drive
   nace.valencic@gmail.com "Memo AI demo posnetki/Balkan|Slovenija", anyone with the link; rclone remote `memo-gmail`).
   `mode=relink` then `mode=renote` put them on live pages. memoai.eu/creator is no longer linked anywhere. Exception:
