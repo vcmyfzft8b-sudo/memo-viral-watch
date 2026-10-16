@@ -5,12 +5,12 @@ while they talk about Memo AI, and films the screen (finger pointing), the way K
 in her Memo AI videos. One demo for every format.
 
 
-It is ~20 s (phone ~19 s, laptops ~24 s) and moves like a person: curved, uneven cursor paths with a small
-overshoot, trackpad/thumb flicks when scrolling, varied pauses.
+It is ~20 s (phones ~18 s, laptops ~24 s) and moves like a person: a real-size cursor on curved, uneven paths
+with a small overshoot, trackpad/thumb flicks when scrolling, varied pauses, the card flicked away in ~0.25 s.
 
 1. the library (~1 s)
 2. open a note and scroll down to its graph (~4 s)
-3. flashcards: flip one, then drag it away to the right ("knew it") (~4 s)
+3. flashcards: flip one, then flick it away to the right ("knew it") (~3.5 s)
 4. quiz: answer one, it turns green (~2.5 s)
 5. the mind map (~2 s)
 6. the voice tutor ("Inštruktor" / "Objašnjenje"): start → it talks through the note (~5 s)
@@ -26,9 +26,13 @@ demo shows that tab, played by the same scripted walkthrough the landing page us
 
 | file | looks like | size |
 |---|---|---|
-| `Memo AI demo – Mac (…).mp4` | MacBook, Safari bar with memoai.eu, Mac cursor | 1920×1200 |
-| `Memo AI demo – Windows (…).mp4` | Windows laptop, Chrome window with memoai.eu, Windows cursor | 1920×1080 |
-| `Memo AI demo – telefon (…).mp4` | iPhone, status bar + Safari address bar memoai.eu | 1080×2342 |
+| `Memo AI demo – Mac (…).mp4` | MacBook Pro 16", Safari bar with memoai.eu, macOS cursor | 1920×1240 |
+| `Memo AI demo – Windows (…).mp4` | 1080p laptop at 100 %, Chrome window with memoai.eu, Windows cursor | 1920×1080 |
+| `Memo AI demo – iPhone (…).mp4` | iPhone, iOS status bar + Safari address bar memoai.eu | 1080×2342 |
+| `Memo AI demo – Android (…).mp4` | Samsung Galaxy, Android status bar, Chrome address bar memoai.eu, gesture bar | 1080×2340 |
+
+On the laptops the flashcard may use the free height under it (the app caps it at 22rem; the recordings allow
+27rem), so it reads as big as on a large desktop window.
 
 ## Make them again
 

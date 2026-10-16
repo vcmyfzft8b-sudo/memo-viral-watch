@@ -23,20 +23,20 @@ const OUT = arg("out", path.join(HERE, "out"));
 const NAME = arg("name", "demo");
 const FRAMES = path.join(HERE, "frames", `${NAME}-${DEVICE}-${LANG}`);
 const SHORT = DEVICE === "short";
-const PHONE = DEVICE === "phone" || SHORT;
+const ANDROID = DEVICE === "android";
+const PHONE = DEVICE === "phone" || ANDROID || SHORT;
 /** Playback speed of the finished video (the short plays a bit faster, like an edited insert). */
 const SPEED = Number(arg("speed", 1));
 
 // Screen = what the video shows. The page gets the screen minus the fake browser bars drawn around it.
-//  mac: a 1440×900 MacBook in Safari (16:10) · windows: a 1080p laptop at 120 % scaling in Chrome (16:9) ·
-//  phone: an iPhone in Safari. Flashcards squash on windows shorter than ~800 px, so the page keeps that height.
+//  The flashcard is a 5:3 box as tall as the window allows, so the laptops use their real full heights.
 const SCREEN = {
-  mac: { w: 1440, h: 900, top: 44, bottom: 0, dsf: 2, outW: 1920 },
-  windows: { w: 1600, h: 900, top: 80, bottom: 0, dsf: 1.2, outW: 1920 },
-  phone: { w: 393, h: 852, top: 54, bottom: 78, dsf: 3, outW: 1080 },
-  short: { w: 393, h: 699, top: 47, bottom: 64, dsf: 3, outW: 1080 }, // 9:16 → 1080×1920
+  mac: { w: 1728, h: 1117, top: 44, bottom: 0, dsf: 2, outW: 1920 }, // MacBook Pro 16", default scaling
+  windows: { w: 1920, h: 1080, top: 80, bottom: 0, dsf: 1, outW: 1920 }, // 1080p laptop at 100 %
+  phone: { w: 393, h: 852, top: 54, bottom: 78, dsf: 3, outW: 1080 }, // iPhone 15/16, Safari
+  android: { w: 360, h: 780, top: 84, bottom: 18, dsf: 3, outW: 1080 }, // Samsung Galaxy S, Chrome
 }[DEVICE];
-if (!SCREEN) throw new Error(`unknown --device ${DEVICE} (mac, windows or phone)`);
+if (!SCREEN) throw new Error(`unknown --device ${DEVICE} (mac, windows, phone or android)`);
 const VIEW = { width: SCREEN.w, height: SCREEN.h - SCREEN.top - SCREEN.bottom };
 
 // ---------------------------------------------------------------- app texts (the app's own translations)
@@ -73,8 +73,8 @@ const PRACTICE = loadPracticeAnswers(LANG);
 const QUIZ = loadQuizAnswers(LANG);
 
 // ---------------------------------------------------------------- page helpers
-const MAC_CURSOR = `<svg xmlns="http://www.w3.org/2000/svg" width="26" height="34" viewBox="0 0 26 34"><path d="M2 2 L2 27 L8.2 21.2 L12.4 31 L16.6 29.2 L12.5 19.6 L21 19.6 Z" fill="#000" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>`;
-const WINDOWS_CURSOR = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" viewBox="0 0 22 32"><path d="M1.5 1.5 L1.5 25 L7 19.8 L11 28.6 L14.4 27.1 L10.5 18.5 L18 18.5 Z" fill="#fff" stroke="#000" stroke-width="1.4" stroke-linejoin="miter"/></svg>`;
+const MAC_CURSOR = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 26 34"><path d="M2 2 L2 27 L8.2 21.2 L12.4 31 L16.6 29.2 L12.5 19.6 L21 19.6 Z" fill="#000" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>`;
+const WINDOWS_CURSOR = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="21" viewBox="0 0 22 32"><path d="M1.5 1.5 L1.5 25 L7 19.8 L11 28.6 L14.4 27.1 L10.5 18.5 L18 18.5 Z" fill="#fff" stroke="#000" stroke-width="1.4" stroke-linejoin="miter"/></svg>`;
 const CURSOR_SVG = DEVICE === "windows" ? WINDOWS_CURSOR : MAC_CURSOR;
 
 function initScript({ cursorSvg, laptop }) {
@@ -83,9 +83,11 @@ function initScript({ cursorSvg, laptop }) {
   style.textContent = `nextjs-portal{display:none!important}
     #demo-cursor{position:fixed;left:0;top:0;z-index:2147483647;pointer-events:none;will-change:transform;
       transition:none;filter:drop-shadow(0 1px 2px rgba(0,0,0,.35))}
-    #demo-cursor svg{transform-origin:2px 2px;transition:transform .09s ease}
+    #demo-cursor svg{display:block;transform-origin:1px 1px;transition:transform .09s ease}
     #demo-cursor.down svg{transform:scale(.82)}
-    html{scrollbar-width:none} ::-webkit-scrollbar{display:none}`;
+    html{scrollbar-width:none} ::-webkit-scrollbar{display:none}
+    /* laptops: the flashcard may use the free height under it (the app caps it at 22rem) */
+    @media (min-width: 1100px){.memo-note-screen[data-note-tab="flashcards"] .lecture-flashcard-stage{max-height:27rem!important}}`;
   const mount = () => {
     document.head.appendChild(style);
     if (!laptop || document.getElementById("demo-cursor")) return;
@@ -290,29 +292,34 @@ async function type(text, perChar = 38) {
   }
 }
 
-/** Grabs an element and throws it to the right (a flashcard swipe: "knew it"). */
+/** Grabs an element and flicks it to the right (a flashcard swipe: "knew it"): a short press, a quick
+ *  accelerating throw with a slight lift, released while still moving. */
 async function dragRight(loc) {
   await loc.waitFor({ state: "visible", timeout: waitLimit });
   const b = await loc.boundingBox();
-  const x0 = Math.round(b.x + b.width * rand(0.45, 0.6)), y0 = Math.round(b.y + b.height * rand(0.45, 0.6));
-  if (!PHONE) await cursorTo(x0, y0, 380);
+  const x0 = Math.round(b.x + b.width * rand(0.42, 0.55)), y0 = Math.round(b.y + b.height * rand(0.5, 0.62));
+  if (!PHONE) await cursorTo(x0, y0, 300);
   await page.mouse.move(x0, y0);
-  await sleep(rand(120, 200));
+  await sleep(rand(70, 120));
   await page.evaluate(() => document.getElementById("demo-cursor")?.classList.add("down"));
   await page.mouse.down();
-  const dist = Math.min(VIEW.width * 0.55, 420), ms = rand(420, 560), steps = Math.round(ms / 16);
-  for (let i = 1; i <= steps; i++) {
-    const t = i / steps, e = t * t * (3 - 2 * t);
-    const x = x0 + dist * e, y = y0 - 18 * Math.sin(Math.PI * t) + 6 * t;
+  const dist = Math.min(VIEW.width * 0.42, 380) * rand(0.9, 1.1), ms = rand(230, 290);
+  const t0 = Date.now();
+  for (;;) {
+    const t = Math.min(1, (Date.now() - t0) / ms);
+    const e = Math.pow(t, 1.7); // accelerating, like a throw
+    const x = x0 + dist * e, y = y0 - 14 * Math.sin(Math.PI * t * 0.8) + 4 * e;
     await page.mouse.move(x, y);
-    await page.evaluate(([x, y]) => {
-      const c = document.getElementById("demo-cursor");
-      if (!c) return;
-      c.style.transform = `translate(${x}px,${y}px)`;
-      c.dataset.x = x;
-      c.dataset.y = y;
-    }, [x, y]);
-    await sleep(ms / steps);
+    if (!PHONE)
+      await page.evaluate(([x, y]) => {
+        const c = document.getElementById("demo-cursor");
+        if (!c) return;
+        c.style.transform = `translate(${x}px,${y}px)`;
+        c.dataset.x = x;
+        c.dataset.y = y;
+      }, [x, y]);
+    if (t >= 1) break;
+    await sleep(10);
   }
   await page.mouse.up();
   await page.evaluate(() => document.getElementById("demo-cursor")?.classList.remove("down"));
@@ -797,9 +804,11 @@ async function run({ capture }) {
     hasTouch: PHONE,
     colorScheme: "light",
     locale: LANG,
-    userAgent: PHONE
-      ? "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1"
-      : undefined,
+    userAgent: ANDROID
+      ? "Mozilla/5.0 (Linux; Android 15; SM-S921B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
+      : PHONE
+        ? "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1"
+        : undefined,
   });
   await ctx.addCookies([{ name: "memo-locale", value: LANG, url: APP }]);
   await ctx.addInitScript(() => localStorage.setItem("nota-theme", "light"));
@@ -851,7 +860,7 @@ function browserBars() {
 async function drawBars() {
   const browser = await chromium.launch();
   const p = await browser.newPage({ viewport: { width: SCREEN.w, height: SCREEN.h }, deviceScaleFactor: SCREEN.dsf });
-  await p.setContent({ mac: macBarsHtml, windows: windowsBarsHtml, phone: phoneBarsHtml, short: phoneBarsHtml }[DEVICE]());
+  await p.setContent({ mac: macBarsHtml, windows: windowsBarsHtml, phone: phoneBarsHtml, android: androidBarsHtml }[DEVICE]());
   await p.screenshot({ path: browserBars(), omitBackground: true });
   await browser.close();
 }
@@ -891,6 +900,31 @@ function windowsBarsHtml() {
       <div style="width:24px;height:24px;border-radius:50%;background:#c9b8f5"></div>
       <div style="color:#474747;font-size:18px;line-height:1">&#x22EE;</div>
     </div>
+  </div></body></html>`;
+}
+function androidBarsHtml() {
+  const ROBOTO = `'Roboto','Google Sans',${FONT}`;
+  const i = (d, w = 16, h = 16, vb = "0 0 24 24") => `<svg width="${w}" height="${h}" viewBox="${vb}">${d}</svg>`;
+  return `<html><body style="margin:0;background:transparent;font-family:${ROBOTO}">
+  <div style="position:absolute;top:0;left:0;right:0;height:${SCREEN.top}px;background:#fff">
+    <div style="height:28px;display:flex;align-items:center;justify-content:space-between;padding:0 16px 0 18px;font-size:13.5px;color:#1f1f1f;font-weight:500">
+      <span>12:41</span>
+      <span style="display:flex;align-items:center;gap:5px">
+        ${i('<path d="M12 18.5 9.2 15.6a4 4 0 0 1 5.6 0zM5.6 12a9.1 9.1 0 0 1 12.8 0l-1.8 1.8a6.6 6.6 0 0 0-9.2 0zM2 8.4a14.2 14.2 0 0 1 20 0l-1.8 1.8a11.6 11.6 0 0 0-16.4 0z" fill="#1f1f1f"/>', 15, 15)}
+        ${i('<path d="M2 21h3v-5H2zm5 0h3V12H7zm5 0h3V8h-3zm5 0h3V3h-3z" fill="#1f1f1f"/>', 14, 14)}
+        <span style="display:flex;align-items:center;gap:2px">${i('<rect x="1" y="5" width="18" height="11" rx="2.5" fill="none" stroke="#1f1f1f" stroke-width="1.6"/><rect x="3" y="7" width="12" height="7" rx="1.2" fill="#1f1f1f"/><rect x="20" y="8.5" width="2" height="4" rx=".8" fill="#1f1f1f"/>', 20, 14, "0 0 23 20")}<span style="font-size:12px">78%</span></span>
+      </span>
+    </div>
+    <div style="height:56px;display:flex;align-items:center;gap:12px;padding:0 10px 0 12px;box-sizing:border-box">
+      ${i('<path d="M3 11.5 12 4l9 7.5M5.5 10v9.5h13V10" fill="none" stroke="#444746" stroke-width="2" stroke-linejoin="round"/>', 22, 22)}
+      <div style="flex:1;height:44px;border-radius:22px;background:#eef1f6;display:flex;align-items:center;gap:10px;padding:0 14px;font-size:16px;color:#1f1f1f">
+        ${i('<path d="M4 7h10M18 7h2M4 17h4M12 17h8" stroke="#444746" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="7" r="2.2" fill="none" stroke="#444746" stroke-width="2"/><circle cx="10" cy="17" r="2.2" fill="none" stroke="#444746" stroke-width="2"/>', 18, 18)}memoai.eu</div>
+      <div style="width:20px;height:20px;border:2px solid #444746;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#444746;box-sizing:border-box">1</div>
+      <div style="color:#444746;font-size:20px;line-height:1">&#x22EE;</div>
+    </div>
+  </div>
+  <div style="position:absolute;bottom:0;left:0;right:0;height:${SCREEN.bottom}px;background:#fff;display:flex;align-items:center;justify-content:center">
+    <div style="width:108px;height:4px;border-radius:2px;background:#1f1f1f;opacity:.85"></div>
   </div></body></html>`;
 }
 function phoneBarsHtml() {

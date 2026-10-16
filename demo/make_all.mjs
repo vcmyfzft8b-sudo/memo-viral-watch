@@ -11,7 +11,7 @@ const RAW = path.join(HERE, "out", "demos");
 const APP = process.env.DEMO_APP ?? "http://localhost:3556";
 const MEMO = process.env.DEMO_MEMO ?? path.join(process.env.HOME, "dev/Memo_AI-demo-tutor");
 const LANGS = { hr: "Balkan", sl: "Slovenija" }; // Balkan pages use the Croatian (ijekavian) app
-const DEVICES = { mac: "Mac", windows: "Windows", phone: "telefon" };
+const DEVICES = { mac: "Mac", windows: "Windows", phone: "iPhone", android: "Android" };
 const pick = process.argv.slice(2).find((a) => !a.startsWith("--"));
 const devices = pick ? pick.split(",") : Object.keys(DEVICES);
 const failed = [];
