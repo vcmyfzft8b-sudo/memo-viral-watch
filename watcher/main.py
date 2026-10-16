@@ -2203,7 +2203,7 @@ def main():
                     h = next((i for i, b in enumerate(blocks) if b['type'].startswith('heading') and '🔧' in reword._plain(b)), None)
                     callout = next((b for b in blocks[h + 1:] if b['type'] == 'callout'), None) if h is not None else None
                     target = links_for(cfg['links'], f, m['lang'])['memo']
-                    label = notion.cue_label_for(target, m['lang'])
+                    label = notion.cue_label_for(target, m['lang'], first=False)
                     if callout and not (notion.record_rule_text(m['lang'], target) in reword._plain(callout)
                                         and label in reword._plain(callout)):
                         rich = callout['callout']['rich_text']

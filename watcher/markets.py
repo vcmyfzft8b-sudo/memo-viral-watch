@@ -37,16 +37,18 @@ TEXT = {
             '**Važno:** Snimi svoj video po scenariju ispod. Video za inspiraciju je od drugog brenda i nije video koji '
             'trebaš napraviti. Od njega što vjernije kopiraj ukupnu atmosferu (vibe), uglove kamere, način snimanja, montažu '
             'i trenutke u kojima se pokazuje aplikacija (demo) – za to služe videi za inspiraciju.',
-            f'**OBAVEZNO:** kad pričaš o {OURS}, pusti {OURS} demo snimak i snimaj ekran dok se pušta (snimci su dolje u '
-            'MATERIJALIMA). Na laptopu pusti snimak za svoj laptop: Mac snimak ako imaš Mac, Windows snimak ako imaš Windows. '
+            f'**OBAVEZNO:** kod oznake »🎥 Ovdje pusti {OURS} demo« u scenariju pusti {OURS} demo snimak i snimaj ekran dok '
+            'se pušta (snimci su dolje u MATERIJALIMA). Na laptopu pusti snimak za svoj laptop: Mac snimak ako imaš Mac, Windows snimak ako imaš Windows. '
             'Ako nemaš laptop, pusti ga na mobitelu: iPhone snimak na iPhoneu, Android snimak na Androidu. Snimi to isto kao '
             'u videu za inspiraciju. Druga aplikacija iz videa se u tvom videu nigdje ne smije vidjeti ni čuti.'],
-        'record_note': (f'**OBAVEZNO:** kad pričaš o {OURS}, pusti {OURS} demo snimak i snimaj ekran dok se pušta '
-                        '(snimci su dolje u MATERIJALIMA). Na laptopu pusti snimak za svoj laptop: Mac snimak ako imaš '
+        'record_note': (f'**OBAVEZNO:** kod oznake »🎥 Ovdje pusti {OURS} demo« u scenariju pusti {OURS} demo snimak '
+                        'i snimaj ekran dok se pušta (snimci su dolje u MATERIJALIMA). Na laptopu pusti snimak za svoj laptop: Mac snimak ako imaš '
                         'Mac, Windows snimak ako imaš Windows. Ako nemaš laptop, pusti ga na mobitelu: iPhone snimak na '
                         'iPhoneu, Android snimak na Androidu. Snimi to isto kao u videu za inspiraciju.'),
         'cue_verb': 'Snimi',
-        'demo_verb': 'Pusti',  # '🎥 Pusti Memo AI demo' (the cue when the app link is the demo recordings)
+        'demo_verb': 'Pusti',
+        # the script's first 🎥 cue when the app link is the demo recordings: where to start playing (later cues: 🎥 Memo AI demo)
+        'demo_start': 'Ovdje pusti Memo AI demo',
         # comment CTA at the end of every script (user's rule, 16 Oct 2026); {word} fits the script
         'cta': 'Komentariši »{word}« i poslaću ti link do aplikacije.',
         # 🎓 box under scripts tied to one school level (ages.py, user's request 16 Oct 2026)
@@ -59,7 +61,8 @@ TEXT = {
         'screen_label': 'Tekst na ekranu:',
         'logo_line': '📎 Memo AI logo (prozirna pozadina, visoka kvaliteta) – slika ispod; koristi ga u videu ako želiš.',
         # the 💡 materials box after the 🎥 demo link; {devices} = the four recordings, each linked (notion.record_rule_rich)
-        'record_rule': ('obavezno: na svakom mjestu označenom sa 🎥 pusti Memo AI demo i snimaj ekran dok se pušta. '
+        'record_rule': ('obavezno: kod oznake »🎥 Ovdje pusti Memo AI demo« u scenariju pusti demo snimak i snimaj ekran '
+                        'dok se pušta. '
                         'Snimak za tvoj uređaj: {devices}. Imaš laptop? Pusti Mac ili Windows snimak. Nemaš laptop? '
                         'Pusti iPhone ili Android snimak na mobitelu.'),
         # a format with its own app page (the oral quiz): creators open that page themselves
@@ -143,18 +146,19 @@ TEXT = {
             '**Pomembno:** Posnemi svoj video po scenariju spodaj. Video za navdih je od druge znamke in ni video, ki ga '
             'moraš posneti. Od njega čim bolj natančno kopiraj splošno vzdušje (vibe), kote kamere, način snemanja, montažo in trenutke, '
             'ko se pokaže aplikacija (demo) – za to so videi za navdih.',
-            f'**OBVEZNO:** ko govoriš o {OURS}, predvajaj {OURS} demo posnetek in posnemi zaslon, medtem ko se predvaja '
-            '(posnetki so spodaj v GRADIVU). Na prenosniku predvajaj posnetek za svoj prenosnik: Mac posnetek, če imaš Mac, '
+            f'**OBVEZNO:** pri oznaki »🎥 Tukaj predvajaj {OURS} demo« v scenariju predvajaj {OURS} demo posnetek in '
+            'posnemi zaslon, medtem ko se predvaja (posnetki so spodaj v GRADIVU). Na prenosniku predvajaj posnetek za svoj prenosnik: Mac posnetek, če imaš Mac, '
             'Windows posnetek, če imaš Windows. Če nimaš prenosnika, ga predvajaj na telefonu: iPhone posnetek na iPhonu, '
             'Android posnetek na Androidu. Posnemi to enako kot v videu za navdih. Druga aplikacija iz videa se v tvojem '
             'videu ne sme nikjer videti ali slišati.'],
-        'record_note': (f'**OBVEZNO:** ko govoriš o {OURS}, predvajaj {OURS} demo posnetek in posnemi zaslon, medtem '
-                        'ko se predvaja (posnetki so spodaj v GRADIVU). Na prenosniku predvajaj posnetek za svoj '
+        'record_note': (f'**OBVEZNO:** pri oznaki »🎥 Tukaj predvajaj {OURS} demo« v scenariju predvajaj {OURS} demo '
+                        'posnetek in posnemi zaslon, medtem ko se predvaja (posnetki so spodaj v GRADIVU). Na prenosniku predvajaj posnetek za svoj '
                         'prenosnik: Mac posnetek, če imaš Mac, Windows posnetek, če imaš Windows. Če nimaš prenosnika, '
                         'ga predvajaj na telefonu: iPhone posnetek na iPhonu, Android posnetek na Androidu. Posnemi to '
                         'enako kot v videu za navdih.'),
         'cue_verb': 'Posnemi',
-        'demo_verb': 'Predvajaj',  # '🎥 Predvajaj Memo AI demo'
+        'demo_verb': 'Predvajaj',
+        'demo_start': 'Tukaj predvajaj Memo AI demo',
         'cta': 'Komentiraj »{word}« in pošljem ti link do aplikacije.',
         'age_h': 'Prilagodi svoji starosti',
         'age_intro': 'Če ne hodiš v isto šolo kot v scenariju, spremeni samo tole:',
@@ -164,8 +168,8 @@ TEXT = {
                   'se vse naučiš na zelo preprost način.'),
         'screen_label': 'Besedilo na zaslonu:',
         'logo_line': '📎 Logotip Memo AI (prozorno ozadje, visoka kakovost) – slika spodaj; uporabi ga v videu, če želiš.',
-        'record_rule': ('obvezno: na vsakem mestu, označenem z 🎥, predvajaj Memo AI demo in posnemi zaslon, medtem ko se '
-                        'predvaja. Posnetek za tvojo napravo: {devices}. Imaš prenosnik? Predvajaj posnetek za Mac ali '
+        'record_rule': ('obvezno: pri oznaki »🎥 Tukaj predvajaj Memo AI demo« v scenariju predvajaj demo posnetek in '
+                        'posnemi zaslon, medtem ko se predvaja. Posnetek za tvojo napravo: {devices}. Imaš prenosnik? Predvajaj posnetek za Mac ali '
                         'Windows. Nimaš prenosnika? Predvajaj posnetek za iPhone ali Android na telefonu.'),
         'record_rule_app': ('obvezno: na vsakem mestu, označenem z 🎥, samo odpri Memo AI na prenosniku in posnemi, kako greš '
                             'skozi aplikacijo in pokažeš, kaj vse zna (PDF, PowerPoint ali posnetek predavanja → zapiski, učne '

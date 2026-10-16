@@ -449,7 +449,8 @@ def relink(cfg, fmts, page_of):
             # a format can have its own app page; otherwise the page language's demo recordings
             target = links_for(cfg['links'], f, cfg['markets'][key]['lang'])['memo']
             pid = page_of(f, key)
-            want = notion.cue_label_for(target, cfg['markets'][key]['lang'])
+            lang = cfg['markets'][key]['lang']
+            started = False  # the script's first cue: "start playing here"; later ones and the materials box: the plain label
             for b in _walk(pid) if pid else []:
                 rich = (b.get(b['type']) or {}).get('rich_text')
                 if not rich:
@@ -459,6 +460,9 @@ def relink(cfg, fmts, page_of):
                     link = ((x.get('text') or {}).get('link') or {}).get('url', '')
                     label = x.get('plain_text', '')
                     cue = label.startswith('Memo AI ·') or label.startswith('🎥')
+                    want = notion.cue_label_for(target, lang, first=cue and not started and b['type'] != 'callout')
+                    if cue and b['type'] != 'callout':
+                        started = True
                     # the old app links (memoai.eu/creator) move to the target; a cue already on it gets the current label
                     if x.get('type') == 'text' and (OURS_SITE in link or (link == target and cue)) and (link != target or (cue and label != want)):
                         if cue:

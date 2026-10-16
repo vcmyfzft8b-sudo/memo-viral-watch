@@ -395,7 +395,7 @@ def ensure_app_link(page_id, link, lang):
     if box and not has_link(box):
         rich = [{k: v for k, v in x.items() if k in ('type', 'text', 'mention', 'annotations')}
                 for x in box['callout'].get('rich_text', [])]
-        head = [{'type': 'text', 'text': {'content': label, 'link': {'url': link}}}] + notion.record_rule_rich(lang, link)
+        head = [{'type': 'text', 'text': {'content': notion.cue_label_for(link, lang, first=False), 'link': {'url': link}}}] + notion.record_rule_rich(lang, link)
         if rich:
             head.append({'type': 'text', 'text': {'content': '\n'}})
         notion.api('PATCH', f"/blocks/{box['id']}", {'callout': {'rich_text': head + rich}})

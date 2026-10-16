@@ -13,8 +13,9 @@ QUIZ = 'https://www.memoai.eu/ugc/oral-quiz'
 
 def test_cue_says_play_the_demo():
     assert brand.is_demo_link(FOLDER) and not brand.is_demo_link(QUIZ)
-    assert notion.cue_label_for(FOLDER, 'sh') == '🎥 Pusti Memo AI demo'
-    assert notion.cue_label_for(FOLDER, 'sl') == '🎥 Predvajaj Memo AI demo'
+    assert notion.cue_label_for(FOLDER, 'sh') == '🎥 Ovdje pusti Memo AI demo'
+    assert notion.cue_label_for(FOLDER, 'sh', first=False) == '🎥 Memo AI demo'
+    assert notion.cue_label_for(FOLDER, 'sl') == '🎥 Tukaj predvajaj Memo AI demo'
     assert notion.cue_label_for(QUIZ, 'sl') == '🎥 Posnemi Memo AI · memoai.eu/ugc/oral-quiz'  # the oral quiz keeps its page
 
 
@@ -44,3 +45,11 @@ def test_page_has_no_creator_link():
     assert FOLDER in urls and all(v in urls for v in VIDEOS.values())
     note = '\n'.join(notion.inspo_note('sh'))
     assert 'Mac snimak' in note and 'Android snimak' in note and 'memoai.eu/creator' not in note
+
+
+def test_only_the_first_cue_says_start_here():
+    spec = {'script': [{'cue': 'memo', 'asset_name': '', 'text': 'Prvi.', 'new_paragraph': True},
+                       {'cue': 'memo', 'asset_name': '', 'text': 'Drugi.', 'new_paragraph': True}]}
+    labels = [x['text']['content'] for p in notion.script_paragraphs(spec, {'memo': FOLDER}, 'sl')
+              for x in p['paragraph']['rich_text'] if (x['text'].get('link') or {}).get('url') == FOLDER]
+    assert labels == ['🎥 Tukaj predvajaj Memo AI demo', '🎥 Memo AI demo']

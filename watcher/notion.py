@@ -122,11 +122,13 @@ def inspo_note(lang, same_lang=False, own=False, link=None, override=None):
     return lines + ([T['local_note']] if T.get('local_note') else [])  # Balkan: creators may use their own country's names
 
 
-def cue_label_for(link, lang):
-    """The app link cue in a script: '🎥 Pusti Memo AI demo' (play the demo recording and film it), or for a format with
-    its own app page '🎥 Snimi Memo AI · memoai.eu/ugc/oral-quiz'."""
-    verb = TEXT[lang]['demo_verb'] if is_demo_link(link) else TEXT[lang]['cue_verb']
-    return f"🎥 {verb} {cue_label(link)}"
+def cue_label_for(link, lang, first=True):
+    """The app link cue. With the demo recordings: the script's first cue says where to start playing
+    ('🎥 Ovdje pusti Memo AI demo'), later cues and the materials box '🎥 Memo AI demo'. A format with its own app page:
+    '🎥 Snimi Memo AI · memoai.eu/ugc/oral-quiz'."""
+    if is_demo_link(link):
+        return f"🎥 {TEXT[lang]['demo_start']}" if first else f"🎥 {cue_label(link)}"
+    return f"🎥 {TEXT[lang]['cue_verb']} {cue_label(link)}"
 
 
 def record_rule_text(lang, link):
@@ -185,7 +187,7 @@ def page_blocks(spec, video, file_upload_id, links, lang=PRIMARY, lab_url=None, 
     blocks.append(divider())
 
     blocks.append(block('heading_2', [rt('🔧'), rt(T['res_h'], bold=True)]))
-    res = [rt(cue_label_for(links[CUE], lang), link=links[CUE])] + record_rule_rich(lang, links[CUE])
+    res = [rt(cue_label_for(links[CUE], lang, first=False), link=links[CUE])] + record_rule_rich(lang, links[CUE])
     for asset in spec.get('assets_needed', []):
         res.append(rt(f"\n📎 {asset['name']} – {T['asset_todo']}: {asset.get('description', '')}"))
     if logo_upload_id:  # the official Memo AI logo (transparent, high quality) for creators who want it in the video
@@ -225,11 +227,14 @@ def script_paragraphs(spec, links, lang=PRIMARY):
     silent = not spec.get('voiceover', True)
     if silent:
         paragraphs.append([rt(T['silent_label'], bold=True)])
+    started = False  # the first app cue says where the demo starts playing, the next ones only mark it
     for seg in spec['script']:
         cue = seg.get('cue')
         parts = []
         if cue in cues:
             label, url = cues[cue]
+            if cue == CUE:
+                label, started = cue_label_for(url, lang, first=not started), True
             parts += [rt('('), rt(label, link=url), rt(') ')]
         elif cue == 'asset':
             parts.append(rt(T['asset_cue'].format(name=asset_label(seg.get('asset_name')) or '📎')))
