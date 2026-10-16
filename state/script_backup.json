@@ -22998,6 +22998,82 @@
    }
   ]
  ],
+ "hook:3fa65e84-a3c2-8125-83b5-ea3f46ba06cf": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Naredi enak vizualni hook kot v videu za navdih: na začetku sediš pred kamero, gledaš naravnost vanjo in ob obrazu mahaš s svojo študentsko ali dijaško izkaznico, na zaslonu pa je naslov.",
+    "text": {
+     "content": "Naredi enak vizualni hook kot v videu za navdih: na začetku sediš pred kamero, gledaš naravnost vanjo in ob obrazu mahaš s svojo študentsko ali dijaško izkaznico, na zaslonu pa je naslov.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Želiš drugačen vizualni hook? Izberi ga v ",
+    "text": {
+     "content": "Želiš drugačen vizualni hook? Izberi ga v ",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ".",
+    "text": {
+     "content": ".",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
  "hook:3fa65e84-a3c2-817c-a076-d0ddd15bcbb9": [
   [
    {
