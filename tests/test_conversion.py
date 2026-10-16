@@ -445,6 +445,15 @@ class AgeBoxes(StateDir):
         self.assertEqual([c.args[0] for c in api.call_args_list], ['PATCH', 'DELETE'])
         self.assertTrue(all('🎥' not in line for line in v.call_args.args[0]))
 
+    def test_redo_without_a_tip_removes_the_old_box(self):
+        from watcher import ages
+        old = {'id': 'old', 'type': 'callout', 'callout': {'icon': {'emoji': '🎓'}}}
+        with mock.patch.object(ages.notion, 'children', return_value=self.blocks() + [old]), \
+                mock.patch.object(ages, 'variants', return_value=[]), mock.patch.object(ages.notion, 'api') as api:
+            r = ages.add_to_page('P', 'sl', redo=True, script_blocks=lambda pid: self.blocks(), plain=lambda b: b['text'])
+        self.assertEqual(r, 'none')
+        api.assert_called_once_with('DELETE', '/blocks/old')
+
     def test_scripts_that_fit_every_age_get_no_box_and_bad_text_is_held(self):
         from watcher import ages
         kw = dict(script_blocks=lambda pid: self.blocks(), plain=lambda b: b['text'])

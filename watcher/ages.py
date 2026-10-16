@@ -95,6 +95,8 @@ def add_to_page(pid, lang, model='opus', script_blocks=None, plain=None, redo=Fa
         return 'held: no script found'
     found = variants(lines, lang, model)
     if not found:
+        for b in old:  # rewritten: a script that needs no tip keeps no old box either
+            notion.api('DELETE', f"/blocks/{b['id']}")
         return 'none'
     why = problems(found, lang)
     if why:
