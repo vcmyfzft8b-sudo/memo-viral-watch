@@ -4,17 +4,18 @@ The app demo creators play while filming: a creator opens it on their laptop or 
 while they talk about Memo AI, and films the screen (finger pointing), the way Klara (@school.hacks.byklara) does
 in her Memo AI videos. One demo for every format.
 
-It shows what Klara shows on memoai.eu, in her timing (her screen part is ~20 s; the demo is ~24–27 s with a
-second to start and stop):
+
+It is ~20 s (phone ~19 s, laptops ~22 s):
 
 1. the library (~1 s)
-2. the ways to make a note – record a lecture, PDF / PowerPoint, audio (~5 s)
-3. the anatomy note: the neuron diagram, then the action-potential graph (~4 s)
-4. back up to the tabs: flashcards, podcast, quiz … (~4 s)
-5. the mind map, zoomed in (~5 s)
+2. open a note and scroll down to its graph (~4 s)
+3. flashcards: flip one (~3 s)
+4. quiz: answer one, it turns green (~3 s)
+5. the mind map (~2.5 s)
+6. the AI tutor: "explain a key concept" → the answer (~4 s)
 
-Pointing and scrolling only – nothing is filled in, like in her videos. It is a screen recording of the app's
-offline demo (`/creator/college` in the Memo AI repo): the real app UI with fixed demo notes, no account, no AI.
+It is a screen recording of the app's offline demo (`/creator/college` in the Memo AI repo): the real app UI with
+fixed demo notes, no account, no AI.
 
 ## Where they are
 
@@ -34,9 +35,10 @@ Needs the Memo AI repo at `~/dev/Memo_AI` running locally (`next dev` on port 35
 cd demo && npm install && npx playwright install chromium
 node make_all.mjs            # all 6 (skips ones already in out/demos; --redo records them again)
 node make_all.mjs phone      # only the phone versions
-node record.mjs --device mac --lang hr --beats klara --name test --debug   # one take, screenshots in out/
+node record.mjs --device mac --lang hr --beats tour --name test --debug   # one take, screenshots in out/
 ```
 
-The walkthrough is the `klara` beat in `record.mjs` (other beats there – record, upload, cards, quiz, test,
-podcast, read aloud, tutor … – can be combined with `--beats a,b,c` for other demos). After a fresh `next dev`
+The walkthrough is the `tour` beat in `record.mjs` (`klara` is Klara's own walkthrough – options, diagrams, tabs,
+mind map; other beats – record, upload, cards, quiz, test, podcast, read aloud, tutor … – can be combined with
+`--beats a,b,c` for other demos). After a fresh `next dev`
 start, run one take without `--no-warm` first so every screen is compiled.

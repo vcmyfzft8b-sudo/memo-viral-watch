@@ -186,7 +186,7 @@ async function click(loc, { dx = 0, dy = 0, pause = 160, move, timeout = waitLim
   }
   const [x0, y0] = await cursorPos();
   const dist = Math.hypot(x - x0, y - y0);
-  await cursorTo(x, y, move ?? Math.round(Math.min(950, Math.max(450, dist * 0.9))));
+  await cursorTo(x, y, move ?? Math.round(Math.min(620, Math.max(280, dist * 0.55))));
   await sleep(pause);
   await page.evaluate(() => document.getElementById("demo-cursor")?.classList.add("down"));
   await page.mouse.down();
@@ -335,9 +335,9 @@ async function clickPlay() {
 }
 
 /** Opens the anatomy note from the library (neuron diagram + action-potential graph, like Klara's videos). */
-async function openAnatomy() {
+async function openAnatomy({ title = /^Anatomija|^Anatomy/, keepChat = false } = {}) {
   // "Anatomija – …" in every app language; a link on laptops, a row on phones
-  const link = vis(page.getByText(/^Anatomija|^Anatomy/));
+  const link = vis(page.getByText(title));
   await link.waitFor({ state: "visible", timeout: 15000 });
   // on shorter screens the note sits under the floating chat bar: scroll it up first
   const b = await link.boundingBox();
@@ -349,13 +349,55 @@ async function openAnatomy() {
   await page.waitForURL(/\/lectures\//, { timeout: 15000, waitUntil: "commit" });
   onNote = true;
   await hold(450);
-  await closeSideChat();
+  if (!keepChat) await closeSideChat();
 }
 
 const BEATS = {
   /** What Klara shows on memoai.eu (~20 s): the library → the "new note" options (record a lecture, PDF /
    *  PowerPoint) → the anatomy note's neuron diagram and action-potential graph → the tabs (cards, podcast,
    *  quiz…) → the mind map, zoomed in. Pointing and scrolling, nothing filled in. */
+  /** The ~20 s tour: library → open a note → scroll it → flashcards (flip one) → quiz (answer one) → mind map →
+   *  the AI tutor explaining. */
+  async tour() {
+    // library, ~1 s
+    await idle(700);
+    // open the first note (on a laptop it opens next to the tutor chat, which stays for the end), ~4 s
+    await openAnatomy({ title: /^Mikroekonomija|^Microeconomics/, keepChat: true });
+    await idle(300);
+    await soft("diagram", () => scrollTo(page.locator("main img").first(), 800));
+    await idle(600);
+    await scroll(-4000, 500); // back up to the tabs
+    await sleep(200);
+    // flashcards: flip one, ~3 s
+    await click(iconButton("style"), { pause: 80 });
+    await sleep(600);
+    await soft("flip", () => click(vis(page.locator(".lecture-flashcard")), { dy: -20, pause: 80 }));
+    await idle(1100);
+    // quiz: answer one, ~3 s
+    await click(iconButton("quiz"), { pause: 80 });
+    await sleep(600);
+    await soft("quiz", async () => {
+      await click(byText(QUIZ.get(await findQuizPrompt()).correct), { pause: 100 });
+      await idle(900);
+    });
+    // mind map, ~2.5 s
+    await click(iconButton("account_tree"), { pause: 80 });
+    await sleep(800);
+    if (!PHONE) await soft("zoom", () => click(iconButton("add"), { pause: 80 }));
+    await idle(700);
+    // the AI tutor explains, ~4 s
+    await soft("tutor", async () => {
+      if (PHONE) {
+        await click(iconButton("description"), { pause: 80 }); // the phone's chat bar sits under the notes tab
+        await sleep(350);
+        await click(vis(page.locator(".memo-m-chatbar")), { pause: 80 });
+        await sleep(600);
+      }
+      await click(byText(M["chat.suggestion.explain"]), { pause: 100 });
+      await idle(2000);
+    });
+  },
+
   async klara() {
     // 1 · library, ~1 s
     await idle(900);

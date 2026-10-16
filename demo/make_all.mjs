@@ -1,5 +1,5 @@
-// Records the app demo creators play while filming: what Klara (@school.hacks.byklara) shows on memoai.eu, in her
-// timing (~20 s) – one version per app language and device:  out/final/<Balkan|Slovenija>/Memo AI demo – <device>.mp4
+// Records the ~20 s app demo creators play while filming (library → a note → flashcards → quiz → mind map → AI
+// tutor) – one version per app language and device:  out/final/<Balkan|Slovenija>/Memo AI demo – <device>.mp4
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
@@ -14,13 +14,13 @@ const failed = [];
 
 for (const lang of Object.keys(LANGS)) {
   for (const device of devices) {
-    const file = path.join(RAW, `memo-ai-demo-klara-${device}-${lang}.mp4`);
+    const file = path.join(RAW, `memo-ai-demo-tour-${device}-${lang}.mp4`);
     if (fs.existsSync(file) && !process.argv.includes("--redo")) continue;
     console.log(`=== ${lang} ${device}`);
     try {
       execFileSync(
         process.execPath,
-        ["record.mjs", "--device", device, "--lang", lang, "--name", "klara", "--beats", "klara", "--out", RAW, "--no-warm"],
+        ["record.mjs", "--device", device, "--lang", lang, "--name", "tour", "--beats", "tour", "--out", RAW, "--no-warm"],
         { cwd: HERE, stdio: "inherit" },
       );
     } catch {
@@ -33,7 +33,7 @@ for (const [lang, market] of Object.entries(LANGS)) {
   const dir = path.join(HERE, "out", "final", market);
   fs.mkdirSync(dir, { recursive: true });
   for (const [device, label] of Object.entries(DEVICES)) {
-    const src = path.join(RAW, `memo-ai-demo-klara-${device}-${lang}.mp4`);
+    const src = path.join(RAW, `memo-ai-demo-tour-${device}-${lang}.mp4`);
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(dir, `Memo AI demo – ${label} (${market}).mp4`));
   }
 }
