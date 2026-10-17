@@ -86,7 +86,7 @@
   "A20261015215502:sl": "ae500f4138c2b23c0481bd56494fb086a7514ea342f26e66e36f08600d183e9b"
  },
  "cta_missing": [],
- "daily_check": "2026-10-16",
+ "daily_check": "2026-10-17",
  "discovered_at": 1792084788,
  "faithful_rewrite_started": 1791643120,
  "group_audit": {
@@ -1883,7 +1883,7 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1792186799,
+ "last_run": 1792213034,
  "lineup": "2026-W42",
  "open_problems": [],
  "top3": [
