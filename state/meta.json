@@ -41,7 +41,9 @@
   "A20261015213945:sh": "ok",
   "A20261015213945:sl": "ok",
   "A20261015215502:sh": "ok",
-  "A20261015215502:sl": "ok"
+  "A20261015215502:sl": "ok",
+  "A20261018210403:sh": "failed",
+  "A20261018210403:sl": "failed"
  },
  "audit_fingerprints": {
   "A20261008204718:sh": "554231d90c87dfa29584fb8b10cd1ba8428450b221746b4dee2eb018191dcc1d",
@@ -87,7 +89,7 @@
  },
  "cta_missing": [],
  "daily_check": "2026-10-18",
- "discovered_at": 1792084788,
+ "discovered_at": 1792357224,
  "faithful_rewrite_started": 1791643120,
  "group_audit": {
   "A20261008204718": {
@@ -1883,13 +1885,13 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1792339664,
+ "last_run": 1792357224,
  "lineup": "2026-W42",
  "open_problems": [],
  "top3": [
   "A20261008204718",
   "A20261015213945",
-  "A20261013231033"
+  "A20261010215329"
  ],
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",

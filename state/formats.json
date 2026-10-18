@@ -1091,5 +1091,27 @@
   "source_video": "https://www.tiktok.com/@learnwithtika/video/7692489776338832658",
   "status": "active",
   "title": "Ispitna pitanja unaprijed? 😳"
+ },
+ {
+  "created": 1792357443,
+  "description": "Silent music-only relatable study vlog with timestamp stickers showing the creator studying for hours while waiting for a crush's text, ending with the twist that she 'texts first' — but to the study app, shown on a laptop.",
+  "id": "A20261018210403",
+  "page_id": "3fd65e84-a3c2-813d-935f-f901ce98de37",
+  "pages": {
+   "sl": "3fd65e84-a3c2-81db-969f-d8abcbc4df94"
+  },
+  "pending": {
+   "kind": "new",
+   "reasons": [
+    "🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 50 words, it must have 14-48 / script corrected towards the original: The twist line is broken: 'ali Memo AI (🎥 Ovdje pusti Memo",
+    "🇸🇮 rewrite refused: the script has 73 words, it must have 14-48 / script corrected towards the original: The case ending of 'Memo AI-ju' is cut off by the demo cue"
+   ],
+   "since": 1792358246,
+   "tries": 2
+  },
+  "script": "Nova metoda učenja: Učim sve dok mi on ne odgovori na poruku 14:28 15:41 18:02 21:32 22:00 - odlučujem da ja pišem prva ali Memo AI-ju naravno 🫢🤭 U njega ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način Stranica: memoai.eu Komentariši »PORUKA« i poslaću ti link do aplikacije.",
+  "source_video": "https://www.tiktok.com/@smartishaangelisaa/video/7697723844450159892",
+  "status": "pending",
+  "title": "Učim sve dok mi on ne odgovori na poruku 📱"
  }
 ]

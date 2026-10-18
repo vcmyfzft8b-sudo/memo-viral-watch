@@ -1305,5 +1305,63 @@
    "7692489776338832658": "https://www.tiktok.com/@learnwithtika/video/7692489776338832658"
   },
   "title_en": "Exam questions in advance? 😳 – 'only now, in my 4th year, I find out' storytime about a top-student friend's secret study trick, with Memo AI revealed by screen recording"
+ },
+ "A20261018210403": {
+  "accepted_sources": [
+   "7697723844450159892"
+  ],
+  "allowed_localisation": [
+   "Language of the on-screen texts (Slovenian, Croatian, Bosnian or Serbian), translated almost one to one",
+   "Choice of trending local music sound",
+   "The exact clock times, as long as they progress through an afternoon and evening and end with the 'I text first' time",
+   "Subject and study material shown (the creator's own)",
+   "Which real Memo AI features appear in the middle timestamps",
+   "Emojis, sticker style and font",
+   "Laptop or phone for the study shots (the final chat shot is on a laptop)",
+   "Desk setting, outfit and lighting"
+  ],
+  "beats": [
+   "Hook: desk study shot with the on-screen text 'Nova metoda učenja: Učim sve dok mi on ne odgovori na poruku', trending music only.",
+   "Timestamp '14:28': studying, with a quick glance at the phone that has no new message. Memo AI is open on the laptop or phone, showing the note made from her own material (lecture, PDF or photos of her notes) with bold key terms. This is the early product moment, around 15 s at the latest.",
+   "Timestamp '15:41': still studying with Memo AI (e.g. flipping flashcards or answering the quiz), checking the phone again, still nothing.",
+   "Timestamp '18:02': still studying (e.g. the voice tutor explaining a topic, or the mind map), more tired, phone still silent.",
+   "Timestamp '21:32': late-evening study, still no reply.",
+   "Timestamp '22:00 - odlučujem da ja pišem prva' (I decide to text first), then the twist text 'ali Memo AI naravno🫢🤭' (but to Memo AI, of course) while she types a question into Memo AI's AI chat about the note on the laptop."
+  ],
+  "canonical_source": "7697723844450159892",
+  "filming": "About 15–25 s, vertical, silent except for a trending Balkan rap/pop sound (no voiceover, no talking to camera). Fast cuts of POV or over-the-shoulder desk shots with natural lamp/evening light. A clock-time sticker on each cut (14:28, 15:41, 18:02, 21:32, 22:00) and a brief phone check in each, with no new message. Demo sequence: Memo AI on screen by the first or second timestamp (note with bold key terms, from her own material). Later timestamps show flashcards, quiz, voice tutor or mind map. If a note is being created, cut the few minutes of waiting. Final shot: laptop screen close-up of her typing into Memo AI's AI chat about the note, with the twist caption.",
+  "generated": 1792357515,
+  "hook": "On-screen text over the first study shot: 'Nova metoda učenja: Učim sve dok mi on ne odgovori na poruku' (New study method: I study until he texts me back). The creator sits down at her desk with laptop and phone, music only, no talking.",
+  "not_allowed": [
+   "Adding a voiceover, talking to camera or spoken explanation (the format is silent and music-only)",
+   "Dropping the 'waiting for him to text back' premise or the 'I text first… but to the app' twist",
+   "Removing the progressing timestamp stickers",
+   "Showing Memo AI only at the very end instead of during the study session from around 15 s",
+   "Showing a reply from the crush or turning it into a romance/storytime",
+   "Showing or naming Astra AI, Studyflash, Turbo AI or any other study app",
+   "Showing features Memo AI does not have (snap-and-solve, homework solving or checking, photos in the chat, oral exam, choosing lessons, PDF export, pasting text, an Android store app)",
+   "Showing example content as if it came with the app instead of the creator's own material",
+   "Turning it into a feature tutorial or a hard-sell ad with a spoken CTA"
+  ],
+  "premise": "A relatable 'waiting for a crush to text back' joke turned into a study method. The creator studies for hours, shown by clock-time stickers, while her phone stays silent. At the end she decides to text first, but she texts Memo AI and not the crush. It is shown on the laptop as she types into the AI chat about her note. Memo AI is visible on screen during the study session from early on (around 15 s), so the payoff confirms the app rather than introducing it.",
+  "product": {
+   "cta": "none",
+   "features_used": [
+    "notes from the user's own uploaded/recorded/scanned material with key terms in bold",
+    "flashcards",
+    "quiz with explanations",
+    "voice tutor that explains the material out loud",
+    "mind map",
+    "AI chat about the note"
+   ],
+   "introduced_at_beat": 2,
+   "spoken_brand": "not spoken (silent video); the brand appears only in on-screen text in the final caption 'ali Memo AI naravno🫢🤭' and is visible in the app UI from beat 2"
+  },
+  "rejected_sources": {},
+  "rules": "early-memo-2026-10-12",
+  "source_urls": {
+   "7697723844450159892": "https://www.tiktok.com/@smartishaangelisaa/video/7697723844450159892"
+  },
+  "title_en": "I study until he texts me back 📱 (silent study vlog with a 'I text first… the app' twist)"
  }
 }
