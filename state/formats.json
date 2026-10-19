@@ -1103,11 +1103,13 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇧🇦🇭🇷🇷🇸🇲🇪 rewrite refused: the script has 50 words, it must have 14-48 / script corrected towards the original: The twist line is broken: 'ali Memo AI (🎥 Ovdje pusti Memo",
-    "🇸🇮 rewrite refused: the script has 73 words, it must have 14-48 / script corrected towards the original: The case ending of 'Memo AI-ju' is cut off by the demo cue"
+    "Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
    ],
    "since": 1792358246,
    "tries": 2
+  },
+  "reworded": {
+   "sh": true
   },
   "script": "Nova metoda učenja: Učim sve dok mi on ne odgovori na poruku 14:28 15:41 18:02 21:32 22:00 - odlučujem da ja pišem prva ali Memo AI-ju naravno 🫢🤭 U njega ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način Stranica: memoai.eu Komentariši »PORUKA« i poslaću ti link do aplikacije.",
   "source_video": "https://www.tiktok.com/@smartishaangelisaa/video/7697723844450159892",

@@ -1,226 +1,112 @@
 {
  "audit": {
-  "A20261008204718:sh": "ok",
-  "A20261008204718:sl": "failed",
+  "A20261008204718:sh": "error",
+  "A20261008204718:sl": "error",
   "A20261008205804:sh": "ok",
-  "A20261008205804:sl": "ok",
-  "A20261008210957:sh": "ok",
-  "A20261008210957:sl": "ok",
-  "A20261008211912:sh": "ok",
-  "A20261008211912:sl": "ok",
+  "A20261008205804:sl": "error",
+  "A20261008210957:sh": "error",
+  "A20261008210957:sl": "error",
+  "A20261008211912:sh": "error",
+  "A20261008211912:sl": "error",
   "A20261008224450:sh": "ok",
-  "A20261008224450:sl": "ok",
+  "A20261008224450:sl": "error",
   "A20261008231529:sh": "ok",
-  "A20261008231529:sl": "ok",
-  "A20261009001913:sh": "ok",
-  "A20261009001913:sl": "fixed",
-  "A20261009014121:sh": "ok",
-  "A20261009014121:sl": "ok",
-  "A20261009210824:sh": "ok",
-  "A20261009210824:sl": "ok",
+  "A20261008231529:sl": "error",
+  "A20261009001913:sh": "error",
+  "A20261009001913:sl": "error",
+  "A20261009014121:sh": "error",
+  "A20261009014121:sl": "error",
+  "A20261009210824:sh": "error",
+  "A20261009210824:sl": "error",
   "A20261010130453:sh": "fixed",
   "A20261010130453:sl": "fixed",
   "A20261010161437:sh": "ok",
-  "A20261010161437:sl": "ok",
+  "A20261010161437:sl": "error",
   "A20261010162026:sh": "ok",
-  "A20261010162026:sl": "ok",
+  "A20261010162026:sl": "error",
   "A20261010162928:sh": "ok",
-  "A20261010162928:sl": "ok",
+  "A20261010162928:sl": "error",
   "A20261010163838:sh": "ok",
-  "A20261010163838:sl": "ok",
-  "A20261010214237:sh": "ok",
-  "A20261010214237:sl": "ok",
-  "A20261010215329:sl": "failed",
-  "A20261010215543:sl": "failed",
-  "A20261010215744:sl": "ok",
-  "A20261010220207:sl": "ok",
+  "A20261010163838:sl": "error",
+  "A20261010214237:sh": "error",
+  "A20261010214237:sl": "error",
+  "A20261010215329:sl": "error",
+  "A20261010215543:sl": "error",
+  "A20261010215744:sl": "error",
+  "A20261010220207:sl": "error",
   "A20261012160842:sh": "fixed",
-  "A20261012160842:sl": "fixed",
-  "A20261013231033:sh": "fixed",
-  "A20261013231033:sl": "ok",
-  "A20261015213945:sh": "ok",
-  "A20261015213945:sl": "ok",
-  "A20261015215502:sh": "ok",
-  "A20261015215502:sl": "ok",
+  "A20261012160842:sl": "error",
+  "A20261013231033:sh": "error",
+  "A20261013231033:sl": "error",
+  "A20261015213945:sh": "error",
+  "A20261015213945:sl": "error",
+  "A20261015215502:sh": "error",
+  "A20261015215502:sl": "error",
   "A20261018210403:sh": "failed",
   "A20261018210403:sl": "failed"
  },
  "audit_fingerprints": {
-  "A20261008204718:sh": "554231d90c87dfa29584fb8b10cd1ba8428450b221746b4dee2eb018191dcc1d",
-  "A20261008204718:sl": "7c45582e8ec223c42f9bb56533015b3790fdb32feaaa6e5663f10a2f5a869862",
   "A20261008205804:sh": "dd211df2086cdaf5ca18fd1794442dd607621dc3d6f98f4c30bda5755bfeaefa",
-  "A20261008205804:sl": "56d17ed14ec8d71b6731f2cc37457e21581d379bbc27a7c4b7b10f53b8a8a828",
-  "A20261008210957:sh": "d2566546d2dc3cbe0c26cd690d1dc6e12282fd3d5aab1f0bc190f115fdc7b88f",
-  "A20261008210957:sl": "081032d9f0e1e42ebb18b18b28af5c87e54732542a98fb2959da7f29e4682a00",
-  "A20261008211912:sh": "383c2efea8f128fad24163da4e8cd4d3ef4304c0e31dfda8dcb7d9c64cedec20",
-  "A20261008211912:sl": "458542ac68d19ae8639fb9e3e46587237c4ec88814ceb5b0377737d0d6cf93cc",
   "A20261008224450:sh": "6b6914fed03866e003806f9a9a62434b0b4b6180cfbffd6bcbb2ceac731154d6",
-  "A20261008224450:sl": "6de767d6a591b078bc09db2ca3073336353b0164bfe3c5c9502fe358f8c47f37",
   "A20261008231529:sh": "bf03150c98267e1a712b23f9e8c41c2721e0602260196b00789de3b6538638d6",
-  "A20261008231529:sl": "f5e49bf73fca636d31cf5549e5f61081748c871163b03019303ad837f8db6028",
-  "A20261009001913:sh": "65550ee540781cd5559296abf391e0b737f53362347b5e8b080e5bde98c319d9",
-  "A20261009001913:sl": "95149ad48a59d30f7ab597310f8d00f6c9108fddbea056c6ff801639b71860eb",
-  "A20261009014121:sh": "0e25235399bdc438ff8954cd70ade248b40b8a0356efd6655d4050bfaa97a91c",
-  "A20261009014121:sl": "5bdd1276297d5e7df9994a53bad21c47592a9243c88cd2717027ab9942eb24d7",
-  "A20261009210824:sh": "69842aae645cdf45a8e2da831e99fc307fa0399e87c67ff0084f96d2cbb6810f",
-  "A20261009210824:sl": "2b93fe6d567946dab2920073a1133e4adf9474bafac4b1f4d468dc0eb33ee19b",
   "A20261010130453:sh": "80424f4ccf25fce0271184c580f15b0f5030aca433d18ddcd637808752dbe296",
   "A20261010130453:sl": "007e3b4f8c0d7c8de8f56bcabbf3db4309459449d1b5a4b6a7fd15618ca93363",
   "A20261010161437:sh": "16ab2ce8176f4dc5e3c09de1457bbe66dd7f66495f404c264ae1b3791dc200c1",
-  "A20261010161437:sl": "221df4111c299f70ececbe9f1b45f1258d6849c052406e34d166b660434ba890",
   "A20261010162026:sh": "cd9922f781980f7a4817884877742bf3c866683cce8ebac2dde31ab28bfd375a",
-  "A20261010162026:sl": "e1fce91907b1120dcc78e18d4a009aaf0daec38622dedc3f47c1ebcd2d71fd09",
   "A20261010162928:sh": "f9b680748a7a9358ed57bc89bcf06d610a8c6ff1750e26ddcbbf9804efe04488",
-  "A20261010162928:sl": "3b117c0d8b334e68085c00fe3334a10d132333db26cb972d50861dfde3b71273",
   "A20261010163838:sh": "e4ec9bfbebef917179414b7569abde9df573de6b81b23bb5a53f3cab109b1cd6",
-  "A20261010163838:sl": "47e92e4d77df9fd691bdcb9d60dbaadeea9df82d1d594317405d19fee1146d13",
-  "A20261010214237:sh": "9787c34205e03e3e93a668d1e3f92f0fb65cac27c6c9e5536eb6eb3bf7af1264",
-  "A20261010214237:sl": "02bc0277b088f1a424f225cd8a122e90fc719ddd8ace7aa906982a685f8631ff",
-  "A20261010215744:sl": "78b535a610a2d73da620327d34ace63aed8316ac0d70b52619c73a77ab2ced9d",
-  "A20261010220207:sl": "f963b4eded6c4bffeb3ad0a3df492722ecafcdaca2744cb3c4ab4fd6a5f874ca",
-  "A20261012160842:sh": "35e18c46fedfea9e081e4d3c757fb79678e7530e88047546c002dea5c11323d4",
-  "A20261012160842:sl": "56a0e7fb6e5fa85495ad2b1f0e69e10a2ca8e7b10c4cf662a8dcd365056f2277",
-  "A20261013231033:sh": "edd4bd195b1295bd0899d2bddadfe21b3ebf164d87c52f50844d55987d21d656",
-  "A20261013231033:sl": "53ee7b85f5cd3bf3479673114d5f12a472a09ec0eb1dcb44dc45c77df9be5d04",
-  "A20261015213945:sh": "1c2f92230a5ba3b03fbaf79aae9f818f04d2902a7d18aa1458c24ea0456a0e4b",
-  "A20261015213945:sl": "cc0268b235cec2853b9bfde255bb633a0bb942fdce298403aee4c5e66fd82beb",
-  "A20261015215502:sh": "cc4024425623199a80d14678564816f7b662780e87e3e7f2a2dd7760dcf8d4b9",
-  "A20261015215502:sl": "ae500f4138c2b23c0481bd56494fb086a7514ea342f26e66e36f08600d183e9b"
+  "A20261012160842:sh": "35e18c46fedfea9e081e4d3c757fb79678e7530e88047546c002dea5c11323d4"
  },
  "cta_missing": [],
- "daily_check": "2026-10-18",
+ "daily_check": "2026-10-19",
  "discovered_at": 1792357224,
  "faithful_rewrite_started": 1791643120,
  "group_audit": {
   "A20261008204718": {
    "approval": {
-    "sh": "locked_preserved"
+    "sh": "locked_preserved",
+    "sl": "locked_preserved"
    },
-   "checked_at": 1791787170,
+   "checked_at": 1792388607,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
     "sh": {
      "source_id": "7691776401896131861",
      "video_identity": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e"
+    },
+    "sl": {
+     "source_id": "7691776401896131861",
+     "video_identity": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e"
     }
    },
-   "key": "1423b2ddaaad6ea00e17a399c5dada10c7dc5e057cbc02e1c31cba02fc5f3767",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "The SH page fails: it invents a MEMO50 50% code, drops the like-and-follow outro and the train discount, and changes the hook ('99% njih' instead of '99% vas', with 'učenike' removed). The filming directions and on-screen title are fine.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261008205804": {
    "approval": {
-    "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787245,
+   "checked_at": 1792388795,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
-    "sh": {
-     "source_id": "7692158324032163124",
-     "video_identity": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6"
-    },
     "sl": {
      "source_id": "7692158324032163124",
      "video_identity": "sha256:770ff8e18035a700044f64819c11e5d9e4709bfd9df19fb83a7202a70da62cb6"
     }
    },
-   "key": "f02e49db9fd9d79757834a61b6b95634f1fa203f2bea997fe1311d09858da516",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages follow the elimination-game format, with Memo AI brought in early and the CTA unchanged and only real features claimed. Both fail faithful_translation because the Memo AI pitch leaves out PDF/PowerPoint upload and lecture recording and adds a 'you already won' joke the original does not have.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261008210957": {
@@ -228,7 +114,7 @@
     "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787279,
+   "checked_at": 1792388992,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -241,72 +127,20 @@
      "video_identity": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d"
     }
    },
-   "key": "15c1e114af7cad758bf0a336dabf67da38eefdde7a7bff5d52f7be46c2cd3fb9",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both scripts keep the hook, the scissors directions and a truthful Memo AI pitch, but both name Memo AI too late (about 70 words in) and drop the self-correction joke, and the Slovenian page also swaps three of the five faculty types, including replacing the sport faculty at place 1.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261008211912": {
    "approval": {
-    "sh": "locked_preserved",
-    "sl": "locked_preserved"
+    "sh": "locked_changed",
+    "sl": "locked_changed"
    },
-   "checked_at": 1791787330,
+   "checked_at": 1792389197,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -319,273 +153,80 @@
      "video_identity": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5"
     }
    },
-   "key": "65634fddc360f9156904049bf1bb3c51830217046d2069a7fcc25518c6c076fc",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages pass every check: they keep the silent two-card 'brain premium' POV meme almost word for word, put Memo AI in as the payoff in place of Astra AI, add a short pitch line that names only real features, and give a one-sentence visual hook that matches the stressed test opening.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261008224450": {
    "approval": {
-    "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787359,
+   "checked_at": 1792389395,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
-    "sh": {
-     "source_id": "7688930483304090898",
-     "video_identity": "sha256:2863a59e5df5fb158d39b04ccad651e449a674c01d28b27611cd5b291504cb87"
-    },
     "sl": {
      "source_id": "7688930483304090898",
      "video_identity": "sha256:3a544688d450b747fd5d8bdc82a9454fe3ef1db4adcdb192bfd8c3e17c93741a"
     }
    },
-   "key": "6857ab6ad3b60e290b30100d0bafc0c8ac17d9c1d97af930638ce1b90d1f12f0",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages keep the hook, put Memo AI in early with the correct pitch and real features, and have good directions, but both drop the indifferent first sign, the split-ends ending joke and the 4/5 haggle, so they fail format consistency, the example match and the translation check.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261008231529": {
    "approval": {
-    "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787412,
+   "checked_at": 1792389591,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
-    "sh": {
-     "source_id": "7692577375296507154",
-     "video_identity": "sha256:9c02af67e47bd9ac17022fe8d832f4478e998428889e6141ed3779cabab38af7"
-    },
     "sl": {
      "source_id": "7692577375296507154",
      "video_identity": "sha256:728cf7db67b5988163b4b35079212302d7be123337b97b582d506266b1fa9fea"
     }
    },
-   "key": "90effcef56324fb6622437e34e80c7bca3b7a2bdb43fa0f3cf345a4a7fce60f8",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages keep the hook, bring Memo AI in early with the correct pitch, and use only real features and fitting directions. Both fail on structure and faithfulness because they drop the fight confession and the closing 'share less, it can be wrong' advice that the example and the reference require.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261009001913": {
    "approval": {
-    "sh": "locked_preserved"
+    "sh": "locked_preserved",
+    "sl": "not_locked"
    },
-   "checked_at": 1791787453,
+   "checked_at": 1792389788,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
     "sh": {
      "source_id": "7693684473686150406",
      "video_identity": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0"
+    },
+    "sl": {
+     "source_id": "7693684473686150406",
+     "video_identity": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0"
     }
    },
-   "key": "5c34925d06a2a6db1ca468ca4a619b10d98114713682d875bdabcf5cb0426d97",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "The SH page passes every dimension: the 'PART 5' hook is kept, the AI doctor's-note remark is moved up to bring in Memo AI early (the segue starts at word 51, so it is borderline against the 50-word cap and only passes if the segue counts as Memo AI's entry), the other remarks follow in the original order, only real features are pitched, and the closing CTA and directions match the example.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261009014121": {
@@ -593,7 +234,7 @@
     "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787483,
+   "checked_at": 1792389994,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -606,64 +247,12 @@
      "video_identity": "sha256:61d573b049d113952bffa417a2f57ea8ab43fcf79febbbb66a50f2fcb0bf37cf"
     }
    },
-   "key": "cebc11581ac38a25c8eb3e00ae5a1061813de9b272447663596223b2a6b7e936",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages fail. Each script copies the off-format SL video (mum's friend, no slime hook, no teacher aunt, no study demo, no follow-for-more-secrets CTA) instead of the reference format, which the SH example follows. Both scripts also lack the required early Memo AI pitch, and the SH filming directions don't match its slime-cutting opening.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261009015525": {
@@ -752,7 +341,7 @@
     "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787526,
+   "checked_at": 1792390195,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -765,64 +354,12 @@
      "video_identity": "sha256:274dccbdf202d089a540c2cdfc273ea99a643c1f792b99d8b1ac3a01d2598a4f"
     }
    },
-   "key": "c0937f36e681cc67e94941f4d75bd866c843cd64911eb034cdb73c4ee7a817e4",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages pass: each keeps the hook, price grid, sticker gag, reveal and comment CTA almost word for word, brings Memo AI in after about 47 words with the standard pitch, drops the 2023 founding year and the target-grade feature, has no foreign names to localize, and gives one-sentence directions that match the opening.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261010130453": {
@@ -905,314 +442,86 @@
   },
   "A20261010161437": {
    "approval": {
-    "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787546,
+   "checked_at": 1792390384,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
-    "sh": {
-     "source_id": "7693291236744121620",
-     "video_identity": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0"
-    },
     "sl": {
      "source_id": "7693291236744121620",
      "video_identity": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0"
     }
    },
-   "key": "7de6b9c3645a3549c128bdaf3cc2e7fd751129939309462de6561e8f6d74cf42",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages follow the format, correctly drop the made-up test-date and target-score features, and have good titles and visual-hook directions, but both name Memo AI after more than 50 spoken words, so the bridge sentence needs tightening.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261010162026": {
    "approval": {
-    "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787587,
+   "checked_at": 1792390575,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
-    "sh": {
-     "source_id": "7693614549269810450",
-     "video_identity": "sha256:8401ad9c8d9a1547a0ec81908a62ca7723b27e82a9bb3f040bb97275e09efdb4"
-    },
     "sl": {
      "source_id": "7693614549269810450",
      "video_identity": "sha256:02a503e54e5bd36afaa705ca8c88d341075b84819de51c93e4f3b74fab2ed518"
     }
    },
-   "key": "eae799e5d0446905a7b1c15fb9857c3a299e03fa70fc6e99d350fbaf1a269a2e",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages keep the frozen-keys hook, bring in Memo AI early with the standard pitch, and have matching directions and correct titles; SL passes everything, but SH drops the closing 'passed the exam 🍀' caption and needs it added.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261010162928": {
    "approval": {
-    "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787623,
+   "checked_at": 1792390766,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
-    "sh": {
-     "source_id": "7687680254495788308",
-     "video_identity": "sha256:8c47ffe4d80533045109936b0de0f8121ee7c9b7fc4ea9c5aee611394c837370"
-    },
     "sl": {
      "source_id": "7687680254495788308",
      "video_identity": "sha256:8c47ffe4d80533045109936b0de0f8121ee7c9b7fc4ea9c5aee611394c837370"
     }
    },
-   "key": "3c8b744c6b5f9b6acc5b4c05b490dfa5f4612212d8a18abffbb00a1faa4b8d57",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages keep the hook, the faculty list, the early Memo AI pitch and the comment CTA, and SL uses real Slovenian faculties; both need the secrecy line moved back to right after the build-up and the 'quiz after every definition' claim changed to Memo AI's real quiz with explanations.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261010163838": {
    "approval": {
-    "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787669,
+   "checked_at": 1792390957,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
-    "sh": {
-     "source_id": "7688802612111510805",
-     "video_identity": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7"
-    },
     "sl": {
      "source_id": "7688802612111510805",
      "video_identity": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7"
     }
    },
-   "key": "2c90138307afdab53fc88882e85e406e70b923f3c29d74ab748408b27c188e61",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages follow the paper-strip format with Memo AI placed correctly and only real features, but both hooks drop the original's 'from some test' wording, which should be restored.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261010214237": {
@@ -1220,7 +529,7 @@
     "sh": "locked_preserved",
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787711,
+   "checked_at": 1792391152,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1233,78 +542,19 @@
      "video_identity": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e"
     }
    },
-   "key": "721a8ed5fe6aa307dfdfede0dfa44e75c4c2e3bae8fed49109fb4d6e211b517f",
+   "key": null,
    "passed": false,
    "reasons": [
-    "format_consistency sh: The dialogue, beats, order and the cut at 'i to ovako.' match the reference. But the closing 'Tekst na ekranu: Memo AI te iz tvog gradiva ispituje naglas... – memoai.eu' adds an end card/CTA. The reference sets cta 'none' and lists 'no ending card' and 'adding a spoken pitch, CTA or end card' as not allowed.",
-    "format_consistency sl: The dialogue, beats, order and the cut at 'in sicer takole.' match the reference. But the closing 'Besedilo na zaslonu: Memo AI te iz tvoje snovi sprašuje na glas... – memoai.eu' adds an end card/CTA. The reference sets cta 'none' and forbids an end card.",
-    "faithful_translation sh: The hook and the Memo AI:/Ti: lines are exact and the page's Croatian wording is used. Both cues are placed correctly. The extra closing on-screen pitch line with memoai.eu is not in the original. It breaks the format's no-end-card rule, so it should be removed.",
-    "faithful_translation sl: The hook and the Memo AI:/Ti: lines are exact and the page's Slovenian wording is used. Both cues are placed correctly. The extra closing on-screen pitch line with memoai.eu is not in the original. It breaks the format's no-end-card rule, so it should be removed.",
-    "features_claims sh: 'Memo AI te iz tvog gradiva ispituje naglas kao na usmenom ispitu' claims an oral exam that quizzes you out loud from your own uploaded material. The real features are a voice tutor that explains the material out loud and a quiz with explanations, not a spoken quiz built from your material.",
-    "features_claims sl: 'Memo AI te iz tvoje snovi sprašuje na glas kot na ustnem izpitu' claims an oral exam that quizzes you out loud from your own uploaded material. The real features are a voice tutor that explains the material out loud and a quiz with explanations, not a spoken quiz built from your material."
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
    ],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "The hook and the Memo AI:/Ti: lines are exact and the page's Croatian wording is used. Both cues are placed correctly. The extra closing on-screen pitch line with memoai.eu is not in the original. It breaks the format's no-end-card rule, so it should be removed.",
-      "pass": false
-     },
-     "sl": {
-      "issue": "The hook and the Memo AI:/Ti: lines are exact and the page's Slovenian wording is used. Both cues are placed correctly. The extra closing on-screen pitch line with memoai.eu is not in the original. It breaks the format's no-end-card rule, so it should be removed.",
-      "pass": false
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "'Memo AI te iz tvog gradiva ispituje naglas kao na usmenom ispitu' claims an oral exam that quizzes you out loud from your own uploaded material. The real features are a voice tutor that explains the material out loud and a quiz with explanations, not a spoken quiz built from your material.",
-      "pass": false
-     },
-     "sl": {
-      "issue": "'Memo AI te iz tvoje snovi sprašuje na glas kot na ustnem izpitu' claims an oral exam that quizzes you out loud from your own uploaded material. The real features are a voice tutor that explains the material out loud and a quiz with explanations, not a spoken quiz built from your material.",
-      "pass": false
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "The dialogue, beats, order and the cut at 'i to ovako.' match the reference. But the closing 'Tekst na ekranu: Memo AI te iz tvog gradiva ispituje naglas... – memoai.eu' adds an end card/CTA. The reference sets cta 'none' and lists 'no ending card' and 'adding a spoken pitch, CTA or end card' as not allowed.",
-      "pass": false
-     },
-     "sl": {
-      "issue": "The dialogue, beats, order and the cut at 'in sicer takole.' match the reference. But the closing 'Besedilo na zaslonu: Memo AI te iz tvoje snovi sprašuje na glas... – memoai.eu' adds an end card/CTA. The reference sets cta 'none' and forbids an end card.",
-      "pass": false
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "fail",
-   "summary": "Both pages keep the DICK oral-quiz dialogue word for word and cut at the right point, but both add a closing on-screen pitch/end card that the format forbids and that overclaims an oral exam built from your own material, so that line should be removed.",
-   "title_fixes": {},
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261010215329": {
    "approval": {
     "sl": "not_locked"
    },
-   "checked_at": 1791787745,
+   "checked_at": 1792391352,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1313,51 +563,19 @@
      "video_identity": "sha256:d0add6744924765d53bae9e7eded48d334e2b647ee2e543f2423c30ac2369ddd"
     }
    },
-   "key": "35bbbc1f389ed54352d2e1b7552f6a23fd86471cc956da70a02aec86b0af5c57",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "The Slovenian page passes on every dimension. It follows the reference beats and the save-this-video CTA in the same order, and keeps the hook almost word for word. Memo AI comes in as tip one after about 40 words and is described only with real features (read-aloud, flashcards, tests, quizzes). The filming directions match the GRWM desk opening in two sentences.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261010215543": {
    "approval": {
     "sl": "not_locked"
    },
-   "checked_at": 1791787891,
+   "checked_at": 1792391543,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1366,53 +584,19 @@
      "video_identity": "sha256:94c0657877b8e8e6e8c50d4cc90c7d1637c22ea51223bb5806359329eccdc13f"
     }
    },
-   "key": "2fcffd1a6d014f081e3d52c6b8906fedab0c583fbd3e22e2b573201fac4ddc81",
+   "key": null,
    "passed": false,
    "reasons": [
-    "faithful_translation sl: Memo AI comes in early, after about 38 words, as the friend's app, but the required pitch is missing. The script never says what it does: upload PDFs or PowerPoint slides from lectures, record a lecture and add the audio, and get notes, flashcards, tests and quizzes. It only says 'daš slike in ti poudari vse pomembne stvari'. Add a Slovenian version of the pitch right after 'glejte to. Insane.' Minor: the hook changed 'Takole so zgledali' to 'Takole zgledajo', present tense instead of the original's past tense. Restore the past tense so it matches the original and the title."
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
    ],
-   "results": {
-    "directions_match": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sl": {
-      "issue": "Memo AI comes in early, after about 38 words, as the friend's app, but the required pitch is missing. The script never says what it does: upload PDFs or PowerPoint slides from lectures, record a lecture and add the audio, and get notes, flashcards, tests and quizzes. It only says 'daš slike in ti poudari vse pomembne stvari'. Add a Slovenian version of the pitch right after 'glejte to. Insane.' Minor: the hook changed 'Takole so zgledali' to 'Takole zgledajo', present tense instead of the original's past tense. Restore the past tense so it matches the original and the title.",
-      "pass": false
-     }
-    },
-    "features_claims": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "fail",
-   "summary": "The SL page follows the format's before/after structure, friend story, beat order and save-this-video CTA, and its title is correct, but the script is missing the required Memo AI pitch and changes the hook's tense, so faithful_translation fails.",
-   "title_fixes": {},
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261010215744": {
    "approval": {
     "sl": "locked_preserved"
    },
-   "checked_at": 1791787784,
+   "checked_at": 1792391734,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1421,53 +605,19 @@
      "video_identity": "sha256:6d9255e331dd7c8b64670323d9e94b21e8bf3cd63b64b07868444d8fb949ced5"
     }
    },
-   "key": "1bcc74ea92503f81c29f00fa6ffb6208f988f8acc1fb6b635479284b6af83ced",
+   "key": null,
    "passed": false,
    "reasons": [
-    "faithful_translation sl: Memo AI ('tale app') only comes in after about 70 spoken words, and the limit is 50. To fix this, cut filler before it: the self-correction 'ne, dejtanje svojih sošolk, sošolcev', 'okej, pač res vejo' and 'zaradi tega'. The pitch also never says what goes into the app: uploading PDFs or PowerPoint presentations, or recording the lecture and adding the audio to Memo AI. The quiz swap repeats itself: 'teste, kvize, potem lahko noter rešuješ kvize z razlagami'. Write it as 'teste, kvize z razlagami' and change 'inštruktorja' to 'glasovnega inštruktorja'."
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
    ],
-   "results": {
-    "directions_match": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sl": {
-      "issue": "Memo AI ('tale app') only comes in after about 70 spoken words, and the limit is 50. To fix this, cut filler before it: the self-correction 'ne, dejtanje svojih sošolk, sošolcev', 'okej, pač res vejo' and 'zaradi tega'. The pitch also never says what goes into the app: uploading PDFs or PowerPoint presentations, or recording the lecture and adding the audio to Memo AI. The quiz swap repeats itself: 'teste, kvize, potem lahko noter rešuješ kvize z razlagami'. Write it as 'teste, kvize z razlagami' and change 'inštruktorja' to 'glasovnega inštruktorja'.",
-      "pass": false
-     }
-    },
-    "features_claims": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "fail",
-   "summary": "The SL page follows the GRWM three-phase format, its example and title, and every feature it names is real (the games became quizzes with explanations), but the script fails our rules because Memo AI comes in too late (about 70 words), the pitch leaves out the PDF, PowerPoint and recorded-lecture inputs, and the quiz line repeats itself.",
-   "title_fixes": {},
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261010220207": {
    "approval": {
     "sl": "not_locked"
    },
-   "checked_at": 1791787811,
+   "checked_at": 1792391928,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1476,122 +626,33 @@
      "video_identity": "sha256:525e62b8a2fad76941212d4fe044020de6bf63e88bbd42958cfd9edfd6d6bd1a"
     }
    },
-   "key": "03fd51bb0a42f82d50f56ba32af5583a390d4e84c5bc5a2a1fc4c0eb9c91d2eb",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "The SL page passes on every dimension: the script follows the example almost word for word, keeps the grade, method, app and code order, and brings in Memo AI early with its real features (notes, flashcards, tests); the code is localized to [TVOJE IME]50, the title matches the example, and the directions copy the candlelit card hook in one sentence.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261012160842": {
    "approval": {
-    "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791902880,
+   "checked_at": 1792392119,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
-    "sh": {
-     "source_id": "7695475255841656084",
-     "video_identity": "sha256:2ecf269ca351f63ff2b666a85b10a82ef24d129041f66bb08d885b76048cd423"
-    },
     "sl": {
      "source_id": "7695475255841656084",
      "video_identity": "sha256:2ecf269ca351f63ff2b666a85b10a82ef24d129041f66bb08d885b76048cd423"
     }
    },
-   "key": "afb5ba1a088a3b4a7e0bae6fdd92b81be9479227d7148ffe3212a2562da1bbce",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "Arm pose differs from SH: SL says 'roke sklenjene pred seboj' (hands clasped in front), SH says arms crossed. Check against the video and align both.",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "Minor: the 'govoreći o telefonima' bridge is cut, but the phone pivot still carries the same meaning. Memo AI comes in at about 44 words.",
-      "pass": true
-     },
-     "sl": {
-      "issue": "Minor: 'ne gledajo te' is cut from the payoff, but the fake-friends meaning stays. There are no foreign names to localise.",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages keep the friend-test hook with the car-background trick, the phone pivot, Memo AI named early (about 44 words in) with the required pitch, and the comment-bait CTA. Feature claims are accurate, and the only flag is that the two filming directions describe the creator's arm pose differently.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261013231033": {
@@ -1599,7 +660,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1791934003,
+   "checked_at": 1792392307,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1612,64 +673,12 @@
      "video_identity": "sha256:d6d22406cffb5efc900e7c0f9728436eb10192c6fcc415b55fee09e39025af9a"
     }
    },
-   "key": "a179bc8e7f2d70cc5b9e86de4969ff8ef405a9c6f68b7176f1d74704e046c9a3",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages pass every check. Each keeps the cheating hook, puts the emoji comment request before the demo, brings in Memo AI with the required description after about 50 spoken words, then shows step-by-step explanations and the mind map. The visual hook directions copy the stress-toy opening, and neither title needs a fix. SL moves the bad-grades-to-straight-A's line to the Memo AI reveal and makes its mind map about the solar system, which is still a real Memo AI feature.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261015213945": {
@@ -1677,7 +686,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1792101120,
+   "checked_at": 1792392511,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1690,64 +699,12 @@
      "video_identity": "sha256:493fb9e87897163cac08220747d2812e1fccafe9fff9beae5df0346c1057f875"
     }
    },
-   "key": "ae959c1085dd4235408017cfd2ba00922b2ef8f30eb354066614e071d7c5523f",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    }
-   },
-   "status": "pass",
-   "summary": "Both pages pass. Each keeps the grade-average hook, brings Memo AI in as app #2 and the most-used one after about 40 words with the required pitch, keeps NotebookLM and Google Calendar in place, ends with the CTA, and claims only real features; the Slovenian page names no foreign faculties, cities or discounts that would need localising.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   },
   "A20261015215502": {
@@ -1755,7 +712,7 @@
     "sh": "not_locked",
     "sl": "not_locked"
    },
-   "checked_at": 1792101853,
+   "checked_at": 1792392712,
    "deterministic": {},
    "duplicates": [],
    "inputs": {
@@ -1768,64 +725,38 @@
      "video_identity": "sha256:39af2a38ddf1d532cce0f9c5f6512f5ce008b9faea8e0c9abd7f6d021fa8a910"
     }
    },
-   "key": "a0415d24520eb6f1ee67634c1601de38b0bdd34ad43e7a823e6c58ee2b280339",
-   "passed": true,
-   "reasons": [],
-   "results": {
-    "directions_match": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
+   "version": "group-2026-10-12.early-memo"
+  },
+  "A20261018210403": {
+   "approval": {
+    "sh": "not_locked",
+    "sl": "not_locked"
+   },
+   "checked_at": 1792392909,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sh": {
+     "source_id": "7697723844450159892",
+     "video_identity": "sha256:284ff77c4c494f0f7ea659d3c3a970a7db96c0e6d02dd2fd1ab88800fb13e486"
     },
-    "faithful_translation": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "features_claims": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "format_consistency": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
-    },
-    "script_matches_example": {
-     "sh": {
-      "issue": "",
-      "pass": true
-     },
-     "sl": {
-      "issue": "",
-      "pass": true
-     }
+    "sl": {
+     "source_id": "7697723844450159892",
+     "video_identity": "sha256:284ff77c4c494f0f7ea659d3c3a970a7db96c0e6d02dd2fd1ab88800fb13e486"
     }
    },
-   "status": "pass",
-   "summary": "Both pages pass every check: each keeps the late-discovery hook almost word for word, names Memo AI as the friend's trick within about 50 words with the required pitch, keeps the friend's fast-prep claim, the written and oral exams payoff and the closer (SH moves the fast-prep line after the demo, which is acceptable tightening), and uses only real features. The visual hook directions are concrete one-sentence copies of the chopping-board opening, though SH says black armchair and knife while SL says leather sofa and crumbling or grating.",
-   "title_fixes": {},
+   "key": null,
+   "passed": false,
+   "reasons": [
+    "reviewer failed: Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+   ],
+   "status": "unverified",
    "version": "group-2026-10-12.early-memo"
   }
  },
@@ -1851,9 +782,11 @@
   "learnwith___lea": "sh",
   "learnwithandj": "sh",
   "learnwithanja": "sh",
+  "learnwithdina6": "sh",
   "learnwithhanna": "sh",
   "learnwithmateja": "sh",
   "learnwithmina": "sh",
+  "learnwithnika": "sh",
   "learnwithniksi": "sh",
   "learnwithpaola": "sh",
   "learnwithsaraa": "sh",
@@ -1871,7 +804,10 @@
   "study_with_hexi": "sh",
   "study_with_zo": "sh",
   "studyingwithema": "sh",
+  "studytips_tea": "sh",
+  "studytipsbyem": "sh",
   "studytipsbytara": "sh",
+  "studywith_petradaria": "sh",
   "studywithanamarija": "sh",
   "studywithandja": "sh",
   "studywithandjela": "sh",
@@ -1880,14 +816,18 @@
   "studywithreveka": "sh",
   "studywithvalentina": "sh",
   "tea_studytok": "sh",
+  "tea_tips_": "sh",
   "ucenje.sa.lili": "sh",
   "ucisamilicom": "sh",
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1792357224,
- "lineup": "2026-W42",
- "open_problems": [],
+ "last_run": 1792386933,
+ "lineup": "2026-W43",
+ "open_problems": [
+  "🇸🇮 list order/content differs: listed 22, expected 22"
+ ],
+ "problems_alerted": 1792386933,
  "top3": [
   "A20261008204718",
   "A20261015213945",
@@ -1897,6 +837,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/0704a1dc-0341-4f0f-9eb3-42bfb53281b6/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/0b8d4f9b-c9e2-4dff-92a4-368469463b96/video.mp4": "sha256:39af2a38ddf1d532cce0f9c5f6512f5ce008b9faea8e0c9abd7f6d021fa8a910",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/1149487d-d6b0-49ba-a7f6-ae5fcc2434b2/video.mp4": "sha256:284ff77c4c494f0f7ea659d3c3a970a7db96c0e6d02dd2fd1ab88800fb13e486",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/14ab7617-867b-440b-ba89-9076b4231496/video.mp4": "sha256:d6865f476c8564f65ff7dda23a1765706b619c140dc48b6aa66a4f671d65c1e7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/160678ef-32dd-44af-bb6f-7a66f1b10436/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/176f192d-8c8a-47d0-911a-9c25aa4be9d2/video.mp4": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e",
@@ -1905,6 +846,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/23baa518-4640-4556-8e8e-4aa3c4331160/video-notion.mp4": "sha256:61696db2bb051d7382dd8e4bb6ddf26b57583264a2d8913b15aea64c2b749b94",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/25821af1-372a-453f-91e1-03e7b2fecca7/video.mp4": "sha256:41b5d3fba9dd9b171f879dd43d63198aca91fabcf2547a07c7303f8ed860eba0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/26c74d1b-9b87-48df-b8b9-ccfc990f917d/video.mp4": "sha256:d6d22406cffb5efc900e7c0f9728436eb10192c6fcc415b55fee09e39025af9a",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/28ef0783-e5a7-4329-8a46-a87d4796b0c0/video.mp4": "sha256:8baf5d38ef87f7f71c203485f511fc2dce593b29d35838ae41c7fe594f9acc8e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/2c7d9ce4-ec78-4471-9516-94292f3e1227/video-notion.mp4": "sha256:9c02af67e47bd9ac17022fe8d832f4478e998428889e6141ed3779cabab38af7",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/31a27f31-6d7a-492b-9a2f-5e21683e902a/video.mp4": "sha256:fe542121123b2979bda64118bcedc1b3693f27b021495618c93e1ee9d29c6d32",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/337a99d9-13da-42a6-894a-f679e2935f94/video.mp4": "sha256:385fb85bd311ceaf8dc2d3d9883e97f7496076c9144bbc3240b8e5b6c921b60d",
@@ -1912,12 +854,15 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/3d104410-8185-4a2b-9a55-ce24257e22f5/video.mp4": "sha256:274dccbdf202d089a540c2cdfc273ea99a643c1f792b99d8b1ac3a01d2598a4f",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/3f20f724-3d93-4627-b805-840c82c8c27f/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/42b6d9eb-a157-4f0a-bc5d-dcc0c2214e20/video.mp4": "sha256:e513b4868ed887f7d0fd7d95c00b0d8f505555382b0a29f910e4500bab96995b",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/44b975a6-6000-49ad-aa5d-23dd8c8e35c1/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/45827c54-f9aa-4698-ad8b-2fade4b31769/video.mp4": "sha256:284ff77c4c494f0f7ea659d3c3a970a7db96c0e6d02dd2fd1ab88800fb13e486",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/481b3103-ec71-4664-a107-837fa596a460/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/4b623f87-a173-46be-9765-b8700a7903d3/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/4baa93b7-5468-4c23-af0e-6ea5ef61e029/video.mp4": "sha256:99614bca69d0665bf2383948d4944285ea2a4e0ea825bc267e5e3d2e3ed4165e",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/4c43ba16-0bde-42ca-a741-bc88f316fe6d/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/52fa3806-18da-439d-ace4-f4c8a6cd2041/video-notion.mp4": "sha256:02a503e54e5bd36afaa705ca8c88d341075b84819de51c93e4f3b74fab2ed518",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/5533d356-9de1-4f27-8e21-d9d7e3f125aa/video-notion.mp4": "sha256:8401ad9c8d9a1547a0ec81908a62ca7723b27e82a9bb3f040bb97275e09efdb4",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/5a34f6cc-c367-4278-b363-24a167966124/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/631fce93-8196-45d8-a854-da27fbc82d72/video-notion.mp4": "sha256:fa7d6f7f9a8ade294db9b305f23b9c45690bd9122a41071e1a75a268daafdb99",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/635ba303-0ce3-42a9-b988-0cc452861169/video.mp4": "sha256:3a56f5f284ca15b21bda74ec177d7c6d519b0ca02d6b47a45cbd6afc0448b7ab",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/6b3809ad-cf04-4426-8f8d-da0a3d675711/video-notion.mp4": "sha256:728cf7db67b5988163b4b35079212302d7be123337b97b582d506266b1fa9fea",
@@ -1950,5 +895,5 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/f1862454-a6e1-4442-b139-1b9f803b769c/video-notion.mp4": "sha256:c885900fe56e7d31e3feb4705ce828c344025ae7ef682156992baed17396de77",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/fd23fb00-7c58-473e-b4bc-404869c20add/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5"
  },
- "weekly": "2026-W42"
+ "weekly": "2026-W43"
 }
