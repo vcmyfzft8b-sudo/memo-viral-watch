@@ -60,18 +60,18 @@
   "demo_videos_notetaker": {
     "_about": "The note-taker demo (demo/ make_all.mjs --demo notetaker: record the lecture -> notes -> flashcard -> quiz -> test) for the hand-written formats (watcher/hand.py). Drive links, anyone with the link can view.",
     "sh": {
-      "folder": "",
-      "mac": "",
-      "windows": "",
-      "iphone": "",
-      "android": ""
+      "folder": "https://drive.google.com/drive/folders/15AxHp5aWwu1rhN8xNopvJFS7eC_cw9-J",
+      "mac": "https://drive.google.com/file/d/1oJfmgSKkGAR9lPir8GmDvtLZXcxFzMMh/view",
+      "windows": "https://drive.google.com/file/d/1uqMCZExMGrJxPcrv5r3j2KN9Rv_Aocez/view",
+      "iphone": "https://drive.google.com/file/d/1t6iEhDuCgPvwy6SEjQe2jsS3CczGymi6/view",
+      "android": "https://drive.google.com/file/d/15eYb7xV1n3CsBAVtR8PuSIT7Ci0iHVkY/view"
     },
     "sl": {
-      "folder": "",
-      "mac": "",
-      "windows": "",
-      "iphone": "",
-      "android": ""
+      "folder": "https://drive.google.com/drive/folders/100pYMDUC8BAqAAjD-eQ90v3DA0LNdiwo",
+      "mac": "https://drive.google.com/file/d/1G1jZ2xHw01eH3TgG0_V4kFZTkBTK-5rs/view",
+      "windows": "https://drive.google.com/file/d/1twAmM5GbU0vVNEZNe8ct2diLVlLzso25/view",
+      "iphone": "https://drive.google.com/file/d/1YlNtsSlBUuXmgqyknh-4s8a11qZ0h9NG/view",
+      "android": "https://drive.google.com/file/d/1adwCQlits1W5HZu0v9r3h8TzfHzBrWWn/view"
     }
   },
   "notion": {
