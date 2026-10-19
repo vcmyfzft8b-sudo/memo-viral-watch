@@ -7,7 +7,7 @@ materials), every held page (still in the private staging area, invisible to cre
 """
 import re
 
-from . import notion, rank, state
+from . import hand, notion, rank, state
 from .brand import links_for
 from .markets import TEXT, own
 
@@ -96,7 +96,9 @@ def run(cfg, fmts, page_of):
             problems.append(f'{flag} list layout incomplete (🔥 / 🚨 / 📁)')
         entries, _ = notion.list_entries(mp['list_page'])
         listed = [p.replace('-', '') for _, p in entries]
-        want = [page_of(by_id[i], key).replace('-', '') for i in ids if page_of(by_id[i], key)]
+        want = [page_of(by_id[i], key).replace('-', '') for i in ids if page_of(by_id[i], key)] if m.get('enabled', True) else []
+        want += [p.replace('-', '') for p in hand.tail(key)]  # the formats written by hand, after the ranked ones
+        problems += hand.check(key, mp, T)
         if listed != want:
             problems.append(f'{flag} list order/content differs: listed {len(listed)}, expected {len(want)}')
         else:
@@ -110,7 +112,7 @@ def run(cfg, fmts, page_of):
         for f in fmts:
             pid = page_of(f, key)
             if not pid:
-                if f.get('status') in ('active', 'pending') and key in (f.get('only_markets') or [key]):
+                if f.get('status') in ('active', 'pending') and key in (f.get('only_markets') or [key]) and m.get('enabled', True):
                     why = (f.get('held_why') or {}).get(key)
                     problems.append(f"{flag} {f['title']}: no page" + (f" (held: {why[:200]})" if why else ''))
                 continue

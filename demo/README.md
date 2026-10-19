@@ -38,6 +38,13 @@ demo shows that tab, played by the same scripted walkthrough the landing page us
 On the laptops the flashcard may use the free height under it (the app caps it at 22rem; the recordings allow
 27rem), so it reads as big as on a large desktop window.
 
+## The note-taker demo (hand-written lecture scripts)
+
+`node make_all.mjs --demo notetaker` (~25 s): the "new note" options → record the lecture → the notes write
+themselves → stop → the finished notes (key points, table) → flip a flashcard → answer a quiz question → start a
+practice test. Recorded on the production app (`DEMO_APP=http://localhost:3555 DEMO_MEMO=~/dev/Memo_AI`, no voice
+tutor needed). Files: `out/final/<Balkan|Slovenija>/Memo AI demo zapiski – <device> (…).mp4`.
+
 ## Make them again
 
 Needs that Memo AI copy running locally (`next dev` on port 3556, `.claude/launch.json` → memo-app-demo-tutor),

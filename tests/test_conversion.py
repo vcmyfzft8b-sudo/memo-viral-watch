@@ -11,6 +11,8 @@ from watcher import conversion, detect, hot, lineup, main, rank, state
 NOW = 1_800_000_000
 DAY = 86400
 CFG = json.load(open(os.path.join(os.path.dirname(__file__), '..', 'config.json')))
+for _m in CFG['markets'].values():  # the clean-up rules are tested with every market on (sh is stopped in config.json)
+    _m['enabled'] = True
 
 
 def vid(fmt, views, saves, days=3, handle='a', likes=None, **kw):

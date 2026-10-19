@@ -18,7 +18,7 @@ import tempfile
 import time
 import traceback
 
-from . import ages, align, audit, builder, classify, conversion, crosscheck, detect, discover, gate, hot, lineup, llm, localize, markets as M, media, notify, notion, own, rank, reword, soniox, state, tiktok, weekly
+from . import ages, align, audit, builder, classify, conversion, crosscheck, detect, discover, gate, hand, hot, lineup, llm, localize, markets as M, media, notify, notion, own, rank, reword, soniox, state, tiktok, weekly
 from .brand import OURS, SOURCE, links_for
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
@@ -777,6 +777,41 @@ def drop_market_page(f, mk):
     return pid, left
 
 
+def hand_scripts(target):
+    """The formats written by hand with the user (registry/hand_scripts.json, watcher/hand.py). A market whose
+    automation is stopped (config enabled=false, e.g. the Balkan list since 19 Oct 2026) keeps only these: every other
+    page of it moves to its archive (never deleted) and the format stays only in the other lists (or is archived).
+    Then the missing hand-written pages are built and every list is drawn again (ranked formats, then these)."""
+    cfg, fmts = load_config(), load_formats()
+    for m in cfg['markets'].values():  # the demo links first: nothing moves when they are missing
+        hand.demo_links(m['lang'])
+    for key, m in cfg['markets'].items():
+        if m.get('enabled', True):
+            continue
+        for f in fmts:
+            pid = page_of(f, key)
+            if not pid:
+                continue
+            notion.move_page(pid, m['archive_page'])
+            f.setdefault('dropped_pages', {})[key] = pid
+            set_page(f, key, None)
+            (f.get('pages') or {}).pop(key, None)
+            left = [k for k in lineup.markets_of(f, cfg) if k != key]
+            if left:
+                f['only_markets'] = left
+            elif f.get('status') in ('active', 'pending'):
+                f['status'] = 'archived'
+                f['archived_reason'] = f'{key} list stopped'
+            state.save('formats.json', fmts)
+            print(f"hand-scripts: {f['title']} left {key} (page in the archive: {pid})", flush=True)
+    hand.build(cfg, '' if target == '-' else target)
+    rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg, force=True)
+    for key, m in cfg['markets'].items():
+        if not m.get('enabled', True):
+            notion.set_order(m['list_page'], hand.tail(key), lang=m['lang'])
+    print('hand-scripts: done')
+
+
 def restore_market_page(f, mk):
     """The format comes back into a market's list: the page it had there moves back from the archive."""
     pid = (f.get('dropped_pages') or {}).get(mk['key'])
@@ -904,6 +939,7 @@ def rerank(mkts, fmts, history, cfg, force=False):
     hot_ids = [i for i in ids if scores[i].get('hot')]  # 5+ viral in 7 days AND saved at least like an average format
     for mk in mkts:
         page_ids = [page_of(by_id[i], mk['key']) for i in ids if page_of(by_id[i], mk['key'])]
+        page_ids += hand.tail(mk['key'])  # the formats written by hand come after the ranked ones
         hot_count = sum(1 for i in hot_ids if page_of(by_id[i], mk['key']))
         entries, _ = notion.list_entries(mk['list_page'])
         current = [pid.replace('-', '') for _, pid in entries]
@@ -1661,6 +1697,9 @@ def main():
     ap.add_argument('--transcribe', default='', help='read-only: TikTok link -> timed transcript (Soniox)')
     ap.add_argument('--restore-format', default='', help='format id: undo remove-format - pages back into the format folders and lists')
     ap.add_argument('--remove-format', default='', help='format id: the user removed it - every page goes to its market archive (never deleted), never brought back automatically')
+    ap.add_argument('--hand-scripts', nargs='?', const='-', default='',
+                    help="the formats written by hand (registry/hand_scripts.json): missing pages built ('key' = one, "
+                         "'key!' / '!' = write again); a market with enabled=false keeps only these (its other pages to its archive)")
     ap.add_argument('--drop-market', default='', help="'<format id>:<market>': the format leaves that market (page moved to its archive, list updated)")
     ap.add_argument('--app-timing', action='store_true', help='read-only: for every live format, the seconds in its original where the app is shown/named')
     ap.add_argument('--add-materials', default='', help='format id: the images in registry/materials/<id>/<market>/ go into that market page\'s materials section')
@@ -2108,6 +2147,9 @@ def main():
         state.save('formats.json', fmts)
         rerank(M.load(cfg), fmts, state.load('history.json', {}), cfg, force=True)
         print(f"remove-format: {f['title']} archived in every market")
+        return
+    if a.hand_scripts:
+        hand_scripts(a.hand_scripts)
         return
     if a.drop_market:  # "FID[,FID...]:market" - out of that market's list only (page to its archive)
         ids, key = a.drop_market.strip().rsplit(':', 1)

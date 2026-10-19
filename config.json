@@ -57,6 +57,23 @@
       "android": "https://drive.google.com/file/d/1nZ6SIdQD8585Pi4C4OVVyXJDEAB1bcYp/view"
     }
   },
+  "demo_videos_notetaker": {
+    "_about": "The note-taker demo (demo/ make_all.mjs --demo notetaker: record the lecture -> notes -> flashcard -> quiz -> test) for the hand-written formats (watcher/hand.py). Drive links, anyone with the link can view.",
+    "sh": {
+      "folder": "",
+      "mac": "",
+      "windows": "",
+      "iphone": "",
+      "android": ""
+    },
+    "sl": {
+      "folder": "",
+      "mac": "",
+      "windows": "",
+      "iphone": "",
+      "android": ""
+    }
+  },
   "notion": {
     "radar_page": ""
   },
@@ -71,9 +88,10 @@
       "discord_env": "DISCORD_WEBHOOK_URL",
       "cleanup": true,
       "discord_server": "",
-      "enabled": true,
+      "enabled": false,
       "discord_announce": false,
-      "creator_channels": false
+      "creator_channels": false,
+      "_about": "Stopped 19 Oct 2026 (user): no new Balkan formats; the list holds only the hand-written formats (registry/hand_scripts.json, mode=hand-scripts)."
     },
     "sl": {
       "lang": "sl",

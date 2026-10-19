@@ -154,3 +154,14 @@ Earlier (12 Oct): every Balkan format was reworked with the user, script by scri
 registry/approved_scripts.json (sh + sl) - now with the CTA as the last line. Removed by the user: Gradivo kao sočan
 trač, Biologija (archived, never revived). Slovenian page of "Tajne" shows Klara's Memo AI video as the example
 (own_brand per language). Open: Discord server logo (user).
+
+## Hand-written formats, Balkan list stopped (user, 19 Oct 2026)
+- 8 formats written by hand with the user (no example video): `registry/hand_scripts.json` (sl + sh text, title,
+  visual hook, CTA word, `[DEMO]` = where the 🎥 demo cue goes). Pages built by `mode=hand-scripts` (watcher/hand.py),
+  ids in `state/hand.json`. They sit after the ranked formats in the sl list (rerank appends `hand.tail`).
+  Change a script: edit the registry, run `mode=hand-scripts target=<key>!`.
+- Their demo is the note-taker recording (`demo/ make_all.mjs --demo notetaker`, recorded on the production app
+  `~/dev/Memo_AI`, port 3555), Drive links in config `demo_videos_notetaker`.
+- Balkan (`sh`) automation stopped: `config markets.sh.enabled=false`. Its list holds only the hand-written formats;
+  `mode=hand-scripts` moved every other sh page to the sh archive (never deleted; formats stay in the sl list).
+  Astra watching and the Slovenian list keep running.

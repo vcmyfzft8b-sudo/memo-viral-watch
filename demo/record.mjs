@@ -624,6 +624,56 @@ const BEATS = {
   async recordLong() {
     await BEATS.record(8000);
   },
+  /** The ~22 s note-taker demo for the hand-written lecture scripts ("open the app, start recording, it makes the
+   *  notes, then flashcards, quizzes, tests"): "upload audio" / "record the lecture" → the notes write themselves
+   *  while the lecture runs → stop → the finished notes (key points, table) → flip a flashcard → answer a quiz
+   *  question → start a practice test. */
+  async notetaker() {
+    // the ways to make a note, recording picked, ~2.5 s
+    await idle(PHONE ? 700 : 500);
+    if (PHONE) {
+      await click(iconButton("edit_square")); // the phone library's "New" button
+      await hold(1300); // the options: record, upload audio, PDF / document / photo, link
+      await click(byText(M["library.create.record"]));
+    } else {
+      await hover(byText(M["library.quickAction.audio"]), 700);
+      await click(byText(M["library.quickAction.record"]));
+    }
+    // the lecture runs, the notes write themselves, ~5 s
+    await idle(4200);
+    await click(byText(M["creatorDemo.stopAndOpenNotes"]));
+    await noteOpens();
+    // the finished notes: key points, then the table, ~3 s
+    await idle(400);
+    await scroll(PHONE ? 560 : 460, 1300);
+    await idle(700);
+    await scroll(-4000, 550); // back up to the tabs
+    await sleep(rand(150, 300));
+    // flashcards: flip one, ~2.5 s
+    await click(iconButton("style"), { pause: 80 });
+    await sleep(600);
+    await soft("cards", async () => {
+      await click(vis(page.locator(".lecture-flashcard")), { dy: -20, pause: 90 });
+      await idle(PHONE ? 900 : 750);
+    });
+    // quiz: answer one, it turns green, ~2.5 s
+    await click(iconButton("quiz"), { pause: 80 });
+    await sleep(600);
+    await soft("quiz", async () => {
+      await click(byText(QUIZ.get(await findQuizPrompt()).correct), { pause: 120 });
+      await idle(750);
+    });
+    // practice test: start it, type a few words of an answer, ~3.5 s
+    await click(iconButton("assignment"), { pause: 80 });
+    await sleep(600);
+    await soft("test", async () => {
+      await click(vis(page.getByRole("button", { name: M["study.test.startNew"] })));
+      await idle(700);
+      await click(vis(page.locator("textarea")));
+      await type((await practiceAnswer()).split(" ").slice(0, 4).join(" "), 40);
+      await idle(700);
+    });
+  },
   /** Make the notes from a PDF / PowerPoint / photos: options on screen, pick the document, create. */
   async upload() {
     await goHome();
