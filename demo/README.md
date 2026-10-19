@@ -41,9 +41,10 @@ On the laptops the flashcard may use the free height under it (the app caps it a
 ## The note-taker demo (hand-written lecture scripts)
 
 `node make_all.mjs --demo notetaker` (~28 s, phones ~23 s), what creators really see in the app: the "new note"
-options → the production record screen (mic orb, 00:00 → start, the clock runs, the live wave moves → "stop and
-create" → the prepared recording → create) → the finished notes (key points, table) → flip a flashcard → answer a quiz
-question → the practice test → a quick look at the other features (speed reading, memory palace, mind map, podcast).
+options → the production record screen (mic orb, 00:00 → start, the clock runs, the live wave moves) → the sheet is
+closed (no note is made from a few seconds of recording - that looks fake, user 19 Oct 2026) → an existing note from
+the library (key points, table) → flip a flashcard → answer a quiz question → the practice test → a quick look at the
+other features (speed reading, memory palace, mind map, podcast).
 
 The creator demo stages a file in the record sheet (no record screen) and `/creator/college` swaps the sheet for its
 scripted "listening" takeover, so these recordings use `/creator` of a local Memo AI copy whose record sheet is not

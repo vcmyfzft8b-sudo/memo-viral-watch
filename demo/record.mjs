@@ -642,15 +642,18 @@ const BEATS = {
       await hover(byText(M["library.quickAction.audio"]), 600);
       await click(byText(M["library.quickAction.record"]));
     }
-    // the record screen: start, the lecture runs (clock + live wave), stop, create the note, ~7 s
+    // the record screen: start, the lecture runs (clock + live wave), then the sheet is closed - a note made from
+    // a few seconds of recording would look fake (user, 19 Oct 2026); ~6 s
     await idle(800);
     await click(byText(M["capture.startRecording"]));
     await idle(3000);
-    await click(byText(M["capture.stopAndCreate"]));
+    const close = () => click(vis(page.locator('.note-source-modal button:has(:text-is("close")), button[aria-label]:has(:text-is("close"))')), { pause: 80 });
+    await close(); // stops the recording
+    await sleep(180);
+    await close(); // closes the sheet
     await idle(700);
-    await click(byText(M["capture.createNote"]));
-    await noteOpens();
-    // the finished notes: key points, then the table, ~3 s
+    // an existing note from the library: the finished notes, key points, then the table, ~4 s
+    await openAnatomy({ title: /^Mikroekonomija|^Microeconomics/ });
     await idle(400);
     await scroll(PHONE ? 560 : 460, 1300);
     await idle(700);
