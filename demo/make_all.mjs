@@ -19,6 +19,8 @@ const DEVICES = { mac: "Mac", windows: "Windows", phone: "iPhone", android: "And
 const i = process.argv.indexOf("--demo");
 const DEMO = i > -1 ? process.argv[i + 1] : "tour";
 const LABEL = { tour: "Memo AI demo", notetaker: "Memo AI demo zapiski" }[DEMO];
+// notetaker: /creator of the local copy whose record sheet is not staged (the production record screen, see README)
+const PAGE_PATH = { tour: "/creator/college", notetaker: "/creator" }[DEMO];
 if (!LABEL) throw new Error(`unknown --demo ${DEMO} (tour or notetaker)`);
 const pick = process.argv.slice(2).find((a, n, all) => !a.startsWith("--") && all[n - 1] !== "--demo");
 const devices = pick ? pick.split(",") : Object.keys(DEVICES);
@@ -32,7 +34,7 @@ for (const lang of Object.keys(LANGS)) {
     try {
       execFileSync(
         process.execPath,
-        ["record.mjs", "--device", device, "--lang", lang, "--name", DEMO, "--beats", DEMO, "--out", RAW, "--no-warm", "--app", APP, "--memo", MEMO],
+        ["record.mjs", "--device", device, "--lang", lang, "--name", DEMO, "--beats", DEMO, "--out", RAW, "--no-warm", "--app", APP, "--memo", MEMO, "--path", PAGE_PATH],
         { cwd: HERE, stdio: "inherit" },
       );
     } catch {

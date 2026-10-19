@@ -21,6 +21,8 @@ const MEMO = arg("memo", path.join(os.homedir(), "dev/Memo_AI"));
 const DEBUG = process.argv.includes("--debug");
 const OUT = arg("out", path.join(HERE, "out"));
 const NAME = arg("name", "demo");
+/** The demo page: /creator/college (the scripted demo), or /creator (the production record sheet, notetaker). */
+const PAGE_PATH = arg("path", "/creator/college");
 const FRAMES = path.join(HERE, "frames", `${NAME}-${DEVICE}-${LANG}`);
 const SHORT = DEVICE === "short";
 const ANDROID = DEVICE === "android";
@@ -624,24 +626,29 @@ const BEATS = {
   async recordLong() {
     await BEATS.record(8000);
   },
-  /** The ~22 s note-taker demo for the hand-written lecture scripts ("open the app, start recording, it makes the
-   *  notes, then flashcards, quizzes, tests"): "upload audio" / "record the lecture" → the notes write themselves
-   *  while the lecture runs → stop → the finished notes (key points, table) → flip a flashcard → answer a quiz
-   *  question → start a practice test. */
+  /** The ~25 s note-taker demo for the hand-written lecture scripts ("open the app, start recording, it makes the
+   *  notes, then flashcards, quizzes, tests"), on `/creator` of a local copy whose record sheet is not staged
+   *  (`--path /creator`, see README): the production record screen (start → the clock runs, the wave moves → stop
+   *  and create → "Ustvari zapisek") → the finished notes (key points, table) → flip a flashcard → answer a quiz
+   *  question → the practice test → a quick look at the other features. */
   async notetaker() {
-    // the ways to make a note, recording picked, ~2.5 s
+    // the ways to make a note, recording picked, ~2 s
     await idle(PHONE ? 700 : 500);
     if (PHONE) {
       await click(iconButton("edit_square")); // the phone library's "New" button
-      await hold(1300); // the options: record, upload audio, PDF / document / photo, link
+      await hold(1100); // the options: record, upload audio, PDF / document / photo, link
       await click(byText(M["library.create.record"]));
     } else {
-      await hover(byText(M["library.quickAction.audio"]), 700);
+      await hover(byText(M["library.quickAction.audio"]), 600);
       await click(byText(M["library.quickAction.record"]));
     }
-    // the lecture runs, the notes write themselves, ~5 s
-    await idle(4200);
-    await click(byText(M["creatorDemo.stopAndOpenNotes"]));
+    // the record screen: start, the lecture runs (clock + live wave), stop, create the note, ~7 s
+    await idle(800);
+    await click(byText(M["capture.startRecording"]));
+    await idle(3000);
+    await click(byText(M["capture.stopAndCreate"]));
+    await idle(700);
+    await click(byText(M["capture.createNote"]));
     await noteOpens();
     // the finished notes: key points, then the table, ~3 s
     await idle(400);
@@ -663,16 +670,16 @@ const BEATS = {
       await click(byText(QUIZ.get(await findQuizPrompt()).correct), { pause: 120 });
       await idle(750);
     });
-    // practice test: start it, type a few words of an answer, ~3.5 s
+    // the practice test, ~1.5 s
     await click(iconButton("assignment"), { pause: 80 });
-    await sleep(600);
-    await soft("test", async () => {
-      await click(vis(page.getByRole("button", { name: M["study.test.startNew"] })));
-      await idle(700);
-      await click(vis(page.locator("textarea")));
-      await type((await practiceAnswer()).split(" ").slice(0, 4).join(" "), 40);
-      await idle(700);
-    });
+    await idle(900);
+    // the other features, one after another, ~1 s each
+    for (const icon of ["bolt", "explore", "account_tree", "podcasts"]) {
+      await soft(icon, async () => {
+        await click(iconButton(icon), { pause: 80 });
+        await idle(700);
+      });
+    }
   },
   /** Make the notes from a PDF / PowerPoint / photos: options on screen, pick the document, create. */
   async upload() {
@@ -914,6 +921,9 @@ async function run({ capture }) {
   const browser = await chromium.launch({
     args: [
       "--force-color-profile=srgb",
+      // a fake microphone: the production record screen records for real (its clock and live wave run)
+      "--use-fake-ui-for-media-stream",
+      "--use-fake-device-for-media-stream",
       "--hide-scrollbars",
       `--force-device-scale-factor=${SCREEN.dsf}`,
       `--window-size=${VIEW.width},${VIEW.height}`,
@@ -930,11 +940,12 @@ async function run({ capture }) {
         ? "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1"
         : undefined,
   });
+  await ctx.grantPermissions(["microphone"], { origin: APP });
   await ctx.addCookies([{ name: "memo-locale", value: LANG, url: APP }]);
   await ctx.addInitScript(() => localStorage.setItem("nota-theme", "light"));
   await ctx.addInitScript(initScript, { cursorSvg: CURSOR_SVG, laptop: !PHONE });
   page = await ctx.newPage();
-  await page.goto(`${APP}/creator/college`, { waitUntil: "networkidle" });
+  await page.goto(`${APP}${PAGE_PATH}`, { waitUntil: "networkidle" });
   await sleep(2500); // fonts, hydration, entrance fade
   onNote = false;
 

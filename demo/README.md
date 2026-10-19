@@ -40,10 +40,25 @@ On the laptops the flashcard may use the free height under it (the app caps it a
 
 ## The note-taker demo (hand-written lecture scripts)
 
-`node make_all.mjs --demo notetaker` (~25 s): the "new note" options → record the lecture → the notes write
-themselves → stop → the finished notes (key points, table) → flip a flashcard → answer a quiz question → start a
-practice test. Recorded on the production app (`DEMO_APP=http://localhost:3555 DEMO_MEMO=~/dev/Memo_AI`, no voice
-tutor needed). Files: `out/final/<Balkan|Slovenija>/Memo AI demo zapiski – <device> (…).mp4`.
+`node make_all.mjs --demo notetaker` (~28 s, phones ~23 s), what creators really see in the app: the "new note"
+options → the production record screen (mic orb, 00:00 → start, the clock runs, the live wave moves → "stop and
+create" → the prepared recording → create) → the finished notes (key points, table) → flip a flashcard → answer a quiz
+question → the practice test → a quick look at the other features (speed reading, memory palace, mind map, podcast).
+
+The creator demo stages a file in the record sheet (no record screen) and `/creator/college` swaps the sheet for its
+scripted "listening" takeover, so these recordings use `/creator` of a local Memo AI copy whose record sheet is not
+staged: `~/dev/Memo_AI-demo-record` (git worktree of ~/dev/Memo_AI, branch `demo/production-record-sheet`, one change
+in `note-source-modal.tsx`; node_modules cloned with `cp -Rc`, Turbopack refuses a symlink). The browser gets a fake
+microphone, so the screen records for real.
+
+```bash
+cd ~/dev/Memo_AI-demo-record && npx next dev -p 3558        # Node 24 (/opt/homebrew/opt/node@24/bin)
+cd demo && DEMO_APP=http://localhost:3558 DEMO_MEMO=~/dev/Memo_AI-demo-record node make_all.mjs --demo notetaker --redo
+```
+
+Files: `out/final/<Balkan|Slovenija>/Memo AI demo zapiski – <device> (…).mp4`; on Drive in `Memo AI demo
+posnetki/Slovenija/Zapiski` and `…/Balkan/Bilješke` (config `demo_videos_notetaker`; `rclone copyto` onto the same
+names keeps the links).
 
 ## Make them again
 
