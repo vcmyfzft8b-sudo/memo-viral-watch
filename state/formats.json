@@ -15,7 +15,9 @@
   "cleaned_from": [],
   "created": 1791492438,
   "description": "Talking-head listicle of little-known student discounts (transport, free Microsoft Office, cinema/theatre) with numbered on-screen stickers, where the last item is the study app shown as a screen recording before a like-and-follow outro.",
-  "dropped_pages": {},
+  "dropped_pages": {
+   "sh": "3f365e84-a3c2-814b-a78d-ef26edc77a19"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -51,7 +53,10 @@
   "logo_lockup": {
    "sh": true
   },
-  "page_id": "3f365e84-a3c2-814b-a78d-ef26edc77a19",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3fa65e84-a3c2-8125-83b5-ea3f46ba06cf"
   },
@@ -137,6 +142,9 @@
   },
   "created": 1791493797,
   "description": "Talking-head countdown listicle (top 5 easiest faculties) filmed while cutting paper with scissors as a visual hook, with a mid-list app demo filmed on a phone over a book before revealing places 2 and 1.",
+  "dropped_pages": {
+   "sh": "3f365e84-a3c2-8158-a10f-d25c82347e03"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -159,7 +167,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f365e84-a3c2-8158-a10f-d25c82347e03",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f365e84-a3c2-812c-8690-c4d957b2a619"
   },
@@ -188,6 +199,9 @@
   },
   "created": 1791494352,
   "description": "No-voiceover POV meme with trending audio: creator looks stressed during a test because she can't remember a slide, then a handheld shot of a laptop screen showing the study app as the 'brain upgrade'.",
+  "dropped_pages": {
+   "sh": "3f365e84-a3c2-819d-9066-dc90353d437e"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -214,7 +228,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f365e84-a3c2-819d-9066-dc90353d437e",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f365e84-a3c2-816c-89f2-f02737fabba1"
   },
@@ -364,7 +381,9 @@
   "cleaned_from": [],
   "created": 1791505153,
   "description": "Talking-head reaction series where the creator reads and jokes about funny e-diary teacher remarks shown as screenshot overlays, with a mid-video segue ('if you want to use AI, use it properly') into a quick app demo before returning to more remarks.",
-  "dropped_pages": {},
+  "dropped_pages": {
+   "sh": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -403,7 +422,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f465e84-a3c2-81a1-b4dc-e985ce68e3f4",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3fa65e84-a3c2-812f-be71-f0b4cda944a8"
   },
@@ -437,6 +459,9 @@
   },
   "created": 1791510081,
   "description": "Talking-head 'secrets teachers hide from you' video with satisfying slime-cutting hook and a fake 'deleting in 2 hours' urgency line, then a close-up laptop screen walkthrough of the study app's features.",
+  "dropped_pages": {
+   "sh": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -467,10 +492,13 @@
    "sh": true,
    "sl": true
   },
+  "only_markets": [
+   "sl"
+  ],
   "own_brand": {
    "sl": true
   },
-  "page_id": "3f465e84-a3c2-81e9-8b59-d81f3994a6fe",
+  "page_id": null,
   "pages": {
    "sl": "3f465e84-a3c2-81c1-b18f-e757875dad14"
   },
