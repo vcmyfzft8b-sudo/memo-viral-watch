@@ -5499,5 +5499,60 @@
   ],
   "ts": 1792500159,
   "type": "rerank"
+ },
+ {
+  "error": "Claude Code: You've hit your weekly limit · resets 2am (UTC)",
+  "ts": 1792517903,
+  "type": "judge_failed",
+  "video": "7697989378043301153"
+ },
+ {
+  "error": "Claude Code: You've hit your weekly limit · resets 2am (UTC)",
+  "ts": 1792518095,
+  "type": "judge_failed",
+  "video": "7696223095987703061"
+ },
+ {
+  "error": "Claude Code: You've hit your weekly limit · resets 2am (UTC)",
+  "ts": 1792518279,
+  "type": "error",
+  "video": "7698320447208754453"
+ },
+ {
+  "format": "A20261018210403",
+  "reasons": [
+   "Claude Code: You've hit your weekly limit · resets 2am (UTC)"
+  ],
+  "tries": 2,
+  "ts": 1792519219,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008204718",
+   "A20261015213945",
+   "A20261010215329",
+   "A20261013231033",
+   "A20261015215502",
+   "A20261009014121",
+   "A20261009210824",
+   "A20261009001913",
+   "A20261010220207",
+   "A20261008210957",
+   "A20261008211912",
+   "A20261010215744",
+   "A20261010214237",
+   "A20261008224450",
+   "A20261010163838",
+   "A20261010215543",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261010162928",
+   "A20261010162026",
+   "A20261012160842",
+   "A20261008205804"
+  ],
+  "ts": 1792519418,
+  "type": "rerank"
  }
 ]
