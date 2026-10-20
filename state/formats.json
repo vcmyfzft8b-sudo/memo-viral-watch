@@ -515,6 +515,9 @@
   "archived_reason": "removed by the user 11.10.2026",
   "created": 1791510925,
   "description": "Talking-to-camera study app recommendation where the creator holds up a laptop showing the app, then films the laptop screen while exploring one school subject (biology/cells) and ends back on camera pointing at the app.",
+  "dropped_pages": {
+   "sh": "3f465e84-a3c2-810b-b433-d079ee2a9dd1"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -529,7 +532,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
-  "page_id": "3f465e84-a3c2-810b-b433-d079ee2a9dd1",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f465e84-a3c2-8170-9ec3-ee47d9934a43"
   },
@@ -558,6 +564,9 @@
   },
   "created": 1791580104,
   "description": "Talking-head video where the creator 'sells' ad spots drawn as priced fields on the back of their laptop, reveals the study app as the first buyer by cutting out and sticking on its logo, then demos its features on the laptop screen.",
+  "dropped_pages": {
+   "sh": "3f465e84-a3c2-815f-9cd7-d9b447463dd2"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -584,7 +593,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3f465e84-a3c2-815f-9cd7-d9b447463dd2",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f465e84-a3c2-8189-b47d-f03858456d14"
   },
@@ -601,6 +613,9 @@
   "archived_reason": "removed by the user 11.10.2026",
   "created": 1791637493,
   "description": "Satisfying ASMR-style prop action (squeezing ketchup into a glass of water) while the audio is a live conversation with the app's voice tutor explaining a school topic as juicy gossip, ending with a close-up of the phone showing the voice tutor and an 'the app is called X' text overlay.",
+  "dropped_pages": {
+   "sh": "3f565e84-a3c2-81ae-825a-c3d10f74823b"
+  },
   "faithful": {
    "sh": true,
    "sl": true
@@ -615,7 +630,10 @@
    "sh": "v2-teen",
    "sl": "v2-teen"
   },
-  "page_id": "3f565e84-a3c2-81ae-825a-c3d10f74823b",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f565e84-a3c2-8128-b4dc-e7924264635c"
   },
@@ -845,7 +863,9 @@
   "cleaned_from": [],
   "created": 1791668557,
   "description": "Creator films their own embarrassed, laughing reaction to an AI oral-quiz page playing an awkward double-entendre medical mnemonic dialogue, then turns the camera to the laptop screen showing the quiz.",
-  "dropped_pages": {},
+  "dropped_pages": {
+   "sh": "3fb65e84-a3c2-81d2-9285-cfecdfecc306"
+  },
   "id": "A20261010214237",
   "listed_at": 1791673307,
   "logo_hq": {
@@ -856,7 +876,10 @@
    "sh": true,
    "sl": true
   },
-  "page_id": "3fb65e84-a3c2-81d2-9285-cfecdfecc306",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f565e84-a3c2-8158-aa07-fd81fb00a741"
   },
@@ -1049,9 +1072,15 @@
   },
   "created": 1791933033,
   "description": "Talking-head promise hook ('grades so good your teacher thinks you cheat') while fidgeting with a stress toy, comment-emoji CTA, then a screen recording of the study app on a computer monitor showing upload and results.",
+  "dropped_pages": {
+   "sh": "3f865e84-a3c2-8130-aa0a-d6aea79cc620"
+  },
   "id": "A20261013231033",
   "listed_at": 1791934065,
-  "page_id": "3f865e84-a3c2-8130-aa0a-d6aea79cc620",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3f865e84-a3c2-81ac-a6f9-ecaaad571976"
   },
@@ -1079,9 +1108,15 @@
   },
   "created": 1792100385,
   "description": "Talking-head student at a desk opens with her top grade averages as proof, then lists three study apps she used, with the study app as the second, most-used item shown via screen recording.",
+  "dropped_pages": {
+   "sh": "3fa65e84-a3c2-81f9-8073-f670e8f6b5f3"
+  },
   "id": "A20261015213945",
   "listed_at": 1792101215,
-  "page_id": "3fa65e84-a3c2-81f9-8073-f670e8f6b5f3",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3fa65e84-a3c2-81c9-9507-c930393625d9"
   },
@@ -1105,9 +1140,15 @@
   },
   "created": 1792101302,
   "description": "Talking-head storytime where the creator, casually doing a chore on camera, reveals a late discovery ('4 years of uni and only now I learn...') about a high-achieving friend's secret study trick, then screen-records the study app as the reveal.",
+  "dropped_pages": {
+   "sh": "3fa65e84-a3c2-8199-99d3-cc9843906460"
+  },
   "id": "A20261015215502",
   "listed_at": 1792101925,
-  "page_id": "3fa65e84-a3c2-8199-99d3-cc9843906460",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3fa65e84-a3c2-817c-a076-d0ddd15bcbb9"
   },
@@ -1123,8 +1164,14 @@
  {
   "created": 1792357443,
   "description": "Silent music-only relatable study vlog with timestamp stickers showing the creator studying for hours while waiting for a crush's text, ending with the twist that she 'texts first' — but to the study app, shown on a laptop.",
+  "dropped_pages": {
+   "sh": "3fd65e84-a3c2-813d-935f-f901ce98de37"
+  },
   "id": "A20261018210403",
-  "page_id": "3fd65e84-a3c2-813d-935f-f901ce98de37",
+  "only_markets": [
+   "sl"
+  ],
+  "page_id": null,
   "pages": {
    "sl": "3fd65e84-a3c2-81db-969f-d8abcbc4df94"
   },
