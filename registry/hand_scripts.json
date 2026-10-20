@@ -12,7 +12,8 @@
           "Pol je vidla, da ma odprto [DEMO] to aplikacijo, ki sama snema predavanje. Na začetku predavanja sam odpreš aplikacijo in začneš snemat, ona pa ti med predavanjem avtomatsko naredi popolne zapiske. Tko da ti ni treba ves čas pisat, pa tud če kej ne slišiš ali pa profesor govori prehitro, nč ne zamudiš. Lahko se sam fokusiraš na predavanje. Ali pa, kot ta študent, mirno spiš, ker zapiske itak maš.",
           "Pol ti aplikacija naredi še flashkarte, kvize, teste pa še ful drugih stvari za učenje, da se lahko vse naučiš."
         ],
-        "hook": "Začni čisto blizu kamere, kot da šepetaš skrivnost, z napisom »Ta video brišem čez 2 uri ⏳🤫« na zaslonu. Prvi stavek povej takoj, brez uvoda."
+        "hook": "Začni čisto blizu kamere, kot da šepetaš skrivnost, z napisom »Ta video brišem čez 2 uri ⏳🤫« na zaslonu. Prvi stavek povej takoj, brez uvoda.",
+        "age_tip": "Če hodiš v srednjo, reci »profesorica v srednji« in »pri pouku« namesto »na faksu« in »na predavanju«."
       },
       "sh": {
         "title": "Ovaj video brišem za 2 sata ⏳🤫",
@@ -23,7 +24,8 @@
           "Onda je vidjela da ima otvorenu [DEMO] ovu aplikaciju, koja sama snima predavanje. Na početku predavanja samo otvoriš aplikaciju i počneš snimati, a ona ti tokom predavanja automatski napravi savršene bilješke. Tako da ne moraš stalno pisati, i čak i ako nešto ne čuješ ili profesor priča prebrzo, ništa ne propustiš. Možeš se samo fokusirati na predavanje. Ili, kao taj student, mirno spavaš, jer bilješke ionako imaš.",
           "Onda ti aplikacija napravi još flash kartice, kvizove, testove i gomilu drugih stvari za učenje, da sve možeš naučiti."
         ],
-        "hook": "Počni sasvim blizu kamere, kao da šapućeš tajnu, s natpisom »Ovaj video brišem za 2 sata ⏳🤫« na ekranu. Prvu rečenicu reci odmah, bez uvoda."
+        "hook": "Počni sasvim blizu kamere, kao da šapućeš tajnu, s natpisom »Ovaj video brišem za 2 sata ⏳🤫« na ekranu. Prvu rečenicu reci odmah, bez uvoda.",
+        "age_tip": "Ako ideš u srednju, reci »profesorica u srednjoj« i »na času« umjesto »na faksu« i »na predavanju«."
       }
     },
     {
@@ -37,7 +39,8 @@
           "In medtem ko sem jaz lepo spala na predavanju, mi je ta aplikacija naredila popolne zapiske, brez da bi zamudila karkoli, kar je profesor rekel. In ko je bilo predavanja konec, sem se lepo zbudila in mela že narejene popolne zapiske. Pa ne sam to, aplikacija mi je naredila še vse teste, kvize, flashkarte pa milijon drugih stvari.",
           "In pol sem se sam eno uro na teden učila: šla sem čez zapiske, malo potrenirala s flashkartami, testi in kvizi, in tko sem mela cel faks povprečje 10.0. Tko da, ja."
         ],
-        "hook": "Začni z glavo na mizi, kot da spiš. Potem dvigni glavo, poglej v kamero in takoj povej prvi stavek. Naslov naj bo na zaslonu prve 3 sekunde."
+        "hook": "Začni z glavo na mizi, kot da spiš. Potem dvigni glavo, poglej v kamero in takoj povej prvi stavek. Naslov naj bo na zaslonu prve 3 sekunde.",
+        "age_tip": "Če hodiš v srednjo, reci »v srednji« in »povprečje 5.0« namesto »na faksu« in »povprečje 10.0«."
       },
       "sh": {
         "title": "Kako sam imala prosjek 10.0 na faksu 😴📚",
@@ -48,7 +51,8 @@
           "I dok sam ja lijepo spavala na predavanju, ova aplikacija mi je napravila savršene bilješke, a da nije propustila ništa što je profesor rekao. I kad je predavanje završilo, lijepo sam se probudila i već imala gotove savršene bilješke. I ne samo to, aplikacija mi je napravila još sve testove, kvizove, flash kartice i milion drugih stvari.",
           "I onda sam samo sat vremena sedmično učila: prošla sam kroz bilješke, malo vježbala s flash karticama, testovima i kvizovima, i tako sam cijeli faks imala prosjek 10.0. Tako da, eto."
         ],
-        "hook": "Počni s glavom na stolu, kao da spavaš. Onda podigni glavu, pogledaj u kameru i odmah reci prvu rečenicu. Naslov neka bude na ekranu prve 3 sekunde."
+        "hook": "Počni s glavom na stolu, kao da spavaš. Onda podigni glavu, pogledaj u kameru i odmah reci prvu rečenicu. Naslov neka bude na ekranu prve 3 sekunde.",
+        "age_tip": "Ako ideš u srednju, reci »u srednjoj« i »prosjek 5.0« umjesto »na faksu« i »prosjek 10.0«."
       }
     },
     {
@@ -62,7 +66,8 @@
           "Drugi, in iskreno najboljši: [DEMO] Memo AI. Med predavanjem samo odpreš aplikacijo in začneš snemati, medtem ko predavatelj razlaga. Memo AI sam naredi zapiske, in ko je predavanja konec, imaš že vse: zapiske, učne kartice, kvize, teste in še veliko drugega. Zakaj je najboljši? Ker ne zamudiš ničesar, tudi če predavatelj govori prehitro. Ker lahko ves čas samo poslušaš in snov res razumeš. In ker se ti ni treba učiti iz napol prepisanih zapiskov, ampak imaš takoj pripravljene kvize in teste, s katerimi preveriš, ali snov znaš.",
           "Tretji: zapiske si delaš na iPadu, v GoodNotes. Tam imaš vse highlighterje, različne kulije, lahko dodaš slike in imaš vse lepo urejeno na enem mestu."
         ],
-        "hook": "Govori čisto blizu kamere in s prsti pokaži »tri«. Pri prvem načinu primi kuli z levo roko in naredi, kot da pišeš. Naslov naj bo na zaslonu prve 3 sekunde."
+        "hook": "Govori čisto blizu kamere in s prsti pokaži »tri«. Pri prvem načinu primi kuli z levo roko in naredi, kot da pišeš. Naslov naj bo na zaslonu prve 3 sekunde.",
+        "age_tip": "Če hodiš v srednjo, reci »v srednji« namesto »na faksu«."
       },
       "sh": {
         "title": "3 najbolja načina za bilješke na faksu ✍️📚",
@@ -73,7 +78,8 @@
           "Drugi, i iskreno najbolji: [DEMO] Memo AI. Na predavanju samo otvoriš aplikaciju i počneš snimati dok profesor objašnjava. Memo AI sam napravi bilješke, i kad se predavanje završi, već imaš sve: bilješke, flash kartice, kvizove, testove i još mnogo toga. Zašto je najbolji? Zato što ništa ne propustiš, čak ni kad profesor priča prebrzo. Zato što možeš cijelo vrijeme samo slušati i stvarno razumjeti gradivo. I zato što ne moraš učiti iz napola prepisanih bilješki, nego odmah imaš spremne kvizove i testove s kojima provjeriš da li znaš gradivo.",
           "Treći: bilješke praviš na iPadu, u GoodNotesu. Tamo imaš sve markere, različite olovke, možeš dodati slike i sve ti je lijepo složeno na jednom mjestu."
         ],
-        "hook": "Pričaj sasvim blizu kamere i prstima pokaži »tri«. Kod prvog načina uzmi olovku u lijevu ruku i pravi se da pišeš. Naslov neka bude na ekranu prve 3 sekunde."
+        "hook": "Pričaj sasvim blizu kamere i prstima pokaži »tri«. Kod prvog načina uzmi olovku u lijevu ruku i pravi se da pišeš. Naslov neka bude na ekranu prve 3 sekunde.",
+        "age_tip": "Ako ideš u srednju, reci »u srednjoj« umjesto »na faksu«."
       }
     },
     {
@@ -89,7 +95,8 @@
           "Četrta: Spotify Premium Student. Kot študent ga maš za pol cene, tko da res nima smisla, da ga plačuješ polno.",
           "Peta: račun na e-Študentskem servisu. Uredi si ga že zdaj, da lahko takoj, ko najdeš študentsko delo, začneš delat brez čakanja."
         ],
-        "hook": "Začni z blazino za vrat okoli vratu in takoj povej prvi stavek. Naslov naj bo na zaslonu prve 3 sekunde."
+        "hook": "Začni z blazino za vrat okoli vratu in takoj povej prvi stavek. Naslov naj bo na zaslonu prve 3 sekunde.",
+        "age_tip": "Če hodiš v srednjo, reci »prvi letnik srednje« namesto »prvi letnik faksa«."
       },
       "sh": {
         "title": "5 stvari koje ti trebaju na prvoj godini faksa 🎒",
@@ -102,7 +109,8 @@
           "Četvrta: kartica za studentsku menzu. Ručak skoro za džabe, a kad si cijeli dan na faksu, to ti spašava život.",
           "Peta: učlani se u studentski servis ili omladinsku zadrugu. Sredi to odmah, da možeš početi raditi čim nađeš studentski posao."
         ],
-        "hook": "Počni s jastukom za vrat oko vrata i odmah reci prvu rečenicu. Naslov neka bude na ekranu prve 3 sekunde."
+        "hook": "Počni s jastukom za vrat oko vrata i odmah reci prvu rečenicu. Naslov neka bude na ekranu prve 3 sekunde.",
+        "age_tip": "Ako ideš u srednju, reci »prvi razred srednje« umjesto »prva godina faksa«."
       }
     },
     {
@@ -115,7 +123,8 @@
           "In mi je rekel, da hodi sam zato, da lahko s [DEMO] to aplikacijo posname predavanje. Ko pride, odpre aplikacijo, začne snemat, pol pa lahko mirno spi. Aplikacija mu iz posnetka naredi popolne zapiske, pa še flashkarte, kvize in teste, da se lahko pol iz tega nauči.",
           "Tko da on v bistvu na predavanje sploh ne hodi poslušat, ampak sam snemat. Pa ma same desetke."
         ],
-        "hook": "Začni čisto blizu kamere in prvi stavek povej takoj, kot da sprašuješ frendico. Naslov naj bo na zaslonu prve 3 sekunde."
+        "hook": "Začni čisto blizu kamere in prvi stavek povej takoj, kot da sprašuješ frendico. Naslov naj bo na zaslonu prve 3 sekunde.",
+        "age_tip": "Če hodiš v srednjo, reci »pri pouku« in »same petke« namesto »na predavanju« in »same desetke«."
       },
       "sh": {
         "title": "Moj drug na svakom predavanju SPAVA 😴",
@@ -125,7 +134,8 @@
           "I rekao mi je da ide samo zato da bi s [DEMO] ovom aplikacijom snimio predavanje. Kad dođe, otvori aplikaciju, počne snimati, i onda može mirno spavati. Aplikacija mu od snimka napravi savršene bilješke, i još flash kartice, kvizove i testove, da poslije iz toga može naučiti.",
           "Tako da on u stvari na predavanje uopšte ne ide da sluša, nego samo da snima. I ima same desetke."
         ],
-        "hook": "Počni sasvim blizu kamere i prvu rečenicu reci odmah, kao da pitaš drugaricu. Naslov neka bude na ekranu prve 3 sekunde."
+        "hook": "Počni sasvim blizu kamere i prvu rečenicu reci odmah, kao da pitaš drugaricu. Naslov neka bude na ekranu prve 3 sekunde.",
+        "age_tip": "Ako ideš u srednju, reci »na času« i »same petice« umjesto »na predavanju« i »same desetke«."
       }
     },
     {
@@ -139,7 +149,8 @@
           "Ona pa ta posnetek sam vrže v [DEMO] Memo AI. In ta aplikacija ji iz tega posnetka naredi popolne zapiske, pa še flashkarte, kvize pa teste, da se lahko uči.",
           "Tko da ma ona popolne zapiske s faksa, čeprav ni bla niti enkrat na faksu. In iz tega se pol še uči."
         ],
-        "hook": "Začni blizu kamere s prstom na ustih (»psst«) in takoj povej prvi stavek. Naslov naj bo na zaslonu prve 3 sekunde."
+        "hook": "Začni blizu kamere s prstom na ustih (»psst«) in takoj povej prvi stavek. Naslov naj bo na zaslonu prve 3 sekunde.",
+        "age_tip": "Če hodiš v srednjo, reci »nikoli ni pri pouku« in »same petke« namesto »ne hodi na faks« in »same desetke«."
       },
       "sh": {
         "title": "Nikad ne ide na faks, a ima same desetke 🤫",
@@ -150,7 +161,8 @@
           "A ona taj snimak samo ubaci u [DEMO] Memo AI. I ta aplikacija joj od tog snimka napravi savršene bilješke, i još flash kartice, kvizove i testove, da može učiti.",
           "Tako da ona ima savršene bilješke sa faksa, iako nijednom nije bila na faksu. I iz toga poslije još i uči."
         ],
-        "hook": "Počni blizu kamere s prstom na ustima (»pst«) i odmah reci prvu rečenicu. Naslov neka bude na ekranu prve 3 sekunde."
+        "hook": "Počni blizu kamere s prstom na ustima (»pst«) i odmah reci prvu rečenicu. Naslov neka bude na ekranu prve 3 sekunde.",
+        "age_tip": "Ako ideš u srednju, reci »nikad nije na času« i »same petice« umjesto »ne ide na faks« i »same desetke«."
       }
     },
     {
@@ -165,7 +177,8 @@
           "Ko maš zapiske, ti naredi še teste, kvize, flashkarte pa še milijon drugih stvari, da se lahko vse naučiš.",
           "Tko da, ja, sam uporabi to aplikacijo za vse zapiske."
         ],
-        "hook": "Začni z vprašanjem direktno v kamero, naslov naj bo na zaslonu prve 3 sekunde. Pri »listen up« se nagni bližje h kameri."
+        "hook": "Začni z vprašanjem direktno v kamero, naslov naj bo na zaslonu prve 3 sekunde. Pri »listen up« se nagni bližje h kameri.",
+        "age_tip": "Če hodiš v srednjo, reci »pri pouku« namesto »na predavanjih na faksu«."
       },
       "sh": {
         "title": "Ne možeš praviti dobre bilješke na faksu? 🤯",
@@ -177,7 +190,8 @@
           "Kad imaš bilješke, napravi ti još testove, kvizove, flash kartice i još milion drugih stvari, da sve možeš naučiti.",
           "Tako da, eto, samo koristi ovu aplikaciju za sve bilješke."
         ],
-        "hook": "Počni pitanjem direktno u kameru, naslov neka bude na ekranu prve 3 sekunde. Kod »listen up« se nagni bliže kameri."
+        "hook": "Počni pitanjem direktno u kameru, naslov neka bude na ekranu prve 3 sekunde. Kod »listen up« se nagni bliže kameri.",
+        "age_tip": "Ako ideš u srednju, reci »na časovima« umjesto »na predavanjima na faksu«."
       }
     },
     {
@@ -191,7 +205,8 @@
           "In ta aplikacija ji sama dela zapiske. Ko je predavanja konec, ma že vse narejeno: popolne zapiske, flashkarte, kvize, teste pa še ful drugih stvari, da se lahko vse nauči.",
           "Tko da, ja, če se ti tud ne da pisat zapiskov, sam uporabi to aplikacijo."
         ],
-        "hook": "Začni z zvezkom, polnim zapiskov, v roki. Pri »mam glih rešitev zate« ga zapri in vrzi na stran. Naslov naj bo na zaslonu prve 3 sekunde."
+        "hook": "Začni z zvezkom, polnim zapiskov, v roki. Pri »mam glih rešitev zate« ga zapri in vrzi na stran. Naslov naj bo na zaslonu prve 3 sekunde.",
+        "age_tip": "Če hodiš v srednjo, reci »v srednji« in »pri pouku« namesto »na faksu« in »med predavanji«."
       },
       "sh": {
         "title": "Ne da ti se pisati bilješke na faksu? ✍️❌",
@@ -202,7 +217,8 @@
           "I ta aplikacija joj sama pravi bilješke. Kad se predavanje završi, već ima sve gotovo: savršene bilješke, flash kartice, kvizove, testove i još gomilu drugih stvari, da sve može naučiti.",
           "Tako da, eto, ako ti se ni tebi ne da pisati bilješke, samo koristi ovu aplikaciju."
         ],
-        "hook": "Počni sa sveskom punom bilješki u ruci. Kod »imam baš rješenje za tebe« je zatvori i baci u stranu. Naslov neka bude na ekranu prve 3 sekunde."
+        "hook": "Počni sa sveskom punom bilješki u ruci. Kod »imam baš rješenje za tebe« je zatvori i baci u stranu. Naslov neka bude na ekranu prve 3 sekunde.",
+        "age_tip": "Ako ideš u srednju, reci »u srednjoj« i »na časovima« umjesto »na faksu« i »na predavanjima«."
       }
     }
   ]

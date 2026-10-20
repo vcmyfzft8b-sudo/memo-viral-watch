@@ -25,7 +25,7 @@ class HandScripts(unittest.TestCase):
             for lang in ('sl', 'sh'):
                 spec = f[lang]
                 self.assertEqual(sum(p.count(hand.DEMO) for p in spec['script']), 1, (f['key'], lang))
-                for k in ('title', 'hook', 'cta_word'):
+                for k in ('title', 'hook', 'cta_word', 'age_tip'):
                     self.assertTrue(spec[k], (f['key'], lang, k))
 
     def test_page_has_the_demo_cue_where_the_mark_was_and_ends_the_script_with_the_cta(self):
@@ -38,6 +38,7 @@ class HandScripts(unittest.TestCase):
         self.assertIn('https://drive/iphone', t)
         self.assertIn(f"Komentiraj »{f['sl']['cta_word']}« in pošljem ti link do aplikacije.", t)
         self.assertEqual(blocks[-1]['type'], 'image')  # the Memo AI logo closes the materials
+        self.assertIn('🎓', t)  # the age tip under the CTA, like the built pages
 
     def test_balkan_page_uses_the_balkan_texts(self):
         f = hand.formats()[0]

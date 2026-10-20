@@ -4,7 +4,7 @@ they are the whole list). Pages: state/hand.json {market: {key: page_id}}. Built
 import json
 import os
 
-from . import notion, state
+from . import ages, notion, state
 from .brand import DEMO_LABEL
 from .markets import TEXT
 
@@ -81,6 +81,8 @@ def page_blocks(fmt, lang, lab_url=None, logo_upload_id=None):
             rich = [notion.rt(text)]
         blocks.append(notion.para(rich))
     blocks.append(notion.para([notion.rt(T['cta'].format(word=spec['cta_word']))]))
+    if spec.get('age_tip'):  # the 🎓 tip for creators at another school level, as on the built pages (ages.py)
+        blocks.append(ages.box([{'tip': spec['age_tip']}], lang))
     blocks.append(notion.divider())
 
     blocks.append(notion.block('heading_2', [notion.rt(T['hook_h'])]))
@@ -119,8 +121,9 @@ def build(cfg, target=''):
             blocks = page_blocks(f, lang, lab, logo)
             if mine.get(f['key']):
                 notion.replace_content(mine[f['key']], blocks)
+                notion.api('PATCH', f"/pages/{mine[f['key']]}", {'icon': {'type': 'emoji', 'emoji': '🎬'}})
             else:
-                page = notion.create_page(mp['holder_page'], f[lang]['title'], '✍️', blocks)
+                page = notion.create_page(mp['holder_page'], f[lang]['title'], '🎬', blocks)  # the built pages' icon
                 mine[f['key']] = page['id']
             state.save('hand.json', built)
             done.append(f"{key}:{f['key']}")
