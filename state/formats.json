@@ -1103,7 +1103,7 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "Claude Code: You've hit your weekly limit · resets Oct 21, 2am (UTC)"
+    "Claude Code: You've hit your weekly limit · resets 2am (UTC)"
    ],
    "since": 1792358246,
    "tries": 2
