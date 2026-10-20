@@ -11,7 +11,7 @@ import path from "node:path";
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const RAW = path.join(HERE, "out", "demos");
 // The demo server runs a local Memo AI copy whose creator demo also shows the voice tutor tab (scripted, like the
-// landing page): see README. The notetaker demo has no tutor and also runs on the production copy (~/dev/Memo_AI).
+// landing page): see README. The notetaker demo runs on ~/dev/Memo_AI-demo-record (DEMO_APP / DEMO_MEMO, see README).
 const APP = process.env.DEMO_APP ?? "http://localhost:3556";
 const MEMO = process.env.DEMO_MEMO ?? path.join(process.env.HOME, "dev/Memo_AI-demo-tutor");
 const LANGS = { hr: "Balkan", sl: "Slovenija" }; // Balkan pages use the Croatian (ijekavian) app

@@ -160,8 +160,11 @@ trač, Biologija (archived, never revived). Slovenian page of "Tajne" shows Klar
   visual hook, CTA word, `[DEMO]` = where the 🎥 demo cue goes). Pages built by `mode=hand-scripts` (watcher/hand.py),
   ids in `state/hand.json`. They sit after the ranked formats in the sl list (rerank appends `hand.tail`).
   Change a script: edit the registry, run `mode=hand-scripts target=<key>!`.
-- Their demo is the note-taker recording (`demo/ make_all.mjs --demo notetaker`, recorded on the production app
-  `~/dev/Memo_AI`, port 3555), Drive links in config `demo_videos_notetaker`.
+- Their demo is the note-taker recording (`demo/ make_all.mjs --demo notetaker`, demo/README.md): the production
+  record screen (a local copy `~/dev/Memo_AI-demo-record` whose record sheet is not staged, port 3558), recording for a
+  few seconds, sheet closed (never a note made from it - user: looks fake), then an existing note → flashcard → quiz →
+  test → the other features. Drive `Memo AI demo posnetki/Slovenija/Zapiski` and `…/Balkan/Bilješke`, links in config
+  `demo_videos_notetaker` (replace files with `rclone copyto` onto the same names - the links stay).
 - Balkan (`sh`) automation stopped: `config markets.sh.enabled=false`. Its list holds only the hand-written formats;
   `mode=hand-scripts` moved every other sh page to the sh archive (never deleted; formats stay in the sl list).
   Astra watching and the Slovenian list keep running.
