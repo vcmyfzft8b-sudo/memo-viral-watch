@@ -792,7 +792,9 @@ def hand_scripts(target):
             pid = page_of(f, key)
             if not pid:
                 continue
-            notion.move_page(pid, m['archive_page'])
+            parent = (notion.api('GET', f'/pages/{pid}').get('parent') or {}).get('page_id', '')
+            if parent.replace('-', '') != m['archive_page'].replace('-', ''):  # an archived format's page is there already
+                notion.move_page(pid, m['archive_page'])
             f.setdefault('dropped_pages', {})[key] = pid
             set_page(f, key, None)
             (f.get('pages') or {}).pop(key, None)
