@@ -5780,5 +5780,92 @@
   ],
   "ts": 1792604909,
   "type": "rerank"
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792620244,
+  "type": "alert",
+  "video": "7698873358783466758",
+  "views": 21100
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792620249,
+  "type": "alert",
+  "video": "7698853951298473224",
+  "views": 20800
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792620254,
+  "type": "alert",
+  "video": "7699218699915431201",
+  "views": 16200
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792620260,
+  "type": "alert",
+  "video": "7699168699713998113",
+  "views": 7300
+ },
+ {
+  "format": "A20261018210403",
+  "reasons": [
+   "🇸🇮 script rewritten sentence by sentence (48 words (original 40)) / script corrected towards the original: The 14:28 pitch on screen never names Memo AI. 'Vanj nal"
+  ],
+  "tries": 2,
+  "ts": 1792620638,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008204718",
+   "A20261015213945",
+   "A20261010215329",
+   "A20261013231033",
+   "A20261015215502",
+   "A20261009014121",
+   "A20261009210824",
+   "A20261009001913",
+   "A20261008210957",
+   "A20261008211912",
+   "A20261010220207",
+   "A20261010215744",
+   "A20261008224450",
+   "A20261010214237",
+   "A20261010215543",
+   "A20261010163838",
+   "A20261008231529",
+   "A20261010161437",
+   "A20261010162026",
+   "A20261010162928",
+   "A20261012160842",
+   "A20261008205804"
+  ],
+  "ts": 1792620677,
+  "type": "rerank"
+ },
+ {
+  "added": [
+   "doroteja.studytok",
+   "learnwithchoksa",
+   "learnwithmarija",
+   "nika_studytok",
+   "studywithmatea"
+  ],
+  "paused": [],
+  "revived": [],
+  "ts": 1792621349,
+  "type": "discovery"
+ },
+ {
+  "added": [
+   "larabajiccc"
+  ],
+  "paused": [],
+  "revived": [],
+  "ts": 1792621607,
+  "type": "own_discovery"
  }
 ]

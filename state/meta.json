@@ -59,7 +59,7 @@
  },
  "cta_missing": [],
  "daily_check": "2026-10-21",
- "discovered_at": 1792357224,
+ "discovered_at": 1792619887,
  "faithful_rewrite_started": 1791643120,
  "group_audit": {
   "A20261008204718": {
@@ -822,7 +822,7 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1792604259,
+ "last_run": 1792619887,
  "lineup": "2026-W43",
  "open_problems": [
   "🇸🇮 list order/content differs: listed 30, expected 30"

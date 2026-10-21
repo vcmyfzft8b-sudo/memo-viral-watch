@@ -1178,13 +1178,14 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇸🇮 rewrite refused: the script has 49 words, it must have 14-48 / script corrected towards the original: The demo cue is placed inside the word 'Memo AI-ju', so th"
+    "🇸🇮 script rewritten sentence by sentence (48 words (original 40)) / script corrected towards the original: The 14:28 pitch on screen never names Memo AI. 'Vanj nal"
    ],
    "since": 1792358246,
    "tries": 2
   },
   "reworded": {
-   "sh": true
+   "sh": true,
+   "sl": true
   },
   "script": "Nova metoda učenja: Učim sve dok mi on ne odgovori na poruku 14:28 15:41 18:02 21:32 22:00 - odlučujem da ja pišem prva ali Memo AI-ju naravno 🫢🤭 U njega ubaciš PDF-ove ili PowerPoint prezentacije sa predavanja, a možeš i snimiti predavanje i taj audio snimak ubaciti u Memo AI Dobiješ bilješke, flash kartice, testove, kvizove i još mnogo drugih funkcija, s kojima sve naučiš na jako jednostavan način Stranica: memoai.eu Komentariši »PORUKA« i poslaću ti link do aplikacije.",
   "source_video": "https://www.tiktok.com/@smartishaangelisaa/video/7697723844450159892",
