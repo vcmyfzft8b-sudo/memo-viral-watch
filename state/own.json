@@ -8,8 +8,8 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792671621,
-  "views": 12900
+  "updated": 1792690562,
+  "views": 13200
  },
  "7692611079670697268": {
   "checked": true,
@@ -20,8 +20,8 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792671621,
-  "views": 3050
+  "updated": 1792690562,
+  "views": 3149
  },
  "7693228730977684758": {
   "checked": true,
@@ -255,8 +255,8 @@
   "ours": true,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792671621,
-  "views": 1800
+  "updated": 1792690562,
+  "views": 1854
  },
  "7698030835802459444": {
   "checked": true,
@@ -279,8 +279,8 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792671621,
-  "views": 51900
+  "updated": 1792690562,
+  "views": 52000
  },
  "7698338506388589832": {
   "checked": true,
@@ -293,8 +293,8 @@
   "ours": true,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792671621,
-  "views": 1129
+  "updated": 1792690562,
+  "views": 1182
  },
  "7698551222881553672": {
   "checked": true,
@@ -305,47 +305,65 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792671621,
-  "views": 34100
+  "updated": 1792690562,
+  "views": 34300
  },
  "7698744994361789703": {
+  "checked": true,
   "created": 1792503752,
   "desc": "#beautyrecommendations #CapCut #fyp #balkan #viral ",
   "handle": "larabajiccc",
   "market": "sh",
-  "updated": 1792671621,
-  "views": 1074
+  "ours": false,
+  "sticker": "",
+  "subtitles": "",
+  "updated": 1792690562,
+  "views": 1190
  },
  "7698771387967671570": {
+  "checked": true,
   "created": 1792509897,
   "desc": "#memoai #studytips #ocene #skola #fakultetijuridik ",
+  "format": null,
   "handle": "larabajiccc",
+  "hook_en": "No speech or on-screen text; only hashtags about the study app, grades and law faculties, so the format can't be determined",
   "market": "sh",
-  "updated": 1792671621,
-  "views": 12500
+  "ours": true,
+  "sticker": "",
+  "subtitles": "",
+  "updated": 1792690562,
+  "views": 12700
  },
  "7698913956429040903": {
   "created": 1792543091,
   "desc": "#loveislandadria #fyp #balkan #viral #foryoupage ",
   "handle": "larabajiccc",
   "market": "sh",
-  "updated": 1792671621,
-  "views": 23600
+  "updated": 1792690562,
+  "views": 24100
  },
  "7699149244841741575": {
   "created": 1792597874,
   "desc": "#memoai #studytips #ocene #skola ",
   "handle": "larabajiccc",
   "market": "sh",
-  "updated": 1792671621,
-  "views": 53400
+  "updated": 1792690562,
+  "views": 71500
  },
  "7699277424399256850": {
   "created": 1792627718,
   "desc": "#loveislandadria #fyp #balkan #viral #foryoupage ",
   "handle": "larabajiccc",
   "market": "sh",
-  "updated": 1792671621,
-  "views": 11500
+  "updated": 1792690562,
+  "views": 15200
+ },
+ "7699517293495127303": {
+  "created": 1792683567,
+  "desc": "#memoai #studytips #ocene #skola #universtylife ",
+  "handle": "larabajiccc",
+  "market": "sh",
+  "updated": 1792690562,
+  "views": 1885
  }
 }
