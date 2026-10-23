@@ -6102,5 +6102,91 @@
   ],
   "ts": 1792777190,
   "type": "rerank"
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792791871,
+  "type": "alert",
+  "video": "7699924975376993569",
+  "views": 53800
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792791875,
+  "type": "alert",
+  "video": "7699854922111667508",
+  "views": 28700
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792791879,
+  "type": "alert",
+  "video": "7699909177401036064",
+  "views": 23800
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792791884,
+  "type": "alert",
+  "video": "7699908612008742177",
+  "views": 15000
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792791887,
+  "type": "alert",
+  "video": "7699909399401254196",
+  "views": 12200
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792791891,
+  "type": "alert",
+  "video": "7699755716780854561",
+  "views": 11600
+ },
+ {
+  "level": "taking_off",
+  "ts": 1792791895,
+  "type": "alert",
+  "video": "7699917391618133268",
+  "views": 9689
+ },
+ {
+  "format": "A20261018210403",
+  "reasons": [
+   "🇸🇮 script rewritten sentence by sentence (48 words (original 40)) / script corrected towards the original: The Memo AI pitch is shortened. It leaves out PowerPoint"
+  ],
+  "tries": 2,
+  "ts": 1792792248,
+  "type": "format_held"
+ },
+ {
+  "order": [
+   "A20261008204718",
+   "A20261015213945",
+   "A20261010215329",
+   "A20261013231033",
+   "A20261009014121",
+   "A20261008211912",
+   "A20261009210824",
+   "A20261015215502",
+   "A20261009001913",
+   "A20261008210957",
+   "A20261010220207",
+   "A20261010215744",
+   "A20261010214237",
+   "A20261008224450",
+   "A20261010163838",
+   "A20261010215543",
+   "A20261010161437",
+   "A20261008231529",
+   "A20261010162928",
+   "A20261010162026",
+   "A20261012160842",
+   "A20261008205804"
+  ],
+  "ts": 1792792278,
+  "type": "rerank"
  }
 ]
