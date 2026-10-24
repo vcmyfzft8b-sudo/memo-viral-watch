@@ -1363,5 +1363,61 @@
    "7697723844450159892": "https://www.tiktok.com/@smartishaangelisaa/video/7697723844450159892"
   },
   "title_en": "I study until he texts me back 📱 (silent study vlog with a 'I text first… the app' twist)"
+ },
+ "A20261024113714": {
+  "accepted_sources": [
+   "7699924975376993569"
+  ],
+  "allowed_localisation": [
+   "Language of the speech and stickers (Slovenian for SI; Croatian, Bosnian or Serbian elsewhere), translated almost one to one",
+   "Creator, setting, outfit and sticker style",
+   "Wording of 'go to the Memo AI page / memoai.eu' to match the local language",
+   "Which real Memo AI features stand in for the original's 'games and simulations' (quiz, flashcards, voice tutor, mind map, podcast)",
+   "Whether the free start (one free note, then a 3-day trial) is mentioned",
+   "Small natural filler words or local phrasing, as long as the steps, numbers and claims stay the same"
+  ],
+  "beats": [
+   "Hook question to camera: how do you multiply with your fingers?",
+   "Number the fingers: thumb = 6, index = 7, then 8, 9, 10, and 'remember this'.",
+   "Example: we need to multiply 7 × 8. Take 7 on one hand and 8 on the other, and join the two fingers.",
+   "Fold down all the fingers pointing outward, then turn your hands. The fingers that are up are tens: 10, 20, 30, 40, 50, so we have 50.",
+   "Quick product aside (around 15 s, still in the same talking-head shot): if you want to learn in a fun way, go to the Memo AI page (memoai.eu). Record or upload your lecture, a PDF or photos of your notes, and you get a quiz with explanations, flashcards and a voice tutor that explains it out loud, which is much more interesting than reading from the book.",
+   "Back to the trick: turn your hands and count the folded fingers, 3 here and 2 here. Multiply them. These are small numbers, so it's easy: 6.",
+   "Reveal: the answer is 56, so 7 × 8 = 56."
+  ],
+  "canonical_source": "7699924975376993569",
+  "filming": "About 35–50 s, vertical 9:16, a single selfie-style talking-head shot at desk or room level. Both hands stay in frame at chest height the whole time so every finger is readable. Equation stickers (6, 7, 8, 9, 10 on the fingers; '7 × 8'; '50'; '3 × 2 = 6'; '7 × 8 = 56') pop up in sync with the speech. Quick jump cuts between steps. Demo sequence for the aside: a 2–4 s link cue or overlay showing memoai.eu on a phone or laptop, with the user's own material (scanned notes, uploaded PDF or lecture) turning into a quiz, flashcards or the voice tutor. The note-generation wait is cut. Afterwards it goes straight back to the hands for the final count and the answer.",
+  "generated": 1792841948,
+  "hook": "Creator looks into the camera, holds both hands up and asks the question straight away: \"How do you multiply with your fingers?\" (SI: \"Kako množiti s prsti?\"). The title or equation sticker appears on screen in the first second.",
+  "not_allowed": [
+   "Changing the trick or the example (it must be the finger method for 6–10, worked through on 7 × 8 = 56) or using another math hack",
+   "Putting the app only at the end, or making it more than a short aside (it comes in around 15 s, before the final count)",
+   "Turning it into a screen-recorded app tutorial, or losing the talking-head hand demo",
+   "Claiming Memo AI has games, simulations, task solving, homework checking, an oral exam or other features it lacks",
+   "Saying the app contains this math trick or any example content (it works on the user's own material)",
+   "Naming or showing Astra AI or any other competing app",
+   "Skipping the on-screen equation stickers or the final answer reveal"
+  ],
+  "premise": "A student creator teaches a real finger trick for multiplying the numbers 6 to 10, live with their own hands. The 7 × 8 example runs from start to finish. Partway through the trick, before the final count, the creator adds a short aside: if you want to learn in a fun way, go to the Memo AI page. It turns your own lecture, PDF or photos of your notes into a quiz, flashcards and a voice tutor, which is much more interesting than reading from the book. Then the creator finishes the trick: 7 × 8 = 56.",
+  "product": {
+   "cta": "Go to the Memo AI page (memoai.eu) to learn in a fun way, more interesting than reading from the book. Optional: free start with one free note, then a 3-day free trial.",
+   "features_used": [
+    "Record or upload a lecture, PDF/Word/PowerPoint, or up to 10 photos of notes via the in-app Scan camera",
+    "Quiz with explanations",
+    "Flashcards",
+    "Voice tutor that explains the material out loud topic by topic",
+    "Mind map",
+    "Podcast",
+    "Works on any phone or laptop, in Slovenian, Croatian, Bosnian and Serbian"
+   ],
+   "introduced_at_beat": 5,
+   "spoken_brand": "Spoken once in the aside, beat 5 (around 15 s): 'go to the Memo AI page' / memoai.eu, in place of the original's Astra AI mention"
+  },
+  "rejected_sources": {},
+  "rules": "early-memo-2026-10-12",
+  "source_urls": {
+   "7699924975376993569": "https://www.tiktok.com/@karla_studytok/video/7699924975376993569"
+  },
+  "title_en": "How to multiply with your fingers ✌🏼: talking-head math hack with a quick study-app aside"
  }
 }

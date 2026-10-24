@@ -55,7 +55,8 @@
   "A20261010162026:sh": "cd9922f781980f7a4817884877742bf3c866683cce8ebac2dde31ab28bfd375a",
   "A20261010162928:sh": "f9b680748a7a9358ed57bc89bcf06d610a8c6ff1750e26ddcbbf9804efe04488",
   "A20261010163838:sh": "e4ec9bfbebef917179414b7569abde9df573de6b81b23bb5a53f3cab109b1cd6",
-  "A20261012160842:sh": "35e18c46fedfea9e081e4d3c757fb79678e7530e88047546c002dea5c11323d4"
+  "A20261012160842:sh": "35e18c46fedfea9e081e4d3c757fb79678e7530e88047546c002dea5c11323d4",
+  "A20261024113714:sl": "6902971dbfe31ec8fa82dcd3a0779d601123b21efa5820e4546d75e33a9c79da"
  },
  "cta_missing": [],
  "daily_check": "2026-10-24",
@@ -758,6 +759,59 @@
    ],
    "status": "unverified",
    "version": "group-2026-10-12.early-memo"
+  },
+  "A20261024113714": {
+   "approval": {
+    "sl": "not_locked"
+   },
+   "checked_at": 1792842110,
+   "deterministic": {},
+   "duplicates": [],
+   "inputs": {
+    "sl": {
+     "source_id": "7699924975376993569",
+     "video_identity": "sha256:8c6225f0f5c69cf3aa92305e878c5634346f83cd1b93e70a7023038215cc20a8"
+    }
+   },
+   "key": "b3774f5e15e279ab24f008135702485c73aeb085d6700deb852040db8e84add7",
+   "passed": true,
+   "reasons": [],
+   "results": {
+    "directions_match": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "faithful_translation": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "features_claims": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "format_consistency": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    },
+    "script_matches_example": {
+     "sl": {
+      "issue": "",
+      "pass": true
+     }
+    }
+   },
+   "status": "pass",
+   "summary": "The SL page passes every check: it keeps the hook, brings in Memo AI with the standard pitch after about 33 words (moved before the folding step to stay under the word limit), finishes the 7 × 8 = 56 trick in order and ends with the correct comment line; the only nit is the split 'memoai. eu' around the cue.",
+   "title_fixes": {},
+   "version": "group-2026-10-12.early-memo"
   }
  },
  "group_duplicates": [],
@@ -822,7 +876,7 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1792817983,
+ "last_run": 1792841605,
  "lineup": "2026-W43",
  "open_problems": [
   "🇸🇮 list order/content differs: listed 30, expected 30"
@@ -893,6 +947,7 @@
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/e5ff72b6-47ec-48f2-a4a3-77be902b99b4/video.mp4": "sha256:2ecf269ca351f63ff2b666a85b10a82ef24d129041f66bb08d885b76048cd423",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/ecc280bd-0268-4b97-9760-64a4cd595138/video.mp4": "sha256:8c47ffe4d80533045109936b0de0f8121ee7c9b7fc4ea9c5aee611394c837370",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/f1862454-a6e1-4442-b139-1b9f803b769c/video-notion.mp4": "sha256:c885900fe56e7d31e3feb4705ce828c344025ae7ef682156992baed17396de77",
+  "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/f2bc3c0e-80e0-4364-a2ca-d6eed7517943/video-notion.mp4": "sha256:8c6225f0f5c69cf3aa92305e878c5634346f83cd1b93e70a7023038215cc20a8",
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/fd23fb00-7c58-473e-b4bc-404869c20add/video.mp4": "sha256:bec22c349d23098cd3e1971277a54f9feaf14756c0cee5d1dd159923591611d5"
  },
  "weekly": "2026-W43"

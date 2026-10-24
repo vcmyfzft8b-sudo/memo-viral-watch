@@ -1178,7 +1178,7 @@
   "pending": {
    "kind": "new",
    "reasons": [
-    "🇸🇮 rewrite refused: the script has 63 words, it must have 14-48 / script corrected towards the original: The Memo AI pitch is cut down to 'PDF-je ali posnetek pred"
+    "🇸🇮 script rewritten sentence by sentence (43 words (original 40)) / script corrected towards the original: On-screen sticker texts are not written as their own 'Be"
    ],
    "since": 1792358246,
    "tries": 2
@@ -1191,5 +1191,28 @@
   "source_video": "https://www.tiktok.com/@smartishaangelisaa/video/7697723844450159892",
   "status": "pending",
   "title": "Učim sve dok mi on ne odgovori na poruku 📱"
+ },
+ {
+  "age": {
+   "sl": {
+    "page": "40365e84-a3c2-8108-a28d-d144dd03853a",
+    "status": "none",
+    "tries": 1
+   }
+  },
+  "created": 1792841834,
+  "description": "Talking-head math hack tutorial (multiplying with fingers) with on-screen equation stickers, where the study app is plugged in as a quick aside before finishing the trick.",
+  "id": "A20261024113714",
+  "listed_at": 1792842157,
+  "pages": {
+   "sl": "40365e84-a3c2-8108-a28d-d144dd03853a"
+  },
+  "reworded": {
+   "sl": true
+  },
+  "script": "Kako množiti s prsti? Palec je 6, kazalec 7, nato 8, 9, 10. To si zapomni. Primer: 7 krat 8. Na eni roki vzameš 7, na drugi 8 in ju združiš. Mimogrede, za učenje brez dolgočasnega branja iz knjige pojdi na memoai.eu. V Memo AI naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in naložiš zvočni posnetek. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. Prste spodaj spustiš. Tisti zgoraj so desetice: 10, 20, 30, 40, 50. Spuščenih prstov je 3 in 2. 3 krat 2 je 6. 50 plus 6 je 56. Torej je 7 krat 8 enako 56. Komentiraj »PRSTI« in pošljem ti link do aplikacije.",
+  "source_video": "https://www.tiktok.com/@karla_studytok/video/7699924975376993569",
+  "status": "active",
+  "title": "Kako množiti s prsti ✌🏼"
  }
 ]

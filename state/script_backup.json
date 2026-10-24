@@ -15947,6 +15947,118 @@
    "type": "text"
   }
  ],
+ "40365e84-a3c2-810e-92e2-e5af95dd0d28": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Komentiraj »PRSTI« in pošljem ti link do aplikacije. ",
+   "text": {
+    "content": "Komentiraj »PRSTI« in pošljem ti link do aplikacije. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "40365e84-a3c2-814a-83ad-e43550a83146": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Mimogrede, za učenje brez dolgočasnega branja iz knjige pojdi na memoai. (",
+   "text": {
+    "content": "Mimogrede, za učenje brez dolgočasnega branja iz knjige pojdi na memoai. (",
+    "link": null
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": "https://drive.google.com/drive/folders/186Fl4cXl7OjCgoENpqM9ZtmlyzN_rEmQ",
+   "plain_text": "🎥 Tukaj predvajaj Memo AI demo",
+   "text": {
+    "content": "🎥 Tukaj predvajaj Memo AI demo",
+    "link": {
+     "url": "https://drive.google.com/drive/folders/186Fl4cXl7OjCgoENpqM9ZtmlyzN_rEmQ"
+    }
+   },
+   "type": "text"
+  },
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": ") eu. V Memo AI naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in naložiš zvočni posnetek. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. ",
+   "text": {
+    "content": ") eu. V Memo AI naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in naložiš zvočni posnetek. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "40365e84-a3c2-81a3-bba5-c09725ace2b8": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Kako množiti s prsti? Palec je 6, kazalec 7, nato 8, 9, 10. To si zapomni. Primer: 7 krat 8. Na eni roki vzameš 7, na drugi 8 in ju združiš. ",
+   "text": {
+    "content": "Kako množiti s prsti? Palec je 6, kazalec 7, nato 8, 9, 10. To si zapomni. Primer: 7 krat 8. Na eni roki vzameš 7, na drugi 8 in ju združiš. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
+ "40365e84-a3c2-81bc-994a-cfdb051d4c2c": [
+  {
+   "annotations": {
+    "bold": false,
+    "code": false,
+    "color": "default",
+    "italic": false,
+    "strikethrough": false,
+    "underline": false
+   },
+   "href": null,
+   "plain_text": "Prste spodaj spustiš. Tisti zgoraj so desetice: 10, 20, 30, 40, 50. Spuščenih prstov je 3 in 2. 3 krat 2 je 6. 50 plus 6 je 56. Torej je 7 krat 8 enako 56. ",
+   "text": {
+    "content": "Prste spodaj spustiš. Tisti zgoraj so desetice: 10, 20, 30, 40, 50. Spuščenih prstov je 3 in 2. 3 krat 2 je 6. 50 plus 6 je 56. Torej je 7 krat 8 enako 56. ",
+    "link": null
+   },
+   "type": "text"
+  }
+ ],
  "directions:3f565e84-a3c2-8101-b0cb-d9ad47a917fe": [
   {
    "annotations": {
@@ -23089,6 +23201,82 @@
     "plain_text": "Naredi enak vizualni hook kot v videu za navdih: sediš na usnjenem kavču z leseno desko v naročju, nekaj drobiš ali ribaš na njej in med govorjenjem pogledaš v kamero, naslov pa je ves čas na zaslonu.",
     "text": {
      "content": "Naredi enak vizualni hook kot v videu za navdih: sediš na usnjenem kavču z leseno desko v naročju, nekaj drobiš ali ribaš na njej in med govorjenjem pogledaš v kamero, naslov pa je ves čas na zaslonu.",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Želiš drugačen vizualni hook? Izberi ga v ",
+    "text": {
+     "content": "Želiš drugačen vizualni hook? Izberi ga v ",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b",
+    "plain_text": "Visual Hook Lab",
+    "text": {
+     "content": "Visual Hook Lab",
+     "link": {
+      "url": "https://app.notion.com/p/3f365e84a3c281ef9dacfe6b10289f1b"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ".",
+    "text": {
+     "content": ".",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "hook:40365e84-a3c2-8108-a28d-d144dd03853a": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Naredi enak vizualni hook kot v videu za navdih: takoj na začetku držiš obe dlani z razprtimi prsti pred obrazom, gledaš v kamero in vprašaš, kako se množi s prsti, na zaslonu pa je naslov.",
+    "text": {
+     "content": "Naredi enak vizualni hook kot v videu za navdih: takoj na začetku držiš obe dlani z razprtimi prsti pred obrazom, gledaš v kamero in vprašaš, kako se množi s prsti, na zaslonu pa je naslov.",
      "link": null
     },
     "type": "text"
@@ -33809,6 +33997,120 @@
     "plain_text": "Komentiraj »PRVA« in pošljem ti link do aplikacije. ",
     "text": {
      "content": "Komentiraj »PRVA« in pošljem ti link do aplikacije. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ]
+ ],
+ "page:40365e84-a3c2-8108-a28d-d144dd03853a": [
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Kako množiti s prsti? Palec je 6, kazalec 7, nato 8, 9, 10. To si zapomni. Primer: 7 krat 8. Na eni roki vzameš 7, na drugi 8 in ju združiš. ",
+    "text": {
+     "content": "Kako množiti s prsti? Palec je 6, kazalec 7, nato 8, 9, 10. To si zapomni. Primer: 7 krat 8. Na eni roki vzameš 7, na drugi 8 in ju združiš. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Mimogrede, za učenje brez dolgočasnega branja iz knjige pojdi na memoai.eu. (",
+    "text": {
+     "content": "Mimogrede, za učenje brez dolgočasnega branja iz knjige pojdi na memoai.eu. (",
+     "link": null
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": "https://drive.google.com/drive/folders/186Fl4cXl7OjCgoENpqM9ZtmlyzN_rEmQ",
+    "plain_text": "🎥 Tukaj predvajaj Memo AI demo",
+    "text": {
+     "content": "🎥 Tukaj predvajaj Memo AI demo",
+     "link": {
+      "url": "https://drive.google.com/drive/folders/186Fl4cXl7OjCgoENpqM9ZtmlyzN_rEmQ"
+     }
+    },
+    "type": "text"
+   },
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": ") V Memo AI naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in naložiš zvočni posnetek. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. ",
+    "text": {
+     "content": ") V Memo AI naložiš PDF-je ali PowerPointe s predavanj, lahko pa predavanje tudi posnameš in naložiš zvočni posnetek. Ven dobiš zapiske, učne kartice, teste, kvize in še veliko drugih funkcij, s katerimi se vse naučiš na zelo preprost način. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Vse prste pod tistima, ki se dotikata, spustiš. Tisti zgoraj so desetice: 10, 20, 30, 40, 50. Spuščenih je 3 in 2. 3 krat 2 je 6. 50 plus 6 je 56. Torej 56. ",
+    "text": {
+     "content": "Vse prste pod tistima, ki se dotikata, spustiš. Tisti zgoraj so desetice: 10, 20, 30, 40, 50. Spuščenih je 3 in 2. 3 krat 2 je 6. 50 plus 6 je 56. Torej 56. ",
+     "link": null
+    },
+    "type": "text"
+   }
+  ],
+  [
+   {
+    "annotations": {
+     "bold": false,
+     "code": false,
+     "color": "default",
+     "italic": false,
+     "strikethrough": false,
+     "underline": false
+    },
+    "href": null,
+    "plain_text": "Komentiraj »PRSTI« in pošljem ti link do aplikacije. ",
+    "text": {
+     "content": "Komentiraj »PRSTI« in pošljem ti link do aplikacije. ",
      "link": null
     },
     "type": "text"
