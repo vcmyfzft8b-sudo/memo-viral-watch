@@ -876,7 +876,7 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1792841605,
+ "last_run": 1792858421,
  "lineup": "2026-W43",
  "open_problems": [
   "🇸🇮 list order/content differs: listed 30, expected 30"
@@ -884,8 +884,8 @@
  "problems_alerted": 1792733169,
  "top3": [
   "A20261008204718",
-  "A20261010215329",
-  "A20261015213945"
+  "A20261015213945",
+  "A20261010215329"
  ],
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",

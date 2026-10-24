@@ -8,8 +8,8 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792841605,
-  "views": 13900
+  "updated": 1792858421,
+  "views": 14000
  },
  "7692611079670697268": {
   "checked": true,
@@ -20,8 +20,8 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792841605,
-  "views": 3395
+  "updated": 1792858421,
+  "views": 3417
  },
  "7693228730977684758": {
   "checked": true,
@@ -241,8 +241,8 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792776324,
-  "views": 1490
+  "updated": 1792858421,
+  "views": 1500
  },
  "7697964192665554194": {
   "checked": true,
@@ -255,8 +255,8 @@
   "ours": true,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792776324,
-  "views": 1882
+  "updated": 1792858421,
+  "views": 1890
  },
  "7698030835802459444": {
   "checked": true,
@@ -293,8 +293,8 @@
   "ours": true,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792776324,
-  "views": 1225
+  "updated": 1792858421,
+  "views": 1246
  },
  "7698551222881553672": {
   "checked": true,
@@ -317,8 +317,8 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792841605,
-  "views": 1300
+  "updated": 1792858421,
+  "views": 1307
  },
  "7698771387967671570": {
   "checked": true,
@@ -331,8 +331,8 @@
   "ours": true,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792841605,
-  "views": 13000
+  "updated": 1792858421,
+  "views": 13100
  },
  "7698913956429040903": {
   "checked": true,
@@ -343,8 +343,8 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792841605,
-  "views": 25100
+  "updated": 1792858421,
+  "views": 25200
  },
  "7699149244841741575": {
   "checked": true,
@@ -357,8 +357,8 @@
   "ours": true,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792841605,
-  "views": 85000
+  "updated": 1792858421,
+  "views": 85400
  },
  "7699277424399256850": {
   "checked": true,
@@ -369,39 +369,53 @@
   "ours": false,
   "sticker": "",
   "subtitles": "",
-  "updated": 1792841605,
-  "views": 18800
+  "updated": 1792858421,
+  "views": 18900
  },
  "7699517293495127303": {
+  "checked": true,
   "created": 1792683567,
   "desc": "#memoai #studytips #ocene #skola #universtylife ",
+  "format": null,
   "handle": "larabajiccc",
+  "hook_en": "No speech or on-screen text; only hashtags about a study app (memoai), study tips, grades and university life, so the format can't be determined",
   "market": "sh",
-  "updated": 1792841605,
-  "views": 3040
+  "ours": true,
+  "sticker": "",
+  "subtitles": "",
+  "updated": 1792858421,
+  "views": 3062
  },
  "7699654084986440978": {
   "created": 1792715416,
   "desc": "#loveislandadria #fyp #balkan #foryoupage #viral ",
   "handle": "larabajiccc",
   "market": "sh",
-  "updated": 1792841605,
-  "views": 15900
+  "updated": 1792858421,
+  "views": 16100
  },
  "7699890350101417222": {
   "created": 1792770426,
   "desc": "#memoai #universtylife #studytips #ocene #skola ",
   "handle": "larabajiccc",
   "market": "sh",
-  "updated": 1792841605,
-  "views": 885
+  "updated": 1792858421,
+  "views": 930
  },
  "7699942180676324615": {
   "created": 1792782494,
   "desc": "Pepcko haulll #pepco #pepcohaul #haul #fyp #viral ",
   "handle": "larabajiccc",
   "market": "sh",
-  "updated": 1792841605,
-  "views": 7126
+  "updated": 1792858421,
+  "views": 7864
+ },
+ "7700256110032276744": {
+  "created": 1792855586,
+  "desc": "#memoai #universtylife #studytips #ocene #skola ",
+  "handle": "larabajiccc",
+  "market": "sh",
+  "updated": 1792858421,
+  "views": 245
  }
 }

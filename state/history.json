@@ -9656,7 +9656,7 @@
   "saves": 8,
   "saves_unknown": false,
   "shares": 32,
-  "views": 2220,
+  "views": 2222,
   "views_7d": 2213
  },
  "7697324475020250389": {
@@ -9667,7 +9667,7 @@
   "judged": false,
   "likes": 4,
   "local": true,
-  "mature": false,
+  "mature": true,
   "saves": 0,
   "saves_unknown": false,
   "shares": 0,
@@ -9682,11 +9682,11 @@
   "judged": false,
   "likes": 5,
   "local": true,
-  "mature": false,
+  "mature": true,
   "saves": 2,
   "saves_unknown": false,
   "shares": 4,
-  "views": 296,
+  "views": 297,
   "views_7d": 296
  },
  "7697339863682616596": {
@@ -9701,7 +9701,7 @@
   "saves": 9,
   "saves_unknown": false,
   "shares": 13,
-  "views": 1353,
+  "views": 1356,
   "views_7d": 1344
  },
  "7697347730548477217": {
@@ -9716,7 +9716,7 @@
   "saves": 6,
   "saves_unknown": false,
   "shares": 2,
-  "views": 589,
+  "views": 594,
   "views_7d": 585
  },
  "7697348358762941716": {
@@ -9725,13 +9725,13 @@
   "handle": "studywithreveka",
   "hook": "The craziest thing professors hide from us",
   "judged": false,
-  "likes": 205,
+  "likes": 207,
   "local": true,
   "mature": true,
   "saves": 60,
   "saves_unknown": false,
   "shares": 12,
-  "views": 4032,
+  "views": 4037,
   "views_7d": 4024
  },
  "7697352194441481502": {
@@ -9740,13 +9740,13 @@
   "handle": "learnwithniksi",
   "hook": "Does this ever happen to you?",
   "judged": false,
-  "likes": 24,
+  "likes": 28,
   "local": true,
   "mature": true,
-  "saves": 9,
+  "saves": 12,
   "saves_unknown": false,
   "shares": 3,
-  "views": 473,
+  "views": 476,
   "views_7d": 467
  },
  "7697367319172877589": {
@@ -9761,7 +9761,7 @@
   "saves": 28,
   "saves_unknown": false,
   "shares": 10,
-  "views": 3565,
+  "views": 3571,
   "views_7d": 3560
  },
  "7697373364003818768": {
@@ -9770,13 +9770,13 @@
   "handle": "studywith_petradaria",
   "hook": "Have you heard of this 'illegal' last-minute study method?",
   "judged": false,
-  "likes": 36,
+  "likes": 37,
   "local": true,
   "mature": true,
   "saves": 6,
   "saves_unknown": false,
   "shares": 3,
-  "views": 455,
+  "views": 456,
   "views_7d": 452
  },
  "7697374374961138977": {
@@ -9790,8 +9790,8 @@
   "mature": true,
   "saves": 10,
   "saves_unknown": false,
-  "shares": 28,
-  "views": 1645,
+  "shares": 29,
+  "views": 1653,
   "views_7d": 1637
  },
  "7697375711836802336": {
@@ -9803,10 +9803,10 @@
   "likes": 32,
   "local": true,
   "mature": true,
-  "saves": 10,
+  "saves": 11,
   "saves_unknown": false,
   "shares": 1,
-  "views": 1150,
+  "views": 1174,
   "views_7d": 1135
  },
  "7697379594168519956": {
@@ -9818,10 +9818,10 @@
   "likes": 37,
   "local": true,
   "mature": true,
-  "saves": 15,
+  "saves": 16,
   "saves_unknown": false,
   "shares": 1,
-  "views": 1136,
+  "views": 1143,
   "views_7d": 1131
  },
  "7697385245779299605": {
@@ -9830,13 +9830,13 @@
   "handle": "smartishaangelisaa",
   "hook": "Hardest subjects for the entrance exam ranked: physics, chemistry, history",
   "judged": false,
-  "likes": 440,
+  "likes": 443,
   "local": true,
-  "mature": false,
-  "saves": 76,
+  "mature": true,
+  "saves": 78,
   "saves_unknown": false,
   "shares": 45,
-  "views": 14500,
+  "views": 14600,
   "views_7d": 14500
  },
  "7697387868020296981": {
@@ -9845,13 +9845,13 @@
   "handle": "studytipsbytara",
   "hook": "Studying is much more interesting for me this way",
   "judged": false,
-  "likes": 229,
+  "likes": 230,
   "local": true,
   "mature": true,
-  "saves": 149,
+  "saves": 151,
   "saves_unknown": false,
-  "shares": 50,
-  "views": 8613,
+  "shares": 51,
+  "views": 8639,
   "views_7d": 8592
  },
  "7697412343076048142": {
@@ -9911,8 +9911,8 @@
   "saves": 15,
   "saves_unknown": false,
   "shares": 8,
-  "views": 3644,
-  "views_7d": 3644
+  "views": 3653,
+  "views_7d": 3653
  },
  "7697572919723052308": {
   "created": 1792230865,
@@ -9952,7 +9952,7 @@
   "judged": false,
   "likes": 14,
   "local": true,
-  "mature": false,
+  "mature": true,
   "saves": 4,
   "saves_unknown": false,
   "shares": 1,
@@ -9967,7 +9967,7 @@
   "judged": false,
   "likes": 227,
   "local": true,
-  "mature": false,
+  "mature": true,
   "saves": 47,
   "saves_unknown": false,
   "shares": 49,
@@ -9982,12 +9982,12 @@
   "judged": false,
   "likes": 41,
   "local": true,
-  "mature": false,
+  "mature": true,
   "saves": 5,
   "saves_unknown": false,
   "shares": 8,
-  "views": 1774,
-  "views_7d": 1774
+  "views": 1777,
+  "views_7d": 1777
  },
  "7697645954840694049": {
   "created": 1792247867,
@@ -9997,12 +9997,12 @@
   "judged": false,
   "likes": 96,
   "local": true,
-  "mature": false,
+  "mature": true,
   "saves": 12,
   "saves_unknown": false,
   "shares": 3,
-  "views": 1049,
-  "views_7d": 1049
+  "views": 1050,
+  "views_7d": 1050
  },
  "7697662070333967637": {
   "created": 1792251620,
@@ -10010,14 +10010,14 @@
   "handle": "learnwithsaraa",
   "hook": "Just great people!!! (caption only; no speech or on-screen text)",
   "judged": false,
-  "likes": 79,
+  "likes": 80,
   "local": true,
-  "mature": false,
+  "mature": true,
   "saves": 14,
   "saves_unknown": false,
   "shares": 23,
-  "views": 7919,
-  "views_7d": 7919
+  "views": 7920,
+  "views_7d": 7920
  },
  "7697672077171789062": {
   "created": 1792253990,
@@ -10025,14 +10025,14 @@
   "handle": "study.with.mili",
   "hook": "Do you agree with my list? (caption only, no speech or on-screen text)",
   "judged": false,
-  "likes": 873,
+  "likes": 881,
   "local": true,
   "mature": false,
-  "saves": 141,
+  "saves": 142,
   "saves_unknown": false,
   "shares": 87,
-  "views": 35500,
-  "views_7d": 35500
+  "views": 35700,
+  "views_7d": 35700
  },
  "7697672891764051214": {
   "created": 1792254150,
@@ -10040,14 +10040,14 @@
   "handle": "nicole.lockedin",
   "hook": "Embarrassed reaction to an AI quiz playing an awkward double-entendre taxonomy mnemonic",
   "judged": false,
-  "likes": 30,
+  "likes": 38,
   "local": false,
   "mature": false,
-  "saves": 1,
+  "saves": 2,
   "saves_unknown": false,
   "shares": 0,
-  "views": 729,
-  "views_7d": 729
+  "views": 734,
+  "views_7d": 734
  },
  "7697677156784147744": {
   "created": 1792255130,
@@ -10076,8 +10076,8 @@
   "saves": 9,
   "saves_unknown": false,
   "shares": 4,
-  "views": 872,
-  "views_7d": 872
+  "views": 873,
+  "views_7d": 873
  },
  "7697687147830119702": {
   "created": 1792257459,
@@ -10085,14 +10085,14 @@
   "handle": "school.hacks.byklara",
   "hook": "Because you think it's the easiest",
   "judged": false,
-  "likes": 120,
+  "likes": 123,
   "local": false,
   "mature": false,
   "saves": 19,
   "saves_unknown": false,
   "shares": 7,
-  "views": 2264,
-  "views_7d": 2264
+  "views": 2278,
+  "views_7d": 2278
  },
  "7697689831949798663": {
   "created": 1792258088,
@@ -10106,8 +10106,8 @@
   "saves": 5,
   "saves_unknown": false,
   "shares": 2,
-  "views": 378,
-  "views_7d": 378
+  "views": 380,
+  "views_7d": 380
  },
  "7697690464312364309": {
   "created": 1792258232,
@@ -10115,14 +10115,14 @@
   "handle": "learnwithmateja",
   "hook": "Things professors hide from you, deleting this video in two hours",
   "judged": false,
-  "likes": 85,
+  "likes": 86,
   "local": true,
   "mature": false,
   "saves": 35,
   "saves_unknown": false,
   "shares": 11,
-  "views": 4763,
-  "views_7d": 4763
+  "views": 4780,
+  "views_7d": 4780
  },
  "7697694659455356181": {
   "created": 1792259210,
@@ -10151,8 +10151,8 @@
   "saves": 1,
   "saves_unknown": false,
   "shares": 0,
-  "views": 418,
-  "views_7d": 418
+  "views": 425,
+  "views_7d": 425
  },
  "7697699581290646802": {
   "created": 1792260357,
@@ -10166,8 +10166,8 @@
   "saves": 7,
   "saves_unknown": false,
   "shares": 11,
-  "views": 1164,
-  "views_7d": 1164
+  "views": 1165,
+  "views_7d": 1165
  },
  "7697700065787366663": {
   "created": 1792260471,
@@ -10190,14 +10190,14 @@
   "handle": "learnwithsaralara",
   "hook": "The fastest way to study",
   "judged": false,
-  "likes": 38,
+  "likes": 40,
   "local": true,
   "mature": false,
   "saves": 4,
   "saves_unknown": false,
   "shares": 3,
-  "views": 677,
-  "views_7d": 677
+  "views": 681,
+  "views_7d": 681
  },
  "7697723844450159892": {
   "created": 1792266005,
@@ -10208,11 +10208,11 @@
   "likes": 24200,
   "local": true,
   "mature": false,
-  "saves": 1662,
+  "saves": 1663,
   "saves_unknown": false,
-  "shares": 4631,
-  "views": 226700,
-  "views_7d": 226700
+  "shares": 4632,
+  "views": 227300,
+  "views_7d": 227300
  },
  "7697727463958318369": {
   "created": 1792266842,
@@ -10220,7 +10220,7 @@
   "handle": "studywithanamarija",
   "hook": "The secret",
   "judged": false,
-  "likes": 47,
+  "likes": 48,
   "local": true,
   "mature": false,
   "saves": 11,
@@ -10241,8 +10241,8 @@
   "saves": 49,
   "saves_unknown": false,
   "shares": 17,
-  "views": 3676,
-  "views_7d": 3676
+  "views": 3680,
+  "views_7d": 3680
  },
  "7697729592605347093": {
   "created": 1792267345,
@@ -10250,14 +10250,14 @@
   "handle": "studytipsbytara",
   "hook": "Rating study methods out of 10, Astra AI gets 10/10",
   "judged": false,
-  "likes": 297,
+  "likes": 300,
   "local": true,
   "mature": false,
-  "saves": 83,
+  "saves": 85,
   "saves_unknown": false,
   "shares": 25,
-  "views": 9008,
-  "views_7d": 9008
+  "views": 9029,
+  "views_7d": 9029
  },
  "7697733436160724255": {
   "created": 1792268241,
@@ -10265,14 +10265,14 @@
   "handle": "learnwithniksi",
   "hook": "Are you going to university?",
   "judged": false,
-  "likes": 25,
+  "likes": 29,
   "local": true,
   "mature": false,
-  "saves": 9,
+  "saves": 12,
   "saves_unknown": false,
   "shares": 2,
-  "views": 694,
-  "views_7d": 694
+  "views": 699,
+  "views_7d": 699
  },
  "7697737882156485920": {
   "created": 1792269270,
@@ -10286,8 +10286,8 @@
   "saves": 4,
   "saves_unknown": false,
   "shares": 9,
-  "views": 981,
-  "views_7d": 981
+  "views": 995,
+  "views_7d": 995
  },
  "7697747629043715349": {
   "created": 1792271548,
@@ -10295,14 +10295,14 @@
   "handle": "study_with_hexi",
   "hook": "Stupid Uros Djuric knows nothing",
   "judged": false,
-  "likes": 81,
+  "likes": 82,
   "local": true,
   "mature": false,
-  "saves": 19,
+  "saves": 20,
   "saves_unknown": false,
   "shares": 1,
-  "views": 1891,
-  "views_7d": 1891
+  "views": 1897,
+  "views_7d": 1897
  },
  "7697747696852929793": {
   "created": 1792271588,
@@ -10310,14 +10310,14 @@
   "handle": "kera.vas.uci",
   "hook": "Tag a friend who must take you for pancakes",
   "judged": false,
-  "likes": 843,
+  "likes": 851,
   "local": true,
   "mature": false,
   "saves": 210,
   "saves_unknown": false,
-  "shares": 51,
-  "views": 18900,
-  "views_7d": 18900
+  "shares": 53,
+  "views": 19000,
+  "views_7d": 19000
  },
  "7697748813200575764": {
   "created": 1792271819,
@@ -10325,14 +10325,14 @@
   "handle": "studywithreveka",
   "hook": "Why did you only tell us this now?",
   "judged": false,
-  "likes": 129,
+  "likes": 130,
   "local": true,
   "mature": false,
   "saves": 24,
   "saves_unknown": false,
   "shares": 2,
-  "views": 6703,
-  "views_7d": 6703
+  "views": 6714,
+  "views_7d": 6714
  },
  "7697758751100505350": {
   "created": 1792274138,
@@ -10346,8 +10346,8 @@
   "saves": 13,
   "saves_unknown": false,
   "shares": 1,
-  "views": 2574,
-  "views_7d": 2574
+  "views": 2580,
+  "views_7d": 2580
  },
  "7697844109867797778": {
   "created": 1792294008,
@@ -10361,8 +10361,8 @@
   "saves": 30,
   "saves_unknown": false,
   "shares": 6,
-  "views": 6007,
-  "views_7d": 6007
+  "views": 6053,
+  "views_7d": 6053
  },
  "7697922285797117200": {
   "created": 1792312207,
@@ -10391,8 +10391,8 @@
   "saves": 1936,
   "saves_unknown": false,
   "shares": 678,
-  "views": 82100,
-  "views_7d": 82100
+  "views": 82400,
+  "views_7d": 82400
  },
  "7697951212674485556": {
   "created": 1792318940,
@@ -10406,8 +10406,8 @@
   "saves": 12,
   "saves_unknown": false,
   "shares": 5,
-  "views": 3814,
-  "views_7d": 3814
+  "views": 3835,
+  "views_7d": 3835
  },
  "7697953986170653973": {
   "created": 1792319586,
@@ -10430,14 +10430,14 @@
   "handle": "karla_studytok",
   "hook": "The worst people in the class",
   "judged": true,
-  "likes": 2177,
+  "likes": 2185,
   "local": true,
   "mature": false,
-  "saves": 281,
+  "saves": 282,
   "saves_unknown": false,
-  "shares": 1510,
-  "views": 132700,
-  "views_7d": 132700
+  "shares": 1511,
+  "views": 133200,
+  "views_7d": 133200
  },
  "7697996480421973281": {
   "created": 1792329480,
@@ -10451,8 +10451,8 @@
   "saves": 5,
   "saves_unknown": false,
   "shares": 2,
-  "views": 255,
-  "views_7d": 255
+  "views": 256,
+  "views_7d": 256
  },
  "7698019006514482438": {
   "created": 1792334758,
@@ -10475,14 +10475,14 @@
   "handle": "studywithreveka",
   "hook": "3 worst types of people on the bus on a school trip",
   "judged": false,
-  "likes": 3539,
+  "likes": 3835,
   "local": true,
   "mature": false,
-  "saves": 362,
+  "saves": 392,
   "saves_unknown": false,
-  "shares": 247,
-  "views": 63300,
-  "views_7d": 63300
+  "shares": 259,
+  "views": 64600,
+  "views_7d": 64600
  },
  "7698028332406934806": {
   "created": 1792336899,
@@ -10490,14 +10490,14 @@
   "handle": "spelcaa41",
   "hook": "You can do it, I believe in you! Discount code for the app",
   "judged": false,
-  "likes": 643,
+  "likes": 649,
   "local": false,
   "mature": false,
   "saves": 63,
   "saves_unknown": false,
   "shares": 102,
-  "views": 4644,
-  "views_7d": 4644
+  "views": 4665,
+  "views_7d": 4665
  },
  "7698042036208897313": {
   "created": 1792340087,
@@ -10508,11 +10508,11 @@
   "likes": 24,
   "local": true,
   "mature": false,
-  "saves": 12,
+  "saves": 13,
   "saves_unknown": false,
   "shares": 6,
-  "views": 539,
-  "views_7d": 539
+  "views": 541,
+  "views_7d": 541
  },
  "7698051537926425888": {
   "created": 1792342298,
@@ -10526,8 +10526,8 @@
   "saves": 4,
   "saves_unknown": false,
   "shares": 10,
-  "views": 988,
-  "views_7d": 988
+  "views": 994,
+  "views_7d": 994
  },
  "7698054018228063496": {
   "created": 1792342880,
@@ -10540,9 +10540,9 @@
   "mature": false,
   "saves": 6,
   "saves_unknown": false,
-  "shares": 16,
-  "views": 2115,
-  "views_7d": 2115
+  "shares": 17,
+  "views": 2122,
+  "views_7d": 2122
  },
  "7698057481804664072": {
   "created": 1792343691,
@@ -10550,10 +10550,10 @@
   "handle": "studywithandja",
   "hook": "POV: invest in your knowledge because nobody can ever take that away from you",
   "judged": false,
-  "likes": 2328,
+  "likes": 2339,
   "local": true,
   "mature": false,
-  "saves": 207,
+  "saves": 209,
   "saves_unknown": false,
   "shares": 114,
   "views": 19900,
@@ -10571,8 +10571,8 @@
   "saves": 1,
   "saves_unknown": false,
   "shares": 0,
-  "views": 320,
-  "views_7d": 320
+  "views": 322,
+  "views_7d": 322
  },
  "7698064112407907614": {
   "created": 1792345232,
@@ -10580,14 +10580,14 @@
   "handle": "learnwithniksi",
   "hook": "Do you agree with this list?",
   "judged": false,
-  "likes": 112,
+  "likes": 116,
   "local": true,
   "mature": false,
-  "saves": 29,
+  "saves": 32,
   "saves_unknown": false,
   "shares": 20,
-  "views": 6120,
-  "views_7d": 6120
+  "views": 6133,
+  "views_7d": 6133
  },
  "7698066040583949601": {
   "created": 1792345675,
@@ -10601,8 +10601,8 @@
   "saves": 58,
   "saves_unknown": false,
   "shares": 36,
-  "views": 5153,
-  "views_7d": 5153
+  "views": 5163,
+  "views_7d": 5163
  },
  "7698071205269556512": {
   "created": 1792346876,
@@ -10616,8 +10616,8 @@
   "saves": 3,
   "saves_unknown": false,
   "shares": 1,
-  "views": 582,
-  "views_7d": 582
+  "views": 585,
+  "views_7d": 585
  },
  "7698072080939633938": {
   "created": 1792347088,
@@ -10631,8 +10631,8 @@
   "saves": 1,
   "saves_unknown": false,
   "shares": 7,
-  "views": 349,
-  "views_7d": 349
+  "views": 350,
+  "views_7d": 350
  },
  "7698075086460325152": {
   "created": 1792347781,
@@ -10640,14 +10640,14 @@
   "handle": "learnwithdina6",
   "hook": "On the test you know where the answer was but have no brain premium, so download the app",
   "judged": false,
-  "likes": 1003,
+  "likes": 1013,
   "local": true,
   "mature": false,
-  "saves": 31,
+  "saves": 32,
   "saves_unknown": false,
-  "shares": 77,
-  "views": 7255,
-  "views_7d": 7255
+  "shares": 78,
+  "views": 7273,
+  "views_7d": 7273
  },
  "7698077928352943393": {
   "created": 1792348442,
@@ -10655,7 +10655,7 @@
   "handle": "tea_studytok",
   "hook": "I'm going to delete this video in 1 hour! If you see this, it's meant for you",
   "judged": false,
-  "likes": 430,
+  "likes": 432,
   "local": true,
   "mature": false,
   "saves": 163,
@@ -10670,12 +10670,12 @@
   "handle": "learnwithtamy",
   "hook": "New study method: I study until he replies to my message — 30 min, 1h12, 2h... now we need to talk seriously, but with Astra, because she can teach me something.",
   "judged": false,
-  "likes": 4166,
+  "likes": 4178,
   "local": true,
   "mature": false,
-  "saves": 258,
+  "saves": 259,
   "saves_unknown": false,
-  "shares": 795,
+  "shares": 796,
   "views": 58800,
   "views_7d": 58800
  },
@@ -10691,8 +10691,8 @@
   "saves": 3,
   "saves_unknown": false,
   "shares": 16,
-  "views": 1354,
-  "views_7d": 1354
+  "views": 1368,
+  "views_7d": 1368
  },
  "7698081232013348118": {
   "created": 1792349214,
@@ -10700,14 +10700,14 @@
   "handle": "foxara.vas.uci",
   "hook": "Hope I saved you",
   "judged": false,
-  "likes": 272,
+  "likes": 275,
   "local": true,
   "mature": false,
-  "saves": 32,
+  "saves": 33,
   "saves_unknown": false,
   "shares": 12,
-  "views": 6186,
-  "views_7d": 6186
+  "views": 6224,
+  "views_7d": 6224
  },
  "7698086657521749268": {
   "created": 1792350482,
@@ -10715,14 +10715,14 @@
   "handle": "learnwithmina",
   "hook": "99% of you won't make it – write your answers in the comments",
   "judged": false,
-  "likes": 321,
+  "likes": 336,
   "local": true,
   "mature": false,
-  "saves": 53,
+  "saves": 59,
   "saves_unknown": false,
-  "shares": 241,
-  "views": 18700,
-  "views_7d": 18700
+  "shares": 250,
+  "views": 18900,
+  "views_7d": 18900
  },
  "7698087318959246613": {
   "created": 1792350632,
@@ -10730,14 +10730,14 @@
   "handle": "ucisamilicom",
   "hook": "I don't know what's next",
   "judged": false,
-  "likes": 93,
+  "likes": 92,
   "local": true,
   "mature": false,
   "saves": 9,
   "saves_unknown": false,
   "shares": 3,
-  "views": 4235,
-  "views_7d": 4235
+  "views": 4239,
+  "views_7d": 4239
  },
  "7698100149066763521": {
   "created": 1792353619,
@@ -10745,14 +10745,14 @@
   "handle": "learnwithmateja",
   "hook": "Study until she texts back, then I text first, to the app",
   "judged": false,
-  "likes": 63,
+  "likes": 67,
   "local": true,
   "mature": false,
   "saves": 7,
   "saves_unknown": false,
   "shares": 2,
-  "views": 2885,
-  "views_7d": 2885
+  "views": 2902,
+  "views_7d": 2902
  },
  "7698108237949717781": {
   "created": 1792355504,
@@ -10760,14 +10760,14 @@
   "handle": "smartishaangelisaa",
   "hook": "If only I'd known this sooner",
   "judged": false,
-  "likes": 146,
+  "likes": 148,
   "local": true,
   "mature": false,
-  "saves": 33,
+  "saves": 34,
   "saves_unknown": false,
   "shares": 3,
-  "views": 3190,
-  "views_7d": 3190
+  "views": 3208,
+  "views_7d": 3208
  },
  "7698112160433474836": {
   "created": 1792356417,
@@ -10775,14 +10775,14 @@
   "handle": "learnwithsaraa",
   "hook": "I wish I'd had this advice",
   "judged": false,
-  "likes": 48,
+  "likes": 49,
   "local": true,
   "mature": false,
   "saves": 13,
   "saves_unknown": false,
   "shares": 1,
-  "views": 2789,
-  "views_7d": 2789
+  "views": 2798,
+  "views_7d": 2798
  },
  "7698120494796623124": {
   "created": 1792358360,
@@ -10790,14 +10790,14 @@
   "handle": "studytipsbytara",
   "hook": "8th graders, no cheating!",
   "judged": false,
-  "likes": 68,
+  "likes": 69,
   "local": true,
   "mature": false,
   "saves": 28,
   "saves_unknown": false,
-  "shares": 5,
-  "views": 1445,
-  "views_7d": 1445
+  "shares": 6,
+  "views": 1450,
+  "views_7d": 1450
  },
  "7698121622099741972": {
   "created": 1792358626,
@@ -10805,14 +10805,14 @@
   "handle": "study_with_hexi",
   "hook": "What are your professors like?",
   "judged": false,
-  "likes": 82,
+  "likes": 85,
   "local": true,
   "mature": false,
-  "saves": 18,
+  "saves": 19,
   "saves_unknown": false,
   "shares": 2,
-  "views": 2486,
-  "views_7d": 2486
+  "views": 2498,
+  "views_7d": 2498
  },
  "7698128469787413767": {
   "created": 1792360215,
@@ -10820,14 +10820,14 @@
   "handle": "studytipsbyem",
   "hook": "So I'm average",
   "judged": false,
-  "likes": 192,
+  "likes": 194,
   "local": true,
   "mature": false,
   "saves": 76,
   "saves_unknown": false,
   "shares": 23,
-  "views": 8757,
-  "views_7d": 8757
+  "views": 8764,
+  "views_7d": 8764
  },
  "7698130861534760244": {
   "created": 1792360791,
@@ -10841,8 +10841,8 @@
   "saves": 22,
   "saves_unknown": false,
   "shares": 14,
-  "views": 5157,
-  "views_7d": 5157
+  "views": 5197,
+  "views_7d": 5197
  },
  "7698270966786379041": {
   "created": 1792393393,
@@ -10856,8 +10856,8 @@
   "saves": 13,
   "saves_unknown": false,
   "shares": 5,
-  "views": 1348,
-  "views_7d": 1348
+  "views": 1353,
+  "views_7d": 1353
  },
  "7698286993674997012": {
   "created": 1792397123,
@@ -10901,8 +10901,8 @@
   "saves": 4,
   "saves_unknown": false,
   "shares": 1,
-  "views": 524,
-  "views_7d": 524
+  "views": 528,
+  "views_7d": 528
  },
  "7698309178045091105": {
   "created": 1792402288,
@@ -10931,8 +10931,8 @@
   "saves": 15,
   "saves_unknown": false,
   "shares": 31,
-  "views": 1967,
-  "views_7d": 1967
+  "views": 1981,
+  "views_7d": 1981
  },
  "7698320447208754453": {
   "created": 1792404910,
@@ -10946,8 +10946,8 @@
   "saves": 654,
   "saves_unknown": false,
   "shares": 989,
-  "views": 89200,
-  "views_7d": 89200
+  "views": 89300,
+  "views_7d": 89300
  },
  "7698349200685223175": {
   "created": 1792411611,
@@ -10961,8 +10961,8 @@
   "saves": 6,
   "saves_unknown": false,
   "shares": 6,
-  "views": 919,
-  "views_7d": 919
+  "views": 920,
+  "views_7d": 920
  },
  "7698370085601283361": {
   "created": 1792416467,
@@ -10976,8 +10976,8 @@
   "saves": 7,
   "saves_unknown": false,
   "shares": 17,
-  "views": 1204,
-  "views_7d": 1204
+  "views": 1207,
+  "views_7d": 1207
  },
  "7698397236983549216": {
   "created": 1792422787,
@@ -10985,10 +10985,10 @@
   "handle": "studywithmatea",
   "hook": "4 years of studying and only now I learn I could have known the exam questions in advance",
   "judged": false,
-  "likes": 75,
+  "likes": 76,
   "local": true,
   "mature": false,
-  "saves": 13,
+  "saves": 12,
   "saves_unknown": false,
   "shares": 4,
   "views": 1106,
@@ -11000,14 +11000,14 @@
   "handle": "study.with.mili",
   "hook": "99% of you won't beat this: levels game from 6 down to 1st place, ending with the study app",
   "judged": false,
-  "likes": 73,
+  "likes": 78,
   "local": true,
   "mature": false,
-  "saves": 19,
+  "saves": 20,
   "saves_unknown": false,
   "shares": 4,
-  "views": 2126,
-  "views_7d": 2126
+  "views": 2164,
+  "views_7d": 2164
  },
  "7698403750590909702": {
   "created": 1792424308,
@@ -11015,14 +11015,14 @@
   "handle": "studywithreveka",
   "hook": "Send this to the friend who never helps in group projects: 'just turn on Astra'",
   "judged": false,
-  "likes": 66,
+  "likes": 67,
   "local": true,
   "mature": false,
   "saves": 19,
   "saves_unknown": false,
   "shares": 3,
-  "views": 1166,
-  "views_7d": 1166
+  "views": 1175,
+  "views_7d": 1175
  },
  "7698404079050951968": {
   "created": 1792424379,
@@ -11030,14 +11030,14 @@
   "handle": "studytips_tea",
   "hook": "Did you know about this trick?",
   "judged": false,
-  "likes": 79,
+  "likes": 80,
   "local": true,
   "mature": false,
   "saves": 9,
   "saves_unknown": false,
   "shares": 40,
-  "views": 5434,
-  "views_7d": 5434
+  "views": 5445,
+  "views_7d": 5445
  },
  "7698409777679977761": {
   "created": 1792425708,
@@ -11045,14 +11045,14 @@
   "handle": "studywithanamarija",
   "hook": "I studied for 6 years and only now learned about this",
   "judged": false,
-  "likes": 32,
+  "likes": 33,
   "local": true,
   "mature": false,
   "saves": 6,
   "saves_unknown": false,
   "shares": 101,
-  "views": 1575,
-  "views_7d": 1575
+  "views": 1579,
+  "views_7d": 1579
  },
  "7698410871353019679": {
   "created": 1792425981,
@@ -11060,14 +11060,14 @@
   "handle": "learnwithniksi",
   "hook": "This study method is 10/10",
   "judged": false,
-  "likes": 39,
+  "likes": 42,
   "local": true,
   "mature": false,
-  "saves": 9,
+  "saves": 12,
   "saves_unknown": false,
   "shares": 4,
-  "views": 834,
-  "views_7d": 834
+  "views": 841,
+  "views_7d": 841
  },
  "7698413458311613717": {
   "created": 1792426567,
@@ -11081,8 +11081,8 @@
   "saves": 10,
   "saves_unknown": false,
   "shares": 4,
-  "views": 1874,
-  "views_7d": 1874
+  "views": 1879,
+  "views_7d": 1879
  },
  "7698415148331044129": {
   "created": 1792426958,
@@ -11096,8 +11096,8 @@
   "saves": 9,
   "saves_unknown": false,
   "shares": 14,
-  "views": 1459,
-  "views_7d": 1459
+  "views": 1467,
+  "views_7d": 1467
  },
  "7698424079132462368": {
   "created": 1792429038,
@@ -11105,14 +11105,14 @@
   "handle": "learnwithdina6",
   "hook": "New study method: I study until he replies, then I text first, but to the study app",
   "judged": false,
-  "likes": 466,
+  "likes": 470,
   "local": true,
   "mature": false,
   "saves": 30,
   "saves_unknown": false,
   "shares": 64,
-  "views": 9274,
-  "views_7d": 9274
+  "views": 9293,
+  "views_7d": 9293
  },
  "7698425581217598742": {
   "created": 1792429391,
@@ -11120,12 +11120,12 @@
   "handle": "school.hacks.byklara",
   "hook": "Not for anything (AI/ChatGPT meme)",
   "judged": false,
-  "likes": 168,
+  "likes": 170,
   "local": false,
   "mature": false,
   "saves": 45,
   "saves_unknown": false,
-  "shares": 56,
+  "shares": 57,
   "views": 11200,
   "views_7d": 11200
  },
@@ -11138,11 +11138,11 @@
   "likes": 63,
   "local": true,
   "mature": false,
-  "saves": 9,
+  "saves": 10,
   "saves_unknown": false,
   "shares": 2,
-  "views": 1357,
-  "views_7d": 1357
+  "views": 1371,
+  "views_7d": 1371
  },
  "7698432137296448775": {
   "created": 1792430921,
@@ -11165,14 +11165,14 @@
   "handle": "tea_studytok",
   "hook": "Brother steals notes; creator recommends the study app over ChatGPT (3.6 vs 5.0 student)",
   "judged": false,
-  "likes": 402,
+  "likes": 406,
   "local": true,
   "mature": false,
-  "saves": 38,
+  "saves": 39,
   "saves_unknown": false,
   "shares": 12,
-  "views": 8876,
-  "views_7d": 8876
+  "views": 8929,
+  "views_7d": 8929
  },
  "7698437351202180373": {
   "created": 1792432130,
@@ -11180,14 +11180,14 @@
   "handle": "study_with_hexi",
   "hook": "Why didn't this exist when I enrolled in high school? Is it too late for medical school?",
   "judged": false,
-  "likes": 379,
+  "likes": 386,
   "local": true,
   "mature": false,
-  "saves": 184,
+  "saves": 186,
   "saves_unknown": false,
-  "shares": 80,
-  "views": 20000,
-  "views_7d": 20000
+  "shares": 81,
+  "views": 20100,
+  "views_7d": 20100
  },
  "7698443925350108437": {
   "created": 1792433658,
@@ -11210,14 +11210,14 @@
   "handle": "kera.vas.uci",
   "hook": "What will your school look like in 2040?",
   "judged": false,
-  "likes": 866,
+  "likes": 895,
   "local": true,
   "mature": false,
-  "saves": 137,
+  "saves": 143,
   "saves_unknown": false,
-  "shares": 82,
-  "views": 18500,
-  "views_7d": 18500
+  "shares": 84,
+  "views": 18600,
+  "views_7d": 18600
  },
  "7698450486730460449": {
   "created": 1792435185,
@@ -11225,14 +11225,14 @@
   "handle": "karla_studytok",
   "hook": "The best method, tagged to a friend",
   "judged": false,
-  "likes": 205,
+  "likes": 208,
   "local": true,
   "mature": false,
   "saves": 14,
   "saves_unknown": false,
-  "shares": 22,
-  "views": 5482,
-  "views_7d": 5482
+  "shares": 23,
+  "views": 5524,
+  "views_7d": 5524
  },
  "7698452021971586305": {
   "created": 1792435546,
@@ -11240,14 +11240,14 @@
   "handle": "studywithandja",
   "hook": "How to pass an exam while studying only 10 hours?",
   "judged": false,
-  "likes": 80,
+  "likes": 82,
   "local": true,
   "mature": false,
-  "saves": 34,
+  "saves": 35,
   "saves_unknown": false,
   "shares": 5,
-  "views": 2112,
-  "views_7d": 2112
+  "views": 2116,
+  "views_7d": 2116
  },
  "7698473169744743700": {
   "created": 1792440477,
@@ -11255,14 +11255,14 @@
   "handle": "smartishaangelisaa",
   "hook": "Save this video (test tips)",
   "judged": false,
-  "likes": 344,
+  "likes": 346,
   "local": true,
   "mature": false,
   "saves": 115,
   "saves_unknown": false,
   "shares": 48,
-  "views": 24500,
-  "views_7d": 24500
+  "views": 24600,
+  "views_7d": 24600
  },
  "7698477299456363783": {
   "created": 1792441440,
@@ -11270,14 +11270,14 @@
   "handle": "study_with_zo",
   "hook": "A situation that has happened to all of us at least once",
   "judged": false,
-  "likes": 40,
+  "likes": 41,
   "local": true,
   "mature": false,
-  "saves": 11,
+  "saves": 13,
   "saves_unknown": false,
-  "shares": 2,
-  "views": 1864,
-  "views_7d": 1864
+  "shares": 3,
+  "views": 1868,
+  "views_7d": 1868
  },
  "7698480213277068565": {
   "created": 1792442116,
@@ -11285,14 +11285,14 @@
   "handle": "learn.with.darija",
   "hook": "Generic study tips video",
   "judged": false,
-  "likes": 145,
+  "likes": 147,
   "local": true,
   "mature": false,
   "saves": 16,
   "saves_unknown": false,
   "shares": 8,
-  "views": 5347,
-  "views_7d": 5347
+  "views": 5378,
+  "views_7d": 5378
  },
  "7698480670900866337": {
   "created": 1792442216,
@@ -11300,14 +11300,14 @@
   "handle": "nika_studytok",
   "hook": "Tag that person",
   "judged": false,
-  "likes": 85,
+  "likes": 88,
   "local": true,
   "mature": false,
   "saves": 7,
   "saves_unknown": false,
-  "shares": 16,
-  "views": 2817,
-  "views_7d": 2817
+  "shares": 17,
+  "views": 2839,
+  "views_7d": 2839
  },
  "7698483915035659542": {
   "created": 1792442974,
@@ -11315,14 +11315,14 @@
   "handle": "foxara.vas.uci",
   "hook": "Did you solve the riddle?",
   "judged": false,
-  "likes": 248,
+  "likes": 253,
   "local": true,
   "mature": false,
   "saves": 25,
   "saves_unknown": false,
   "shares": 3,
-  "views": 16500,
-  "views_7d": 16500
+  "views": 16700,
+  "views_7d": 16700
  },
  "7698486691354447125": {
   "created": 1792443623,
@@ -11330,14 +11330,14 @@
   "handle": "learnwithmina",
   "hook": "You have 3 seconds! Pick a subject from a numbered list, one being the study app",
   "judged": false,
-  "likes": 48,
+  "likes": 51,
   "local": true,
   "mature": false,
   "saves": 7,
   "saves_unknown": false,
   "shares": 0,
-  "views": 1895,
-  "views_7d": 1895
+  "views": 1913,
+  "views_7d": 1913
  },
  "7698494560334335253": {
   "created": 1792445454,
@@ -11345,10 +11345,10 @@
   "handle": "studytipsbytara",
   "hook": "Do you also decide what will be on the test yourself?",
   "judged": false,
-  "likes": 302,
+  "likes": 308,
   "local": true,
   "mature": false,
-  "saves": 41,
+  "saves": 42,
   "saves_unknown": false,
   "shares": 24,
   "views": 10100,
@@ -11360,14 +11360,14 @@
   "handle": "learnwithandj",
   "hook": "Study with me at the last minute, lock-in moment",
   "judged": false,
-  "likes": 562,
+  "likes": 566,
   "local": true,
   "mature": false,
-  "saves": 78,
+  "saves": 77,
   "saves_unknown": false,
   "shares": 8,
-  "views": 8704,
-  "views_7d": 8704
+  "views": 8732,
+  "views_7d": 8732
  },
  "7698498391281503489": {
   "created": 1792446344,
@@ -11375,14 +11375,14 @@
   "handle": "learnwithmateja",
   "hook": "Which level did you reach? Grid game of school traits",
   "judged": false,
-  "likes": 304,
+  "likes": 318,
   "local": true,
   "mature": false,
-  "saves": 54,
+  "saves": 56,
   "saves_unknown": false,
   "shares": 4,
-  "views": 19400,
-  "views_7d": 19400
+  "views": 19600,
+  "views_7d": 19600
  },
  "7698499427501165876": {
   "created": 1792446587,
@@ -11396,8 +11396,8 @@
   "saves": 10,
   "saves_unknown": false,
   "shares": 2,
-  "views": 976,
-  "views_7d": 976
+  "views": 978,
+  "views_7d": 978
  },
  "7698500560978218272": {
   "created": 1792446844,
@@ -11411,8 +11411,8 @@
   "saves": 6,
   "saves_unknown": false,
   "shares": 1,
-  "views": 126,
-  "views_7d": 126
+  "views": 127,
+  "views_7d": 127
  },
  "7698630724739501320": {
   "created": 1792477157,
@@ -11441,8 +11441,8 @@
   "saves": 7,
   "saves_unknown": false,
   "shares": 17,
-  "views": 801,
-  "views_7d": 801
+  "views": 805,
+  "views_7d": 805
  },
  "7698642025331035424": {
   "created": 1792479788,
@@ -11471,8 +11471,8 @@
   "saves": 8,
   "saves_unknown": false,
   "shares": 1,
-  "views": 926,
-  "views_7d": 926
+  "views": 927,
+  "views_7d": 927
  },
  "7698675090824678676": {
   "created": 1792487483,
@@ -11486,8 +11486,8 @@
   "saves": 49,
   "saves_unknown": false,
   "shares": 10,
-  "views": 2243,
-  "views_7d": 2243
+  "views": 2303,
+  "views_7d": 2303
  },
  "7698700679044500769": {
   "created": 1792493443,
@@ -11501,8 +11501,8 @@
   "saves": 17,
   "saves_unknown": false,
   "shares": 7,
-  "views": 2393,
-  "views_7d": 2393
+  "views": 2411,
+  "views_7d": 2411
  },
  "7698710116941729044": {
   "created": 1792495643,
@@ -11531,8 +11531,8 @@
   "saves": 7,
   "saves_unknown": false,
   "shares": 6,
-  "views": 1589,
-  "views_7d": 1589
+  "views": 1594,
+  "views_7d": 1594
  },
  "7698754032591965458": {
   "created": 1792505865,
@@ -11546,8 +11546,8 @@
   "saves": 14,
   "saves_unknown": false,
   "shares": 3,
-  "views": 2907,
-  "views_7d": 2907
+  "views": 2908,
+  "views_7d": 2908
  },
  "7698756725259898134": {
   "created": 1792506493,
@@ -11561,8 +11561,8 @@
   "saves": 97,
   "saves_unknown": false,
   "shares": 27,
-  "views": 5716,
-  "views_7d": 5716
+  "views": 5749,
+  "views_7d": 5749
  },
  "7698768889882135840": {
   "created": 1792509324,
@@ -11576,8 +11576,8 @@
   "saves": 3,
   "saves_unknown": false,
   "shares": 6,
-  "views": 2419,
-  "views_7d": 2419
+  "views": 2426,
+  "views_7d": 2426
  },
  "7698772882473766176": {
   "created": 1792510250,
@@ -11591,8 +11591,8 @@
   "saves": 15,
   "saves_unknown": false,
   "shares": 11,
-  "views": 581,
-  "views_7d": 581
+  "views": 585,
+  "views_7d": 585
  },
  "7698779791805205761": {
   "created": 1792511864,
@@ -11606,8 +11606,8 @@
   "saves": 11,
   "saves_unknown": false,
   "shares": 1,
-  "views": 4542,
-  "views_7d": 4542
+  "views": 4557,
+  "views_7d": 4557
  },
  "7698781856325487878": {
   "created": 1792512352,
@@ -11621,8 +11621,8 @@
   "saves": 37,
   "saves_unknown": false,
   "shares": 5,
-  "views": 1904,
-  "views_7d": 1904
+  "views": 1945,
+  "views_7d": 1945
  },
  "7698788374726872340": {
   "created": 1792513859,
@@ -11636,8 +11636,8 @@
   "saves": 27,
   "saves_unknown": false,
   "shares": 16,
-  "views": 4314,
-  "views_7d": 4314
+  "views": 4340,
+  "views_7d": 4340
  },
  "7698789071849540886": {
   "created": 1792514022,
@@ -11651,8 +11651,8 @@
   "saves": 6,
   "saves_unknown": false,
   "shares": 2,
-  "views": 1332,
-  "views_7d": 1332
+  "views": 1344,
+  "views_7d": 1344
  },
  "7698789308974615829": {
   "created": 1792514080,
@@ -11666,8 +11666,8 @@
   "saves": 8,
   "saves_unknown": false,
   "shares": 3,
-  "views": 1768,
-  "views_7d": 1768
+  "views": 1780,
+  "views_7d": 1780
  },
  "7698789491250580756": {
   "created": 1792514119,
@@ -11726,8 +11726,8 @@
   "saves": 9,
   "saves_unknown": false,
   "shares": 2,
-  "views": 1760,
-  "views_7d": 1760
+  "views": 1782,
+  "views_7d": 1782
  },
  "7698796246269545761": {
   "created": 1792515690,
@@ -11741,8 +11741,8 @@
   "saves": 5,
   "saves_unknown": false,
   "shares": 21,
-  "views": 2040,
-  "views_7d": 2040
+  "views": 2049,
+  "views_7d": 2049
  },
  "7698798308633906439": {
   "created": 1792516175,
@@ -11756,8 +11756,8 @@
   "saves": 6,
   "saves_unknown": false,
   "shares": 4,
-  "views": 860,
-  "views_7d": 860
+  "views": 862,
+  "views_7d": 862
  },
  "7698798607901723937": {
   "created": 1792516240,
@@ -11771,8 +11771,8 @@
   "saves": 3,
   "saves_unknown": false,
   "shares": 5,
-  "views": 759,
-  "views_7d": 759
+  "views": 766,
+  "views_7d": 766
  },
  "7698800218279628064": {
   "created": 1792516614,
@@ -11786,8 +11786,8 @@
   "saves": 60,
   "saves_unknown": false,
   "shares": 114,
-  "views": 19400,
-  "views_7d": 19400
+  "views": 19600,
+  "views_7d": 19600
  },
  "7698817048243129633": {
   "created": 1792520534,
@@ -11800,9 +11800,9 @@
   "mature": false,
   "saves": 6,
   "saves_unknown": false,
-  "shares": 20,
-  "views": 933,
-  "views_7d": 933
+  "shares": 21,
+  "views": 950,
+  "views_7d": 950
  },
  "7698818309386489118": {
   "created": 1792520853,
@@ -11810,14 +11810,14 @@
   "handle": "learnwithniksi",
   "hook": "Your @ (crush/account) fell a year 😱 (caption only, no speech or on-screen text)",
   "judged": false,
-  "likes": 1904,
+  "likes": 2001,
   "local": true,
   "mature": false,
-  "saves": 537,
+  "saves": 560,
   "saves_unknown": false,
-  "shares": 148,
-  "views": 84000,
-  "views_7d": 84000
+  "shares": 154,
+  "views": 85200,
+  "views_7d": 85200
  },
  "7698818521135893792": {
   "created": 1792520874,
@@ -11825,14 +11825,14 @@
   "handle": "studywithkarmen",
   "hook": "Comment the solution to this math problem",
   "judged": false,
-  "likes": 39,
+  "likes": 41,
   "local": true,
   "mature": false,
   "saves": 3,
   "saves_unknown": false,
   "shares": 4,
-  "views": 1550,
-  "views_7d": 1550
+  "views": 1593,
+  "views_7d": 1593
  },
  "7698823256622501127": {
   "created": 1792521985,
@@ -11868,14 +11868,14 @@
   "handle": "studywithandja",
   "hook": "POV: time to get back to routines and invest in your knowledge",
   "judged": false,
-  "likes": 593,
+  "likes": 599,
   "local": true,
   "mature": false,
-  "saves": 57,
+  "saves": 59,
   "saves_unknown": false,
   "shares": 23,
-  "views": 7493,
-  "views_7d": 7493
+  "views": 7516,
+  "views_7d": 7516
  },
  "7698832308345769238": {
   "created": 1792524087,
@@ -11883,14 +11883,14 @@
   "handle": "foxara.vas.uci",
   "hook": "Did you know about this study method?",
   "judged": false,
-  "likes": 84,
+  "likes": 92,
   "local": true,
   "mature": false,
-  "saves": 4,
+  "saves": 6,
   "saves_unknown": false,
   "shares": 16,
-  "views": 6042,
-  "views_7d": 6042
+  "views": 6070,
+  "views_7d": 6070
  },
  "7698841861737237793": {
   "created": 1792526310,
@@ -11898,14 +11898,14 @@
   "handle": "helenci_study",
   "hook": "Things your teachers hide from you",
   "judged": false,
-  "likes": 86,
+  "likes": 90,
   "local": true,
   "mature": false,
   "saves": 14,
   "saves_unknown": false,
   "shares": 17,
-  "views": 1345,
-  "views_7d": 1345
+  "views": 1364,
+  "views_7d": 1364
  },
  "7698844414088613153": {
   "created": 1792526905,
@@ -11919,8 +11919,8 @@
   "saves": 10,
   "saves_unknown": false,
   "shares": 2,
-  "views": 841,
-  "views_7d": 841
+  "views": 843,
+  "views_7d": 843
  },
  "7698853951298473224": {
   "created": 1792529142,
@@ -11928,14 +11928,14 @@
   "handle": "study_with_zo",
   "hook": "Afternoon nap until 2 AM and an exam at 7?",
   "judged": false,
-  "likes": 932,
+  "likes": 1049,
   "local": true,
   "mature": false,
-  "saves": 172,
+  "saves": 187,
   "saves_unknown": false,
-  "shares": 39,
-  "views": 39500,
-  "views_7d": 39500
+  "shares": 45,
+  "views": 40000,
+  "views_7d": 40000
  },
  "7698858261335788821": {
   "created": 1792530132,
@@ -11943,14 +11943,14 @@
   "handle": "study_with_hexi",
   "hook": "Do you have ADHD???",
   "judged": false,
-  "likes": 148,
+  "likes": 151,
   "local": true,
   "mature": false,
-  "saves": 26,
+  "saves": 27,
   "saves_unknown": false,
-  "shares": 38,
-  "views": 5413,
-  "views_7d": 5413
+  "shares": 40,
+  "views": 5441,
+  "views_7d": 5441
  },
  "7698865757245033748": {
   "created": 1792531880,
@@ -11973,14 +11973,14 @@
   "handle": "studytipsbytara",
   "hook": "POV: homework due at 23:59 and it's 23:50",
   "judged": false,
-  "likes": 335,
+  "likes": 336,
   "local": true,
   "mature": false,
   "saves": 33,
   "saves_unknown": false,
   "shares": 27,
-  "views": 7194,
-  "views_7d": 7194
+  "views": 7216,
+  "views_7d": 7216
  },
  "7698867998278389010": {
   "created": 1792532400,
@@ -11988,14 +11988,14 @@
   "handle": "studytipsbyem",
   "hook": "New study method: studying while waiting for my friend to text about her ex",
   "judged": false,
-  "likes": 1519,
+  "likes": 1557,
   "local": true,
   "mature": false,
-  "saves": 56,
+  "saves": 57,
   "saves_unknown": false,
-  "shares": 492,
-  "views": 17500,
-  "views_7d": 17500
+  "shares": 497,
+  "views": 17700,
+  "views_7d": 17700
  },
  "7698868757460028693": {
   "created": 1792532578,
@@ -12009,8 +12009,8 @@
   "saves": 37,
   "saves_unknown": false,
   "shares": 10,
-  "views": 5628,
-  "views_7d": 5628
+  "views": 5689,
+  "views_7d": 5689
  },
  "7698873358783466758": {
   "created": 1792533694,
@@ -12024,8 +12024,8 @@
   "saves": 409,
   "saves_unknown": false,
   "shares": 196,
-  "views": 34400,
-  "views_7d": 34400
+  "views": 34500,
+  "views_7d": 34500
  },
  "7698997074875976993": {
   "created": 1792562451,
@@ -12039,8 +12039,8 @@
   "saves": 4,
   "saves_unknown": false,
   "shares": 12,
-  "views": 2351,
-  "views_7d": 2351
+  "views": 2357,
+  "views_7d": 2357
  },
  "7699005119181999392": {
   "created": 1792564325,
@@ -12054,8 +12054,8 @@
   "saves": 1,
   "saves_unknown": false,
   "shares": 2,
-  "views": 497,
-  "views_7d": 497
+  "views": 499,
+  "views_7d": 499
  },
  "7699008225949109512": {
   "created": 1792565052,
@@ -12069,8 +12069,8 @@
   "saves": 0,
   "saves_unknown": false,
   "shares": 2,
-  "views": 390,
-  "views_7d": 390
+  "views": 391,
+  "views_7d": 391
  },
  "7699027040472714528": {
   "created": 1792569429,
@@ -12084,8 +12084,8 @@
   "saves": 9,
   "saves_unknown": false,
   "shares": 2,
-  "views": 2314,
-  "views_7d": 2314
+  "views": 2318,
+  "views_7d": 2318
  },
  "7699031771941276949": {
   "created": 1792570528,
@@ -12099,8 +12099,8 @@
   "saves": 0,
   "saves_unknown": false,
   "shares": 0,
-  "views": 673,
-  "views_7d": 673
+  "views": 744,
+  "views_7d": 744
  },
  "7699052922398641441": {
   "created": 1792575452,
@@ -12114,8 +12114,8 @@
   "saves": 12,
   "saves_unknown": false,
   "shares": 9,
-  "views": 1179,
-  "views_7d": 1179
+  "views": 1197,
+  "views_7d": 1197
  },
  "7699073935807089953": {
   "created": 1792580345,
@@ -12138,14 +12138,14 @@
   "handle": "learnwithmateja",
   "hook": "If we fail, at least we fail together ❤️",
   "judged": true,
-  "likes": 34900,
+  "likes": 36100,
   "local": true,
   "mature": false,
-  "saves": 2177,
+  "saves": 2255,
   "saves_unknown": false,
-  "shares": 13700,
-  "views": 310200,
-  "views_7d": 310200
+  "shares": 14000,
+  "views": 321900,
+  "views_7d": 321900
  },
  "7699117522611686677": {
   "created": 1792590493,
@@ -12159,8 +12159,8 @@
   "saves": 34,
   "saves_unknown": false,
   "shares": 9,
-  "views": 6344,
-  "views_7d": 6344
+  "views": 6421,
+  "views_7d": 6421
  },
  "7699129564991196434": {
   "created": 1792593300,
@@ -12189,8 +12189,8 @@
   "saves": 1,
   "saves_unknown": false,
   "shares": 3,
-  "views": 669,
-  "views_7d": 669
+  "views": 671,
+  "views_7d": 671
  },
  "7699135906866859297": {
   "created": 1792594773,
@@ -12204,8 +12204,8 @@
   "saves": 4,
   "saves_unknown": false,
   "shares": 4,
-  "views": 705,
-  "views_7d": 705
+  "views": 714,
+  "views_7d": 714
  },
  "7699139161281908000": {
   "created": 1792595530,
@@ -12234,8 +12234,8 @@
   "saves": 32,
   "saves_unknown": false,
   "shares": 8,
-  "views": 1114,
-  "views_7d": 1114
+  "views": 1118,
+  "views_7d": 1118
  },
  "7699144182333508896": {
   "created": 1792596699,
@@ -12249,8 +12249,8 @@
   "saves": 63,
   "saves_unknown": false,
   "shares": 131,
-  "views": 16600,
-  "views_7d": 16600
+  "views": 16800,
+  "views_7d": 16800
  },
  "7699148838749130016": {
   "created": 1792597783,
@@ -12279,8 +12279,8 @@
   "saves": 8,
   "saves_unknown": false,
   "shares": 5,
-  "views": 2588,
-  "views_7d": 2588
+  "views": 2618,
+  "views_7d": 2618
  },
  "7699160580099280149": {
   "created": 1792600520,
@@ -12294,8 +12294,8 @@
   "saves": 18,
   "saves_unknown": false,
   "shares": 4,
-  "views": 1564,
-  "views_7d": 1564
+  "views": 1580,
+  "views_7d": 1580
  },
  "7699168655388593441": {
   "created": 1792602399,
@@ -12309,8 +12309,8 @@
   "saves": 36,
   "saves_unknown": false,
   "shares": 7,
-  "views": 4429,
-  "views_7d": 4429
+  "views": 4457,
+  "views_7d": 4457
  },
  "7699168699713998113": {
   "created": 1792602408,
@@ -12318,10 +12318,10 @@
   "handle": "learnwithdina6",
   "hook": "Attention! For all medicine students (text only, no speech)",
   "judged": false,
-  "likes": 457,
+  "likes": 458,
   "local": true,
   "mature": false,
-  "saves": 142,
+  "saves": 143,
   "saves_unknown": false,
   "shares": 181,
   "views": 14100,
@@ -12333,14 +12333,14 @@
   "handle": "studywithkarmen",
   "hook": "What number did you manage to reach?",
   "judged": false,
-  "likes": 13,
+  "likes": 14,
   "local": true,
   "mature": false,
   "saves": 1,
   "saves_unknown": false,
   "shares": 2,
-  "views": 204,
-  "views_7d": 204
+  "views": 239,
+  "views_7d": 239
  },
  "7699172973726453025": {
   "created": 1792603403,
@@ -12354,8 +12354,8 @@
   "saves": 6,
   "saves_unknown": false,
   "shares": 4,
-  "views": 605,
-  "views_7d": 605
+  "views": 611,
+  "views_7d": 611
  },
  "7699173090768555285": {
   "created": 1792603433,
@@ -12384,8 +12384,8 @@
   "saves": 2,
   "saves_unknown": false,
   "shares": 3,
-  "views": 421,
-  "views_7d": 421
+  "views": 422,
+  "views_7d": 422
  },
  "7699188928573738271": {
   "created": 1792607144,
@@ -12399,8 +12399,8 @@
   "saves": 12,
   "saves_unknown": false,
   "shares": 3,
-  "views": 690,
-  "views_7d": 690
+  "views": 701,
+  "views_7d": 701
  },
  "7699194467110227233": {
   "created": 1792608408,
@@ -12413,9 +12413,9 @@
   "mature": false,
   "saves": 12,
   "saves_unknown": false,
-  "shares": 3,
-  "views": 2148,
-  "views_7d": 2148
+  "shares": 4,
+  "views": 2151,
+  "views_7d": 2151
  },
  "7699204299649207572": {
   "created": 1792610700,
@@ -12429,8 +12429,8 @@
   "saves": 19,
   "saves_unknown": false,
   "shares": 2,
-  "views": 1795,
-  "views_7d": 1795
+  "views": 1817,
+  "views_7d": 1817
  },
  "7699210599602916626": {
   "created": 1792612169,
@@ -12444,8 +12444,8 @@
   "saves": 20,
   "saves_unknown": false,
   "shares": 2,
-  "views": 1394,
-  "views_7d": 1394
+  "views": 1403,
+  "views_7d": 1403
  },
  "7699217989320641825": {
   "created": 1792613883,
@@ -12459,8 +12459,8 @@
   "saves": 13,
   "saves_unknown": false,
   "shares": 1,
-  "views": 558,
-  "views_7d": 558
+  "views": 563,
+  "views_7d": 563
  },
  "7699218699915431201": {
   "created": 1792614049,
@@ -12468,14 +12468,14 @@
   "handle": "karla_studytok",
   "hook": "Top 5 worst grades in elementary school, ranked from 5th to 1st",
   "judged": false,
-  "likes": 474,
+  "likes": 479,
   "local": true,
   "mature": false,
-  "saves": 58,
+  "saves": 59,
   "saves_unknown": false,
-  "shares": 157,
-  "views": 35600,
-  "views_7d": 35600
+  "shares": 163,
+  "views": 36200,
+  "views_7d": 36200
  },
  "7699220521979759890": {
   "created": 1792614499,
@@ -12489,8 +12489,8 @@
   "saves": 15,
   "saves_unknown": false,
   "shares": 4,
-  "views": 852,
-  "views_7d": 852
+  "views": 854,
+  "views_7d": 854
  },
  "7699224103659719988": {
   "created": 1792615474,
@@ -12498,14 +12498,14 @@
   "handle": "study.with.mili",
   "hook": "Do you use these apps? I read the comments",
   "judged": false,
-  "likes": 316,
+  "likes": 321,
   "local": true,
   "mature": false,
-  "saves": 90,
+  "saves": 91,
   "saves_unknown": false,
-  "shares": 193,
-  "views": 28700,
-  "views_7d": 28700
+  "shares": 194,
+  "views": 29000,
+  "views_7d": 29000
  },
  "7699224131086191879": {
   "created": 1792615329,
@@ -12513,14 +12513,14 @@
   "handle": "learnwithtamara",
   "hook": "Things teachers hide from you, with the app revealed as ASTRA AI",
   "judged": false,
-  "likes": 47,
+  "likes": 48,
   "local": true,
   "mature": false,
-  "saves": 6,
+  "saves": 7,
   "saves_unknown": false,
   "shares": 9,
-  "views": 1199,
-  "views_7d": 1199
+  "views": 1208,
+  "views_7d": 1208
  },
  "7699225542125489429": {
   "created": 1792615646,
@@ -12528,14 +12528,14 @@
   "handle": "learnwithsaraa",
   "hook": "Share quickly before it's too late",
   "judged": false,
-  "likes": 14,
+  "likes": 15,
   "local": true,
   "mature": false,
   "saves": 8,
   "saves_unknown": false,
   "shares": 0,
-  "views": 420,
-  "views_7d": 420
+  "views": 436,
+  "views_7d": 436
  },
  "7699229032784678176": {
   "created": 1792616464,
@@ -12543,14 +12543,14 @@
   "handle": "learnwith___lea",
   "hook": "Who wants to pass all their exams?",
   "judged": false,
-  "likes": 58,
+  "likes": 59,
   "local": true,
   "mature": false,
   "saves": 11,
   "saves_unknown": false,
   "shares": 2,
-  "views": 826,
-  "views_7d": 826
+  "views": 831,
+  "views_7d": 831
  },
  "7699235969249348885": {
   "created": 1792618083,
@@ -12558,14 +12558,14 @@
   "handle": "study_with_hexi",
   "hook": "I'll delete this if I don't fall asleep",
   "judged": false,
-  "likes": 54,
+  "likes": 55,
   "local": true,
   "mature": false,
   "saves": 15,
   "saves_unknown": false,
   "shares": 2,
-  "views": 1824,
-  "views_7d": 1824
+  "views": 1832,
+  "views_7d": 1832
  },
  "7699237503349558534": {
   "created": 1792618474,
@@ -12573,14 +12573,14 @@
   "handle": "kera.vas.uci",
   "hook": "Tag your BFF",
   "judged": false,
-  "likes": 307,
+  "likes": 308,
   "local": true,
   "mature": false,
-  "saves": 66,
+  "saves": 67,
   "saves_unknown": false,
-  "shares": 15,
-  "views": 6849,
-  "views_7d": 6849
+  "shares": 16,
+  "views": 6923,
+  "views_7d": 6923
  },
  "7699239303322340629": {
   "created": 1792618853,
@@ -12594,8 +12594,8 @@
   "saves": 5,
   "saves_unknown": false,
   "shares": 5,
-  "views": 1282,
-  "views_7d": 1282
+  "views": 1298,
+  "views_7d": 1298
  },
  "7699240539203439893": {
   "created": 1792619145,
@@ -12609,8 +12609,8 @@
   "saves": 14,
   "saves_unknown": false,
   "shares": 4,
-  "views": 869,
-  "views_7d": 869
+  "views": 882,
+  "views_7d": 882
  },
  "7699240962836647189": {
   "created": 1792619241,
@@ -12621,11 +12621,11 @@
   "likes": 41,
   "local": true,
   "mature": false,
-  "saves": 6,
+  "saves": 7,
   "saves_unknown": false,
   "shares": 1,
-  "views": 758,
-  "views_7d": 758
+  "views": 777,
+  "views_7d": 777
  },
  "7699242093721488660": {
   "created": 1792619508,
@@ -12633,14 +12633,14 @@
   "handle": "learnwithmina",
   "hook": "What grade are you in?",
   "judged": false,
-  "likes": 108,
+  "likes": 112,
   "local": true,
   "mature": false,
   "saves": 20,
   "saves_unknown": false,
   "shares": 6,
-  "views": 2209,
-  "views_7d": 2209
+  "views": 2245,
+  "views_7d": 2245
  },
  "7699243423802477831": {
   "created": 1792619827,
@@ -12661,14 +12661,14 @@
   "created": 1792653595,
   "format": null,
   "handle": "learnwithmarija",
-  "hook": "",
+  "hook": "POV: you finished studying 3 hours early because you listened to the lazy girl with the best grades and understood everything in 1h with Astra AI",
   "judged": false,
-  "likes": 614,
+  "likes": 618,
   "local": true,
   "mature": false,
-  "saves": 78,
+  "saves": 79,
   "saves_unknown": false,
-  "shares": 9,
+  "shares": 10,
   "views": 12300,
   "views_7d": 12300
  },
@@ -12683,7 +12683,7 @@
   "mature": false,
   "saves": 27,
   "saves_unknown": false,
-  "shares": 6,
+  "shares": 7,
   "views": 12900,
   "views_7d": 12900
  },
@@ -12691,7 +12691,7 @@
   "created": 1792658659,
   "format": null,
   "handle": "learnwithsaraa",
-  "hook": "",
+  "hook": "Oh, to be that generation",
   "judged": false,
   "likes": 40,
   "local": true,
@@ -12699,14 +12699,14 @@
   "saves": 5,
   "saves_unknown": false,
   "shares": 5,
-  "views": 1590,
-  "views_7d": 1590
+  "views": 1596,
+  "views_7d": 1596
  },
  "7699429510608981254": {
   "created": 1792663142,
   "format": null,
   "handle": "ucisamilicom",
-  "hook": "",
+  "hook": "If you're studying medicine, this video is for you",
   "judged": false,
   "likes": 10,
   "local": true,
@@ -12721,7 +12721,7 @@
   "created": 1792664413,
   "format": null,
   "handle": "ucisaprofom",
-  "hook": "",
+  "hook": "Which grade are you in?",
   "judged": false,
   "likes": 2,
   "local": true,
@@ -12738,14 +12738,14 @@
   "handle": "studywithandja",
   "hook": "",
   "judged": false,
-  "likes": 545,
+  "likes": 549,
   "local": true,
   "mature": false,
-  "saves": 178,
+  "saves": 180,
   "saves_unknown": false,
   "shares": 64,
-  "views": 8909,
-  "views_7d": 8909
+  "views": 9003,
+  "views_7d": 9003
  },
  "7699457216109169952": {
   "created": 1792669584,
@@ -12759,8 +12759,8 @@
   "saves": 4,
   "saves_unknown": false,
   "shares": 2,
-  "views": 399,
-  "views_7d": 399
+  "views": 403,
+  "views_7d": 403
  },
  "7699461680782265652": {
   "created": 1792670623,
@@ -12768,14 +12768,14 @@
   "handle": "studywithandjela",
   "hook": "If you're too lazy to study, this is the solution",
   "judged": false,
-  "likes": 343,
+  "likes": 348,
   "local": true,
   "mature": false,
-  "saves": 119,
+  "saves": 123,
   "saves_unknown": false,
-  "shares": 75,
-  "views": 31900,
-  "views_7d": 31900
+  "shares": 76,
+  "views": 32600,
+  "views_7d": 32600
  },
  "7699484281642536214": {
   "created": 1792675886,
@@ -12783,14 +12783,14 @@
   "handle": "foxara.vas.uci",
   "hook": "Why does he cure/treat it, he's a doctor 😂 (caption only, no speech or on-screen text)",
   "judged": false,
-  "likes": 226,
+  "likes": 227,
   "local": true,
   "mature": false,
   "saves": 25,
   "saves_unknown": false,
   "shares": 6,
-  "views": 12000,
-  "views_7d": 12000
+  "views": 12100,
+  "views_7d": 12100
  },
  "7699514779441876256": {
   "created": 1792682986,
@@ -12804,12 +12804,12 @@
   "saves": 7,
   "saves_unknown": false,
   "shares": 11,
-  "views": 379,
-  "views_7d": 379
+  "views": 401,
+  "views_7d": 401
  },
  "7699523402440232214": {
   "created": 1792684996,
-  "format": null,
+  "format": "A20261008211912",
   "handle": "spelcaa41",
   "hook": "",
   "judged": false,
@@ -12819,23 +12819,23 @@
   "saves": 10,
   "saves_unknown": false,
   "shares": 29,
-  "views": 1680,
-  "views_7d": 1680
+  "views": 1701,
+  "views_7d": 1701
  },
  "7699525998122896673": {
   "created": 1792685597,
   "format": "A20261012160842",
   "handle": "studywithanamarija",
   "hook": "Fake friend test: write what your friends replied",
-  "judged": false,
-  "likes": 1772,
+  "judged": true,
+  "likes": 1878,
   "local": true,
   "mature": false,
-  "saves": 409,
+  "saves": 427,
   "saves_unknown": false,
-  "shares": 6296,
-  "views": 96300,
-  "views_7d": 96300
+  "shares": 6641,
+  "views": 101500,
+  "views_7d": 101500
  },
  "7699537491686132999": {
   "created": 1792688277,
@@ -12843,14 +12843,14 @@
   "handle": "learnwithtamy",
   "hook": "",
   "judged": false,
-  "likes": 220,
+  "likes": 221,
   "local": true,
   "mature": false,
-  "saves": 56,
+  "saves": 57,
   "saves_unknown": false,
   "shares": 16,
-  "views": 12100,
-  "views_7d": 12100
+  "views": 12300,
+  "views_7d": 12300
  },
  "7699550061407063329": {
   "created": 1792691200,
@@ -12864,8 +12864,8 @@
   "saves": 5,
   "saves_unknown": false,
   "shares": 5,
-  "views": 1081,
-  "views_7d": 1081
+  "views": 1084,
+  "views_7d": 1084
  },
  "7699551874659192097": {
   "created": 1792691621,
@@ -12879,8 +12879,8 @@
   "saves": 2,
   "saves_unknown": false,
   "shares": 4,
-  "views": 2762,
-  "views_7d": 2762
+  "views": 2791,
+  "views_7d": 2791
  },
  "7699552644368502049": {
   "created": 1792691801,
@@ -12888,14 +12888,14 @@
   "handle": "tea_studytok",
   "hook": "",
   "judged": false,
-  "likes": 303,
+  "likes": 308,
   "local": true,
   "mature": false,
   "saves": 96,
   "saves_unknown": false,
   "shares": 30,
-  "views": 5552,
-  "views_7d": 5552
+  "views": 5674,
+  "views_7d": 5674
  },
  "7699557233067183392": {
   "created": 1792692870,
@@ -12909,8 +12909,8 @@
   "saves": 5,
   "saves_unknown": false,
   "shares": 7,
-  "views": 538,
-  "views_7d": 538
+  "views": 548,
+  "views_7d": 548
  },
  "7699557538907606293": {
   "created": 1792692945,
@@ -12918,14 +12918,14 @@
   "handle": "study.with.mili",
   "hook": "",
   "judged": false,
-  "likes": 64,
+  "likes": 66,
   "local": true,
   "mature": false,
-  "saves": 16,
+  "saves": 18,
   "saves_unknown": false,
   "shares": 2,
-  "views": 2598,
-  "views_7d": 2598
+  "views": 2667,
+  "views_7d": 2667
  },
  "7699567207470173472": {
   "created": 1792695193,
@@ -12933,14 +12933,14 @@
   "handle": "nika_studytok",
   "hook": "",
   "judged": false,
-  "likes": 80,
+  "likes": 81,
   "local": true,
   "mature": false,
-  "saves": 30,
+  "saves": 31,
   "saves_unknown": false,
-  "shares": 28,
-  "views": 5298,
-  "views_7d": 5298
+  "shares": 29,
+  "views": 5402,
+  "views_7d": 5402
  },
  "7699567589227547911": {
   "created": 1792695292,
@@ -12963,14 +12963,14 @@
   "handle": "learnwithnika",
   "hook": "",
   "judged": false,
-  "likes": 52,
+  "likes": 53,
   "local": true,
   "mature": false,
   "saves": 1,
   "saves_unknown": false,
   "shares": 5,
-  "views": 448,
-  "views_7d": 448
+  "views": 449,
+  "views_7d": 449
  },
  "7699575656341916959": {
   "created": 1792697167,
@@ -12984,8 +12984,8 @@
   "saves": 9,
   "saves_unknown": false,
   "shares": 3,
-  "views": 812,
-  "views_7d": 812
+  "views": 838,
+  "views_7d": 838
  },
  "7699577041531702561": {
   "created": 1792697481,
@@ -12993,14 +12993,14 @@
   "handle": "helenci_study",
   "hook": "",
   "judged": false,
-  "likes": 52,
+  "likes": 53,
   "local": true,
   "mature": false,
   "saves": 7,
   "saves_unknown": false,
   "shares": 3,
-  "views": 1360,
-  "views_7d": 1360
+  "views": 1379,
+  "views_7d": 1379
  },
  "7699581896954531073": {
   "created": 1792698654,
@@ -13023,14 +13023,14 @@
   "handle": "learnwithmina",
   "hook": "",
   "judged": false,
-  "likes": 265,
+  "likes": 270,
   "local": true,
   "mature": false,
-  "saves": 38,
+  "saves": 40,
   "saves_unknown": false,
   "shares": 5,
-  "views": 10400,
-  "views_7d": 10400
+  "views": 10800,
+  "views_7d": 10800
  },
  "7699591575156051221": {
   "created": 1792700869,
@@ -13044,8 +13044,8 @@
   "saves": 14,
   "saves_unknown": false,
   "shares": 0,
-  "views": 793,
-  "views_7d": 793
+  "views": 825,
+  "views_7d": 825
  },
  "7699592155110608148": {
   "created": 1792701005,
@@ -13053,14 +13053,14 @@
   "handle": "learn.with.darija",
   "hook": "",
   "judged": false,
-  "likes": 410,
+  "likes": 414,
   "local": true,
   "mature": false,
   "saves": 32,
   "saves_unknown": false,
   "shares": 46,
-  "views": 6256,
-  "views_7d": 6256
+  "views": 6336,
+  "views_7d": 6336
  },
  "7699592612260498721": {
   "created": 1792701108,
@@ -13068,14 +13068,14 @@
   "handle": "studywithkarmen",
   "hook": "",
   "judged": false,
-  "likes": 80,
+  "likes": 81,
   "local": true,
   "mature": false,
-  "saves": 30,
+  "saves": 31,
   "saves_unknown": false,
   "shares": 10,
-  "views": 3738,
-  "views_7d": 3738
+  "views": 3824,
+  "views_7d": 3824
  },
  "7699593524370672904": {
   "created": 1792701323,
@@ -13083,14 +13083,14 @@
   "handle": "learnwithtamara",
   "hook": "",
   "judged": false,
-  "likes": 40,
+  "likes": 41,
   "local": true,
   "mature": false,
-  "saves": 6,
+  "saves": 5,
   "saves_unknown": false,
   "shares": 5,
-  "views": 1190,
-  "views_7d": 1190
+  "views": 1215,
+  "views_7d": 1215
  },
  "7699594487944760608": {
   "created": 1792701543,
@@ -13104,8 +13104,8 @@
   "saves": 7,
   "saves_unknown": false,
   "shares": 0,
-  "views": 979,
-  "views_7d": 979
+  "views": 983,
+  "views_7d": 983
  },
  "7699599655260146965": {
   "created": 1792702751,
@@ -13113,14 +13113,14 @@
   "handle": "kera.vas.uci",
   "hook": "Are you better than 99% of people?",
   "judged": false,
-  "likes": 890,
+  "likes": 939,
   "local": true,
   "mature": false,
-  "saves": 101,
+  "saves": 103,
   "saves_unknown": false,
-  "shares": 197,
-  "views": 34100,
-  "views_7d": 34100
+  "shares": 205,
+  "views": 36600,
+  "views_7d": 36600
  },
  "7699610675034852626": {
   "created": 1792705320,
@@ -13134,8 +13134,8 @@
   "saves": 4,
   "saves_unknown": false,
   "shares": 0,
-  "views": 1179,
-  "views_7d": 1179
+  "views": 1197,
+  "views_7d": 1197
  },
  "7699678554631507207": {
   "created": 1792721120,
@@ -13143,14 +13143,14 @@
   "handle": "studywithvalentina",
   "hook": "",
   "judged": false,
-  "likes": 192,
+  "likes": 199,
   "local": true,
   "mature": false,
-  "saves": 72,
+  "saves": 75,
   "saves_unknown": false,
-  "shares": 25,
-  "views": 8177,
-  "views_7d": 8177
+  "shares": 28,
+  "views": 8552,
+  "views_7d": 8552
  },
  "7699755716780854561": {
   "created": 1792739088,
@@ -13161,11 +13161,11 @@
   "likes": 42,
   "local": true,
   "mature": false,
-  "saves": 8,
+  "saves": 9,
   "saves_unknown": false,
-  "shares": 4,
-  "views": 11700,
-  "views_7d": 11700
+  "shares": 5,
+  "views": 12400,
+  "views_7d": 12400
  },
  "7699766770864852256": {
   "created": 1792741662,
@@ -13179,8 +13179,8 @@
   "saves": 0,
   "saves_unknown": false,
   "shares": 4,
-  "views": 403,
-  "views_7d": 403
+  "views": 413,
+  "views_7d": 413
  },
  "7699788087248899346": {
   "created": 1792746631,
@@ -13203,14 +13203,14 @@
   "handle": "learnwithmarija",
   "hook": "",
   "judged": false,
-  "likes": 149,
+  "likes": 151,
   "local": true,
   "mature": false,
   "saves": 57,
   "saves_unknown": false,
   "shares": 17,
-  "views": 2598,
-  "views_7d": 2598
+  "views": 2661,
+  "views_7d": 2661
  },
  "7699814359383444737": {
   "created": 1792752766,
@@ -13233,14 +13233,14 @@
   "handle": "study.with.mili",
   "hook": "",
   "judged": false,
-  "likes": 322,
+  "likes": 334,
   "local": true,
   "mature": false,
-  "saves": 150,
+  "saves": 156,
   "saves_unknown": false,
-  "shares": 51,
-  "views": 18100,
-  "views_7d": 18100
+  "shares": 53,
+  "views": 18600,
+  "views_7d": 18600
  },
  "7699838344259259656": {
   "created": 1792758324,
@@ -13254,23 +13254,23 @@
   "saves": 3,
   "saves_unknown": false,
   "shares": 3,
-  "views": 274,
-  "views_7d": 274
+  "views": 278,
+  "views_7d": 278
  },
  "7699854922111667508": {
   "created": 1792762187,
-  "format": null,
+  "format": "A20261013231033",
   "handle": "studywithandjela",
   "hook": "You must listen to this! Mili said in time what you need to do!",
-  "judged": false,
-  "likes": 867,
+  "judged": true,
+  "likes": 1175,
   "local": true,
   "mature": false,
-  "saves": 520,
+  "saves": 763,
   "saves_unknown": false,
-  "shares": 566,
-  "views": 95100,
-  "views_7d": 95100
+  "shares": 883,
+  "views": 127800,
+  "views_7d": 127800
  },
  "7699892025524571400": {
   "created": 1792770832,
@@ -13284,8 +13284,8 @@
   "saves": 7,
   "saves_unknown": false,
   "shares": 0,
-  "views": 967,
-  "views_7d": 967
+  "views": 1007,
+  "views_7d": 1007
  },
  "7699894975449910536": {
   "created": 1792771516,
@@ -13299,8 +13299,8 @@
   "saves": 1,
   "saves_unknown": false,
   "shares": 3,
-  "views": 265,
-  "views_7d": 265
+  "views": 271,
+  "views_7d": 271
  },
  "7699896215701294342": {
   "created": 1792771829,
@@ -13323,14 +13323,14 @@
   "handle": "studytips_tea",
   "hook": "",
   "judged": false,
-  "likes": 74,
+  "likes": 75,
   "local": true,
   "mature": false,
   "saves": 6,
   "saves_unknown": false,
   "shares": 1,
-  "views": 1521,
-  "views_7d": 1521
+  "views": 1621,
+  "views_7d": 1621
  },
  "7699907710376037653": {
   "created": 1792774474,
@@ -13338,14 +13338,14 @@
   "handle": "learnwithsaraa",
   "hook": "",
   "judged": false,
-  "likes": 17,
+  "likes": 18,
   "local": true,
   "mature": false,
   "saves": 5,
   "saves_unknown": false,
   "shares": 6,
-  "views": 396,
-  "views_7d": 396
+  "views": 416,
+  "views_7d": 416
  },
  "7699908612008742177": {
   "created": 1792774682,
@@ -13353,14 +13353,14 @@
   "handle": "tea_studytok",
   "hook": "Top 5 hardest high schools in Croatia – which one are you?",
   "judged": false,
-  "likes": 1556,
+  "likes": 1887,
   "local": true,
   "mature": false,
-  "saves": 122,
+  "saves": 141,
   "saves_unknown": false,
-  "shares": 752,
-  "views": 33100,
-  "views_7d": 33100
+  "shares": 906,
+  "views": 39100,
+  "views_7d": 39100
  },
  "7699909177401036064": {
   "created": 1792774814,
@@ -13368,14 +13368,14 @@
   "handle": "studywithanamarija",
   "hook": "Things teachers hide from you 🤫😏",
   "judged": false,
-  "likes": 661,
+  "likes": 690,
   "local": true,
   "mature": false,
-  "saves": 337,
+  "saves": 353,
   "saves_unknown": false,
-  "shares": 284,
-  "views": 30500,
-  "views_7d": 30500
+  "shares": 313,
+  "views": 32400,
+  "views_7d": 32400
  },
  "7699909399401254196": {
   "created": 1792774895,
@@ -13383,14 +13383,14 @@
   "handle": "smartishaangelisaa",
   "hook": "Top 3 faculties you should NOT enroll in (countdown: Civil Engineering, Electrical Engineering, Medicine)",
   "judged": false,
-  "likes": 576,
+  "likes": 748,
   "local": true,
   "mature": false,
-  "saves": 92,
+  "saves": 119,
   "saves_unknown": false,
-  "shares": 59,
-  "views": 30800,
-  "views_7d": 30800
+  "shares": 97,
+  "views": 40200,
+  "views_7d": 40200
  },
  "7699911872975277334": {
   "created": 1792775442,
@@ -13398,14 +13398,14 @@
   "handle": "school.hacks.byklara",
   "hook": "",
   "judged": false,
-  "likes": 47,
+  "likes": 51,
   "local": false,
   "mature": false,
-  "saves": 4,
+  "saves": 5,
   "saves_unknown": false,
   "shares": 3,
-  "views": 1225,
-  "views_7d": 1225
+  "views": 1303,
+  "views_7d": 1303
  },
  "7699912013408980257": {
   "created": 1792775473,
@@ -13419,8 +13419,8 @@
   "saves": 37,
   "saves_unknown": false,
   "shares": 10,
-  "views": 4766,
-  "views_7d": 4766
+  "views": 4813,
+  "views_7d": 4813
  },
  "7699915252653116694": {
   "created": 1792776231,
@@ -13428,14 +13428,14 @@
   "handle": "spelcaa41",
   "hook": "",
   "judged": false,
-  "likes": 132,
+  "likes": 151,
   "local": false,
   "mature": false,
-  "saves": 16,
+  "saves": 19,
   "saves_unknown": false,
-  "shares": 16,
-  "views": 3364,
-  "views_7d": 3364
+  "shares": 17,
+  "views": 3756,
+  "views_7d": 3756
  },
  "7699917391618133268": {
   "created": 1792776731,
@@ -13443,14 +13443,14 @@
   "handle": "study_with_hexi",
   "hook": "Don't wear these 3 colors to an oral exam",
   "judged": false,
-  "likes": 352,
+  "likes": 383,
   "local": true,
   "mature": false,
-  "saves": 168,
+  "saves": 179,
   "saves_unknown": false,
-  "shares": 45,
-  "views": 11900,
-  "views_7d": 11900
+  "shares": 48,
+  "views": 12800,
+  "views_7d": 12800
  },
  "7699924251301661984": {
   "created": 1792778323,
@@ -13464,8 +13464,8 @@
   "saves": 2,
   "saves_unknown": false,
   "shares": 5,
-  "views": 324,
-  "views_7d": 324
+  "views": 342,
+  "views_7d": 342
  },
  "7699924975376993569": {
   "created": 1792778490,
@@ -13473,14 +13473,14 @@
   "handle": "karla_studytok",
   "hook": "How to multiply with your fingers ✌🏼",
   "judged": true,
-  "likes": 4374,
+  "likes": 5370,
   "local": true,
   "mature": false,
-  "saves": 2172,
+  "saves": 2635,
   "saves_unknown": false,
-  "shares": 661,
-  "views": 108300,
-  "views_7d": 108300
+  "shares": 809,
+  "views": 130600,
+  "views_7d": 130600
  },
  "7699925244307311879": {
   "created": 1792778560,
@@ -13494,8 +13494,8 @@
   "saves": 0,
   "saves_unknown": false,
   "shares": 2,
-  "views": 257,
-  "views_7d": 257
+  "views": 270,
+  "views_7d": 270
  },
  "7699928526740409620": {
   "created": 1792779321,
@@ -13503,14 +13503,14 @@
   "handle": "studywithreveka",
   "hook": "",
   "judged": false,
-  "likes": 40,
+  "likes": 41,
   "local": true,
   "mature": false,
   "saves": 8,
   "saves_unknown": false,
   "shares": 0,
-  "views": 587,
-  "views_7d": 587
+  "views": 620,
+  "views_7d": 620
  },
  "7699933044152569108": {
   "created": 1792780372,
@@ -13518,14 +13518,14 @@
   "handle": "studytipsbytara",
   "hook": "",
   "judged": false,
-  "likes": 24,
+  "likes": 25,
   "local": true,
   "mature": false,
-  "saves": 9,
+  "saves": 10,
   "saves_unknown": false,
   "shares": 2,
-  "views": 355,
-  "views_7d": 355
+  "views": 367,
+  "views_7d": 367
  },
  "7699933303968730390": {
   "created": 1792780434,
@@ -13533,14 +13533,14 @@
   "handle": "foxara.vas.uci",
   "hook": "",
   "judged": false,
-  "likes": 53,
+  "likes": 56,
   "local": true,
   "mature": false,
   "saves": 4,
   "saves_unknown": false,
   "shares": 1,
-  "views": 1216,
-  "views_7d": 1216
+  "views": 1343,
+  "views_7d": 1343
  },
  "7699933980044315937": {
   "created": 1792780589,
@@ -13548,14 +13548,14 @@
   "handle": "learnwithchoksa",
   "hook": "",
   "judged": false,
-  "likes": 203,
+  "likes": 238,
   "local": true,
   "mature": false,
-  "saves": 6,
+  "saves": 9,
   "saves_unknown": false,
-  "shares": 8,
-  "views": 3717,
-  "views_7d": 3717
+  "shares": 10,
+  "views": 4214,
+  "views_7d": 4214
  },
  "7699937815341092129": {
   "created": 1792781480,
@@ -13563,14 +13563,14 @@
   "handle": "learnwithsaralara",
   "hook": "",
   "judged": false,
-  "likes": 549,
+  "likes": 701,
   "local": true,
   "mature": false,
-  "saves": 23,
+  "saves": 32,
   "saves_unknown": false,
-  "shares": 58,
-  "views": 3843,
-  "views_7d": 3843
+  "shares": 67,
+  "views": 4901,
+  "views_7d": 4901
  },
  "7699957166517619999": {
   "created": 1792786007,
@@ -13578,14 +13578,14 @@
   "handle": "learnwithniksi",
   "hook": "",
   "judged": false,
-  "likes": 19,
+  "likes": 21,
   "local": true,
   "mature": false,
-  "saves": 7,
+  "saves": 8,
   "saves_unknown": false,
   "shares": 1,
-  "views": 431,
-  "views_7d": 431
+  "views": 489,
+  "views_7d": 489
  },
  "7699964342883716372": {
   "created": 1792787663,
@@ -13593,14 +13593,14 @@
   "handle": "learnwithmateja",
   "hook": "",
   "judged": false,
-  "likes": 30,
+  "likes": 33,
   "local": true,
   "mature": false,
   "saves": 9,
   "saves_unknown": false,
-  "shares": 0,
-  "views": 1975,
-  "views_7d": 1975
+  "shares": 1,
+  "views": 2155,
+  "views_7d": 2155
  },
  "7699970662756142343": {
   "created": 1792789136,
@@ -13608,14 +13608,14 @@
   "handle": "studywithandja",
   "hook": "",
   "judged": false,
-  "likes": 138,
+  "likes": 148,
   "local": true,
   "mature": false,
-  "saves": 16,
+  "saves": 18,
   "saves_unknown": false,
   "shares": 14,
-  "views": 5456,
-  "views_7d": 5456
+  "views": 5712,
+  "views_7d": 5712
  },
  "7699971868404534561": {
   "created": 1792789412,
@@ -13623,29 +13623,29 @@
   "handle": "studywithkarmen",
   "hook": "",
   "judged": false,
-  "likes": 91,
+  "likes": 130,
   "local": true,
   "mature": false,
-  "saves": 13,
+  "saves": 22,
   "saves_unknown": false,
-  "shares": 5,
-  "views": 3815,
-  "views_7d": 3815
+  "shares": 14,
+  "views": 6042,
+  "views_7d": 6042
  },
  "7699980599104212245": {
   "created": 1792791456,
   "format": null,
   "handle": "kera.vas.uci",
-  "hook": "",
+  "hook": "Your first '@' (crush/tag) would get the class expelled like this 😂",
   "judged": false,
-  "likes": 970,
+  "likes": 1242,
   "local": true,
   "mature": false,
-  "saves": 182,
+  "saves": 234,
   "saves_unknown": false,
-  "shares": 24,
-  "views": 28000,
-  "views_7d": 28000
+  "shares": 31,
+  "views": 36600,
+  "views_7d": 36600
  },
  "7699981633574702343": {
   "created": 1792791691,
@@ -13653,14 +13653,14 @@
   "handle": "studytipsbyem",
   "hook": "",
   "judged": false,
-  "likes": 204,
+  "likes": 217,
   "local": true,
   "mature": false,
-  "saves": 92,
+  "saves": 100,
   "saves_unknown": false,
-  "shares": 15,
-  "views": 5125,
-  "views_7d": 5125
+  "shares": 17,
+  "views": 5407,
+  "views_7d": 5407
  },
  "7699985935156432149": {
   "created": 1792792689,
@@ -13668,14 +13668,14 @@
   "handle": "learnwithmina",
   "hook": "",
   "judged": false,
-  "likes": 38,
+  "likes": 41,
   "local": true,
   "mature": false,
   "saves": 5,
   "saves_unknown": false,
   "shares": 0,
-  "views": 598,
-  "views_7d": 598
+  "views": 636,
+  "views_7d": 636
  },
  "7700004858585271566": {
   "created": 1792797114,
@@ -13683,14 +13683,14 @@
   "handle": "nicole.lockedin",
   "hook": "",
   "judged": false,
-  "likes": 18,
+  "likes": 19,
   "local": false,
   "mature": false,
   "saves": 1,
   "saves_unknown": false,
   "shares": 0,
-  "views": 270,
-  "views_7d": 270
+  "views": 295,
+  "views_7d": 295
  },
  "7700061870090161415": {
   "created": 1792810373,
@@ -13698,14 +13698,14 @@
   "handle": "studywithvalentina",
   "hook": "",
   "judged": false,
-  "likes": 94,
+  "likes": 100,
   "local": true,
   "mature": false,
-  "saves": 8,
+  "saves": 10,
   "saves_unknown": false,
   "shares": 3,
-  "views": 3419,
-  "views_7d": 3419
+  "views": 3763,
+  "views_7d": 3763
  },
  "7700113498080054548": {
   "created": 1792822394,
@@ -13713,14 +13713,14 @@
   "handle": "learnwithsaraa",
   "hook": "",
   "judged": false,
-  "likes": 28,
+  "likes": 48,
   "local": true,
   "mature": false,
-  "saves": 6,
+  "saves": 8,
   "saves_unknown": false,
   "shares": 2,
-  "views": 971,
-  "views_7d": 971
+  "views": 1284,
+  "views_7d": 1284
  },
  "7700136000789466401": {
   "created": 1792827627,
@@ -13728,14 +13728,14 @@
   "handle": "learnwithsaralara",
   "hook": "",
   "judged": false,
-  "likes": 63,
+  "likes": 68,
   "local": true,
   "mature": false,
-  "saves": 4,
+  "saves": 5,
   "saves_unknown": false,
   "shares": 4,
-  "views": 681,
-  "views_7d": 681
+  "views": 824,
+  "views_7d": 824
  },
  "7700163760744451360": {
   "created": 1792834091,
@@ -13743,14 +13743,14 @@
   "handle": "learnwithpaola",
   "hook": "",
   "judged": false,
-  "likes": 22,
+  "likes": 72,
   "local": true,
   "mature": false,
-  "saves": 7,
+  "saves": 32,
   "saves_unknown": false,
-  "shares": 3,
-  "views": 364,
-  "views_7d": 364
+  "shares": 7,
+  "views": 14000,
+  "views_7d": 14000
  },
  "7700181051246726407": {
   "created": 1792838118,
@@ -13764,8 +13764,8 @@
   "saves": 0,
   "saves_unknown": false,
   "shares": 2,
-  "views": 118,
-  "views_7d": 118
+  "views": 132,
+  "views_7d": 132
  },
  "7700187277070191878": {
   "created": 1792839594,
@@ -13779,7 +13779,97 @@
   "saves": 0,
   "saves_unknown": false,
   "shares": 0,
-  "views": 30,
-  "views_7d": 30
+  "views": 78,
+  "views_7d": 78
+ },
+ "7700204697872829728": {
+  "created": 1792843618,
+  "format": null,
+  "handle": "learnwithmarija",
+  "hook": "",
+  "judged": false,
+  "likes": 69,
+  "local": true,
+  "mature": false,
+  "saves": 9,
+  "saves_unknown": false,
+  "shares": 14,
+  "views": 965,
+  "views_7d": 965
+ },
+ "7700228711798344980": {
+  "created": 1792849211,
+  "format": null,
+  "handle": "studywithandjela",
+  "hook": "",
+  "judged": false,
+  "likes": 12,
+  "local": true,
+  "mature": false,
+  "saves": 3,
+  "saves_unknown": false,
+  "shares": 0,
+  "views": 314,
+  "views_7d": 314
+ },
+ "7700232438525496608": {
+  "created": 1792850079,
+  "format": null,
+  "handle": "karla_studytok",
+  "hook": "",
+  "judged": false,
+  "likes": 172,
+  "local": true,
+  "mature": false,
+  "saves": 29,
+  "saves_unknown": false,
+  "shares": 20,
+  "views": 9843,
+  "views_7d": 9843
+ },
+ "7700236047896055061": {
+  "created": 1792850920,
+  "format": null,
+  "handle": "study.with.mili",
+  "hook": "",
+  "judged": false,
+  "likes": 142,
+  "local": true,
+  "mature": false,
+  "saves": 51,
+  "saves_unknown": false,
+  "shares": 24,
+  "views": 6257,
+  "views_7d": 6257
+ },
+ "7700241340109475094": {
+  "created": 1792852154,
+  "format": null,
+  "handle": "school.hacks.byklara",
+  "hook": "",
+  "judged": false,
+  "likes": 80,
+  "local": false,
+  "mature": false,
+  "saves": 11,
+  "saves_unknown": false,
+  "shares": 4,
+  "views": 1423,
+  "views_7d": 1423
+ },
+ "7700262654580968722": {
+  "created": 1792857119,
+  "format": null,
+  "handle": "studywith_petradaria",
+  "hook": "",
+  "judged": false,
+  "likes": 13,
+  "local": true,
+  "mature": false,
+  "saves": 4,
+  "saves_unknown": false,
+  "shares": 4,
+  "views": 322,
+  "views_7d": 322
  }
 }
