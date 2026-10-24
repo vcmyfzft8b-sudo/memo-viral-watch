@@ -58,7 +58,7 @@
   "A20261012160842:sh": "35e18c46fedfea9e081e4d3c757fb79678e7530e88047546c002dea5c11323d4"
  },
  "cta_missing": [],
- "daily_check": "2026-10-23",
+ "daily_check": "2026-10-24",
  "discovered_at": 1792619887,
  "faithful_rewrite_started": 1791643120,
  "group_audit": {
@@ -822,7 +822,7 @@
   "ucisaprofom": "sh"
  },
  "hot": {},
- "last_run": 1792791616,
+ "last_run": 1792817983,
  "lineup": "2026-W43",
  "open_problems": [
   "🇸🇮 list order/content differs: listed 30, expected 30"
@@ -830,8 +830,8 @@
  "problems_alerted": 1792733169,
  "top3": [
   "A20261008204718",
-  "A20261015213945",
-  "A20261010215329"
+  "A20261010215329",
+  "A20261015213945"
  ],
  "video_hashes": {
   "/519d7dbc-39cd-47ff-8a02-64a86ac572c3/06793f84-4f6d-4656-a6ad-16631d14d85e/video.mp4": "sha256:22e6f1c12802931f2610caf0c44d7c01cbc40c65c6365e8a851c09ddc08974c0",
